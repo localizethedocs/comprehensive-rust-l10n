@@ -5,15 +5,15 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/SUMMARY.md:8
 msgid "Welcome to Comprehensive Rust 🦀"
-msgstr ""
+msgstr "歡迎來到 Comprehensive Rust 🦀"
 
 #: src/SUMMARY.md:10
 msgid "Running the Course"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/SUMMARY.md:14
 msgid "Using Cargo"
-msgstr ""
+msgstr "使用 Cargo"
 
 #: src/SUMMARY.md:15
 msgid "Rust Ecosystem"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: src/SUMMARY.md:21
 msgid "Day 1: Morning"
-msgstr ""
+msgstr "第 1 天：上午"
 
 #: src/SUMMARY.md:23 src/SUMMARY.md:52 src/SUMMARY.md:82 src/SUMMARY.md:115
 #: src/SUMMARY.md:146 src/SUMMARY.md:166 src/SUMMARY.md:191 src/SUMMARY.md:217
@@ -156,7 +156,7 @@ msgstr ""
 
 #: src/SUMMARY.md:50
 msgid "Day 1: Afternoon"
-msgstr ""
+msgstr "第 1 天：下午"
 
 #: src/SUMMARY.md:53
 msgid "Tuples and Arrays"
@@ -244,7 +244,7 @@ msgstr ""
 
 #: src/SUMMARY.md:80
 msgid "Day 2: Morning"
-msgstr ""
+msgstr "第 2 天：上午"
 
 #: src/SUMMARY.md:83
 msgid "Pattern Matching"
@@ -352,7 +352,7 @@ msgstr ""
 
 #: src/SUMMARY.md:113
 msgid "Day 2: Afternoon"
-msgstr ""
+msgstr "第 2 天：下午"
 
 #: src/SUMMARY.md:116
 msgid "Closures"
@@ -444,7 +444,7 @@ msgstr ""
 
 #: src/SUMMARY.md:144
 msgid "Day 3: Morning"
-msgstr ""
+msgstr "第 3 天：上午"
 
 #: src/SUMMARY.md:147
 msgid "Memory Management"
@@ -504,7 +504,7 @@ msgstr ""
 
 #: src/SUMMARY.md:164
 msgid "Day 3: Afternoon"
-msgstr ""
+msgstr "第 3 天：下午"
 
 #: src/SUMMARY.md:167
 msgid "Borrowing"
@@ -576,7 +576,7 @@ msgstr ""
 
 #: src/SUMMARY.md:189
 msgid "Day 4: Morning"
-msgstr ""
+msgstr "第 4 天：上午"
 
 #: src/SUMMARY.md:192
 msgid "Iterators"
@@ -652,7 +652,7 @@ msgstr ""
 
 #: src/SUMMARY.md:215
 msgid "Day 4: Afternoon"
-msgstr ""
+msgstr "第 4 天：下午"
 
 #: src/SUMMARY.md:218
 msgid "Error Handling"

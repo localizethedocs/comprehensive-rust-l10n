@@ -5,15 +5,15 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/index.md:6
 msgid "Welcome to Comprehensive Rust 🦀"
-msgstr ""
+msgstr "歡迎來到 Comprehensive Rust 🦀"
 
 #: src/index.md:8
 msgid ""
@@ -33,6 +33,8 @@ msgid ""
 "course covers the full spectrum of Rust, from basic syntax to advanced "
 "topics like generics and error handling."
 msgstr ""
+"這是由 Google Android 團隊開發的免費 Rust 課程。本課程涵蓋了 Rust 的完整範"
+"疇，從基礎語法到泛型和錯誤處理等進階話題。"
 
 #: src/index.md:16
 msgid ""
@@ -72,12 +74,12 @@ msgstr ""
 
 #: src/index.md:34
 msgid "We call the first four course days Rust Fundamentals."
-msgstr ""
+msgstr "我們將前四天的課程稱為 Rust 基礎（Rust Fundamentals）。"
 
 #: src/index.md:36
 msgid ""
 "Building on this, you're invited to dive into one or more specialized topics:"
-msgstr ""
+msgstr "在此基礎上，我們將誠摯邀請您深入探討一個或多個話題："
 
 #: src/index.md:38
 msgid ""
