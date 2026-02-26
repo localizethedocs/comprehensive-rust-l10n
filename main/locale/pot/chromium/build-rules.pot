@@ -1,0 +1,74 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/build-rules.md:6
+msgid "Build rules"
+msgstr ""
+
+#: src/chromium/build-rules.md:8
+msgid ""
+"Rust code is typically built using `cargo`. Chromium builds with `gn` and "
+"`ninja` for efficiency --- its static rules allow maximum parallelism. Rust "
+"is no exception."
+msgstr ""
+
+#: src/chromium/build-rules.md:12
+msgid "Adding Rust code to Chromium"
+msgstr ""
+
+#: src/chromium/build-rules.md:14
+msgid ""
+"In some existing Chromium `BUILD.gn` file, declare a `rust_static_library`:"
+msgstr ""
+
+#: src/chromium/build-rules.md:16
+msgid ""
+"```gn\n"
+"import(\"//build/rust/rust_static_library.gni\")\n"
+"\n"
+"rust_static_library(\"my_rust_lib\") {\n"
+"  crate_root = \"lib.rs\"\n"
+"  sources = [ \"lib.rs\" ]\n"
+"}\n"
+"```"
+msgstr ""
+
+#: src/chromium/build-rules.md:25
+msgid ""
+"You can also add `deps` on other Rust targets. Later we'll use this to "
+"depend upon third party code."
+msgstr ""
+
+#: src/chromium/build-rules.md:30
+msgid ""
+"You must specify _both_ the crate root, _and_ a full list of sources. The "
+"`crate_root` is the file given to the Rust compiler representing the root "
+"file of the compilation unit --- typically `lib.rs`. `sources` is a complete "
+"list of all source files which `ninja` needs in order to determine when "
+"rebuilds are necessary."
+msgstr ""
+
+#: src/chromium/build-rules.md:36
+msgid ""
+"(There's no such thing as a Rust `source_set`, because in Rust, an entire "
+"crate is a compilation unit. A `static_library` is the smallest unit.)"
+msgstr ""
+
+#: src/chromium/build-rules.md:39
+msgid ""
+"Students might be wondering why we need a gn template, rather than using "
+"[gn's built-in support for Rust static libraries](https://gn.googlesource."
+"com/gn/+/main/docs/reference.md#func_static_library). The answer is that "
+"this template provides support for CXX interop, Rust features, and unit "
+"tests, some of which we'll use later."
+msgstr ""

@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/running-the-course/keyboard-shortcuts.md:6
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: src/running-the-course/keyboard-shortcuts.md:8
+msgid "There are several useful keyboard shortcuts in mdBook:"
+msgstr ""
+
+#: src/running-the-course/keyboard-shortcuts.md:10
+msgid "<kbd>Arrow-Left</kbd>: Navigate to the previous page."
+msgstr ""
+
+#: src/running-the-course/keyboard-shortcuts.md:11
+msgid "<kbd>Arrow-Right</kbd>: Navigate to the next page."
+msgstr ""
+
+#: src/running-the-course/keyboard-shortcuts.md:12
+msgid ""
+"<kbd>Ctrl</kbd> + <kbd>Enter</kbd>: Execute the code sample that has focus."
+msgstr ""
+
+#: src/running-the-course/keyboard-shortcuts.md:13
+msgid "<kbd>s</kbd>: Activate the search bar."
+msgstr ""
+
+#: src/running-the-course/keyboard-shortcuts.md:17
+msgid ""
+"Mention that these shortcuts are standard for `mdbook` and can be useful "
+"when navigating any `mdbook`\\-generated site."
+msgstr ""
+
+#: src/running-the-course/keyboard-shortcuts.md:19
+msgid "You can demonstrate each shortcut live to the students."
+msgstr ""
+
+#: src/running-the-course/keyboard-shortcuts.md:20
+msgid ""
+"The <kbd>s</kbd> key for search is particularly useful for quickly finding "
+"topics that have been discussed earlier."
+msgstr ""
+
+#: src/running-the-course/keyboard-shortcuts.md:22
+msgid ""
+"<kbd>Ctrl</kbd> + <kbd>Enter</kbd> will be super important for you since "
+"you'll do a lot of live coding."
+msgstr ""

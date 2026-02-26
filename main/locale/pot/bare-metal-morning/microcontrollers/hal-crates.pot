@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/microcontrollers/hals.md:6
+msgid "HAL crates"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/hals.md:8
+msgid ""
+"[HAL crates](https://github.com/rust-embedded/awesome-embedded-rust#hal-"
+"implementation-crates) for many microcontrollers provide wrappers around "
+"various peripherals. These generally implement traits from [`embedded-hal`]"
+"(https://crates.io/crates/embedded-hal)."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/hals.md:14
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/hals.md:15
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/hals.md:31
+msgid "// Create HAL wrapper for GPIO port 0.\n"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/hals.md:34
+msgid "// Configure GPIO 0 pins 21 and 28 as push-pull outputs.\n"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/hals.md:38
+msgid "// Set pin 28 low and pin 21 high to turn the LED on.\n"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/hals.md:48
+msgid ""
+"`set_low` and `set_high` are methods on the `embedded_hal` `OutputPin` trait."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/hals.md:49
+msgid ""
+"HAL crates exist for many Cortex-M and RISC-V devices, including various "
+"STM32, GD32, nRF, NXP, MSP430, AVR and PIC microcontrollers."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/hals.md:52
+msgid "Run the example with:"
+msgstr ""

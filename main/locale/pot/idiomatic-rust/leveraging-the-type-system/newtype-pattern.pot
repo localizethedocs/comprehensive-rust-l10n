@@ -1,0 +1,79 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:6
+msgid "Newtype Pattern"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:8
+msgid "A _newtype_ is a wrapper around an existing type, often a primitive:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:11
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:21
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:36
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:12
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:22
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:37
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:13
+msgid "/// A unique user identifier, implemented as a newtype around `u64`.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:18
+msgid ""
+"Unlike type aliases, newtypes aren't interchangeable with the wrapped type:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:29
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:40
+msgid "// 🛠️❌\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:32
+msgid ""
+"The Rust compiler won't let you use methods or operators defined on the "
+"underlying type either:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:46
+msgid ""
+"Students should have encountered the newtype pattern in the \"Fundamentals\" "
+"course, when they learned about [tuple structs](../../user-defined-types/"
+"tuple-structs.md)."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:50
+msgid "Run the example to show students the error message from the compiler."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:52
+msgid ""
+"Modify the example to use a typealias instead of a newtype, such as `type "
+"MessageId = u64`. The modified example should compile, thus highlighting the "
+"differences between the two approaches."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:56
+msgid ""
+"Stress that newtypes, out of the box, have no behaviour attached to them. "
+"You need to be intentional about which methods and operators you are willing "
+"to forward from the underlying type. In our `UserId` example, it is "
+"reasonable to allow comparisons between `UserId`s, but it wouldn't make "
+"sense to allow arithmetic operations like addition or subtraction."
+msgstr ""

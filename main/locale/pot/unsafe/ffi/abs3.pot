@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/ffi/abs.md:6
+msgid "Wrapping `abs(3)`"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:9 src/unsafe-deep-dive/ffi/abs.md:35
+#: src/unsafe-deep-dive/ffi/abs.md:55 src/unsafe-deep-dive/ffi/abs.md:79
+#: src/unsafe-deep-dive/ffi/abs.md:97 src/unsafe-deep-dive/ffi/abs.md:113
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:10 src/unsafe-deep-dive/ffi/abs.md:36
+#: src/unsafe-deep-dive/ffi/abs.md:56 src/unsafe-deep-dive/ffi/abs.md:80
+#: src/unsafe-deep-dive/ffi/abs.md:98 src/unsafe-deep-dive/ffi/abs.md:114
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:17 src/unsafe-deep-dive/ffi/abs.md:125
+msgid "\"{x}, {abs_x}\""
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:24
+msgid "In this slide, we’re establishing a pattern for writing wrappers."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:26
+msgid ""
+"Find the external definition of a function’s signature Write a matching "
+"function in Rust within an `extern` block Confirm which safety invariants "
+"need to be upheld Decide whether it’s possible to mark the function as safe"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:30
+msgid "Note that this doesn’t work _yet_."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:32
+msgid "Add the extern block:"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:38 src/unsafe-deep-dive/ffi/abs.md:60
+#: src/unsafe-deep-dive/ffi/abs.md:84 src/unsafe-deep-dive/ffi/abs.md:102
+#: src/unsafe-deep-dive/ffi/abs.md:118
+msgid "\"C\""
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:43
+msgid ""
+"Explain that many POSIX functions are available in Rust because Cargo links "
+"against the C standard library (libc) by default, which brings its symbols "
+"into the program’s scope."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:47
+msgid ""
+"Show `man 3 abs` in the terminal or [a webpage](https://www.man7.org/linux/"
+"man-pages/man3/abs.3.html)."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:49
+msgid ""
+"Explain that our function signature must match its definition: `int abs(int "
+"j);`."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:52
+msgid "Update the code block to use the C types."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:65
+msgid ""
+"Discuss rationale: using `ffi::c_int` increases the portability of our code. "
+"When the standard library is compiled for the target platform, the platform "
+"can determine the widths. According to the C standard, a `c_int` may be "
+"defined as an `i16` rather than the much more common `i32`."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:70
+msgid ""
+"(Optional) Show the [documentation for c_int](https://doc.rust-lang.org/std/"
+"ffi/type.c_int.html) to reveal that it is a type alias for `i32`."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:73
+msgid ""
+"Attempt to compile to trigger “error: extern blocks must be unsafe” error "
+"message."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:76
+msgid "Add the unsafe keyword to the block:"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:89
+msgid ""
+"Check that learners understand the significance of this change. We are "
+"required to uphold type safety and other safety preconditions."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:92
+msgid "Recompile."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:94
+msgid "Add safe keyword to the abs function:"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:107
+msgid ""
+"Explain that the `safe fn` marks `abs` as safe to call without an `unsafe` "
+"block."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/abs.md:110
+msgid "Completed program for reference:"
+msgstr ""

@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/safety-preconditions/ascii.md:6
+msgid "Example: ASCII Type"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/ascii.md:9
+#: src/unsafe-deep-dive/safety-preconditions/ascii.md:43
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/ascii.md:10
+#: src/unsafe-deep-dive/safety-preconditions/ascii.md:44
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/ascii.md:11
+msgid "/// Text that is guaranteed to be encoded within 7-bit ASCII.\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/ascii.md:20
+msgid ""
+"/// Creates a new `Ascii` from a byte slice without checking for ASCII\n"
+"    /// validity.\n"
+"    ///\n"
+"    /// # Safety\n"
+"    ///\n"
+"    /// Providing non-ASCII bytes results in undefined behavior.\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/ascii.md:34
+msgid ""
+"\"The `Ascii` type is a minimal wrapper around a byte slice. Internally, "
+"they share the same representation. However, `Ascii` requires that the high "
+"bit must not be used.\""
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/ascii.md:38
+msgid ""
+"Optional: Extend the example to mention that it's possible to use "
+"`debug_assert!` to test the preconditions during tests without impacting "
+"release builds."
+msgstr ""

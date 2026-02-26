@@ -1,0 +1,68 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md:6
+msgid "3 Shapes of Sound Rust"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md:8
+msgid "Functions written only in Safe Rust"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md:9
+msgid "Functions that contain `unsafe` blocks which are impossible to misuse"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md:10
+msgid "Unsafe functions that have their safety preconditions documented"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md:15
+msgid "We want to write sound code."
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md:16
+msgid "Sound code can only have the following shapes:"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md:17
+msgid "safe functions that contain no unsafe blocks"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md:18
+msgid ""
+"safe functions that completely encapsulate unsafe blocks, meaning that the "
+"caller does not need to know about them"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md:20
+msgid ""
+"unsafe functions that contain unsafe blocks but don't encapsulate them, and "
+"pass the proof burden to their caller"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md:22
+msgid "Burden of proof"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md:23
+msgid "safe functions with only Safe Rust -> compiler"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md:24
+msgid "safe functions with unsafe blocks -> function author"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/3-shapes-of-sound-rust.md:25
+msgid "unsafe functions -> function caller"
+msgstr ""

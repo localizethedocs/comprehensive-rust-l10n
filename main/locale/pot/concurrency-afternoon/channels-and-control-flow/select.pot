@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/async-control-flow/select.md:6
+msgid "Select"
+msgstr ""
+
+#: src/concurrency/async-control-flow/select.md:8
+msgid ""
+"A select operation waits until any of a set of futures is ready, and "
+"responds to that future's result. In JavaScript, this is similar to `Promise."
+"race`. In Python, it compares to `asyncio.wait(task_set, return_when=asyncio."
+"FIRST_COMPLETED)`."
+msgstr ""
+
+#: src/concurrency/async-control-flow/select.md:13
+msgid ""
+"Similar to a match statement, the body of `select!` has a number of arms, "
+"each of the form `pattern = future => statement`. When a `future` is ready, "
+"its return value is destructured by the `pattern`. The `statement` is then "
+"run with the resulting variables. The `statement` result becomes the result "
+"of the `select!` macro."
+msgstr ""
+
+#: src/concurrency/async-control-flow/select.md:20
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/concurrency/async-control-flow/select.md:21
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/concurrency/async-control-flow/select.md:31
+msgid "\"got: {msg}\""
+msgstr ""
+
+#: src/concurrency/async-control-flow/select.md:32
+msgid "\"timeout\""
+msgstr ""
+
+#: src/concurrency/async-control-flow/select.md:36
+msgid "\"Hello!\""
+msgstr ""
+
+#: src/concurrency/async-control-flow/select.md:36
+msgid "\"Failed to send greeting\""
+msgstr ""
+
+#: src/concurrency/async-control-flow/select.md:38
+msgid "\"Listener failed\""
+msgstr ""
+
+#: src/concurrency/async-control-flow/select.md:45
+msgid ""
+"The `listener` async block here is a common form: wait for some async event, "
+"or for a timeout. Change the `sleep` to sleep longer to see it fail. Why "
+"does the `send` also fail in this situation?"
+msgstr ""
+
+#: src/concurrency/async-control-flow/select.md:49
+msgid ""
+"`select!` is also frequently used in a loop in \"actor\" architectures, "
+"where a task reacts to events in a loop. That has some pitfalls, which will "
+"be discussed in the next segment."
+msgstr ""

@@ -1,0 +1,55 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/testing/unit-tests.md:6
+msgid "Unit Tests"
+msgstr ""
+
+#: src/testing/unit-tests.md:8
+msgid ""
+"Rust and Cargo come with a simple unit test framework. Tests are marked with "
+"`#[test]`. Unit tests are often put in a nested `tests` module, using "
+"`#[cfg(test)]` to conditionally compile them only when building tests."
+msgstr ""
+
+#: src/testing/unit-tests.md:13
+msgid "// Copyright 2022 Google LLC\n"
+msgstr ""
+
+#: src/testing/unit-tests.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/testing/unit-tests.md:17
+msgid "' '"
+msgstr ""
+
+#: src/testing/unit-tests.md:29
+msgid "\"\""
+msgstr ""
+
+#: src/testing/unit-tests.md:34 src/testing/unit-tests.md:39
+msgid "\"Hello\""
+msgstr ""
+
+#: src/testing/unit-tests.md:39
+msgid "\"Hello World\""
+msgstr ""
+
+#: src/testing/unit-tests.md:44
+msgid "This lets you unit test private helpers."
+msgstr ""
+
+#: src/testing/unit-tests.md:45
+msgid "The `#[cfg(test)]` attribute is only active when you run `cargo test`."
+msgstr ""

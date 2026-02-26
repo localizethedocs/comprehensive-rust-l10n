@@ -1,0 +1,73 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/initialization/partial-initialization.md:6
+msgid "Partial Initialization"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/partial-initialization.md:9
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/partial-initialization.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/partial-initialization.md:15
+msgid "// let mut buf = [0u8; 2048];\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/partial-initialization.md:18
+msgid "b\"Hello, Rust!\""
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/partial-initialization.md:25
+msgid ""
+"// SAFETY: We initialized exactly 'len' bytes of `buf` with UTF-8 text\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/partial-initialization.md:32
+msgid "\"{text}\""
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/partial-initialization.md:38
+msgid "This code simulates receiving data from some external source."
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/partial-initialization.md:40
+msgid ""
+"When reading bytes from an external source into a buffer, you typically "
+"don't know how many bytes you'll receive. Using `MaybeUninit<T>` lets you "
+"allocate the buffer once without paying for a redundant initialization pass."
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/partial-initialization.md:44
+msgid ""
+"If we were to create the array with the standard syntax (`buf = [0u8; "
+"2048]`), the whole buffer would be flushed with zeroes. `MaybeUninit<T>` "
+"tells the compiler to reserve space, but not to touch the memory yet."
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/partial-initialization.md:48
+msgid ""
+"Q: Which part of the code snippet is performing a similar role to `."
+"assume_init()`? A: The pointer cast and the implicit read."
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/partial-initialization.md:51
+msgid ""
+"We cannot call `assume_init()` on the whole array. That would be unsound "
+"because most elements remain uninitialized. Instead, we cast the pointer "
+"from `*const MaybeUninit<u8>` to `*const u8` and build a slice covering only "
+"the initialised portion."
+msgstr ""

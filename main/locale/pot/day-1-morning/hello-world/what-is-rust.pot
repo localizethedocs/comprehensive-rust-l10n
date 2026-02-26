@@ -1,0 +1,93 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/hello-world/what-is-rust.md:6
+msgid "What is Rust?"
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:8
+msgid ""
+"Rust is a new programming language that had its [1.0 release in 2015]"
+"(https://blog.rust-lang.org/2015/05/15/Rust-1.0.html):"
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:10
+msgid "Rust is a statically compiled language in a similar role as C++"
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:11
+msgid "`rustc` uses LLVM as its backend."
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:12
+msgid ""
+"Rust supports many [platforms and architectures](https://doc.rust-lang.org/"
+"nightly/rustc/platform-support.html):"
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:14
+msgid "x86, ARM, WebAssembly, ..."
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:15
+msgid "Linux, Mac, Windows, ..."
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:16
+msgid "Rust is used for a wide range of devices:"
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:17
+msgid "firmware and boot loaders,"
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:18
+msgid "smart displays,"
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:19
+msgid "mobile phones,"
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:20
+msgid "desktops,"
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:21
+msgid "servers."
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:26
+msgid "Rust fits in the same area as C++:"
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:28
+msgid "High flexibility."
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:29
+msgid "High level of control."
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:30
+msgid ""
+"Can be scaled down to very constrained devices such as microcontrollers."
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:31
+msgid "Has no runtime or garbage collection."
+msgstr ""
+
+#: src/hello-world/what-is-rust.md:32
+msgid "Focuses on reliability and safety without sacrificing performance."
+msgstr ""

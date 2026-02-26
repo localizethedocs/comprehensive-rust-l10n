@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/std-traits/exercise.md:6
+msgid "Exercise: ROT13"
+msgstr ""
+
+#: src/std-traits/exercise.md:8
+msgid ""
+"In this example, you will implement the classic [\"ROT13\" cipher](https://"
+"en.wikipedia.org/wiki/ROT13). Copy this code to the playground, and "
+"implement the missing bits. Only rotate ASCII alphabetic characters, to "
+"ensure the result is still valid UTF-8."
+msgstr ""
+
+#: src/std-traits/exercise.md:14
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/std-traits/exercise.md:15
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/std-traits/exercise.md:23
+msgid "// Implement the `Read` trait for `RotDecoder`.\n"
+msgstr ""
+
+#: src/std-traits/exercise.md:33
+msgid "\"Gb trg gb gur bgure fvqr!\""
+msgstr ""
+
+#: src/std-traits/exercise.md:36
+msgid "\"To get to the other side!\""
+msgstr ""
+
+#: src/std-traits/exercise.md:55
+msgid ""
+"What happens if you chain two `RotDecoder` instances together, each rotating "
+"by 13 characters?"
+msgstr ""

@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:6
+msgid "Beyond Simple Typestate"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:8
+msgid ""
+"How do we manage increasingly complex configuration flows with many possible "
+"states and transitions, while still preventing incompatible operations?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:15
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:16
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:17
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:18
+msgid "/* [...] */"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:21
+msgid ""
+"// TODO, implement:\n"
+"    //\n"
+"    // fn serialize_struct(self, name: &str) -> SerializeStruct\n"
+"    // fn finish(self) -> String\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:28
+msgid ""
+"// TODO, implement:\n"
+"    //\n"
+"    // fn serialize_property(mut self, name: &str) -> "
+"SerializeStructProperty\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:32
+msgid ""
+"// TODO,\n"
+"    // How should we finish this struct? This depends on where it appears:\n"
+"    // - At the root level: return `Serializer`\n"
+"    // - As a property inside another struct: return `SerializeStruct`\n"
+"    // - As a value inside a list: return `SerializeList`\n"
+"    //\n"
+"    // fn finish(self) -> ???\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:42
+msgid ""
+"// TODO, implement:\n"
+"    //\n"
+"    // fn serialize_string(self, value: &str) -> SerializeStruct\n"
+"    // fn serialize_struct(self, name: &str) -> SerializeStruct\n"
+"    // fn serialize_list(self) -> SerializeList\n"
+"    // fn finish(self) -> SerializeStruct\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:51
+msgid ""
+"// TODO, implement:\n"
+"    //\n"
+"    // fn serialize_string(mut self, value: &str) -> Self\n"
+"    // fn serialize_struct(mut self, value: &str) -> SerializeStruct\n"
+"    // fn serialize_list(mut self) -> SerializeList\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:57
+msgid ""
+"// TODO:\n"
+"    // Like `SerializeStruct::finish`, the return type depends on nesting.\n"
+"    //\n"
+"    // fn finish(mut self) -> ???\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:64
+msgid "Diagram of valid transitions:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:82
+msgid ""
+"Building on our previous serializer, we now want to support **nested "
+"structures** and **lists**."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:85
+msgid ""
+"However, this introduces both **duplication** and **structural complexity**."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:87
+msgid ""
+"Even more critically, we now hit a **type system limitation**: we cannot "
+"cleanly express what `finish()` should return without duplicating variants "
+"for every nesting context (e.g. root, struct, list)."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:91
+msgid "From the diagram of valid transitions, we can observe:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:92
+msgid "The transitions are recursive"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:93
+msgid "The return types depend on _where_ a substructure or list appears"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:94
+msgid "Each context requires a return path to its parent"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:96
+msgid ""
+"With only concrete types, this becomes unmanageable. Our current approach "
+"leads to an explosion of types and manual wiring."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-advanced.md:99
+msgid ""
+"In the next chapter, we’ll see how **generics** let us model recursive flows "
+"with less boilerplate, while still enforcing valid operations at compile "
+"time."
+msgstr ""

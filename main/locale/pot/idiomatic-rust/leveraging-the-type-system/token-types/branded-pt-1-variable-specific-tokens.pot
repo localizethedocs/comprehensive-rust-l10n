@@ -1,0 +1,118 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:6
+msgid "Variable-Specific Tokens (Branding 1/4)"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:8
+msgid "What if we want to tie a token to a specific variable?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:11
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:31
+msgid "// Works fine!\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:33
+msgid ""
+"// let data_2 = Bytes { bytes: vec![0, 1] };\n"
+"        // data_2.get_proven(&token_1); // Panics! Can we prevent this?\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:41
+msgid ""
+"What if we want to tie a token to a _specific variable_ in our code? Can we "
+"do this in Rust's type system?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:44
+msgid ""
+"Motivation: We want to have a Token Type that represents a known, valid "
+"index into a byte array."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:47
+msgid ""
+"Once we have these proven indexes we would be able to avoid bounds checks "
+"entirely, as the tokens would act as the _proof of an existing index_."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:50
+msgid ""
+"Since the index is known to be valid, `get_proven()` can skip the bounds "
+"check."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:53
+msgid ""
+"In this example there's nothing stopping the proven index of one array being "
+"used on a different array. If an index is out of bounds in this case, it is "
+"undefined behavior."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:57
+msgid "Demonstrate: Uncomment the `data_2.get_proven(&token_1);` line."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:59
+msgid ""
+"The code here panics! We want to prevent this \"crossover\" of token types "
+"for indexes at compile time."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:62
+msgid "Ask: How might we try to do this?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:64
+msgid ""
+"Expect students to not reach a good implementation from this, but be willing "
+"to experiment and follow through on suggestions."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:67
+msgid "Ask: What are the alternatives, why are they not good enough?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:69
+msgid ""
+"Expect runtime checking of index bounds, especially as both `Vec::get` and "
+"`Bytes::get_index` already uses runtime checking."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:72
+msgid ""
+"Runtime bounds checking does not prevent the erroneous crossover in the "
+"first place, it only guarantees a panic."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:75
+msgid ""
+"The kind of token-association we will be doing here is called Branding. This "
+"is an advanced technique that expands applicability of token types to more "
+"API designs."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-01-motivation.md:79
+msgid ""
+"[`GhostCell`](https://plv.mpi-sws.org/rustbelt/ghostcell/paper.pdf) is a "
+"prominent user of this, later slides will touch on it."
+msgstr ""

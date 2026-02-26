@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/std-traits.md:6
+msgid "Standard Library Traits"
+msgstr ""
+
+#: src/std-traits.md:8
+msgid "This segment should take about 1 hour. It contains:"
+msgstr ""
+
+#: src/std-traits.md:10
+msgid "Slide"
+msgstr ""
+
+#: src/std-traits.md:10
+msgid "Duration"
+msgstr ""
+
+#: src/std-traits.md:12
+msgid "Comparisons"
+msgstr ""
+
+#: src/std-traits.md:12 src/std-traits.md:13 src/std-traits.md:14
+#: src/std-traits.md:15 src/std-traits.md:16 src/std-traits.md:17
+msgid "5 minutes"
+msgstr ""
+
+#: src/std-traits.md:13
+msgid "Operators"
+msgstr ""
+
+#: src/std-traits.md:14
+msgid "From and Into"
+msgstr ""
+
+#: src/std-traits.md:15
+msgid "Casting"
+msgstr ""
+
+#: src/std-traits.md:16
+msgid "Read and Write"
+msgstr ""
+
+#: src/std-traits.md:17
+msgid "Default, struct update syntax"
+msgstr ""
+
+#: src/std-traits.md:18
+msgid "Exercise: ROT13"
+msgstr ""
+
+#: src/std-traits.md:18
+msgid "30 minutes"
+msgstr ""
+
+#: src/std-traits.md:23
+msgid ""
+"As with the standard library types, spend time reviewing the documentation "
+"for each trait."
+msgstr ""
+
+#: src/std-traits.md:26
+msgid "This section is long. Take a break midway through."
+msgstr ""

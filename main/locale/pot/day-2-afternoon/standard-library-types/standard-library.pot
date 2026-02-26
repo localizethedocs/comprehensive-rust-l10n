@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/std-types/std.md:6
+msgid "Standard Library"
+msgstr ""
+
+#: src/std-types/std.md:8
+msgid ""
+"Rust comes with a standard library that helps establish a set of common "
+"types used by Rust libraries and programs. This way, two libraries can work "
+"together smoothly because they both use the same `String` type."
+msgstr ""
+
+#: src/std-types/std.md:12
+msgid ""
+"In fact, Rust contains several layers of the Standard Library: `core`, "
+"`alloc` and `std`."
+msgstr ""
+
+#: src/std-types/std.md:15
+msgid ""
+"`core` includes the most basic types and functions that don't depend on "
+"`libc`, allocator or even the presence of an operating system."
+msgstr ""
+
+#: src/std-types/std.md:17
+msgid ""
+"`alloc` includes types that require a global heap allocator, such as `Vec`, "
+"`Box` and `Arc`."
+msgstr ""
+
+#: src/std-types/std.md:19
+msgid ""
+"Embedded Rust applications typically only use `core`, and sometimes `alloc`."
+msgstr ""

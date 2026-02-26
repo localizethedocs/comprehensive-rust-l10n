@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/introduction/impact-on-workflow.md:6
+msgid "Impact on workflow"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/impact-on-workflow.md:8
+msgid "While writing code"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/impact-on-workflow.md:10
+msgid ""
+"Verify that you understand the preconditions of any `unsafe` functions/traits"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/impact-on-workflow.md:11
+msgid "Check that the preconditions are satisfied"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/impact-on-workflow.md:12
+msgid "Document your reasoning in safety comments"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/impact-on-workflow.md:14
+msgid "Enhanced code review"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/impact-on-workflow.md:16
+msgid "Self-review → peer reviewer → unsafe Rust expert (when needed)"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/impact-on-workflow.md:17
+msgid "Escalate to a person who is comfortable with your code and reasoning"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/impact-on-workflow.md:22
+msgid ""
+"“The unsafe keyword places more responsibility on the programmer; therefore "
+"it requires a stronger development workflow."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/impact-on-workflow.md:25
+msgid ""
+"“This class assumes a specific software development workflow where code "
+"review is mandatory, and where the author and primary reviewer have access "
+"to an unsafe Rust expert.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/impact-on-workflow.md:29
+msgid ""
+"“The author and primary reviewer will verify simple unsafe Rust code "
+"themselves, and punt to an unsafe expert when necessary.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/impact-on-workflow.md:32
+msgid ""
+"“There are only a few unsafe Rust experts, and they are very busy, so we "
+"need to optimally use their time.”"
+msgstr ""

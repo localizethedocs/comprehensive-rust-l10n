@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/memory-management.md:6
+msgid "Memory Management"
+msgstr ""
+
+#: src/memory-management.md:8
+msgid "This segment should take about 1 hour. It contains:"
+msgstr ""
+
+#: src/memory-management.md:10
+msgid "Slide"
+msgstr ""
+
+#: src/memory-management.md:10
+msgid "Duration"
+msgstr ""
+
+#: src/memory-management.md:12
+msgid "Review of Program Memory"
+msgstr ""
+
+#: src/memory-management.md:12 src/memory-management.md:14
+#: src/memory-management.md:15 src/memory-management.md:17
+msgid "5 minutes"
+msgstr ""
+
+#: src/memory-management.md:13
+msgid "Approaches to Memory Management"
+msgstr ""
+
+#: src/memory-management.md:13 src/memory-management.md:18
+msgid "10 minutes"
+msgstr ""
+
+#: src/memory-management.md:14
+msgid "Ownership"
+msgstr ""
+
+#: src/memory-management.md:15
+msgid "Move Semantics"
+msgstr ""
+
+#: src/memory-management.md:16
+msgid "Clone"
+msgstr ""
+
+#: src/memory-management.md:16
+msgid "2 minutes"
+msgstr ""
+
+#: src/memory-management.md:17
+msgid "Copy Types"
+msgstr ""
+
+#: src/memory-management.md:18
+msgid "Drop"
+msgstr ""
+
+#: src/memory-management.md:19
+msgid "Exercise: Builder Type"
+msgstr ""
+
+#: src/memory-management.md:19
+msgid "20 minutes"
+msgstr ""

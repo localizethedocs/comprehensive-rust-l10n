@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/aidl/example-service/interface.md:6
+msgid "AIDL Interfaces"
+msgstr ""
+
+#: src/android/aidl/example-service/interface.md:8
+msgid "You declare the API of your service using an AIDL interface:"
+msgstr ""
+
+#: src/android/aidl/example-service/interface.md:10
+msgid ""
+"_birthday_service/aidl/com/example/birthdayservice/IBirthdayService.aidl_:"
+msgstr ""
+
+#: src/android/aidl/example-service/interface.md:14
+msgid "/** Birthday service interface. */"
+msgstr ""
+
+#: src/android/aidl/example-service/interface.md:17
+msgid "/** Generate a Happy Birthday message. */"
+msgstr ""
+
+#: src/android/aidl/example-service/interface.md:22
+msgid "_birthday_service/aidl/Android.bp_:"
+msgstr ""
+
+#: src/android/aidl/example-service/interface.md:26
+msgid "\"com.example.birthdayservice\""
+msgstr ""
+
+#: src/android/aidl/example-service/interface.md:27
+msgid "\"com/example/birthdayservice/*.aidl\""
+msgstr ""
+
+#: src/android/aidl/example-service/interface.md:30
+msgid "// Rust is not enabled by default\n"
+msgstr ""
+
+#: src/android/aidl/example-service/interface.md:39
+msgid ""
+"Note that the directory structure under the `aidl/` directory needs to match "
+"the package name used in the AIDL file, i.e. the package is `com.example."
+"birthdayservice` and the file is at `aidl/com/example/IBirthdayService.aidl`."
+msgstr ""

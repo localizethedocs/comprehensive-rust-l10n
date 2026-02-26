@@ -1,0 +1,69 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md:6
+msgid "Parse, Don't Validate"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md:8
+msgid "The newtype pattern can be leveraged to enforce _invariants_."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md:11
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md:24
+msgid "// Other validation checks...\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md:40
+msgid ""
+"The newtype pattern, combined with Rust's module and visibility system, can "
+"be used to _guarantee_ that instances of a given type satisfy a set of "
+"invariants."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md:44
+msgid ""
+"In the example above, the raw `String` stored inside the `Username` struct "
+"can't be accessed directly from other modules or crates, since it's not "
+"marked as `pub` or `pub(in ...)`. Consumers of the `Username` type are "
+"forced to use the `new` method to create instances. In turn, `new` performs "
+"validation, thus ensuring that all instances of `Username` satisfy those "
+"checks."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md:50
+msgid ""
+"The `as_str` method allows consumers to access the raw string representation "
+"(e.g., to store it in a database). However, consumers can't modify the "
+"underlying value since `&str`, the returned type, restricts them to read-"
+"only access."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md:55
+msgid "Type-level invariants have second-order benefits."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/parse-don-t-validate.md:57
+msgid ""
+"The input is validated once, at the boundary, and the rest of the program "
+"can rely on the invariants being upheld. We can avoid redundant validation "
+"and \"defensive programming\" checks throughout the program, reducing noise "
+"and improving performance."
+msgstr ""

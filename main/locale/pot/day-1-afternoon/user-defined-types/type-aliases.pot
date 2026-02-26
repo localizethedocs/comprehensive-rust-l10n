@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/user-defined-types/aliases.md:6
+msgid "Type Aliases"
+msgstr ""
+
+#: src/user-defined-types/aliases.md:8
+msgid ""
+"A type alias creates a name for another type. The two types can be used "
+"interchangeably."
+msgstr ""
+
+#: src/user-defined-types/aliases.md:12
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/user-defined-types/aliases.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/user-defined-types/aliases.md:21
+msgid "// Aliases are more useful with long, complex types:\n"
+msgstr ""
+
+#: src/user-defined-types/aliases.md:31
+msgid ""
+"A [newtype](tuple-structs.html) is often a better alternative since it "
+"creates a distinct type. Prefer `struct InventoryCount(usize)` to `type "
+"InventoryCount = usize`."
+msgstr ""
+
+#: src/user-defined-types/aliases.md:35
+msgid "C programmers will recognize this as similar to a `typedef`."
+msgstr ""

@@ -1,0 +1,47 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/adding-third-party-crates/resolving-problems/build-scripts-which-generate-code.md:6
+msgid "Build Scripts Which Generate Code"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems/build-scripts-which-generate-code.md:8
+msgid ""
+"If `ninja` complains about missing files, check the `build.rs` to see if it "
+"writes source code files."
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems/build-scripts-which-generate-code.md:11
+msgid ""
+"If so, modify [`gnrt_config.toml`](../configuring-gnrt-config-toml.md) to "
+"add `build-script-outputs` to the crate. If this is a transitive dependency, "
+"that is, one on which Chromium code should not directly depend, also add "
+"`allow-first-party-usage=false`. There are several examples already in that "
+"file:"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems/build-scripts-which-generate-code.md:16
+msgid ""
+"```toml\n"
+"[crate.unicode-linebreak]\n"
+"allow-first-party-usage = false\n"
+"build-script-outputs = [\"tables.rs\"]\n"
+"```"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems/build-scripts-which-generate-code.md:22
+msgid ""
+"Now rerun [`gnrt.py -- gen`](../generating-gn-build-rules.md) to regenerate "
+"`BUILD.gn` files to inform ninja that this particular output file is input "
+"to subsequent build steps."
+msgstr ""

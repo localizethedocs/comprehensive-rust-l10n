@@ -1,0 +1,217 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/memory-management/move.md:6
+msgid "Move Semantics"
+msgstr ""
+
+#: src/memory-management/move.md:8
+msgid "An assignment will transfer _ownership_ between variables:"
+msgstr ""
+
+#: src/memory-management/move.md:11 src/memory-management/move.md:70
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/memory-management/move.md:12 src/memory-management/move.md:71
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/memory-management/move.md:15
+msgid "\"Hello!\""
+msgstr ""
+
+#: src/memory-management/move.md:18
+msgid "// dbg!(s1);\n"
+msgstr ""
+
+#: src/memory-management/move.md:22
+msgid "The assignment of `s1` to `s2` transfers ownership."
+msgstr ""
+
+#: src/memory-management/move.md:23
+msgid "When `s1` goes out of scope, nothing happens: it does not own anything."
+msgstr ""
+
+#: src/memory-management/move.md:24
+msgid "When `s2` goes out of scope, the string data is freed."
+msgstr ""
+
+#: src/memory-management/move.md:26
+msgid "Before move to `s2`:"
+msgstr ""
+
+#: src/memory-management/move.md:43
+msgid "After move to `s2`:"
+msgstr ""
+
+#: src/memory-management/move.md:45
+msgid ""
+"```bob\n"
+" Stack                             Heap\n"
+".- - - - - - - - - - - - - -.     .- - - - - - - - - - - - - - - - - - -.\n"
+":                           :     :                                     :\n"
+":    s1 \"(inaccessible)\"    :     :                                     :\n"
+":   +-----------+-------+   :     :   +----+----+----+----+----+----+   :\n"
+":   | ptr       |   o---+---+--+--+-->| H  | e  | l  | l  | o  | !  |   :\n"
+":   | len       |     6 |   :  |  :   +----+----+----+----+----+----+   :\n"
+":   | capacity  |     6 |   :  |  :                                     :\n"
+":   +-----------+-------+   :  |  :                                     :\n"
+":                           :  |  `- - - - - - - - - - - - - - - - - - -'\n"
+":    s2                     :  |\n"
+":   +-----------+-------+   :  |\n"
+":   | ptr       |   o---+---+--'\n"
+":   | len       |     6 |   :\n"
+":   | capacity  |     6 |   :\n"
+":   +-----------+-------+   :\n"
+":                           :\n"
+"`- - - - - - - - - - - - - -'\n"
+"```"
+msgstr ""
+
+#: src/memory-management/move.md:66
+msgid ""
+"When you pass a value to a function, the value is assigned to the function "
+"parameter. This transfers ownership:"
+msgstr ""
+
+#: src/memory-management/move.md:74
+msgid "\"Hello {name}\""
+msgstr ""
+
+#: src/memory-management/move.md:78
+msgid "\"Alice\""
+msgstr ""
+
+#: src/memory-management/move.md:80
+msgid "// say_hello(name);\n"
+msgstr ""
+
+#: src/memory-management/move.md:87
+msgid ""
+"Mention that this is the opposite of the defaults in C++, which copies by "
+"value unless you use `std::move` (and the move constructor is defined!)."
+msgstr ""
+
+#: src/memory-management/move.md:90
+msgid ""
+"It is only the ownership that moves. Whether any machine code is generated "
+"to manipulate the data itself is a matter of optimization, and such copies "
+"are aggressively optimized away."
+msgstr ""
+
+#: src/memory-management/move.md:94
+msgid ""
+"Simple values (such as integers) can be marked `Copy` (see later slides)."
+msgstr ""
+
+#: src/memory-management/move.md:96
+msgid "In Rust, clones are explicit (by using `clone`)."
+msgstr ""
+
+#: src/memory-management/move.md:98
+msgid "In the `say_hello` example:"
+msgstr ""
+
+#: src/memory-management/move.md:100
+msgid ""
+"With the first call to `say_hello`, `main` gives up ownership of `name`. "
+"Afterwards, `name` cannot be used anymore within `main`."
+msgstr ""
+
+#: src/memory-management/move.md:102
+msgid ""
+"The heap memory allocated for `name` will be freed at the end of the "
+"`say_hello` function."
+msgstr ""
+
+#: src/memory-management/move.md:104
+msgid ""
+"`main` can retain ownership if it passes `name` as a reference (`&name`) and "
+"if `say_hello` accepts a reference as a parameter."
+msgstr ""
+
+#: src/memory-management/move.md:106
+msgid ""
+"Alternatively, `main` can pass a clone of `name` in the first call (`name."
+"clone()`)."
+msgstr ""
+
+#: src/memory-management/move.md:108
+msgid ""
+"Rust makes it harder than C++ to inadvertently create copies by making move "
+"semantics the default, and by forcing programmers to make clones explicit."
+msgstr ""
+
+#: src/memory-management/move.md:111
+msgid "More to Explore"
+msgstr ""
+
+#: src/memory-management/move.md:113
+msgid "Defensive Copies in Modern C++"
+msgstr ""
+
+#: src/memory-management/move.md:115
+msgid "Modern C++ solves this differently:"
+msgstr ""
+
+#: src/memory-management/move.md:118
+msgid "\"Cpp\""
+msgstr ""
+
+#: src/memory-management/move.md:119
+msgid "// Duplicate the data in s1.\n"
+msgstr ""
+
+#: src/memory-management/move.md:122
+msgid ""
+"The heap data from `s1` is duplicated and `s2` gets its own independent copy."
+msgstr ""
+
+#: src/memory-management/move.md:123
+msgid "When `s1` and `s2` go out of scope, they each free their own memory."
+msgstr ""
+
+#: src/memory-management/move.md:125
+msgid "Before copy-assignment:"
+msgstr ""
+
+#: src/memory-management/move.md:141
+msgid "After copy-assignment:"
+msgstr ""
+
+#: src/memory-management/move.md:164
+msgid "Key points:"
+msgstr ""
+
+#: src/memory-management/move.md:166
+msgid ""
+"C++ has made a slightly different choice than Rust. Because `=` copies data, "
+"the string data has to be cloned. Otherwise we would get a double-free when "
+"either string goes out of scope."
+msgstr ""
+
+#: src/memory-management/move.md:170
+msgid ""
+"C++ also has [`std::move`](https://en.cppreference.com/w/cpp/utility/move), "
+"which is used to indicate when a value may be moved from. If the example had "
+"been `s2 = std::move(s1)`, no heap allocation would take place. After the "
+"move, `s1` would be in a valid but unspecified state. Unlike Rust, the "
+"programmer is allowed to keep using `s1`."
+msgstr ""
+
+#: src/memory-management/move.md:175
+msgid ""
+"Unlike Rust, `=` in C++ can run arbitrary code as determined by the type "
+"that is being copied or moved."
+msgstr ""

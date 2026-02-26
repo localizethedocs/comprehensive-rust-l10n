@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/async-pitfalls/blocking-executor.md:6
+msgid "Blocking the executor"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/blocking-executor.md:8
+msgid ""
+"Most async runtimes only allow IO tasks to run concurrently. This means that "
+"CPU blocking tasks will block the executor and prevent other tasks from "
+"being executed. An easy workaround is to use async equivalent methods where "
+"possible."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/blocking-executor.md:13
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/blocking-executor.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/blocking-executor.md:22
+msgid "\"future {id} slept for {duration_ms}ms, finished after {}ms\""
+msgstr ""
+
+#: src/concurrency/async-pitfalls/blocking-executor.md:27
+msgid "\"current_thread\""
+msgstr ""
+
+#: src/concurrency/async-pitfalls/blocking-executor.md:38
+msgid ""
+"Run the code and see that the sleeps happen consecutively rather than "
+"concurrently."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/blocking-executor.md:41
+msgid ""
+"The `\"current_thread\"` flavor puts all tasks on a single thread. This "
+"makes the effect more obvious, but the bug is still present in the multi-"
+"threaded flavor."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/blocking-executor.md:45
+msgid ""
+"Switch the `std::thread::sleep` to `tokio::time::sleep` and await its result."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/blocking-executor.md:47
+msgid ""
+"Another fix would be to `tokio::task::spawn_blocking` which spawns an actual "
+"thread and transforms its handle into a future without blocking the executor."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/blocking-executor.md:50
+msgid ""
+"You should not think of tasks as OS threads. They do not map 1 to 1 and "
+"executors will allow multiple tasks to run on a single OS thread. This is "
+"particularly problematic when interacting with other libraries via FFI, "
+"where that library might depend on thread-local storage or map to specific "
+"OS threads (e.g., CUDA). Prefer `tokio::task::spawn_blocking` in such "
+"situations."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/blocking-executor.md:56
+msgid ""
+"Use sync mutexes with care. Holding a mutex over an `.await` may cause "
+"another task to block, and that task may be running on the same thread."
+msgstr ""

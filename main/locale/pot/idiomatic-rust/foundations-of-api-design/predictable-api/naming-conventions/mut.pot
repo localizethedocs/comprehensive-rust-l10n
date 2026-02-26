@@ -1,0 +1,41 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/mut.md:6
+msgid "`[method]_mut`: Mutable reference access"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/mut.md:8
+msgid "Suffix for access-style methods."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/mut.md:11
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/mut.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/mut.md:15
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/mut.md:20
+msgid "// Simplified\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/mut.md:32
+msgid "Suffix that signifies the method gives access to a mutable reference."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/mut.md:34
+msgid "Requires mutable access to the value you're calling this method on."
+msgstr ""

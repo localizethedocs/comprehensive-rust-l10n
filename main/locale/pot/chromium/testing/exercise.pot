@@ -1,0 +1,43 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/exercises/chromium/testing.md:6
+msgid "Testing exercise"
+msgstr ""
+
+#: src/exercises/chromium/testing.md:8
+msgid "Time for another exercise!"
+msgstr ""
+
+#: src/exercises/chromium/testing.md:10
+msgid "In your Chromium build:"
+msgstr ""
+
+#: src/exercises/chromium/testing.md:12
+msgid ""
+"Add a testable function next to `hello_from_rust`. Some suggestions: adding "
+"two integers received as arguments, computing the nth Fibonacci number, "
+"summing integers in a slice, etc."
+msgstr ""
+
+#: src/exercises/chromium/testing.md:15
+msgid "Add a separate `..._unittest.rs` file with a test for the new function."
+msgstr ""
+
+#: src/exercises/chromium/testing.md:16
+msgid "Add the new tests to `BUILD.gn`."
+msgstr ""
+
+#: src/exercises/chromium/testing.md:17
+msgid "Build the tests, run them, and verify that the new test works."
+msgstr ""

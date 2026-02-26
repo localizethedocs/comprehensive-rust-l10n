@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/rules-of-the-game.md:6
+msgid "Rules of the game"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game.md:10
+msgid ""
+"“We've seen many examples of code that has problems in the class, but we "
+"lack consistent terminology."
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game.md:13
+msgid ""
+"“The goal of the next section is to introduce some terms that describe many "
+"of the concepts that we have been thinking about."
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game.md:16
+msgid "undefined behavior"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game.md:17
+msgid "sound"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game.md:18
+msgid "unsound"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game.md:20
+msgid ""
+"“Given that many safety preconditions are semantic rather than syntactic, "
+"it's important to use a shared vocabulary. That way we can agree on "
+"semantics."
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game.md:23
+msgid ""
+"“The overarching goal is to develop a mental framework of what soundness is "
+"and ensure that Rust code that contains unsafe remains sound.”"
+msgstr ""

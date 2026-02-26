@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-trait.md:6
+msgid "Defining an unsafe trait"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-trait.md:9
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-trait.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-trait.md:11
+msgid "/// Indicates that the type uses 32 bits of memory.\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-trait.md:18
+msgid "“Now let’s define our own unsafe trait.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-trait.md:20
+msgid "Add the unsafe keyword and compile the code."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-trait.md:22
+msgid ""
+"“If the requirements of the trait are semantic, then your trait may not need "
+"any methods at all. The documentation is essential, however.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-trait.md:25
+msgid ""
+"“Traits without methods are called marker traits. When implementing them for "
+"types, you are adding information to the type system. You have now given the "
+"compiler the ability to talk about types that meet the requirements "
+"described in the documentation.”"
+msgstr ""

@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/setup.md:6
+msgid "Setting Up"
+msgstr ""
+
+#: src/unsafe-deep-dive/setup.md:8
+msgid "Local Rust installation"
+msgstr ""
+
+#: src/unsafe-deep-dive/setup.md:10
+msgid ""
+"You should have a Rust compiler installed that supports the 2024 edition of "
+"the language, which is any version of rustc higher than 1.84."
+msgstr ""
+
+#: src/unsafe-deep-dive/setup.md:28
+msgid "(Optional) Create a local instance of the course"
+msgstr ""
+
+#: src/unsafe-deep-dive/setup.md:30
+msgid ""
+"```console\n"
+"$ git clone --depth=1 https://github.com/google/comprehensive-rust.git\n"
+"Cloning into 'comprehensive-rust'...\n"
+"...\n"
+"$ cd comprehensive-rust\n"
+"$ cargo install-tools\n"
+"...\n"
+"$ cargo serve # then open http://127.0.0.1:3000/ in a browser\n"
+"```"
+msgstr ""
+
+#: src/unsafe-deep-dive/setup.md:43
+msgid ""
+"Ask everyone to confirm that everyone is able to execute `rustc` with a "
+"version newer than 1.87."
+msgstr ""
+
+#: src/unsafe-deep-dive/setup.md:46
+msgid ""
+"For those people who do not, tell them that we'll resolve that in the break."
+msgstr ""
