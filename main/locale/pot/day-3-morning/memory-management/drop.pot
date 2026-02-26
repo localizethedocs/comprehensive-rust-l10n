@@ -1,0 +1,113 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/memory-management/drop.md:6
+msgid "The `Drop` Trait"
+msgstr ""
+
+#: src/memory-management/drop.md:8
+msgid ""
+"Values which implement [`Drop`](https://doc.rust-lang.org/std/ops/trait.Drop."
+"html) can specify code to run when they go out of scope:"
+msgstr ""
+
+#: src/memory-management/drop.md:12
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/memory-management/drop.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/memory-management/drop.md:21
+msgid "\"Dropping {}\""
+msgstr ""
+
+#: src/memory-management/drop.md:26
+msgid "\"a\""
+msgstr ""
+
+#: src/memory-management/drop.md:28
+msgid "\"b\""
+msgstr ""
+
+#: src/memory-management/drop.md:30
+msgid "\"c\""
+msgstr ""
+
+#: src/memory-management/drop.md:31
+msgid "\"d\""
+msgstr ""
+
+#: src/memory-management/drop.md:32
+msgid "\"Exiting innermost block\""
+msgstr ""
+
+#: src/memory-management/drop.md:34
+msgid "\"Exiting next block\""
+msgstr ""
+
+#: src/memory-management/drop.md:37
+msgid "\"Exiting main\""
+msgstr ""
+
+#: src/memory-management/drop.md:44
+msgid "Note that `std::mem::drop` is not the same as `std::ops::Drop::drop`."
+msgstr ""
+
+#: src/memory-management/drop.md:45
+msgid "Values are automatically dropped when they go out of scope."
+msgstr ""
+
+#: src/memory-management/drop.md:46
+msgid ""
+"When a value is dropped, if it implements `std::ops::Drop` then its `Drop::"
+"drop` implementation will be called."
+msgstr ""
+
+#: src/memory-management/drop.md:48
+msgid ""
+"All its fields will then be dropped too, whether or not it implements `Drop`."
+msgstr ""
+
+#: src/memory-management/drop.md:49
+msgid ""
+"`std::mem::drop` is just an empty function that takes any value. The "
+"significance is that it takes ownership of the value, so at the end of its "
+"scope it gets dropped. This makes it a convenient way to explicitly drop "
+"values earlier than they would otherwise go out of scope."
+msgstr ""
+
+#: src/memory-management/drop.md:53
+msgid ""
+"This is useful for objects that do some work on `drop`: releasing locks, "
+"closing files, etc."
+msgstr ""
+
+#: src/memory-management/drop.md:56
+msgid "Discussion points:"
+msgstr ""
+
+#: src/memory-management/drop.md:58
+msgid "Why doesn't `Drop::drop` take `self`?"
+msgstr ""
+
+#: src/memory-management/drop.md:59
+msgid ""
+"Short-answer: If it did, `std::mem::drop` would be called at the end of the "
+"block, resulting in another call to `Drop::drop`, and a stack overflow!"
+msgstr ""
+
+#: src/memory-management/drop.md:61
+msgid "Try replacing `drop(a)` with `a.drop()`."
+msgstr ""

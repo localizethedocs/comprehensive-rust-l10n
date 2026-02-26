@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md:6
+msgid "`with` as constructor"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md:8
+msgid ""
+"`with` as a constructor sets one value among a type while using default "
+"values for the rest."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md:11
+msgid "`with` as in \"`<Type>` with specific setting.\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md:14
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md:15
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md:18
+msgid "// Initializes memory for at least N elements, len is still 0.\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md:25
+msgid ""
+"`with` can appear as a constructor prefix, most commonly when initializing "
+"heap memory for container types."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md:28
+msgid ""
+"In this case, it's distinct from `new` constructors because it specifies the "
+"value for something that is not usually cared about by API users."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md:31
+msgid "Ask the class: Why not `from_capacity`?"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/with-constructor.md:33
+msgid ""
+"Answer: `Vec::with_capacity` as a method call scans well as creating a \"Vec "
+"with capacity\". Consider how `Vec::new_capacity` or `Vec::from_capacity` "
+"scan when written down, they do not communicate what's going on well."
+msgstr ""

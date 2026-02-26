@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/aidl/types/objects.md:6
+msgid "Sending Objects"
+msgstr ""
+
+#: src/android/aidl/types/objects.md:8
+msgid ""
+"AIDL objects can be sent either as a concrete AIDL type or as the type-"
+"erased `IBinder` interface:"
+msgstr ""
+
+#: src/android/aidl/types/objects.md:11
+msgid ""
+"_birthday_service/aidl/com/example/birthdayservice/IBirthdayInfoProvider."
+"aidl_:"
+msgstr ""
+
+#: src/android/aidl/types/objects.md:22
+msgid ""
+"_birthday_service/aidl/com/example/birthdayservice/IBirthdayService.aidl_:"
+msgstr ""
+
+#: src/android/aidl/types/objects.md:28
+msgid "/** The same thing, but using a binder object. */"
+msgstr ""
+
+#: src/android/aidl/types/objects.md:31
+msgid "/** The same thing, but using `IBinder`. */"
+msgstr ""
+
+#: src/android/aidl/types/objects.md:36
+msgid "_birthday_service/src/client.rs_:"
+msgstr ""
+
+#: src/android/aidl/types/objects.md:39
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/android/aidl/types/objects.md:40
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/aidl/types/objects.md:41
+msgid "/// Rust struct implementing the `IBirthdayInfoProvider` interface.\n"
+msgstr ""
+
+#: src/android/aidl/types/objects.md:62
+msgid "\"Failed to connect to BirthdayService\""
+msgstr ""
+
+#: src/android/aidl/types/objects.md:64
+msgid "// Create a binder object for the `IBirthdayInfoProvider` interface.\n"
+msgstr ""
+
+#: src/android/aidl/types/objects.md:70
+msgid "// Send the binder object to the service.\n"
+msgstr ""
+
+#: src/android/aidl/types/objects.md:73
+msgid ""
+"// Perform the same operation but passing the provider as an `SpIBinder`.\n"
+msgstr ""
+
+#: src/android/aidl/types/objects.md:80
+msgid ""
+"Note the usage of `BnBirthdayInfoProvider`. This serves the same purpose as "
+"`BnBirthdayService` that we saw previously."
+msgstr ""

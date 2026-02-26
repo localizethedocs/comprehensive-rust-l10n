@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/iterators/iterator.md:6
+msgid "`Iterator` Trait"
+msgstr ""
+
+#: src/iterators/iterator.md:8
+msgid ""
+"The [`Iterator`](https://doc.rust-lang.org/std/iter/trait.Iterator.html) "
+"trait defines how an object can be used to produce a sequence of values. For "
+"example, if we wanted to create an iterator that can produce the elements of "
+"a slice it might look something like this:"
+msgstr ""
+
+#: src/iterators/iterator.md:13
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/iterators/iterator.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/iterators/iterator.md:47
+msgid ""
+"The `SliceIter` example implements the same logic as the C-style `for` loop "
+"demonstrated on the last slide."
+msgstr ""
+
+#: src/iterators/iterator.md:50
+msgid ""
+"Point out to the students that iterators are lazy: Creating the iterator "
+"just initializes the struct but does not otherwise do any work. No work "
+"happens until the `next` method is called."
+msgstr ""
+
+#: src/iterators/iterator.md:54
+msgid ""
+"Iterators don't need to be finite! It's entirely valid to have an iterator "
+"that will produce values forever. For example, a half open range like `0..` "
+"will keep going until integer overflow occurs."
+msgstr ""
+
+#: src/iterators/iterator.md:58
+msgid "More to Explore"
+msgstr ""
+
+#: src/iterators/iterator.md:60
+msgid ""
+"The \"real\" version of `SliceIter` is the [`slice::Iter`](https://doc.rust-"
+"lang.org/stable/std/slice/struct.Iter.html) type in the standard library, "
+"however the real version uses pointers under the hood instead of an index in "
+"order to eliminate bounds checks."
+msgstr ""
+
+#: src/iterators/iterator.md:64
+msgid ""
+"The `SliceIter` example is a good example of a struct that contains a "
+"reference and therefore uses lifetime annotations."
+msgstr ""
+
+#: src/iterators/iterator.md:67
+msgid ""
+"You can also demonstrate adding a generic parameter to `SliceIter` to allow "
+"it to work with any kind of slice (not just `&[i32]`)."
+msgstr ""

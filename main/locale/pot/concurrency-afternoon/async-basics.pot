@@ -1,0 +1,57 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/async.md:6
+msgid "Async Basics"
+msgstr ""
+
+#: src/concurrency/async.md:8
+msgid "This segment should take about 40 minutes. It contains:"
+msgstr ""
+
+#: src/concurrency/async.md:10
+msgid "Slide"
+msgstr ""
+
+#: src/concurrency/async.md:10
+msgid "Duration"
+msgstr ""
+
+#: src/concurrency/async.md:12
+msgid "async/await"
+msgstr ""
+
+#: src/concurrency/async.md:12 src/concurrency/async.md:14
+#: src/concurrency/async.md:15 src/concurrency/async.md:16
+msgid "10 minutes"
+msgstr ""
+
+#: src/concurrency/async.md:13
+msgid "Futures"
+msgstr ""
+
+#: src/concurrency/async.md:13
+msgid "4 minutes"
+msgstr ""
+
+#: src/concurrency/async.md:14
+msgid "State Machine"
+msgstr ""
+
+#: src/concurrency/async.md:15
+msgid "Runtimes"
+msgstr ""
+
+#: src/concurrency/async.md:16
+msgid "Tasks"
+msgstr ""

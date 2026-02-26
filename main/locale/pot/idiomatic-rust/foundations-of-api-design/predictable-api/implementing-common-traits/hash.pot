@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:6
+msgid "Hash"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:8
+msgid "Performing a hash on a type."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:10
+msgid "Derivable: ✅"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:12
+msgid "When to implement: Almost always."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:15
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:16
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:17
+msgid ""
+"// pub trait Hash {\n"
+"//     // Required method\n"
+"//     fn hash<H>(&self, state: &mut H)\n"
+"//        where H: Hasher;\n"
+"//\n"
+"//     // Provided method\n"
+"//     fn hash_slice<H>(data: &[Self], state: &mut H)\n"
+"//        where H: Hasher,\n"
+"//              Self: Sized { ... }\n"
+"// }\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:40
+msgid "Most commonly used with data structures like `HashMap`."
+msgstr ""

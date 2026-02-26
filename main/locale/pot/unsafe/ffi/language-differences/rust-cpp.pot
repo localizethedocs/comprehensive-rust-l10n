@@ -1,0 +1,134 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:6
+msgid "Rust ↔ C++"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:8
+msgid "Concern"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:8
+msgid "Rust"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:8
+msgid "C++"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:10
+msgid "**Trivial relocatability**"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:10
+msgid "All moves are `memcpy`"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:10
+msgid "Self-referential types, move constructors can have side effects"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:11
+msgid "**Destruction safety**"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:11
+msgid "`Drop::drop()` on original location only"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:11
+msgid "Destructor may run on moved-from objects"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:12
+msgid "**Exception safety**"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:12
+msgid "Panics (abort or unwind)"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:12
+msgid "Exceptions (unwind)"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:13
+msgid "**ABI stability**"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:13
+msgid "Explicitly unstable"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:13
+msgid "Vendor-specific"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:17
+msgid ""
+"Even if it were possible to avoid interop via C, there are still some areas "
+"of the languages that impact FFI:"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:20
+msgid "_Trivial relocatability_"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:22
+msgid ""
+"Cannot safely move C++ objects on the Rust side; must pin or keep in C++ "
+"heap."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:24
+msgid ""
+"In Rust, object movement, which occurs during assignment or by being passed "
+"by value, always copies values bit by bit."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:27
+msgid ""
+"C++ allows users to define their own semantics by allowing them to overload "
+"the assignment operator and create move and copy constructors."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:30
+msgid ""
+"This impacts interop because self-referential types become natural in high-"
+"performance C++. Custom constructors can uphold safety invariants even when "
+"the object moves its position in memory."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:34
+msgid "Objects with the same semantics are impossible to define in Rust."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:36
+msgid "_Destruction safety_"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:38
+msgid ""
+"Moved-from C++ object semantics don't map; must prevent Rust from \"moving\" "
+"C++ types."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:41
+msgid "_Exception safety_"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/rust-and-cpp.md:43
+msgid ""
+"Neither can cross into the other safely; both must catch at the boundary."
+msgstr ""

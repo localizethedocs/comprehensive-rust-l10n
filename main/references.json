@@ -1,0 +1,47 @@
+{
+  "po" : 
+  {
+    "en_US" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    },
+    "zh_CN" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    },
+    "zh_TW" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    }
+  },
+  "pot" : 
+  {
+    "branch" : "main",
+    "commit" : 
+    {
+      "date" : "2026-02-24 17:44:52 +0000",
+      "hash" : "ac4a3c79ba5a726ef10dfbbfb0ec64ca8ff51da6",
+      "title" : "Reduce complexity on heterogeneous data slide (#3109)"
+    }
+  },
+  "type" : "branch",
+  "version" : "main"
+}

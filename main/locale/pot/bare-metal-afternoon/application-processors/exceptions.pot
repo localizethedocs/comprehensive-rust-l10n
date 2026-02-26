@@ -1,0 +1,55 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/aps/exceptions.md:6
+msgid "Exceptions"
+msgstr ""
+
+#: src/bare-metal/aps/exceptions.md:8
+msgid ""
+"AArch64 defines an exception vector table with 16 entries, for 4 types of "
+"exceptions (synchronous, IRQ, FIQ, SError) from 4 states (current EL with "
+"SP0, current EL with SPx, lower EL using AArch64, lower EL using AArch32). "
+"We implement this in assembly to save volatile registers to the stack before "
+"calling into Rust code:"
+msgstr ""
+
+#: src/bare-metal/aps/exceptions.md:83
+msgid "EL is exception level; all our examples this afternoon run in EL1."
+msgstr ""
+
+#: src/bare-metal/aps/exceptions.md:84
+msgid ""
+"For simplicity we aren't distinguishing between SP0 and SPx for the current "
+"EL exceptions, or between AArch32 and AArch64 for the lower EL exceptions."
+msgstr ""
+
+#: src/bare-metal/aps/exceptions.md:86
+msgid ""
+"For this example we just log the exception and power down, as we don't "
+"expect any of them to actually happen."
+msgstr ""
+
+#: src/bare-metal/aps/exceptions.md:88
+msgid ""
+"We can think of exception handlers and our main execution context more or "
+"less like different threads. [`Send` and `Sync`](../../concurrency/send-sync."
+"md) will control what we can share between them, just like with threads. For "
+"example, if we want to share some value between exception handlers and the "
+"rest of the program, and it's `Send` but not `Sync`, then we'll need to wrap "
+"it in something like a `Mutex` and put it in a static."
+msgstr ""
+
+#: src/bare-metal/aps/exceptions.md:95
+msgid "The assembly code for the exception vector:"
+msgstr ""

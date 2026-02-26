@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/pattern-matching/exercise.md:6
+msgid "Exercise: Expression Evaluation"
+msgstr ""
+
+#: src/pattern-matching/exercise.md:8
+msgid "Let's write a simple recursive evaluator for arithmetic expressions."
+msgstr ""
+
+#: src/pattern-matching/exercise.md:10
+msgid ""
+"An example of a small arithmetic expression could be `10 + 20`, which "
+"evaluates to `30`. We can represent the expression as a tree:"
+msgstr ""
+
+#: src/pattern-matching/exercise.md:25
+msgid ""
+"A bigger and more complex expression would be `(10 * 9) + ((3 - 4) * 5)`, "
+"which evaluates to `85`. We represent this as a much bigger tree:"
+msgstr ""
+
+#: src/pattern-matching/exercise.md:48
+msgid "In code, we will represent the tree with two types:"
+msgstr ""
+
+#: src/pattern-matching/exercise.md:51 src/pattern-matching/exercise.md:91
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/pattern-matching/exercise.md:52 src/pattern-matching/exercise.md:92
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/pattern-matching/exercise.md:53 src/pattern-matching/exercise.md:93
+msgid "/// An operation to perform on two subexpressions.\n"
+msgstr ""
+
+#: src/pattern-matching/exercise.md:62 src/pattern-matching/exercise.md:102
+msgid "/// An expression, in tree form.\n"
+msgstr ""
+
+#: src/pattern-matching/exercise.md:66 src/pattern-matching/exercise.md:106
+msgid "/// An operation on two subexpressions.\n"
+msgstr ""
+
+#: src/pattern-matching/exercise.md:69 src/pattern-matching/exercise.md:109
+msgid "/// A literal value\n"
+msgstr ""
+
+#: src/pattern-matching/exercise.md:74
+msgid ""
+"The `Box` type here is a smart pointer, and will be covered in detail later "
+"in the course. An expression can be \"boxed\" with `Box::new` as seen in the "
+"tests. To evaluate a boxed expression, use the deref operator (`*`) to "
+"\"unbox\" it: `eval(*boxed_expr)`."
+msgstr ""
+
+#: src/pattern-matching/exercise.md:79
+msgid ""
+"Copy and paste the code into the Rust playground, and begin implementing "
+"`eval`. The final product should pass the tests. It may be helpful to use "
+"`todo!()` and get the tests to pass one-by-one. You can also skip a test "
+"temporarily with `#[ignore]`:"
+msgstr ""

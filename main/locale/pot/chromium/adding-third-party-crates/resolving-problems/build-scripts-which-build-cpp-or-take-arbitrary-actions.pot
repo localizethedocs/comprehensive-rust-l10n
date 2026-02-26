@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/adding-third-party-crates/resolving-problems/build-scripts-which-take-arbitrary-actions.md:6
+msgid "Build Scripts Which Build C++ or Take Arbitrary Actions"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems/build-scripts-which-take-arbitrary-actions.md:8
+msgid ""
+"Some crates use the [`cc`](https://crates.io/crates/cc) crate to build and "
+"link C/C++ libraries. Other crates parse C/C++ using [`bindgen`](https://"
+"crates.io/crates/bindgen) within their build scripts. These actions can't be "
+"supported in a Chromium context --- our gn, ninja and LLVM build system is "
+"very specific in expressing relationships between build actions."
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems/build-scripts-which-take-arbitrary-actions.md:13
+msgid "So, your options are:"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems/build-scripts-which-take-arbitrary-actions.md:15
+msgid "Avoid these crates"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems/build-scripts-which-take-arbitrary-actions.md:16
+msgid "Apply a patch to the crate."
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems/build-scripts-which-take-arbitrary-actions.md:18
+msgid ""
+"Patches should be kept in `third_party/rust/chromium_crates_io/patches/"
+"<crate>` - see for example the [patches against the `cxx` crate](https://"
+"source.chromium.org/chromium/chromium/src/+/main:third_party/rust/"
+"chromium_crates_io/patches/cxx/) - and will be applied automatically by "
+"`gnrt` each time it upgrades the crate."
+msgstr ""

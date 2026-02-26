@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/references/strings.md:10
+msgid "Strings"
+msgstr ""
+
+#: src/references/strings.md:12
+msgid "We can now understand the two string types in Rust:"
+msgstr ""
+
+#: src/references/strings.md:14
+msgid "`&str` is a slice of UTF-8 encoded bytes, similar to `&[u8]`."
+msgstr ""
+
+#: src/references/strings.md:15
+msgid ""
+"`String` is an owned buffer of UTF-8 encoded bytes, similar to `Vec<T>`."
+msgstr ""
+
+#: src/references/strings.md:21
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/references/strings.md:22
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/references/strings.md:25
+msgid "\"World\""
+msgstr ""
+
+#: src/references/strings.md:26
+msgid "\"s1: {s1}\""
+msgstr ""
+
+#: src/references/strings.md:28
+msgid "\"Hello \""
+msgstr ""
+
+#: src/references/strings.md:29 src/references/strings.md:32
+msgid "\"s2: {s2}\""
+msgstr ""
+
+#: src/references/strings.md:35
+msgid "\"s3: {s3}\""
+msgstr ""
+
+#: src/references/strings.md:42
+msgid ""
+"`&str` introduces a string slice, which is an immutable reference to UTF-8 "
+"encoded string data stored in a block of memory. String literals "
+"(`\"Hello\"`), are stored in the program’s binary."
+msgstr ""
+
+#: src/references/strings.md:46
+msgid ""
+"Rust's `String` type is a wrapper around a vector of bytes. As with a "
+"`Vec<T>`, it is owned."
+msgstr ""
+
+#: src/references/strings.md:49
+msgid ""
+"As with many other types `String::from()` creates a string from a string "
+"literal; `String::new()` creates a new empty string, to which string data "
+"can be added using the `push()` and `push_str()` methods."
+msgstr ""
+
+#: src/references/strings.md:53
+msgid ""
+"The `format!()` macro is a convenient way to generate an owned string from "
+"dynamic values. It accepts the same format specification as `println!()`."
+msgstr ""
+
+#: src/references/strings.md:56
+msgid ""
+"You can borrow `&str` slices from `String` via `&` and optionally range "
+"selection. If you select a byte range that is not aligned to character "
+"boundaries, the expression will panic. The `chars` iterator iterates over "
+"characters and is preferred over trying to get character boundaries right."
+msgstr ""
+
+#: src/references/strings.md:61
+msgid ""
+"For C++ programmers: think of `&str` as `std::string_view` from C++, but the "
+"one that always points to a valid string in memory. Rust `String` is a rough "
+"equivalent of `std::string` from C++ (main difference: it can only contain "
+"UTF-8 encoded bytes and will never use a small-string optimization)."
+msgstr ""
+
+#: src/references/strings.md:66
+msgid "Byte strings literals allow you to create a `&[u8]` value directly:"
+msgstr ""
+
+#: src/references/strings.md:79
+msgid ""
+"Raw strings allow you to create a `&str` value with escapes disabled: "
+"`r\"\\n\" == \"\\\\n\"`. You can embed double-quotes by using an equal "
+"amount of `#` on either side of the quotes:"
+msgstr ""

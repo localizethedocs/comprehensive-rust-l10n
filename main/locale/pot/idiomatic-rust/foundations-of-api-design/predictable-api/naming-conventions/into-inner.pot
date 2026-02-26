@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into_inner.md:6
+msgid "Aside: `into_inner`"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into_inner.md:8
+msgid ""
+"Special case of `into`: for exclusive pointer types or newtypes, extract the "
+"internal value."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into_inner.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into_inner.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into_inner.md:34
+msgid ""
+"`into_inner` is a method usually found on newtypes: types whose main purpose "
+"is to wrap around an existing type and be semantically distinct from other "
+"uses of that inner type."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into_inner.md:38
+msgid ""
+"This kind of method is also found on types like `Cell`, which exclusively "
+"own the internal data."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into_inner.md:41
+msgid ""
+"The purpose of this kind of method is to consume the \"wrapper\" type and "
+"return the \"contained\" value."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into_inner.md:44
+msgid ""
+"When defining a type with exactly one field, consider if it makes sense to "
+"implement an `into_inner` method that consumes `self` and returns the field "
+"as an owned value."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into_inner.md:48
+msgid ""
+"Don't write a method like this if more fields will be added in the future."
+msgstr ""

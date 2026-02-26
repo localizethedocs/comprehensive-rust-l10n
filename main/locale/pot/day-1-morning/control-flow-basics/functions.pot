@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/control-flow-basics/functions.md:6
+msgid "Functions"
+msgstr ""
+
+#: src/control-flow-basics/functions.md:26
+msgid ""
+"Declaration parameters are followed by a type (the reverse of some "
+"programming languages), then a return type."
+msgstr ""
+
+#: src/control-flow-basics/functions.md:28
+msgid ""
+"The last expression in a function body (or any block) becomes the return "
+"value. Simply omit the `;` at the end of the expression. The `return` "
+"keyword can be used for early return, but the \"bare value\" form is "
+"idiomatic at the end of a function (refactor `gcd` to use a `return`)."
+msgstr ""
+
+#: src/control-flow-basics/functions.md:32
+msgid ""
+"Some functions have no return value, and return the 'unit type', `()`. The "
+"compiler will infer this if the return type is omitted."
+msgstr ""
+
+#: src/control-flow-basics/functions.md:34
+msgid ""
+"Overloading is not supported -- each function has a single implementation."
+msgstr ""
+
+#: src/control-flow-basics/functions.md:35
+msgid ""
+"Always takes a fixed number of parameters. Default arguments are not "
+"supported. Macros can be used to support variadic functions."
+msgstr ""
+
+#: src/control-flow-basics/functions.md:37
+msgid ""
+"Always takes a single set of parameter types. These types can be generic, "
+"which will be covered later."
+msgstr ""

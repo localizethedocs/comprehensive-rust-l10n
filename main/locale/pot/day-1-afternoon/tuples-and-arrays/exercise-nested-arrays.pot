@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/tuples-and-arrays/exercise.md:6
+msgid "Exercise: Nested Arrays"
+msgstr ""
+
+#: src/tuples-and-arrays/exercise.md:8
+msgid "Arrays can contain other arrays:"
+msgstr ""
+
+#: src/tuples-and-arrays/exercise.md:11 src/tuples-and-arrays/exercise.md:34
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/tuples-and-arrays/exercise.md:12 src/tuples-and-arrays/exercise.md:35
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/tuples-and-arrays/exercise.md:17
+msgid "What is the type of this variable?"
+msgstr ""
+
+#: src/tuples-and-arrays/exercise.md:19
+msgid ""
+"Use an array such as the above to write a function `transpose` that "
+"transposes a matrix (turns rows into columns):"
+msgstr ""
+
+#: src/tuples-and-arrays/exercise.md:30
+msgid ""
+"Copy the code below to <https://play.rust-lang.org/> and implement the "
+"function. This function only operates on 3×3 matrices."
+msgstr ""
+
+#: src/tuples-and-arrays/exercise.md:43
+msgid "// <-- the comment makes rustfmt add a newline\n"
+msgstr ""
+
+#: src/tuples-and-arrays/exercise.md:48
+msgid "\"Original:\""
+msgstr ""
+
+#: src/tuples-and-arrays/exercise.md:50 src/tuples-and-arrays/exercise.md:57
+msgid "\"{row:?}\""
+msgstr ""
+
+#: src/tuples-and-arrays/exercise.md:55
+msgid "\"\\nTransposed:\""
+msgstr ""

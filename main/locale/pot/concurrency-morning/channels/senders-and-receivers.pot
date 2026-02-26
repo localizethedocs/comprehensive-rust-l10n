@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/channels/senders-receivers.md:6
+msgid "Senders and Receivers"
+msgstr ""
+
+#: src/concurrency/channels/senders-receivers.md:8
+msgid ""
+"Rust channels have two parts: a [`Sender<T>`](https://doc.rust-lang.org/std/"
+"sync/mpsc/struct.Sender.html) and a [`Receiver<T>`](https://doc.rust-lang."
+"org/std/sync/mpsc/struct.Receiver.html). The two parts are connected via the "
+"channel, but you only see the end-points."
+msgstr ""
+
+#: src/concurrency/channels/senders-receivers.md:12
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/concurrency/channels/senders-receivers.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/concurrency/channels/senders-receivers.md:23
+#: src/concurrency/channels/senders-receivers.md:24
+#: src/concurrency/channels/senders-receivers.md:28
+msgid "\"Received: {:?}\""
+msgstr ""
+
+#: src/concurrency/channels/senders-receivers.md:35
+msgid ""
+"[`mpsc`](https://doc.rust-lang.org/std/sync/mpsc/index.html) stands for "
+"Multi-Producer, Single-Consumer. `Sender` and `SyncSender` implement `Clone` "
+"(so you can make multiple producers) but `Receiver` does not."
+msgstr ""
+
+#: src/concurrency/channels/senders-receivers.md:38
+msgid ""
+"[`send()`](https://doc.rust-lang.org/std/sync/mpsc/struct.Sender.html#method."
+"send) and [`recv()`](https://doc.rust-lang.org/std/sync/mpsc/struct.Receiver."
+"html#method.recv) return `Result`. If they return `Err`, it means the "
+"counterpart `Sender` or `Receiver` is dropped and the channel is closed."
+msgstr ""

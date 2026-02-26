@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/std-traits/operators.md:6
+msgid "Operators"
+msgstr ""
+
+#: src/std-traits/operators.md:8
+msgid ""
+"Operator overloading is implemented via traits in [`std::ops`](https://doc."
+"rust-lang.org/std/ops/index.html):"
+msgstr ""
+
+#: src/std-traits/operators.md:11
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/std-traits/operators.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/std-traits/operators.md:31
+msgid "\"{p1:?} + {p2:?} = {:?}\""
+msgstr ""
+
+#: src/std-traits/operators.md:38
+msgid "Discussion points:"
+msgstr ""
+
+#: src/std-traits/operators.md:40
+msgid ""
+"You could implement `Add` for `&Point`. In which situations is that useful?"
+msgstr ""
+
+#: src/std-traits/operators.md:41
+msgid ""
+"Answer: `Add:add` consumes `self`. If type `T` for which you are overloading "
+"the operator is not `Copy`, you should consider overloading the operator for "
+"`&T` as well. This avoids unnecessary cloning on the call site."
+msgstr ""
+
+#: src/std-traits/operators.md:44
+msgid ""
+"Why is `Output` an associated type? Could it be made a type parameter of the "
+"method?"
+msgstr ""
+
+#: src/std-traits/operators.md:46
+msgid ""
+"Short answer: Function type parameters are controlled by the caller, but "
+"associated types (like `Output`) are controlled by the implementer of a "
+"trait."
+msgstr ""
+
+#: src/std-traits/operators.md:49
+msgid ""
+"You could implement `Add` for two different types, e.g. `impl Add<(i32, "
+"i32)> for Point` would add a tuple to a `Point`."
+msgstr ""
+
+#: src/std-traits/operators.md:52
+msgid ""
+"The `Not` trait (`!` operator) is notable because it does not convert the "
+"argument to `bool` like the same operator in C-family languages; instead, "
+"for integer types it flips each bit of the number, which, arithmetically, is "
+"equivalent to subtracting the argument from `-1`: `!5 == -6`."
+msgstr ""

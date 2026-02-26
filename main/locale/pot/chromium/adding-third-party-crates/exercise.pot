@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/exercises/chromium/third-party.md:6
+msgid "Exercise"
+msgstr ""
+
+#: src/exercises/chromium/third-party.md:8
+msgid ""
+"Add [uwuify](https://crates.io/crates/uwuify) to Chromium, turning off the "
+"crate's [default features](https://doc.rust-lang.org/cargo/reference/"
+"features.html#the-default-feature). Assume that the crate will be used in "
+"shipping Chromium, but won't be used to handle untrustworthy input."
+msgstr ""
+
+#: src/exercises/chromium/third-party.md:12
+msgid ""
+"(In the next exercise we'll use uwuify from Chromium, but feel free to skip "
+"ahead and do that now if you like. Or, you could create a new "
+"[`rust_executable` target](https://source.chromium.org/chromium/chromium/src/"
+"+/main:build/rust/rust_executable.gni) which uses `uwuify`)."
+msgstr ""
+
+#: src/exercises/chromium/third-party.md:18
+msgid "Students will need to download lots of transitive dependencies."
+msgstr ""
+
+#: src/exercises/chromium/third-party.md:20
+msgid "The total crates needed are:"
+msgstr ""
+
+#: src/exercises/chromium/third-party.md:22
+msgid "`instant`,"
+msgstr ""
+
+#: src/exercises/chromium/third-party.md:23
+msgid "`lock_api`,"
+msgstr ""
+
+#: src/exercises/chromium/third-party.md:24
+msgid "`parking_lot`,"
+msgstr ""
+
+#: src/exercises/chromium/third-party.md:25
+msgid "`parking_lot_core`,"
+msgstr ""
+
+#: src/exercises/chromium/third-party.md:26
+msgid "`redox_syscall`,"
+msgstr ""
+
+#: src/exercises/chromium/third-party.md:27
+msgid "`scopeguard`,"
+msgstr ""
+
+#: src/exercises/chromium/third-party.md:28
+msgid "`smallvec`, and"
+msgstr ""
+
+#: src/exercises/chromium/third-party.md:29
+msgid "`uwuify`."
+msgstr ""
+
+#: src/exercises/chromium/third-party.md:31
+msgid ""
+"If students are downloading even more than that, they likely forgot to turn "
+"off the default features."
+msgstr ""
+
+#: src/exercises/chromium/third-party.md:34
+msgid ""
+"Thanks to [Daniel Liu](https://github.com/Daniel-Liu-c0deb0t) for this crate!"
+msgstr ""

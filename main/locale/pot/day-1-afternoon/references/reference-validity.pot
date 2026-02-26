@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/references/dangling.md:6
+msgid "Reference Validity"
+msgstr ""
+
+#: src/references/dangling.md:8
+msgid ""
+"Rust enforces a number of rules for references that make them always safe to "
+"use. One rule is that references can never be `null`, making them safe to "
+"use without `null` checks. The other rule we'll look at for now is that "
+"references can't _outlive_ the data they point to."
+msgstr ""
+
+#: src/references/dangling.md:14
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/references/dangling.md:15
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/references/dangling.md:29
+msgid ""
+"This slide gets students thinking about references as not simply being "
+"pointers, since Rust has different rules for references than other languages."
+msgstr ""
+
+#: src/references/dangling.md:32
+msgid ""
+"We'll look at the rest of Rust's borrowing rules on day 3 when we talk about "
+"Rust's ownership system."
+msgstr ""
+
+#: src/references/dangling.md:35
+msgid "More to Explore"
+msgstr ""
+
+#: src/references/dangling.md:37
+msgid ""
+"Rust's equivalent of nullability is the `Option` type, which can be used to "
+"make any type \"nullable\" (not just references/pointers). We haven't yet "
+"introduced enums or pattern matching, though, so try not to go into too much "
+"detail about this here."
+msgstr ""

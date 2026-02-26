@@ -1,0 +1,113 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/async-pitfalls/cancellation.md:6
+msgid "Cancellation"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:8
+msgid ""
+"Dropping a future implies it can never be polled again. This is called "
+"_cancellation_ and it can occur at any `await` point. Care is needed to "
+"ensure the system works correctly even when futures are cancelled. For "
+"example, it shouldn't deadlock or lose data."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:14
+#: src/concurrency/async-pitfalls/cancellation.md:95
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:15
+#: src/concurrency/async-pitfalls/cancellation.md:96
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:35
+msgid "b'\\n'"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:43
+#: src/concurrency/async-pitfalls/cancellation.md:113
+msgid "\"not UTF-8\""
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:59
+msgid "\"hi\\nthere\\n\""
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:65
+msgid "\"tick!\""
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:67
+msgid "\"{}\""
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:81
+msgid ""
+"The compiler doesn't help with cancellation-safety. You need to read API "
+"documentation and consider what state your `async fn` holds."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:84
+msgid ""
+"Unlike `panic` and `?`, cancellation is part of normal control flow (vs "
+"error-handling)."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:87
+msgid "The example loses parts of the string."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:89
+msgid ""
+"Whenever the `tick()` branch finishes first, `next()` and its `buf` are "
+"dropped."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:92
+msgid ""
+"`LinesReader` can be made cancellation-safe by making `buf` part of the "
+"struct:"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:109
+msgid "// prefix buf and bytes with self.\n"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:110
+#: src/concurrency/async-pitfalls/cancellation.md:114
+msgid "// ...\n"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:119
+msgid ""
+"[`Interval::tick`](https://docs.rs/tokio/latest/tokio/time/struct.Interval."
+"html#method.tick) is cancellation-safe because it keeps track of whether a "
+"tick has been 'delivered'."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:123
+msgid ""
+"[`AsyncReadExt::read`](https://docs.rs/tokio/latest/tokio/io/trait."
+"AsyncReadExt.html#method.read) is cancellation-safe because it either "
+"returns or doesn't read data."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/cancellation.md:126
+msgid ""
+"[`AsyncBufReadExt::read_line`](https://docs.rs/tokio/latest/tokio/io/trait."
+"AsyncBufReadExt.html#method.read_line) is similar to the example and _isn't_ "
+"cancellation-safe. See its documentation for details and alternatives."
+msgstr ""

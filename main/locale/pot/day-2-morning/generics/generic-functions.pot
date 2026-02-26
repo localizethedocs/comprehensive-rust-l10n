@@ -1,0 +1,84 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/generics/generic-functions.md:6
+msgid "Generic Functions"
+msgstr ""
+
+#: src/generics/generic-functions.md:8
+msgid ""
+"Rust supports generics, which lets you abstract algorithms or data "
+"structures (such as sorting or a binary tree) over the types used or stored."
+msgstr ""
+
+#: src/generics/generic-functions.md:12 src/generics/generic-functions.md:34
+#: src/generics/generic-functions.md:52
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/generics/generic-functions.md:13 src/generics/generic-functions.md:35
+#: src/generics/generic-functions.md:53
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/generics/generic-functions.md:20
+msgid "\"picked a number: {:?}\""
+msgstr ""
+
+#: src/generics/generic-functions.md:21
+msgid "\"picked a string: {:?}\""
+msgstr ""
+
+#: src/generics/generic-functions.md:21
+msgid "'L'"
+msgstr ""
+
+#: src/generics/generic-functions.md:21
+msgid "'R'"
+msgstr ""
+
+#: src/generics/generic-functions.md:28
+msgid ""
+"It can be helpful to show the monomorphized versions of `pick`, either "
+"before talking about the generic `pick` in order to show how generics can "
+"reduce code duplication, or after talking about generics to show how "
+"monomorphization works."
+msgstr ""
+
+#: src/generics/generic-functions.md:46
+msgid ""
+"Rust infers a type for T based on the types of the arguments and return "
+"value."
+msgstr ""
+
+#: src/generics/generic-functions.md:48
+msgid ""
+"In this example we only use the primitive types `i32` and `char` for `T`, "
+"but we can use any type here, including user-defined types:"
+msgstr ""
+
+#: src/generics/generic-functions.md:62
+msgid ""
+"This is similar to C++ templates, but Rust partially compiles the generic "
+"function immediately, so that function must be valid for all types matching "
+"the constraints. For example, try modifying `pick` to return `left + right` "
+"if `cond` is false. Even if only the `pick` instantiation with integers is "
+"used, Rust still considers it invalid. C++ would let you do this."
+msgstr ""
+
+#: src/generics/generic-functions.md:68
+msgid ""
+"Generic code is turned into non-generic code based on the call sites. This "
+"is a zero-cost abstraction: you get exactly the same result as if you had "
+"hand-coded the data structures without the abstraction."
+msgstr ""

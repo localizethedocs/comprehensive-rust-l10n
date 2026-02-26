@@ -1,0 +1,68 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:6
+msgid "Display"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:8
+msgid "\"Write to string\" trait, prioritizing readability for an end user."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:10
+msgid "Derivable: ❌, without crates like `derive_more`."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:12
+msgid ""
+"When to implement: As-needed, for errors and other types that an end-user "
+"will see."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:16
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:17
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:28
+msgid "\"HTTP Error code {code}\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:30
+msgid "\"Whale attack detected – call Ishmael\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:42
+msgid "Prerequisite for the `Error` trait."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:44
+msgid ""
+"If implementing for an error type, focus on providing a descriptive error "
+"for users and programmers other than you."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:47
+msgid ""
+"Same security considerations as Debug, consider the ways that sensitive data "
+"could be exposed in UI or logs."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:50
+msgid ""
+"Types that implement `Display` automatically have `ToString` implemented for "
+"them."
+msgstr ""

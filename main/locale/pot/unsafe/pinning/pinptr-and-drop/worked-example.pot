@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:6
+msgid "Worked Example: Implementing `Drop` for `!Unpin` types"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:9
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:85
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:102
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:10
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:86
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:103
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:49
+msgid "// SAFETY: Safe because we are reading bytes from a String\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:56
+msgid "\"Rust 🦀\""
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:60
+msgid "\"Batch: {:?}\""
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:67
+msgid ""
+"This example uses the `Drop` trait to add data for some post-processing, "
+"such as telemetry or logging."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:70
+msgid ""
+"**The Safety comment is incorrect.** `ptr::read` creates a bitwise copy, "
+"leaving `self.data` in an invalid state. `self.data` will be dropped again "
+"at the end of the method, which is a double free."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:74
+msgid "Ask the class to fix the code."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:76
+msgid "**Suggestion 0: Redesign**"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:78
+msgid "Redesign the post-processing system to work without `Drop`."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:80
+msgid "**Suggestion 1: Clone**"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:82
+msgid "Using `.clone()` is an obvious first choice, but it allocates memory."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:96
+msgid "**Suggestion 2: ManuallyDrop**"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:98
+msgid ""
+"Wrapping `CustomString` in `ManuallyDrop` prevents the (second) automatic "
+"drop at the end of the `Drop` impl."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:110
+msgid "// ...\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/drop-and-not-unpin-worked-example.md:115
+msgid "// SAFETY: self.data\n"
+msgstr ""

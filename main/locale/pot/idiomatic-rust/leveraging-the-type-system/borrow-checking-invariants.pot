@@ -1,0 +1,169 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:6
+msgid "Using the Borrow checker to enforce Invariants"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:8
+msgid ""
+"The borrow checker, while added to enforce memory ownership, can model other "
+"problems and prevent API misuse."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:14
+msgid ""
+"/// Doors can be open or closed, and you need the right key to lock or "
+"unlock\n"
+"/// one. Modelled with a Shared key and Owned door.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:48
+msgid "\"Opened the door with key shape '{}'\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:51
+msgid "\"Door wasn't opened! Your key only opens locks with shape '{}'\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:61
+msgid ""
+"We've seen the borrow checker prevent memory safety bugs (use-after-free, "
+"data races)."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:64
+msgid ""
+"We've also used types to shape and restrict APIs already using [the "
+"Typestate pattern](../leveraging-the-type-system/typestate-pattern.md)."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:67
+msgid "Language features are often introduced for a specific purpose."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:69
+msgid ""
+"Over time, users may develop ways of using a feature in ways that were not "
+"predicted when they were introduced."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:72
+msgid ""
+"Java 5 introduced Generics in 2004 with the [main stated purpose of enabling "
+"type-safe collections](https://jcp.org/en/jsr/detail?id=14)."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:75
+msgid ""
+"Adoption was slow at first, but some new projects began designing their APIs "
+"around generics from the beginning."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:78
+msgid ""
+"Since then, users and developers of the language expanded the use of "
+"generics to other areas of type-safe API design:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:80
+msgid ""
+"Class information can be held onto via Java's `Class<T>` or Guava's "
+"`TypeToken<T>`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:82
+msgid "The Builder pattern can be implemented using Recursive Generics."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:84
+msgid ""
+"We aim to do something similar here: Even though the borrow checker was "
+"introduced to prevent use-after-free and data races, we treat it as just "
+"another API design tool."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:88
+msgid ""
+"It can be used to model program properties that have nothing to do with "
+"preventing memory safety bugs."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:91
+msgid ""
+"To use the borrow checker as a problem solving tool, we will need to "
+"\"forget\" that the original purpose of it is to prevent mutable aliasing in "
+"the context of preventing use-after-frees and data races."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:95
+msgid ""
+"We should imagine working within situations where the rules are the same but "
+"the meaning is slightly different."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:98
+msgid ""
+"This example uses ownership and borrowing are used to model the state of a "
+"physical door."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:101
+msgid ""
+"`open_door` **consumes** a `LockedDoor` and returns a new `OpenDoor`. The "
+"old `LockedDoor` value is no longer available."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:104
+msgid ""
+"If the wrong key is used, the door is left locked. It is returned as an "
+"`Err` case of the `Result`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:107
+msgid ""
+"It is a compile-time error to try and use a door that has already been "
+"opened."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:109
+msgid ""
+"Similarly, `lock_door` consumes an `OpenDoor`, preventing closing the door "
+"twice at compile time."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:112
+msgid ""
+"The rules of the borrow checker exist to prevent memory safety bugs, but the "
+"underlying logical system does not \"know\" what memory is."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:115
+msgid ""
+"All the borrow checker does is enforce a specific set of rules of how users "
+"can order operations."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants.md:118
+msgid ""
+"This is just one case of piggy-backing onto the rules of the borrow checker "
+"to design APIs to be harder or impossible to misuse."
+msgstr ""

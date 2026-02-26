@@ -1,0 +1,94 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/aps/uart.md:6
+msgid "Let's write a UART driver"
+msgstr ""
+
+#: src/bare-metal/aps/uart.md:8
+msgid ""
+"The QEMU 'virt' machine has a [PL011](https://developer.arm.com/"
+"documentation/ddi0183/g) UART, so let's write a driver for that."
+msgstr ""
+
+#: src/bare-metal/aps/uart.md:11
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/bare-metal/aps/uart.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/bare-metal/aps/uart.md:17
+msgid "/// Minimal driver for a PL011 UART.\n"
+msgstr ""
+
+#: src/bare-metal/aps/uart.md:25
+msgid ""
+"/// Constructs a new instance of the UART driver for a PL011 device at the\n"
+"    /// given base address.\n"
+"    ///\n"
+"    /// # Safety\n"
+"    ///\n"
+"    /// The given base address must point to the 8 MMIO control registers of "
+"a\n"
+"    /// PL011 device, which must be mapped into the address space of the "
+"process\n"
+"    /// as device memory and not have any other aliases.\n"
+msgstr ""
+
+#: src/bare-metal/aps/uart.md:37
+msgid "/// Writes a single byte to the UART.\n"
+msgstr ""
+
+#: src/bare-metal/aps/uart.md:39
+msgid "// Wait until there is room in the TX buffer.\n"
+msgstr ""
+
+#: src/bare-metal/aps/uart.md:42 src/bare-metal/aps/uart.md:54
+msgid ""
+"// SAFETY: We know that the base address points to the control\n"
+"        // registers of a PL011 device which is appropriately mapped.\n"
+msgstr ""
+
+#: src/bare-metal/aps/uart.md:45
+msgid "// Write to the TX buffer.\n"
+msgstr ""
+
+#: src/bare-metal/aps/uart.md:49
+msgid "// Wait until the UART is no longer busy.\n"
+msgstr ""
+
+#: src/bare-metal/aps/uart.md:63
+msgid ""
+"Note that `Uart::new` is unsafe while the other methods are safe. This is "
+"because as long as the caller of `Uart::new` guarantees that its safety "
+"requirements are met (i.e. that there is only ever one instance of the "
+"driver for a given UART, and nothing else aliasing its address space), then "
+"it is always safe to call `write_byte` later because we can assume the "
+"necessary preconditions."
+msgstr ""
+
+#: src/bare-metal/aps/uart.md:69
+msgid ""
+"We could have done it the other way around (making `new` safe but "
+"`write_byte` unsafe), but that would be much less convenient to use as every "
+"place that calls `write_byte` would need to reason about the safety"
+msgstr ""
+
+#: src/bare-metal/aps/uart.md:72
+msgid ""
+"This is a common pattern for writing safe wrappers of unsafe code: moving "
+"the burden of proof for soundness from a large number of places to a smaller "
+"number of places."
+msgstr ""

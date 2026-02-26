@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/try.md:6
+msgid "`try_[method]`: Fallible methods with Specific Errors"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/try.md:8
+msgid "Prefix for fallible methods that return a `Result`."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/try.md:11
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/try.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/try.md:27
+msgid ""
+"`TryFrom` is a `From`\\-like trait for types whose single-value constructors "
+"might fail in some way."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/try.md:30
+msgid "Ask: Why aren't `Vec::get` and other similar methods called `try_get`?"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/try.md:32
+msgid ""
+"Methods are named `get` if they return a reference to an existing value and "
+"return an `Option` instead of `Result` because there is only one failure "
+"mode. For example, only \"index out of bounds\" for `Vec::get`, and \"key "
+"does not exist\" for `HashMap::get`."
+msgstr ""

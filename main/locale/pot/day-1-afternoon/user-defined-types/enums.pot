@@ -1,0 +1,135 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/user-defined-types/enums.md:6
+msgid "Enums"
+msgstr ""
+
+#: src/user-defined-types/enums.md:8
+msgid ""
+"The `enum` keyword allows the creation of a type which has a few different "
+"variants:"
+msgstr ""
+
+#: src/user-defined-types/enums.md:12
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/user-defined-types/enums.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/user-defined-types/enums.md:23
+msgid "// Simple variant\n"
+msgstr ""
+
+#: src/user-defined-types/enums.md:24
+msgid "// Tuple variant\n"
+msgstr ""
+
+#: src/user-defined-types/enums.md:25
+msgid "// Struct variant\n"
+msgstr ""
+
+#: src/user-defined-types/enums.md:31
+msgid "\"On this turn: {player_move:?}\""
+msgstr ""
+
+#: src/user-defined-types/enums.md:38
+msgid "Key Points:"
+msgstr ""
+
+#: src/user-defined-types/enums.md:40
+msgid "Enumerations allow you to collect a set of values under one type."
+msgstr ""
+
+#: src/user-defined-types/enums.md:41
+msgid ""
+"`Direction` is a type with variants. There are two values of `Direction`: "
+"`Direction::Left` and `Direction::Right`."
+msgstr ""
+
+#: src/user-defined-types/enums.md:43
+msgid ""
+"`PlayerMove` is a type with three variants. In addition to the payloads, "
+"Rust will store a discriminant so that it knows at runtime which variant is "
+"in a `PlayerMove` value."
+msgstr ""
+
+#: src/user-defined-types/enums.md:46
+msgid "This might be a good time to compare structs and enums:"
+msgstr ""
+
+#: src/user-defined-types/enums.md:47
+msgid ""
+"In both, you can have a simple version without fields (unit struct) or one "
+"with different types of fields (variant payloads)."
+msgstr ""
+
+#: src/user-defined-types/enums.md:49
+msgid ""
+"You could even implement the different variants of an enum with separate "
+"structs but then they wouldn’t be the same type as they would if they were "
+"all defined in an enum."
+msgstr ""
+
+#: src/user-defined-types/enums.md:52
+msgid "Rust uses minimal space to store the discriminant."
+msgstr ""
+
+#: src/user-defined-types/enums.md:53
+msgid "If necessary, it stores an integer of the smallest required size"
+msgstr ""
+
+#: src/user-defined-types/enums.md:54
+msgid ""
+"If the allowed variant values do not cover all bit patterns, it will use "
+"invalid bit patterns to encode the discriminant (the \"niche "
+"optimization\"). For example, `Option<&u8>` stores either a pointer to an "
+"integer or `NULL` for the `None` variant."
+msgstr ""
+
+#: src/user-defined-types/enums.md:58
+msgid ""
+"You can control the discriminant if needed (e.g., for compatibility with C):"
+msgstr ""
+
+#: src/user-defined-types/enums.md:79
+msgid ""
+"Without `repr`, the discriminant type takes 2 bytes, because 10001 fits 2 "
+"bytes."
+msgstr ""
+
+#: src/user-defined-types/enums.md:82
+msgid "More to Explore"
+msgstr ""
+
+#: src/user-defined-types/enums.md:84
+msgid ""
+"Rust has several optimizations it can employ to make enums take up less "
+"space."
+msgstr ""
+
+#: src/user-defined-types/enums.md:86
+msgid ""
+"Null pointer optimization: For [some types](https://doc.rust-lang.org/std/"
+"option/#representation), Rust guarantees that `size_of::<T>()` equals "
+"`size_of::<Option<T>>()`."
+msgstr ""
+
+#: src/user-defined-types/enums.md:90
+msgid ""
+"Example code if you want to show how the bitwise representation _may_ look "
+"like in practice. It's important to note that the compiler provides no "
+"guarantees regarding this representation, therefore this is totally unsafe."
+msgstr ""

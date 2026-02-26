@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md:6
+msgid "Trait Method Conflicts"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md:8
+msgid ""
+"What happens when you have a name conflict between two different trait "
+"methods implemented for the same type?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md:14
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md:15
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md:40
+msgid ""
+"// Which method is invoked?\n"
+"// The one from `Ext1`? Or the one from `Ext2`?\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md:44
+msgid "\"dad\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md:50
+msgid ""
+"The trait you are extending may, in a newer version, add a new trait method "
+"with the same name as your extension method. Or another extension trait for "
+"the same type may define a method with a name that conflicts with your own "
+"extension method."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md:55
+msgid ""
+"Ask: what will happen in the example above? Will there be a compiler error? "
+"Will one of the two methods be given higher priority? Which one?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md:58
+msgid ""
+"The compiler rejects the code because it cannot determine which method to "
+"invoke. Neither `Ext1` nor `Ext2` has a higher priority than the other."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md:61
+msgid "To resolve this conflict, you must specify which trait you want to use."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md:63
+msgid ""
+"Demonstrate: call `Ext1::is_palindrome(\"dad\")` or `Ext2::"
+"is_palindrome(\"dad\")` instead of `\"dad\".is_palindrome()`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md:66
+msgid ""
+"For methods with more complex signatures, you may need to use a more "
+"explicit [fully-qualified syntax](https://doc.rust-lang.org/reference/"
+"expressions/call-expr.html#disambiguating-function-calls)."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md:69
+msgid ""
+"Demonstrate: replace `\"dad\".is_palindrome()` with `<str as Ext1>::"
+"is_palindrome(\"dad\")` or `<str as Ext2>::is_palindrome(\"dad\")`."
+msgstr ""

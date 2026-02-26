@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/control-flow-basics/macros.md:6
+msgid "Macros"
+msgstr ""
+
+#: src/control-flow-basics/macros.md:8
+msgid ""
+"Macros are expanded into Rust code during compilation, and can take a "
+"variable number of arguments. They are distinguished by a `!` at the end. "
+"The Rust standard library includes an assortment of useful macros."
+msgstr ""
+
+#: src/control-flow-basics/macros.md:12
+msgid ""
+"`println!(format, ..)` prints a line to standard output, applying formatting "
+"described in [`std::fmt`](https://doc.rust-lang.org/std/fmt/index.html)."
+msgstr ""
+
+#: src/control-flow-basics/macros.md:14
+msgid ""
+"`format!(format, ..)` works just like `println!` but returns the result as a "
+"string."
+msgstr ""
+
+#: src/control-flow-basics/macros.md:16
+msgid "`dbg!(expression)` logs the value of the expression and returns it."
+msgstr ""
+
+#: src/control-flow-basics/macros.md:17
+msgid ""
+"`todo!()` marks a bit of code as not-yet-implemented. If executed, it will "
+"panic."
+msgstr ""
+
+#: src/control-flow-basics/macros.md:21
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/control-flow-basics/macros.md:22
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/control-flow-basics/macros.md:38
+msgid "\"{n}! = {}\""
+msgstr ""
+
+#: src/control-flow-basics/macros.md:45
+msgid ""
+"The takeaway from this section is that these common conveniences exist, and "
+"how to use them. Why they are defined as macros, and what they expand to, is "
+"not especially critical."
+msgstr ""
+
+#: src/control-flow-basics/macros.md:49
+msgid ""
+"The course does not cover defining macros, but a later section will describe "
+"use of derive macros."
+msgstr ""
+
+#: src/control-flow-basics/macros.md:52
+msgid "More To Explore"
+msgstr ""
+
+#: src/control-flow-basics/macros.md:54
+msgid ""
+"There are a number of other useful macros provided by the standard library. "
+"Some other examples you can share with students if they want to know more:"
+msgstr ""
+
+#: src/control-flow-basics/macros.md:57
+msgid ""
+"[`assert!`](https://doc.rust-lang.org/stable/std/macro.assert.html) and "
+"related macros can be used to add assertions to your code. These are used "
+"heavily in writing tests."
+msgstr ""
+
+#: src/control-flow-basics/macros.md:59
+msgid ""
+"[`unreachable!`](https://doc.rust-lang.org/stable/std/macro.unreachable."
+"html) is used to mark a branch of control flow that should never be hit."
+msgstr ""
+
+#: src/control-flow-basics/macros.md:61
+msgid ""
+"[`eprintln!`](https://doc.rust-lang.org/stable/std/macro.eprintln.html) "
+"allows you to print to stderr."
+msgstr ""

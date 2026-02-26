@@ -1,0 +1,145 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/modules/exercise.md:6
+msgid "Exercise: Modules for a GUI Library"
+msgstr ""
+
+#: src/modules/exercise.md:8
+msgid ""
+"In this exercise, you will reorganize a small GUI Library implementation. "
+"This library defines a `Widget` trait and a few implementations of that "
+"trait, as well as a `main` function."
+msgstr ""
+
+#: src/modules/exercise.md:12
+msgid ""
+"It is typical to put each type or set of closely-related types into its own "
+"module, so each widget type should get its own module."
+msgstr ""
+
+#: src/modules/exercise.md:15
+msgid "Cargo Setup"
+msgstr ""
+
+#: src/modules/exercise.md:17
+msgid ""
+"The Rust playground only supports one file, so you will need to make a Cargo "
+"project on your local filesystem:"
+msgstr ""
+
+#: src/modules/exercise.md:26
+msgid ""
+"Edit the resulting `src/main.rs` to add `mod` statements, and add additional "
+"files in the `src` directory."
+msgstr ""
+
+#: src/modules/exercise.md:29
+msgid "Source"
+msgstr ""
+
+#: src/modules/exercise.md:31
+msgid "Here's the single-module implementation of the GUI library:"
+msgstr ""
+
+#: src/modules/exercise.md:34
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/modules/exercise.md:35
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/modules/exercise.md:38
+msgid "/// Natural width of `self`.\n"
+msgstr ""
+
+#: src/modules/exercise.md:41
+msgid "/// Draw the widget into a buffer.\n"
+msgstr ""
+
+#: src/modules/exercise.md:44
+msgid "/// Draw the widget on standard output.\n"
+msgstr ""
+
+#: src/modules/exercise.md:48
+msgid "\"{buffer}\""
+msgstr ""
+
+#: src/modules/exercise.md:96
+msgid "// Add 4 paddings for borders\n"
+msgstr ""
+
+#: src/modules/exercise.md:108
+msgid ""
+"// TODO: Change draw_into to return Result<(), std::fmt::Error>. Then use "
+"the\n"
+"        // ?-operator here instead of .unwrap().\n"
+msgstr ""
+
+#: src/modules/exercise.md:110 src/modules/exercise.md:116
+msgid "\"+-{:-<inner_width$}-+\""
+msgstr ""
+
+#: src/modules/exercise.md:110 src/modules/exercise.md:112
+#: src/modules/exercise.md:116 src/modules/exercise.md:130
+#: src/modules/exercise.md:134
+msgid "\"\""
+msgstr ""
+
+#: src/modules/exercise.md:111
+msgid "\"| {:^inner_width$} |\""
+msgstr ""
+
+#: src/modules/exercise.md:112
+msgid "\"+={:=<inner_width$}=+\""
+msgstr ""
+
+#: src/modules/exercise.md:114
+msgid "\"| {:inner_width$} |\""
+msgstr ""
+
+#: src/modules/exercise.md:122
+msgid "// add a bit of padding\n"
+msgstr ""
+
+#: src/modules/exercise.md:130 src/modules/exercise.md:134
+msgid "\"+{:-<width$}+\""
+msgstr ""
+
+#: src/modules/exercise.md:132
+msgid "\"|{:^width$}|\""
+msgstr ""
+
+#: src/modules/exercise.md:144
+msgid "\"{}\""
+msgstr ""
+
+#: src/modules/exercise.md:149
+msgid "\"Rust GUI Demo 1.23\""
+msgstr ""
+
+#: src/modules/exercise.md:150
+msgid "\"This is a small text GUI demo.\""
+msgstr ""
+
+#: src/modules/exercise.md:151
+msgid "\"Click me!\""
+msgstr ""
+
+#: src/modules/exercise.md:159
+msgid ""
+"Encourage students to divide the code in a way that feels natural for them, "
+"and get accustomed to the required `mod`, `use`, and `pub` declarations. "
+"Afterward, discuss what organizations are most idiomatic."
+msgstr ""

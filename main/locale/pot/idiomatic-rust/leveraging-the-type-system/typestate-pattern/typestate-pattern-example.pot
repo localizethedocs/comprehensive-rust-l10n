@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:6
+msgid "Typestate Pattern: Example"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:8
+msgid ""
+"The typestate pattern encodes part of a value’s runtime state into its type. "
+"This allows us to prevent invalid or inapplicable operations at compile time."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:28
+msgid "\"{name} {{\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:39
+msgid "\"  {key}={value};\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:44
+msgid "\"}\\n\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:51
+msgid "\"User\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:52
+msgid "\"id\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:52
+msgid "\"42\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:53
+msgid "\"name\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:53
+msgid "\"Alice\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:56
+msgid "\"{}\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:60
+msgid "`Serializer` usage flowchart:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:76
+msgid ""
+"This example is inspired by Serde’s [`Serializer` trait](https://docs.rs/"
+"serde/latest/serde/ser/trait.Serializer.html). Serde uses typestates "
+"internally to ensure serialization follows a valid structure. For more, see: "
+"<https://serde.rs/impl-serializer.html>"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:81
+msgid ""
+"The key idea behind typestate is that state transitions happen by consuming "
+"a value and producing a new one. At each step, only operations valid for "
+"that state are available."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:85
+msgid "In this example:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:87
+msgid ""
+"We begin with a `Serializer`, which only allows us to start serializing a "
+"struct."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:90
+msgid ""
+"Once we call `.serialize_struct(...)`, ownership moves into a "
+"`SerializeStruct` value. From that point on, we can only call methods "
+"related to serializing struct fields."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:94
+msgid ""
+"The original `Serializer` is no longer accessible — preventing us from "
+"mixing modes (such as starting another _struct_ mid-struct) or calling "
+"`finish()` too early."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:98
+msgid ""
+"Only after calling `.finish_struct()` do we receive the `Serializer` back. "
+"At that point, the output can be finalized or reused."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:101
+msgid ""
+"If we forget to call `finish_struct()` and drop the `SerializeStruct` early, "
+"the `Serializer` is also dropped. This ensures incomplete output cannot leak "
+"into the system."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:105
+msgid ""
+"By contrast, if we had implemented everything on `Serializer` directly — as "
+"seen on the previous slide, nothing would stop someone from skipping "
+"important steps or mixing serialization flows."
+msgstr ""

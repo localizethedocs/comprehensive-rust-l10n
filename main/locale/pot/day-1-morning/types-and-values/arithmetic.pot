@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/types-and-values/arithmetic.md:6
+msgid "Arithmetic"
+msgstr ""
+
+#: src/types-and-values/arithmetic.md:9
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/types-and-values/arithmetic.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/types-and-values/arithmetic.md:17
+msgid "\"result: {}\""
+msgstr ""
+
+#: src/types-and-values/arithmetic.md:24
+msgid ""
+"This is the first time we've seen a function other than `main`, but the "
+"meaning should be clear: it takes three integers, and returns an integer. "
+"Functions will be covered in more detail later."
+msgstr ""
+
+#: src/types-and-values/arithmetic.md:28
+msgid "Arithmetic is very similar to other languages, with similar precedence."
+msgstr ""
+
+#: src/types-and-values/arithmetic.md:30
+msgid ""
+"What about integer overflow? In C and C++ overflow of _signed_ integers is "
+"actually undefined, and might do unknown things at runtime. In Rust, it's "
+"defined."
+msgstr ""
+
+#: src/types-and-values/arithmetic.md:34
+msgid ""
+"Change the `i32`'s to `i16` to see an integer overflow, which panics "
+"(checked) in a debug build and wraps in a release build. There are other "
+"options, such as overflowing, saturating, and carrying. These are accessed "
+"with method syntax, e.g., `(a * b).saturating_add(b * c).saturating_add(c * "
+"a)`."
+msgstr ""
+
+#: src/types-and-values/arithmetic.md:39
+msgid ""
+"In fact, the compiler will detect overflow of constant expressions, which is "
+"why the example requires a separate function."
+msgstr ""

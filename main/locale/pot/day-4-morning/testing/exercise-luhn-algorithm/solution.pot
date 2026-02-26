@@ -1,0 +1,92 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/testing/solution.md:6
+msgid "Solution"
+msgstr ""
+
+#: src/testing/solution.md:9
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/testing/solution.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/testing/solution.md:29
+msgid "// New: accept whitespace.\n"
+msgstr ""
+
+#: src/testing/solution.md:32
+msgid "// New: reject all other characters.\n"
+msgstr ""
+
+#: src/testing/solution.md:37
+msgid "// New: check that we have at least two digits\n"
+msgstr ""
+
+#: src/testing/solution.md:47
+msgid "\"4263 9826 4026 9299\""
+msgstr ""
+
+#: src/testing/solution.md:48
+msgid "\"4539 3195 0343 6467\""
+msgstr ""
+
+#: src/testing/solution.md:49
+msgid "\"7992 7398 713\""
+msgstr ""
+
+#: src/testing/solution.md:54
+msgid "\"4223 9826 4026 9299\""
+msgstr ""
+
+#: src/testing/solution.md:55
+msgid "\"4539 3195 0343 6476\""
+msgstr ""
+
+#: src/testing/solution.md:56
+msgid "\"8273 1232 7352 0569\""
+msgstr ""
+
+#: src/testing/solution.md:61
+msgid "\"foo\""
+msgstr ""
+
+#: src/testing/solution.md:62
+msgid "\"foo 0 0\""
+msgstr ""
+
+#: src/testing/solution.md:67
+msgid "\"\""
+msgstr ""
+
+#: src/testing/solution.md:68
+msgid "\" \""
+msgstr ""
+
+#: src/testing/solution.md:69
+msgid "\"  \""
+msgstr ""
+
+#: src/testing/solution.md:70
+msgid "\"    \""
+msgstr ""
+
+#: src/testing/solution.md:75
+msgid "\"0\""
+msgstr ""
+
+#: src/testing/solution.md:80
+msgid "\" 0 0 \""
+msgstr ""

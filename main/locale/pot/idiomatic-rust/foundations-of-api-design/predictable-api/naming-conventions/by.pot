@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:6
+msgid "`by`: custom comparator or projection"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:8
+msgid ""
+"Component for methods that take a custom projection or comparison function."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:11
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:15
+msgid "// Simplified\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:18
+msgid ""
+"// Uses a predicate to determine what items end up in non-overlapping "
+"chunks.\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:26
+msgid "// Provided method of Iterator. Simplified.\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:37
+msgid ""
+"A projection function here being a function that, given a reference to a "
+"value that exists in the data structure, will compute a value to perform the "
+"principle computation with."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:41
+msgid ""
+"Methods like `sort_by_key` allow us to sort by _the hash function I've "
+"passed to the method_ or sort by _this specific field of the data in the "
+"slice_."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:44
+msgid ""
+"For example, if you have a slice of values of some data structure you might "
+"want to sort them by a field of that data structure, or even a hash value of "
+"that data."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:48
+msgid "`sort_by` takes a comparator function directly."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:50
+msgid ""
+"Most often seen in methods that sort or otherwise manipulate a slice with a "
+"custom sort or comparison function rather than by the `Ord` implementation "
+"of the type itself."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:54
+msgid "Sometimes the \"by\" preposition is simply a preposition."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:56
+msgid ""
+"\"by\", like some other name components, may end up in a method name for "
+"normal linguistic reasons rather than holding specific naming convention "
+"semantic weight."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:60
+msgid ""
+"[`Read::by_ref()`](https://doc.rust-lang.org/std/io/trait.Read.html#method."
+"by_ref)"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:62
+msgid ""
+"[`Iterator::advance_by()`](https://doc.rust-lang.org/std/iter/trait.Iterator."
+"html#method.advance_by) iterator method (nightly feature)"
+msgstr ""

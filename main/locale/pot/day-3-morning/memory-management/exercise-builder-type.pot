@@ -1,0 +1,114 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/memory-management/exercise.md:6
+msgid "Exercise: Builder Type"
+msgstr ""
+
+#: src/memory-management/exercise.md:8
+msgid ""
+"In this example, we will implement a complex data type that owns all of its "
+"data. We will use the \"builder pattern\" to support building a new value "
+"piece-by-piece, using convenience functions."
+msgstr ""
+
+#: src/memory-management/exercise.md:12
+msgid "Fill in the missing pieces."
+msgstr ""
+
+#: src/memory-management/exercise.md:15
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/memory-management/exercise.md:16
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/memory-management/exercise.md:30
+msgid "/// A representation of a software package.\n"
+msgstr ""
+
+#: src/memory-management/exercise.md:42
+msgid ""
+"/// Return a representation of this package as a dependency, for use in\n"
+"    /// building other packages.\n"
+msgstr ""
+
+#: src/memory-management/exercise.md:45
+msgid "\"1\""
+msgstr ""
+
+#: src/memory-management/exercise.md:48
+msgid ""
+"/// A builder for a Package. Use `build()` to create the `Package` itself.\n"
+msgstr ""
+
+#: src/memory-management/exercise.md:54
+msgid "\"2\""
+msgstr ""
+
+#: src/memory-management/exercise.md:57
+msgid "/// Set the package version.\n"
+msgstr ""
+
+#: src/memory-management/exercise.md:63
+msgid "/// Set the package authors.\n"
+msgstr ""
+
+#: src/memory-management/exercise.md:65
+msgid "\"3\""
+msgstr ""
+
+#: src/memory-management/exercise.md:68
+msgid "/// Add an additional dependency.\n"
+msgstr ""
+
+#: src/memory-management/exercise.md:70
+msgid "\"4\""
+msgstr ""
+
+#: src/memory-management/exercise.md:73
+msgid "/// Set the language. If not set, language defaults to None.\n"
+msgstr ""
+
+#: src/memory-management/exercise.md:75
+msgid "\"5\""
+msgstr ""
+
+#: src/memory-management/exercise.md:84
+msgid "\"base64\""
+msgstr ""
+
+#: src/memory-management/exercise.md:84
+msgid "\"0.13\""
+msgstr ""
+
+#: src/memory-management/exercise.md:87
+msgid "\"log\""
+msgstr ""
+
+#: src/memory-management/exercise.md:87
+msgid "\"0.4\""
+msgstr ""
+
+#: src/memory-management/exercise.md:89
+msgid "\"serde\""
+msgstr ""
+
+#: src/memory-management/exercise.md:90
+msgid "\"djmitche\""
+msgstr ""
+
+#: src/memory-management/exercise.md:91
+msgid "\"4.0\""
+msgstr ""
