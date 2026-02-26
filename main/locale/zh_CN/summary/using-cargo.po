@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/cargo.md:6
+msgid "Using Cargo"
+msgstr ""
+
+#: src/cargo.md:8
+msgid ""
+"When you start reading about Rust, you will soon meet [Cargo](https://doc."
+"rust-lang.org/cargo/), the standard tool used in the Rust ecosystem to build "
+"and run Rust applications. Here we want to give a brief overview of what "
+"Cargo is and how it fits into the wider ecosystem and how it fits into this "
+"training."
+msgstr ""
+
+#: src/cargo.md:14
+msgid "Installation"
+msgstr ""
+
+#: src/cargo.md:16
+msgid "**Please follow the instructions on <https://rustup.rs/>.**"
+msgstr ""
+
+#: src/cargo.md:18
+msgid ""
+"This will give you the Cargo build tool (`cargo`) and the Rust compiler "
+"(`rustc`). You will also get `rustup`, a command line utility that you can "
+"use to install different compiler versions."
+msgstr ""
+
+#: src/cargo.md:22
+msgid ""
+"After installing Rust, you should configure your editor or IDE to work with "
+"Rust. Most editors do this by talking to [rust-analyzer](https://rust-"
+"analyzer.github.io/), which provides auto-completion and jump-to-definition "
+"functionality for [VS Code](https://code.visualstudio.com/), [Emacs](https://"
+"rust-analyzer.github.io/manual.html#emacs), [Vim/Neovim](https://rust-"
+"analyzer.github.io/manual.html#vimneovim), and many others. There is also a "
+"different IDE available called [RustRover](https://www.jetbrains.com/rust/)."
+msgstr ""
+
+#: src/cargo.md:30
+msgid "On Debian/Ubuntu, you can install `rustup` via `apt`:"
+msgstr ""
+
+#: src/cargo.md:36
+msgid ""
+"On macOS, you can use [Homebrew](https://brew.sh/) to install Rust, but this "
+"may provide an outdated version. Therefore, it is recommended to install "
+"Rust from the official site."
+msgstr ""

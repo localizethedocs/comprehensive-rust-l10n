@@ -1,0 +1,138 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/welcome.md:6
+msgid "IMPORTANT: THIS MODULE IS IN AN EARLY STAGE OF DEVELOPMENT"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:8
+msgid ""
+"Please do not consider this module of Comprehensive Rust to be complete. "
+"With that in mind, your feedback, comments, and especially your concerns, "
+"are very welcome."
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:12
+msgid ""
+"To comment on this module's development, please use the [GitHub issue "
+"tracker](https://github.com/google/comprehensive-rust/issues)."
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:17
+msgid "Welcome to the Unsafe Rust Deep Dive"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:19
+msgid ""
+"This deep dive aims to enable you to work productively with Unsafe Rust."
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:21
+msgid "We’ll work on three areas:"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:23
+msgid "establishing a mental model of Unsafe Rust"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:24
+msgid "practicing reading & writing Unsafe Rust"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:25
+msgid "practicing code review for Unsafe Rust"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:29
+msgid ""
+"The goal of this class is to teach you enough Unsafe Rust for you to be able "
+"to review easy cases yourself, and distinguish difficult cases that need to "
+"be reviewed by more experienced Unsafe Rust engineers."
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:33
+msgid "Establishing a mental model of Unsafe Rust"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:34
+msgid "what the `unsafe` keyword means"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:35
+msgid "a shared vocabulary for talking about safety"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:36
+msgid "a mental model of how memory works"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:37
+msgid "common patterns"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:38
+msgid "expectations for code that uses `unsafe`"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:40
+msgid "Practicing working with unsafe"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:41
+msgid "reading and writing both code and documentation"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:42
+msgid "using unsafe APIs"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:43
+msgid "designing and implementing them"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:45
+msgid "Reviewing code"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:46
+msgid "the confidence to self-review easy cases"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:47
+msgid "the knowledge to detect difficult cases"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:49
+msgid ""
+"“We'll be using a spiral model of teaching. This means that we revisit the "
+"same topic multiple times with increasing depth.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:52
+msgid ""
+"A round of introductions is useful, particularly if the class participants "
+"don't know each other well. Ask everyone to introduce themselves, noting "
+"down any particular goals for the class."
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:56
+msgid "Who are you?"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:57
+msgid "What are you working on?"
+msgstr ""
+
+#: src/unsafe-deep-dive/welcome.md:58
+msgid "What are your goals for this class?"
+msgstr ""

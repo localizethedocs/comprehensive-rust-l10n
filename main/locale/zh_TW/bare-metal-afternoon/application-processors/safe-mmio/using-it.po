@@ -1,0 +1,74 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/aps/safemmio/using.md:6
+msgid "Using It"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/using.md:8
+msgid ""
+"Let's write a small program using our driver to write to the serial console, "
+"and echo incoming bytes."
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/using.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/using.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/using.md:30
+msgid "/// Base address of the primary PL011 UART.\n"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/using.md:34
+msgid "// SAFETY: There is no other global function of this name.\n"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/using.md:37
+msgid "\"C\""
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/using.md:38
+msgid ""
+"// SAFETY: `PL011_BASE_ADDRESS` is the base address of a PL011 device, and\n"
+"    // nothing else accesses that address range.\n"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/using.md:42
+msgid "\"main({x0:#x}, {x1:#x}, {x2:#x}, {x3:#x})\""
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/using.md:48
+msgid "b'\\r'"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/using.md:48
+msgid "b'\\n'"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/using.md:49
+msgid "b'q'"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/using.md:55
+msgid "\"\\n\\nBye!\""
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/using.md:62
+msgid ""
+"Run the example in QEMU with `make qemu_safemmio` under `src/bare-metal/aps/"
+"examples`."
+msgstr ""

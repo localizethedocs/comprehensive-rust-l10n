@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/modules.md:6 src/modules.md:12
+msgid "Modules"
+msgstr ""
+
+#: src/modules.md:8
+msgid "This segment should take about 45 minutes. It contains:"
+msgstr ""
+
+#: src/modules.md:10
+msgid "Slide"
+msgstr ""
+
+#: src/modules.md:10
+msgid "Duration"
+msgstr ""
+
+#: src/modules.md:12
+msgid "3 minutes"
+msgstr ""
+
+#: src/modules.md:13
+msgid "Filesystem Hierarchy"
+msgstr ""
+
+#: src/modules.md:13 src/modules.md:14 src/modules.md:15
+msgid "5 minutes"
+msgstr ""
+
+#: src/modules.md:14
+msgid "Visibility"
+msgstr ""
+
+#: src/modules.md:15
+msgid "Encapsulation"
+msgstr ""
+
+#: src/modules.md:16
+msgid "use, super, self"
+msgstr ""
+
+#: src/modules.md:16
+msgid "10 minutes"
+msgstr ""
+
+#: src/modules.md:17
+msgid "Exercise: Modules for a GUI Library"
+msgstr ""
+
+#: src/modules.md:17
+msgid "15 minutes"
+msgstr ""

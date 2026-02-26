@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/interoperability-with-cpp/error-handling-png.md:6
+msgid "CXX Error Handling: PNG Example"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling-png.md:8
+msgid ""
+"A prototype of a PNG decoder illustrates what can be done when the "
+"successful result cannot be passed across the FFI boundary:"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling-png.md:12
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling-png.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling-png.md:15
+msgid "\"gfx::rust_bindings\""
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling-png.md:17
+msgid "\"Rust\""
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling-png.md:18
+msgid ""
+"/// This returns an FFI-friendly equivalent of `Result<PngReader<'a>,\n"
+"        /// ()>`.\n"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling-png.md:22
+msgid "/// C++ bindings for the `crate::png::ResultOfPngReader` type.\n"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling-png.md:29
+msgid "/// C++ bindings for the `crate::png::PngReader` type.\n"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling-png.md:40
+msgid ""
+"`PngReader` and `ResultOfPngReader` are Rust types --- objects of these "
+"types cannot cross the FFI boundary without indirection of a `Box<T>`. We "
+"can't have an `out_parameter: &mut PngReader`, because CXX doesn't allow C++ "
+"to store Rust objects by value."
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling-png.md:45
+msgid ""
+"This example illustrates that even though CXX doesn't support arbitrary "
+"generics nor templates, we can still pass them across the FFI boundary by "
+"manually specializing / monomorphizing them into a non-generic type. In the "
+"example `ResultOfPngReader` is a non-generic type that forwards into "
+"appropriate methods of `Result<T, E>` (e.g. into `is_err`, `unwrap`, and/or "
+"`as_mut`)."
+msgstr ""

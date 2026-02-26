@@ -1,0 +1,95 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/testing/exercise.md:6
+msgid "Exercise: Luhn Algorithm"
+msgstr ""
+
+#: src/testing/exercise.md:8
+msgid ""
+"The [Luhn algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm) is used "
+"to validate credit card numbers. The algorithm takes a string as input and "
+"does the following to validate the credit card number:"
+msgstr ""
+
+#: src/testing/exercise.md:12
+msgid ""
+"Ignore all spaces. Reject numbers with fewer than two digits. Reject letters "
+"and other non-digit characters."
+msgstr ""
+
+#: src/testing/exercise.md:15
+msgid ""
+"Moving from **right to left**, double every second digit: for the number "
+"`1234`, we double `3` and `1`. For the number `98765`, we double `6` and `8`."
+msgstr ""
+
+#: src/testing/exercise.md:18
+msgid ""
+"After doubling a digit, sum the digits if the result is greater than 9. So "
+"doubling `7` becomes `14` which becomes `1 + 4 = 5`."
+msgstr ""
+
+#: src/testing/exercise.md:21
+msgid "Sum all the undoubled and doubled digits."
+msgstr ""
+
+#: src/testing/exercise.md:23
+msgid "The credit card number is valid if the sum ends with `0`."
+msgstr ""
+
+#: src/testing/exercise.md:25
+msgid ""
+"The provided code provides a buggy implementation of the Luhn algorithm, "
+"along with two basic unit tests that confirm that most of the algorithm is "
+"implemented correctly."
+msgstr ""
+
+#: src/testing/exercise.md:29
+msgid ""
+"Copy the code below to <https://play.rust-lang.org/> and write additional "
+"tests to uncover bugs in the provided implementation, fixing any bugs you "
+"find."
+msgstr ""
+
+#: src/testing/exercise.md:33
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/testing/exercise.md:34
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/testing/exercise.md:64
+msgid "\"4263 9826 4026 9299\""
+msgstr ""
+
+#: src/testing/exercise.md:65
+msgid "\"4539 3195 0343 6467\""
+msgstr ""
+
+#: src/testing/exercise.md:66
+msgid "\"7992 7398 713\""
+msgstr ""
+
+#: src/testing/exercise.md:71
+msgid "\"4223 9826 4026 9299\""
+msgstr ""
+
+#: src/testing/exercise.md:72
+msgid "\"4539 3195 0343 6476\""
+msgstr ""
+
+#: src/testing/exercise.md:73
+msgid "\"8273 1232 7352 0569\""
+msgstr ""

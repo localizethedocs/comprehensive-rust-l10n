@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/interoperability/cpp/cpp-bridge.md:6
+msgid "C++ Bridge Declarations"
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-bridge.md:9
+#: src/android/interoperability/cpp/cpp-bridge.md:31
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-bridge.md:10
+#: src/android/interoperability/cpp/cpp-bridge.md:32
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-bridge.md:14
+msgid "// C++ types and signatures exposed to Rust.\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-bridge.md:15
+msgid "\"C++\""
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-bridge.md:16
+msgid "\"include/blobstore.h\""
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-bridge.md:28
+msgid "Results in (roughly) the following Rust:"
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-bridge.md:40
+#: src/android/interoperability/cpp/cpp-bridge.md:49
+msgid "\"C\""
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-bridge.md:41
+msgid "\"org$blobstore$cxxbridge1$new_blobstore_client\""
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-bridge.md:50
+msgid "\"org$blobstore$cxxbridge1$BlobstoreClient$put\""
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-bridge.md:61
+msgid "// ...\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-bridge.md:67
+msgid ""
+"The programmer does not need to promise that the signatures they have typed "
+"in are accurate. CXX performs static assertions that the signatures exactly "
+"correspond with what is declared in C++."
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-bridge.md:70
+msgid ""
+"`unsafe extern` blocks allow you to declare C++ functions that are safe to "
+"call from Rust."
+msgstr ""

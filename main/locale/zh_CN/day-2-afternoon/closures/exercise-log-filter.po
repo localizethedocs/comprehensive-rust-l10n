@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/closures/exercise.md:6
+msgid "Exercise: Log Filter"
+msgstr ""
+
+#: src/closures/exercise.md:8
+msgid ""
+"Building on the generic logger from this morning, implement a `Filter` that "
+"uses a closure to filter log messages, sending those that pass the filtering "
+"predicate to an inner logger."
+msgstr ""
+
+#: src/closures/exercise.md:13
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/closures/exercise.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/closures/exercise.md:17
+msgid "/// Log a message at the given verbosity level.\n"
+msgstr ""
+
+#: src/closures/exercise.md:25
+msgid "\"verbosity={verbosity}: {message}\""
+msgstr ""
+
+#: src/closures/exercise.md:28
+msgid "// TODO: Define and implement `Filter`.\n"
+msgstr ""
+
+#: src/closures/exercise.md:32
+msgid "\"yikes\""
+msgstr ""
+
+#: src/closures/exercise.md:33
+msgid "\"FYI\""
+msgstr ""
+
+#: src/closures/exercise.md:34
+msgid "\"yikes, something went wrong\""
+msgstr ""
+
+#: src/closures/exercise.md:35
+msgid "\"uhoh\""
+msgstr ""

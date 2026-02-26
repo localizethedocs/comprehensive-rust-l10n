@@ -1,0 +1,141 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/async-exercises/solutions.md:6
+msgid "Solutions"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:8
+msgid "Dining Philosophers --- Async"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:11
+#: src/concurrency/async-exercises/solutions.md:103
+#: src/concurrency/async-exercises/solutions.md:173
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:12
+#: src/concurrency/async-exercises/solutions.md:104
+#: src/concurrency/async-exercises/solutions.md:174
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:30
+msgid "\"Eureka! {} has a new idea!\""
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:36
+msgid ""
+"// Keep trying until we have both chopsticks\n"
+"        // Pick up chopsticks...\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:41
+msgid "\"{} is eating...\""
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:44
+msgid "// The locks are dropped here\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:47
+msgid "// tokio scheduler doesn't deadlock with 5 philosophers, so have 2.\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:49
+msgid "\"Socrates\""
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:49
+msgid "\"Hypatia\""
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:53
+msgid "// Create chopsticks\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:59
+msgid "// Create philosophers\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:78
+msgid "// tx is dropped here, so we don't need to explicitly drop it later\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:81
+msgid "// Make them think and eat\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:91
+msgid "// Output their thoughts\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:93
+msgid "\"Here is a thought: {thought}\""
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:98
+msgid "Broadcast Chat Application"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:100
+msgid "_src/bin/server.rs_:"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:121
+msgid "\"Welcome to chat! Type a message\""
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:125
+msgid ""
+"// A continuous loop for concurrently performing two tasks: (1) receiving\n"
+"    // messages from `ws_stream` and broadcasting them, and (2) receiving\n"
+"    // messages on `bcast_rx` and sending them to the client.\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:134
+msgid "\"From client {addr:?} {text:?}\""
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:153
+msgid "\"127.0.0.1:2000\""
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:154
+msgid "\"listening on port 2000\""
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:158
+msgid "\"New connection from {addr:?}\""
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:161
+msgid "// Wrap the raw TCP stream into a websocket.\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:170
+msgid "_src/bin/client.rs_:"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:185
+msgid "\"ws://127.0.0.1:2000\""
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:192
+msgid "// Continuous loop for concurrently sending and receiving messages.\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/solutions.md:199
+msgid "\"From server: {}\""
+msgstr ""

@@ -1,0 +1,65 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/interoperability-with-cpp/error-handling.md:6
+msgid "CXX Error Handling"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling.md:8
+msgid ""
+"CXX's [support for `Result<T,E>`](https://cxx.rs/binding/result.html) relies "
+"on C++ exceptions, so we can't use that in Chromium. Alternatives:"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling.md:11
+msgid "The `T` part of `Result<T, E>` can be:"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling.md:12
+msgid ""
+"Returned via out parameters (e.g. via `&mut T`). This requires that `T` can "
+"be passed across the FFI boundary - for example `T` has to be:"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling.md:14
+msgid "A primitive type (like `u32` or `usize`)"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling.md:15
+msgid ""
+"A type natively supported by `cxx` (like `UniquePtr<T>`) that has a suitable "
+"default value to use in a failure case (_unlike_ `Box<T>`)."
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling.md:17
+msgid ""
+"Retained on the Rust side, and exposed via reference. This may be needed "
+"when `T` is a Rust type, which cannot be passed across the FFI boundary, and "
+"cannot be stored in `UniquePtr<T>`."
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling.md:21
+msgid "The `E` part of `Result<T, E>` can be:"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling.md:22
+msgid ""
+"Returned as a boolean (e.g. `true` representing success, and `false` "
+"representing failure)"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/error-handling.md:24
+msgid ""
+"Preserving error details is in theory possible, but so far hasn't been "
+"needed in practice."
+msgstr ""

@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/error-handling/exercise.md:6
+msgid "Exercise: Rewriting with Result"
+msgstr ""
+
+#: src/error-handling/exercise.md:8
+msgid ""
+"In this exercise we're revisiting the expression evaluator exercise that we "
+"did in day 2. Our initial solution ignores a possible error case: Dividing "
+"by zero! Rewrite `eval` to instead use idiomatic error handling to handle "
+"this error case and return an error when it occurs. We provide a simple "
+"`DivideByZeroError` type to use as the error type for `eval`."
+msgstr ""
+
+#: src/error-handling/exercise.md:15
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/error-handling/exercise.md:16
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/error-handling/exercise.md:17
+msgid "/// An operation to perform on two subexpressions.\n"
+msgstr ""
+
+#: src/error-handling/exercise.md:26
+msgid "/// An expression, in tree form.\n"
+msgstr ""
+
+#: src/error-handling/exercise.md:30
+msgid "/// An operation on two subexpressions.\n"
+msgstr ""
+
+#: src/error-handling/exercise.md:33
+msgid "/// A literal value\n"
+msgstr ""
+
+#: src/error-handling/exercise.md:39
+msgid ""
+"// The original implementation of the expression evaluator. Update this to\n"
+"// return a `Result` and produce an error when dividing by 0.\n"
+msgstr ""
+
+#: src/error-handling/exercise.md:54
+msgid "\"Cannot divide by zero!\""
+msgstr ""
+
+#: src/error-handling/exercise.md:93
+msgid ""
+"The starting code here isn't exactly the same as the previous exercise's "
+"solution: We've added in an explicit panic to show students where the error "
+"case is. Point this out if students get confused."
+msgstr ""

@@ -1,0 +1,65 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/interoperability/with-c/c-library.md:6
+msgid "A Simple C Library"
+msgstr ""
+
+#: src/android/interoperability/with-c/c-library.md:8
+msgid "Let's first create a small C library:"
+msgstr ""
+
+#: src/android/interoperability/with-c/c-library.md:10
+msgid "_interoperability/bindgen/libbirthday.h_:"
+msgstr ""
+
+#: src/android/interoperability/with-c/c-library.md:21
+msgid "_interoperability/bindgen/libbirthday.c_:"
+msgstr ""
+
+#: src/android/interoperability/with-c/c-library.md:24
+msgid "<stdio.h>"
+msgstr ""
+
+#: src/android/interoperability/with-c/c-library.md:25
+msgid "\"libbirthday.h\""
+msgstr ""
+
+#: src/android/interoperability/with-c/c-library.md:28
+#: src/android/interoperability/with-c/c-library.md:31
+msgid "\"+--------------\\n\""
+msgstr ""
+
+#: src/android/interoperability/with-c/c-library.md:29
+msgid "\"| Happy Birthday %s!\\n\""
+msgstr ""
+
+#: src/android/interoperability/with-c/c-library.md:30
+msgid "\"| Congratulations with the %i years!\\n\""
+msgstr ""
+
+#: src/android/interoperability/with-c/c-library.md:35
+msgid "Add this to your `Android.bp` file:"
+msgstr ""
+
+#: src/android/interoperability/with-c/c-library.md:37
+msgid "_interoperability/bindgen/Android.bp_:"
+msgstr ""
+
+#: src/android/interoperability/with-c/c-library.md:41
+msgid "\"libbirthday\""
+msgstr ""
+
+#: src/android/interoperability/with-c/c-library.md:42
+msgid "\"libbirthday.c\""
+msgstr ""

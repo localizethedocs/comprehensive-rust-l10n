@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/aidl/types/parcelables.md:6
+msgid "Parcelables"
+msgstr ""
+
+#: src/android/aidl/types/parcelables.md:8
+msgid "Binder for Rust supports sending parcelables directly:"
+msgstr ""
+
+#: src/android/aidl/types/parcelables.md:10
+msgid "_birthday_service/aidl/com/example/birthdayservice/BirthdayInfo.aidl_:"
+msgstr ""
+
+#: src/android/aidl/types/parcelables.md:21
+msgid ""
+"_birthday_service/aidl/com/example/birthdayservice/IBirthdayService.aidl_:"
+msgstr ""
+
+#: src/android/aidl/types/parcelables.md:27
+msgid "/** The same thing, but with a parcelable. */"
+msgstr ""
+
+#: src/android/aidl/types/parcelables.md:32
+msgid "_birthday_service/src/client.rs_:"
+msgstr ""
+
+#: src/android/aidl/types/parcelables.md:35
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/android/aidl/types/parcelables.md:36
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/aidl/types/parcelables.md:40
+msgid "\"Failed to connect to BirthdayService\""
+msgstr ""
+
+#: src/android/aidl/types/parcelables.md:42
+msgid "\"Alice\""
+msgstr ""

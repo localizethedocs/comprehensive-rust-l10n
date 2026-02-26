@@ -1,0 +1,92 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:6
+msgid "Resolving Problems"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:8
+msgid ""
+"If your build fails, it may be because of a `build.rs`: programs which do "
+"arbitrary things at build time. This is fundamentally at odds with the "
+"design of `gn` and `ninja` which aim for static, deterministic, build rules "
+"to maximize parallelism and repeatability of builds."
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:13
+msgid ""
+"Some `build.rs` actions are automatically supported; others require action:"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:15
+msgid "build script effect"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:15
+msgid "Supported by our gn templates"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:15
+msgid "Work required by you"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:17
+msgid "Checking rustc version to configure features on and off"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:17
+#: src/chromium/adding-third-party-crates/resolving-problems.md:18
+#: src/chromium/adding-third-party-crates/resolving-problems.md:19
+msgid "Yes"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:17
+#: src/chromium/adding-third-party-crates/resolving-problems.md:18
+msgid "None"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:18
+msgid "Checking platform or CPU to configure features on and off"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:19
+msgid "Generating code"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:19
+msgid "Yes - specify in `gnrt_config.toml`"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:20
+msgid "Building C/C++"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:20
+#: src/chromium/adding-third-party-crates/resolving-problems.md:21
+msgid "No"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:20
+#: src/chromium/adding-third-party-crates/resolving-problems.md:21
+msgid "Patch around it"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:21
+msgid "Arbitrary other actions"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/resolving-problems.md:23
+msgid ""
+"Fortunately, most crates don't contain a build script, and fortunately, most "
+"build scripts only do the top two actions."
+msgstr ""

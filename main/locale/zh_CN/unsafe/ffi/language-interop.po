@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/ffi/language-interop.md:6
+msgid "Language Interop"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-interop.md:8
+msgid "Ideal scenario:"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-interop.md:10
+msgid ""
+"```bob\n"
+"╭────────────╮                                          ╭────────────╮\n"
+"│            │                                          │            │\n"
+"│            │ <--------------------------------------> │            │\n"
+"│            │                                          │            │\n"
+"╰────────────╯                                          ╰────────────╯\n"
+"     Rust                                                    \"C++\"\n"
+"```"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-interop.md:21
+msgid ""
+"This section of the course covers interacting with Rust and external "
+"languages via its foreign-function interface (FFI), with a special focus on "
+"interoperability with C++."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-interop.md:25
+msgid ""
+"Ideally, users of Rust and the external language (in this case C++) could "
+"call each others’ methods directly."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-interop.md:28
+msgid "This ideal scenario is very difficult to achieve:"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-interop.md:30
+msgid ""
+"Different languages have different semantics and mapping between them "
+"implies trade-offs Neither Rust nor C++ offer ABI stability[^1], making it "
+"difficult to build from a stable foundation"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-interop.md:34
+msgid ""
+"Some C++ compiler vendors provide support for ABI stability within their "
+"toolchain."
+msgstr ""

@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/introduction/purpose.md:6
+msgid "Why the unsafe keyword exists"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/purpose.md:8
+msgid "Rust ensures safety"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/purpose.md:9
+msgid "But there are limits to what the compiler can do"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/purpose.md:10
+msgid ""
+"The unsafe keyword allows programmers to assume responsibility for Rust’s "
+"rules"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/purpose.md:16
+msgid "“A fundamental goal of Rust is to ensure memory safety.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/purpose.md:18
+msgid ""
+"“But, there are limits. Some safety considerations cannot be expressed in a "
+"programming language. Even if they could be, there are limits to what the "
+"Rust compiler can control.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/purpose.md:22
+msgid ""
+"“The `unsafe` keyword shifts the burden of upholding Rust’s rules from the "
+"compiler to the programmer.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/purpose.md:25
+msgid ""
+"“When you see the `unsafe` keyword, you are seeing responsibility shift from "
+"the compiler to the programmer."
+msgstr ""

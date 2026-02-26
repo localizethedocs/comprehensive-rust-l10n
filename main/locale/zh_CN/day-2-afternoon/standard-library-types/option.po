@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/std-types/option.md:6
+msgid "Option"
+msgstr ""
+
+#: src/std-types/option.md:8
+msgid ""
+"We have already seen some use of `Option<T>`. It stores either a value of "
+"type `T` or nothing. For example, [`String::find`](https://doc.rust-lang.org/"
+"stable/std/string/struct.String.html#method.find) returns an `Option<usize>`."
+msgstr ""
+
+#: src/std-types/option.md:14
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/std-types/option.md:15
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/std-types/option.md:18
+msgid "\"Löwe 老虎 Léopard Gepardi\""
+msgstr ""
+
+#: src/std-types/option.md:19
+msgid "'é'"
+msgstr ""
+
+#: src/std-types/option.md:22
+msgid "'Z'"
+msgstr ""
+
+#: src/std-types/option.md:24
+msgid "\"Character not found\""
+msgstr ""
+
+#: src/std-types/option.md:31
+msgid "`Option` is widely used, not just in the standard library."
+msgstr ""
+
+#: src/std-types/option.md:32
+msgid ""
+"`unwrap` will return the value in an `Option`, or panic. `expect` is similar "
+"but takes an error message."
+msgstr ""
+
+#: src/std-types/option.md:34
+msgid ""
+"You can panic on None, but you can't \"accidentally\" forget to check for "
+"None."
+msgstr ""
+
+#: src/std-types/option.md:36
+msgid ""
+"It's common to `unwrap`/`expect` all over the place when hacking something "
+"together, but production code typically handles `None` in a nicer fashion."
+msgstr ""
+
+#: src/std-types/option.md:39
+msgid ""
+"The \"niche optimization\" means that `Option<T>` typically has the same "
+"size in memory as `T`, if there is some representation that is not a valid "
+"value of T. For example, a reference cannot be NULL, so `Option<&T>` "
+"automatically uses NULL to represent the `None` variant, and thus can be "
+"stored in the same memory as `&T`."
+msgstr ""

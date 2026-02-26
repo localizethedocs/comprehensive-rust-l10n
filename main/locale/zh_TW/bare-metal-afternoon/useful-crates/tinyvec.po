@@ -1,0 +1,36 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/useful-crates/tinyvec.md:6
+msgid "`tinyvec`"
+msgstr ""
+
+#: src/bare-metal/useful-crates/tinyvec.md:8
+msgid ""
+"Sometimes you want something that can be resized like a `Vec`, but without "
+"heap allocation. [`tinyvec`](https://crates.io/crates/tinyvec) provides "
+"this: a vector backed by an array or slice, which could be statically "
+"allocated or on the stack, that keeps track of how many elements are used "
+"and panics if you try to use more than are allocated."
+msgstr ""
+
+#: src/bare-metal/useful-crates/tinyvec.md:33
+msgid ""
+"`tinyvec` requires that the element type implement `Default` for "
+"initialization."
+msgstr ""
+
+#: src/bare-metal/useful-crates/tinyvec.md:35
+msgid ""
+"The Rust Playground includes `tinyvec`, so this example will run fine inline."
+msgstr ""

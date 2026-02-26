@@ -1,0 +1,467 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/running-the-course/course-structure.md:6
+msgid "Course Structure"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:8
+msgid "This page is for the course instructor."
+msgstr ""
+
+#: src/running-the-course/course-structure.md:10
+msgid "Rust Fundamentals"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:12
+msgid ""
+"The first four days make up [Rust Fundamentals](../welcome-day-1.md). The "
+"days are fast-paced and we cover a broad range of topics!"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:15
+#: src/running-the-course/course-structure.md:152
+#: src/running-the-course/course-structure.md:184
+msgid "Course schedule:"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:16
+msgid "Day 1 Morning (2 hours and 10 minutes, including breaks)"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:18
+#: src/running-the-course/course-structure.md:28
+#: src/running-the-course/course-structure.md:37
+#: src/running-the-course/course-structure.md:47
+#: src/running-the-course/course-structure.md:56
+#: src/running-the-course/course-structure.md:65
+#: src/running-the-course/course-structure.md:73
+#: src/running-the-course/course-structure.md:83
+#: src/running-the-course/course-structure.md:155
+#: src/running-the-course/course-structure.md:166
+#: src/running-the-course/course-structure.md:187
+msgid "Segment"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:18
+#: src/running-the-course/course-structure.md:28
+#: src/running-the-course/course-structure.md:37
+#: src/running-the-course/course-structure.md:47
+#: src/running-the-course/course-structure.md:56
+#: src/running-the-course/course-structure.md:65
+#: src/running-the-course/course-structure.md:73
+#: src/running-the-course/course-structure.md:83
+#: src/running-the-course/course-structure.md:155
+#: src/running-the-course/course-structure.md:166
+#: src/running-the-course/course-structure.md:187
+msgid "Duration"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:20
+#: src/running-the-course/course-structure.md:39
+#: src/running-the-course/course-structure.md:58
+#: src/running-the-course/course-structure.md:75
+msgid "Welcome"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:20
+msgid "5 minutes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:21
+msgid "Hello, World"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:21
+#: src/running-the-course/course-structure.md:159
+msgid "15 minutes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:22
+msgid "Types and Values"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:22
+#: src/running-the-course/course-structure.md:168
+msgid "40 minutes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:23
+msgid "Control Flow Basics"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:23
+#: src/running-the-course/course-structure.md:41
+#: src/running-the-course/course-structure.md:77
+#: src/running-the-course/course-structure.md:78
+msgid "45 minutes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:26
+msgid "Day 1 Afternoon (2 hours and 45 minutes, including breaks)"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:30
+msgid "Tuples and Arrays"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:30
+msgid "35 minutes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:31
+msgid "References"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:31
+#: src/running-the-course/course-structure.md:60
+#: src/running-the-course/course-structure.md:76
+#: src/running-the-course/course-structure.md:85
+#: src/running-the-course/course-structure.md:170
+msgid "55 minutes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:32
+msgid "User-Defined Types"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:32
+#: src/running-the-course/course-structure.md:50
+#: src/running-the-course/course-structure.md:51
+#: src/running-the-course/course-structure.md:59
+msgid "1 hour"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:35
+msgid "Day 2 Morning (2 hours and 50 minutes, including breaks)"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:39
+#: src/running-the-course/course-structure.md:58
+#: src/running-the-course/course-structure.md:75
+msgid "3 minutes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:40
+msgid "Pattern Matching"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:40
+#: src/running-the-course/course-structure.md:42
+msgid "50 minutes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:41
+msgid "Methods and Traits"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:42
+msgid "Generics"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:45
+msgid "Day 2 Afternoon (2 hours and 50 minutes, including breaks)"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:49
+msgid "Closures"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:49
+#: src/running-the-course/course-structure.md:157
+#: src/running-the-course/course-structure.md:160
+msgid "30 minutes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:50
+msgid "Standard Library Types"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:51
+msgid "Standard Library Traits"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:54
+msgid "Day 3 Morning (2 hours and 20 minutes, including breaks)"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:59
+msgid "Memory Management"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:60
+msgid "Smart Pointers"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:63
+msgid "Day 3 Afternoon (2 hours and 30 minutes, including breaks)"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:67
+msgid "Borrowing"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:67
+#: src/running-the-course/course-structure.md:86
+msgid "1 hour and 15 minutes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:68
+msgid "Lifetimes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:68
+msgid "1 hour and 5 minutes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:71
+msgid "Day 4 Morning (2 hours and 50 minutes, including breaks)"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:76
+msgid "Iterators"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:77
+msgid "Modules"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:78
+msgid "Testing"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:81
+msgid "Day 4 Afternoon (2 hours and 20 minutes, including breaks)"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:85
+msgid "Error Handling"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:86
+msgid "Unsafe Rust"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:91
+msgid "Deep Dives"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:93
+msgid ""
+"In addition to the 4-day class on Rust Fundamentals, we cover some more "
+"specialized topics:"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:96
+msgid "Rust in Android"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:98
+msgid ""
+"The [Rust in Android](../android.md) deep dive is a half-day course on using "
+"Rust for Android platform development. This includes interoperability with "
+"C, C++, and Java."
+msgstr ""
+
+#: src/running-the-course/course-structure.md:102
+msgid ""
+"You will need an [AOSP checkout](https://source.android.com/docs/setup/"
+"download/downloading). Make a checkout of the [course repository](https://"
+"github.com/google/comprehensive-rust) on the same machine and move the `src/"
+"android/` directory into the root of your AOSP checkout. This will ensure "
+"that the Android build system sees the `Android.bp` files in `src/android/`."
+msgstr ""
+
+#: src/running-the-course/course-structure.md:107
+msgid ""
+"Ensure that `adb sync` works with your emulator or real device and pre-build "
+"all Android examples using `src/android/build_all.sh`. Read the script to "
+"see the commands it runs and make sure they work when you run them by hand."
+msgstr ""
+
+#: src/running-the-course/course-structure.md:114
+msgid "Rust in Chromium"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:116
+msgid ""
+"The [Rust in Chromium](../chromium.md) deep dive is a half-day course on "
+"using Rust as part of the Chromium browser. It includes using Rust in "
+"Chromium's `gn` build system, bringing in third-party libraries (\"crates\") "
+"and C++ interoperability."
+msgstr ""
+
+#: src/running-the-course/course-structure.md:121
+msgid ""
+"You will need to be able to build Chromium --- a debug, component build is "
+"[recommended](../chromium/setup.md) for speed but any build will work. "
+"Ensure that you can run the Chromium browser that you've built."
+msgstr ""
+
+#: src/running-the-course/course-structure.md:125
+msgid "Bare-Metal Rust"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:127
+msgid ""
+"The [Bare-Metal Rust](../bare-metal.md) deep dive is a full day class on "
+"using Rust for bare-metal (embedded) development. Both microcontrollers and "
+"application processors are covered."
+msgstr ""
+
+#: src/running-the-course/course-structure.md:131
+msgid ""
+"For the microcontroller part, you will need to buy the [BBC micro:bit]"
+"(https://microbit.org/) v2 development board ahead of time. Everybody will "
+"need to install a number of packages as described on the [welcome page](../"
+"bare-metal.md)."
+msgstr ""
+
+#: src/running-the-course/course-structure.md:136
+msgid "Concurrency in Rust"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:138
+msgid ""
+"The [Concurrency in Rust](../concurrency/welcome.md) deep dive is a full day "
+"class on classical as well as `async`/`await` concurrency."
+msgstr ""
+
+#: src/running-the-course/course-structure.md:141
+msgid ""
+"You will need a fresh crate set up and the dependencies downloaded and ready "
+"to go. You can then copy/paste the examples into `src/main.rs` to experiment "
+"with them:"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:153
+msgid "Morning (3 hours and 20 minutes, including breaks)"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:157
+msgid "Threads"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:158
+msgid "Channels"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:158
+#: src/running-the-course/course-structure.md:169
+msgid "20 minutes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:159
+msgid "Send and Sync"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:160
+msgid "Shared State"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:161
+#: src/running-the-course/course-structure.md:171
+msgid "Exercises"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:161
+#: src/running-the-course/course-structure.md:171
+msgid "1 hour and 10 minutes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:164
+msgid "Afternoon (3 hours and 30 minutes, including breaks)"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:168
+msgid "Async Basics"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:169
+msgid "Channels and Control Flow"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:170
+msgid "Pitfalls"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:176
+msgid "Idiomatic Rust"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:178
+msgid ""
+"The [Idiomatic Rust](../idiomatic/welcome.md) deep dive is a 2-day class on "
+"Rust idioms and patterns."
+msgstr ""
+
+#: src/running-the-course/course-structure.md:181
+msgid ""
+"You should be familiar with the material in [Rust Fundamentals](../welcome-"
+"day-1.md) before starting this course."
+msgstr ""
+
+#: src/running-the-course/course-structure.md:185
+msgid "Morning (14 hours and 25 minutes, including breaks)"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:189
+msgid "Foundations of API Design"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:189
+msgid "3 hours and 30 minutes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:190
+msgid "Leveraging the Type System"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:190
+msgid "7 hours and 30 minutes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:191
+msgid "Polymorphism"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:191
+msgid "3 hours and 5 minutes"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:196
+msgid "Unsafe (Work in Progress)"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:198
+msgid ""
+"The [Unsafe](../unsafe-deep-dive/welcome.md) deep dive is a two-day class on "
+"the _unsafe_ Rust language. It covers the fundamentals of Rust's safety "
+"guarantees, the motivation for `unsafe`, review process for `unsafe` code, "
+"FFI basics, and building data structures that the borrow checker would "
+"normally reject."
+msgstr ""
+
+#: src/running-the-course/course-structure.md:203
+msgid "not found - {{%course outline Unsafe}}"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:205
+msgid "Format"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:207
+msgid ""
+"The course is meant to be very interactive and we recommend letting the "
+"questions drive the exploration of Rust!"
+msgstr ""

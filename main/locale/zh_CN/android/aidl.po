@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/aidl.md:6
+msgid "AIDL"
+msgstr ""
+
+#: src/android/aidl.md:8
+msgid ""
+"Rust supports the [Android Interface Definition Language (AIDL)](https://"
+"developer.android.com/guide/components/aidl):"
+msgstr ""
+
+#: src/android/aidl.md:11
+msgid "Rust code can call existing AIDL servers."
+msgstr ""
+
+#: src/android/aidl.md:12
+msgid "You can create new AIDL servers in Rust."
+msgstr ""
+
+#: src/android/aidl.md:16
+msgid "AIDL enables Android apps to interact with each other."
+msgstr ""
+
+#: src/android/aidl.md:18
+msgid ""
+"Since Rust is a first-class citizen in this ecosystem, other processes on "
+"the device can call Rust services."
+msgstr ""

@@ -1,0 +1,87 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:6
+msgid "Copy"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:8
+msgid "Like `Clone`, but indicates the type is can be bitwise copied."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:10
+msgid "Derivable: ✅"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:12
+msgid "When to implement: If possible, but with caveats."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:15
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:16
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:17
+msgid ""
+"// Copy is just a marker trait with Clone as a supertrait.\n"
+"// pub trait Copy: Clone { }\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:28
+msgid ""
+"When not to implement/derive: If you do not want to implicitly create copies "
+"when dereferencing values of a type, do not implement this trait."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:31
+msgid ""
+"Copy enables implicit duplication, so be careful about what types you're "
+"implementing this on."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:34
+msgid ""
+"Ask the class: Can a type with heap data (`Vec`, `BTreeMap`, `Rc`, etc.) be "
+"copy? Should it be?"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:37
+msgid "It both cannot and should not, this is a misuse of this trait."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:39
+msgid ""
+"Bitwise copying on these types would mean types with heap data would no "
+"longer have exclusive ownership of a pointer, breaking the invariants "
+"usually upheld by Rust and its ecosystem."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:43
+msgid ""
+"Multiple `Vec`s would point to the same data in memory. Adding and removing "
+"data would only update individual `Vec`s length and capacity values. The "
+"same for `BTreeMap`."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:47
+msgid ""
+"Bitwise copying of `Rc`s would not update the reference counting value "
+"within the pointers, meaning there could be two instances of a `Rc` value "
+"that believe themselves to be the only `Rc` for that pointer. Once one of "
+"them is destroyed, the reference count will become 0 on one of them and the "
+"inner value dropped despite there being another `Rc` still alive."
+msgstr ""

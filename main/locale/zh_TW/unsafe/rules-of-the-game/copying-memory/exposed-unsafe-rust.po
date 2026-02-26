@@ -1,0 +1,137 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:6
+msgid "Exposed Unsafe Rust"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:9
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:34
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:36
+msgid "\"{}\""
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:42
+msgid ""
+"The functionality of copying bytes from one place to the next remains the "
+"same."
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:44
+msgid ""
+"“However, we need to manually create a slice. To do that, we first need to "
+"find the end of the data."
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:47
+msgid ""
+"“As we’re working with text, we’ll use the C convention of a null-terminated "
+"string."
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:50
+msgid "Compile the code. See that the output remains the same."
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:52
+msgid ""
+"“An unsound function can still work correctly for some inputs. Just because "
+"your tests pass, does not mean that you have a sound function.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:55
+msgid "“Can anyone spot any issues?”"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:57
+msgid "Readability: difficult to quickly scan code"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:58
+msgid "`source` pointer might be null"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:59
+msgid ""
+"`source` pointer might be dangling, i.e. point to freed or uninitialized "
+"memory"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:61
+msgid "`source` might not be null-terminated"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:63
+msgid ""
+"“Assume that we cannot change the function signature, what improvements "
+"could we make to the code to address these issues?”"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:66
+msgid ""
+"Null pointer: Add null check with early return (`if source.is_null() "
+"{ return; }`)"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:68
+msgid ""
+"Readability: Use a well-tested library rather than implementing “find first "
+"null byte” ourselves"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:71
+msgid ""
+"“Some safety requirements are impossible to defensively check for, however, "
+"i.e.:”"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:74
+msgid "dangling pointer"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:75
+msgid "no null termination byte"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:77
+msgid "“How can we make this function sound?”"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:79
+msgid "Either"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:80
+msgid ""
+"Change the type of the `source` input argument to something that has a known "
+"length, i.e. use a slice like the previous example."
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:82
+msgid "Or"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:83
+msgid "Mark the function as unsafe"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/exposed-unsafe.md:84
+msgid "Document the safety preconditions"
+msgstr ""

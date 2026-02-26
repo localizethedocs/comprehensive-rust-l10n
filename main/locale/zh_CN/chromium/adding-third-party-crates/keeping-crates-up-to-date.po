@@ -1,0 +1,25 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/adding-third-party-crates/keeping-up-to-date.md:6
+msgid "Keeping Crates Up to Date"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/keeping-up-to-date.md:8
+msgid ""
+"As the OWNER of any third party Chromium dependency, you are [expected to "
+"keep it up to date with any security fixes](https://chromium.googlesource."
+"com/chromium/src/+/main/docs/adding_to_third_party.md#add-owners). It is "
+"hoped that we will soon automate this for Rust crates, but for now, it's "
+"still your responsibility just as it is for any other third party dependency."
+msgstr ""

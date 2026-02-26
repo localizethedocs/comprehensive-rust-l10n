@@ -1,0 +1,114 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/user-defined-types/named-structs.md:6
+msgid "Named Structs"
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:8
+msgid "Like C and C++, Rust has support for custom structs:"
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:13
+#: src/user-defined-types/named-structs.md:69
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:14
+#: src/user-defined-types/named-structs.md:70
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:22
+msgid "\"{} is {} years old\""
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:27
+msgid "\"Peter\""
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:35
+msgid "\"Avery\""
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:47
+msgid "Key Points:"
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:49
+msgid "Structs work like in C or C++."
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:50
+msgid "Like in C++, and unlike in C, no typedef is needed to define a type."
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:51
+msgid "Unlike in C++, there is no inheritance between structs."
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:52
+msgid ""
+"This may be a good time to let people know there are different types of "
+"structs."
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:54
+msgid ""
+"Zero-sized structs (e.g. `struct Foo;`) might be used when implementing a "
+"trait on some type but don’t have any data that you want to store in the "
+"value itself."
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:57
+msgid ""
+"The next slide will introduce Tuple structs, used when the field names are "
+"not important."
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:59
+msgid ""
+"If you already have variables with the right names, then you can create the "
+"struct using a shorthand."
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:61
+msgid ""
+"Struct fields do not support default values. Default values are specified by "
+"implementing the `Default` trait which we will cover later."
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:64
+msgid "More to Explore"
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:66
+msgid "You can also demonstrate the struct update syntax here:"
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:72
+msgid "\"Jackie\""
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:75
+msgid ""
+"It allows us to copy the majority of the fields from the old struct without "
+"having to explicitly type it all out. It must always be the last element."
+msgstr ""
+
+#: src/user-defined-types/named-structs.md:78
+msgid ""
+"It is mainly used in combination with the `Default` trait. We will talk "
+"about struct update syntax in more detail on the slide on the `Default` "
+"trait, so we don't need to talk about it here unless students ask about it."
+msgstr ""

@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-rust/unions.md:6
+msgid "Unions"
+msgstr ""
+
+#: src/unsafe-rust/unions.md:8
+msgid "Unions are like enums, but you need to track the active field yourself:"
+msgstr ""
+
+#: src/unsafe-rust/unions.md:11
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-rust/unions.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-rust/unions.md:22
+msgid "\"int: {}\""
+msgstr ""
+
+#: src/unsafe-rust/unions.md:23
+msgid "\"bool: {}\""
+msgstr ""
+
+#: src/unsafe-rust/unions.md:23
+msgid "// Undefined behavior!\n"
+msgstr ""
+
+#: src/unsafe-rust/unions.md:30
+msgid ""
+"Unions are rarely needed in Rust as enums provide a superior alternative. "
+"They are occasionally needed for interacting with C library APIs."
+msgstr ""
+
+#: src/unsafe-rust/unions.md:33
+msgid ""
+"If you just want to reinterpret bytes as a different type, you probably want "
+"[`std::mem::transmute`](https://doc.rust-lang.org/stable/std/mem/fn."
+"transmute.html) or a safe wrapper such as the [`zerocopy`](https://crates.io/"
+"crates/zerocopy) crate."
+msgstr ""

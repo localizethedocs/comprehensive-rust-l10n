@@ -1,0 +1,38 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-rust/unsafe-functions.md:6
+msgid "Unsafe Functions"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions.md:8
+msgid ""
+"A function or method can be marked `unsafe` if it has extra preconditions "
+"you must uphold to avoid undefined behaviour."
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions.md:11
+msgid "Unsafe functions may come from two places:"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions.md:13
+msgid "Rust functions declared unsafe."
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions.md:14
+msgid "Unsafe foreign functions in `extern \"C\"` blocks."
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions.md:19
+msgid "We will look at the two kinds of unsafe functions next."
+msgstr ""

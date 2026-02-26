@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:6
+msgid "Dining Philosophers"
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:8
+msgid "The dining philosophers problem is a classic problem in concurrency:"
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:10
+msgid ""
+"Five philosophers dine together at the same table. Each philosopher has "
+"their own place at the table. There is a chopstick between each plate. The "
+"dish served is spaghetti which requires two chopsticks to eat. Each "
+"philosopher can only alternately think and eat. Moreover, a philosopher can "
+"only eat their spaghetti when they have both a left and right chopstick. "
+"Thus two chopsticks will only be available when their two nearest neighbors "
+"are thinking, not eating. After an individual philosopher finishes eating, "
+"they will put down both chopsticks."
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:19
+msgid ""
+"You will need a local [Cargo installation](../../cargo/running-locally.md) "
+"for this exercise. Copy the code below to a file called `src/main.rs`, fill "
+"out the blanks, and test that `cargo run` does not deadlock:"
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:26
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:27
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:37
+msgid ""
+"// left_chopstick: ...\n"
+"    // right_chopstick: ...\n"
+"    // thoughts: ...\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:45
+msgid "\"Eureka! {} has a new idea!\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:50
+msgid "// Pick up chopsticks...\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:51
+msgid "\"{} is eating...\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:57
+msgid "\"Socrates\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:57
+msgid "\"Hypatia\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:57
+msgid "\"Plato\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:57
+msgid "\"Aristotle\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:57
+msgid "\"Pythagoras\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:60
+msgid "// Create chopsticks\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:62
+msgid "// Create philosophers\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:64
+msgid "// Make each of them think and eat 100 times\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:66
+msgid "// Output their thoughts\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:70
+msgid "You can use the following `Cargo.toml`:"
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:74
+msgid ""
+"```toml\n"
+"[package]\n"
+"name = \"dining-philosophers\"\n"
+"version = \"0.1.0\"\n"
+"edition = \"2024\"\n"
+"```"
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:84
+msgid ""
+"Encourage students to focus first on implementing a solution that \"mostly\" "
+"works."
+msgstr ""
+
+#: src/concurrency/sync-exercises/dining-philosophers.md:86
+msgid ""
+"The deadlock in the simplest solution is a general concurrency problem and "
+"highlights that Rust does not automatically prevent this sort of bug."
+msgstr ""

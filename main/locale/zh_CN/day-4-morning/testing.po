@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/testing.md:6
+msgid "Testing"
+msgstr ""
+
+#: src/testing.md:8
+msgid "This segment should take about 45 minutes. It contains:"
+msgstr ""
+
+#: src/testing.md:10
+msgid "Slide"
+msgstr ""
+
+#: src/testing.md:10
+msgid "Duration"
+msgstr ""
+
+#: src/testing.md:12
+msgid "Unit Tests"
+msgstr ""
+
+#: src/testing.md:12 src/testing.md:13
+msgid "5 minutes"
+msgstr ""
+
+#: src/testing.md:13
+msgid "Other Types of Tests"
+msgstr ""
+
+#: src/testing.md:14
+msgid "Compiler Lints and Clippy"
+msgstr ""
+
+#: src/testing.md:14
+msgid "3 minutes"
+msgstr ""
+
+#: src/testing.md:15
+msgid "Exercise: Luhn Algorithm"
+msgstr ""
+
+#: src/testing.md:15
+msgid "30 minutes"
+msgstr ""

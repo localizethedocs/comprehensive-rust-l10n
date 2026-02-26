@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/microcontrollers/pacs.md:6
+msgid "Peripheral Access Crates"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/pacs.md:8
+msgid ""
+"[`svd2rust`](https://crates.io/crates/svd2rust) generates mostly-safe Rust "
+"wrappers for memory-mapped peripherals from [CMSIS-SVD](https://www.keil.com/"
+"pack/doc/CMSIS/SVD/html/index.html) files."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/pacs.md:13
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/pacs.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/pacs.md:29
+msgid "// Configure GPIO 0 pins 21 and 28 as push-pull outputs.\n"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/pacs.md:47
+msgid "// Set pin 28 low and pin 21 high to turn the LED on.\n"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/pacs.md:57
+msgid ""
+"SVD (System View Description) files are XML files typically provided by "
+"silicon vendors that describe the memory map of the device."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/pacs.md:59
+msgid ""
+"They are organized by peripheral, register, field and value, with names, "
+"descriptions, addresses and so on."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/pacs.md:61
+msgid ""
+"SVD files are frequently buggy and incomplete, so there are various projects "
+"that patch the mistakes, add missing details, and publish the generated "
+"crates."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/pacs.md:64
+msgid "`cortex-m-rt` provides the vector table, among other things."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/pacs.md:65
+msgid ""
+"If you `cargo install cargo-binutils` then you can run `cargo objdump --bin "
+"pac -- -d --no-show-raw-insn` to see the resulting binary."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/pacs.md:69
+msgid "Run the example with:"
+msgstr ""

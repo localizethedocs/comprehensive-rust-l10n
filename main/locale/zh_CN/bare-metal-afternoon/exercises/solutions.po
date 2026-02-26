@@ -1,0 +1,218 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/exercises/bare-metal/solutions-afternoon.md:6
+msgid "Bare Metal Rust Afternoon"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:8
+msgid "RTC driver"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:10
+msgid "([back to exercise](rtc.md))"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:12
+msgid "_main.rs_:"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:15
+#: src/exercises/bare-metal/solutions-afternoon.md:168
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:16
+#: src/exercises/bare-metal/solutions-afternoon.md:169
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:39
+msgid "/// Base addresses of the GICv3.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:43
+msgid "/// Base address of the primary PL011 UART.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:47
+msgid "/// Attributes to use for device memory in the initial identity map.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:53
+msgid "/// Attributes to use for normal memory in the initial identity map.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:63
+msgid "// 1 GiB of device memory.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:65
+msgid "// 1 GiB of normal memory.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:67
+msgid "// Another 1 GiB of device memory starting at 256 GiB.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:71
+msgid "/// Base address of the PL031 RTC.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:74
+msgid "/// The IRQ used by the PL031 RTC.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:80
+msgid ""
+"// SAFETY: `PL011_BASE_ADDRESS` is the base address of a PL011 device, and\n"
+"    // nothing else accesses that address range.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:85
+msgid "\"main({:#x}, {:#x}, {:#x}, {:#x})\""
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:87
+msgid ""
+"// SAFETY: `GICD_BASE_ADDRESS` and `GICR_BASE_ADDRESS` are the base\n"
+"    // addresses of a GICv3 distributor and redistributor respectively, and\n"
+"    // nothing else accesses those address ranges.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:100
+msgid ""
+"// SAFETY: `PL031_BASE_ADDRESS` is the base address of a PL031 device, and\n"
+"    // nothing else accesses that address range.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:105
+msgid "\"RTC: {time}\""
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:113
+msgid "// Wait for 3 seconds, without interrupts.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:116
+#: src/exercises/bare-metal/solutions-afternoon.md:134
+msgid "\"Waiting for {}\""
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:118
+#: src/exercises/bare-metal/solutions-afternoon.md:126
+#: src/exercises/bare-metal/solutions-afternoon.md:139
+#: src/exercises/bare-metal/solutions-afternoon.md:147
+msgid "\"matched={}, interrupt_pending={}\""
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:130
+#: src/exercises/bare-metal/solutions-afternoon.md:151
+msgid "\"Finished waiting\""
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:132
+msgid "// Wait another 3 seconds for an interrupt.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:154
+msgid "\"system_off returned\""
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:159
+msgid "\"{info}\""
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:165
+msgid "_pl031.rs_:"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:173
+msgid "/// Data register\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:175
+msgid "/// Match register\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:177
+msgid "/// Load register\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:179
+msgid "/// Control register\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:182
+msgid "/// Interrupt Mask Set or Clear register\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:185
+msgid "/// Raw Interrupt Status\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:188
+msgid "/// Masked Interrupt Status\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:191
+msgid "/// Interrupt Clear Register\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:195
+msgid "/// Driver for a PL031 real-time clock.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:203
+msgid ""
+"/// Constructs a new instance of the RTC driver for a PL031 device with the\n"
+"    /// given set of registers.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:209
+msgid "/// Reads the current RTC value.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:214
+msgid ""
+"/// Writes a match value. When the RTC value matches this then an interrupt\n"
+"    /// will be generated (if it is enabled).\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:220
+msgid ""
+"/// Returns whether the match register matches the RTC value, whether or "
+"not\n"
+"    /// the interrupt is enabled.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:227
+msgid ""
+"/// Returns whether there is currently an interrupt pending.\n"
+"    ///\n"
+"    /// This should be true if and only if `matched` returns true and the\n"
+"    /// interrupt is masked.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:236
+msgid ""
+"/// Sets or clears the interrupt mask.\n"
+"    ///\n"
+"    /// When the mask is true the interrupt is enabled; when it is false "
+"the\n"
+"    /// interrupt is disabled.\n"
+msgstr ""
+
+#: src/exercises/bare-metal/solutions-afternoon.md:245
+msgid "/// Clears a pending interrupt, if any.\n"
+msgstr ""

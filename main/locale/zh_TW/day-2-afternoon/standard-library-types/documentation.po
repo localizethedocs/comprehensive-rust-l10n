@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/std-types/docs.md:6
+msgid "Documentation"
+msgstr ""
+
+#: src/std-types/docs.md:8
+msgid "Rust comes with extensive documentation. For example:"
+msgstr ""
+
+#: src/std-types/docs.md:10
+msgid ""
+"All of the details about [loops](https://doc.rust-lang.org/stable/reference/"
+"expressions/loop-expr.html)."
+msgstr ""
+
+#: src/std-types/docs.md:12
+msgid ""
+"Primitive types like [`u8`](https://doc.rust-lang.org/stable/std/primitive."
+"u8.html)."
+msgstr ""
+
+#: src/std-types/docs.md:14
+msgid ""
+"Standard library types like [`Option`](https://doc.rust-lang.org/stable/std/"
+"option/enum.Option.html) or [`BinaryHeap`](https://doc.rust-lang.org/stable/"
+"std/collections/struct.BinaryHeap.html)."
+msgstr ""
+
+#: src/std-types/docs.md:18
+msgid "Use `rustup doc --std` or <https://std.rs> to view the documentation."
+msgstr ""
+
+#: src/std-types/docs.md:20
+msgid "In fact, you can document your own code:"
+msgstr ""
+
+#: src/std-types/docs.md:23 src/std-types/docs.md:46
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/std-types/docs.md:24 src/std-types/docs.md:47
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/std-types/docs.md:25
+msgid ""
+"/// Determine whether the first argument is divisible by the second "
+"argument.\n"
+"///\n"
+"/// If the second argument is zero, the result is false.\n"
+msgstr ""
+
+#: src/std-types/docs.md:37
+msgid ""
+"The contents are treated as Markdown. All published Rust library crates are "
+"automatically documented at [`docs.rs`](https://docs.rs) using the [rustdoc]"
+"(https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html) tool. It is "
+"idiomatic to document all public items in an API using this pattern."
+msgstr ""
+
+#: src/std-types/docs.md:42
+msgid ""
+"To document an item from inside the item (such as inside a module), use `//!"
+"` or `/*! .. */`, called \"inner doc comments\":"
+msgstr ""
+
+#: src/std-types/docs.md:48
+msgid ""
+"//! This module contains functionality relating to divisibility of "
+"integers.\n"
+msgstr ""
+
+#: src/std-types/docs.md:55
+msgid ""
+"Show students the generated docs for the `rand` crate at <https://docs.rs/"
+"rand>."
+msgstr ""

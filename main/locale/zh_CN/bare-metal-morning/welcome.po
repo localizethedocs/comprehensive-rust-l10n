@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal.md:6
+msgid "Welcome to Bare Metal Rust"
+msgstr ""
+
+#: src/bare-metal.md:8
+msgid ""
+"This is a standalone one-day course about bare-metal Rust, aimed at people "
+"who are familiar with the basics of Rust (perhaps from completing the "
+"Comprehensive Rust course), and ideally also have some experience with bare-"
+"metal programming in some other language such as C."
+msgstr ""
+
+#: src/bare-metal.md:13
+msgid ""
+"Today we will talk about 'bare-metal' Rust: running Rust code without an OS "
+"underneath us. This will be divided into several parts:"
+msgstr ""
+
+#: src/bare-metal.md:16
+msgid "What is `no_std` Rust?"
+msgstr ""
+
+#: src/bare-metal.md:17
+msgid "Writing firmware for microcontrollers."
+msgstr ""
+
+#: src/bare-metal.md:18
+msgid "Writing bootloader / kernel code for application processors."
+msgstr ""
+
+#: src/bare-metal.md:19
+msgid "Some useful crates for bare-metal Rust development."
+msgstr ""
+
+#: src/bare-metal.md:21
+msgid ""
+"For the microcontroller part of the course we will use the [BBC micro:bit]"
+"(https://microbit.org/) v2 as an example. It's a [development board](https://"
+"tech.microbit.org/hardware/) based on the Nordic nRF52833 microcontroller "
+"with some LEDs and buttons, an I2C-connected accelerometer and compass, and "
+"an on-board SWD debugger."
+msgstr ""
+
+#: src/bare-metal.md:27
+msgid ""
+"To get started, install some tools we'll need later. On gLinux or Debian:"
+msgstr ""
+
+#: src/bare-metal.md:40
+msgid ""
+"And give users in the `plugdev` group access to the micro:bit programmer:"
+msgstr ""
+
+#: src/bare-metal.md:50
+msgid ""
+"You should see \"NXP ARM mbed\" in the output of `lsusb` if the device is "
+"available. If you are using a Linux environment on a Chromebook, you will "
+"need to share the USB device with Linux, via `chrome://os-settings/crostini/"
+"sharedUsbDevices`."
+msgstr ""
+
+#: src/bare-metal.md:55
+msgid "On MacOS:"
+msgstr ""

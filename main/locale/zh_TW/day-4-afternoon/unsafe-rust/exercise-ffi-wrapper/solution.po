@@ -1,0 +1,213 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-rust/solution.md:6
+msgid "Solution"
+msgstr ""
+
+#: src/unsafe-rust/solution.md:9
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-rust/solution.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-rust/solution.md:14 src/unsafe-rust/solution.md:27
+#: src/unsafe-rust/solution.md:38 src/unsafe-rust/solution.md:52
+#: src/unsafe-rust/solution.md:60
+msgid "\"macos\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:17
+msgid "// Opaque type. See https://doc.rust-lang.org/nomicon/ffi.html.\n"
+msgstr ""
+
+#: src/unsafe-rust/solution.md:24
+msgid ""
+"// Layout according to the Linux man page for readdir(3), where ino_t and\n"
+"    // off_t are resolved according to the definitions in\n"
+"    // /usr/include/x86_64-linux-gnu/{sys/types.h, bits/typesizes.h}.\n"
+msgstr ""
+
+#: src/unsafe-rust/solution.md:37
+msgid "// Layout according to the macOS man page for dir(5).\n"
+msgstr ""
+
+#: src/unsafe-rust/solution.md:49
+msgid "\"C\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:52 src/unsafe-rust/solution.md:60
+msgid "\"x86_64\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:55
+msgid ""
+"// See https://github.com/rust-lang/libc/issues/414 and the section on\n"
+"        // _DARWIN_FEATURE_64_BIT_INODE in the macOS man page for stat(2).\n"
+"        //\n"
+"        // \"Platforms that existed before these updates were available\" "
+"refers\n"
+"        // to macOS (as opposed to iOS / wearOS / etc.) on Intel and "
+"PowerPC.\n"
+msgstr ""
+
+#: src/unsafe-rust/solution.md:61
+msgid "\"readdir$INODE64\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:79
+msgid ""
+"// Call opendir and return a Ok value if that worked,\n"
+"        // otherwise return Err with a message.\n"
+msgstr ""
+
+#: src/unsafe-rust/solution.md:82
+msgid "\"Invalid path: {err}\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:83
+msgid "// SAFETY: path.as_ptr() cannot be NULL.\n"
+msgstr ""
+
+#: src/unsafe-rust/solution.md:86
+msgid "\"Could not open {path:?}\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:96
+msgid ""
+"// Keep calling readdir until we get a NULL pointer back.\n"
+"        // SAFETY: self.dir is never NULL.\n"
+msgstr ""
+
+#: src/unsafe-rust/solution.md:100
+msgid "// We have reached the end of the directory.\n"
+msgstr ""
+
+#: src/unsafe-rust/solution.md:103
+msgid ""
+"// SAFETY: dirent is not NULL and dirent.d_name is NUL\n"
+"        // terminated.\n"
+msgstr ""
+
+#: src/unsafe-rust/solution.md:113
+msgid ""
+"// Call closedir as needed.\n"
+"        // SAFETY: self.dir is never NULL.\n"
+msgstr ""
+
+#: src/unsafe-rust/solution.md:116
+msgid "\"Could not close {:?}\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:122 src/unsafe-rust/solution.md:146
+#: src/unsafe-rust/solution.md:161
+msgid "\".\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:123
+msgid "\"files: {:#?}\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:134
+msgid "\"no-such-directory\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:142 src/unsafe-rust/solution.md:157
+msgid "\"Non UTF-8 character in path\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:146 src/unsafe-rust/solution.md:161
+msgid "\"..\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:153 src/unsafe-rust/solution.md:161
+msgid "\"foo.txt\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:153
+msgid "\"The Foo Diaries\\n\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:154 src/unsafe-rust/solution.md:161
+msgid "\"bar.png\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:154
+msgid "\"<PNG>\\n\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:155 src/unsafe-rust/solution.md:161
+msgid "\"crab.rs\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:155
+msgid "\"//! Crab\\n\""
+msgstr ""
+
+#: src/unsafe-rust/solution.md:167
+msgid ""
+"**Safety Comments:** Each `unsafe` block is preceded by a `// SAFETY:` "
+"comment explaining why the operation is safe. This is standard practice in "
+"Rust to aid auditing."
+msgstr ""
+
+#: src/unsafe-rust/solution.md:170
+msgid ""
+"**String conversions:** The code demonstrates the conversions required for "
+"FFI:"
+msgstr ""
+
+#: src/unsafe-rust/solution.md:172
+msgid "`&str` -> `CString`: To create a null-terminated string for C."
+msgstr ""
+
+#: src/unsafe-rust/solution.md:173
+msgid "`CString` -> `*const c_char`: To pass the pointer to C."
+msgstr ""
+
+#: src/unsafe-rust/solution.md:174
+msgid "`*const c_char` -> `&CStr`: To wrap the returned C string."
+msgstr ""
+
+#: src/unsafe-rust/solution.md:175
+msgid ""
+"`&CStr` -> `&[u8]` -> `&OsStr` -> `OsString`: To convert the bytes back to a "
+"Rust OS string."
+msgstr ""
+
+#: src/unsafe-rust/solution.md:177
+msgid ""
+"**RAII (`Drop`):** We implement `Drop` to call `closedir` automatically when "
+"the iterator goes out of scope. This ensures we don't leak file descriptors."
+msgstr ""
+
+#: src/unsafe-rust/solution.md:179
+msgid ""
+"**Iterator Interface:** We wrap the C API in a Rust `Iterator`, providing a "
+"safe and idiomatic interface (`next` returns `Option<OsString>`) to the "
+"underlying unsafe C functions."
+msgstr ""
+
+#: src/unsafe-rust/solution.md:185
+msgid ""
+"Explain that `CString` owns the data (like `String`), while `CStr` is a "
+"borrowed reference (like `&str`)."
+msgstr ""
+
+#: src/unsafe-rust/solution.md:187
+msgid ""
+"The `OsStrExt` trait is needed on Unix systems to convert bytes directly to "
+"`OsStr`."
+msgstr ""

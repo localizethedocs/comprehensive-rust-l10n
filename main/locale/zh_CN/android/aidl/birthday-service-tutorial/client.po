@@ -1,0 +1,123 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/aidl/example-service/client.md:6
+msgid "AIDL Client"
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:8
+msgid "Finally, we can create a Rust client for our new service."
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:10
+msgid "_birthday_service/src/client.rs_:"
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:13
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:19
+msgid "\"birthdayservice\""
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:20
+msgid "/// Call the birthday service.\n"
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:23
+msgid "\"Bob\""
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:31
+msgid "\"Failed to connect to BirthdayService\""
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:33
+msgid "// Call the service.\n"
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:35
+msgid "\"{msg}\""
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:39
+msgid "_birthday_service/Android.bp_:"
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:43
+#: src/android/aidl/example-service/client.md:44
+msgid "\"birthday_client\""
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:45
+msgid "\"src/client.rs\""
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:47
+msgid "\"com.example.birthdayservice-rust\""
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:49
+msgid "// To avoid dynamic link error.\n"
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:53
+msgid "Notice that the client does not depend on `libbirthdayservice`."
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:55
+msgid "Build, push, and run the client on your device:"
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:57
+msgid ""
+"```shell\n"
+"m birthday_client\n"
+"adb push \"$ANDROID_PRODUCT_OUT/system/bin/birthday_client\" /data/local/"
+"tmp\n"
+"adb shell /data/local/tmp/birthday_client Charlie 60\n"
+"```"
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:69
+msgid ""
+"`Strong<dyn IBirthdayService>` is the trait object representing the service "
+"that the client has connected to."
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:71
+msgid ""
+"`Strong` is a custom smart pointer type for Binder. It handles both an in-"
+"process ref count for the service trait object, and the global Binder ref "
+"count that tracks how many processes have a reference to the object."
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:74
+msgid ""
+"Note that the trait object that the client uses to talk to the service uses "
+"the exact same trait that the server implements. For a given Binder "
+"interface, there is a single Rust trait generated that both client and "
+"server use."
+msgstr ""
+
+#: src/android/aidl/example-service/client.md:78
+msgid ""
+"Use the same service identifier used when registering the service. This "
+"should ideally be defined in a common crate that both the client and server "
+"can depend on."
+msgstr ""

@@ -1,0 +1,217 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:6
+msgid "Example: References"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:9
+#: src/unsafe-deep-dive/safety-preconditions/references.md:91
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:10
+#: src/unsafe-deep-dive/safety-preconditions/references.md:92
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:17
+#: src/unsafe-deep-dive/safety-preconditions/references.md:18
+#: src/unsafe-deep-dive/safety-preconditions/references.md:101
+#: src/unsafe-deep-dive/safety-preconditions/references.md:104
+msgid "\"{:?}\""
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:22
+msgid "Confirm understanding of the syntax"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:24
+msgid ""
+"`Box<i32>` type is a reference to an integer on the heap that is owned by "
+"the box."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:26
+msgid ""
+"`*mut i32` type is a so-called raw pointer to an integer that the compiler "
+"does not know the ownership of. Programmers need to ensure the rules are "
+"enforced without assistance from the compiler."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:29
+msgid ""
+"Note: raw pointers do not provide ownership info to Rust. A pointer can be "
+"semantically owning the data, or semantically borrowing, but that "
+"information only exists in the programmer's mind."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:33
+msgid "`&mut *boxed as *mut _` expression:"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:34
+msgid "`*boxed` is ..."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:35
+msgid "`&mut *boxed` is ..."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:36
+msgid "finally, `as *mut i32` casts the reference to a pointer."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:38
+msgid ""
+"References, such as `&mut i32`, \"borrow\" their referent. This is Rust's "
+"ownership system."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:41
+msgid "Confirm understanding of ownership"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:43
+msgid "Step through code:"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:44
+msgid ""
+"(Line 3) Creates raw pointer to the `123` by dereferencing the box, creating "
+"a new reference and casting the new reference as a pointer."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:46
+msgid "(Line 4) Creates raw pointer with a NULL value"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:47
+msgid "(Line 7) Converts the raw pointer to an Option with `.as_mut()`"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:49
+msgid "Highlight that pointers are nullable in Rust (unlike references)."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:51
+msgid "Compile to reveal the error messages."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:53
+msgid "Discuss"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:54
+msgid "(Line 6) `println!(\"{:?}\", *a);`"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:55
+msgid "Prefix star dereferences a raw pointer."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:56
+msgid ""
+"It is an explicit operation. Whereas regular references have implicit "
+"dereferencing most of the time thanks to the Deref trait. This is referred "
+"to as \"auto-deref\"."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:59
+msgid "Dereferencing a raw pointer is an unsafe operation."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:60
+msgid "Requires an unsafe block."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:61
+msgid "(Line 7) `println!(\"{:?}\", b.as_mut());`"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:62
+msgid "`as_mut()` is an unsafe function."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:63
+msgid "Calling an unsafe function requires an unsafe block."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:65
+msgid ""
+"Demonstrate: Fix the code (add unsafe blocks) and compile again to show the "
+"working program."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:68
+msgid ""
+"Demonstrate: Replace `as *mut i32` with `as *mut _`, show that it compiles."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:70
+msgid ""
+"We can partially omit the target type in the cast. The Rust compiler knows "
+"that the source of the cast is a `&mut i32`. This reference type can only be "
+"converted to one pointer type, `*mut i32`."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:74
+msgid "Add safety comments:"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:75
+msgid ""
+"We said that the unsafe code marks the responsibility shift from the "
+"compiler to the programmer."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:77
+msgid ""
+"How do we convey that we thought about our unusual responsibilities while "
+"writing unsafe code? Safety comments."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:79
+msgid "Safety comments explain why unsafe code is correct."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:80
+msgid "Without a safety comment, unsafe code is not safe."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:82
+msgid "Discuss: Whether to use one large unsafe block or two smaller ones:"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:83
+msgid "Possibility of using a single unsafe block rather than multiple."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:84
+msgid "Using more allows safety comments as specific as possible."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:88
+msgid "_Suggested Solution_"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:99
+msgid ""
+"// SAFETY: `a` is a non-null pointer to i32, it is initialized and still\n"
+"    // allocated.\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/references.md:103
+msgid ""
+"// SAFETY: `b` is a null pointer, which `as_mut()` converts to `None`.\n"
+msgstr ""

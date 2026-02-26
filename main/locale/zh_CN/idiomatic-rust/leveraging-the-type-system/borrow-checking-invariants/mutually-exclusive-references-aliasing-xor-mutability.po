@@ -1,0 +1,163 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:6
+msgid "Mutually Exclusive References / \"Aliasing XOR Mutability\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:8
+msgid ""
+"We can use the mutual exclusion of `&T` and `&mut T` references to prevent "
+"data from being used before it is ready."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:16
+msgid "/* fields omitted */"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:23
+msgid "// fake results\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:36
+msgid "// Send the query over, but don't wait for results.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:39
+msgid "// Finish executing the transaction and retrieve the results.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:46
+msgid "// The transaction `tx` mutably borrows `db`.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:48
+msgid "\"SELECT * FROM users\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:50
+msgid ""
+"// This won't compile because `db` is already mutably borrowed by `tx`.\n"
+"    // let results = db.results(); // ❌🔨\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:53
+msgid "// The borrow of `db` ends when `tx` is consumed by `commit()`.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:56
+msgid "// Now it is possible to borrow `db` again.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:63
+msgid ""
+"Motivation: In this database API queries are kicked off for asynchronous "
+"execution and the results are only available once the whole transaction is "
+"finished."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:67
+msgid ""
+"A user might think that queries are executed immediately, and try to read "
+"results before they are made available. This API misuse could make the app "
+"read incomplete or incorrect data."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:71
+msgid ""
+"While an obvious misunderstanding, situations such as this can happen in "
+"practice."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:74
+msgid ""
+"Ask: Has anyone misunderstood an API by not reading the docs for proper use?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:76
+msgid ""
+"Expect: Examples of early-career or in-university mistakes and "
+"misunderstandings."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:79
+msgid ""
+"As an API grows in size and user base, a smaller percentage of users has "
+"deep knowledge of the system the API represents."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:82
+msgid ""
+"This example shows how we can use Aliasing XOR Mutability to prevent this "
+"kind of misuse."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:85
+msgid ""
+"The code might read results before they are ready if the programmer assumes "
+"that the queries execute immediately rather than kicked off for asynchronous "
+"execution."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:89
+msgid ""
+"The constructor for the `Transaction` type takes a mutable reference to the "
+"database connection, and stores it in the returned `Transaction` value."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:92
+msgid ""
+"The explicit lifetime here doesn't have to be intimidating, it just means "
+"\"`Transaction` is outlived by the `DatabaseConnection` that was passed to "
+"it\" in this case."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:96
+msgid ""
+"The reference is mutable to completely lock out the `DatabaseConnection` "
+"from other usage, such as starting further transactions or reading the "
+"results."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:99
+msgid ""
+"While a `Transaction` exists, we can't touch the `DatabaseConnection` "
+"variable that was created from it."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:102
+msgid ""
+"Demonstrate: uncomment the `db.results()` line. Doing so will result in a "
+"compile error, as `db` is already mutably borrowed."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:105
+msgid ""
+"Note: The query results not being public and placed behind a getter function "
+"lets us enforce the invariant \"users can only look at query results if "
+"there is no active transactions.\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/aliasing-xor-mutability.md:109
+msgid ""
+"If the query results were placed in a public struct field, this invariant "
+"could be violated."
+msgstr ""

@@ -1,0 +1,171 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:6
+msgid "PhantomData 3/4: Lifetimes for External Resources"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:8
+msgid ""
+"The invariants of external resources often match what we can do with "
+"lifetime rules."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:12
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:80
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:92
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:13
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:81
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:93
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:14
+msgid "// use std::marker::PhantomData;\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:16
+msgid ""
+"/// Direct FFI to a database library in C.\n"
+"/// We got this API as is, we have no influence over it.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:20
+msgid "// maximum 255 databases open at the same time\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:25
+msgid "// ... etc.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:43
+msgid ""
+"Remember the transaction API from the [Aliasing XOR Mutability](./aliasing-"
+"xor-mutability.md) example."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:46
+msgid ""
+"We held onto a mutable reference to the database connection within the "
+"transaction type to lock out the database while a transaction is active."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:49
+msgid ""
+"In this example, we want to implement a `Transaction` API on top of an "
+"external, non-Rust API."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:52
+msgid ""
+"We start by defining a `Transaction` type that holds onto `&mut "
+"DatabaseConnection`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:55
+msgid ""
+"Ask: What are the limits of this implementation? Assume the `u8` is accurate "
+"implementation-wise and enough information for us to use the external API."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:58
+msgid "Expect:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:59
+msgid ""
+"Indirection takes up 7 bytes more than we need to on a 64-bit platform, as "
+"well as costing a pointer dereference at runtime."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:62
+msgid ""
+"Problem: We want the transaction to borrow the database connection that "
+"created it, but we don't want the `Transaction` object to store a real "
+"reference."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:66
+msgid ""
+"Ask: What happens when we remove the mutable reference in `Transaction` "
+"while keeping the lifetime parameter?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:69
+msgid "Expect: Unused lifetime parameter!"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:71
+msgid ""
+"Like with the type tagging from the previous slides, we can bring in "
+"`PhantomData` to capture this unused lifetime parameter for us."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:74
+msgid ""
+"The difference is that we will need to use the lifetime alongside another "
+"type, but that other type does not matter too much."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:77
+msgid "Demonstrate: change `Transaction` to the following:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:89
+msgid "Update the `DatabaseConnection::new_transaction()` method:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:102
+msgid ""
+"This gives an owned database connection that is tied to the "
+"`DatabaseConnection` that created it, but with less runtime memory footprint "
+"that the store-a-reference version did."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:106
+msgid ""
+"Because `PhantomData` is a zero-sized type (like `()` or `struct "
+"MyZeroSizedType;`), the size of `Transaction` is now the same as `u8`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:109
+msgid ""
+"The implementation that held onto a reference instead was as large as a "
+"`usize`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:112
+msgid "More to Explore"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:114
+msgid ""
+"This way of encoding relationships between types and values is very powerful "
+"when combined with unsafe, as the ways one can manipulate lifetimes becomes "
+"almost arbitrary. This is also dangerous, but when combined with tools like "
+"external, mechanically-verified proofs we can safely encode cyclic/self-"
+"referential types while encoding lifetime & safety expectations in the "
+"relevant data types."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-03-lifetimes.md:121
+msgid ""
+"The [GhostCell (2021)](https://plv.mpi-sws.org/rustbelt/ghostcell/) paper "
+"and its [relevant implementation](https://gitlab.mpi-sws.org/FP/ghostcell) "
+"show this kind of work off. While the borrow checker is restrictive, there "
+"are still ways to use escape hatches and then _show that the ways you used "
+"those escape hatches are consistent and safe._"
+msgstr ""

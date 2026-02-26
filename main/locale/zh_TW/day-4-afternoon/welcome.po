@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/welcome-day-4-afternoon.md:6
+msgid "Welcome Back"
+msgstr ""
+
+#: src/welcome-day-4-afternoon.md:8
+msgid ""
+"Including 10 minute breaks, this session should take about 2 hours and 20 "
+"minutes. It contains:"
+msgstr ""
+
+#: src/welcome-day-4-afternoon.md:10
+msgid "Segment"
+msgstr ""
+
+#: src/welcome-day-4-afternoon.md:10
+msgid "Duration"
+msgstr ""
+
+#: src/welcome-day-4-afternoon.md:12
+msgid "Error Handling"
+msgstr ""
+
+#: src/welcome-day-4-afternoon.md:12
+msgid "55 minutes"
+msgstr ""
+
+#: src/welcome-day-4-afternoon.md:13
+msgid "Unsafe Rust"
+msgstr ""
+
+#: src/welcome-day-4-afternoon.md:13
+msgid "1 hour and 15 minutes"
+msgstr ""

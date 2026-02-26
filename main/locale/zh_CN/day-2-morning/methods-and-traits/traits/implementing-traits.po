@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/methods-and-traits/traits/implementing.md:6
+msgid "Implementing Traits"
+msgstr ""
+
+#: src/methods-and-traits/traits/implementing.md:9
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/methods-and-traits/traits/implementing.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/methods-and-traits/traits/implementing.md:16
+msgid "\"Oh you're a cutie! What's your name? {}\""
+msgstr ""
+
+#: src/methods-and-traits/traits/implementing.md:27
+msgid "\"Woof, my name is {}!\""
+msgstr ""
+
+#: src/methods-and-traits/traits/implementing.md:32
+msgid "\"Fido\""
+msgstr ""
+
+#: src/methods-and-traits/traits/implementing.md:40
+msgid ""
+"To implement `Trait` for `Type`, you use an `impl Trait for Type { .. }` "
+"block."
+msgstr ""
+
+#: src/methods-and-traits/traits/implementing.md:43
+msgid ""
+"Unlike Go interfaces, just having matching methods is not enough: a `Cat` "
+"type with a `talk()` method would not automatically satisfy `Pet` unless it "
+"is in an `impl Pet` block."
+msgstr ""
+
+#: src/methods-and-traits/traits/implementing.md:47
+msgid ""
+"Traits may provide default implementations of some methods. Default "
+"implementations can rely on all the methods of the trait. In this case, "
+"`greet` is provided, and relies on `talk`."
+msgstr ""
+
+#: src/methods-and-traits/traits/implementing.md:51
+msgid ""
+"Multiple `impl` blocks are allowed for a given type. This includes both "
+"inherent `impl` blocks and trait `impl` blocks. Likewise multiple traits can "
+"be implemented for a given type (and often types implement many traits!). "
+"`impl` blocks can even be spread across multiple modules/files."
+msgstr ""

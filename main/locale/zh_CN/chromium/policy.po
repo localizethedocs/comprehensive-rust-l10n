@@ -1,0 +1,95 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/policy.md:6
+msgid "Chromium Rust policy"
+msgstr ""
+
+#: src/chromium/policy.md:8
+msgid ""
+"Chromium's Rust policy can be found [here](https://source.chromium.org/"
+"chromium/chromium/src/+/main:docs/rust.md;l=22). Rust can be used for both "
+"first-party and third-party code."
+msgstr ""
+
+#: src/chromium/policy.md:12
+msgid "Using Rust for pure first-party code looks like this:"
+msgstr ""
+
+#: src/chromium/policy.md:14
+msgid ""
+"```bob\n"
+"\"C++\"                           Rust\n"
+".- - - - - - - - - -.           .- - - - - - - - - - -.\n"
+":                   :           :                     :\n"
+": Existing Chromium :           :  Chromium Rust      :\n"
+": \"C++\"             :           :  code               :\n"
+": +---------------+ :           : +----------------+  :\n"
+": |               | :           : |                |  :\n"
+": |         o-----+-+-----------+-+->              |  :\n"
+": |               | : Language  : |                |  :\n"
+": +---------------+ : boundary  : +----------------+  :\n"
+":                   :           :                     :\n"
+"`- - - - - - - - - -'           `- - - - - - - - - - -'\n"
+"```"
+msgstr ""
+
+#: src/chromium/policy.md:29
+msgid ""
+"The third-party case is also common. You will typically also need a small "
+"amount of first-party glue code, because very few Rust libraries directly "
+"expose a C/C++ API."
+msgstr ""
+
+#: src/chromium/policy.md:33
+msgid ""
+"```bob\n"
+"\"C++\"                           Rust\n"
+".- - - - - - - - - -.           .- - - - - - - - - - - - - - - - - - - - - - "
+"-.\n"
+":                   :           :                                             :\n"
+": Existing Chromium :           :  Chromium Rust              Existing "
+"Rust   :\n"
+": \"C++\"             :           :  \"wrapper\"                  "
+"crate           :\n"
+": +---------------+ :           : +----------------+          +-------------"
+"+ :\n"
+": |               | :           : |                |          |             "
+"| :\n"
+": |         o-----+-+-----------+-+->            o-+----------+-->          "
+"| :\n"
+": |               | : Language  : |                | Crate    |             "
+"| :\n"
+": +---------------+ : boundary  : +----------------+ API      +-------------"
+"+ :\n"
+":                   :           :                                             :\n"
+"`- - - - - - - - - -'           `- - - - - - - - - - - - - - - - - - - - - - "
+"-'\n"
+"```"
+msgstr ""
+
+#: src/chromium/policy.md:48
+msgid ""
+"The scenario of using a third-party crate is the more complex one, so "
+"today's course will focus on:"
+msgstr ""
+
+#: src/chromium/policy.md:51
+msgid "Bringing in third-party Rust libraries (\"crates\")"
+msgstr ""
+
+#: src/chromium/policy.md:52
+msgid ""
+"Writing glue code to be able to use those crates from Chromium C++. (The "
+"same techniques are used when working with first-party Rust code)."
+msgstr ""

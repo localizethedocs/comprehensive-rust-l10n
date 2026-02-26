@@ -1,0 +1,107 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:6
+msgid "Drop: Option"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:21
+msgid "\"write '{data}' to file '{}'\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:33
+msgid "\"automatically closing handle for file: {}\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:43
+msgid "\"closed handle for file: {}\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:48
+msgid "\"foo.txt\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:49
+msgid "\"hello\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:50
+msgid "\"manually closed file: {}\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:57
+msgid ""
+"In this example we want to let the user call `close()` manually so that "
+"errors from closing the file can be reported explicitly."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:60
+msgid ""
+"At the same time we still want RAII semantics: if the user forgets to call "
+"`close()`, the handle must be cleaned up automatically in `Drop`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:63
+msgid ""
+"Wrapping the handle in an `Option` gives us both behaviors. `close()` "
+"extracts the handle with `take()`, and `Drop` only runs cleanup if a handle "
+"is still present."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:67
+msgid ""
+"Demo: remove the `.close()` call and run the code — `Drop` now prints the "
+"automatic cleanup."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:70
+msgid ""
+"The main downside is ergonomics. `Option` forces us to handle both the "
+"`Some` and `None` case even in places where, logically, `None` cannot occur. "
+"Rust’s type system cannot express that relationship between `File` and its "
+"`Handle`, so we handle both cases manually."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:75
+msgid "More to explore"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:77
+msgid ""
+"Instead of `Option` we could use [`ManuallyDrop`](https://doc.rust-lang.org/"
+"std/mem/struct.ManuallyDrop.html), which suppresses automatic destruction by "
+"preventing Rust from calling `Drop` for the value; you must handle teardown "
+"yourself."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:82
+msgid ""
+"The [_scopeguard_ example](./scope_guard.md) on the previous slide shows how "
+"`ManuallyDrop` can replace `Option` to avoid handling `None` in places where "
+"the value should always exist."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:86
+msgid ""
+"In such designs we typically track the drop state with a separate flag next "
+"to the `ManuallyDrop<Handle>`, which lets us track whether the handle has "
+"already been manually consumed."
+msgstr ""

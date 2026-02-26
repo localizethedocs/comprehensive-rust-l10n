@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/introduction/definition.md:6
+msgid "Defining Unsafe Rust"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/definition.md:29
+msgid "“Unsafe Rust is a superset of Safe Rust.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/definition.md:31
+msgid ""
+"“Unsafe Rust adds extra capabilities, such as allowing you to dereference "
+"raw pointers and call functions that can break Rust’s safety guarantees if "
+"called incorrectly.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/definition.md:35
+msgid "“These extra capabilities are referred to as _unsafe operations_.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/definition.md:37
+msgid ""
+"“Unsafe operations provide the foundation that the Rust standard library is "
+"built on. For example, without the ability to dereference a raw pointer, it "
+"would be impossible to implement `Vec` or `Box`.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/definition.md:41
+msgid ""
+"“The compiler will still assist you while writing Unsafe Rust. Borrow "
+"checking and type safety still apply. Unsafe operations have their own "
+"rules, which we’ll learn about in this class.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/definition.md:45
+msgid ""
+"The unsafe operations from the [Rust Reference](https://doc.rust-lang.org/"
+"reference/unsafety.html) (Avoid spending too much time):"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/definition.md:47
+msgid ""
+"The following language level features cannot be used in the safe subset of "
+"Rust:"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/definition.md:50
+msgid "Dereferencing a raw pointer."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/definition.md:51
+msgid "Reading or writing a mutable or unsafe external static variable."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/definition.md:52
+msgid "Accessing a field of a union, other than to assign to it."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/definition.md:53
+msgid "Calling an `unsafe` function."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/definition.md:54
+msgid ""
+"Calling a safe function marked with a `<target_feature>` from a function "
+"that does not have a `<target_feature>` attribute enabling the same features."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/definition.md:57
+msgid "Implementing an unsafe trait."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/definition.md:58
+msgid "Declaring an extern block."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/definition.md:59
+msgid "Applying an unsafe attribute to an item."
+msgstr ""

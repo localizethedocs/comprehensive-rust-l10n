@@ -1,0 +1,65 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/std-traits/read-and-write.md:6
+msgid "`Read` and `Write`"
+msgstr ""
+
+#: src/std-traits/read-and-write.md:8
+msgid ""
+"Using [`Read`](https://doc.rust-lang.org/std/io/trait.Read.html) and "
+"[`BufRead`](https://doc.rust-lang.org/std/io/trait.BufRead.html), you can "
+"abstract over `u8` sources:"
+msgstr ""
+
+#: src/std-traits/read-and-write.md:11 src/std-traits/read-and-write.md:34
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/std-traits/read-and-write.md:12 src/std-traits/read-and-write.md:35
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/std-traits/read-and-write.md:22
+msgid "b\"foo\\nbar\\nbaz\\n\""
+msgstr ""
+
+#: src/std-traits/read-and-write.md:23
+msgid "\"lines in slice: {}\""
+msgstr ""
+
+#: src/std-traits/read-and-write.md:26
+msgid "\"lines in file: {}\""
+msgstr ""
+
+#: src/std-traits/read-and-write.md:31
+msgid ""
+"Similarly, [`Write`](https://doc.rust-lang.org/std/io/trait.Write.html) lets "
+"you abstract over `u8` sinks:"
+msgstr ""
+
+#: src/std-traits/read-and-write.md:41
+msgid "\"\\n\""
+msgstr ""
+
+#: src/std-traits/read-and-write.md:46
+msgid "\"Hello\""
+msgstr ""
+
+#: src/std-traits/read-and-write.md:47
+msgid "\"World\""
+msgstr ""
+
+#: src/std-traits/read-and-write.md:48
+msgid "\"Logged: {buffer:?}\""
+msgstr ""

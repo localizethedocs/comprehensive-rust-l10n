@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android.md:6
+msgid "Welcome to Rust in Android"
+msgstr ""
+
+#: src/android.md:8
+msgid ""
+"Rust is supported for system software on Android. This means that you can "
+"write new services, libraries, drivers or even firmware in Rust (or improve "
+"existing code as needed)."
+msgstr ""
+
+#: src/android.md:14
+msgid ""
+"The speaker may mention any of the following given the increased use of Rust "
+"in Android:"
+msgstr ""
+
+#: src/android.md:17
+msgid ""
+"Service example: [DNS over HTTP](https://security.googleblog.com/2022/07/dns-"
+"over-http3-in-android.html)."
+msgstr ""
+
+#: src/android.md:20
+msgid ""
+"Libraries: [Rutabaga Virtual Graphics Interface](https://crosvm.dev/book/"
+"appendix/rutabaga_gfx.html)."
+msgstr ""
+
+#: src/android.md:23
+msgid ""
+"Kernel Drivers: [Binder](https://lore.kernel.org/rust-for-linux/20231101-"
+"rust-binder-v1-0-08ba9197f637@google.com/)."
+msgstr ""
+
+#: src/android.md:26
+msgid ""
+"Firmware: [pKVM firmware](https://security.googleblog.com/2023/10/bare-metal-"
+"rust-in-android.html)."
+msgstr ""

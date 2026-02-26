@@ -1,0 +1,225 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/cargo.md:6
+msgid "Comparing Chromium and Cargo Ecosystems"
+msgstr ""
+
+#: src/chromium/cargo.md:8
+msgid ""
+"The Rust community typically uses `cargo` and libraries from [crates.io]"
+"(https://crates.io/). Chromium is built using `gn` and `ninja` and a curated "
+"set of dependencies."
+msgstr ""
+
+#: src/chromium/cargo.md:11
+msgid "When writing code in Rust, your choices are:"
+msgstr ""
+
+#: src/chromium/cargo.md:13
+msgid ""
+"Use `gn` and `ninja` with the help of the templates from `//build/rust/*."
+"gni` (e.g. `rust_static_library` that we'll meet later). This uses "
+"Chromium's audited toolchain and crates."
+msgstr ""
+
+#: src/chromium/cargo.md:16
+msgid ""
+"Use `cargo`, but [restrict yourself to Chromium's audited toolchain and "
+"crates](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/"
+"docs/rust.md#Using-cargo)"
+msgstr ""
+
+#: src/chromium/cargo.md:18
+msgid ""
+"Use `cargo`, trusting a [toolchain](https://rustup.rs/) and/or [crates "
+"downloaded from the internet](https://crates.io/)"
+msgstr ""
+
+#: src/chromium/cargo.md:21
+msgid ""
+"From here on we'll be focusing on `gn` and `ninja`, because this is how Rust "
+"code can be built into the Chromium browser. At the same time, Cargo is an "
+"important part of the Rust ecosystem and you should keep it in your toolbox."
+msgstr ""
+
+#: src/chromium/cargo.md:25
+msgid "Mini exercise"
+msgstr ""
+
+#: src/chromium/cargo.md:27
+msgid "Split into small groups and:"
+msgstr ""
+
+#: src/chromium/cargo.md:29
+msgid ""
+"Brainstorm scenarios where `cargo` may offer an advantage and assess the "
+"risk profile of these scenarios."
+msgstr ""
+
+#: src/chromium/cargo.md:31
+msgid ""
+"Discuss which tools, libraries, and groups of people need to be trusted when "
+"using `gn` and `ninja`, offline `cargo`, etc."
+msgstr ""
+
+#: src/chromium/cargo.md:36
+msgid ""
+"Ask students to avoid peeking at the speaker notes before completing the "
+"exercise. Assuming folks taking the course are physically together, ask them "
+"to discuss in small groups of 3-4 people."
+msgstr ""
+
+#: src/chromium/cargo.md:40
+msgid ""
+"Notes/hints related to the first part of the exercise (\"scenarios where "
+"Cargo may offer an advantage\"):"
+msgstr ""
+
+#: src/chromium/cargo.md:43
+msgid ""
+"It's fantastic that when writing a tool, or prototyping a part of Chromium, "
+"one has access to the rich ecosystem of crates.io libraries. There is a "
+"crate for almost anything and they are typically quite pleasant to use. "
+"(`clap` for command-line parsing, `serde` for serializing/deserializing to/"
+"from various formats, `itertools` for working with iterators, etc.)."
+msgstr ""
+
+#: src/chromium/cargo.md:49
+msgid ""
+"`cargo` makes it easy to try a library (just add a single line to `Cargo."
+"toml` and start writing code)"
+msgstr ""
+
+#: src/chromium/cargo.md:51
+msgid ""
+"It may be worth comparing how CPAN helped make `perl` a popular choice. Or "
+"comparing with `python` + `pip`."
+msgstr ""
+
+#: src/chromium/cargo.md:54
+msgid ""
+"Development experience is made really nice not only by core Rust tools (e.g. "
+"using `rustup` to switch to a different `rustc` version when testing a crate "
+"that needs to work on nightly, current stable, and older stable) but also by "
+"an ecosystem of third-party tools (e.g. Mozilla provides `cargo vet` for "
+"streamlining and sharing security audits; `criterion` crate gives a "
+"streamlined way to run benchmarks)."
+msgstr ""
+
+#: src/chromium/cargo.md:61
+msgid ""
+"`cargo` makes it easy to add a tool via `cargo install --locked cargo-vet`."
+msgstr ""
+
+#: src/chromium/cargo.md:62
+msgid "It may be worth comparing with Chrome Extensions or VScode extensions."
+msgstr ""
+
+#: src/chromium/cargo.md:64
+msgid ""
+"Broad, generic examples of projects where `cargo` may be the right choice:"
+msgstr ""
+
+#: src/chromium/cargo.md:66
+msgid ""
+"Perhaps surprisingly, Rust is becoming increasingly popular in the industry "
+"for writing command line tools. The breadth and ergonomics of libraries is "
+"comparable to Python, while being more robust (thanks to the rich type "
+"system) and running faster (as a compiled, rather than interpreted language)."
+msgstr ""
+
+#: src/chromium/cargo.md:71
+msgid ""
+"Participating in the Rust ecosystem requires using standard Rust tools like "
+"Cargo. Libraries that want to get external contributions, and want to be "
+"used outside of Chromium (e.g. in Bazel or Android/Soong build environments) "
+"should use Cargo."
+msgstr ""
+
+#: src/chromium/cargo.md:76
+msgid "Examples of Chromium-related projects that are `cargo`\\-based:"
+msgstr ""
+
+#: src/chromium/cargo.md:77
+msgid ""
+"`serde_json_lenient` (experimented with in other parts of Google which "
+"resulted in PRs with performance improvements)"
+msgstr ""
+
+#: src/chromium/cargo.md:79
+msgid "Fontations libraries like `font-types`"
+msgstr ""
+
+#: src/chromium/cargo.md:80
+msgid ""
+"`gnrt` tool (we will meet it later in the course) which depends on `clap` "
+"for command-line parsing and on `toml` for configuration files."
+msgstr ""
+
+#: src/chromium/cargo.md:82
+msgid ""
+"Disclaimer: a unique reason for using `cargo` was unavailability of `gn` "
+"when building and bootstrapping Rust standard library when building Rust "
+"toolchain."
+msgstr ""
+
+#: src/chromium/cargo.md:85
+msgid ""
+"`run_gnrt.py` uses Chromium's copy of `cargo` and `rustc`. `gnrt` depends on "
+"third-party libraries downloaded from the internet, but `run_gnrt.py` asks "
+"`cargo` that only `--locked` content is allowed via `Cargo.lock`.)"
+msgstr ""
+
+#: src/chromium/cargo.md:89
+msgid ""
+"Students may identify the following items as being implicitly or explicitly "
+"trusted:"
+msgstr ""
+
+#: src/chromium/cargo.md:92
+msgid ""
+"`rustc` (the Rust compiler) which in turn depends on the LLVM libraries, the "
+"Clang compiler, the `rustc` sources (fetched from GitHub, reviewed by Rust "
+"compiler team), binary Rust compiler downloaded for bootstrapping"
+msgstr ""
+
+#: src/chromium/cargo.md:95
+msgid ""
+"`rustup` (it may be worth pointing out that `rustup` is developed under the "
+"umbrella of the https://github.com/rust-lang/ organization - same as `rustc`)"
+msgstr ""
+
+#: src/chromium/cargo.md:97
+msgid "`cargo`, `rustfmt`, etc."
+msgstr ""
+
+#: src/chromium/cargo.md:98
+msgid ""
+"Various internal infrastructure (bots that build `rustc`, system for "
+"distributing the prebuilt toolchain to Chromium engineers, etc.)"
+msgstr ""
+
+#: src/chromium/cargo.md:100
+msgid "Cargo tools like `cargo audit`, `cargo vet`, etc."
+msgstr ""
+
+#: src/chromium/cargo.md:101
+msgid ""
+"Rust libraries vendored into `//third_party/rust` (audited by "
+"security@chromium.org)"
+msgstr ""
+
+#: src/chromium/cargo.md:103
+msgid "Other Rust libraries (some niche, some quite popular and commonly used)"
+msgstr ""

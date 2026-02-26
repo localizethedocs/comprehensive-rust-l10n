@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/introduction/may_overflow.md:6
+msgid "Example: may_overflow function"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/may_overflow.md:9
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/may_overflow.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/may_overflow.md:11
+msgid "/// Adds 2^31 - 1 to negative numbers.\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/may_overflow.md:19
+msgid "\"{x}\""
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/may_overflow.md:26
+msgid ""
+"“The `unsafe` keyword may have a subtly different meaning than what some "
+"people assume.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/may_overflow.md:29
+msgid ""
+"“The code author believes that the code is correct. In principle, the code "
+"is safe.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/may_overflow.md:32
+msgid ""
+"“In this toy example, the `may_overflow` function is only intended to be "
+"called with negative numbers."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/may_overflow.md:35
+msgid ""
+"Ask learners if they can explain why `may_overflow` requires the unsafe "
+"keyword."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/may_overflow.md:37
+msgid ""
+"“In case you’re unsure what the problem is, let’s pause briefly to explain. "
+"An `i32` only has 31 bits available for positive numbers. When an operation "
+"produces a result that requires more than 31 bits, then the program is put "
+"into an invalid state. And it’s not just a numerical problem. Compilers "
+"optimize code on the basis that invalid states are impossible. This causes "
+"code paths to be deleted, producing erratic runtime behavior while also "
+"introducing security vulnerabilities."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/may_overflow.md:45
+msgid ""
+"Compile and run the code, producing a panic. Then run the example in the "
+"playground to run under `--release` mode to trigger UB."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/may_overflow.md:48
+msgid ""
+"“This code can be used correctly, however, improper usage is highly "
+"dangerous.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/may_overflow.md:50
+msgid ""
+"“And it's impossible for the compiler to verify that the usage is correct.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/may_overflow.md:52
+msgid ""
+"This is what we mean when we say that the `unsafe` keyword marks the "
+"location where responsibility for memory safety shifts from the compiler to "
+"the programmer."
+msgstr ""

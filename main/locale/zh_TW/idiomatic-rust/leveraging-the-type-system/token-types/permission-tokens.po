@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md:6
+msgid "Permission Tokens"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md:8
+msgid "Token types work well as a proof of checked permission."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md:11
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md:18
+#: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md:27
+msgid "\"Password123\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md:21
+msgid ""
+"// We don't have to check that we have permissions, because\n"
+"// the AdminToken argument is equivalent to such a check.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md:28
+msgid "\"CoolUser\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md:30
+msgid "\"Incorrect password! Could not prove privileges.\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md:37
+msgid ""
+"This example shows modelling gaining administrator privileges for a chat "
+"client with a password and giving a user a moderator rank once those "
+"privileges are gained. The `AdminToken` type acts as \"proof of correct user "
+"privileges.\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md:42
+msgid ""
+"The user asked for a password in-code and if we get the password correct, we "
+"get a `AdminToken` to perform administrator actions within a specific "
+"environment (here, a chat client)."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md:46
+msgid ""
+"Once the permissions are gained, we can call the `add_moderator` function."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md:48
+msgid ""
+"We can't call that function without the token type, so by being able to call "
+"it at all all we can assume we have permissions."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/permission-tokens.md:51
+msgid ""
+"Demonstrate: Try to construct the `AdminToken` in `main` again to reiterate "
+"that the foundation of useful tokens is preventing their arbitrary "
+"construction."
+msgstr ""

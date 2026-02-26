@@ -1,0 +1,442 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Please keep { #glossary } untranslated.
+#: src/glossary.md:8
+msgid "Glossary"
+msgstr ""
+
+#: src/glossary.md:10
+msgid ""
+"The following is a glossary which aims to give a short definition of many "
+"Rust terms. For translations, this also serves to connect the term back to "
+"the English original."
+msgstr ""
+
+#. Please add the English term in italic after your translated term. Also, please keep the hard line breaks to ensure a nice formatting.
+#: src/glossary.md:36
+msgid ""
+"allocate:  \n"
+"Dynamic memory allocation on [the heap](memory-management/review.md)."
+msgstr ""
+
+#: src/glossary.md:38
+msgid ""
+"array:  \n"
+"A fixed-size collection of elements of the same type, stored contiguously in "
+"memory. See [Arrays](tuples-and-arrays/arrays.md)."
+msgstr ""
+
+#: src/glossary.md:41
+msgid ""
+"associated type:  \n"
+"A type associated with a specific trait. Useful for defining the "
+"relationship between types."
+msgstr ""
+
+#: src/glossary.md:44
+msgid ""
+"Bare-metal Rust:  \n"
+"Low-level Rust development, often deployed to a system without an operating "
+"system. See [Bare-metal Rust](bare-metal.md)."
+msgstr ""
+
+#: src/glossary.md:47
+msgid ""
+"block:  \n"
+"See [Blocks](control-flow-basics/blocks-and-scopes.md) and _scope_."
+msgstr ""
+
+#: src/glossary.md:49
+msgid ""
+"borrow:  \n"
+"See [Borrowing](borrowing/shared.md)."
+msgstr ""
+
+#: src/glossary.md:51
+msgid ""
+"borrow checker:  \n"
+"The part of the Rust compiler which checks that all [borrows](borrowing/"
+"borrowck.md) are valid."
+msgstr ""
+
+#: src/glossary.md:54
+msgid ""
+"brace:  \n"
+"`{` and `}`. Also called _curly brace_, they delimit [_blocks_](control-flow-"
+"basics/blocks-and-scopes.md)."
+msgstr ""
+
+#: src/glossary.md:57
+msgid ""
+"channel:  \n"
+"Used to safely pass messages [between threads](concurrency/channels.md)."
+msgstr ""
+
+#: src/glossary.md:59
+msgid ""
+"concurrency:  \n"
+"The execution of multiple tasks or processes at the same time. See [Welcome "
+"to Concurrency in Rust](concurrency/welcome.md)."
+msgstr ""
+
+#: src/glossary.md:62
+msgid ""
+"constant:  \n"
+"A value that does not change during the execution of a program. See [const]"
+"(user-defined-types/const.md)."
+msgstr ""
+
+#: src/glossary.md:65
+msgid ""
+"control flow:  \n"
+"The order in which the individual statements or instructions are executed in "
+"a program. See [Control Flow Basics](control-flow-basics.md)."
+msgstr ""
+
+#: src/glossary.md:68
+msgid ""
+"crash:  \n"
+"An unexpected and unhandled failure or termination of a program. See [panic]"
+"(error-handling/panics.md)."
+msgstr ""
+
+#: src/glossary.md:71
+msgid ""
+"enumeration:  \n"
+"A data type that holds one of several named constants, possibly with an "
+"associated tuple or struct. See [enum](user-defined-types/enums.md)."
+msgstr ""
+
+#: src/glossary.md:74
+msgid ""
+"error:  \n"
+"An unexpected condition or result that deviates from the expected behavior. "
+"See [Error Handling](error-handling.md)."
+msgstr ""
+
+#: src/glossary.md:77
+msgid ""
+"error handling:  \n"
+"The process of managing and responding to [errors](error-handling.md) that "
+"occur during program execution."
+msgstr ""
+
+#: src/glossary.md:80
+msgid ""
+"function:  \n"
+"A reusable block of code that performs a specific task. See [Functions]"
+"(control-flow-basics/functions.md)."
+msgstr ""
+
+#: src/glossary.md:83
+msgid ""
+"garbage collector:  \n"
+"A mechanism that automatically frees up memory occupied by objects that are "
+"no longer in use. See [Approaches to Memory Management](memory-management/"
+"approaches.md)."
+msgstr ""
+
+#: src/glossary.md:87
+msgid ""
+"generics:  \n"
+"A feature that allows writing code with placeholders for types, enabling "
+"code reuse with different data types. See [Generics](generics.md)."
+msgstr ""
+
+#: src/glossary.md:90
+msgid ""
+"immutable:  \n"
+"Unable to be changed after creation. See [Variables](types-and-values/"
+"variables.md)."
+msgstr ""
+
+#: src/glossary.md:93
+msgid ""
+"integration test:  \n"
+"A type of test that verifies the interactions between different parts or "
+"components of a system. See [Other Types of Tests](testing/other.md)."
+msgstr ""
+
+#: src/glossary.md:96
+msgid ""
+"library:  \n"
+"A collection of precompiled routines or code that can be used by programs. "
+"See [Modules](modules.md)."
+msgstr ""
+
+#: src/glossary.md:99
+msgid ""
+"macro:  \n"
+"Rust [macros](control-flow-basics/macros.md) can be recognized by a `!` in "
+"the name. Macros are used when normal functions are not enough. A typical "
+"example is `format!`, which takes a variable number of arguments, which "
+"isn't supported by Rust functions."
+msgstr ""
+
+#: src/glossary.md:104
+msgid ""
+"`main` function:  \n"
+"Rust programs start executing with the [`main` function](types-and-values/"
+"hello-world.md)."
+msgstr ""
+
+#: src/glossary.md:107
+msgid ""
+"match:  \n"
+"A control flow construct in Rust that allows for [pattern matching](pattern-"
+"matching.md) on the value of an expression."
+msgstr ""
+
+#: src/glossary.md:110
+msgid ""
+"memory leak:  \n"
+"A situation where a program fails to release memory that is no longer "
+"needed, leading to a gradual increase in memory usage. See [Approaches to "
+"Memory Management](memory-management/approaches.md)."
+msgstr ""
+
+#: src/glossary.md:114
+msgid ""
+"method:  \n"
+"A function associated with an object or a type in Rust. See [Methods]"
+"(methods-and-traits/methods.md)."
+msgstr ""
+
+#: src/glossary.md:117
+msgid ""
+"module:  \n"
+"A namespace that contains definitions, such as functions, types, or traits, "
+"to organize code in Rust. See [Modules](modules.md)."
+msgstr ""
+
+#: src/glossary.md:120
+msgid ""
+"move:  \n"
+"The transfer of ownership of a value from one variable to another in Rust. "
+"See [Move Semantics](memory-management/move.md)."
+msgstr ""
+
+#: src/glossary.md:123
+msgid ""
+"mutable:  \n"
+"A property in Rust that allows [variables](types-and-values/variables.md) to "
+"be modified after they have been declared."
+msgstr ""
+
+#: src/glossary.md:126
+msgid ""
+"ownership:  \n"
+"The concept in Rust that defines which part of the code is responsible for "
+"managing the memory associated with a value. See [Ownership](memory-"
+"management/ownership.md)."
+msgstr ""
+
+#: src/glossary.md:130
+msgid ""
+"panic:  \n"
+"An unrecoverable error condition in Rust that results in the termination of "
+"the program. See [Panics](error-handling/panics.md)."
+msgstr ""
+
+#: src/glossary.md:133
+msgid ""
+"pattern:  \n"
+"A combination of values, literals, or structures that can be matched against "
+"an expression in Rust. See [Pattern Matching](pattern-matching.md)."
+msgstr ""
+
+#: src/glossary.md:136
+msgid ""
+"payload:  \n"
+"The data or information carried by a message, event, or data structure."
+msgstr ""
+
+#: src/glossary.md:138
+msgid ""
+"receiver:  \n"
+"The first parameter in a Rust [method](methods-and-traits/methods.md) that "
+"represents the instance on which the method is called."
+msgstr ""
+
+#: src/glossary.md:141
+msgid ""
+"reference:  \n"
+"A non-owning pointer to a value that borrows it without transferring "
+"ownership. References can be [shared (immutable)](references/shared.md) or "
+"[exclusive (mutable)](references/exclusive.md)."
+msgstr ""
+
+#: src/glossary.md:145
+msgid ""
+"reference counting:  \n"
+"A memory management technique in which the number of references to an object "
+"is tracked, and the object is deallocated when the count reaches zero. See "
+"[Rc](smart-pointers/rc.md)."
+msgstr ""
+
+#: src/glossary.md:149
+msgid ""
+"Rust:  \n"
+"A systems programming language that focuses on safety, performance, and "
+"concurrency. See [What is Rust?](hello-world/what-is-rust.md)."
+msgstr ""
+
+#: src/glossary.md:152
+msgid ""
+"safe:  \n"
+"Refers to code that adheres to Rust's ownership and borrowing rules, "
+"preventing memory-related errors. See [Unsafe Rust](unsafe-rust.md)."
+msgstr ""
+
+#: src/glossary.md:155
+msgid ""
+"slice:  \n"
+"A dynamically-sized view into a contiguous sequence, such as an array or "
+"vector. Unlike arrays, slices have a size determined at runtime. See [Slices]"
+"(references/slices.md)."
+msgstr ""
+
+#: src/glossary.md:159
+msgid ""
+"scope:  \n"
+"The region of a program where a variable is valid and can be used. See "
+"[Blocks and Scopes](control-flow-basics/blocks-and-scopes.md)."
+msgstr ""
+
+#: src/glossary.md:162
+msgid ""
+"standard library:  \n"
+"A collection of modules providing essential functionality in Rust. See "
+"[Standard Library](std-types/std.md)."
+msgstr ""
+
+#: src/glossary.md:165
+msgid ""
+"static:  \n"
+"A keyword in Rust used to define static variables or items with a `'static` "
+"lifetime. See [static](user-defined-types/static.md)."
+msgstr ""
+
+#: src/glossary.md:168
+msgid ""
+"string:  \n"
+"A data type storing textual data. See [Strings](references/strings.md)."
+msgstr ""
+
+#: src/glossary.md:170
+msgid ""
+"struct:  \n"
+"A composite data type in Rust that groups together variables of different "
+"types under a single name. See [Structs](user-defined-types/named-structs."
+"md)."
+msgstr ""
+
+#: src/glossary.md:173
+msgid ""
+"test:  \n"
+"A function that tests the correctness of other code. Rust has a built-in "
+"test runner. See [Testing](testing.md)."
+msgstr ""
+
+#: src/glossary.md:176
+msgid ""
+"thread:  \n"
+"A separate sequence of execution in a program, allowing concurrent "
+"execution. See [Threads](concurrency/threads.md)."
+msgstr ""
+
+#: src/glossary.md:179
+msgid ""
+"thread safety:  \n"
+"The property of a program that ensures correct behavior in a multithreaded "
+"environment. See [Send and Sync](concurrency/send-sync.md)."
+msgstr ""
+
+#: src/glossary.md:182
+msgid ""
+"trait:  \n"
+"A collection of methods defined for an unknown type, providing a way to "
+"achieve polymorphism in Rust. See [Traits](methods-and-traits/traits.md)."
+msgstr ""
+
+#: src/glossary.md:185
+msgid ""
+"trait bound:  \n"
+"An abstraction where you can require types to implement some traits of your "
+"interest. See [Trait Bounds](generics/trait-bounds.md)."
+msgstr ""
+
+#: src/glossary.md:188
+msgid ""
+"tuple:  \n"
+"A composite data type that contains variables of different types. Tuple "
+"fields have no names, and are accessed by their ordinal numbers. See [Tuples]"
+"(tuples-and-arrays/tuples.md)."
+msgstr ""
+
+#: src/glossary.md:192
+msgid ""
+"type:  \n"
+"A classification that specifies which operations can be performed on values "
+"of a particular kind in Rust. See [Types and Values](types-and-values.md)."
+msgstr ""
+
+#: src/glossary.md:195
+msgid ""
+"type inference:  \n"
+"The ability of the Rust compiler to deduce the type of a variable or "
+"expression. See [Type Inference](types-and-values/inference.md)."
+msgstr ""
+
+#: src/glossary.md:198
+msgid ""
+"undefined behavior:  \n"
+"Actions or conditions in Rust that have no specified result, often leading "
+"to unpredictable program behavior. See [Unsafe Rust](unsafe-rust.md)."
+msgstr ""
+
+#: src/glossary.md:201
+msgid ""
+"union:  \n"
+"A data type that can hold values of different types but only one at a time. "
+"See [Unions](unsafe-rust/unions.md)."
+msgstr ""
+
+#: src/glossary.md:204
+msgid ""
+"unit test:  \n"
+"Rust comes with built-in support for running small unit tests and larger "
+"integration tests. See [Unit Tests](testing/unit-tests.md)."
+msgstr ""
+
+#: src/glossary.md:207
+msgid ""
+"unit type:  \n"
+"Type that holds no data, written as a tuple with no members. See speaker "
+"notes on [Functions](control-flow-basics/functions.html)."
+msgstr ""
+
+#: src/glossary.md:210
+msgid ""
+"unsafe:  \n"
+"The subset of Rust which allows you to trigger _undefined behavior_. See "
+"[Unsafe Rust](unsafe-rust/unsafe.md)."
+msgstr ""
+
+#: src/glossary.md:213
+msgid ""
+"variable:  \n"
+"A memory location storing data. Variables are valid in a _scope_. See "
+"[Variables](types-and-values/variables.md)."
+msgstr ""

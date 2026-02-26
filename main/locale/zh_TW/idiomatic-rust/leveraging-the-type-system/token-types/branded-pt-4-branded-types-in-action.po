@@ -1,0 +1,118 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:6
+msgid "Branded Types in Action (Branding 4/4)"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:9
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:72
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:10
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:73
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:22
+msgid "// The data we want to modify in this context.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:24
+msgid "// The function that uniquely brands the lifetime of a `Bytes`\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:50
+msgid ""
+"// bytes_2.get_proven(&index_1); // ❌🔨\n"
+"            \"Computations done!\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:54
+msgid "\"{result}\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:60
+msgid ""
+"We now have the implementation ready, we can now write a program where token "
+"types that are proofs of existing indexes cannot be shared between variables."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:63
+msgid ""
+"Demonstration: Uncomment the `bytes_2.get_proven(&index_1);` line and show "
+"that it does not compile when we use indexes from different variables."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:66
+msgid ""
+"Ask: What operations can we perform that we can guarantee would produce a "
+"proven index?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:69
+msgid "Expect a \"push\" implementation, suggested demo:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:81
+msgid ""
+"Ask: Can we make this not just about a byte array, but as a general wrapper "
+"on `Vec<T>`?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:84
+msgid "Trivial: Yes!"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:86
+msgid "Maybe demonstrate: Generalising `Bytes<'id>` into `BrandedVec<'id, T>`"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:88
+msgid "Ask: What other areas could we use something like this?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:90
+msgid ""
+"The resulting token API is **highly restrictive**, but the things that it "
+"makes possible to prove as safe within the Rust type system are meaningful."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:93
+msgid "More to Explore"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:95
+msgid ""
+"[GhostCell](https://plv.mpi-sws.org/rustbelt/ghostcell/paper.pdf), a "
+"structure that allows for safe cyclic data structures in Rust (among other "
+"previously difficult to represent data structures), uses this kind of token "
+"type to make sure cells can't \"escape\" a context where we know where "
+"operations similar to those shown in these examples are safe."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:101
+msgid ""
+"This \"Branded Types\" sequence of slides is based off their `BrandedVec` "
+"implementation in the paper, which covers many of the implementation details "
+"of this use case in more depth as a gentle introduction to how `GhostCell` "
+"itself is implemented and used in practice."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-04-in-action.md:106
+msgid ""
+"GhostCell also uses formal checks outside of Rust's type system to prove "
+"that the things it allows within this kind of context (lifetime branding) "
+"are safe."
+msgstr ""

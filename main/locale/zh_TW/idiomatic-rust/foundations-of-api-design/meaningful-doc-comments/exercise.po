@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:6
+msgid "Exercise: Dialog on Details"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:8
+msgid ""
+"Unnecessary details can sometimes be indicative of something that does need "
+"documentation."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:14
+msgid "/// Sorts a slice. Implemented using recursive quicksort.\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:21
+msgid ""
+"Consider the example here, we discussed in [what and why, not how and where]"
+"(what-why-not-how-where.md) that internal details are unlikely relevant to "
+"someone reading documentation."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:25
+msgid "Here we're discussing a counterexample."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:27
+msgid "Ask the class: Is this comment necessary for this function?"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:29
+msgid ""
+"Narrative: Playing the part of an intermediary between the class and the "
+"author, such as a PM, manager, etc. tell the class that the author of this "
+"function is pushing back."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:33
+msgid "Ask the class: Why would an author of this kind of comment push back?"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:35
+msgid ""
+"If the class asks why the author is pushing back, do not give details yet."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:37
+msgid ""
+"Ask the class: Why would the caller need to know the sorting algorithm in "
+"use?"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:39
+msgid ""
+"Narrative: \"Come back\" from a meeting with the original author, explain to "
+"the class that this function is application code that is called on untrusted "
+"data that [could be crafted maliciously to cause quadratic behavior during "
+"sorting](https://www.cs.dartmouth.edu/~doug/mdmspe.pdf)."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:44
+msgid ""
+"Ask the class: Now we have more detail, how should we comment this function?"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:46
+msgid ""
+"The point being implementation detail vs not depends a lot on what the "
+"public contract is (e.g., can you supply untrusted data or not), and this "
+"requires careful judgement."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:50
+msgid ""
+"Consider if a comment is explaining that a for-loop is used (unnecessary "
+"detail) or if it is explaining that the algorithms used internally have "
+"known exploits (documentation draws attention to the wrong thing)."
+msgstr ""

@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/smart-pointers/exercise.md:6
+msgid "Exercise: Binary Tree"
+msgstr ""
+
+#: src/smart-pointers/exercise.md:8
+msgid ""
+"A binary tree is a tree-type data structure where every node has two "
+"children (left and right). We will create a tree where each node stores a "
+"value. For a given node N, all nodes in a N's left subtree contain smaller "
+"values, and all nodes in N's right subtree will contain larger values. A "
+"given value should only be stored in the tree once, i.e. no duplicate nodes."
+msgstr ""
+
+#: src/smart-pointers/exercise.md:14
+msgid "Implement the following types, so that the given tests pass."
+msgstr ""
+
+#: src/smart-pointers/exercise.md:17
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/smart-pointers/exercise.md:18
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/smart-pointers/exercise.md:19
+msgid "/// A node in the binary tree.\n"
+msgstr ""
+
+#: src/smart-pointers/exercise.md:27
+msgid "/// A possibly-empty subtree.\n"
+msgstr ""
+
+#: src/smart-pointers/exercise.md:31
+msgid ""
+"/// A container storing a set of values, using a binary tree.\n"
+"///\n"
+"/// If the same value is added multiple times, it is only stored once.\n"
+msgstr ""
+
+#: src/smart-pointers/exercise.md:57
+msgid ""
+"// Implement `new` for `Node`.\n"
+"// Implement `new`, `insert`, `len`, and `has` for `Subtree`.\n"
+msgstr ""
+
+#: src/smart-pointers/exercise.md:73
+msgid "// not a unique item\n"
+msgstr ""

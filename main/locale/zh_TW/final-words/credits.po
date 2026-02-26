@@ -1,0 +1,41 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/credits.md:6
+msgid "Credits"
+msgstr ""
+
+#: src/credits.md:8
+msgid ""
+"The material here builds on top of the many great sources of Rust "
+"documentation. See the page on [other resources](other-resources.md) for a "
+"full list of useful resources."
+msgstr ""
+
+#: src/credits.md:12
+msgid ""
+"The material of Comprehensive Rust is licensed under the terms of the Apache "
+"2.0 license, please see [`LICENSE`](https://github.com/google/comprehensive-"
+"rust/blob/main/LICENSE) for details."
+msgstr ""
+
+#: src/credits.md:17
+msgid "CXX"
+msgstr ""
+
+#: src/credits.md:19
+msgid ""
+"The [Interoperability with C++](android/interoperability/cpp.md) section "
+"uses an image from [CXX](https://cxx.rs/). Please see the `third_party/cxx/` "
+"directory for details, including the license terms."
+msgstr ""

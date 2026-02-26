@@ -1,0 +1,188 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:6
+msgid "Avoiding Redundancy"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:8
+msgid ""
+"Names and type signatures communicate a lot of information, don't repeat it "
+"in comments!"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:14
+msgid ""
+"// Repeats name/type information. Can omit!\n"
+"/// Parses an ipv4 from a str. Returns an option for failure modes.\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:18
+msgid "// Repeats information obvious from the field name. Can omit!\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:21
+msgid "/// The customer id.\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:24
+msgid ""
+"// Mentions the type name first thing, don't do this!\n"
+"/// `ServerSynchronizer` is an orchestrator that sends local edits [...]\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:28
+msgid ""
+"// Better! Focuses on purpose.\n"
+"/// Sends local edits [...]\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:32
+msgid ""
+"// Mentions the function name first thing, don't do this!\n"
+"/// `sync_to_server` sends local edits [...]\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:36
+msgid ""
+"// Better! Focuses on function.\n"
+"/// Sends local edits [...]\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:44
+msgid ""
+"Motivation: Documentation that merely repeats name/signature information "
+"provides nothing new to the API user."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:47
+msgid ""
+"Additionally, signature information may change over time without the "
+"documentation being updated accordingly!"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:50
+msgid "This is an understandable pattern to fall into!"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:52
+msgid ""
+"Naive approach to \"always document your code,\" follows this advice "
+"literally but does not follow the intent."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:55
+msgid ""
+"Some tools might enforce documentation coverage, this kind of documentation "
+"is an easy fix."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:58
+msgid "Be aware of the purpose of different modes of documentation:"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:60
+msgid ""
+"Library code will need to be documented in ways that understand the scope of "
+"what it is used for and the breadth of people who are trying to use it."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:63
+msgid ""
+"Application code has a more narrow purpose, it can afford to be more simple "
+"and direct."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:66
+msgid "The name of an item is part of the documentation of that item."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:68
+msgid ""
+"Similarly, the signature of a function is part of the documentation of that "
+"function."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:71
+msgid ""
+"Therefore: Some aspects of the item are already covered when you start "
+"writing doc comments!"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:74
+msgid "Do not repeat information for the sake of an itemized list."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:76
+msgid ""
+"Many areas of the standard library have minimal documentation because the "
+"name and types do give enough information."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:79
+msgid ""
+"Rule of Thumb: What information is missing from a user's perspective? Other "
+"than name, signature, and irrelevant details of the implementation."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:82
+msgid ""
+"Don't explain the basics of Rust or the standard library. Assume the reader "
+"of doc comments has an intermediate understanding of the language itself. "
+"Focus on documenting your API."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:86
+msgid ""
+"For example, if your function returns `Result`, you don't need to explain "
+"how `Result` or the question mark operators work."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:89
+msgid ""
+"If there is a complex topic involved with the functions and types you're "
+"documenting, signpost to a \"source of truth\" if one exists such as an "
+"internal document, a paper, a blog post etc."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:93
+msgid ""
+"Collaborate with Students: Go through the methods in the slide and discuss "
+"what might be relevant to an API user."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:96
+msgid "More to Explore"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:98
+msgid ""
+"The `#![warn(missing_docs)]` lint can be helpful for enforcing the existence "
+"of doc comments, but puts a large burden on developers that could lead to "
+"leaning onto these patterns of writing low-quality comments."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:102
+msgid ""
+"This kind of lint should only be enabled if the people maintaining a project "
+"can afford to keep up with its demands, and usually only for library-style "
+"crates rather than application code."
+msgstr ""

@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/error-handling/try-conversions.md:6
+msgid "Try Conversions"
+msgstr ""
+
+#: src/error-handling/try-conversions.md:8
+msgid ""
+"The effective expansion of `?` is a little more complicated than previously "
+"indicated:"
+msgstr ""
+
+#: src/error-handling/try-conversions.md:12
+#: src/error-handling/try-conversions.md:21
+#: src/error-handling/try-conversions.md:37
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/error-handling/try-conversions.md:13
+#: src/error-handling/try-conversions.md:22
+#: src/error-handling/try-conversions.md:38
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/error-handling/try-conversions.md:18
+msgid "works the same as"
+msgstr ""
+
+#: src/error-handling/try-conversions.md:30
+msgid ""
+"The `From::from` call here means we attempt to convert the error type to the "
+"type returned by the function. This makes it easy to encapsulate errors into "
+"higher-level errors."
+msgstr ""
+
+#: src/error-handling/try-conversions.md:34
+msgid "Example"
+msgstr ""
+
+#: src/error-handling/try-conversions.md:55
+msgid "\"I/O error: {e}\""
+msgstr ""
+
+#: src/error-handling/try-conversions.md:56
+msgid "\"Found no username in {path}\""
+msgstr ""
+
+#: src/error-handling/try-conversions.md:77
+msgid "//std::fs::write(\"config.dat\", \"\").unwrap();\n"
+msgstr ""
+
+#: src/error-handling/try-conversions.md:78
+msgid "\"config.dat\""
+msgstr ""
+
+#: src/error-handling/try-conversions.md:79
+msgid "\"username or error: {username:?}\""
+msgstr ""
+
+#: src/error-handling/try-conversions.md:86
+msgid ""
+"The `?` operator must return a value compatible with the return type of the "
+"function. For `Result`, it means that the error types have to be compatible. "
+"A function that returns `Result<T, ErrorOuter>` can only use `?` on a value "
+"of type `Result<U, ErrorInner>` if `ErrorOuter` and `ErrorInner` are the "
+"same type or if `ErrorOuter` implements `From<ErrorInner>`."
+msgstr ""
+
+#: src/error-handling/try-conversions.md:92
+msgid ""
+"A common alternative to a `From` implementation is `Result::map_err`, "
+"especially when the conversion only happens in one place."
+msgstr ""
+
+#: src/error-handling/try-conversions.md:95
+msgid ""
+"There is no compatibility requirement for `Option`. A function returning "
+"`Option<T>` can use the `?` operator on `Option<U>` for arbitrary `T` and "
+"`U` types."
+msgstr ""
+
+#: src/error-handling/try-conversions.md:99
+msgid ""
+"A function that returns `Result` cannot use `?` on `Option` and vice versa. "
+"However, `Option::ok_or` converts `Option` to `Result` whereas `Result::ok` "
+"turns `Result` into `Option`."
+msgstr ""

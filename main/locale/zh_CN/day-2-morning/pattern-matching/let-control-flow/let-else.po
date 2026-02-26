@@ -1,0 +1,74 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/pattern-matching/let-control-flow/let-else.md:6
+msgid "`let else` Statements"
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/let-else.md:8
+msgid ""
+"For the common case of matching a pattern and returning from the function, "
+"use [`let else`](https://doc.rust-lang.org/rust-by-example/flow_control/"
+"let_else.html). The \"else\" case must diverge (`return`, `break`, or panic "
+"- anything but falling off the end of the block)."
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/let-else.md:14
+#: src/pattern-matching/let-control-flow/let-else.md:48
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/let-else.md:15
+#: src/pattern-matching/let-control-flow/let-else.md:49
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/let-else.md:21
+#: src/pattern-matching/let-control-flow/let-else.md:53
+msgid "\"got None\""
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/let-else.md:27
+#: src/pattern-matching/let-control-flow/let-else.md:57
+msgid "\"got empty string\""
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/let-else.md:33
+#: src/pattern-matching/let-control-flow/let-else.md:61
+msgid "\"not a hex digit\""
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/let-else.md:40
+msgid "\"result: {:?}\""
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/let-else.md:40
+msgid "\"foo\""
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/let-else.md:68
+msgid "More to Explore"
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/let-else.md:70
+msgid ""
+"This early return-based control flow is common in Rust error handling code, "
+"where you try to get a value out of a `Result`, returning an error if the "
+"`Result` was `Err`."
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/let-else.md:73
+msgid ""
+"If students ask, you can also demonstrate how real error handling code would "
+"be written with `?`."
+msgstr ""

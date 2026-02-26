@@ -1,0 +1,87 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:6
+msgid "Example: String interning library"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:8
+msgid "C++ Header: interner.hpp"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:14
+msgid "<string>"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:15
+msgid "<unordered_set>"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:21
+msgid ""
+"// Returns a pointer to the interned string (valid for lifetime of "
+"interner)\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:35
+msgid "C header file: interner.h"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:38
+msgid "// interner.h (C API for FFI)\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:42
+msgid "<stddef.h>"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:45
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:66
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:110
+msgid "\"C\""
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:60
+msgid "C++ implementation (interner.cpp)"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:63
+msgid "\"interner.hpp\""
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:64
+msgid "\"interner.h\""
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:90
+msgid ""
+"This is a larger example. Write a wrapper for the string interner. You will "
+"need to guide learners on how to create an opaque pointer, either directly "
+"by explaining the code below or asking learners to do further research."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:94
+msgid "_Suggested Solution_"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:97
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:98
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/cpp-library-example.md:124
+msgid "Once the raw wrapper is written, ask learners to create a safe wrapper."
+msgstr ""

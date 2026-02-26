@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-rust/dereferencing.md:6
+msgid "Dereferencing Raw Pointers"
+msgstr ""
+
+#: src/unsafe-rust/dereferencing.md:8
+msgid "Creating pointers is safe, but dereferencing them requires `unsafe`:"
+msgstr ""
+
+#: src/unsafe-rust/dereferencing.md:11
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-rust/dereferencing.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-rust/dereferencing.md:20
+msgid ""
+"// SAFETY: p1 and p2 were created by taking raw pointers to a local, so "
+"they\n"
+"    // are guaranteed to be non-null, aligned, and point into a single "
+"(stack-)\n"
+"    // allocated object.\n"
+"    //\n"
+"    // The object underlying the raw pointers lives for the entire function, "
+"so\n"
+"    // it is not deallocated while the raw pointers still exist. It is not\n"
+"    // accessed through references while the raw pointers exist, nor is it\n"
+"    // accessed from other threads concurrently.\n"
+msgstr ""
+
+#: src/unsafe-rust/dereferencing.md:31
+msgid "// Mutation may soundly be observed through a raw pointer, like in C.\n"
+msgstr ""
+
+#: src/unsafe-rust/dereferencing.md:35
+msgid ""
+"// UNSOUND. DO NOT DO THIS.\n"
+"    /*\n"
+"    let r: &i32 = unsafe { &*p1 };\n"
+"    dbg!(r);\n"
+"    x = 50;\n"
+"    dbg!(r); // Object underlying the reference has been mutated. This is "
+"UB.\n"
+"    */"
+msgstr ""
+
+#: src/unsafe-rust/dereferencing.md:48
+msgid ""
+"It is good practice (and required by the Android Rust style guide) to write "
+"a comment for each `unsafe` block explaining how the code inside it "
+"satisfies the safety requirements of the unsafe operations it is doing."
+msgstr ""
+
+#: src/unsafe-rust/dereferencing.md:52
+msgid ""
+"In the case of pointer dereferences, this means that the pointers must be "
+"[_valid_](https://doc.rust-lang.org/std/ptr/index.html#safety), i.e.:"
+msgstr ""
+
+#: src/unsafe-rust/dereferencing.md:55
+msgid "The pointer must be non-null."
+msgstr ""
+
+#: src/unsafe-rust/dereferencing.md:56
+msgid ""
+"The pointer must be _dereferenceable_ (within the bounds of a single "
+"allocated object)."
+msgstr ""
+
+#: src/unsafe-rust/dereferencing.md:58
+msgid "The object must not have been deallocated."
+msgstr ""
+
+#: src/unsafe-rust/dereferencing.md:59
+msgid "There must not be concurrent accesses to the same location."
+msgstr ""
+
+#: src/unsafe-rust/dereferencing.md:60
+msgid ""
+"If the pointer was obtained by casting a reference, the underlying object "
+"must be live and no reference may be used to access the memory."
+msgstr ""
+
+#: src/unsafe-rust/dereferencing.md:63
+msgid "In most cases the pointer must also be properly aligned."
+msgstr ""
+
+#: src/unsafe-rust/dereferencing.md:65
+msgid ""
+"The \"UNSOUND\" section gives an example of a common kind of UB bug: naïvely "
+"taking a reference to the dereference of a raw pointer sidesteps the "
+"compiler's knowledge of what object the reference is actually pointing to. "
+"As such, the borrow checker does not freeze `x` and so we are able to modify "
+"it despite the existence of a reference to it. Creating a reference from a "
+"pointer requires _great care_."
+msgstr ""

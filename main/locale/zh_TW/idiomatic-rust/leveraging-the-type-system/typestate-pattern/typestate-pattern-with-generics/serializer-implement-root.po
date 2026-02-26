@@ -1,0 +1,73 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md:6
+msgid "Serializer: implement Root"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md:14
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md:25
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md:30
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md:40
+msgid "// [...]\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md:31
+msgid "\"{name} {{\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md:46
+msgid ""
+"Referring back to our original diagram of valid transitions, we can "
+"visualize the beginning of our implementation as follows:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md:49
+msgid ""
+"```bob\n"
+"                          serialize\n"
+"                          struct\n"
+"+--------------------+ --------------> +----------------------------+\n"
+"| \"Serializer<Root>\" |                 | \"Serializer<Struct<Root>>\" |\n"
+"+--------------------+ <-------------- +----------------------------+\n"
+"                         finish struct\n"
+"         |\n"
+"         |\n"
+"         |\n"
+"finish   |\n"
+"         V\n"
+"\n"
+"     +--------+\n"
+"     | String |\n"
+"     +--------+\n"
+"```"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md:69
+msgid ""
+"At the \"root\" of our `Serializer`, the only construct allowed is a "
+"`Struct`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/root.md:71
+msgid ""
+"The `Serializer` can only be finalized into a `String` from this root level."
+msgstr ""

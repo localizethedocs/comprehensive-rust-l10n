@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/references/exercise.md:6
+msgid "Exercise: Geometry"
+msgstr ""
+
+#: src/references/exercise.md:8
+msgid ""
+"We will create a few utility functions for 3-dimensional geometry, "
+"representing a point as `[f64;3]`. It is up to you to determine the function "
+"signatures."
+msgstr ""
+
+#: src/references/exercise.md:12
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/references/exercise.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/references/exercise.md:14
+msgid ""
+"// Calculate the magnitude of a vector by summing the squares of its "
+"coordinates\n"
+"// and taking the square root. Use the `sqrt()` method to calculate the "
+"square\n"
+"// root, like `v.sqrt()`.\n"
+msgstr ""
+
+#: src/references/exercise.md:23
+msgid ""
+"// Normalize a vector by calculating its magnitude and dividing all of its\n"
+"// coordinates by that magnitude.\n"
+msgstr ""
+
+#: src/references/exercise.md:31
+msgid "// Use the following `main` to test your work.\n"
+msgstr ""
+
+#: src/references/exercise.md:35
+msgid "\"Magnitude of a unit vector: {}\""
+msgstr ""
+
+#: src/references/exercise.md:38
+msgid "\"Magnitude of {v:?}: {}\""
+msgstr ""
+
+#: src/references/exercise.md:40
+msgid "\"Magnitude of {v:?} after normalization: {}\""
+msgstr ""

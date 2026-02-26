@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/interoperability.md:6
+msgid "Interoperability"
+msgstr ""
+
+#: src/android/interoperability.md:8
+msgid ""
+"Rust has excellent support for interoperability with other languages. This "
+"means that you can:"
+msgstr ""
+
+#: src/android/interoperability.md:11
+msgid "Call Rust functions from other languages."
+msgstr ""
+
+#: src/android/interoperability.md:12
+msgid "Call functions written in other languages from Rust."
+msgstr ""
+
+#: src/android/interoperability.md:14
+msgid ""
+"When you call functions in a foreign language, you're using a _foreign "
+"function interface_, also known as FFI."
+msgstr ""
+
+#: src/android/interoperability.md:19
+msgid ""
+"This is a key ability of Rust: compiled code becomes indistinguishable from "
+"compiled C or C++ code."
+msgstr ""
+
+#: src/android/interoperability.md:22
+msgid ""
+"Technically, we say that Rust can be compiled to the same [ABI](https://en."
+"wikipedia.org/wiki/Application_binary_interface) (application binary "
+"interface) as C code."
+msgstr ""

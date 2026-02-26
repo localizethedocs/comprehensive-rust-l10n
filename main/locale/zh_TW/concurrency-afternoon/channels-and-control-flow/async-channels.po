@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/async-control-flow/channels.md:6
+msgid "Async Channels"
+msgstr ""
+
+#: src/concurrency/async-control-flow/channels.md:8
+msgid ""
+"Several crates have support for asynchronous channels. For instance `tokio`:"
+msgstr ""
+
+#: src/concurrency/async-control-flow/channels.md:11
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/concurrency/async-control-flow/channels.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/concurrency/async-control-flow/channels.md:21
+msgid "\"Received {count} pings so far.\""
+msgstr ""
+
+#: src/concurrency/async-control-flow/channels.md:24
+msgid "\"ping_handler complete\""
+msgstr ""
+
+#: src/concurrency/async-control-flow/channels.md:32
+msgid "\"Failed to send ping.\""
+msgstr ""
+
+#: src/concurrency/async-control-flow/channels.md:33
+msgid "\"Sent {} pings so far.\""
+msgstr ""
+
+#: src/concurrency/async-control-flow/channels.md:37
+msgid "\"Something went wrong in ping handler task.\""
+msgstr ""
+
+#: src/concurrency/async-control-flow/channels.md:44
+msgid "Change the channel size to `3` and see how it affects the execution."
+msgstr ""
+
+#: src/concurrency/async-control-flow/channels.md:46
+msgid ""
+"Overall, the interface is similar to the `sync` channels as seen in the "
+"[morning class](../channels.md)."
+msgstr ""
+
+#: src/concurrency/async-control-flow/channels.md:49
+msgid "Try removing the `std::mem::drop` call. What happens? Why?"
+msgstr ""
+
+#: src/concurrency/async-control-flow/channels.md:51
+msgid ""
+"The [Flume](https://docs.rs/flume/latest/flume/) crate has channels that "
+"implement both `sync` and `async` `send` and `recv`. This can be convenient "
+"for complex applications with both IO and heavy CPU processing tasks."
+msgstr ""
+
+#: src/concurrency/async-control-flow/channels.md:55
+msgid ""
+"What makes working with `async` channels preferable is the ability to "
+"combine them with other `future`s to combine them and create complex control "
+"flow."
+msgstr ""

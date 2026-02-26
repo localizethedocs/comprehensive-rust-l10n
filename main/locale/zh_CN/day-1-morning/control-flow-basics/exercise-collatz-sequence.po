@@ -1,0 +1,102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/control-flow-basics/exercise.md:6
+msgid "Exercise: Collatz Sequence"
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:8
+msgid ""
+"The [Collatz Sequence](https://en.wikipedia.org/wiki/Collatz_conjecture) is "
+"defined as follows, for an arbitrary n<sub>1</sub> greater than zero:"
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:11
+msgid ""
+"If _n<sub>i</sub>_ is 1, then the sequence terminates at _n<sub>i</sub>_."
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:12
+msgid "If _n<sub>i</sub>_ is even, then _n<sub>i+1</sub> = n<sub>i</sub> / 2_."
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:13
+msgid ""
+"If _n<sub>i</sub>_ is odd, then _n<sub>i+1</sub> = 3 * n<sub>i</sub> + 1_."
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:15
+msgid "For example, beginning with _n<sub>1</sub>_ = 3:"
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:17
+msgid "3 is odd, so _n<sub>2</sub>_ = 3 * 3 + 1 = 10;"
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:18
+msgid "10 is even, so _n<sub>3</sub>_ = 10 / 2 = 5;"
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:19
+msgid "5 is odd, so _n<sub>4</sub>_ = 3 * 5 + 1 = 16;"
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:20
+msgid "16 is even, so _n<sub>5</sub>_ = 16 / 2 = 8;"
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:21
+msgid "8 is even, so _n<sub>6</sub>_ = 8 / 2 = 4;"
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:22
+msgid "4 is even, so _n<sub>7</sub>_ = 4 / 2 = 2;"
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:23
+msgid "2 is even, so _n<sub>8</sub>_ = 1; and"
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:24
+msgid "the sequence terminates."
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:26
+msgid ""
+"Write a function to calculate the length of the Collatz sequence for a given "
+"initial `n`."
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:30
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:31
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:32
+msgid "/// Determine the length of the collatz sequence beginning at `n`.\n"
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:35
+msgid "\"Implement this\""
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:39
+msgid "\"Length: {}\""
+msgstr ""
+
+#: src/control-flow-basics/exercise.md:39
+msgid "// should be 15\n"
+msgstr ""

@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/interoperability-with-cpp/example-bindings.md:6
+msgid "Example Bindings"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/example-bindings.md:8
+msgid ""
+"CXX requires that the whole C++/Rust boundary is declared in `cxx::bridge` "
+"modules inside `.rs` source code."
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/example-bindings.md:12
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/example-bindings.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/example-bindings.md:17
+msgid "\"Rust\""
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/example-bindings.md:23
+msgid "\"C++\""
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/example-bindings.md:24
+msgid "\"example/include/blobstore.h\""
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/example-bindings.md:32
+msgid "// Definitions of Rust types and functions go here\n"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/example-bindings.md:38
+msgid "Point out:"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/example-bindings.md:40
+msgid ""
+"Although this looks like a regular Rust `mod`, the `#[cxx::bridge]` "
+"procedural macro does complex things to it. The generated code is quite a "
+"bit more sophisticated - though this does still result in a `mod` called "
+"`ffi` in your code."
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/example-bindings.md:44
+msgid "Native support for C++'s `std::unique_ptr` in Rust"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/example-bindings.md:45
+msgid "Native support for Rust slices in C++"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/example-bindings.md:46
+msgid "Calls from C++ to Rust, and Rust types (in the top part)"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/example-bindings.md:47
+msgid "Calls from Rust to C++, and C++ types (in the bottom part)"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/example-bindings.md:49
+msgid ""
+"**Common misconception:** It _looks_ like a C++ header is being parsed by "
+"Rust, but this is misleading. This header is never interpreted by Rust, but "
+"simply `#include`d in the generated C++ code for the benefit of C++ "
+"compilers."
+msgstr ""

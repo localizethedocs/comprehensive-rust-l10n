@@ -1,0 +1,87 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md:6
+msgid "Library vs application docs"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md:8
+msgid ""
+"You might see elaborate documentation for fundamental APIs that repeats the "
+"names and type signatures. Stable and highly reusable code can afford this "
+"with a positive RoI."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md:12
+msgid "Library code:"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md:13
+msgid "has a high number of users,"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md:14
+msgid "solves a whole range of related problems,"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md:15
+msgid "often has stable APIs."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md:17
+msgid "Application code is the opposite:"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md:18
+msgid "few users,"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md:19
+msgid "solves a specific problem,"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md:20
+msgid "changes often."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md:24
+msgid ""
+"You might have seen elaborate documentation that repeats code, looks at the "
+"same API multiple times with many examples and case studies. Context is key: "
+"who wrote it, for whom, and what material it is covering, and what resources "
+"did they have."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md:29
+msgid ""
+"Fundamental library code often has Elaborate documentation, for example, the "
+"standard library, highly reusable frameworks like serde and tokio. Teams "
+"responsible for this code often have appropriate resources to write and "
+"maintain elaborate documentation."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md:34
+msgid ""
+"Library code is often stable, so the community is going to extract a "
+"significant benefit from elaborate documentation before it needs to be "
+"reworked."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md:38
+msgid ""
+"Application code has the opposite traits: it has few users, solves a "
+"specific problem, and changes often. For application code elaborate "
+"documentation quickly becomes outdated and misleading. It is also difficult "
+"to extract a positive RoI from boilerplate docs even while they are up to "
+"date, because there are only a few users."
+msgstr ""

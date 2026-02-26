@@ -1,0 +1,183 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/lifetimes/solution.md:6
+msgid "Solution"
+msgstr ""
+
+#: src/lifetimes/solution.md:9
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:11
+msgid "/// A wire type as seen on the wire.\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:14
+msgid "/// The Varint WireType indicates the value is a single VARINT.\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:16
+msgid ""
+"// The I64 WireType indicates that the value is precisely 8 bytes in\n"
+"    // little-endian order containing a 64-bit signed integer or double "
+"type.\n"
+"    //I64,  -- not needed for this exercise\n"
+"    /// The Len WireType indicates that the value is a length represented as "
+"a\n"
+"    /// VARINT followed by exactly that number of bytes.\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:22
+msgid ""
+"// The I32 WireType indicates that the value is precisely 4 bytes in\n"
+"    // little-endian order containing a 32-bit signed integer or float "
+"type.\n"
+"    //I32,  -- not needed for this exercise\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:27
+msgid "/// A field's value, typed based on the wire type.\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:31
+msgid "//I64(i64),  -- not needed for this exercise\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:33
+msgid "//I32(i32),  -- not needed for this exercise\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:36
+msgid "/// A field, containing the field number and its value.\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:51
+msgid "//1 => WireType::I64,  -- not needed for this exercise\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:53
+msgid "//5 => WireType::I32,  -- not needed for this exercise\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:54
+msgid "\"Invalid wire type: {value}\""
+msgstr ""
+
+#: src/lifetimes/solution.md:62
+msgid "\"Expected string to be a `Len` field\""
+msgstr ""
+
+#: src/lifetimes/solution.md:64
+msgid "\"Invalid string\""
+msgstr ""
+
+#: src/lifetimes/solution.md:69
+msgid "\"Expected bytes to be a `Len` field\""
+msgstr ""
+
+#: src/lifetimes/solution.md:76
+msgid "\"Expected `u64` to be a `Varint` field\""
+msgstr ""
+
+#: src/lifetimes/solution.md:81
+msgid ""
+"/// Parse a VARINT, returning the parsed value and the remaining bytes.\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:86
+msgid "\"Not enough bytes for varint\""
+msgstr ""
+
+#: src/lifetimes/solution.md:89
+msgid ""
+"// This is the last byte of the VARINT, so convert it to\n"
+"            // a u64 and return it.\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:99
+msgid "// More than 7 bytes is invalid.\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:100
+msgid "\"Too many bytes for varint\""
+msgstr ""
+
+#: src/lifetimes/solution.md:102
+msgid "/// Convert a tag into a field number and a WireType.\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:109
+msgid "/// Parse a field, returning the remaining bytes\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:121
+msgid "// cast for simplicity\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:128
+msgid ""
+"/// Parse a message in the given data, calling `T::add_field` for each field "
+"in\n"
+"/// the message.\n"
+"///\n"
+"/// The entire input is consumed.\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:164 src/lifetimes/solution.md:174
+msgid "// skip everything else\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:182 src/lifetimes/solution.md:211
+msgid "\"\""
+msgstr ""
+
+#: src/lifetimes/solution.md:191
+msgid "\"beautiful name\""
+msgstr ""
+
+#: src/lifetimes/solution.md:198
+msgid "\"Evan\""
+msgstr ""
+
+#: src/lifetimes/solution.md:213
+msgid "\"+1234-777-9090\""
+msgstr ""
+
+#: src/lifetimes/solution.md:213 src/lifetimes/solution.md:235
+msgid "\"home\""
+msgstr ""
+
+#: src/lifetimes/solution.md:217
+msgid "// Put that all together into a single parse.\n"
+msgstr ""
+
+#: src/lifetimes/solution.md:232
+msgid "\"maxwell\""
+msgstr ""
+
+#: src/lifetimes/solution.md:235
+msgid "\"+1202-555-1212\""
+msgstr ""
+
+#: src/lifetimes/solution.md:236
+msgid "\"+1800-867-5308\""
+msgstr ""
+
+#: src/lifetimes/solution.md:236
+msgid "\"mobile\""
+msgstr ""

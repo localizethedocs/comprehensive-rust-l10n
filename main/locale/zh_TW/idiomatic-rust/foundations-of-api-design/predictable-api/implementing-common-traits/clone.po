@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md:6
+msgid "Clone"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md:8
+msgid "Deep-copy a type or duplicate a smart, shareable pointer."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md:10
+msgid "Derivable: ✅"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md:12
+msgid "When to implement: If duplicating doesn't break invariants."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md:15
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md:16
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md:17
+msgid ""
+"// pub trait Clone: Sized {\n"
+"//     // Required method\n"
+"//     fn clone(&self) -> Self;\n"
+"// \n"
+"//     // Provided methods omitted\n"
+"// }\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md:36
+msgid "\"String\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md:43
+msgid "// Copies the reference-counted pointer, not the value.\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md:50
+msgid ""
+"\"Deep copy\" a value, or in the case of reference counting pointers like "
+"`Rc`/`Arc` create a new instance of that pointer."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/clone.md:53
+msgid ""
+"When to not implement/derive: For types that, to maintain an invariant, the "
+"value should not be duplicated. We'll touch on this later in Idiomatic Rust."
+msgstr ""

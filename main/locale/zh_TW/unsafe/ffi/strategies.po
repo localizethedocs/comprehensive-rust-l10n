@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/ffi/strategies.md:6
+msgid "Strategies of interop"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/strategies.md:10
+msgid "Sharing data structures and symbols directly is very difficult:"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/strategies.md:12
+msgid ""
+"```bob\n"
+"╭────────────╮                                          ╭────────────╮\n"
+"│            │                                          │            │\n"
+"│            │ <--------------------------------------> │            │\n"
+"│            │                                          │            │\n"
+"╰────────────╯                                          ╰────────────╯\n"
+"     Rust                                                    \"C++\"\n"
+"```"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/strategies.md:21
+msgid "FFI through the C ABI is much more feasible:"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/strategies.md:23
+msgid ""
+"````````bob\n"
+"╭────────────╮          ╭───╮           ╭───╮          ╭────────────╮\n"
+"│            │          │   │           │   │          │            │\n"
+"│            │ <----->  │   │ <~~~~~~~> │   │ <------> │            │ \n"
+"│            │          │   │           │   │          │            │\n"
+"╰────────────╯          ╰───╯           ╰───╯          ╰────────────╯\n"
+"    Rust                  C               C                 \"C++\"\n"
+"````````"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/strategies.md:32
+msgid "Other strategies:"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/strategies.md:34
+msgid "Distributed system (RPC)"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/strategies.md:35
+msgid "Custom ABI (i.e. WebAssembly Interface Types)"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/strategies.md:40
+msgid "_High-fidelity interop_"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/strategies.md:42
+msgid "The ideal scenario is currently experimental."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/strategies.md:44
+msgid ""
+"Two projects exploring this are [crubit](https://github.com/google/crubit) "
+"and [Zngur](https://hkalbasi.github.io/zngur/). The first provides glue code "
+"on each side for enabling compatible types to work seamlessly across "
+"domains. The second relies on dynamic dispatch and imports C++ objects into "
+"Rust as trait objects."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/strategies.md:49
+msgid "_Low-fidelity interop_ work through a C API"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/strategies.md:51
+msgid ""
+"The typical strategy for interop is to use the C language as the interface. "
+"C is a lossy codec. This strategy typically results in complicated code on "
+"both sides."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/strategies.md:55
+msgid "_Other strategies_ are less viable in a zero cost environment."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/strategies.md:57
+msgid "_Distributed systems_ impose runtime costs."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/strategies.md:59
+msgid ""
+"They incur significant overhead as calling a method in a foreign library "
+"incurs a round trip of serialization/transport/deserialization. Generally "
+"speaking, a transparent RPC is not a good idea. There’s network in the "
+"middle."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/strategies.md:63
+msgid ""
+"_Custom ABI_, such as wasm require a runtime or significant implementation "
+"cost."
+msgstr ""

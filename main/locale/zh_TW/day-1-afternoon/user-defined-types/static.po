@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/user-defined-types/static.md:6
+msgid "`static`"
+msgstr ""
+
+#: src/user-defined-types/static.md:8
+msgid ""
+"Static variables will live during the whole execution of the program, and "
+"therefore will not move:"
+msgstr ""
+
+#: src/user-defined-types/static.md:12
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/user-defined-types/static.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/user-defined-types/static.md:15
+msgid "\"Welcome to RustOS 3.14\""
+msgstr ""
+
+#: src/user-defined-types/static.md:18
+msgid "\"{BANNER}\""
+msgstr ""
+
+#: src/user-defined-types/static.md:22
+msgid ""
+"As noted in the [Rust RFC Book](https://rust-lang.github.io/rfcs/0246-const-"
+"vs-static.html), these are not inlined upon use and have an actual "
+"associated memory location. This is useful for unsafe and embedded code, and "
+"the variable lives through the entirety of the program execution. When a "
+"globally-scoped value does not have a reason to need object identity, "
+"`const` is generally preferred."
+msgstr ""
+
+#: src/user-defined-types/static.md:31
+msgid "`static` is similar to mutable global variables in C++."
+msgstr ""
+
+#: src/user-defined-types/static.md:32
+msgid ""
+"`static` provides object identity: an address in memory and state as "
+"required by types with interior mutability such as `Mutex<T>`."
+msgstr ""
+
+#: src/user-defined-types/static.md:35
+msgid "More to Explore"
+msgstr ""
+
+#: src/user-defined-types/static.md:37
+msgid ""
+"Because `static` variables are accessible from any thread, they must be "
+"`Sync`. Interior mutability is possible through a [`Mutex`](https://doc.rust-"
+"lang.org/std/sync/struct.Mutex.html), atomic or similar."
+msgstr ""
+
+#: src/user-defined-types/static.md:42
+msgid ""
+"It is common to use `OnceLock` in a static as a way to support "
+"initialization on first use. `OnceCell` is not `Sync` and thus cannot be "
+"used in this context."
+msgstr ""
+
+#: src/user-defined-types/static.md:45
+msgid "Thread-local data can be created with the macro `std::thread_local`."
+msgstr ""

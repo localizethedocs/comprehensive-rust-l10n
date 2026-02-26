@@ -1,0 +1,132 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/sync-exercises/solutions.md:6
+msgid "Solutions"
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:8
+msgid "Dining Philosophers"
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:11
+#: src/concurrency/sync-exercises/solutions.md:93
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:12
+#: src/concurrency/sync-exercises/solutions.md:94
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:30
+msgid "\"Eureka! {} has a new idea!\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:35
+msgid "\"{} is trying to eat\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:39
+msgid "\"{} is eating...\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:45
+msgid "\"Socrates\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:45
+msgid "\"Hypatia\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:45
+msgid "\"Plato\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:45
+msgid "\"Aristotle\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:45
+msgid "\"Pythagoras\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:61
+msgid ""
+"// To avoid a deadlock, we have to break the symmetry\n"
+"        // somewhere. This will swap the chopsticks without deinitializing\n"
+"        // either of them.\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:85
+msgid "\"{thought}\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:90
+msgid "Link Checker"
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:106
+msgid "\"request error: {0}\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:108
+msgid "\"bad http response: {0}\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:119
+msgid "\"Checking {:#}\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:134
+msgid "\"a\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:137
+msgid "\"href\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:144
+msgid "\"On {base_url:#}: ignored unparsable {href:?}: {err}\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:163
+msgid ""
+"/// Determine whether links within the given page should be extracted.\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:168
+msgid ""
+"/// Mark the given page as visited, returning false if it had already\n"
+"    /// been visited.\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:182
+msgid "// To multiplex the non-cloneable Receiver, wrap it in Arc<Mutex<_>>.\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:196
+msgid "// The sender got dropped. No more commands coming in.\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:237
+msgid "\"Got crawling error: {:#}\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:252
+msgid "\"https://www.google.org\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/solutions.md:254
+msgid "\"Bad URLs: {:#?}\""
+msgstr ""

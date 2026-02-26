@@ -1,0 +1,146 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/testing.md:6
+msgid "Testing in Android"
+msgstr ""
+
+#: src/android/testing.md:8
+msgid ""
+"Building on [Testing](../testing.md), we will now look at how unit tests "
+"work in AOSP. Use the `rust_test` module for your unit tests:"
+msgstr ""
+
+#: src/android/testing.md:11
+msgid "_testing/Android.bp_:"
+msgstr ""
+
+#: src/android/testing.md:15
+msgid "\"libleftpad\""
+msgstr ""
+
+#: src/android/testing.md:16
+msgid "\"leftpad\""
+msgstr ""
+
+#: src/android/testing.md:17 src/android/testing.md:23
+msgid "\"src/lib.rs\""
+msgstr ""
+
+#: src/android/testing.md:21
+msgid "\"libleftpad_test\""
+msgstr ""
+
+#: src/android/testing.md:22
+msgid "\"leftpad_test\""
+msgstr ""
+
+#: src/android/testing.md:25
+msgid "\"general-tests\""
+msgstr ""
+
+#: src/android/testing.md:29
+msgid "\"libgoogletest_example\""
+msgstr ""
+
+#: src/android/testing.md:30
+msgid "\"googletest_example\""
+msgstr ""
+
+#: src/android/testing.md:31
+msgid "\"googletest.rs\""
+msgstr ""
+
+#: src/android/testing.md:32
+msgid "\"libgoogletest_rust\""
+msgstr ""
+
+#: src/android/testing.md:37
+msgid "\"libmockall_example\""
+msgstr ""
+
+#: src/android/testing.md:38
+msgid "\"mockall_example\""
+msgstr ""
+
+#: src/android/testing.md:39
+msgid "\"mockall.rs\""
+msgstr ""
+
+#: src/android/testing.md:40
+msgid "\"libmockall\""
+msgstr ""
+
+#: src/android/testing.md:45
+msgid "_testing/src/lib.rs_:"
+msgstr ""
+
+#: src/android/testing.md:48
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/android/testing.md:49
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/testing.md:50
+msgid "//! Left-padding library.\n"
+msgstr ""
+
+#: src/android/testing.md:52
+msgid "/// Left-pad `s` to `width`.\n"
+msgstr ""
+
+#: src/android/testing.md:55
+msgid "\"{s:>width$}\""
+msgstr ""
+
+#: src/android/testing.md:64
+msgid "\"foo\""
+msgstr ""
+
+#: src/android/testing.md:64
+msgid "\"  foo\""
+msgstr ""
+
+#: src/android/testing.md:69
+msgid "\"foobar\""
+msgstr ""
+
+#: src/android/testing.md:74
+msgid "You can now run the test with"
+msgstr ""
+
+#: src/android/testing.md:80
+msgid "The output looks like this:"
+msgstr ""
+
+#: src/android/testing.md:82
+msgid ""
+"```text\n"
+"INFO: Elapsed time: 2.666s, Critical Path: 2.40s\n"
+"INFO: 3 processes: 2 internal, 1 linux-sandbox.\n"
+"INFO: Build completed successfully, 3 total actions\n"
+"//comprehensive-rust-android/testing:libleftpad_test_host            PASSED "
+"in 2.3s\n"
+"    PASSED  libleftpad_test.tests::long_string (0.0s)\n"
+"    PASSED  libleftpad_test.tests::short_string (0.0s)\n"
+"Test cases: finished with 2 passing and 0 failing out of 2 test cases\n"
+"```"
+msgstr ""
+
+#: src/android/testing.md:92
+msgid ""
+"Notice how you only mention the root of the library crate. Tests are found "
+"recursively in nested modules."
+msgstr ""

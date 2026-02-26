@@ -1,0 +1,87 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/iterators/collect.md:6
+msgid "`collect`"
+msgstr ""
+
+#: src/iterators/collect.md:8
+msgid ""
+"The [`collect`](https://doc.rust-lang.org/std/iter/trait.Iterator."
+"html#method.collect) method lets you build a collection from an [`Iterator`]"
+"(https://doc.rust-lang.org/std/iter/trait.Iterator.html)."
+msgstr ""
+
+#: src/iterators/collect.md:11
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/iterators/collect.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/iterators/collect.md:17
+msgid "\"prime_squares: {prime_squares:?}\""
+msgstr ""
+
+#: src/iterators/collect.md:24
+msgid ""
+"Any iterator can be collected in to a `Vec`, `VecDeque`, or `HashSet`. "
+"Iterators that produce key-value pairs (i.e. a two-element tuple) can also "
+"be collected into `HashMap` and `BTreeMap`."
+msgstr ""
+
+#: src/iterators/collect.md:28
+msgid ""
+"Show the students the definition for `collect` in the standard library docs. "
+"There are two ways to specify the generic type `B` for this method:"
+msgstr ""
+
+#: src/iterators/collect.md:31
+msgid ""
+"With the \"turbofish\": `some_iterator.collect::<COLLECTION_TYPE>()`, as "
+"shown. The `_` shorthand used here lets Rust infer the type of the `Vec` "
+"elements."
+msgstr ""
+
+#: src/iterators/collect.md:33
+msgid ""
+"With type inference: `let prime_squares: Vec<_> = some_iterator.collect()`. "
+"Rewrite the example to use this form."
+msgstr ""
+
+#: src/iterators/collect.md:36
+msgid "More to Explore"
+msgstr ""
+
+#: src/iterators/collect.md:38
+msgid ""
+"If students are curious about how this works, you can bring up the "
+"[`FromIterator`](https://doc.rust-lang.org/std/iter/trait.FromIterator.html) "
+"trait, which defines how each type of collection gets built from an iterator."
+msgstr ""
+
+#: src/iterators/collect.md:41
+msgid ""
+"In addition to the basic implementations of `FromIterator` for `Vec`, "
+"`HashMap`, etc., there are also more specialized implementations which let "
+"you do cool things like convert an `Iterator<Item = Result<V, E>>` into a "
+"`Result<Vec<V>, E>`."
+msgstr ""
+
+#: src/iterators/collect.md:45
+msgid ""
+"The reason type annotations are often needed with `collect` is because it's "
+"generic over its return type. This makes it harder for the compiler to infer "
+"the correct type in many cases."
+msgstr ""

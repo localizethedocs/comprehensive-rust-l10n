@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:6
+msgid "PhantomData 4/4: OwnedFd & BorrowedFd"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:8
+msgid "`BorrowedFd` is a prime example of `PhantomData` in action."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:19
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:20
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:62
+msgid ""
+"// Create a file with a raw syscall with write-only and create permissions.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:63
+msgid "\"c_str.txt\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:64
+msgid ""
+"// Pass the ownership of an integer file descriptor to an `OwnedFd`.\n"
+"    // `OwnedFd::drop()` closes the file descriptor.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:67
+msgid "\"Could not open file with syscall!\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:69
+msgid ""
+"// Create a `BorrowedFd` from an `OwnedFd`.\n"
+"    // `BorrowedFd::drop()` does not close the file because it doesn't own "
+"it!\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:72
+msgid "// std::mem::drop(owned_fd); // ❌🔨\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:75
+msgid "// owned_fd will be dropped here, and the file will be closed.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:81
+msgid "A file descriptor represents a specific process's access to a file."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:83
+msgid ""
+"Reminder: Device and OS-specific features are exposed as if they were files "
+"on unix-style systems."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:86
+msgid ""
+"[`OwnedFd`](https://rust-lang.github.io/rfcs/3128-io-safety.html#ownedfd-and-"
+"borrowedfdfd) is an owned wrapper type for a file descriptor. It _owns_ the "
+"file descriptor, and closes it when dropped."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:90
+msgid ""
+"Note: We have our own implementation of it here, draw attention to the "
+"explicit `Drop` implementation."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:93
+msgid ""
+"`BorrowedFd` is its borrowed counterpart, it does not need to close the file "
+"when it is dropped."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:96
+msgid "Note: We have not explicitly implemented `Drop` for `BorrowedFd`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:98
+msgid ""
+"`BorrowedFd` uses a lifetime captured with a `PhantomData` to enforce the "
+"invariant \"if this file descriptor exists, the OS file descriptor is still "
+"open even though it is not responsible for closing that file descriptor.\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:102
+msgid ""
+"The lifetime parameter of `BorrowedFd` demands that there exists another "
+"value in your program that lasts as long as that specific `BorrowedFd` or "
+"outlives it (in this case an `OwnedFd`)."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:106
+msgid ""
+"Demonstrate: Uncomment the `std::mem::drop(owned_fd)` line and try to "
+"compile to show that `borrowed_fd` relies on the lifetime of `owned_fd`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:109
+msgid ""
+"This has been encoded by the API designers to mean _that other value is what "
+"keeps the access to the file open_."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-04-borrowedfd.md:112
+msgid ""
+"Because Rust's borrow checker enforces this relationship where one value "
+"must last at least as long as another, users of this API do not need to "
+"worry about handling this correct file descriptor aliasing and closing logic "
+"themselves."
+msgstr ""

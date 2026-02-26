@@ -1,0 +1,95 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/cargo/running-locally.md:6
+msgid "Running Code Locally with Cargo"
+msgstr ""
+
+#: src/cargo/running-locally.md:8
+msgid ""
+"If you want to experiment with the code on your own system, then you will "
+"need to first install Rust. Do this by following the [instructions in the "
+"Rust Book](https://doc.rust-lang.org/book/ch01-01-installation.html). This "
+"should give you a working `rustc` and `cargo`. At the time of writing, the "
+"latest stable Rust release has these version numbers:"
+msgstr ""
+
+#: src/cargo/running-locally.md:21
+msgid ""
+"You can use any later version too since Rust maintains backwards "
+"compatibility."
+msgstr ""
+
+#: src/cargo/running-locally.md:23
+msgid ""
+"With this in place, follow these steps to build a Rust binary from one of "
+"the examples in this training:"
+msgstr ""
+
+#: src/cargo/running-locally.md:26
+msgid "Click the \"Copy to clipboard\" button on the example you want to copy."
+msgstr ""
+
+#: src/cargo/running-locally.md:28
+msgid ""
+"Use `cargo new exercise` to create a new `exercise/` directory for your code:"
+msgstr ""
+
+#: src/cargo/running-locally.md:35
+msgid ""
+"Navigate into `exercise/` and use `cargo run` to build and run your binary:"
+msgstr ""
+
+#: src/cargo/running-locally.md:46
+msgid ""
+"Replace the boilerplate code in `src/main.rs` with your own code. For "
+"example, using the example on the previous page, make `src/main.rs` look like"
+msgstr ""
+
+#: src/cargo/running-locally.md:50
+msgid "// Copyright 2022 Google LLC\n"
+msgstr ""
+
+#: src/cargo/running-locally.md:51
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/cargo/running-locally.md:54
+msgid "\"Edit me!\""
+msgstr ""
+
+#: src/cargo/running-locally.md:58
+msgid "Use `cargo run` to build and run your updated binary:"
+msgstr ""
+
+#: src/cargo/running-locally.md:68
+msgid ""
+"Use `cargo check` to quickly check your project for errors, use `cargo "
+"build` to compile it without running it. You will find the output in `target/"
+"debug/` for a normal debug build. Use `cargo build --release` to produce an "
+"optimized release build in `target/release/`."
+msgstr ""
+
+#: src/cargo/running-locally.md:73
+msgid ""
+"You can add dependencies for your project by editing `Cargo.toml`. When you "
+"run `cargo` commands, it will automatically download and compile missing "
+"dependencies for you."
+msgstr ""
+
+#: src/cargo/running-locally.md:81
+msgid ""
+"Try to encourage the class participants to install Cargo and use a local "
+"editor. It will make their life easier since they will have a normal "
+"development environment."
+msgstr ""

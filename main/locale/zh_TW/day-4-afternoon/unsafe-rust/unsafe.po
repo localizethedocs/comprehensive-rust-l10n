@@ -1,0 +1,81 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-rust/unsafe.md:6
+msgid "Unsafe Rust"
+msgstr ""
+
+#: src/unsafe-rust/unsafe.md:8
+msgid "The Rust language has two parts:"
+msgstr ""
+
+#: src/unsafe-rust/unsafe.md:10
+msgid "**Safe Rust:** memory safe, no undefined behavior possible."
+msgstr ""
+
+#: src/unsafe-rust/unsafe.md:11
+msgid ""
+"**Unsafe Rust:** can trigger undefined behavior if preconditions are "
+"violated."
+msgstr ""
+
+#: src/unsafe-rust/unsafe.md:13
+msgid ""
+"We saw mostly safe Rust in this course, but it's important to know what "
+"Unsafe Rust is."
+msgstr ""
+
+#: src/unsafe-rust/unsafe.md:16
+msgid ""
+"Unsafe code should be small and isolated, and its correctness should be "
+"carefully documented. It should be wrapped in a safe abstraction layer."
+msgstr ""
+
+#: src/unsafe-rust/unsafe.md:19
+msgid "Unsafe Rust gives you access to five new capabilities:"
+msgstr ""
+
+#: src/unsafe-rust/unsafe.md:21
+msgid "Dereference raw pointers."
+msgstr ""
+
+#: src/unsafe-rust/unsafe.md:22
+msgid "Access or modify mutable static variables."
+msgstr ""
+
+#: src/unsafe-rust/unsafe.md:23
+msgid "Access `union` fields."
+msgstr ""
+
+#: src/unsafe-rust/unsafe.md:24
+msgid "Call `unsafe` functions, including `extern` functions."
+msgstr ""
+
+#: src/unsafe-rust/unsafe.md:25
+msgid "Implement `unsafe` traits."
+msgstr ""
+
+#: src/unsafe-rust/unsafe.md:27
+msgid ""
+"We will briefly cover unsafe capabilities next. For full details, please see "
+"[Chapter 19.1 in the Rust Book](https://doc.rust-lang.org/book/ch19-01-"
+"unsafe-rust.html) and the [Rustonomicon](https://doc.rust-lang.org/nomicon/)."
+msgstr ""
+
+#: src/unsafe-rust/unsafe.md:34
+msgid ""
+"Unsafe Rust does not mean the code is incorrect. It means that developers "
+"have turned off some compiler safety features and have to write correct code "
+"by themselves. It means the compiler no longer enforces Rust's memory-safety "
+"rules."
+msgstr ""

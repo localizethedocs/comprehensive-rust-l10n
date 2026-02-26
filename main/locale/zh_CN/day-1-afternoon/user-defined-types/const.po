@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/user-defined-types/const.md:6
+msgid "`const`"
+msgstr ""
+
+#: src/user-defined-types/const.md:8
+msgid ""
+"Constants are evaluated at compile time and their values are [inlined]"
+"(https://rust-lang.github.io/rfcs/0246-const-vs-static.html) wherever they "
+"are used:"
+msgstr ""
+
+#: src/user-defined-types/const.md:38
+msgid ""
+"Only functions marked `const` can be called at compile time to generate "
+"`const` values. `const` functions can however be called at runtime."
+msgstr ""
+
+#: src/user-defined-types/const.md:44
+msgid "Mention that `const` behaves semantically similar to C++'s `constexpr`"
+msgstr ""

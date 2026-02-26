@@ -1,0 +1,24 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/android.md:6
+msgid "Bare-Metal on Android"
+msgstr ""
+
+#: src/bare-metal/android.md:8
+msgid ""
+"To build a bare-metal Rust binary in AOSP, you need to use a "
+"`rust_ffi_static` Soong rule to build your Rust code, then a `cc_binary` "
+"with a linker script to produce the binary itself, and then a `raw_binary` "
+"to convert the ELF to a raw binary ready to be run."
+msgstr ""

@@ -1,0 +1,94 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/memory-management/copy-types.md:6
+msgid "Copy Types"
+msgstr ""
+
+#: src/memory-management/copy-types.md:8
+msgid ""
+"While move semantics are the default, certain types are copied by default:"
+msgstr ""
+
+#: src/memory-management/copy-types.md:24
+msgid "These types implement the `Copy` trait."
+msgstr ""
+
+#: src/memory-management/copy-types.md:26
+msgid "You can opt-in your own types to use copy semantics:"
+msgstr ""
+
+#: src/memory-management/copy-types.md:45
+msgid "After the assignment, both `p1` and `p2` own their own data."
+msgstr ""
+
+#: src/memory-management/copy-types.md:46
+msgid "We can also use `p1.clone()` to explicitly copy the data."
+msgstr ""
+
+#: src/memory-management/copy-types.md:51
+msgid "Copying and cloning are not the same thing:"
+msgstr ""
+
+#: src/memory-management/copy-types.md:53
+msgid ""
+"Copying refers to bitwise copies of memory regions and does not work on "
+"arbitrary objects."
+msgstr ""
+
+#: src/memory-management/copy-types.md:55
+msgid ""
+"Copying does not allow for custom logic (unlike copy constructors in C++)."
+msgstr ""
+
+#: src/memory-management/copy-types.md:56
+msgid ""
+"Cloning is a more general operation and also allows for custom behavior by "
+"implementing the `Clone` trait."
+msgstr ""
+
+#: src/memory-management/copy-types.md:58
+msgid "Copying does not work on types that implement the `Drop` trait."
+msgstr ""
+
+#: src/memory-management/copy-types.md:60
+msgid "In the above example, try the following:"
+msgstr ""
+
+#: src/memory-management/copy-types.md:62
+msgid ""
+"Add a `String` field to `struct Point`. It will not compile because `String` "
+"is not a `Copy` type."
+msgstr ""
+
+#: src/memory-management/copy-types.md:64
+msgid ""
+"Remove `Copy` from the `derive` attribute. The compiler error is now in the "
+"`println!` for `p1`."
+msgstr ""
+
+#: src/memory-management/copy-types.md:66
+msgid "Show that it works if you clone `p1` instead."
+msgstr ""
+
+#: src/memory-management/copy-types.md:68
+msgid "More to Explore"
+msgstr ""
+
+#: src/memory-management/copy-types.md:70
+msgid ""
+"Shared references are `Copy`/`Clone`, mutable references are not. This is "
+"because Rust requires that mutable references be exclusive, so while it's "
+"valid to make a copy of a shared reference, creating a copy of a mutable "
+"reference would violate Rust's borrowing rules."
+msgstr ""

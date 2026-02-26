@@ -1,0 +1,71 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md:6
+msgid "Drop Bombs: using `std::mem::forget`"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md:22
+msgid "\"COMMIT\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md:24
+msgid "// Defuse the drop bomb by preventing Drop from ever running.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md:33
+msgid "// This is the \"drop bomb\"\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md:34
+msgid "\"Transaction dropped without commit!\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md:40
+msgid ""
+"// Use `tx` to build the transaction, then commit it.\n"
+"    // Comment out the call to `commit` to see the panic.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md:49
+msgid ""
+"This example removes the flag from the previous slide and makes the drop "
+"method panic unconditionally. To avoid that panic on a successful commit, "
+"the commit method now takes ownership of the transaction and calls [`std::"
+"mem::forget`](https://doc.rust-lang.org/std/mem/fn.forget.html), which "
+"prevents the `Drop::drop()` method from running."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md:55
+msgid ""
+"If the forgotten value owned heap allocated memory that would normally be "
+"freed in its `drop()` implementation, one consequence is a memory leak. That "
+"is not the case for the `Transaction` in the example above, since it does "
+"not own any heap memory."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md:60
+msgid ""
+"We can avoid needing a runtime flag by using `mem::forget()` in a tactical "
+"way. When the transaction commits successfully, we can defuse the drop bomb "
+"by calling `std::mem::forget` on the value, which prevents its `Drop` "
+"implementation from running."
+msgstr ""

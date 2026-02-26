@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/adding-third-party-crates/depending-on-a-crate.md:6
+msgid "Depending on a Crate"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/depending-on-a-crate.md:8
+msgid ""
+"Once you've added a third-party crate and generated build rules, depending "
+"on a crate is simple. Find your `rust_static_library` target, and add a "
+"`dep` on the `:lib` target within your crate."
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/depending-on-a-crate.md:12
+msgid "Specifically,"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/depending-on-a-crate.md:14
+msgid ""
+"```bob\n"
+"                     +------------+      +----------------------+\n"
+"\"//third_party/rust\" | crate name | \"/v\" | major semver version | \":"
+"lib\"\n"
+"                     +------------+      +----------------------+\n"
+"```"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/depending-on-a-crate.md:20
+msgid "For instance,"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/depending-on-a-crate.md:22
+msgid ""
+"```gn\n"
+"rust_static_library(\"my_rust_lib\") {\n"
+"  crate_root = \"lib.rs\"\n"
+"  sources = [ \"lib.rs\" ]\n"
+"  deps = [ \"//third_party/rust/example_rust_crate/v1:lib\" ]\n"
+"}\n"
+"```"
+msgstr ""

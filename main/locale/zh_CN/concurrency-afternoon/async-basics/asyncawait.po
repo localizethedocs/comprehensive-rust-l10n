@@ -1,0 +1,74 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/async/async-await.md:6
+msgid "`async`/`await`"
+msgstr ""
+
+#: src/concurrency/async/async-await.md:8
+msgid ""
+"At a high level, async Rust code looks very much like \"normal\" sequential "
+"code:"
+msgstr ""
+
+#: src/concurrency/async/async-await.md:11
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/concurrency/async/async-await.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/concurrency/async/async-await.md:18
+msgid "\"Count is: {i}!\""
+msgstr ""
+
+#: src/concurrency/async/async-await.md:34
+msgid "Key points:"
+msgstr ""
+
+#: src/concurrency/async/async-await.md:36
+msgid ""
+"Note that this is a simplified example to show the syntax. There is no long "
+"running operation or any real concurrency in it!"
+msgstr ""
+
+#: src/concurrency/async/async-await.md:39
+msgid ""
+"The \"async\" keyword is syntactic sugar. The compiler replaces the return "
+"type with a future."
+msgstr ""
+
+#: src/concurrency/async/async-await.md:42
+msgid ""
+"You cannot make `main` async, without additional instructions to the "
+"compiler on how to use the returned future."
+msgstr ""
+
+#: src/concurrency/async/async-await.md:45
+msgid ""
+"You need an executor to run async code. `block_on` blocks the current thread "
+"until the provided future has run to completion."
+msgstr ""
+
+#: src/concurrency/async/async-await.md:48
+msgid ""
+"`.await` asynchronously waits for the completion of another operation. "
+"Unlike `block_on`, `.await` doesn't block the current thread."
+msgstr ""
+
+#: src/concurrency/async/async-await.md:51
+msgid ""
+"`.await` can only be used inside an `async` function (or block; these are "
+"introduced later)."
+msgstr ""

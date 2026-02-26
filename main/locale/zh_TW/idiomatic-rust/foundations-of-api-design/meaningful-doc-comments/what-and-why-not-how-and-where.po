@@ -1,0 +1,134 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:6
+msgid "Why and What, not How and Where"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:8
+msgid "Avoid documenting irrelevant details that may frequently change."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:11
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:13
+msgid "/// Sorts a slice. Implemented using recursive quicksort.\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:16
+msgid "/* ... */"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:18
+msgid ""
+"// bad\n"
+"/// Saves a `User` record to the Postgres database.  \n"
+"///  \n"
+"/// This function opens a new connection and begins a transaction. It "
+"checks  \n"
+"/// if a user with the given ID exists with a `SELECT` query. If a user "
+"is  \n"
+"/// not found, performs an `INSERT`.  \n"
+"///  \n"
+"/// # Errors  \n"
+"///  \n"
+"/// Returns an error if any database operation fails.  \n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:30
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:41
+msgid "// ...\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:32
+msgid ""
+"// good\n"
+"/// Atomically saves a user record.  \n"
+"///  \n"
+"/// # Errors  \n"
+"///  \n"
+"/// Returns a `db::Error::DuplicateUsername` error if the user (keyed by  \n"
+"/// `user.username` field) already exists.  \n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:47
+msgid ""
+"Motivation: Users want to know the contract of the API (what is guaranteed "
+"about this function), rather than implementation details."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:50
+msgid ""
+"Motivation: Doc comments that explain implementation details become outdated "
+"faster than comments that explain the contract."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:53
+msgid ""
+"Internal information is likely irrelevant to a user. Imagine explaining in a "
+"doc comment for a function that you're using for loops to solve a problem, "
+"what is the point of this information?"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:57
+msgid ""
+"Consider the `sort_quickly` function above. Its documentation calls out that "
+"it uses quicksort, but is this necessary?"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:60
+msgid ""
+"It could be that another sorting function is used in the future, if that "
+"were the case then this comment would need to be updated too. This is a "
+"point of failure in documentation."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:64
+msgid ""
+"It could be that the implementation is necessary to explain, but this is "
+"likely due to whatever effects or invariants the user of that API needs to "
+"be aware of instead."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:68
+msgid ""
+"Focus on those effects and invariants instead of instead of the "
+"implementation details themselves."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:71
+msgid ""
+"Reiterate: Implementation details can and will change, so do not explain "
+"these details."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:74
+msgid "Don't talk about where something is used for the sake of it."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:76
+msgid ""
+"This is another instance where this information can become stale quickly."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-why-not-how-where.md:78
+msgid ""
+"Focus on what the function does (not how it is implemented) for a user "
+"trying to reach this practical information as quickly as possible."
+msgstr ""

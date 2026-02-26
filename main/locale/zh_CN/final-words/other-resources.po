@@ -1,0 +1,166 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/other-resources.md:6
+msgid "Other Rust Resources"
+msgstr ""
+
+#: src/other-resources.md:8
+msgid ""
+"The Rust community has created a wealth of high-quality and free resources "
+"online."
+msgstr ""
+
+#: src/other-resources.md:11
+msgid "Official Documentation"
+msgstr ""
+
+#: src/other-resources.md:13
+msgid "The Rust project hosts many resources. These cover Rust in general:"
+msgstr ""
+
+#: src/other-resources.md:15
+msgid ""
+"[The Rust Programming Language](https://doc.rust-lang.org/book/): the "
+"canonical free book about Rust. Covers the language in detail and includes a "
+"few projects for people to build."
+msgstr ""
+
+#: src/other-resources.md:18
+msgid ""
+"[Rust By Example](https://doc.rust-lang.org/rust-by-example/): covers the "
+"Rust syntax via a series of examples which showcase different constructs. "
+"Sometimes includes small exercises where you are asked to expand on the code "
+"in the examples."
+msgstr ""
+
+#: src/other-resources.md:22
+msgid ""
+"[Rust Standard Library](https://doc.rust-lang.org/std/): full documentation "
+"of the standard library for Rust."
+msgstr ""
+
+#: src/other-resources.md:24
+msgid ""
+"[The Rust Reference](https://doc.rust-lang.org/reference/): an incomplete "
+"book which describes the Rust grammar and memory model."
+msgstr ""
+
+#: src/other-resources.md:26
+msgid ""
+"[Rust API Guidelines](https://rust-lang.github.io/api-guidelines/): "
+"recommendations on how to design APIs."
+msgstr ""
+
+#: src/other-resources.md:29
+msgid "More specialized guides hosted on the official Rust site:"
+msgstr ""
+
+#: src/other-resources.md:31
+msgid ""
+"[The Rustonomicon](https://doc.rust-lang.org/nomicon/): covers unsafe Rust, "
+"including working with raw pointers and interfacing with other languages "
+"(FFI)."
+msgstr ""
+
+#: src/other-resources.md:34
+msgid ""
+"[Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/): "
+"covers the new asynchronous programming model which was introduced after the "
+"Rust Book was written."
+msgstr ""
+
+#: src/other-resources.md:37
+msgid ""
+"[The Embedded Rust Book](https://doc.rust-lang.org/stable/embedded-book/): "
+"an introduction to using Rust on embedded devices without an operating "
+"system."
+msgstr ""
+
+#: src/other-resources.md:40
+msgid "Unofficial Learning Material"
+msgstr ""
+
+#: src/other-resources.md:42
+msgid "A small selection of other guides and tutorial for Rust:"
+msgstr ""
+
+#: src/other-resources.md:44
+msgid ""
+"[Learn Rust the Dangerous Way](http://cliffle.com/p/dangerust/): covers Rust "
+"from the perspective of low-level C programmers."
+msgstr ""
+
+#: src/other-resources.md:46
+msgid ""
+"[Rust for Embedded C Programmers](https://opentitan.org/book/doc/"
+"rust_for_c_devs.html): covers Rust from the perspective of developers who "
+"write firmware in C."
+msgstr ""
+
+#: src/other-resources.md:48
+msgid ""
+"[Rust for professionals](https://overexact.com/rust-for-professionals/): "
+"covers the syntax of Rust using side-by-side comparisons with other "
+"languages such as C, C++, Java, JavaScript, and Python."
+msgstr ""
+
+#: src/other-resources.md:51
+msgid ""
+"[Rust on Exercism](https://exercism.org/tracks/rust): 100+ exercises to help "
+"you learn Rust."
+msgstr ""
+
+#: src/other-resources.md:53
+msgid ""
+"[Ferrous Teaching Material](https://ferrous-systems.github.io/teaching-"
+"material/index.html): a series of small presentations covering both basic "
+"and advanced part of the Rust language. Other topics such as WebAssembly, "
+"and async/await are also covered."
+msgstr ""
+
+#: src/other-resources.md:57
+msgid ""
+"[Advanced testing for Rust applications](https://rust-exercises.com/advanced-"
+"testing/): a self-paced workshop that goes beyond Rust's built-in testing "
+"framework. It covers `googletest`, snapshot testing, mocking as well as how "
+"to write your own custom test harness."
+msgstr ""
+
+#: src/other-resources.md:61
+msgid ""
+"[Beginner's Series to Rust](https://docs.microsoft.com/en-us/shows/beginners-"
+"series-to-rust/) and [Take your first steps with Rust](https://docs."
+"microsoft.com/en-us/learn/paths/rust-first-steps/): two Rust guides aimed at "
+"new developers. The first is a set of 35 videos and the second is a set of "
+"11 modules which covers Rust syntax and basic constructs."
+msgstr ""
+
+#: src/other-resources.md:67
+msgid ""
+"[Learn Rust With Entirely Too Many Linked Lists](https://rust-unofficial."
+"github.io/too-many-lists/): in-depth exploration of Rust's memory management "
+"rules, through implementing a few different types of list structures."
+msgstr ""
+
+#: src/other-resources.md:71
+msgid ""
+"[The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/): "
+"covers many details on Rust macros with practical examples."
+msgstr ""
+
+#: src/other-resources.md:74
+msgid ""
+"Please see the [Little Book of Rust Books](https://lborb.github.io/book/) "
+"for even more Rust books."
+msgstr ""

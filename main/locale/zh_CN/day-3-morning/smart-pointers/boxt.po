@@ -1,0 +1,132 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/smart-pointers/box.md:6
+msgid "`Box<T>`"
+msgstr ""
+
+#: src/smart-pointers/box.md:8
+msgid ""
+"[`Box`](https://doc.rust-lang.org/std/boxed/struct.Box.html) is an owned "
+"pointer to data on the heap:"
+msgstr ""
+
+#: src/smart-pointers/box.md:12 src/smart-pointers/box.md:42
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/smart-pointers/box.md:13 src/smart-pointers/box.md:43
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/smart-pointers/box.md:17
+msgid "\"five: {}\""
+msgstr ""
+
+#: src/smart-pointers/box.md:34
+msgid ""
+"`Box<T>` implements `Deref<Target = T>`, which means that you can [call "
+"methods from `T` directly on a `Box<T>`](https://doc.rust-lang.org/std/ops/"
+"trait.Deref.html#more-on-deref-coercion)."
+msgstr ""
+
+#: src/smart-pointers/box.md:38
+msgid ""
+"Recursive data types or data types with dynamic sizes cannot be stored "
+"inline without a pointer indirection. `Box` accomplishes that indirection:"
+msgstr ""
+
+#: src/smart-pointers/box.md:47
+msgid "/// A non-empty list: first element and the rest of the list.\n"
+msgstr ""
+
+#: src/smart-pointers/box.md:49
+msgid "/// An empty list.\n"
+msgstr ""
+
+#: src/smart-pointers/box.md:56
+msgid "\"{list:?}\""
+msgstr ""
+
+#: src/smart-pointers/box.md:60
+msgid ""
+"```bob\n"
+" Stack                           Heap\n"
+".- - - - - - - - - - - - - - .     .- - - - - - - - - - - - - - - - - - - - "
+"- - - - -.\n"
+":                            :     :                                                 :\n"
+":    "
+"list                    :     :                                                 :\n"
+":   +---------+----+----+    :     :    +---------+----+----+    +------+----"
+"+----+  :\n"
+":   | Element | 1  | o--+----+-----+--->| Element | 2  | o--+--->| Nil  | // "
+"| // |  :\n"
+":   +---------+----+----+    :     :    +---------+----+----+    +------+----"
+"+----+  :\n"
+":                            :     :                                                 :\n"
+":                            :     :                                                 :\n"
+"'- - - - - - - - - - - - - - '     '- - - - - - - - - - - - - - - - - - - - "
+"- - - - -'\n"
+"```"
+msgstr ""
+
+#: src/smart-pointers/box.md:76
+msgid ""
+"`Box` is like `std::unique_ptr` in C++, except that it's guaranteed to be "
+"not null."
+msgstr ""
+
+#: src/smart-pointers/box.md:78
+msgid "A `Box` can be useful when you:"
+msgstr ""
+
+#: src/smart-pointers/box.md:79
+msgid ""
+"have a type whose size can't be known at compile time, but the Rust compiler "
+"wants to know an exact size."
+msgstr ""
+
+#: src/smart-pointers/box.md:81
+msgid ""
+"want to transfer ownership of a large amount of data. To avoid copying large "
+"amounts of data on the stack, instead store the data on the heap in a `Box` "
+"so only the pointer is moved."
+msgstr ""
+
+#: src/smart-pointers/box.md:85
+msgid ""
+"If `Box` was not used and we attempted to embed a `List` directly into the "
+"`List`, the compiler would not be able to compute a fixed size for the "
+"struct in memory (the `List` would be of infinite size)."
+msgstr ""
+
+#: src/smart-pointers/box.md:89
+msgid ""
+"`Box` solves this problem as it has the same size as a regular pointer and "
+"just points at the next element of the `List` in the heap."
+msgstr ""
+
+#: src/smart-pointers/box.md:92
+msgid ""
+"Remove the `Box` in the List definition and show the compiler error. We get "
+"the message \"recursive without indirection\", because for data recursion, "
+"we have to use indirection, a `Box` or reference of some kind, instead of "
+"storing the value directly."
+msgstr ""
+
+#: src/smart-pointers/box.md:97
+msgid ""
+"Though `Box` looks like `std::unique_ptr` in C++, it cannot be empty/null. "
+"This makes `Box` one of the types that allow the compiler to optimize "
+"storage of some enums (the \"niche optimization\")."
+msgstr ""

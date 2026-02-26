@@ -1,0 +1,113 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:6
+msgid "Token Types"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:8
+msgid ""
+"Types with private constructors can be used to act as proof of invariants."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:16
+msgid "// A public type with private fields behind a module boundary.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:25
+msgid "\"We have a token, so we can make assumptions.\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:30
+msgid "// We have a token, so we can do this work.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:33
+msgid "// We could not get a token, so we can't call `protected_work`.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:42
+msgid ""
+"Motivation: We want to be able to restrict user's access to functionality "
+"until they've performed a specific task."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:45
+msgid ""
+"We can do this by defining a type the API consumer cannot construct on their "
+"own, through the privacy rules of structs and modules."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:48
+msgid ""
+"[Newtypes](./newtype-pattern.md) use the privacy rules in a similar way, to "
+"restrict construction unless a value is guaranteed to hold up an invariant "
+"at runtime."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:52
+msgid "Ask: What is the purpose of the `proof: ()` field here?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:54
+msgid ""
+"Without `proof: ()`, `Token` would have no private fields and users would be "
+"able to construct values of `Token` arbitrarily."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:57
+msgid ""
+"Demonstrate: Try to construct the token manually in `main` and show the "
+"compilation error. Demonstrate: Remove the `proof` field from `Token` to "
+"show how users would be able to construct `Token` if it had no private "
+"fields."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:61
+msgid ""
+"By putting the `Token` type behind a module boundary (`token`), users "
+"outside that module can't construct the value on their own as they don't "
+"have permission to access the `proof` field."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:65
+msgid ""
+"The API developer gets to define methods and functions that produce these "
+"tokens. The user does not."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:68
+msgid ""
+"The token becomes a proof that one has met the API developer's conditions of "
+"access for those tokens."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:71
+msgid ""
+"Ask: How might an API developer accidentally introduce ways to circumvent "
+"this?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types.md:74
+msgid ""
+"Expect answers like \"serialization implementations\", other parser/\"from "
+"string\" implementations, or an implementation of `Default`."
+msgstr ""

@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/send-sync/send.md:6
+msgid "`Send`"
+msgstr ""
+
+#: src/concurrency/send-sync/send.md:8
+msgid ""
+"A type `T` is [`Send`](https://doc.rust-lang.org/std/marker/trait.Send.html) "
+"if it is safe to move a `T` value to another thread."
+msgstr ""
+
+#: src/concurrency/send-sync/send.md:10
+msgid ""
+"The effect of moving ownership to another thread is that _destructors_ will "
+"run in that thread. So the question is when you can allocate a value in one "
+"thread and deallocate it in another."
+msgstr ""
+
+#: src/concurrency/send-sync/send.md:19
+msgid ""
+"As an example, a connection to the SQLite library must only be accessed from "
+"a single thread."
+msgstr ""

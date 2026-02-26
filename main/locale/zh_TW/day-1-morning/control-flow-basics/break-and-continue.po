@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/control-flow-basics/break-continue.md:6
+msgid "`break` and `continue`"
+msgstr ""
+
+#: src/control-flow-basics/break-continue.md:8
+msgid ""
+"If you want to immediately start the next iteration use [`continue`](https://"
+"doc.rust-lang.org/reference/expressions/loop-expr.html#continue-expressions)."
+msgstr ""
+
+#: src/control-flow-basics/break-continue.md:11
+msgid ""
+"If you want to exit any kind of loop early, use [`break`](https://doc.rust-"
+"lang.org/reference/expressions/loop-expr.html#break-expressions). With "
+"`loop`, this can take an optional expression that becomes the value of the "
+"`loop` expression."
+msgstr ""
+
+#: src/control-flow-basics/break-continue.md:17
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/control-flow-basics/break-continue.md:18
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/control-flow-basics/break-continue.md:38
+msgid ""
+"Note that `loop` is the only looping construct that can return a non-trivial "
+"value. This is because it's guaranteed to only return at a `break` statement "
+"(unlike `while` and `for` loops, which can also return when the condition "
+"fails)."
+msgstr ""

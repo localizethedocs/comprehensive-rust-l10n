@@ -1,0 +1,126 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:6
+msgid "Exercise"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:8
+msgid "What do these names imply they do?"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:9
+msgid "What should we name these signatures?"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:14
+msgid "// What are the types of these methods?\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:16
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:17
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:18
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:19
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:20
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:21
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:22
+msgid "// ?\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:23
+msgid "// What should we name methods with these types?\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:26
+msgid "// details for InnerType do not matter.\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:33
+msgid ""
+"Go through the methods in the example with the class and discuss what the "
+"types of the functions should be."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:36
+msgid ""
+"Go through the unnamed methods and brainstorm what names those methods "
+"should have."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:39
+msgid "Answers for missing types:"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:40
+msgid "`Option::is_some(&self) -> bool`"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:41
+msgid "`slice::get(&self /* &[T] */, usize) -> Option<&T>`"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:42
+msgid ""
+"`slice::get_unchecked_mut(&self /* &[T] */, usize) -> &T` (unsafe and "
+"simplified)"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:44
+msgid "`Option::as_ref(&self /* &Option<T> */) -> Option<&T>`"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:45
+msgid "`str::from_utf8_unchecked_mut(v: &mut [u8]) -> &mut str` (unsafe)"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:46
+msgid ""
+"`Rc::get_mut(&mut self /* &mut Rc<T> */) -> Option<&mut T>` (simplified)"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:47
+msgid ""
+"`Vec::dedup_by_key<K: PartialEq>(&mut self /* &mut Vec<T> */, key: impl "
+"FnMut(&mut T) -> K)` (simplified)"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:50
+msgid "Answers for missing names:"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:51
+msgid "`fn from_string(String) -> Self`"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:52
+msgid ""
+"`fn inner(&self) -> Option<&InnerType>` or `as_ref`, depending on context"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:53
+msgid "`fn with_string(self, String) -> Self`"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/exercise.md:54
+msgid ""
+"`fn inner_mut(&mut self) -> Option<&mut InnerType>` or `as_ref_mut`, "
+"depending on context"
+msgstr ""

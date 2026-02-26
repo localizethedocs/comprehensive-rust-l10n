@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/memory-management/review.md:6
+msgid "Review of Program Memory"
+msgstr ""
+
+#: src/memory-management/review.md:8
+msgid "Programs allocate memory in two ways:"
+msgstr ""
+
+#: src/memory-management/review.md:10
+msgid "Stack: Continuous area of memory for local variables."
+msgstr ""
+
+#: src/memory-management/review.md:11
+msgid "Values have fixed sizes known at compile time."
+msgstr ""
+
+#: src/memory-management/review.md:12
+msgid "Extremely fast: just move a stack pointer."
+msgstr ""
+
+#: src/memory-management/review.md:13
+msgid "Easy to manage: follows function calls."
+msgstr ""
+
+#: src/memory-management/review.md:14
+msgid "Great memory locality."
+msgstr ""
+
+#: src/memory-management/review.md:16
+msgid "Heap: Storage of values outside of function calls."
+msgstr ""
+
+#: src/memory-management/review.md:17
+msgid "Values have dynamic sizes determined at runtime."
+msgstr ""
+
+#: src/memory-management/review.md:18
+msgid "Slightly slower than the stack: some bookkeeping needed."
+msgstr ""
+
+#: src/memory-management/review.md:19
+msgid "No guarantee of memory locality."
+msgstr ""
+
+#: src/memory-management/review.md:21
+msgid "Example"
+msgstr ""
+
+#: src/memory-management/review.md:23
+msgid ""
+"Creating a `String` puts fixed-sized metadata on the stack and dynamically "
+"sized data, the actual string, on the heap:"
+msgstr ""
+
+#: src/memory-management/review.md:27 src/memory-management/review.md:65
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/memory-management/review.md:28 src/memory-management/review.md:66
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/memory-management/review.md:31 src/memory-management/review.md:69
+msgid "\"Hello\""
+msgstr ""
+
+#: src/memory-management/review.md:52
+msgid ""
+"Mention that a `String` is backed by a `Vec`, so it has a capacity and "
+"length and can grow if mutable via reallocation on the heap."
+msgstr ""
+
+#: src/memory-management/review.md:55
+msgid ""
+"If students ask about it, you can mention that the underlying memory is heap "
+"allocated using the [System Allocator](https://doc.rust-lang.org/std/alloc/"
+"struct.System.html) and custom allocators can be implemented using the "
+"[Allocator API](https://doc.rust-lang.org/std/alloc/index.html)"
+msgstr ""
+
+#: src/memory-management/review.md:59
+msgid "More to Explore"
+msgstr ""
+
+#: src/memory-management/review.md:61
+msgid ""
+"We can inspect the memory layout with `unsafe` Rust. However, you should "
+"point out that this is rightfully unsafe!"
+msgstr ""
+
+#: src/memory-management/review.md:70
+msgid "' '"
+msgstr ""
+
+#: src/memory-management/review.md:71
+msgid "\"world\""
+msgstr ""
+
+#: src/memory-management/review.md:72
+msgid ""
+"// DON'T DO THIS AT HOME! For educational purposes only.\n"
+"    // String provides no guarantees about its layout, so this could lead "
+"to\n"
+"    // undefined behavior.\n"
+msgstr ""
+
+#: src/memory-management/review.md:77
+msgid "\"capacity = {capacity}, ptr = {ptr:#x}, len = {len}\""
+msgstr ""

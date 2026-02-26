@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/lifetimes/multiple-borrows.md:6
+msgid "Multiple Borrows"
+msgstr ""
+
+#: src/lifetimes/multiple-borrows.md:8
+msgid ""
+"But what about when there are multiple borrows passed into a function and "
+"one being returned?"
+msgstr ""
+
+#: src/lifetimes/multiple-borrows.md:12 src/lifetimes/multiple-borrows.md:56
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/lifetimes/multiple-borrows.md:13 src/lifetimes/multiple-borrows.md:57
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/lifetimes/multiple-borrows.md:16
+msgid "\"Return either `a` or `b`\""
+msgstr ""
+
+#: src/lifetimes/multiple-borrows.md:25
+msgid ""
+"// Which one is still borrowed?\n"
+"    // Should either mutation be allowed?\n"
+msgstr ""
+
+#: src/lifetimes/multiple-borrows.md:37
+msgid ""
+"This code does not compile right now because it is missing lifetime "
+"annotations. Before we get it to compile, use this opportunity to have "
+"students to think about which of our argument borrows should be extended by "
+"the return value."
+msgstr ""
+
+#: src/lifetimes/multiple-borrows.md:42
+msgid ""
+"We pass two borrows into `multiple` and one is going to come back out, which "
+"means we will need to extend the borrow of one of the argument lifetimes. "
+"Which one should be extended? Do we need to see the body of `multiple` to "
+"figure this out?"
+msgstr ""
+
+#: src/lifetimes/multiple-borrows.md:47
+msgid ""
+"When borrow checking, the compiler doesn't look at the body of `multiple` to "
+"reason about the borrows flowing out, instead it looks only at the signature "
+"of the function for borrow analysis."
+msgstr ""
+
+#: src/lifetimes/multiple-borrows.md:51
+msgid ""
+"In this case there is not enough information to determine if `a` or `b` will "
+"be borrowed by the returned reference. Show students the compiler errors and "
+"introduce the lifetime syntax:"
+msgstr ""

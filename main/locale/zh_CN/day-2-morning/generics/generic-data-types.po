@@ -1,0 +1,84 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/generics/generic-data.md:6
+msgid "Generic Data Types"
+msgstr ""
+
+#: src/generics/generic-data.md:8
+msgid ""
+"You can use generics to abstract over the concrete field type. Returning to "
+"the exercise for the previous segment:"
+msgstr ""
+
+#: src/generics/generic-data.md:12
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/generics/generic-data.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/generics/generic-data.md:16
+msgid "/// Log a message at the given verbosity level.\n"
+msgstr ""
+
+#: src/generics/generic-data.md:24
+msgid "\"verbosity={verbosity}: {message}\""
+msgstr ""
+
+#: src/generics/generic-data.md:27
+msgid "/// Only log messages up to the given verbosity level.\n"
+msgstr ""
+
+#: src/generics/generic-data.md:44
+msgid "\"FYI\""
+msgstr ""
+
+#: src/generics/generic-data.md:45
+msgid "\"Uhoh\""
+msgstr ""
+
+#: src/generics/generic-data.md:52
+msgid ""
+"_Q:_ Why is `L` specified twice in `impl<L: Logger> .. VerbosityFilter<L>`? "
+"Isn't that redundant?"
+msgstr ""
+
+#: src/generics/generic-data.md:54
+msgid ""
+"This is because it is a generic implementation section for generic type. "
+"They are independently generic."
+msgstr ""
+
+#: src/generics/generic-data.md:56
+msgid "It means these methods are defined for any `L`."
+msgstr ""
+
+#: src/generics/generic-data.md:57
+msgid "It is possible to write `impl VerbosityFilter<StderrLogger> { .. }`."
+msgstr ""
+
+#: src/generics/generic-data.md:58
+msgid ""
+"`VerbosityFilter` is still generic and you can use `VerbosityFilter<f64>`, "
+"but methods in this block will only be available for "
+"`VerbosityFilter<StderrLogger>`."
+msgstr ""
+
+#: src/generics/generic-data.md:61
+msgid ""
+"Note that we don't put a trait bound on the `VerbosityFilter` type itself. "
+"You can put bounds there as well, but generally in Rust we only put the "
+"trait bounds on the impl blocks."
+msgstr ""

@@ -1,0 +1,145 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/cargo/rust-ecosystem.md:6
+msgid "The Rust Ecosystem"
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:8
+msgid ""
+"The Rust ecosystem consists of a number of tools, of which the main ones are:"
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:10
+msgid ""
+"`rustc`: the Rust compiler that turns `.rs` files into binaries and other "
+"intermediate formats."
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:13
+msgid ""
+"`cargo`: the Rust dependency manager and build tool. Cargo knows how to "
+"download dependencies, usually hosted on <https://crates.io>, and it will "
+"pass them to `rustc` when building your project. Cargo also comes with a "
+"built-in test runner which is used to execute unit tests."
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:18
+msgid ""
+"`rustup`: the Rust toolchain installer and updater. This tool is used to "
+"install and update `rustc` and `cargo` when new versions of Rust are "
+"released. In addition, `rustup` can also download documentation for the "
+"standard library. You can have multiple versions of Rust installed at once "
+"and `rustup` will let you switch between them as needed."
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:26
+msgid "Key points:"
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:28
+msgid ""
+"Rust has a rapid release schedule with a new release coming out every six "
+"weeks. New releases maintain backwards compatibility with old releases --- "
+"plus they enable new functionality."
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:32
+msgid ""
+"There are three release channels: \"stable\", \"beta\", and \"nightly\"."
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:34
+msgid ""
+"New features are being tested on \"nightly\", \"beta\" is what becomes "
+"\"stable\" every six weeks."
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:37
+msgid ""
+"Dependencies can also be resolved from alternative [registries](https://doc."
+"rust-lang.org/cargo/reference/registries.html), git, folders, and more."
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:40
+msgid ""
+"Rust also has [editions](https://doc.rust-lang.org/edition-guide/): the "
+"current edition is Rust 2024. Previous editions were Rust 2015, Rust 2018 "
+"and Rust 2021."
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:43
+msgid ""
+"The editions are allowed to make backwards incompatible changes to the "
+"language."
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:46
+msgid ""
+"To prevent breaking code, editions are opt-in: you select the edition for "
+"your crate via the `Cargo.toml` file."
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:49
+msgid ""
+"To avoid splitting the ecosystem, Rust compilers can mix code written for "
+"different editions."
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:52
+msgid ""
+"Mention that it is quite rare to ever use the compiler directly not through "
+"`cargo` (most users never do)."
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:55
+msgid ""
+"It might be worth alluding that Cargo itself is an extremely powerful and "
+"comprehensive tool. It is capable of many advanced features including but "
+"not limited to:"
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:58
+msgid "Project/package structure"
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:59
+msgid "[workspaces](https://doc.rust-lang.org/cargo/reference/workspaces.html)"
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:60
+msgid "Dev Dependencies and Runtime Dependency management/caching"
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:61
+msgid ""
+"[build scripting](https://doc.rust-lang.org/cargo/reference/build-scripts."
+"html)"
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:62
+msgid ""
+"[global installation](https://doc.rust-lang.org/cargo/commands/cargo-install."
+"html)"
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:63
+msgid ""
+"It is also extensible with sub command plugins as well (such as [cargo "
+"clippy](https://github.com/rust-lang/rust-clippy))."
+msgstr ""
+
+#: src/cargo/rust-ecosystem.md:65
+msgid ""
+"Read more from the [official Cargo Book](https://doc.rust-lang.org/cargo/)"
+msgstr ""

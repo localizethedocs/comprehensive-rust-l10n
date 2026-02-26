@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/switch-perspective.md:6
+msgid "Inheritance from Rust's Perspective"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/switch-perspective.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/switch-perspective.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/switch-perspective.md:11
+msgid "// Data\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/switch-perspective.md:17
+msgid "// Concrete behavior\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/switch-perspective.md:24
+msgid "// Abstract behavior\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/switch-perspective.md:29
+msgid "// Instanced behavior\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/switch-perspective.md:40
+msgid ""
+"From Rust's perspective, one where Inheritance was never there, introducing "
+"inheritance would look like muddying the water between types and traits."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/switch-perspective.md:43
+msgid "A type is a concrete piece of data and its associated behavior."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/switch-perspective.md:45
+msgid "A trait is abstract behavior that must be implemented by a type."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/switch-perspective.md:47
+msgid ""
+"A class is a combination of data, behavior, and overrides to that behavior."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/switch-perspective.md:49
+msgid ""
+"Coming from Rust, an inheritable class looks like a type that is also a "
+"trait."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/switch-perspective.md:51
+msgid "This is not an upside, as we can no longer reason about concrete types."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/switch-perspective.md:53
+msgid ""
+"Without being able to separate the two, it becomes difficult to reason about "
+"generic behavior vs concrete specifics, because in OOP these two concepts "
+"are tied up in each other."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/switch-perspective.md:57
+msgid ""
+"The convenience of flat field access and DRY in type definitions is not "
+"worth the loss in specificity between writing code that delineates between "
+"behavior and data."
+msgstr ""

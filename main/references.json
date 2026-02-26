@@ -13,22 +13,22 @@
     },
     "zh_CN" : 
     {
-      "branch" : "",
+      "branch" : "main",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2026-02-24 17:44:52 +0000",
+        "hash" : "ac4a3c79ba5a726ef10dfbbfb0ec64ca8ff51da6",
+        "title" : "Reduce complexity on heterogeneous data slide (#3109)"
       }
     },
     "zh_TW" : 
     {
-      "branch" : "",
+      "branch" : "main",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2026-02-24 17:44:52 +0000",
+        "hash" : "ac4a3c79ba5a726ef10dfbbfb0ec64ca8ff51da6",
+        "title" : "Reduce complexity on heterogeneous data slide (#3109)"
       }
     }
   },

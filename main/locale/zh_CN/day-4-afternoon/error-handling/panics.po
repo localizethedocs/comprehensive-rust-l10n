@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/error-handling/panics.md:6
+msgid "Panics"
+msgstr ""
+
+#: src/error-handling/panics.md:8
+msgid "In case of a fatal runtime error, Rust triggers a \"panic\":"
+msgstr ""
+
+#: src/error-handling/panics.md:11 src/error-handling/panics.md:35
+msgid "// Copyright 2022 Google LLC\n"
+msgstr ""
+
+#: src/error-handling/panics.md:12 src/error-handling/panics.md:36
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/error-handling/panics.md:20
+msgid "Panics are for unrecoverable and unexpected errors."
+msgstr ""
+
+#: src/error-handling/panics.md:21
+msgid "Panics are symptoms of bugs in the program."
+msgstr ""
+
+#: src/error-handling/panics.md:22
+msgid "Runtime failures like failed bounds checks can panic."
+msgstr ""
+
+#: src/error-handling/panics.md:23
+msgid "Assertions (such as `assert!`) panic on failure."
+msgstr ""
+
+#: src/error-handling/panics.md:24
+msgid "Purpose-specific panics can use the `panic!` macro."
+msgstr ""
+
+#: src/error-handling/panics.md:25
+msgid ""
+"A panic will \"unwind\" the stack, dropping values just as if the functions "
+"had returned."
+msgstr ""
+
+#: src/error-handling/panics.md:27
+msgid ""
+"Use non-panicking APIs (such as `Vec::get`) if crashing is not acceptable."
+msgstr ""
+
+#: src/error-handling/panics.md:32
+msgid ""
+"By default, a panic will cause the stack to unwind. The unwinding can be "
+"caught:"
+msgstr ""
+
+#: src/error-handling/panics.md:41
+msgid "\"No problem here!\""
+msgstr ""
+
+#: src/error-handling/panics.md:45
+msgid "\"oh no!\""
+msgstr ""
+
+#: src/error-handling/panics.md:51
+msgid ""
+"Catching is unusual; do not attempt to implement exceptions with "
+"`catch_unwind`!"
+msgstr ""
+
+#: src/error-handling/panics.md:53
+msgid ""
+"This can be useful in servers which should keep running even if a single "
+"request crashes."
+msgstr ""
+
+#: src/error-handling/panics.md:55
+msgid "This does not work if `panic = 'abort'` is set in your `Cargo.toml`."
+msgstr ""

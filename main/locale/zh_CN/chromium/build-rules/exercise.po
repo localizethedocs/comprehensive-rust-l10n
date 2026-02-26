@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/exercises/chromium/build-rules.md:6
+msgid "Build rules exercise"
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:8
+msgid ""
+"In your Chromium build, add a new Rust target to `//ui/base/BUILD.gn` "
+"containing:"
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:12
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:14
+msgid "// SAFETY: There is no other global function of this name.\n"
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:17
+#: src/exercises/chromium/build-rules.md:30
+msgid "\"C\""
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:18
+msgid "\"Hello from Rust!\""
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:22
+msgid ""
+"**Important:** note that `no_mangle` here is considered a type of unsafety "
+"by the Rust compiler, so you'll need to allow unsafe code in your `gn` "
+"target."
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:25
+msgid ""
+"Add this new Rust target as a dependency of `//ui/base:base`. Declare this "
+"function at the top of `ui/base/resource/resource_bundle.cc` (later, we'll "
+"see how this can be automated by bindings generation tools):"
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:33
+msgid ""
+"Call this function from somewhere in `ui/base/resource/resource_bundle.cc` - "
+"we suggest the top of `ResourceBundle::MaybeMangleLocalizedString`. Build "
+"and run Chromium, and ensure that \"Hello from Rust!\" is printed lots of "
+"times."
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:37
+msgid ""
+"If you use VSCode, now set up Rust to work well in VSCode. It will be useful "
+"in subsequent exercises. If you've succeeded, you will be able to use right-"
+"click \"Go to definition\" on `println!`."
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:41
+msgid "Where to find help"
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:43
+msgid ""
+"The options available to the [`rust_static_library` gn template](https://"
+"source.chromium.org/chromium/chromium/src/+/main:build/rust/"
+"rust_static_library.gni;l=16)"
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:44
+msgid ""
+"Information about [`#[unsafe(no_mangle)]`](https://doc.rust-lang.org/beta/"
+"reference/abi.html#the-no_mangle-attribute)"
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:45
+msgid ""
+"Information about [`extern \"C\"`](https://doc.rust-lang.org/std/keyword."
+"extern.html)"
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:46
+msgid ""
+"Information about gn's [`--export-rust-project`](https://gn.googlesource.com/"
+"gn/+/main/docs/reference.md#compilation-database) switch"
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:47
+msgid ""
+"[How to install rust-analyzer in VSCode](https://code.visualstudio.com/docs/"
+"languages/rust)"
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:53
+msgid ""
+"This example is unusual because it boils down to the lowest-common-"
+"denominator interop language, C. Both C++ and Rust can natively declare and "
+"call C ABI functions. Later in the course, we'll connect C++ directly to "
+"Rust."
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:57
+msgid ""
+"`allow_unsafe = true` is required here because `#[unsafe(no_mangle)]` might "
+"allow Rust to generate two functions with the same name, and Rust can no "
+"longer guarantee that the right one is called."
+msgstr ""
+
+#: src/exercises/chromium/build-rules.md:61
+msgid ""
+"If you need a pure Rust executable, you can also do that using the "
+"`rust_executable` gn template."
+msgstr ""

@@ -1,0 +1,130 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:6
+msgid "Implementing Branded Types (Branding 3/4)"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:8
+msgid ""
+"Constructing branded types is different to how we construct non-branded "
+"types."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:11
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:24
+msgid "// The data we want to modify in this context.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:26
+msgid "// The function that uniquely brands the lifetime of a `Bytes`\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:46
+msgid ""
+"Motivation: We want to have \"proven indexes\" for a type, and we don't want "
+"those indexes to be usable by different variables of the same type. We also "
+"don't want those indexes to escape a scope."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:50
+msgid "Our Branded Type will be `Bytes`: a byte array."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:52
+msgid "Our Branded Token will be `ProvenIndex`: an index known to be in range."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:54
+msgid "There are several notable parts to this implementation:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:55
+msgid ""
+"`new` does not return a `Bytes`, instead asking for \"starting data\" and a "
+"use-once Closure that is passed a `Bytes` when it is called."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:57
+msgid "That `new` function has a `for<'a>` on its trait bound."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:58
+msgid ""
+"We have both a getter for an index and a getter for a values with a proven "
+"index."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:61
+msgid "Ask: Why does `new` not return a `Bytes`?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:63
+msgid ""
+"Answer: Because we need `Bytes` to have a unique lifetime controlled by the "
+"API."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:66
+msgid ""
+"Ask: So what if `new()` returned `Bytes`, what is the specific harm that it "
+"would cause?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:69
+msgid "Answer: Think about the signature of that hypothetical `new()` method:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:71
+msgid "`fn new<'a>() -> Bytes<'a> { ... }`"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:73
+msgid ""
+"This would allow the API user to choose what the lifetime `'a` is, removing "
+"our ability to guarantee that the lifetimes between different instances of "
+"`Bytes` are unique and unable to be subtyped to one another."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:77
+msgid "Ask: Why do we need both a `get_index` and a `get_proven`?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:79
+msgid ""
+"Expect \"Because we can't know if an index is occupied at compile time\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:81
+msgid "Ask: Then what's the point of the proven indexes?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:83
+msgid ""
+"Answer: Avoiding bounds checking while keeping knowledge of what indexes are "
+"occupied specific to individual variables, unable to erroneously be used on "
+"the wrong one."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/token-types/branded-03-impl.md:87
+msgid ""
+"Note: The focus is not on only on avoiding overuse of bounds checks, but "
+"also on preventing that \"cross over\" of indexes."
+msgstr ""

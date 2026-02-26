@@ -1,0 +1,73 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/memory-lifecycle.md:6
+msgid "Memory Lifecycle"
+msgstr ""
+
+#: src/unsafe-deep-dive/memory-lifecycle.md:8
+msgid ""
+"Memory moves through different phases as objects (values) are created and "
+"destroyed."
+msgstr ""
+
+#: src/unsafe-deep-dive/memory-lifecycle.md:11
+msgid "Memory State"
+msgstr ""
+
+#: src/unsafe-deep-dive/memory-lifecycle.md:11
+msgid "Readable from Safe Rust?"
+msgstr ""
+
+#: src/unsafe-deep-dive/memory-lifecycle.md:13
+msgid "Available"
+msgstr ""
+
+#: src/unsafe-deep-dive/memory-lifecycle.md:13
+#: src/unsafe-deep-dive/memory-lifecycle.md:14
+msgid "No"
+msgstr ""
+
+#: src/unsafe-deep-dive/memory-lifecycle.md:14
+msgid "Allocated"
+msgstr ""
+
+#: src/unsafe-deep-dive/memory-lifecycle.md:15
+msgid "Initialized"
+msgstr ""
+
+#: src/unsafe-deep-dive/memory-lifecycle.md:15
+msgid "Yes"
+msgstr ""
+
+#: src/unsafe-deep-dive/memory-lifecycle.md:19
+msgid ""
+"This section discusses what happens as memory from the operating system "
+"becomes a valid variable in the program."
+msgstr ""
+
+#: src/unsafe-deep-dive/memory-lifecycle.md:22
+msgid ""
+"When memory is available, the operating system has provided our program with "
+"it."
+msgstr ""
+
+#: src/unsafe-deep-dive/memory-lifecycle.md:24
+msgid ""
+"When memory is allocated, it is reserved for values to be written to it. We "
+"call this uninitialized memory."
+msgstr ""
+
+#: src/unsafe-deep-dive/memory-lifecycle.md:27
+msgid "When memory is initialized, it is safe to read from."
+msgstr ""

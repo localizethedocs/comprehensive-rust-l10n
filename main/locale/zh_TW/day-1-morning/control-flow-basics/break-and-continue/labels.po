@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/control-flow-basics/break-continue/labels.md:6
+msgid "Labels"
+msgstr ""
+
+#: src/control-flow-basics/break-continue/labels.md:8
+msgid ""
+"Both `continue` and `break` can optionally take a label argument that is "
+"used to break out of nested loops:"
+msgstr ""
+
+#: src/control-flow-basics/break-continue/labels.md:12
+#: src/control-flow-basics/break-continue/labels.md:35
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/control-flow-basics/break-continue/labels.md:13
+#: src/control-flow-basics/break-continue/labels.md:36
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/control-flow-basics/break-continue/labels.md:33
+msgid "Labeled break also works on arbitrary blocks, e.g."
+msgstr ""
+
+#: src/control-flow-basics/break-continue/labels.md:40
+msgid "\"This line gets skipped\""
+msgstr ""

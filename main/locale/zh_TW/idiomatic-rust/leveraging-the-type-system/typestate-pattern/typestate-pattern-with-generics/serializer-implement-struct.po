@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md:6
+msgid "Serializer: implement Struct"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md:14
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md:25
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md:35
+msgid "// [...]\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md:26
+msgid "\"{}{name}: \""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md:26
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md:37
+msgid "\" \""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md:37
+msgid "\"{}}}\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md:43
+msgid "The diagram can now be expanded as follows:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md:45
+msgid ""
+"```bob\n"
+"                                                     +------+\n"
+"                                             finish  |      |\n"
+"                          serialize          struct  V      |\n"
+"                          struct\n"
+"+--------------------+ --------------> +-------------------------+\n"
+"| \"Serializer<Root>\" |                 | \"Serializer<Struct<S>>\" |\n"
+"+--------------------+ <-------------- +-------------------------+\n"
+"                         finish struct\n"
+"         |                                     serialize   |\n"
+"         |                                     property    V\n"
+"         |\n"
+"finish   |                           +-----------------------------------+\n"
+"         V                           | \"Serializer<Property<Struct<S>>>\" "
+"|\n"
+"                                     +-----------------------------------+\n"
+"     +--------+\n"
+"     | String |\n"
+"     +--------+\n"
+"```"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md:67
+msgid "A `Struct` can only contain a `Property`;"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/struct.md:69
+msgid ""
+"Finishing a `Struct` returns control back to its parent, which in our "
+"previous slide was assumed the `Root`, but in reality however it can be also "
+"something else such as `Struct` in case of nested \"structs\"."
+msgstr ""

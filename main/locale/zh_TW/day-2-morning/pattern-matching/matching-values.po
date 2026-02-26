@@ -1,0 +1,200 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/pattern-matching/match.md:6
+msgid "Matching Values"
+msgstr ""
+
+#: src/pattern-matching/match.md:8
+msgid ""
+"The `match` keyword lets you match a value against one or more _patterns_. "
+"The patterns can be simple values, similarly to `switch` in C and C++, but "
+"they can also be used to express more complex conditions:"
+msgstr ""
+
+#: src/pattern-matching/match.md:13 src/pattern-matching/match.md:56
+#: src/pattern-matching/match.md:76 src/pattern-matching/match.md:97
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/pattern-matching/match.md:14 src/pattern-matching/match.md:57
+#: src/pattern-matching/match.md:77 src/pattern-matching/match.md:98
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/pattern-matching/match.md:18
+msgid "'x'"
+msgstr ""
+
+#: src/pattern-matching/match.md:20 src/pattern-matching/match.md:64
+msgid "'q'"
+msgstr ""
+
+#: src/pattern-matching/match.md:20 src/pattern-matching/match.md:64
+msgid "\"Quitting\""
+msgstr ""
+
+#: src/pattern-matching/match.md:21 src/pattern-matching/match.md:61
+msgid "'a'"
+msgstr ""
+
+#: src/pattern-matching/match.md:21
+msgid "'s'"
+msgstr ""
+
+#: src/pattern-matching/match.md:21
+msgid "'w'"
+msgstr ""
+
+#: src/pattern-matching/match.md:21
+msgid "'d'"
+msgstr ""
+
+#: src/pattern-matching/match.md:21
+msgid "\"Moving around\""
+msgstr ""
+
+#: src/pattern-matching/match.md:22
+msgid "'0'"
+msgstr ""
+
+#: src/pattern-matching/match.md:22
+msgid "'9'"
+msgstr ""
+
+#: src/pattern-matching/match.md:22
+msgid "\"Number input\""
+msgstr ""
+
+#: src/pattern-matching/match.md:23
+msgid "\"Lowercase: {key}\""
+msgstr ""
+
+#: src/pattern-matching/match.md:24
+msgid "\"Something else\""
+msgstr ""
+
+#: src/pattern-matching/match.md:29
+msgid ""
+"A variable in the pattern (`key` in this example) will create a binding that "
+"can be used within the match arm. We will learn more about this on the next "
+"slide."
+msgstr ""
+
+#: src/pattern-matching/match.md:32
+msgid ""
+"A match guard causes the arm to match only if the condition is true. If the "
+"condition is false the match will continue checking later cases."
+msgstr ""
+
+#: src/pattern-matching/match.md:38
+msgid "Key Points:"
+msgstr ""
+
+#: src/pattern-matching/match.md:40
+msgid ""
+"You might point out how some specific characters are being used when in a "
+"pattern"
+msgstr ""
+
+#: src/pattern-matching/match.md:42
+msgid "`|` as an `or`"
+msgstr ""
+
+#: src/pattern-matching/match.md:43
+msgid "`..` matches any number of items"
+msgstr ""
+
+#: src/pattern-matching/match.md:44
+msgid "`1..=5` represents an inclusive range"
+msgstr ""
+
+#: src/pattern-matching/match.md:45
+msgid "`_` is a wild card"
+msgstr ""
+
+#: src/pattern-matching/match.md:47
+msgid ""
+"Match guards as a separate syntax feature are important and necessary when "
+"we wish to concisely express more complex ideas than patterns alone would "
+"allow."
+msgstr ""
+
+#: src/pattern-matching/match.md:49
+msgid ""
+"Match guards are different from `if` expressions after the `=>`. An `if` "
+"expression is evaluated after the match arm is selected. Failing the `if` "
+"condition inside of that block won't result in other arms of the original "
+"`match` expression being considered. In the following example, the wildcard "
+"pattern `_ =>` is never even attempted."
+msgstr ""
+
+#: src/pattern-matching/match.md:63
+msgid "\"Uppercase\""
+msgstr ""
+
+#: src/pattern-matching/match.md:65
+msgid "\"Bug: this is never printed\""
+msgstr ""
+
+#: src/pattern-matching/match.md:70
+msgid ""
+"The condition defined in the guard applies to every expression in a pattern "
+"with an `|`."
+msgstr ""
+
+#: src/pattern-matching/match.md:72
+msgid ""
+"Note that you can't use an existing variable as the condition in a match "
+"arm, as it will instead be interpreted as a variable name pattern, which "
+"creates a new variable that will shadow the existing one. For example:"
+msgstr ""
+
+#: src/pattern-matching/match.md:81
+msgid "\"Expected value is 5, actual is {expected}\""
+msgstr ""
+
+#: src/pattern-matching/match.md:82
+msgid "\"Value was something else\""
+msgstr ""
+
+#: src/pattern-matching/match.md:85
+msgid ""
+"Here we're trying to match on the number 123, where we want the first case "
+"to check if the value is 5. The naive expectation is that the first case "
+"won't match because the value isn't 5, but instead this is interpreted as a "
+"variable pattern which always matches, meaning the first branch will always "
+"be taken. If a constant is used instead this will then work as expected."
+msgstr ""
+
+#: src/pattern-matching/match.md:91
+msgid "More To Explore"
+msgstr ""
+
+#: src/pattern-matching/match.md:93
+msgid ""
+"Another piece of pattern syntax you can show students is the `@` syntax "
+"which binds a part of a pattern to a variable. For example:"
+msgstr ""
+
+#: src/pattern-matching/match.md:103
+msgid "\"outer: {outer:?}, inner: {inner}\""
+msgstr ""
+
+#: src/pattern-matching/match.md:109
+msgid ""
+"In this example `inner` has the value 123 which it pulled from the `Option` "
+"via destructuring, `outer` captures the entire `Some(inner)` expression, so "
+"it contains the full `Option::Some(123)`. This is rarely used but can be "
+"useful in more complex patterns."
+msgstr ""

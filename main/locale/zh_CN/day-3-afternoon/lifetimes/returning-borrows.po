@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/lifetimes/returning-borrows.md:6
+msgid "Returning Borrows"
+msgstr ""
+
+#: src/lifetimes/returning-borrows.md:8
+msgid ""
+"But we can also have our function return a reference! This means that a "
+"borrow flows back out of a function:"
+msgstr ""
+
+#: src/lifetimes/returning-borrows.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/lifetimes/returning-borrows.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/lifetimes/returning-borrows.md:24
+msgid "// x = 5; // 🛠️❌ `x` is still borrowed!\n"
+msgstr ""
+
+#: src/lifetimes/returning-borrows.md:33
+msgid ""
+"Rust functions can return references, meaning that a borrow can flow back "
+"out of a function."
+msgstr ""
+
+#: src/lifetimes/returning-borrows.md:36
+msgid ""
+"If a function returns a reference (or another kind of borrow), it was likely "
+"derived from one of its arguments. This means that the return value of the "
+"function will extend the borrow for one or more argument borrows."
+msgstr ""
+
+#: src/lifetimes/returning-borrows.md:40
+msgid ""
+"This case is still fairly simple, in that only one borrow is passed into the "
+"function, so the returned borrow has to be the same one."
+msgstr ""

@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/memory-management/clone.md:6
+msgid "Clone"
+msgstr ""
+
+#: src/memory-management/clone.md:8
+msgid ""
+"Sometimes you _want_ to make a copy of a value. The `Clone` trait "
+"accomplishes this."
+msgstr ""
+
+#: src/memory-management/clone.md:12
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/memory-management/clone.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/memory-management/clone.md:16
+msgid "\"Hello {name}\""
+msgstr ""
+
+#: src/memory-management/clone.md:20
+msgid "\"Alice\""
+msgstr ""
+
+#: src/memory-management/clone.md:29
+msgid ""
+"The idea of `Clone` is to make it easy to spot where heap allocations are "
+"occurring. Look for `.clone()` and a few others like `vec!` or `Box::new`."
+msgstr ""
+
+#: src/memory-management/clone.md:32
+msgid ""
+"It's common to \"clone your way out\" of problems with the borrow checker, "
+"and return later to try to optimize those clones away."
+msgstr ""
+
+#: src/memory-management/clone.md:35
+msgid ""
+"`clone` generally performs a deep copy of the value, meaning that if you e."
+"g. clone an array, all of the elements of the array are cloned as well."
+msgstr ""
+
+#: src/memory-management/clone.md:38
+msgid ""
+"The behavior for `clone` is user-defined, so it can perform custom cloning "
+"logic if needed."
+msgstr ""

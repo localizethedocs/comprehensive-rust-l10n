@@ -1,0 +1,115 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:6
+msgid "Extension Traits"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:8
+msgid ""
+"It may desirable to **extend** foreign types with new inherent methods. For "
+"example, allow your code to check if a string is a palindrome using method-"
+"calling syntax: `s.is_palindrome()`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:12
+msgid "It might feel natural to reach out for an `impl` block:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:15
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:16
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:17
+msgid "// 🛠️❌\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:26
+msgid ""
+"The Rust compiler won't allow it, though. But you can use the **extension "
+"trait pattern** to work around this limitation."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:32
+msgid "A Rust item (be it a trait or a type) is referred to as:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:34
+msgid "**foreign**, if it isn't defined in the current crate"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:35
+msgid "**local**, if it is defined in the current crate"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:37
+msgid ""
+"The distinction has significant implications for [coherence and orphan rules]"
+"(https://doc.rust-lang.org/stable/reference/items/implementations.html#r-"
+"items.impl.trait.orphan-rule), as we'll get a chance to explore in this "
+"section of the course."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:41
+msgid "Compile the example to show the compiler error that's emitted."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:43
+msgid ""
+"Highlight how the compiler error message nudges you towards the extension "
+"trait pattern."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:46
+msgid ""
+"Explain how many type-system restrictions in Rust aim to prevent _ambiguity_."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:48
+msgid ""
+"What would happen if you were allowed to define new inherent methods on "
+"foreign types? Different crates in your dependency tree might end up "
+"defining different methods on the same foreign type with the same name."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:52
+msgid ""
+"As soon as there is room for ambiguity, there must be a way to disambiguate. "
+"If disambiguation happens implicitly, it can lead to surprising or otherwise "
+"unexpected behavior. If disambiguation happens explicitly, it can increase "
+"the cognitive load on developers who are reading your code."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:57
+msgid ""
+"Furthermore, every time a crate defines a new inherent method on a foreign "
+"type, it may cause compilation errors in _your_ code, as you may be forced "
+"to introduce explicit disambiguation."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:61
+msgid ""
+"Rust has decided to avoid the issue altogether by forbidding the definition "
+"of new inherent methods on foreign types."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits.md:64
+msgid ""
+"Other languages (e.g, Kotlin, C#, Swift) allow adding methods to existing "
+"types, often called \"extension methods.\" This leads to different trade-"
+"offs in terms of potential ambiguities and the need for global reasoning."
+msgstr ""

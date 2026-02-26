@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/generics.md:6
+msgid "Generics"
+msgstr ""
+
+#: src/generics.md:8
+msgid "This segment should take about 50 minutes. It contains:"
+msgstr ""
+
+#: src/generics.md:10
+msgid "Slide"
+msgstr ""
+
+#: src/generics.md:10
+msgid "Duration"
+msgstr ""
+
+#: src/generics.md:12
+msgid "Generic Functions"
+msgstr ""
+
+#: src/generics.md:12 src/generics.md:15 src/generics.md:16 src/generics.md:17
+msgid "5 minutes"
+msgstr ""
+
+#: src/generics.md:13
+msgid "Trait Bounds"
+msgstr ""
+
+#: src/generics.md:13 src/generics.md:14 src/generics.md:18
+msgid "10 minutes"
+msgstr ""
+
+#: src/generics.md:14
+msgid "Generic Data Types"
+msgstr ""
+
+#: src/generics.md:15
+msgid "Generic Traits"
+msgstr ""
+
+#: src/generics.md:16
+msgid "impl Trait"
+msgstr ""
+
+#: src/generics.md:17
+msgid "dyn Trait"
+msgstr ""
+
+#: src/generics.md:18
+msgid "Exercise: Generic min"
+msgstr ""

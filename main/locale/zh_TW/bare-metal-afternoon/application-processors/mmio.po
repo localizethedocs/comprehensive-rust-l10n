@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/aps/mmio.md:6
+msgid "Volatile memory access for MMIO"
+msgstr ""
+
+#: src/bare-metal/aps/mmio.md:8
+msgid ""
+"Use [`pointer::read_volatile`](https://doc.rust-lang.org/stable/core/"
+"primitive.pointer.html#method.read_volatile) and [`pointer::write_volatile`]"
+"(https://doc.rust-lang.org/stable/core/primitive.pointer.html#method."
+"write_volatile)."
+msgstr ""
+
+#: src/bare-metal/aps/mmio.md:9
+msgid ""
+"Never hold a reference to a location being accessed with these methods. Rust "
+"may read from (or write to, for `&mut`) a reference at any time."
+msgstr ""
+
+#: src/bare-metal/aps/mmio.md:11
+msgid ""
+"Use `&raw` to get fields of structs without creating an intermediate "
+"reference."
+msgstr ""
+
+#: src/bare-metal/aps/mmio.md:15
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/bare-metal/aps/mmio.md:16
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/bare-metal/aps/mmio.md:18
+msgid "// SAFETY: Some device is mapped at this address.\n"
+msgstr ""
+
+#: src/bare-metal/aps/mmio.md:33
+msgid ""
+"Volatile access: read or write operations may have side-effects, so prevent "
+"the compiler or hardware from reordering, duplicating or eliding them."
+msgstr ""
+
+#: src/bare-metal/aps/mmio.md:35
+msgid ""
+"If you write and then read, e.g. via a mutable reference, the compiler may "
+"assume that the value read is the same as the value just written, and not "
+"bother actually reading memory."
+msgstr ""
+
+#: src/bare-metal/aps/mmio.md:38
+msgid ""
+"Some existing crates for volatile access to hardware do hold references, but "
+"this is unsound. Whenever a reference exists, the compiler may choose to "
+"dereference it."
+msgstr ""
+
+#: src/bare-metal/aps/mmio.md:41
+msgid "Use `&raw` to get struct field pointers from a pointer to the struct."
+msgstr ""
+
+#: src/bare-metal/aps/mmio.md:42
+msgid ""
+"For compatibility with old versions of Rust you can use the [`addr_of!`]"
+"(https://doc.rust-lang.org/stable/core/ptr/macro.addr_of.html) macro instead."
+msgstr ""

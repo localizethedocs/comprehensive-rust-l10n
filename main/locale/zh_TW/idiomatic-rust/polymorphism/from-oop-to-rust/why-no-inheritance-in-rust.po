@@ -1,0 +1,109 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:6
+msgid "Why no Inheritance in Rust?"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:17
+msgid "// methods\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:19
+msgid "// 🔨❌, Rust does not have inheritance!\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:22
+msgid "// Inherited \"id\" field\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:27
+msgid ""
+"// methods, but also includes Id's methods, or maybe overrides to\n"
+"    // those methods.\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:30
+msgid "// ✅\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:38
+msgid "// All of data's methods that aren't from traits.\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:42
+msgid "// Implementations for traits in separate impl blocks.\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:48
+msgid "Inheritance comes with a number of downsides."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:50
+msgid "Heterogeneous by default:"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:52
+msgid ""
+"Class inheritance implicitly allows types of different classes to be used "
+"interchangeably, without being able to specify a concrete type or if a type "
+"is identical to another."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:56
+msgid ""
+"For operations like equality, comparison this allows for comparison and "
+"equality that throws and error or otherwise panics."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:59
+msgid ""
+"Multiple sources of truth for what makes up a data structure and how it "
+"behaves:"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:62
+msgid "A type's fields are obscured by the inheritance hierarchy."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:64
+msgid ""
+"A type's methods could be overriding a parent type or be overridden by a "
+"child type, it's hard to tell what the behavior of a type is in complex "
+"codebases maintained by multiple parties."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:68
+msgid "Dynamic dispatch as default adds overhead from vtable lookups:"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:70
+msgid ""
+"For dynamic dispatch to work, there needs to be somewhere to store "
+"information on what methods to call and other pieces of runtime-known pieces "
+"of information on the type."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:74
+msgid ""
+"This store is the `vtable` for a value. Method calls will require more "
+"dereferences than calling a method for a type that is known at compile time."
+msgstr ""

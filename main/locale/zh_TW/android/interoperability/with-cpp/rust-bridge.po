@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/interoperability/cpp/rust-bridge.md:6
+msgid "Rust Bridge Declarations"
+msgstr ""
+
+#: src/android/interoperability/cpp/rust-bridge.md:9
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/rust-bridge.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/rust-bridge.md:14
+msgid "\"Rust\""
+msgstr ""
+
+#: src/android/interoperability/cpp/rust-bridge.md:15
+msgid "// Opaque type\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/rust-bridge.md:16
+msgid "// Method on `MyType`\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/rust-bridge.md:17
+msgid "// Free function\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/rust-bridge.md:25
+msgid "\"{}\""
+msgstr ""
+
+#: src/android/interoperability/cpp/rust-bridge.md:36
+msgid ""
+"Items declared in the `extern \"Rust\"` reference items that are in scope in "
+"the parent module."
+msgstr ""
+
+#: src/android/interoperability/cpp/rust-bridge.md:38
+msgid ""
+"The CXX code generator uses your `extern \"Rust\"` section(s) to produce a C+"
+"+ header file containing the corresponding C++ declarations. The generated "
+"header has the same path as the Rust source file containing the bridge, "
+"except with a .rs.h file extension."
+msgstr ""

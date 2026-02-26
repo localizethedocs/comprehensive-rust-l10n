@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/shared-state.md:6
+msgid "Shared State"
+msgstr ""
+
+#: src/concurrency/shared-state.md:8
+msgid "This segment should take about 30 minutes. It contains:"
+msgstr ""
+
+#: src/concurrency/shared-state.md:10
+msgid "Slide"
+msgstr ""
+
+#: src/concurrency/shared-state.md:10
+msgid "Duration"
+msgstr ""
+
+#: src/concurrency/shared-state.md:12
+msgid "Arc"
+msgstr ""
+
+#: src/concurrency/shared-state.md:12
+msgid "5 minutes"
+msgstr ""
+
+#: src/concurrency/shared-state.md:13
+msgid "Mutex"
+msgstr ""
+
+#: src/concurrency/shared-state.md:13
+msgid "15 minutes"
+msgstr ""
+
+#: src/concurrency/shared-state.md:14
+msgid "Example"
+msgstr ""
+
+#: src/concurrency/shared-state.md:14
+msgid "10 minutes"
+msgstr ""

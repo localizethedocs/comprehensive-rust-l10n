@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md:6
+msgid "Modeled in Rust"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md:9
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md:11
+msgid "/// Raw pointers\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md:17
+msgid "/// Integer offsets\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md:23
+msgid "/// Pinning\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md:32
+msgid "Original C++ class definition for reference"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md:43
+msgid ""
+"The next few slides show three approaches to creating a Rust type with the "
+"same semantics as the original C++."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md:46
+msgid ""
+"Using raw pointers: matches C++ very closely, but using the resulting type "
+"is extremely hazardous"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md:48
+msgid ""
+"Storing integer offsets: more natural in Rust, but references need to be "
+"created manually"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust.md:50
+msgid "Pinning: allows raw pointers with fewer `unsafe` blocks"
+msgstr ""

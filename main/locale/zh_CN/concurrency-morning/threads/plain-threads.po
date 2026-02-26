@@ -1,0 +1,172 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/threads/plain.md:6
+msgid "Plain Threads"
+msgstr ""
+
+#: src/concurrency/threads/plain.md:8
+msgid "Rust threads work similarly to threads in other languages:"
+msgstr ""
+
+#: src/concurrency/threads/plain.md:11
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/concurrency/threads/plain.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/concurrency/threads/plain.md:20
+msgid "\"Count in thread: {i}!\""
+msgstr ""
+
+#: src/concurrency/threads/plain.md:26
+msgid "\"Main thread: {i}\""
+msgstr ""
+
+#: src/concurrency/threads/plain.md:32
+msgid ""
+"Spawning new threads does not automatically delay program termination at the "
+"end of `main`."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:34
+msgid "Thread panics are independent of each other."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:35
+msgid ""
+"Panics can carry a payload, which can be unpacked with [`Any::downcast_ref`]"
+"(https://doc.rust-lang.org/std/any/trait.Any.html#method.downcast_ref)."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:41
+msgid "Run the example."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:42
+msgid ""
+"5ms timing is loose enough that main and spawned threads stay mostly in "
+"lockstep."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:44
+msgid "Notice that the program ends before the spawned thread reaches 10!"
+msgstr ""
+
+#: src/concurrency/threads/plain.md:45
+msgid ""
+"This is because `main` ends the program and spawned threads do not make it "
+"persist."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:47
+msgid "Compare to `pthreads`/C++ `std::thread`/`boost::thread` if desired."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:49
+msgid "How do we wait around for the spawned thread to complete?"
+msgstr ""
+
+#: src/concurrency/threads/plain.md:50
+msgid ""
+"[`thread::spawn`](https://doc.rust-lang.org/std/thread/fn.spawn.html) "
+"returns a `JoinHandle`. Look at the docs."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:51
+msgid ""
+"`JoinHandle` has a [`.join()`](https://doc.rust-lang.org/std/thread/struct."
+"JoinHandle.html#method.join) method that blocks."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:53
+msgid ""
+"Use `let handle = thread::spawn(...)` and later `handle.join()` to wait for "
+"the thread to finish and have the program count all the way to 10."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:56
+msgid "Now what if we want to return a value?"
+msgstr ""
+
+#: src/concurrency/threads/plain.md:57
+msgid "Look at docs again:"
+msgstr ""
+
+#: src/concurrency/threads/plain.md:58
+msgid ""
+"[`thread::spawn`](https://doc.rust-lang.org/std/thread/fn.spawn.html)'s "
+"closure returns `T`"
+msgstr ""
+
+#: src/concurrency/threads/plain.md:59
+msgid ""
+"`JoinHandle` [`.join()`](https://doc.rust-lang.org/std/thread/struct."
+"JoinHandle.html#method.join) returns `thread::Result<T>`"
+msgstr ""
+
+#: src/concurrency/threads/plain.md:61
+msgid ""
+"Use the `Result` return value from `handle.join()` to get access to the "
+"returned value."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:64
+msgid "Ok, what about the other case?"
+msgstr ""
+
+#: src/concurrency/threads/plain.md:65
+msgid "Trigger a panic in the thread. Note that this doesn't panic `main`."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:66
+msgid ""
+"Access the panic payload. This is a good time to talk about [`Any`](https://"
+"doc.rust-lang.org/std/any/index.html)."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:68
+msgid "Now we can return values from threads! What about taking inputs?"
+msgstr ""
+
+#: src/concurrency/threads/plain.md:69
+msgid "Capture something by reference in the thread closure."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:70
+msgid "An error message indicates we must move it."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:71
+msgid "Move it in, see we can compute and then return a derived value."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:73
+msgid "If we want to borrow?"
+msgstr ""
+
+#: src/concurrency/threads/plain.md:74
+msgid ""
+"Main kills child threads when it returns, but another function would just "
+"return and leave them running."
+msgstr ""
+
+#: src/concurrency/threads/plain.md:76
+msgid "That would be stack use-after-return, which violates memory safety!"
+msgstr ""
+
+#: src/concurrency/threads/plain.md:77
+msgid "How do we avoid this? See next slide."
+msgstr ""

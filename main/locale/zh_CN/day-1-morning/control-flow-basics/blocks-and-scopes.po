@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/control-flow-basics/blocks-and-scopes.md:6
+msgid "Blocks and Scopes"
+msgstr ""
+
+#: src/control-flow-basics/blocks-and-scopes.md:8
+msgid ""
+"A block in Rust contains a sequence of expressions, enclosed by braces `{}`."
+msgstr ""
+
+#: src/control-flow-basics/blocks-and-scopes.md:9
+msgid ""
+"The final expression of a block determines the value and type of the whole "
+"block."
+msgstr ""
+
+#: src/control-flow-basics/blocks-and-scopes.md:13
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/control-flow-basics/blocks-and-scopes.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/control-flow-basics/blocks-and-scopes.md:24
+msgid "// dbg!(y);\n"
+msgstr ""
+
+#: src/control-flow-basics/blocks-and-scopes.md:28
+msgid ""
+"If the last expression ends with `;`, then the resulting value and type is "
+"`()`."
+msgstr ""
+
+#: src/control-flow-basics/blocks-and-scopes.md:30
+msgid "A variable's scope is limited to the enclosing block."
+msgstr ""
+
+#: src/control-flow-basics/blocks-and-scopes.md:35
+msgid ""
+"You can explain that dbg! is a Rust macro that prints and returns the value "
+"of a given expression for quick and dirty debugging."
+msgstr ""
+
+#: src/control-flow-basics/blocks-and-scopes.md:38
+msgid ""
+"You can show how the value of the block changes by changing the last line in "
+"the block. For instance, adding/removing a semicolon or using a `return`."
+msgstr ""
+
+#: src/control-flow-basics/blocks-and-scopes.md:41
+msgid ""
+"Demonstrate that attempting to access `y` outside of its scope won't compile."
+msgstr ""
+
+#: src/control-flow-basics/blocks-and-scopes.md:43
+msgid ""
+"Values are effectively \"deallocated\" when they go out of their scope, even "
+"if their data on the stack is still there."
+msgstr ""

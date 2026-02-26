@@ -1,0 +1,88 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/std-types/vec.md:6
+msgid "`Vec`"
+msgstr ""
+
+#: src/std-types/vec.md:8
+msgid ""
+"[`Vec`](https://doc.rust-lang.org/std/vec/struct.Vec.html) is the standard "
+"resizable heap-allocated buffer:"
+msgstr ""
+
+#: src/std-types/vec.md:11
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/std-types/vec.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/std-types/vec.md:17
+msgid "\"v1: len = {}, capacity = {}\""
+msgstr ""
+
+#: src/std-types/vec.md:22
+msgid "\"v2: len = {}, capacity = {}\""
+msgstr ""
+
+#: src/std-types/vec.md:24
+msgid "// Canonical macro to initialize a vector with elements.\n"
+msgstr ""
+
+#: src/std-types/vec.md:27
+msgid "// Retain only the even elements.\n"
+msgstr ""
+
+#: src/std-types/vec.md:29 src/std-types/vec.md:33
+msgid "\"{v3:?}\""
+msgstr ""
+
+#: src/std-types/vec.md:31
+msgid "// Remove consecutive duplicates.\n"
+msgstr ""
+
+#: src/std-types/vec.md:37
+msgid ""
+"`Vec` implements [`Deref<Target = [T]>`](https://doc.rust-lang.org/std/vec/"
+"struct.Vec.html#deref-methods-%5BT%5D), which means that you can call slice "
+"methods on a `Vec`."
+msgstr ""
+
+#: src/std-types/vec.md:46
+msgid ""
+"`Vec` is a type of collection, along with `String` and `HashMap`. The data "
+"it contains is stored on the heap. This means the amount of data doesn't "
+"need to be known at compile time. It can grow or shrink at runtime."
+msgstr ""
+
+#: src/std-types/vec.md:49
+msgid ""
+"Notice how `Vec<T>` is a generic type too, but you don't have to specify `T` "
+"explicitly. As always with Rust type inference, the `T` was established "
+"during the first `push` call."
+msgstr ""
+
+#: src/std-types/vec.md:52
+msgid ""
+"`vec![...]` is a canonical macro to use instead of `Vec::new()` and it "
+"supports adding initial elements to the vector."
+msgstr ""
+
+#: src/std-types/vec.md:54
+msgid ""
+"To index the vector you use `[` `]`, but they will panic if out of bounds. "
+"Alternatively, using `get` will return an `Option`. The `pop` function will "
+"remove the last element."
+msgstr ""

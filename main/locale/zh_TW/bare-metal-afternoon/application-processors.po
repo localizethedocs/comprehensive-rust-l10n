@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/aps.md:6
+msgid "Application processors"
+msgstr ""
+
+#: src/bare-metal/aps.md:8
+msgid ""
+"So far we've talked about microcontrollers, such as the Arm Cortex-M series. "
+"These are typically small systems with very limited resources."
+msgstr ""
+
+#: src/bare-metal/aps.md:11
+msgid ""
+"Larger systems with more resources are typically called application "
+"processors, built around processors such as the ARM Cortex-A or Intel Atom."
+msgstr ""
+
+#: src/bare-metal/aps.md:14
+msgid ""
+"For simplicity we'll just work with QEMU's aarch64 ['virt'](https://qemu-"
+"project.gitlab.io/qemu/system/arm/virt.html) board."
+msgstr ""
+
+#: src/bare-metal/aps.md:19
+msgid ""
+"Broadly speaking, microcontrollers don't have an MMU or multiple levels of "
+"privilege (exception levels on Arm CPUs, rings on x86)."
+msgstr ""
+
+#: src/bare-metal/aps.md:21
+msgid ""
+"Application processors have more resources, and often run an operating "
+"system, instead of directly executing the target application on startup."
+msgstr ""
+
+#: src/bare-metal/aps.md:23
+msgid ""
+"QEMU supports emulating various different machines or board models for each "
+"architecture. The 'virt' board doesn't correspond to any particular real "
+"hardware, but is designed purely for virtual machines."
+msgstr ""
+
+#: src/bare-metal/aps.md:26
+msgid ""
+"We will still address this board as bare-metal, as if we were writing an "
+"operating system."
+msgstr ""

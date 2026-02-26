@@ -1,0 +1,141 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:6
+msgid "Orphan Rule"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:8
+msgid ""
+"What prevents users from writing arbitrary trait implementations for any "
+"type?"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:11
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:13
+msgid "// Crate `postgresql-bindings`\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:16
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:28
+msgid "/* details */"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:17
+msgid "// Crate `database-traits`, depends on `postgresql-bindings`\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:21
+msgid "/* methods */"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:24
+msgid "// ✅, `DbConnection` is local.\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:25
+msgid "// Crate `mycoolnewdb` depends on `database-traits`\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:30
+msgid "// ✅, `MyCoolNewDbConn` is local.\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:31
+msgid ""
+"// Neither `PostgresqlConn` or `DbConnection` are local to `mycoolnewdb`.\n"
+"// This would lead to two implementations of `DbConnection` for "
+"PostgresqlConn!\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:34
+msgid "// ❌🔨\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:39
+msgid ""
+"Rust traits should never be able to be implemented twice in its ecosystem. "
+"Two implementations of the same trait for the same type is a conflict with "
+"no solution."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:43
+msgid ""
+"We can prevent this within a crate by detecting if there are multiple "
+"definitions and disallowing it, but what about between crates in the entire "
+"Rust ecosystem?"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:47
+msgid ""
+"Types are either _local_ to a crate, they are defined there, or they're not."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:49
+msgid ""
+"In the example's \"crates\", `PostgresqlConn` is local to `postgresql-"
+"bindings`, `MyCoolNewDbConn` is local to `mycoolnewdb`."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:52
+msgid ""
+"Traits are also either _local_ to a crate, they are defined there, or "
+"they're not."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:55
+msgid ""
+"Again in the example, the `DbConnection` trait is local to `database-traits`."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:57
+msgid "If something is local, you can write trait implementations for it."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:59
+msgid ""
+"If the trait is local, you can write implementations of that trait for any "
+"type."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:62
+msgid ""
+"If the type is local, you can write any trait implementations for that type."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:64
+msgid "Outside of these boundaries, trait implementations cannot be written."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:66
+msgid ""
+"This keeps implementations \"coherent\": Only one implementation of a trait "
+"for a type can exist across crates."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:69
+msgid "ref:"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/orphan-rule.md:71
+msgid ""
+"https://doc.rust-lang.org/stable/reference/items/implementations.html#r-"
+"items.impl.trait.orphan-rule"
+msgstr ""

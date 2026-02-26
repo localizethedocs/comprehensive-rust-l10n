@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-rust/unsafe-traits.md:6
+msgid "Implementing Unsafe Traits"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-traits.md:8
+msgid ""
+"Like with functions, you can mark a trait as `unsafe` if the implementation "
+"must guarantee particular conditions to avoid undefined behaviour."
+msgstr ""
+
+#: src/unsafe-rust/unsafe-traits.md:11
+msgid ""
+"For example, the `zerocopy` crate has an unsafe trait that looks [something "
+"like this](https://docs.rs/zerocopy/latest/zerocopy/trait.IntoBytes.html):"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-traits.md:15
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-traits.md:16
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-traits.md:19
+msgid ""
+"/// ...\n"
+"/// # Safety\n"
+"/// The type must have a defined representation and no padding.\n"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-traits.md:30
+msgid "// SAFETY: `u32` has a defined representation and no padding.\n"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-traits.md:38
+msgid ""
+"There should be a `# Safety` section on the Rustdoc for the trait explaining "
+"the requirements for the trait to be safely implemented."
+msgstr ""
+
+#: src/unsafe-rust/unsafe-traits.md:41
+msgid ""
+"The actual safety section for `IntoBytes` is rather longer and more "
+"complicated."
+msgstr ""
+
+#: src/unsafe-rust/unsafe-traits.md:43
+msgid "The built-in `Send` and `Sync` traits are unsafe."
+msgstr ""

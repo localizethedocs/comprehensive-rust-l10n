@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/refresher/blanket-impls.md:6
+msgid "Blanket Trait Implementations"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/blanket-impls.md:8
+msgid ""
+"When a trait is local, we can implement it for as many types as we like. How "
+"far can we take this?"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/blanket-impls.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/blanket-impls.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/blanket-impls.md:18
+msgid ""
+"// A blanket implementation! If something implements Display, it implements\n"
+"// PrettyPrint.\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/blanket-impls.md:26
+msgid "\"{self}\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/blanket-impls.md:33
+msgid ""
+"The subject of a trait implementation at the definition site of a trait can "
+"be anything, including `T` with no bounds."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/blanket-impls.md:36
+msgid ""
+"We can't do anything with a `T` we don't know nothing about, so this is "
+"uncommon."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/blanket-impls.md:39
+msgid ""
+"Conditional blanket implementations are much more useful and you are more "
+"likely to see and author them."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/blanket-impls.md:42
+msgid ""
+"These implementations will have a bound on the trait, like `impl <T: "
+"Display> ToString for T {...}`"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/blanket-impls.md:45
+msgid ""
+"In the example above we have a blanket implementation for all types that "
+"implement Display, the implementation has one piece of information available "
+"to it from the trait bounds: it implements `Display::fmt`."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/blanket-impls.md:49
+msgid ""
+"This is enough to write an implementation for pretty printing to console."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/blanket-impls.md:51
+msgid ""
+"Do be careful with these kinds of implementations, as it may end up "
+"preventing users downstream from implementing a more meaningful."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/blanket-impls.md:54
+msgid ""
+"The above isn't written for `Debug` as that would mean almost all types end "
+"up implementing `PrettyPrint`, and `Debug` is not semantically similar to "
+"`Display`: It's meant for debug output instead of something more human-"
+"readable."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/blanket-impls.md:59
+msgid "ref:"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/blanket-impls.md:61
+msgid ""
+"https://doc.rust-lang.org/reference/glossary.html#blanket-implementation"
+msgstr ""

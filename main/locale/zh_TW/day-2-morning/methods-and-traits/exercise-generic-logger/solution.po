@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/methods-and-traits/solution.md:6
+msgid "Solution"
+msgstr ""
+
+#: src/methods-and-traits/solution.md:9
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/methods-and-traits/solution.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/methods-and-traits/solution.md:13
+msgid "/// Log a message at the given verbosity level.\n"
+msgstr ""
+
+#: src/methods-and-traits/solution.md:21
+msgid "\"verbosity={verbosity}: {message}\""
+msgstr ""
+
+#: src/methods-and-traits/solution.md:24
+msgid "/// Only log messages up to the given verbosity level.\n"
+msgstr ""
+
+#: src/methods-and-traits/solution.md:41
+msgid "\"FYI\""
+msgstr ""
+
+#: src/methods-and-traits/solution.md:42
+msgid "\"Uhoh\""
+msgstr ""

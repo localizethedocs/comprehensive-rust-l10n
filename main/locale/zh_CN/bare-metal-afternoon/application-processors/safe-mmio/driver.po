@@ -1,0 +1,111 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/aps/safemmio/driver.md:6
+msgid "Driver"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:8
+msgid "Now let's use the new `Registers` struct in our driver."
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:11
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:15
+msgid "/// Driver for a PL011 UART.\n"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:23
+msgid ""
+"/// Constructs a new instance of the UART driver for a PL011 device with "
+"the\n"
+"    /// given set of registers.\n"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:29
+msgid "/// Writes a single byte to the UART.\n"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:31
+msgid "// Wait until there is room in the TX buffer.\n"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:34
+msgid "// Write to the TX buffer.\n"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:37
+msgid "// Wait until the UART is no longer busy.\n"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:41
+msgid ""
+"/// Reads and returns a pending byte, or `None` if nothing has been\n"
+"    /// received.\n"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:48
+msgid "// TODO: Check for error conditions in bits 8-11.\n"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:61
+msgid "The driver no longer needs any unsafe code!"
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:62
+msgid ""
+"`UniqueMmioPointer` is a wrapper around a raw pointer to an MMIO device or "
+"register. The caller of `UniqueMmioPointer::new` promises that it is valid "
+"and unique for the given lifetime, so it can provide safe methods to read "
+"and write fields."
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:66
+msgid ""
+"Note that `Uart::new` is now safe; `UniqueMmioPointer::new` is unsafe "
+"instead."
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:67
+msgid ""
+"These MMIO accesses are generally a wrapper around `read_volatile` and "
+"`write_volatile`, though on aarch64 they are instead implemented in assembly "
+"to work around a bug where the compiler can emit instructions that prevent "
+"MMIO virtualization."
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:71
+msgid ""
+"The `field!` and `field_shared!` macros internally use `&raw mut` and `&raw "
+"const` to get pointers to individual fields without creating an intermediate "
+"reference, which would be unsound."
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:74
+msgid ""
+"`field!` needs a mutable reference to a `UniqueMmioPointer`, and returns a "
+"`UniqueMmioPointer` that allows reads with side effects and writes."
+msgstr ""
+
+#: src/bare-metal/aps/safemmio/driver.md:76
+msgid ""
+"`field_shared!` works with a shared reference to either a "
+"`UniqueMmioPointer` or a `SharedMmioPointer`. It returns a "
+"`SharedMmioPointer` that only allows pure reads."
+msgstr ""

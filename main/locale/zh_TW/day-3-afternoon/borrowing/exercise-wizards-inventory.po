@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/borrowing/exercise.md:6
+msgid "Exercise: Wizard's Inventory"
+msgstr ""
+
+#: src/borrowing/exercise.md:8
+msgid ""
+"In this exercise, you will manage a wizard's inventory using what you have "
+"learned about borrowing and ownership."
+msgstr ""
+
+#: src/borrowing/exercise.md:11
+msgid ""
+"The wizard has a collection of spells. You need to implement functions to "
+"add spells to the inventory and to cast spells from them."
+msgstr ""
+
+#: src/borrowing/exercise.md:14
+msgid ""
+"Spells have a limited number of uses. When a spell has no uses left, it must "
+"be removed from the wizard's inventory."
+msgstr ""
+
+#: src/borrowing/exercise.md:18
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/borrowing/exercise.md:19
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/borrowing/exercise.md:37
+msgid ""
+"// TODO: Implement `add_spell` to take ownership of a spell and add it to\n"
+"    // the wizard's inventory.\n"
+msgstr ""
+
+#: src/borrowing/exercise.md:43
+msgid ""
+"// TODO: Implement `cast_spell` to borrow a spell from the inventory and\n"
+"    // cast it. The wizard's mana should decrease by the spell's cost and "
+"the\n"
+"    // number of uses for the spell should decrease by 1.\n"
+"    //\n"
+"    // If the wizard doesn't have enough mana, the spell should fail.\n"
+"    // If the spell has no uses left, it is removed from the inventory.\n"
+msgstr ""
+
+#: src/borrowing/exercise.md:56 src/borrowing/exercise.md:62
+#: src/borrowing/exercise.md:65 src/borrowing/exercise.md:66
+#: src/borrowing/exercise.md:76 src/borrowing/exercise.md:84
+#: src/borrowing/exercise.md:87 src/borrowing/exercise.md:96
+#: src/borrowing/exercise.md:99 src/borrowing/exercise.md:108
+#: src/borrowing/exercise.md:115 src/borrowing/exercise.md:118
+msgid "\"Fireball\""
+msgstr ""
+
+#: src/borrowing/exercise.md:57 src/borrowing/exercise.md:63
+#: src/borrowing/exercise.md:64
+msgid "\"Ice Blast\""
+msgstr ""
+
+#: src/borrowing/exercise.md:62
+msgid "// Casts successfully\n"
+msgstr ""
+
+#: src/borrowing/exercise.md:63 src/borrowing/exercise.md:65
+msgid "// Casts successfully, then removed\n"
+msgstr ""
+
+#: src/borrowing/exercise.md:64 src/borrowing/exercise.md:66
+msgid "// Fails (not found)\n"
+msgstr ""
+
+#: src/borrowing/exercise.md:128
+msgid ""
+"The goal of this exercise is to practice the core concepts of ownership and "
+"borrowing, specifically the rule that you cannot mutate a collection while "
+"holding a reference to one of its elements."
+msgstr ""
+
+#: src/borrowing/exercise.md:131
+msgid ""
+"`add_spell` should take ownership of a `Spell` and move it into the "
+"`Wizard`'s inventory."
+msgstr ""
+
+#: src/borrowing/exercise.md:133
+msgid "`cast_spell` is the core of the exercise. It needs to:"
+msgstr ""
+
+#: src/borrowing/exercise.md:134
+msgid "Find the spell (by index or by reference)."
+msgstr ""
+
+#: src/borrowing/exercise.md:135
+msgid "Check mana and decrement it."
+msgstr ""
+
+#: src/borrowing/exercise.md:136
+msgid "Decrement the spell's `uses`."
+msgstr ""
+
+#: src/borrowing/exercise.md:137
+msgid "Remove the spell if `uses == 0`."
+msgstr ""
+
+#: src/borrowing/exercise.md:138
+msgid ""
+"**Borrow Checker Conflict:** If students try to hold a reference to the "
+"spell (e.g., `let spell = &mut self.spells[i]`) and then call `self.spells."
+"remove(i)` while that reference is still \"alive\" in the same scope, the "
+"borrow checker will complain. This is a great opportunity to show how to "
+"structure code to satisfy the borrow checker (e.g., by using indices or by "
+"ensuring the borrow ends before the mutation)."
+msgstr ""

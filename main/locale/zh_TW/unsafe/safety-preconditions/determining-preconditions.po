@@ -1,0 +1,103 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:6
+msgid "Determining Preconditions"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:8
+msgid "Where do you find the safety preconditions?"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:11
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:16
+msgid "\"{:?}\""
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:23
+msgid ""
+"Attempt to compile the program to trigger the compiler error "
+"(\"error\\[E0133\\]: call to unsafe function ...\")."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:26
+msgid ""
+"Ask: “Where would you look if you wanted to know the preconditions for a "
+"function? Here we need to understand when it's safe to convert from a null "
+"pointer to a mutable reference.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:30
+msgid "Locations to look:"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:32
+msgid "A function's API documentation, especially its safety section"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:33
+msgid "The source code and its internal safety comments"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:34
+msgid "Module documentation"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:35
+msgid "Rust Reference"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:37
+msgid ""
+"Consult [the documentation](https://doc.rust-lang.org/std/primitive.pointer."
+"html#method.as_mut) for the `as_mut` method."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:39
+msgid "Highlight Safety section."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:41
+msgid "**Safety**"
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:43
+msgid ""
+"When calling this method, you have to ensure that either the pointer is null "
+"or the pointer is convertible to a reference."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:46
+msgid ""
+"Click the \"convertible to a reference\" hyperlink to the \"Pointer to "
+"reference conversion\""
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:49
+msgid ""
+"Track down the rules for converting a pointer to a reference, i.e., whether "
+"it is \"dereferenceable\"."
+msgstr ""
+
+#: src/unsafe-deep-dive/safety-preconditions/determining.md:52
+msgid ""
+"Consider the implications of this excerpt (Rust 1.90.0) \"You must enforce "
+"Rust’s aliasing rules. The exact aliasing rules are not decided yet, ...\""
+msgstr ""
