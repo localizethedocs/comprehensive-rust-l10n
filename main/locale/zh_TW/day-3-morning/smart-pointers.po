@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/smart-pointers.md:12 src/smart-pointers.md:14
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"
 
 #: src/smart-pointers.md:13
 msgid "Rc"

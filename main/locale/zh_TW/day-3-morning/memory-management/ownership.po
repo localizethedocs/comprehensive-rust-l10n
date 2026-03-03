@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/memory-management/ownership.md:6
 msgid "Ownership"
-msgstr ""
+msgstr "擁有權"
 
 #: src/memory-management/ownership.md:8
 msgid ""

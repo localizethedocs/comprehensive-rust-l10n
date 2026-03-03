@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/chromium/adding-third-party-crates/downloading-crates.md:6
 msgid "Downloading Crates"
-msgstr ""
+msgstr "下載軟體箱"
 
 #: src/chromium/adding-third-party-crates/downloading-crates.md:8
 msgid ""

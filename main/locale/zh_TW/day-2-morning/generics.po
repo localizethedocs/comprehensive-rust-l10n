@@ -41,7 +41,7 @@ msgstr ""
 
 #: src/generics.md:13 src/generics.md:14 src/generics.md:18
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"
 
 #: src/generics.md:14
 msgid "Generic Data Types"

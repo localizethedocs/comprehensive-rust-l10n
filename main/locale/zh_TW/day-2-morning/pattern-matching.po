@@ -41,7 +41,7 @@ msgstr ""
 
 #: src/pattern-matching.md:13 src/pattern-matching.md:16
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"
 
 #: src/pattern-matching.md:14
 msgid "Destructuring Structs"

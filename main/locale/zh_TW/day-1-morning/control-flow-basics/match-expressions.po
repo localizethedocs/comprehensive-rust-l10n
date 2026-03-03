@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/control-flow-basics/match.md:6
 msgid "`match` Expressions"
-msgstr ""
+msgstr "`match` 表達式"
 
 #: src/control-flow-basics/match.md:8
 msgid "`match` can be used to check a value against one or more options:"

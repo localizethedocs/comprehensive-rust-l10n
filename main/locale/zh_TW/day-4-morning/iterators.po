@@ -29,7 +29,7 @@ msgstr ""
 
 #: src/iterators.md:12
 msgid "Motivation"
-msgstr ""
+msgstr "動機"
 
 #: src/iterators.md:12
 msgid "3 minutes"

@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/references.md:12 src/references.md:14 src/references.md:15
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"
 
 #: src/references.md:13
 msgid "Exclusive References"
@@ -57,7 +57,7 @@ msgstr ""
 
 #: src/references.md:16
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/references.md:17
 msgid "Exercise: Geometry"
@@ -65,4 +65,4 @@ msgstr ""
 
 #: src/references.md:17
 msgid "20 minutes"
-msgstr ""
+msgstr "20 分鐘"

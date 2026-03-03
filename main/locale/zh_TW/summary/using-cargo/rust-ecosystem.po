@@ -111,7 +111,7 @@ msgstr ""
 
 #: src/cargo/rust-ecosystem.md:58
 msgid "Project/package structure"
-msgstr ""
+msgstr "專案/軟體包結構"
 
 #: src/cargo/rust-ecosystem.md:59
 msgid "[workspaces](https://doc.rust-lang.org/cargo/reference/workspaces.html)"

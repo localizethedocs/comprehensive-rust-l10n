@@ -17,11 +17,11 @@ msgstr ""
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md:12
 msgid "<stddef.h>"
-msgstr ""
+msgstr "<stddef.h>"
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md:13
 msgid "<stdbool.h>"
-msgstr ""
+msgstr "<stdbool.h>"
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md:29
 msgid "/* Return `false` to indicate that no token was found. */"

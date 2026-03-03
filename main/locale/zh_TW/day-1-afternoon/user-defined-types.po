@@ -34,7 +34,7 @@ msgstr ""
 #: src/user-defined-types.md:12 src/user-defined-types.md:13
 #: src/user-defined-types.md:16
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"
 
 #: src/user-defined-types.md:13
 msgid "Tuple Structs"
@@ -46,7 +46,7 @@ msgstr ""
 
 #: src/user-defined-types.md:14 src/user-defined-types.md:17
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/user-defined-types.md:15
 msgid "Type Aliases"
@@ -54,7 +54,7 @@ msgstr ""
 
 #: src/user-defined-types.md:15
 msgid "2 minutes"
-msgstr ""
+msgstr "2 分鐘"
 
 #: src/user-defined-types.md:16
 msgid "Const"
@@ -70,4 +70,4 @@ msgstr ""
 
 #: src/user-defined-types.md:18
 msgid "15 minutes"
-msgstr ""
+msgstr "15 分鐘"

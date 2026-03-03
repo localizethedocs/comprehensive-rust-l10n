@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/memory-management.md:6
 msgid "Memory Management"
-msgstr ""
+msgstr "記憶體管理"
 
 #: src/memory-management.md:8
 msgid "This segment should take about 1 hour. It contains:"
@@ -42,11 +42,11 @@ msgstr ""
 
 #: src/memory-management.md:13 src/memory-management.md:18
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"
 
 #: src/memory-management.md:14
 msgid "Ownership"
-msgstr ""
+msgstr "擁有權"
 
 #: src/memory-management.md:15
 msgid "Move Semantics"
@@ -62,7 +62,7 @@ msgstr ""
 
 #: src/memory-management.md:17
 msgid "Copy Types"
-msgstr ""
+msgstr "複製型別"
 
 #: src/memory-management.md:18
 msgid "Drop"

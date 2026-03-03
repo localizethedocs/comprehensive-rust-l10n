@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/borrowing.md:12 src/borrowing.md:13 src/borrowing.md:15
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"
 
 #: src/borrowing.md:13
 msgid "Borrow Checking"
@@ -57,4 +57,4 @@ msgstr ""
 
 #: src/borrowing.md:16
 msgid "40 minutes"
-msgstr ""
+msgstr "40 分鐘"

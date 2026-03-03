@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/error-handling.md:6
 msgid "Error Handling"
-msgstr ""
+msgstr "錯誤處理"
 
 #: src/error-handling.md:8
 msgid "This segment should take about 55 minutes. It contains:"

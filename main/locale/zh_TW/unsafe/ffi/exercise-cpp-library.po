@@ -43,7 +43,7 @@ msgstr ""
 
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md:42
 msgid "<stddef.h>"
-msgstr ""
+msgstr "<stddef.h>"
 
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md:45
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md:66

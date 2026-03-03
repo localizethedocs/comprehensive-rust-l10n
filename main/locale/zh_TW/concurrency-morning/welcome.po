@@ -52,7 +52,7 @@ msgstr ""
 
 #: src/concurrency/welcome.md:21 src/concurrency/welcome.md:24
 msgid "30 minutes"
-msgstr ""
+msgstr "30 分鐘"
 
 #: src/concurrency/welcome.md:22
 msgid "Channels"

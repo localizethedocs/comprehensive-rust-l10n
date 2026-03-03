@@ -79,7 +79,7 @@ msgstr ""
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md:37
 msgid "50 minutes"
-msgstr ""
+msgstr "50 分鐘"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md:38
 msgid "Pin<Ptr> and Drop"

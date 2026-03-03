@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/memory-management/copy-types.md:6
 msgid "Copy Types"
-msgstr ""
+msgstr "複製型別"
 
 #: src/memory-management/copy-types.md:8
 msgid ""

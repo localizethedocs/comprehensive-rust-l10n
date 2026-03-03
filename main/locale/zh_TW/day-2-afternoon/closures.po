@@ -49,7 +49,7 @@ msgstr ""
 
 #: src/closures.md:14 src/closures.md:15
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"
 
 #: src/closures.md:15
 msgid "Exercise: Log Filter"

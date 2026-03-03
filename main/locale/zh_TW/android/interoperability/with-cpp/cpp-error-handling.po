@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/android/interoperability/cpp/cpp-exception.md:6
 msgid "C++ Error Handling"
-msgstr ""
+msgstr "C++ 錯誤處理"
 
 #: src/android/interoperability/cpp/cpp-exception.md:9
 msgid "// Copyright 2023 Google LLC\n"

@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/concurrency/send-sync/examples.md:6
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: src/concurrency/send-sync/examples.md:8
 msgid "`Send + Sync`"

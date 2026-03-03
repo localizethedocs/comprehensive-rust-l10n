@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/chromium/adding-third-party-crates/generating-gn-build-rules.md:6
 msgid "Generating `gn` Build Rules"
-msgstr ""
+msgstr "生成 `gn` 建置規則"
 
 #: src/chromium/adding-third-party-crates/generating-gn-build-rules.md:8
 msgid ""

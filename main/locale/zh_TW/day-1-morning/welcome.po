@@ -79,7 +79,7 @@ msgstr ""
 
 #: src/welcome-day-1.md:25
 msgid "40 minutes"
-msgstr ""
+msgstr "40 分鐘"
 
 #: src/welcome-day-1.md:26
 msgid "Control Flow Basics"
@@ -87,7 +87,7 @@ msgstr ""
 
 #: src/welcome-day-1.md:26
 msgid "45 minutes"
-msgstr ""
+msgstr "45 分鐘"
 
 #: src/welcome-day-1.md:32
 msgid "Please remind the students that:"

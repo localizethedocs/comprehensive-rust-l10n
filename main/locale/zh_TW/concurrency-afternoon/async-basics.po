@@ -34,7 +34,7 @@ msgstr ""
 #: src/concurrency/async.md:12 src/concurrency/async.md:14
 #: src/concurrency/async.md:15 src/concurrency/async.md:16
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"
 
 #: src/concurrency/async.md:13
 msgid "Futures"

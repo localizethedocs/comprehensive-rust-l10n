@@ -66,7 +66,7 @@ msgstr ""
 
 #: src/idiomatic/welcome.md:29
 msgid "3 hours and 30 minutes"
-msgstr ""
+msgstr "3 小時又 30 分鐘"
 
 #: src/idiomatic/welcome.md:30
 msgid "Leveraging the Type System"
@@ -74,7 +74,7 @@ msgstr ""
 
 #: src/idiomatic/welcome.md:30
 msgid "7 hours and 30 minutes"
-msgstr ""
+msgstr "7 小時又 30 分鐘"
 
 #: src/idiomatic/welcome.md:31
 msgid "Polymorphism"
@@ -82,7 +82,7 @@ msgstr ""
 
 #: src/idiomatic/welcome.md:31
 msgid "3 hours and 5 minutes"
-msgstr ""
+msgstr "3 小時又 5 分鐘"
 
 #: src/idiomatic/welcome.md:38
 msgid ""
@@ -284,7 +284,7 @@ msgstr ""
 
 #: src/idiomatic/welcome.md:110
 msgid "Error Handling"
-msgstr ""
+msgstr "錯誤處理"
 
 #: src/idiomatic/welcome.md:112
 msgid "What is the purpose of errors? Recovery vs. reporting."

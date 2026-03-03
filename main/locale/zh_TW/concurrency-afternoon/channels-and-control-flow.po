@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/concurrency/async-control-flow.md:12
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"
 
 #: src/concurrency/async-control-flow.md:13
 msgid "Join"

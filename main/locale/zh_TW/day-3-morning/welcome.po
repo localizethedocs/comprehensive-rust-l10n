@@ -76,7 +76,7 @@ msgstr ""
 
 #: src/welcome-day-3.md:27
 msgid "Memory Management"
-msgstr ""
+msgstr "記憶體管理"
 
 #: src/welcome-day-3.md:27
 msgid "1 hour"

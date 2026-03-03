@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/concurrency/shared-state.md:12
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/concurrency/shared-state.md:13
 msgid "Mutex"
@@ -41,12 +41,12 @@ msgstr ""
 
 #: src/concurrency/shared-state.md:13
 msgid "15 minutes"
-msgstr ""
+msgstr "15 分鐘"
 
 #: src/concurrency/shared-state.md:14
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: src/concurrency/shared-state.md:14
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"

@@ -50,7 +50,7 @@ msgstr ""
 
 #: src/std-types.md:14
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"
 
 #: src/std-types.md:15
 msgid "Result"

@@ -74,7 +74,7 @@ msgstr ""
 
 #: src/unsafe-deep-dive/pinning.md:24
 msgid "50 minutes"
-msgstr ""
+msgstr "50 分鐘"
 
 #: src/unsafe-deep-dive/pinning.md:25
 msgid "Pin<Ptr> and Drop"

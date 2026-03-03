@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/unsafe-deep-dive/memory-lifecycle.md:6
 msgid "Memory Lifecycle"
-msgstr ""
+msgstr "記憶體生命週期"
 
 #: src/unsafe-deep-dive/memory-lifecycle.md:8
 msgid ""

@@ -80,7 +80,7 @@ msgstr ""
 
 #: src/concurrency/welcome-async.md:38
 msgid "40 minutes"
-msgstr ""
+msgstr "40 分鐘"
 
 #: src/concurrency/welcome-async.md:39
 msgid "Channels and Control Flow"

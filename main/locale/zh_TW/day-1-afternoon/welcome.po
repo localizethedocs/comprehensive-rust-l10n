@@ -31,11 +31,11 @@ msgstr ""
 
 #: src/welcome-day-1-afternoon.md:12
 msgid "Tuples and Arrays"
-msgstr ""
+msgstr "值組與陣列"
 
 #: src/welcome-day-1-afternoon.md:12
 msgid "35 minutes"
-msgstr ""
+msgstr "35 分鐘"
 
 #: src/welcome-day-1-afternoon.md:13
 msgid "References"
@@ -43,7 +43,7 @@ msgstr ""
 
 #: src/welcome-day-1-afternoon.md:13
 msgid "55 minutes"
-msgstr ""
+msgstr "55 分鐘"
 
 #: src/welcome-day-1-afternoon.md:14
 msgid "User-Defined Types"

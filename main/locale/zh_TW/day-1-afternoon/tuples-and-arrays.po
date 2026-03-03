@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/tuples-and-arrays.md:6
 msgid "Tuples and Arrays"
-msgstr ""
+msgstr "值組與陣列"
 
 #: src/tuples-and-arrays.md:8
 msgid "This segment should take about 35 minutes. It contains:"
@@ -29,16 +29,16 @@ msgstr ""
 
 #: src/tuples-and-arrays.md:12
 msgid "Arrays"
-msgstr ""
+msgstr "陣列"
 
 #: src/tuples-and-arrays.md:12 src/tuples-and-arrays.md:13
 #: src/tuples-and-arrays.md:15
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/tuples-and-arrays.md:13
 msgid "Tuples"
-msgstr ""
+msgstr "值組"
 
 #: src/tuples-and-arrays.md:14
 msgid "Array Iteration"
@@ -46,7 +46,7 @@ msgstr ""
 
 #: src/tuples-and-arrays.md:14
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/tuples-and-arrays.md:15
 msgid "Patterns and Destructuring"
@@ -58,7 +58,7 @@ msgstr ""
 
 #: src/tuples-and-arrays.md:16
 msgid "15 minutes"
-msgstr ""
+msgstr "15 分鐘"
 
 #: src/tuples-and-arrays.md:21
 msgid ""

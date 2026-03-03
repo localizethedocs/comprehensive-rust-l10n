@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/control-flow-basics/macros.md:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: src/control-flow-basics/macros.md:8
 msgid ""

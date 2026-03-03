@@ -31,7 +31,7 @@ msgstr ""
 
 #: src/welcome-day-4-afternoon.md:12
 msgid "Error Handling"
-msgstr ""
+msgstr "錯誤處理"
 
 #: src/welcome-day-4-afternoon.md:12
 msgid "55 minutes"
@@ -43,4 +43,4 @@ msgstr ""
 
 #: src/welcome-day-4-afternoon.md:13
 msgid "1 hour and 15 minutes"
-msgstr ""
+msgstr "1 小時又 15 分鐘"

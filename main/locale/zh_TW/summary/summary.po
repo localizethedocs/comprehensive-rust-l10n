@@ -37,7 +37,7 @@ msgstr "使用 Cargo"
 
 #: src/SUMMARY.md:15
 msgid "Rust Ecosystem"
-msgstr ""
+msgstr "Rust 生態系"
 
 #: src/SUMMARY.md:16
 msgid "Code Samples"
@@ -80,7 +80,7 @@ msgstr ""
 
 #: src/SUMMARY.md:30
 msgid "Variables"
-msgstr ""
+msgstr "變數"
 
 #: src/SUMMARY.md:31
 msgid "Values"
@@ -92,7 +92,7 @@ msgstr ""
 
 #: src/SUMMARY.md:33
 msgid "Type Inference"
-msgstr ""
+msgstr "型別推斷"
 
 #: src/SUMMARY.md:34
 msgid "Exercise: Fibonacci"
@@ -116,15 +116,15 @@ msgstr ""
 
 #: src/SUMMARY.md:38
 msgid "`if` Expressions"
-msgstr ""
+msgstr "`if` 表達式"
 
 #: src/SUMMARY.md:39
 msgid "`match` Expressions"
-msgstr ""
+msgstr "`match` 表達式"
 
 #: src/SUMMARY.md:40
 msgid "Loops"
-msgstr ""
+msgstr "迴圈"
 
 #: src/SUMMARY.md:41
 msgid "`for`"
@@ -140,15 +140,15 @@ msgstr ""
 
 #: src/SUMMARY.md:44
 msgid "Labels"
-msgstr ""
+msgstr "標籤"
 
 #: src/SUMMARY.md:45
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: src/SUMMARY.md:46
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: src/SUMMARY.md:47
 msgid "Exercise: Collatz Sequence"
@@ -160,7 +160,7 @@ msgstr "第 1 天：下午"
 
 #: src/SUMMARY.md:53
 msgid "Tuples and Arrays"
-msgstr ""
+msgstr "值組與陣列"
 
 #: src/SUMMARY.md:54
 msgid "Arrays"
@@ -448,7 +448,7 @@ msgstr "第 3 天：上午"
 
 #: src/SUMMARY.md:147
 msgid "Memory Management"
-msgstr ""
+msgstr "記憶體管理"
 
 #: src/SUMMARY.md:148
 msgid "Review of Program Memory"
@@ -460,7 +460,7 @@ msgstr ""
 
 #: src/SUMMARY.md:150
 msgid "Ownership"
-msgstr ""
+msgstr "擁有權"
 
 #: src/SUMMARY.md:151
 msgid "Move Semantics"
@@ -472,11 +472,11 @@ msgstr ""
 
 #: src/SUMMARY.md:153
 msgid "Copy Types"
-msgstr ""
+msgstr "複製型別"
 
 #: src/SUMMARY.md:154
 msgid "`Drop`"
-msgstr ""
+msgstr "`Drop`"
 
 #: src/SUMMARY.md:155
 msgid "Exercise: Builder Type"
@@ -508,7 +508,7 @@ msgstr "第 3 天：下午"
 
 #: src/SUMMARY.md:167
 msgid "Borrowing"
-msgstr ""
+msgstr "借用"
 
 #: src/SUMMARY.md:168
 msgid "Borrowing a Value"
@@ -584,7 +584,7 @@ msgstr ""
 
 #: src/SUMMARY.md:193
 msgid "Motivation"
-msgstr ""
+msgstr "動機"
 
 #: src/SUMMARY.md:194
 msgid "`Iterator` Trait"
@@ -620,7 +620,7 @@ msgstr ""
 
 #: src/SUMMARY.md:204
 msgid "Encapsulation"
-msgstr ""
+msgstr "封裝"
 
 #: src/SUMMARY.md:205
 msgid "`use`, `super`, `self`"
@@ -656,7 +656,7 @@ msgstr "第 4 天：下午"
 
 #: src/SUMMARY.md:218
 msgid "Error Handling"
-msgstr ""
+msgstr "錯誤處理"
 
 #: src/SUMMARY.md:219
 msgid "Panics"
@@ -884,11 +884,11 @@ msgstr ""
 
 #: src/SUMMARY.md:284
 msgid "Rust Error Handling"
-msgstr ""
+msgstr "Rust 錯誤處理"
 
 #: src/SUMMARY.md:285
 msgid "C++ Error Handling"
-msgstr ""
+msgstr "C++ 錯誤處理"
 
 #: src/SUMMARY.md:286
 msgid "Additional Types"
@@ -965,15 +965,15 @@ msgstr ""
 
 #: src/SUMMARY.md:313
 msgid "CXX Error Handling"
-msgstr ""
+msgstr "CXX 錯誤處理"
 
 #: src/SUMMARY.md:314
 msgid "Error Handling: QR Example"
-msgstr ""
+msgstr "錯誤處理：QR 範例"
 
 #: src/SUMMARY.md:315
 msgid "Error Handling: PNG Example"
-msgstr ""
+msgstr "錯誤處理：PNG 範例"
 
 #: src/SUMMARY.md:316
 msgid "Using CXX in Chromium"
@@ -993,11 +993,11 @@ msgstr ""
 
 #: src/SUMMARY.md:321
 msgid "Downloading Crates"
-msgstr ""
+msgstr "下載軟體箱"
 
 #: src/SUMMARY.md:322
 msgid "Generating `gn` Build Rules"
-msgstr ""
+msgstr "生成 `gn` 建置規則"
 
 #: src/SUMMARY.md:323
 msgid "Resolving Problems"
@@ -1089,7 +1089,7 @@ msgstr ""
 
 #: src/SUMMARY.md:351 src/SUMMARY.md:377
 msgid "Other Projects"
-msgstr ""
+msgstr "其他專案"
 
 #: src/SUMMARY.md:352 src/SUMMARY.md:386 src/SUMMARY.md:411 src/SUMMARY.md:435
 msgid "Exercises"
@@ -1233,7 +1233,7 @@ msgstr ""
 
 #: src/SUMMARY.md:402
 msgid "`Send` and `Sync`"
-msgstr ""
+msgstr "`Send` 與 `Sync`"
 
 #: src/SUMMARY.md:403
 msgid "Marker Traits"
@@ -1249,7 +1249,7 @@ msgstr ""
 
 #: src/SUMMARY.md:406
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: src/SUMMARY.md:407
 msgid "Shared State"
@@ -1265,7 +1265,7 @@ msgstr ""
 
 #: src/SUMMARY.md:410
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: src/SUMMARY.md:412 src/SUMMARY.md:436
 msgid "Dining Philosophers"
@@ -1725,7 +1725,7 @@ msgstr ""
 
 #: src/SUMMARY.md:543
 msgid "Inheritance"
-msgstr ""
+msgstr "繼承"
 
 #: src/SUMMARY.md:544
 msgid "Why no Inheritance in Rust?"
@@ -1897,7 +1897,7 @@ msgstr ""
 
 #: src/SUMMARY.md:593
 msgid "Copying memory"
-msgstr ""
+msgstr "複製記憶體"
 
 #: src/SUMMARY.md:594
 msgid "Safe Rust"
@@ -1941,7 +1941,7 @@ msgstr ""
 
 #: src/SUMMARY.md:604
 msgid "Memory Lifecycle"
-msgstr ""
+msgstr "記憶體生命週期"
 
 #: src/SUMMARY.md:605
 msgid "Initialization"
@@ -1965,7 +1965,7 @@ msgstr ""
 
 #: src/SUMMARY.md:610
 msgid "How to initialize memory"
-msgstr ""
+msgstr "如何初始化記憶體"
 
 #: src/SUMMARY.md:611
 msgid "Partial initialization"
@@ -2097,11 +2097,11 @@ msgstr ""
 
 #: src/SUMMARY.md:647
 msgid "Glossary"
-msgstr ""
+msgstr "詞彙表"
 
 #: src/SUMMARY.md:648
 msgid "Other Resources"
-msgstr ""
+msgstr "其他資源"
 
 #: src/SUMMARY.md:649
 msgid "Credits"

@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/concurrency/send-sync.md:6
 msgid "`Send` and `Sync`"
-msgstr ""
+msgstr "`Send` 與 `Sync`"
 
 #: src/concurrency/send-sync.md:8
 msgid "This segment should take about 15 minutes. It contains:"
@@ -46,8 +46,8 @@ msgstr ""
 
 #: src/concurrency/send-sync.md:15
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: src/concurrency/send-sync.md:15
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"

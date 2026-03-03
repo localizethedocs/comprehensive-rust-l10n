@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/control-flow-basics/loops.md:6
 msgid "Loops"
-msgstr ""
+msgstr "迴圈"
 
 #: src/control-flow-basics/loops.md:8
 msgid "There are three looping keywords in Rust: `while`, `loop`, and `for`:"

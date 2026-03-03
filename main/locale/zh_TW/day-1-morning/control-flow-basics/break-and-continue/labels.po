@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/control-flow-basics/break-continue/labels.md:6
 msgid "Labels"
-msgstr ""
+msgstr "標籤"
 
 #: src/control-flow-basics/break-continue/labels.md:8
 msgid ""

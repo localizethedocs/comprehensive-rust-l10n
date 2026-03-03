@@ -76,7 +76,7 @@ msgstr ""
 
 #: src/running-the-course/course-structure.md:20
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/running-the-course/course-structure.md:21
 msgid "Hello, World"
@@ -85,7 +85,7 @@ msgstr ""
 #: src/running-the-course/course-structure.md:21
 #: src/running-the-course/course-structure.md:159
 msgid "15 minutes"
-msgstr ""
+msgstr "15 分鐘"
 
 #: src/running-the-course/course-structure.md:22
 msgid "Types and Values"
@@ -94,7 +94,7 @@ msgstr ""
 #: src/running-the-course/course-structure.md:22
 #: src/running-the-course/course-structure.md:168
 msgid "40 minutes"
-msgstr ""
+msgstr "40 分鐘"
 
 #: src/running-the-course/course-structure.md:23
 msgid "Control Flow Basics"
@@ -105,7 +105,7 @@ msgstr ""
 #: src/running-the-course/course-structure.md:77
 #: src/running-the-course/course-structure.md:78
 msgid "45 minutes"
-msgstr ""
+msgstr "45 分鐘"
 
 #: src/running-the-course/course-structure.md:26
 msgid "Day 1 Afternoon (2 hours and 45 minutes, including breaks)"
@@ -113,11 +113,11 @@ msgstr ""
 
 #: src/running-the-course/course-structure.md:30
 msgid "Tuples and Arrays"
-msgstr ""
+msgstr "值組與陣列"
 
 #: src/running-the-course/course-structure.md:30
 msgid "35 minutes"
-msgstr ""
+msgstr "35 分鐘"
 
 #: src/running-the-course/course-structure.md:31
 msgid "References"
@@ -129,7 +129,7 @@ msgstr ""
 #: src/running-the-course/course-structure.md:85
 #: src/running-the-course/course-structure.md:170
 msgid "55 minutes"
-msgstr ""
+msgstr "55 分鐘"
 
 #: src/running-the-course/course-structure.md:32
 msgid "User-Defined Types"
@@ -150,7 +150,7 @@ msgstr ""
 #: src/running-the-course/course-structure.md:58
 #: src/running-the-course/course-structure.md:75
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/running-the-course/course-structure.md:40
 msgid "Pattern Matching"
@@ -159,7 +159,7 @@ msgstr ""
 #: src/running-the-course/course-structure.md:40
 #: src/running-the-course/course-structure.md:42
 msgid "50 minutes"
-msgstr ""
+msgstr "50 分鐘"
 
 #: src/running-the-course/course-structure.md:41
 msgid "Methods and Traits"
@@ -197,7 +197,7 @@ msgstr ""
 
 #: src/running-the-course/course-structure.md:59
 msgid "Memory Management"
-msgstr ""
+msgstr "記憶體管理"
 
 #: src/running-the-course/course-structure.md:60
 msgid "Smart Pointers"
@@ -214,7 +214,7 @@ msgstr ""
 #: src/running-the-course/course-structure.md:67
 #: src/running-the-course/course-structure.md:86
 msgid "1 hour and 15 minutes"
-msgstr ""
+msgstr "1 小時又 15 分鐘"
 
 #: src/running-the-course/course-structure.md:68
 msgid "Lifetimes"
@@ -222,7 +222,7 @@ msgstr ""
 
 #: src/running-the-course/course-structure.md:68
 msgid "1 hour and 5 minutes"
-msgstr ""
+msgstr "1 小時又 5 分鐘"
 
 #: src/running-the-course/course-structure.md:71
 msgid "Day 4 Morning (2 hours and 50 minutes, including breaks)"
@@ -246,7 +246,7 @@ msgstr ""
 
 #: src/running-the-course/course-structure.md:85
 msgid "Error Handling"
-msgstr ""
+msgstr "錯誤處理"
 
 #: src/running-the-course/course-structure.md:86
 msgid "Unsafe Rust"
@@ -359,7 +359,7 @@ msgstr ""
 #: src/running-the-course/course-structure.md:158
 #: src/running-the-course/course-structure.md:169
 msgid "20 minutes"
-msgstr ""
+msgstr "20 分鐘"
 
 #: src/running-the-course/course-structure.md:159
 msgid "Send and Sync"
@@ -377,7 +377,7 @@ msgstr ""
 #: src/running-the-course/course-structure.md:161
 #: src/running-the-course/course-structure.md:171
 msgid "1 hour and 10 minutes"
-msgstr ""
+msgstr "1 小時又 10 分鐘"
 
 #: src/running-the-course/course-structure.md:164
 msgid "Afternoon (3 hours and 30 minutes, including breaks)"
@@ -421,7 +421,7 @@ msgstr ""
 
 #: src/running-the-course/course-structure.md:189
 msgid "3 hours and 30 minutes"
-msgstr ""
+msgstr "3 小時又 30 分鐘"
 
 #: src/running-the-course/course-structure.md:190
 msgid "Leveraging the Type System"
@@ -429,7 +429,7 @@ msgstr ""
 
 #: src/running-the-course/course-structure.md:190
 msgid "7 hours and 30 minutes"
-msgstr ""
+msgstr "7 小時又 30 分鐘"
 
 #: src/running-the-course/course-structure.md:191
 msgid "Polymorphism"
@@ -437,7 +437,7 @@ msgstr ""
 
 #: src/running-the-course/course-structure.md:191
 msgid "3 hours and 5 minutes"
-msgstr ""
+msgstr "3 小時又 5 分鐘"
 
 #: src/running-the-course/course-structure.md:196
 msgid "Unsafe (Work in Progress)"

@@ -84,7 +84,7 @@ msgstr ""
 
 #: src/welcome-day-4.md:26 src/welcome-day-4.md:27
 msgid "45 minutes"
-msgstr ""
+msgstr "45 分鐘"
 
 #: src/welcome-day-4.md:27
 msgid "Testing"

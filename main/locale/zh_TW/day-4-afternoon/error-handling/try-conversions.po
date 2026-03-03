@@ -46,7 +46,7 @@ msgstr ""
 
 #: src/error-handling/try-conversions.md:34
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: src/error-handling/try-conversions.md:55
 msgid "\"I/O error: {e}\""

@@ -42,7 +42,7 @@ msgstr ""
 
 #: src/unsafe-rust.md:13
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"
 
 #: src/unsafe-rust.md:14
 msgid "Mutable Static Variables"

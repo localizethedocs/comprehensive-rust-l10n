@@ -41,7 +41,7 @@ msgstr ""
 
 #: src/concurrency/async-pitfalls.md:16
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"
 
 #: src/concurrency/async-pitfalls.md:17
 msgid "Pin"

@@ -14,7 +14,7 @@ msgstr ""
 #. Please keep { #glossary } untranslated.
 #: src/glossary.md:8
 msgid "Glossary"
-msgstr ""
+msgstr "詞彙表"
 
 #: src/glossary.md:10
 msgid ""

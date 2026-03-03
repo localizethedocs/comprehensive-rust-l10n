@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/hello-world.md:12
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"
 
 #: src/hello-world.md:13
 msgid "Benefits of Rust"

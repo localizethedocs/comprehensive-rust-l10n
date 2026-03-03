@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/android/interoperability/cpp/rust-result.md:6
 msgid "Rust Error Handling"
-msgstr ""
+msgstr "Rust 錯誤處理"
 
 #: src/android/interoperability/cpp/rust-result.md:9
 msgid "// Copyright 2023 Google LLC\n"

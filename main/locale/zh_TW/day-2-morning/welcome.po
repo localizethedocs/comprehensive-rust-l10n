@@ -75,7 +75,7 @@ msgstr ""
 
 #: src/welcome-day-2.md:25 src/welcome-day-2.md:27
 msgid "50 minutes"
-msgstr ""
+msgstr "50 分鐘"
 
 #: src/welcome-day-2.md:26
 msgid "Methods and Traits"
@@ -83,7 +83,7 @@ msgstr ""
 
 #: src/welcome-day-2.md:26
 msgid "45 minutes"
-msgstr ""
+msgstr "45 分鐘"
 
 #: src/welcome-day-2.md:27
 msgid "Generics"
