@@ -45,7 +45,7 @@ msgstr ""
 
 #: src/unsafe-rust/unsafe-functions/calling.md:39
 msgid "Key points:"
-msgstr ""
+msgstr "重點："
 
 #: src/unsafe-rust/unsafe-functions/calling.md:41
 msgid ""

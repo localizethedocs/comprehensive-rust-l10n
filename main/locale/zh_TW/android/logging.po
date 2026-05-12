@@ -27,19 +27,19 @@ msgstr ""
 
 #: src/android/logging.md:15 src/android/logging.md:16
 msgid "\"hello_rust_logs\""
-msgstr ""
+msgstr "\"hello_rust_logs\""
 
 #: src/android/logging.md:17
 msgid "\"src/main.rs\""
-msgstr ""
+msgstr "\"src/main.rs\""
 
 #: src/android/logging.md:19
 msgid "\"liblog_rust\""
-msgstr ""
+msgstr "\"liblog_rust\""
 
 #: src/android/logging.md:20
 msgid "\"liblogger\""
-msgstr ""
+msgstr "\"liblogger\""
 
 #: src/android/logging.md:26
 msgid "_hello_rust_logs/src/main.rs_:"

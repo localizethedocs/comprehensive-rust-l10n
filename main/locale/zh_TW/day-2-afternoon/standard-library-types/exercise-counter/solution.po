@@ -47,12 +47,12 @@ msgstr ""
 #: src/std-types/solution.md:51 src/std-types/solution.md:53
 #: src/std-types/solution.md:54
 msgid "\"apple\""
-msgstr ""
+msgstr "\"apple\""
 
 #: src/std-types/solution.md:52
 msgid "\"orange\""
-msgstr ""
+msgstr "\"orange\""
 
 #: src/std-types/solution.md:54
 msgid "\"got {} apples\""
-msgstr ""
+msgstr "\"got {} apples\""

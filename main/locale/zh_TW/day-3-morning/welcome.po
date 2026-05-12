@@ -72,7 +72,7 @@ msgstr ""
 
 #: src/welcome-day-3.md:26
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/welcome-day-3.md:27
 msgid "Memory Management"
@@ -88,4 +88,4 @@ msgstr ""
 
 #: src/welcome-day-3.md:28
 msgid "55 minutes"
-msgstr ""
+msgstr "55 分鐘"

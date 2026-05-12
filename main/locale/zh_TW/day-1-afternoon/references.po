@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/references.md:8
 msgid "This segment should take about 55 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 55 分鐘，內容包含："
 
 #: src/references.md:10
 msgid "Slide"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: src/references.md:13
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/references.md:14
 msgid "Slices"

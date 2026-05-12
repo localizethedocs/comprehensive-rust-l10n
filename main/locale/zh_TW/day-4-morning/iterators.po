@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/iterators.md:8
 msgid "This segment should take about 55 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 55 分鐘，內容包含："
 
 #: src/iterators.md:10
 msgid "Slide"
@@ -33,7 +33,7 @@ msgstr "動機"
 
 #: src/iterators.md:12
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/iterators.md:13
 msgid "Iterator Trait"
@@ -42,7 +42,7 @@ msgstr ""
 #: src/iterators.md:13 src/iterators.md:14 src/iterators.md:15
 #: src/iterators.md:16
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/iterators.md:14
 msgid "Iterator Helper Methods"
@@ -62,4 +62,4 @@ msgstr ""
 
 #: src/iterators.md:17
 msgid "30 minutes"
-msgstr ""
+msgstr "30 分鐘"

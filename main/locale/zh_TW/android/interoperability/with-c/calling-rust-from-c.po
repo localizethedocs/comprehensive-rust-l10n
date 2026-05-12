@@ -37,15 +37,15 @@ msgstr ""
 
 #: src/android/interoperability/with-c/rust.md:37
 msgid "\"analyze_numbers\""
-msgstr ""
+msgstr "\"analyze_numbers\""
 
 #: src/android/interoperability/with-c/rust.md:38
 msgid "\"main.c\""
-msgstr ""
+msgstr "\"main.c\""
 
 #: src/android/interoperability/with-c/rust.md:39
 msgid "\"libanalyze_ffi\""
-msgstr ""
+msgstr "\"libanalyze_ffi\""
 
 #: src/android/interoperability/with-c/rust.md:43
 msgid "Build, push, and run the binary on your device:"
@@ -60,3 +60,9 @@ msgid ""
 "adb shell /data/local/tmp/analyze_numbers\n"
 "```"
 msgstr ""
+"```shell\n"
+"m analyze_numbers\n"
+"adb push \"$ANDROID_PRODUCT_OUT/system/bin/analyze_numbers\" /data/local/"
+"tmp\n"
+"adb shell /data/local/tmp/analyze_numbers\n"
+"```"

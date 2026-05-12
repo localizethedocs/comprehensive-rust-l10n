@@ -608,7 +608,7 @@ msgstr ""
 
 #: src/SUMMARY.md:200 src/SUMMARY.md:201
 msgid "Modules"
-msgstr ""
+msgstr "模組"
 
 #: src/SUMMARY.md:202
 msgid "Filesystem Hierarchy"

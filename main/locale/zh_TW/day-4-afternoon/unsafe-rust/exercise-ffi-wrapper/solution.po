@@ -114,11 +114,11 @@ msgstr ""
 #: src/unsafe-rust/solution.md:122 src/unsafe-rust/solution.md:146
 #: src/unsafe-rust/solution.md:161
 msgid "\".\""
-msgstr ""
+msgstr "\".\""
 
 #: src/unsafe-rust/solution.md:123
 msgid "\"files: {:#?}\""
-msgstr ""
+msgstr "\"files: {:#?}\""
 
 #: src/unsafe-rust/solution.md:134
 msgid "\"no-such-directory\""

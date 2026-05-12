@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/std-traits.md:8
 msgid "This segment should take about 1 hour. It contains:"
-msgstr ""
+msgstr "本節大約需要 1 小時，內容包含："
 
 #: src/std-traits.md:10
 msgid "Slide"
@@ -34,7 +34,7 @@ msgstr ""
 #: src/std-traits.md:12 src/std-traits.md:13 src/std-traits.md:14
 #: src/std-traits.md:15 src/std-traits.md:16 src/std-traits.md:17
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/std-traits.md:13
 msgid "Operators"
@@ -62,7 +62,7 @@ msgstr ""
 
 #: src/std-traits.md:18
 msgid "30 minutes"
-msgstr ""
+msgstr "30 分鐘"
 
 #: src/std-traits.md:23
 msgid ""

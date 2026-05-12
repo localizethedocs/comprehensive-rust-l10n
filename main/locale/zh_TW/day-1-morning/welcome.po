@@ -63,7 +63,7 @@ msgstr ""
 
 #: src/welcome-day-1.md:23
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/welcome-day-1.md:24
 msgid "Hello, World"
@@ -71,7 +71,7 @@ msgstr ""
 
 #: src/welcome-day-1.md:24
 msgid "15 minutes"
-msgstr ""
+msgstr "15 分鐘"
 
 #: src/welcome-day-1.md:25
 msgid "Types and Values"

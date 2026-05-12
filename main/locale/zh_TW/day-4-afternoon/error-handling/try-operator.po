@@ -59,7 +59,7 @@ msgstr ""
 
 #: src/error-handling/try.md:67
 msgid "Key points:"
-msgstr ""
+msgstr "重點："
 
 #: src/error-handling/try.md:69
 msgid "The `username` variable can be either `Ok(string)` or `Err(error)`."

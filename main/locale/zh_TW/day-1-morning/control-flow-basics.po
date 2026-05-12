@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/control-flow-basics.md:8
 msgid "This segment should take about 45 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 45 分鐘，內容包含："
 
 #: src/control-flow-basics.md:10
 msgid "Slide"
@@ -34,7 +34,7 @@ msgstr ""
 #: src/control-flow-basics.md:12 src/control-flow-basics.md:14
 #: src/control-flow-basics.md:15
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/control-flow-basics.md:13
 msgid "if Expressions"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: src/control-flow-basics.md:13 src/control-flow-basics.md:16
 msgid "4 minutes"
-msgstr ""
+msgstr "4 分鐘"
 
 #: src/control-flow-basics.md:14
 msgid "match Expressions"
@@ -62,7 +62,7 @@ msgstr ""
 
 #: src/control-flow-basics.md:17
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/control-flow-basics.md:18
 msgid "Macros"
@@ -70,7 +70,7 @@ msgstr "巨集"
 
 #: src/control-flow-basics.md:18
 msgid "2 minutes"
-msgstr ""
+msgstr "2 分鐘"
 
 #: src/control-flow-basics.md:19
 msgid "Exercise: Collatz Sequence"
@@ -78,7 +78,7 @@ msgstr ""
 
 #: src/control-flow-basics.md:19
 msgid "15 minutes"
-msgstr ""
+msgstr "15 分鐘"
 
 #: src/control-flow-basics.md:24
 msgid "We will now cover the many kinds of flow control found in Rust."

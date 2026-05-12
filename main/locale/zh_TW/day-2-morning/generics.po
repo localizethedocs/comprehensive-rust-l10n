@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/generics.md:8
 msgid "This segment should take about 50 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 50 分鐘，內容包含："
 
 #: src/generics.md:10
 msgid "Slide"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/generics.md:12 src/generics.md:15 src/generics.md:16 src/generics.md:17
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/generics.md:13
 msgid "Trait Bounds"

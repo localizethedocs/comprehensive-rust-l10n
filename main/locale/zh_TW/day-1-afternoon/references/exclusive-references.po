@@ -23,7 +23,7 @@ msgstr ""
 
 #: src/references/exclusive.md:28
 msgid "Key points:"
-msgstr ""
+msgstr "重點："
 
 #: src/references/exclusive.md:30
 msgid ""

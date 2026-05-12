@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/concurrency/threads.md:8
 msgid "This segment should take about 30 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 30 分鐘，內容包含："
 
 #: src/concurrency/threads.md:10
 msgid "Slide"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/concurrency/threads.md:12 src/concurrency/threads.md:13
 msgid "15 minutes"
-msgstr ""
+msgstr "15 分鐘"
 
 #: src/concurrency/threads.md:13
 msgid "Scoped Threads"

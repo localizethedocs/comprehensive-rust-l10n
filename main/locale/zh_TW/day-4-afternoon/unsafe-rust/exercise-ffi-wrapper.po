@@ -28,15 +28,15 @@ msgstr ""
 
 #: src/unsafe-rust/exercise.md:14
 msgid "[`opendir(3)`](https://man7.org/linux/man-pages/man3/opendir.3.html)"
-msgstr ""
+msgstr "[`opendir(3)`](https://man7.org/linux/man-pages/man3/opendir.3.html)"
 
 #: src/unsafe-rust/exercise.md:15
 msgid "[`readdir(3)`](https://man7.org/linux/man-pages/man3/readdir.3.html)"
-msgstr ""
+msgstr "[`readdir(3)`](https://man7.org/linux/man-pages/man3/readdir.3.html)"
 
 #: src/unsafe-rust/exercise.md:16
 msgid "[`closedir(3)`](https://man7.org/linux/man-pages/man3/closedir.3.html)"
-msgstr ""
+msgstr "[`closedir(3)`](https://man7.org/linux/man-pages/man3/closedir.3.html)"
 
 #: src/unsafe-rust/exercise.md:18
 msgid ""
@@ -62,10 +62,12 @@ msgid ""
 "[`str`](https://doc.rust-lang.org/std/primitive.str.html) and [`String`]"
 "(https://doc.rust-lang.org/std/string/struct.String.html)"
 msgstr ""
+"[`str`](https://doc.rust-lang.org/std/primitive.str.html) 與 [`String`]"
+"(https://doc.rust-lang.org/std/string/struct.String.html)"
 
 #: src/unsafe-rust/exercise.md:23
 msgid "UTF-8"
-msgstr ""
+msgstr "UTF-8"
 
 #: src/unsafe-rust/exercise.md:23
 msgid "Text processing in Rust"
@@ -221,11 +223,11 @@ msgstr ""
 
 #: src/unsafe-rust/exercise.md:151
 msgid "\".\""
-msgstr ""
+msgstr "\".\""
 
 #: src/unsafe-rust/exercise.md:152
 msgid "\"files: {:#?}\""
-msgstr ""
+msgstr "\"files: {:#?}\""
 
 #: src/unsafe-rust/exercise.md:160
 msgid ""

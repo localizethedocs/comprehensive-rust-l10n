@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/concurrency/shared-state.md:8
 msgid "This segment should take about 30 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 30 分鐘，內容包含："
 
 #: src/concurrency/shared-state.md:10
 msgid "Slide"

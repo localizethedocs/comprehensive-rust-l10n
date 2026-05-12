@@ -37,7 +37,7 @@ msgstr ""
 
 #: src/android/setup.md:27
 msgid "Key points:"
-msgstr ""
+msgstr "重點："
 
 #: src/android/setup.md:29
 msgid ""

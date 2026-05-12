@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/unsafe-rust.md:8
 msgid "This segment should take about 1 hour and 15 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 1 小時又 15 分鐘，內容包含："
 
 #: src/unsafe-rust.md:10
 msgid "Slide"
@@ -34,7 +34,7 @@ msgstr ""
 #: src/unsafe-rust.md:12 src/unsafe-rust.md:14 src/unsafe-rust.md:15
 #: src/unsafe-rust.md:17
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/unsafe-rust.md:13
 msgid "Dereferencing Raw Pointers"
@@ -58,7 +58,7 @@ msgstr ""
 
 #: src/unsafe-rust.md:16
 msgid "15 minutes"
-msgstr ""
+msgstr "15 分鐘"
 
 #: src/unsafe-rust.md:17
 msgid "Unsafe Traits"
@@ -70,4 +70,4 @@ msgstr ""
 
 #: src/unsafe-rust.md:18
 msgid "30 minutes"
-msgstr ""
+msgstr "30 分鐘"

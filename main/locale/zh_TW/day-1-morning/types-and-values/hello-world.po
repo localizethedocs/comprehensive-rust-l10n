@@ -70,7 +70,7 @@ msgstr ""
 
 #: src/types-and-values/hello-world.md:35
 msgid "Key points:"
-msgstr ""
+msgstr "重點："
 
 #: src/types-and-values/hello-world.md:37
 msgid ""

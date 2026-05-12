@@ -69,12 +69,12 @@ msgstr ""
 #: src/std-types/exercise.md:71 src/std-types/exercise.md:73
 #: src/std-types/exercise.md:74
 msgid "\"apple\""
-msgstr ""
+msgstr "\"apple\""
 
 #: src/std-types/exercise.md:72
 msgid "\"orange\""
-msgstr ""
+msgstr "\"orange\""
 
 #: src/std-types/exercise.md:74
 msgid "\"got {} apples\""
-msgstr ""
+msgstr "\"got {} apples\""

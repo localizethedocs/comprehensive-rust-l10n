@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/types-and-values.md:8
 msgid "This segment should take about 40 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 40 分鐘，內容包含："
 
 #: src/types-and-values.md:10
 msgid "Slide"
@@ -34,7 +34,7 @@ msgstr ""
 #: src/types-and-values.md:12 src/types-and-values.md:13
 #: src/types-and-values.md:14
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/types-and-values.md:13
 msgid "Variables"
@@ -50,7 +50,7 @@ msgstr ""
 
 #: src/types-and-values.md:15 src/types-and-values.md:16
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/types-and-values.md:16
 msgid "Type Inference"
@@ -62,4 +62,4 @@ msgstr ""
 
 #: src/types-and-values.md:17
 msgid "15 minutes"
-msgstr ""
+msgstr "15 分鐘"

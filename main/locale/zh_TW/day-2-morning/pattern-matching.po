@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/pattern-matching.md:8
 msgid "This segment should take about 50 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 50 分鐘，內容包含："
 
 #: src/pattern-matching.md:10
 msgid "Slide"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/pattern-matching.md:12
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/pattern-matching.md:13
 msgid "Matching Values"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: src/pattern-matching.md:14 src/pattern-matching.md:15
 msgid "4 minutes"
-msgstr ""
+msgstr "4 分鐘"
 
 #: src/pattern-matching.md:15
 msgid "Destructuring Enums"
@@ -65,4 +65,4 @@ msgstr ""
 
 #: src/pattern-matching.md:17
 msgid "15 minutes"
-msgstr ""
+msgstr "15 分鐘"

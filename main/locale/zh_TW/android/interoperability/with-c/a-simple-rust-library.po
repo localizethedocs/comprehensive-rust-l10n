@@ -61,7 +61,7 @@ msgstr ""
 
 #: src/android/interoperability/with-c/rust-library.md:37
 msgid "\"libanalyze_ffi\""
-msgstr ""
+msgstr "\"libanalyze_ffi\""
 
 #: src/android/interoperability/with-c/rust-library.md:38
 msgid "\"analyze_ffi\""
@@ -73,7 +73,7 @@ msgstr ""
 
 #: src/android/interoperability/with-c/rust-library.md:40
 msgid "\".\""
-msgstr ""
+msgstr "\".\""
 
 #: src/android/interoperability/with-c/rust-library.md:46
 msgid ""

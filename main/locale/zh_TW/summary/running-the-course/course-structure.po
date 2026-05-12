@@ -181,7 +181,7 @@ msgstr ""
 #: src/running-the-course/course-structure.md:157
 #: src/running-the-course/course-structure.md:160
 msgid "30 minutes"
-msgstr ""
+msgstr "30 分鐘"
 
 #: src/running-the-course/course-structure.md:50
 msgid "Standard Library Types"
@@ -234,7 +234,7 @@ msgstr ""
 
 #: src/running-the-course/course-structure.md:77
 msgid "Modules"
-msgstr ""
+msgstr "模組"
 
 #: src/running-the-course/course-structure.md:78
 msgid "Testing"

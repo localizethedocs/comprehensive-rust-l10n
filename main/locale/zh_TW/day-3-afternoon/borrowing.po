@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/borrowing.md:8
 msgid "This segment should take about 1 hour and 15 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 1 小時又 15 分鐘，內容包含："
 
 #: src/borrowing.md:10
 msgid "Slide"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: src/borrowing.md:14
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/borrowing.md:15
 msgid "Interior Mutability"

@@ -17,7 +17,7 @@ msgstr "值組與陣列"
 
 #: src/tuples-and-arrays.md:8
 msgid "This segment should take about 35 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 35 分鐘，內容包含："
 
 #: src/tuples-and-arrays.md:10
 msgid "Slide"

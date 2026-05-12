@@ -45,7 +45,7 @@ msgstr ""
 
 #: src/cargo/rust-ecosystem.md:26
 msgid "Key points:"
-msgstr ""
+msgstr "重點："
 
 #: src/cargo/rust-ecosystem.md:28
 msgid ""

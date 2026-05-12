@@ -91,7 +91,7 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:53
 msgid "This segment should take about 7 hours and 30 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 7 小時又 30 分鐘，內容包含："
 
 #: src/idiomatic/leveraging-the-type-system.md:55
 msgid "Slide"
@@ -103,7 +103,7 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:57
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/idiomatic/leveraging-the-type-system.md:58
 msgid "Newtype Pattern"
@@ -111,7 +111,7 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:58
 msgid "20 minutes"
-msgstr ""
+msgstr "20 分鐘"
 
 #: src/idiomatic/leveraging-the-type-system.md:59
 msgid "RAII"
@@ -119,7 +119,7 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:59
 msgid "1 hour and 50 minutes"
-msgstr ""
+msgstr "1 小時又 50 分鐘"
 
 #: src/idiomatic/leveraging-the-type-system.md:60
 msgid "Extension Traits"
@@ -128,7 +128,7 @@ msgstr ""
 #: src/idiomatic/leveraging-the-type-system.md:60
 #: src/idiomatic/leveraging-the-type-system.md:61
 msgid "1 hour and 5 minutes"
-msgstr ""
+msgstr "1 小時又 5 分鐘"
 
 #: src/idiomatic/leveraging-the-type-system.md:61
 msgid "Typestate Pattern"
@@ -140,7 +140,7 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:62
 msgid "1 hour and 30 minutes"
-msgstr ""
+msgstr "1 小時又 30 分鐘"
 
 #: src/idiomatic/leveraging-the-type-system.md:63
 msgid "Token Types"
@@ -148,4 +148,4 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:63
 msgid "1 hour and 35 minutes"
-msgstr ""
+msgstr "1 小時又 35 分鐘"

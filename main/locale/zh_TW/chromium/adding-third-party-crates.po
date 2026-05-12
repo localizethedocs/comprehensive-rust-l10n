@@ -36,7 +36,7 @@ msgstr ""
 
 #: src/chromium/adding-third-party-crates.md:13
 msgid "Build system"
-msgstr ""
+msgstr "建置系統"
 
 #: src/chromium/adding-third-party-crates.md:13
 #: src/chromium/adding-third-party-crates.md:15

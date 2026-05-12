@@ -41,7 +41,7 @@ msgstr ""
 
 #: src/unsafe-deep-dive/pinning.md:17
 msgid "This segment should take about 1 hour and 20 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 1 小時又 20 分鐘，內容包含："
 
 #: src/unsafe-deep-dive/pinning.md:19
 msgid "Slide"
@@ -58,7 +58,7 @@ msgstr ""
 #: src/unsafe-deep-dive/pinning.md:21 src/unsafe-deep-dive/pinning.md:22
 #: src/unsafe-deep-dive/pinning.md:23
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/unsafe-deep-dive/pinning.md:22
 msgid "Definition of Pin"
@@ -82,7 +82,7 @@ msgstr ""
 
 #: src/unsafe-deep-dive/pinning.md:25
 msgid "15 minutes"
-msgstr ""
+msgstr "15 分鐘"
 
 #: src/unsafe-deep-dive/pinning.md:30
 msgid ""

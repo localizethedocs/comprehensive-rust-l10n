@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/methods-and-traits.md:8
 msgid "This segment should take about 45 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 45 分鐘，內容包含："
 
 #: src/methods-and-traits.md:10
 msgid "Slide"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: src/methods-and-traits.md:13 src/methods-and-traits.md:15
 msgid "15 minutes"
-msgstr ""
+msgstr "15 分鐘"
 
 #: src/methods-and-traits.md:14
 msgid "Deriving"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: src/methods-and-traits.md:14
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/methods-and-traits.md:15
 msgid "Exercise: Generic Logger"

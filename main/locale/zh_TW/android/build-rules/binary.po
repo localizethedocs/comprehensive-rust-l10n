@@ -31,7 +31,7 @@ msgstr ""
 
 #: src/android/build-rules/binary.md:17
 msgid "\"src/main.rs\""
-msgstr ""
+msgstr "\"src/main.rs\""
 
 #: src/android/build-rules/binary.md:21
 msgid "_hello_rust/src/main.rs_:"

@@ -35,7 +35,7 @@ msgstr ""
 
 #: src/concurrency/async/async-await.md:34
 msgid "Key points:"
-msgstr ""
+msgstr "重點："
 
 #: src/concurrency/async/async-await.md:36
 msgid ""

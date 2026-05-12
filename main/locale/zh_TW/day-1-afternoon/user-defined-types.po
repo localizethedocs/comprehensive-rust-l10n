@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/user-defined-types.md:8
 msgid "This segment should take about 1 hour. It contains:"
-msgstr ""
+msgstr "本節大約需要 1 小時，內容包含："
 
 #: src/user-defined-types.md:10
 msgid "Slide"

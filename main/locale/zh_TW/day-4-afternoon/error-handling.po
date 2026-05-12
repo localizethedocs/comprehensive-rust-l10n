@@ -17,7 +17,7 @@ msgstr "錯誤處理"
 
 #: src/error-handling.md:8
 msgid "This segment should take about 55 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 55 分鐘，內容包含："
 
 #: src/error-handling.md:10
 msgid "Slide"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/error-handling.md:12
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/error-handling.md:13
 msgid "Result"
@@ -42,7 +42,7 @@ msgstr ""
 #: src/error-handling.md:13 src/error-handling.md:14 src/error-handling.md:15
 #: src/error-handling.md:16 src/error-handling.md:17 src/error-handling.md:18
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/error-handling.md:14
 msgid "Try Operator"
@@ -70,4 +70,4 @@ msgstr ""
 
 #: src/error-handling.md:19
 msgid "20 minutes"
-msgstr ""
+msgstr "20 分鐘"

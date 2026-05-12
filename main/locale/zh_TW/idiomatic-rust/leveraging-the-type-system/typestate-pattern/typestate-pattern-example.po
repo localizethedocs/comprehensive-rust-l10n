@@ -31,39 +31,39 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:28
 msgid "\"{name} {{\""
-msgstr ""
+msgstr "\"{name} {{\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:39
 msgid "\"  {key}={value};\""
-msgstr ""
+msgstr "\"  {key}={value};\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:44
 msgid "\"}\\n\""
-msgstr ""
+msgstr "\"}\\n\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:51
 msgid "\"User\""
-msgstr ""
+msgstr "\"User\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:52
 msgid "\"id\""
-msgstr ""
+msgstr "\"id\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:52
 msgid "\"42\""
-msgstr ""
+msgstr "\"42\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:53
 msgid "\"name\""
-msgstr ""
+msgstr "\"name\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:53
 msgid "\"Alice\""
-msgstr ""
+msgstr "\"Alice\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:56
 msgid "\"{}\""
-msgstr ""
+msgstr "\"{}\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-example.md:60
 msgid "`Serializer` usage flowchart:"

@@ -88,7 +88,7 @@ msgstr ""
 
 #: src/concurrency/welcome-async.md:39
 msgid "20 minutes"
-msgstr ""
+msgstr "20 分鐘"
 
 #: src/concurrency/welcome-async.md:40
 msgid "Pitfalls"
@@ -96,7 +96,7 @@ msgstr ""
 
 #: src/concurrency/welcome-async.md:40
 msgid "55 minutes"
-msgstr ""
+msgstr "55 分鐘"
 
 #: src/concurrency/welcome-async.md:41
 msgid "Exercises"
@@ -104,4 +104,4 @@ msgstr ""
 
 #: src/concurrency/welcome-async.md:41
 msgid "1 hour and 10 minutes"
-msgstr ""
+msgstr "1 小時又 10 分鐘"

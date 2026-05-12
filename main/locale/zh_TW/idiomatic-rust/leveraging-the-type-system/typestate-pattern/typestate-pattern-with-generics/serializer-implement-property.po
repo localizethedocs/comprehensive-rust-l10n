@@ -32,7 +32,7 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/property.md:27
 msgid "\"{name} {{\""
-msgstr ""
+msgstr "\"{name} {{\""
 
 #: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/property.md:37
 msgid "\"[\""

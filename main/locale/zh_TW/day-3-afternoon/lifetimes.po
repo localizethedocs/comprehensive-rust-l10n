@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/lifetimes.md:8
 msgid "This segment should take about 1 hour and 5 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 1 小時又 5 分鐘，內容包含："
 
 #: src/lifetimes.md:10
 msgid "Slide"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/lifetimes.md:12
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/lifetimes.md:13
 msgid "Returning Borrows"
@@ -42,7 +42,7 @@ msgstr ""
 #: src/lifetimes.md:13 src/lifetimes.md:14 src/lifetimes.md:15
 #: src/lifetimes.md:16 src/lifetimes.md:17 src/lifetimes.md:18
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/lifetimes.md:14
 msgid "Multiple Borrows"
@@ -70,4 +70,4 @@ msgstr ""
 
 #: src/lifetimes.md:19
 msgid "30 minutes"
-msgstr ""
+msgstr "30 分鐘"

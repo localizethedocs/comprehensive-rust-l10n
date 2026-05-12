@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/concurrency/async.md:8
 msgid "This segment should take about 40 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 40 分鐘，內容包含："
 
 #: src/concurrency/async.md:10
 msgid "Slide"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: src/concurrency/async.md:13
 msgid "4 minutes"
-msgstr ""
+msgstr "4 分鐘"
 
 #: src/concurrency/async.md:14
 msgid "State Machine"

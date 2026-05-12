@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/concurrency/sync-exercises.md:8
 msgid "This segment should take about 1 hour and 10 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 1 小時又 10 分鐘，內容包含："
 
 #: src/concurrency/sync-exercises.md:10
 msgid "Slide"
@@ -45,4 +45,4 @@ msgstr ""
 
 #: src/concurrency/sync-exercises.md:14
 msgid "30 minutes"
-msgstr ""
+msgstr "30 分鐘"

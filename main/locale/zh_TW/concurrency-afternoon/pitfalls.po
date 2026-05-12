@@ -25,7 +25,7 @@ msgstr ""
 
 #: src/concurrency/async-pitfalls.md:12
 msgid "This segment should take about 55 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 55 分鐘，內容包含："
 
 #: src/concurrency/async-pitfalls.md:14
 msgid "Slide"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: src/concurrency/async-pitfalls.md:17 src/concurrency/async-pitfalls.md:19
 msgid "20 minutes"
-msgstr ""
+msgstr "20 分鐘"
 
 #: src/concurrency/async-pitfalls.md:18
 msgid "Async Traits"
@@ -57,7 +57,7 @@ msgstr ""
 
 #: src/concurrency/async-pitfalls.md:18
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/concurrency/async-pitfalls.md:19
 msgid "Cancellation"

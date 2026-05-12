@@ -68,7 +68,7 @@ msgstr ""
 
 #: src/welcome-day-4.md:24
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/welcome-day-4.md:25
 msgid "Iterators"
@@ -76,11 +76,11 @@ msgstr ""
 
 #: src/welcome-day-4.md:25
 msgid "55 minutes"
-msgstr ""
+msgstr "55 分鐘"
 
 #: src/welcome-day-4.md:26
 msgid "Modules"
-msgstr ""
+msgstr "模組"
 
 #: src/welcome-day-4.md:26 src/welcome-day-4.md:27
 msgid "45 minutes"

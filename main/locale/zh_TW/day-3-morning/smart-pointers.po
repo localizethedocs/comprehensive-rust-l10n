@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/smart-pointers.md:8
 msgid "This segment should take about 55 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 55 分鐘，內容包含："
 
 #: src/smart-pointers.md:10
 msgid "Slide"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: src/smart-pointers.md:13
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/smart-pointers.md:14
 msgid "Owned Trait Objects"
@@ -53,4 +53,4 @@ msgstr ""
 
 #: src/smart-pointers.md:15
 msgid "30 minutes"
-msgstr ""
+msgstr "30 分鐘"

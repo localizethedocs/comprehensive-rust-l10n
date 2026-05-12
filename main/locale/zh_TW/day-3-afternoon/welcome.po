@@ -43,4 +43,4 @@ msgstr ""
 
 #: src/welcome-day-3-afternoon.md:13
 msgid "1 hour and 5 minutes"
-msgstr ""
+msgstr "1 小時又 5 分鐘"

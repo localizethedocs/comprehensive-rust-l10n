@@ -192,7 +192,7 @@ msgstr ""
 
 #: src/memory-management/move.md:164
 msgid "Key points:"
-msgstr ""
+msgstr "重點："
 
 #: src/memory-management/move.md:166
 msgid ""

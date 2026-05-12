@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/std-types.md:8
 msgid "This segment should take about 1 hour. It contains:"
-msgstr ""
+msgstr "本節大約需要 1 小時，內容包含："
 
 #: src/std-types.md:10
 msgid "Slide"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/std-types.md:12
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/std-types.md:13
 msgid "Documentation"
@@ -42,7 +42,7 @@ msgstr ""
 #: src/std-types.md:13 src/std-types.md:15 src/std-types.md:16
 #: src/std-types.md:17 src/std-types.md:18
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/std-types.md:14
 msgid "Option"

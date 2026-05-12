@@ -13,11 +13,11 @@ msgstr ""
 
 #: src/modules.md:6 src/modules.md:12
 msgid "Modules"
-msgstr ""
+msgstr "模組"
 
 #: src/modules.md:8
 msgid "This segment should take about 45 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 45 分鐘，內容包含："
 
 #: src/modules.md:10
 msgid "Slide"
@@ -29,7 +29,7 @@ msgstr ""
 
 #: src/modules.md:12
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/modules.md:13
 msgid "Filesystem Hierarchy"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: src/modules.md:13 src/modules.md:14 src/modules.md:15
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/modules.md:14
 msgid "Visibility"
@@ -61,4 +61,4 @@ msgstr ""
 
 #: src/modules.md:17
 msgid "15 minutes"
-msgstr ""
+msgstr "15 分鐘"

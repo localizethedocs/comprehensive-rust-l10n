@@ -27,7 +27,7 @@ msgstr ""
 
 #: src/unsafe-deep-dive/introduction.md:13
 msgid "This segment should take about 1 hour and 10 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 1 小時又 10 分鐘，內容包含："
 
 #: src/unsafe-deep-dive/introduction.md:15
 msgid "Slide"
@@ -46,7 +46,7 @@ msgstr ""
 #: src/unsafe-deep-dive/introduction.md:19
 #: src/unsafe-deep-dive/introduction.md:23
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/unsafe-deep-dive/introduction.md:18
 msgid "Purpose of the unsafe keyword"
@@ -70,7 +70,7 @@ msgstr ""
 
 #: src/unsafe-deep-dive/introduction.md:21
 msgid "15 minutes"
-msgstr ""
+msgstr "15 分鐘"
 
 #: src/unsafe-deep-dive/introduction.md:22
 msgid "Responsibility shift"
@@ -78,7 +78,7 @@ msgstr ""
 
 #: src/unsafe-deep-dive/introduction.md:22
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/unsafe-deep-dive/introduction.md:23
 msgid "Stronger development workflow required"

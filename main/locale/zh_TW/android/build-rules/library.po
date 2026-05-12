@@ -44,7 +44,7 @@ msgstr ""
 
 #: src/android/build-rules/library.md:24
 msgid "\"src/main.rs\""
-msgstr ""
+msgstr "\"src/main.rs\""
 
 #: src/android/build-rules/library.md:26 src/android/build-rules/library.md:33
 msgid "\"libgreetings\""

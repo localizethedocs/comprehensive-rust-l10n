@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/modules/modules.md:6
 msgid "Modules"
-msgstr ""
+msgstr "模組"
 
 #: src/modules/modules.md:8
 msgid "We have seen how `impl` blocks let us namespace functions to a type."

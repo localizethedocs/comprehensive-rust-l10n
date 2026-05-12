@@ -18,7 +18,7 @@ msgstr ""
 
 #: src/idiomatic/foundations-api-design.md:8
 msgid "This segment should take about 3 hours and 30 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 3 小時又 30 分鐘，內容包含："
 
 #: src/idiomatic/foundations-api-design.md:10
 msgid "Slide"
@@ -30,7 +30,7 @@ msgstr ""
 
 #: src/idiomatic/foundations-api-design.md:12
 msgid "2 minutes"
-msgstr ""
+msgstr "2 分鐘"
 
 #: src/idiomatic/foundations-api-design.md:13
 msgid "Meaningful Doc Comments"
@@ -38,7 +38,7 @@ msgstr ""
 
 #: src/idiomatic/foundations-api-design.md:13
 msgid "1 hour and 25 minutes"
-msgstr ""
+msgstr "1 小時又 25 分鐘"
 
 #: src/idiomatic/foundations-api-design.md:14
 msgid "Predictable API"
@@ -46,4 +46,4 @@ msgstr ""
 
 #: src/idiomatic/foundations-api-design.md:14
 msgid "2 hours and 5 minutes"
-msgstr ""
+msgstr "2 小時又 5 分鐘"

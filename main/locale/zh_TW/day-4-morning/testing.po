@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/testing.md:8
 msgid "This segment should take about 45 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 45 分鐘，內容包含："
 
 #: src/testing.md:10
 msgid "Slide"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/testing.md:12 src/testing.md:13
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/testing.md:13
 msgid "Other Types of Tests"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: src/testing.md:14
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/testing.md:15
 msgid "Exercise: Luhn Algorithm"
@@ -53,4 +53,4 @@ msgstr ""
 
 #: src/testing.md:15
 msgid "30 minutes"
-msgstr ""
+msgstr "30 分鐘"

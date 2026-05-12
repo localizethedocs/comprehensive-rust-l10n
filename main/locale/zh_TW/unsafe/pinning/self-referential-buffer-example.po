@@ -49,7 +49,7 @@ msgstr ""
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md:30
 msgid "This segment should take about 1 hour and 20 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 1 小時又 20 分鐘，內容包含："
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md:32
 msgid "Slide"
@@ -67,7 +67,7 @@ msgstr ""
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md:35
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md:36
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md:35
 msgid "Definition of Pin"
@@ -87,4 +87,4 @@ msgstr ""
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer.md:38
 msgid "15 minutes"
-msgstr ""
+msgstr "15 分鐘"

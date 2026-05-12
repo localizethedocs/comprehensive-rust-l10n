@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/closures.md:8
 msgid "This segment should take about 30 minutes. It contains:"
-msgstr ""
+msgstr "本節大約需要 30 分鐘，內容包含："
 
 #: src/closures.md:10
 msgid "Slide"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/closures.md:12
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分鐘"
 
 #: src/closures.md:13
 msgid "Capturing"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: src/closures.md:13
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: src/closures.md:14
 msgid "Closure Traits"
