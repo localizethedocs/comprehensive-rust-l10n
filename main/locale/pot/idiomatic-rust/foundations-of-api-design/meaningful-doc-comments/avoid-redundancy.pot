@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:6
@@ -146,8 +146,8 @@ msgstr ""
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:82
 msgid ""
 "Don't explain the basics of Rust or the standard library. Assume the reader "
-"of doc comments has an intermediate understanding of the language itself. "
-"Focus on documenting your API."
+"has an intermediate understanding of the language itself. Focus on "
+"documenting your API."
 msgstr ""
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:86
@@ -157,30 +157,17 @@ msgid ""
 msgstr ""
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:89
-msgid ""
-"If there is a complex topic involved with the functions and types you're "
-"documenting, signpost to a \"source of truth\" if one exists such as an "
-"internal document, a paper, a blog post etc."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:93
-msgid ""
-"Collaborate with Students: Go through the methods in the slide and discuss "
-"what might be relevant to an API user."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:96
 msgid "More to Explore"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:98
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:91
 msgid ""
 "The `#![warn(missing_docs)]` lint can be helpful for enforcing the existence "
 "of doc comments, but puts a large burden on developers that could lead to "
 "leaning onto these patterns of writing low-quality comments."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:102
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/avoid-redundancy.md:95
 msgid ""
 "This kind of lint should only be enabled if the people maintaining a project "
 "can afford to keep up with its demands, and usually only for library-style "

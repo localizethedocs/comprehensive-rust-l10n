@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/new.md:6
@@ -29,22 +29,18 @@ msgstr ""
 msgid "// SPDX-License-Identifier: Apache-2.0\n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/new.md:16
-msgid "// Creates an empty vec.\n"
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/new.md:27
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/new.md:26
 msgid ""
 "There's no `new` keyword for Rust to initialize a new value, only functions "
 "you call or values you directly populate."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/new.md:30
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/new.md:29
 msgid ""
 "`new` is conventional for the \"default\" constructor function for a type. "
 "It holds no special syntactic meaning."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/new.md:33
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/new.md:32
 msgid "This is sometimes a prefix, it sometimes takes arguments."
 msgstr ""

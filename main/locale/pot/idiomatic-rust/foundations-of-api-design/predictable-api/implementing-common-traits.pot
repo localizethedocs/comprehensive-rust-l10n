@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits.md:6
@@ -23,19 +23,26 @@ msgstr ""
 msgid "// SPDX-License-Identifier: Apache-2.0\n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/common-traits.md:23
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits.md:22
+msgid ""
+"Traits are one of the most potent tools in the Rust language. The language "
+"and ecosystem expects you to use them, and so a big part of _predictability_ "
+"is what traits are implemented for a type!"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits.md:26
 msgid ""
 "Traits should be liberally implemented on types you author, but there are "
 "caveats!"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/common-traits.md:26
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits.md:29
 msgid ""
 "Remember, many traits have the ability to be _derived_: to have a compiler "
 "plugin (macro) write the implementation for you!"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/common-traits.md:29
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits.md:32
 msgid ""
 "Authors of ecosystem traits (like De/Serialize) have made derive "
 "implementations for traits available to users, leading to very little "

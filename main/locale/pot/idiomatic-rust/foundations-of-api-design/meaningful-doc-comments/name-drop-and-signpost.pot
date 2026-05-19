@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:6
@@ -25,21 +25,23 @@ msgstr ""
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:11
 msgid ""
-"/// A parsed representation of a MARC 21 record\n"
-"/// [leader](//www.loc.gov/marc/bibliographic/bdleader.html).  \n"
+"/// A parsed representation of a [MARC 21 record leader][leader].\n"
+"///\n"
 "/// A MARC leader contains metadata that dictates how to interpret the "
 "rest  \n"
 "/// of the record.\n"
+"///\n"
+"/// [leader]: https://www.loc.gov/marc/bibliographic/bdleader.html\n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:17
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:19
 msgid ""
 "/// Determines the schema and the set of valid subsequent data fields.  \n"
 "    ///\n"
 "    /// Encoded in byte 6 of the leader.  \n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:22
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:24
 msgid ""
 "/// Indicates whether to parse relationship fields, such as a \"773 Host  \n"
 "    /// Item Entry\" for an article within a larger work.  \n"
@@ -47,99 +49,100 @@ msgid ""
 "    /// Encoded in byte 7 of the leader.  \n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:27
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:29
 msgid "// ... other fields\n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:29
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:31
 msgid ""
-"/// Parses the [leader of a MARC 21 record](https://www.loc.gov/marc/"
-"bibliographic/bdleader.html).  \n"
+"/// Parses the [leader of a MARC 21 record][leader].\n"
 "///  \n"
 "/// The leader is encoded as a fixed-length 24-byte field, containing "
 "metadata  \n"
 "/// that determines the semantic interpretation of the rest of the "
 "record.  \n"
+"/// \n"
+"/// [leader]: https://www.loc.gov/marc/bibliographic/bdleader.html\n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:44
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:48
 msgid ""
 "Motivation: Readers of documentation will not be closely reading most of "
 "your doc comments like they would dialogue in a novel they love."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:47
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:51
 msgid ""
 "Users will most likely be skimming and scan-reading to find the part of the "
 "documentation that is relevant to whatever problem they're trying to solve "
 "in the moment."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:51
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:55
 msgid ""
 "Once a user has found a keyword or potential signpost that's relevant to "
 "them they will begin to search for context surrounding what is being "
 "documented."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:54
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:58
 msgid ""
 "Ask the class: What do you look for in documentation? Focus on the moment-to-"
 "moment searching for information here, not general values in documentation."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:58
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:62
 msgid "Name-drop keywords close to the beginning of a paragraph."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:60
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:64
 msgid ""
 "This aids skimming and scanning, as the first few words of a paragraph stand "
 "out the most."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:63
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:67
 msgid ""
 "Skimming and scanning lets users quickly navigate a text, keeping keywords "
 "as close to the beginning of a paragraph as possible lets a user determine "
 "if they've found relevant information faster."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:67
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:71
 msgid "Signpost, but don't over-explain."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:69
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:73
 msgid ""
 "Users will not necessarily have the same domain expertise as an API designer."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:71
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:75
 msgid ""
 "If a tangential, specialist term or acronym is mentioned try to bring in "
 "enough context such that a novice could quickly do more research."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:74
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:78
 msgid ""
 "Signposting often happens organically, consider a networking library that "
 "mentions various protocols. But when it doesn't happen organically, it can "
 "be difficult to choose what to mention."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:78
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:82
 msgid ""
 "Rule of thumb: API developers should be asking themselves \"if a novice ran "
 "into what they are documenting, what sources would they look up and are "
 "there any red herrings they might end up following\"?"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:82
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:86
 msgid ""
 "Users should be given enough information to look up subjects on their own."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:84
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md:88
 msgid ""
 "What we've already covered, predictability of an API including the naming "
 "conventions, is a form of signposting."

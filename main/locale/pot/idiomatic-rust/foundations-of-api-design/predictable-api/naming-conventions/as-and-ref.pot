@@ -1,118 +1,63 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:6
 msgid "`as_` and `_ref`: reference conversions"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:8
-msgid ""
-"`as` is a prefix for methods that convert references. `ref` is a suffix (but "
-"prefer `as`.)"
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:11
-msgid "`as` methods borrow out the primary piece of data contained in `&self`."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:13
-msgid ""
-"Most commonly return references, but can also return a custom borrowing type "
-"or an unsafe pointer."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:17
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:65
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:78
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:9
 msgid "// Copyright 2025 Google LLC\n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:18
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:66
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:79
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:10
 msgid "// SPDX-License-Identifier: Apache-2.0\n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:23
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:13
 msgid "// Very common on container types, see how it's also on Option.\n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:29
-msgid "// Slices can be empty! So this is 0 or 1 elements.\n"
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:34
-msgid "// Covered later.\n"
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:41
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:28
 msgid "Method that returns a borrow of the primary piece of contained data."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:43
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:30
 msgid ""
 "The borrowing relationship is most often straightforward: the return value "
 "is a reference that borrows `self`."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:46
-msgid "Borrowing can also be subtle, and merely implied."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:48
-msgid ""
-"The returned value could be a custom borrowing type, fore example, "
-"`BorrowedFd` borrows `OwnedFd` through an explicit lifetime."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:51
-msgid ""
-"We cover custom borrowing types later in this deep dive, [PhantomData: "
-"OwnedFd & BorrowedFd](../../../leveraging-the-type-system/borrow-checker-"
-"invariants/phantomdata-04-borrowedfd.md)."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:54
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:33
 msgid ""
 "The returned value could borrow `self` only logically, for example, "
 "`as_ptr()` methods return an unsafe pointer. The borrow checker does not "
 "track borrowing for pointers."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:58
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:37
 msgid ""
 "The type implementing an \"as\" method should contain one primary piece of "
 "data that is being borrowed out."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:61
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:40
 msgid ""
 "The \"as\" naming convention does not work if the data type is an aggregate "
-"of many fields without an obvious primary one. Think about the call site:"
+"of many fields without an obvious primary one."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:68
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:70
-msgid "// OK\n"
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:69
-msgid "// does not read right, don't use \"as_\"\n"
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:73
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/as-and-ref.md:43
 msgid ""
-"If you want to have two getters that you need to distinguish, one that "
-"returns first name by value, and another one that returns it by reference, "
-"use `_ref` suffix:"
+"If you have two reference getters that you need to distinguish, use the "
+"`_ref` suffix."
 msgstr ""
