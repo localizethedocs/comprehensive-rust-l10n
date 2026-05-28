@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -42,29 +42,25 @@ msgid ""
 "permits valid transitions, as illustrated in the following diagram:"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:34
-msgid "Diagram of valid transitions:"
-msgstr ""
-
-#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:52
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:36
 msgid ""
 "By leveraging generics to track the parent context, we can construct "
 "arbitrarily nested serializers that enforce valid transitions between "
 "struct, list, and property states."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:56
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:40
 msgid ""
 "This enables us to build a recursive structure while maintaining strict "
 "control over which methods are accessible in each state."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:59
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:43
 msgid ""
 "Methods common to all states can be defined for any `S` in `Serializer<S>`."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:61
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:45
 msgid ""
 "Marker types (e.g., `List<S>`) introduce no memory or runtime overhead, as "
 "they contain no data other than a possible Zero-Sized Type. Their only role "

@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-02-24 17:44:52 +0000",
-        "hash" : "ac4a3c79ba5a726ef10dfbbfb0ec64ca8ff51da6",
-        "title" : "Reduce complexity on heterogeneous data slide (#3109)"
+        "date" : "2026-05-05 16:24:02 +0100",
+        "hash" : "c56f6fdcf8df9547b0275d579dc0f9e7f8675238",
+        "title" : "Add script to check that deleted slides have redirects (#3174)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-02-24 17:44:52 +0000",
-        "hash" : "ac4a3c79ba5a726ef10dfbbfb0ec64ca8ff51da6",
-        "title" : "Reduce complexity on heterogeneous data slide (#3109)"
+        "date" : "2026-05-05 16:24:02 +0100",
+        "hash" : "c56f6fdcf8df9547b0275d579dc0f9e7f8675238",
+        "title" : "Add script to check that deleted slides have redirects (#3174)"
       }
     }
   },

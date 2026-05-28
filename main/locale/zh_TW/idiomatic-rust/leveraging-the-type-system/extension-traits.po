@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,9 +17,9 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md:8
 msgid ""
-"It may desirable to **extend** foreign types with new inherent methods. For "
-"example, allow your code to check if a string is a palindrome using method-"
-"calling syntax: `s.is_palindrome()`."
+"It may desirable to **extend** foreign types with new methods. For example, "
+"allow your code to check if a string is a palindrome using method-calling "
+"syntax: `s.is_palindrome()`."
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits.md:12

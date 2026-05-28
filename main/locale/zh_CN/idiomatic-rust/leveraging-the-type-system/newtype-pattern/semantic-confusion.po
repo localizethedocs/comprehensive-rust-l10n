@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -22,62 +22,62 @@ msgid ""
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:12
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:31
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:62
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:34
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:67
 msgid "// Copyright 2025 Google LLC\n"
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:13
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:32
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:63
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:35
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:68
 msgid "// SPDX-License-Identifier: Apache-2.0\n"
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:17
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:39
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:42
 msgid "// [...]\n"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:21
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:43
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:70
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:22
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:47
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:75
 msgid "\"password\""
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:22
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:44
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:71
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:23
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:48
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:76
 msgid "\"username\""
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:22
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:25
 msgid ""
 "// In another part of the codebase, we swap arguments by mistake.\n"
-"// Bug (best case), security vulnerability (worst case)\n"
+"    // Bug (best case), security vulnerability (worst case)\n"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:28
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:31
 msgid "The newtype pattern can prevent this class of errors at compile time:"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:45
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:49
 msgid "// 🛠️❌\n"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:50
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:55
 msgid ""
 "Run both examples to show students the successful compilation for the "
 "original example, and the compiler error returned by the modified example."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:53
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:58
 msgid ""
 "Stress the _semantic_ angle. The newtype pattern should be leveraged to use "
 "distinct types for distinct concepts, thus ruling out this class of errors "
 "entirely."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:57
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:62
 msgid ""
 "Nonetheless, note that there are legitimate scenarios where a function may "
 "take multiple arguments of the same type. In those scenarios, if correctness "
@@ -85,13 +85,13 @@ msgid ""
 "input:"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:73
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:78
 msgid ""
 "// No need to check the definition of the `login` function to spot the "
 "issue.\n"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:79
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/semantic-confusion.md:84
 msgid ""
 "Users are forced, at the callsite, to assign values to each field, thus "
 "increasing the likelihood of spotting bugs."

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,38 +16,34 @@ msgid "`into`"
 msgstr ""
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:8
-msgid "Prefix for methods that convert `self` into another type."
+msgid ""
+"Prefix for methods that convert `self` into another type. Consumes `self`, "
+"returns an owned value."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:10
-msgid "Consumes `self`, returns an owned value."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:13
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:12
 msgid "// Copyright 2025 Google LLC\n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:14
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:13
 msgid "// SPDX-License-Identifier: Apache-2.0\n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:28
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:26
+msgid ""
+"Prefix for a function that consumes an owned value and transforms it into a "
+"value of another type."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:29
 msgid ""
 "Not reinterpret cast! The data can be rearranged, reallocated, changed in "
 "any way, including losing information."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:31
-msgid "corollary to `From`"
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:33
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:32
 msgid ""
 "`into_iter` consumes a collection (like a vec, or a btreeset, or a hashmap) "
 "and produces an iterator over owned values, unlike `iter` and `iter_mut` "
 "which produce iterators over reference values."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:37
-msgid "Ask the class: what will `Vec::into_raw_parts` do?"
 msgstr ""

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -70,8 +70,8 @@ msgstr ""
 
 #: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:56
 msgid ""
-"For operations like equality, comparison this allows for comparison and "
-"equality that throws and error or otherwise panics."
+"For operations like equality or comparison this allows for comparison and "
+"equality that throws an error or otherwise panics."
 msgstr ""
 
 #: src/idiomatic/polymorphism/from-oop-to-rust/why-no-inheritance.md:59

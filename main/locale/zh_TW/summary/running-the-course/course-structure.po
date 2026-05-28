@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -412,7 +412,7 @@ msgid ""
 msgstr ""
 
 #: src/running-the-course/course-structure.md:185
-msgid "Morning (14 hours and 25 minutes, including breaks)"
+msgid "Morning (14 hours and 10 minutes, including breaks)"
 msgstr ""
 
 #: src/running-the-course/course-structure.md:189
@@ -420,8 +420,8 @@ msgid "Foundations of API Design"
 msgstr ""
 
 #: src/running-the-course/course-structure.md:189
-msgid "3 hours and 30 minutes"
-msgstr "3 小時又 30 分鐘"
+msgid "3 hours and 15 minutes"
+msgstr ""
 
 #: src/running-the-course/course-structure.md:190
 msgid "Leveraging the Type System"
@@ -465,3 +465,6 @@ msgid ""
 "The course is meant to be very interactive and we recommend letting the "
 "questions drive the exploration of Rust!"
 msgstr ""
+
+#~ msgid "3 hours and 30 minutes"
+#~ msgstr "3 小時又 30 分鐘"

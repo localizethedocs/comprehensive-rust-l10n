@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -89,7 +89,7 @@ msgstr ""
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md:70
 msgid ""
 "Note: This slide compiles, by the end of this slide it should only compile "
-"when `subtyped_lifetimes` is commented out."
+"when `try_coerce_lifetimes` is commented out."
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md:73

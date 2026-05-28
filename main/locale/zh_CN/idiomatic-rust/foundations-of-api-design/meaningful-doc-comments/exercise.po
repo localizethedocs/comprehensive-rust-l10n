@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -34,43 +34,32 @@ msgid "/// Sorts a slice. Implemented using recursive quicksort.\n"
 msgstr ""
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:21
-msgid ""
-"Consider the example here, we discussed in [what and why, not how and where]"
-"(what-why-not-how-where.md) that internal details are unlikely relevant to "
-"someone reading documentation."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:25
-msgid "Here we're discussing a counterexample."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:27
 msgid "Ask the class: Is this comment necessary for this function?"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:29
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:23
 msgid ""
 "Narrative: Playing the part of an intermediary between the class and the "
 "author, such as a PM, manager, etc. tell the class that the author of this "
 "function is pushing back."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:33
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:27
 msgid "Ask the class: Why would an author of this kind of comment push back?"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:35
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:29
 msgid ""
 "If the class asks why the author is pushing back, do not give details yet."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:37
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:31
 msgid ""
 "Ask the class: Why would the caller need to know the sorting algorithm in "
 "use?"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:39
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:33
 msgid ""
 "Narrative: \"Come back\" from a meeting with the original author, explain to "
 "the class that this function is application code that is called on untrusted "
@@ -78,19 +67,19 @@ msgid ""
 "sorting](https://www.cs.dartmouth.edu/~doug/mdmspe.pdf)."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:44
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:38
 msgid ""
 "Ask the class: Now we have more detail, how should we comment this function?"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:46
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:40
 msgid ""
 "The point being implementation detail vs not depends a lot on what the "
 "public contract is (e.g., can you supply untrusted data or not), and this "
 "requires careful judgement."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:50
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/exercise.md:44
 msgid ""
 "Consider if a comment is explaining that a for-loop is used (unnecessary "
 "detail) or if it is explaining that the algorithms used internally have "

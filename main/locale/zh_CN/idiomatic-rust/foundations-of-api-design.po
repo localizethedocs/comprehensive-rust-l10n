@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,7 +17,7 @@ msgid "Foundations of API Design"
 msgstr ""
 
 #: src/idiomatic/foundations-api-design.md:8
-msgid "This segment should take about 3 hours and 30 minutes. It contains:"
+msgid "This segment should take about 3 hours and 15 minutes. It contains:"
 msgstr ""
 
 #: src/idiomatic/foundations-api-design.md:10
@@ -45,5 +45,5 @@ msgid "Predictable API"
 msgstr ""
 
 #: src/idiomatic/foundations-api-design.md:14
-msgid "2 hours and 5 minutes"
+msgid "1 hour and 50 minutes"
 msgstr ""

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -88,8 +88,9 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:59
 msgid ""
-"The `guard()` creates a `ScopeGuard` instance. It a user-defined value (in "
-"this case, `path`) and the cleanup closure that later receives this value."
+"The `guard()` creates a `ScopeGuard` instance. It takes a user-defined value "
+"(in this case, `path`) and the cleanup closure that later receives this "
+"value."
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:62
@@ -114,11 +115,10 @@ msgstr ""
 msgid ""
 "This pattern is also useful when you don't control the cleanup strategy of "
 "the resource object. In this example, `File::drop()` closes the file but "
-"does not delete it, and we can't change the standard library to delete the "
-"file instead (nor should we, it is not a good idea anyway)."
+"does not delete it."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:77
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:76
 msgid ""
 "The `scopeguard` crate also supports cleanup strategies via the [`Strategy`]"
 "(https://docs.rs/scopeguard/latest/scopeguard/trait.Strategy.html) trait. "

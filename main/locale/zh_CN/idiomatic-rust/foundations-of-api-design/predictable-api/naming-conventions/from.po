@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -27,49 +27,18 @@ msgstr ""
 msgid "// SPDX-License-Identifier: Apache-2.0\n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/from.md:38
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/from.md:29
+msgid "Prefix for constructor-style, `From`\\-trait-style functions."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/from.md:31
 msgid ""
 "These functions can take multiple arguments, but usually imply the user is "
 "doing more of the work than a usual constructor would."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/from.md:41
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/from.md:34
 msgid ""
 "`new` is still preferred for most constructor-style functions, the "
 "implication for `from` is transformation of one data type to another."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/from.md:44
-msgid ""
-"Ask: Without looking at the standard library documentation, what would the "
-"argument type of `u32::from_be` be?"
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/from.md:47
-msgid ""
-"Answer guidance: we already see `u32::from_le_bytes` on the slide, it takes "
-"a slice of bytes. So from_le must be simpler, taking not bytes. Think about "
-"the contrast between `u32` and `be`. The argument must be a big-endian `u32`!"
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/from.md:51
-msgid "Follow-up question: How about `str::from_utf8`?"
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/from.md:53
-msgid ""
-"Answer guidance: `str` vs `utf8`. The argument can't be a `str` because "
-"every `str` is valid UTF-8. So what is the simplest way to provide UTF-8 "
-"data? A slice of bytes."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/from.md:57
-msgid "Follow-up: Why not `str::from_utf8_bytes`?"
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/from.md:59
-msgid ""
-"Answer: It could be in theory. However, the \"omit needless words\" "
-"principle applies, the word \"bytes\" would merely repeat the obvious - "
-"could a UTF-8 sequence ever be non-bytes?"
 msgstr ""

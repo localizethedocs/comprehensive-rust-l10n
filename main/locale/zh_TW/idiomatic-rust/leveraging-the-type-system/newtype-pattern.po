@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,13 +21,13 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:11
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:21
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:36
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:39
 msgid "// Copyright 2025 Google LLC\n"
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:12
 #: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:22
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:37
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:40
 msgid "// SPDX-License-Identifier: Apache-2.0\n"
 msgstr ""
 
@@ -40,36 +40,40 @@ msgid ""
 "Unlike type aliases, newtypes aren't interchangeable with the wrapped type:"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:29
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:40
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:27
+msgid "// ...\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:31
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:45
 msgid "// 🛠️❌\n"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:32
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:35
 msgid ""
 "The Rust compiler won't let you use methods or operators defined on the "
 "underlying type either:"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:46
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:52
 msgid ""
 "Students should have encountered the newtype pattern in the \"Fundamentals\" "
 "course, when they learned about [tuple structs](../../user-defined-types/"
 "tuple-structs.md)."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:50
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:56
 msgid "Run the example to show students the error message from the compiler."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:52
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:58
 msgid ""
 "Modify the example to use a typealias instead of a newtype, such as `type "
 "MessageId = u64`. The modified example should compile, thus highlighting the "
 "differences between the two approaches."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:56
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern.md:62
 msgid ""
 "Stress that newtypes, out of the box, have no behaviour attached to them. "
 "You need to be intentional about which methods and operators you are willing "

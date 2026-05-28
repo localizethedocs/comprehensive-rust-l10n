@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -30,115 +30,115 @@ msgid "// SPDX-License-Identifier: Apache-2.0\n"
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:15
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:29
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:32
 msgid "/* specifics omitted */"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:15
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:16
 msgid "/// A single-use number suitable for cryptographic purposes.\n"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:17
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:19
 msgid "/// A cryptographically sound random generator function.\n"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:20
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:22
 msgid "// chosen by a fair dice roll, https://xkcd.com/221/\n"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:21
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:24
 msgid "/// Consume a nonce, but not the key or the data.\n"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:31
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:34
 msgid ""
 "// The key and data can be re-used, copied, etc. but the nonce cannot.\n"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:33
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:36
 msgid "// encrypt(nonce, &key, &data_2); // 🛠️❌\n"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:39
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:42
 msgid "Problem: How can we guarantee a value is used only once?"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:41
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:44
 msgid ""
 "Motivation: A nonce is a piece of random, unique data used in cryptographic "
 "protocols to prevent replay attacks."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:44
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:47
 msgid ""
 "Background: In practice people have ended up accidentally re-using nonces. "
 "Most commonly, this causes the cryptographic protocol to completely break "
 "down and stop fulfilling its function."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:48
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:51
 msgid ""
 "Depending on the specifics of nonce reuse and cryptography at hand, private "
 "keys can also become computable by attackers."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:51
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:54
 msgid ""
 "Rust has an obvious tool for achieving the invariant \"Once you use this, "
 "you can't use it again\": passing a value as an _owned argument_."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:54
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:57
 msgid ""
 "Highlight: the `encrypt` function takes `nonce` by value (an owned "
 "argument), but `key` and `data` by reference."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:57
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:60
 msgid "The technique for single-use values is as follows:"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:59
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:62
 msgid ""
 "Keep constructors private, so a user can't construct values with the same "
 "inner value twice."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:62
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:65
 msgid ""
 "Don't implement `Clone`/`Copy` traits or equivalent methods, so a user can't "
 "duplicate data we want to keep unique."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:65
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:68
 msgid ""
 "Make the interior type opaque (like with the newtype pattern), so the user "
 "cannot modify an existing value on their own."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:68
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:71
 msgid "Ask: What are we missing from the newtype pattern in the slide's code?"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:70
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:73
 msgid "Expect: Module boundary."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:72
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:75
 msgid ""
 "Demonstrate: Without a module boundary a user can construct a nonce on their "
 "own."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:75
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:78
 msgid "Fix: Put `Key`, `Nonce`, and `new_nonce` behind a module."
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:77
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:80
 msgid "More to Explore"
 msgstr ""
 
-#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:79
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/single-use-values.md:82
 msgid ""
 "Cryptography Nuance: A nonce might still be used twice if it was created "
 "through pseudo-random process with no actual randomness. That can't be "

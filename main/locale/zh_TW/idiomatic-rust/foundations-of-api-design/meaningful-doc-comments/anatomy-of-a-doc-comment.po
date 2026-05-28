@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -107,22 +107,22 @@ msgstr ""
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md:73
 msgid ""
-"`# Errors`: For functions returning a `Result`, this section explains what "
-"kind of errors can occur and under what circumstances. Callers need this "
-"information to write robust error handling logic."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md:77
-msgid ""
 "**Question:** Ask the class why documenting panics is so important in a "
 "language that prefers returning `Result`."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md:80
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md:76
 msgid ""
 "**Answer:** Panics are for unrecoverable, programming errors. A library "
 "should not panic unless a contract is violated by the caller. Documenting "
 "these contracts is essential."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md:80
+msgid ""
+"`# Errors`: For functions returning a `Result`, this section explains what "
+"kind of errors can occur and under what circumstances. Callers need this "
+"information to write robust error handling logic."
 msgstr ""
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/anatomy-of-a-doc-comment.md:84

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -36,27 +36,24 @@ msgid ""
 "/// if any happened.  \n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:19
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:20
 msgid ""
 "// bad\n"
 "/// Returns an error if sending the email fails.  \n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:23
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:24
 msgid ""
 "// good\n"
 "/// Queues the email for background delivery and returns immediately.  \n"
+"///\n"
 "/// Returns an error immediately if the email is malformed.  \n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:32
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:34
 msgid ""
 "Motivation: API designers can over-commit to the idea that a function name "
 "and signature is enough documentation."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:35
-msgid "It's better than nothing, but it's worse than good documentation."
 msgstr ""
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:37
@@ -73,8 +70,8 @@ msgstr ""
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:43
 msgid ""
-"In the example on the slide it is not obvious that `sync_to_server()` could "
-"overwrite something (leading to a data loss), so document that."
+"It is not obvious that `sync_to_server()` could overwrite something (leading "
+"to a data loss), so document that."
 msgstr ""
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:46
@@ -87,23 +84,4 @@ msgstr ""
 msgid ""
 "Use comments to disambiguate. Nuanced behaviors, behaviors that users of an "
 "API could trip up on, should be documented."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:52
-msgid ""
-"For example, consider a remove() method on a business entity: There are many "
-"ways to remove an entity!"
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:55
-msgid ""
-"Is it removing the entity from the database? From the parent collection in "
-"memory (unlink vs erase)?"
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:58
-msgid ""
-"If it is removing the data in the database, is the data actually being "
-"deleted, or merely marked as deleted, but still recoverable (soft vs hard "
-"delete)?"
 msgstr ""
