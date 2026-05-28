@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:09Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:6
@@ -23,71 +23,59 @@ msgstr ""
 msgid "Derivable: ❌, without crates like `derive_more`."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:12
-msgid "When to implement: As-needed and convenient."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:15
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:13
 msgid "// Copyright 2025 Google LLC\n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:16
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:14
 msgid "// SPDX-License-Identifier: Apache-2.0\n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:33
-msgid "// From String\n"
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:29
+msgid "// `Into` is more natural to use as a trait bound.\n"
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:34
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:35
+msgid "// `Wrapper` can be construct from `&str` and `i32`.\n"
+msgstr ""
+
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:36
 msgid "\"Hello, obvious!\""
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:35
-msgid "// From &str\n"
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:37
-msgid ""
-"// A From implementation implies an Into implementation, &str.into() ->\n"
-"    // ObviousImplementation\n"
-msgstr ""
-
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:39
+msgid "// A From implementation implies an Into implementation.\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:40
 msgid "\"Hello, implementation!\""
 msgstr ""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:46
-msgid ""
-"The two traits exist to express different areas you'll find conversion in "
-"codebases."
+msgid "Provides conversion functionality to types."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:49
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:48
 msgid ""
-"`From` provides a constructor-style function, whereas into provides a method "
-"on an existing value."
+"`From` provides a constructor-style function, whereas `Into` provides a "
+"method on an existing value."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:52
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:51
 msgid ""
 "Prefer writing `From<T>` implementations for a type you're authoring instead "
 "of `Into<T>`."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:55
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:54
 msgid ""
 "The `Into` trait is implemented for any type that implements `From` "
 "automatically."
 msgstr ""
 
-#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:58
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:57
 msgid ""
 "`Into` is preferred as a trait bound for arguments to functions for clarity "
-"of intent for what the function can take."
-msgstr ""
-
-#: src/idiomatic/foundations-api-design/predictable-api/common-traits/from-into.md:61
-msgid "`T: Into<String>` has clearer intent than `String: From<T>`."
+"of intent for what the function can take: `T: Into<String>` has clearer "
+"intent than `String: From<T>`."
 msgstr ""

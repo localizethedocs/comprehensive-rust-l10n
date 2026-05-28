@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-02-26T07:06:08Z\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/SUMMARY.md:8
@@ -54,7 +54,7 @@ msgstr ""
 #: src/SUMMARY.md:23 src/SUMMARY.md:52 src/SUMMARY.md:82 src/SUMMARY.md:115
 #: src/SUMMARY.md:146 src/SUMMARY.md:166 src/SUMMARY.md:191 src/SUMMARY.md:217
 #: src/SUMMARY.md:245 src/SUMMARY.md:296 src/SUMMARY.md:338 src/SUMMARY.md:394
-#: src/SUMMARY.md:418 src/SUMMARY.md:444 src/SUMMARY.md:564
+#: src/SUMMARY.md:418 src/SUMMARY.md:444 src/SUMMARY.md:558
 msgid "Welcome"
 msgstr ""
 
@@ -294,7 +294,7 @@ msgstr ""
 msgid "Methods"
 msgstr ""
 
-#: src/SUMMARY.md:96 src/SUMMARY.md:532
+#: src/SUMMARY.md:96 src/SUMMARY.md:526
 msgid "Traits"
 msgstr ""
 
@@ -302,7 +302,7 @@ msgstr ""
 msgid "Implementing Traits"
 msgstr ""
 
-#: src/SUMMARY.md:98 src/SUMMARY.md:536
+#: src/SUMMARY.md:98 src/SUMMARY.md:530
 msgid "Supertraits"
 msgstr ""
 
@@ -326,7 +326,7 @@ msgstr ""
 msgid "Generic Functions"
 msgstr ""
 
-#: src/SUMMARY.md:105 src/SUMMARY.md:533
+#: src/SUMMARY.md:105 src/SUMMARY.md:527
 msgid "Trait Bounds"
 msgstr ""
 
@@ -690,7 +690,7 @@ msgstr ""
 msgid "Unsafe Rust"
 msgstr ""
 
-#: src/SUMMARY.md:229 src/SUMMARY.md:562
+#: src/SUMMARY.md:229 src/SUMMARY.md:556
 msgid "Unsafe"
 msgstr ""
 
@@ -734,7 +734,7 @@ msgstr ""
 msgid "Android"
 msgstr ""
 
-#: src/SUMMARY.md:246 src/SUMMARY.md:297 src/SUMMARY.md:565
+#: src/SUMMARY.md:246 src/SUMMARY.md:297 src/SUMMARY.md:559
 msgid "Setup"
 msgstr ""
 
@@ -935,7 +935,7 @@ msgid "Visual Studio Code"
 msgstr ""
 
 #: src/SUMMARY.md:304 src/SUMMARY.md:309 src/SUMMARY.md:317 src/SUMMARY.md:330
-#: src/SUMMARY.md:454 src/SUMMARY.md:475
+#: src/SUMMARY.md:454 src/SUMMARY.md:469
 msgid "Exercise"
 msgstr ""
 
@@ -1400,709 +1400,685 @@ msgid "New"
 msgstr ""
 
 #: src/SUMMARY.md:458
-msgid "Get"
-msgstr ""
-
-#: src/SUMMARY.md:459
-msgid "Push"
-msgstr ""
-
-#: src/SUMMARY.md:460
 msgid "Is"
 msgstr ""
 
-#: src/SUMMARY.md:461
+#: src/SUMMARY.md:459
 msgid "Mut"
 msgstr ""
 
-#: src/SUMMARY.md:462
+#: src/SUMMARY.md:460
 msgid "With: Constructor"
 msgstr ""
 
-#: src/SUMMARY.md:463
+#: src/SUMMARY.md:461
 msgid "With: Copy-and-change"
 msgstr ""
 
-#: src/SUMMARY.md:464
+#: src/SUMMARY.md:462
 msgid "With: Closures"
 msgstr ""
 
-#: src/SUMMARY.md:465
-msgid "With in normal use"
-msgstr ""
-
-#: src/SUMMARY.md:466
+#: src/SUMMARY.md:463
 msgid "Try"
 msgstr ""
 
-#: src/SUMMARY.md:467
+#: src/SUMMARY.md:464
 msgid "From"
 msgstr ""
 
-#: src/SUMMARY.md:468
+#: src/SUMMARY.md:465
 msgid "Into"
 msgstr ""
 
-#: src/SUMMARY.md:469
-msgid "Into inner"
-msgstr ""
-
-#: src/SUMMARY.md:470
-msgid "By"
-msgstr ""
-
-#: src/SUMMARY.md:471
-msgid "Unchecked"
-msgstr ""
-
-#: src/SUMMARY.md:472
+#: src/SUMMARY.md:466
 msgid "To"
 msgstr ""
 
-#: src/SUMMARY.md:473
+#: src/SUMMARY.md:467
 msgid "As and Ref"
 msgstr ""
 
-#: src/SUMMARY.md:474
-msgid "Raw parts"
+#: src/SUMMARY.md:468
+msgid "By"
 msgstr ""
 
-#: src/SUMMARY.md:476
+#: src/SUMMARY.md:470
 msgid "Implementing Common Traits"
 msgstr ""
 
-#: src/SUMMARY.md:477
+#: src/SUMMARY.md:471
 msgid "Debug"
 msgstr ""
 
-#: src/SUMMARY.md:478
-msgid "PartialEq and Eq"
-msgstr ""
-
-#: src/SUMMARY.md:479
-msgid "PartialOrd and Ord"
-msgstr ""
-
-#: src/SUMMARY.md:480
-msgid "Hash"
-msgstr ""
-
-#: src/SUMMARY.md:481
-msgid "Clone"
-msgstr ""
-
-#: src/SUMMARY.md:482
-msgid "Copy"
-msgstr ""
-
-#: src/SUMMARY.md:483
-msgid "Serialize and Deserialize"
-msgstr ""
-
-#: src/SUMMARY.md:484
-msgid "From and Into"
-msgstr ""
-
-#: src/SUMMARY.md:485
-msgid "TryFrom and TryInto"
-msgstr ""
-
-#: src/SUMMARY.md:486
+#: src/SUMMARY.md:472
 msgid "Display"
 msgstr ""
 
-#: src/SUMMARY.md:487
+#: src/SUMMARY.md:473
+msgid "PartialEq and Eq"
+msgstr ""
+
+#: src/SUMMARY.md:474
+msgid "PartialOrd and Ord"
+msgstr ""
+
+#: src/SUMMARY.md:475
+msgid "Hash"
+msgstr ""
+
+#: src/SUMMARY.md:476
+msgid "Clone"
+msgstr ""
+
+#: src/SUMMARY.md:477
+msgid "Copy"
+msgstr ""
+
+#: src/SUMMARY.md:478
+msgid "From and Into"
+msgstr ""
+
+#: src/SUMMARY.md:479
+msgid "TryFrom and TryInto"
+msgstr ""
+
+#: src/SUMMARY.md:480
+msgid "Serialize and Deserialize"
+msgstr ""
+
+#: src/SUMMARY.md:481
 msgid "Leveraging the Type System"
 msgstr ""
 
-#: src/SUMMARY.md:488
+#: src/SUMMARY.md:482
 msgid "Newtype Pattern"
 msgstr ""
 
-#: src/SUMMARY.md:489
+#: src/SUMMARY.md:483
 msgid "Semantic Confusion"
 msgstr ""
 
-#: src/SUMMARY.md:490
-msgid "Parse, Don't Validate"
+#: src/SUMMARY.md:484
+msgid "Enforce Invariants"
 msgstr ""
 
-#: src/SUMMARY.md:491
+#: src/SUMMARY.md:485
 msgid "Is It Encapsulated?"
 msgstr ""
 
-#: src/SUMMARY.md:492
+#: src/SUMMARY.md:486
 msgid "RAII"
 msgstr ""
 
-#: src/SUMMARY.md:493
+#: src/SUMMARY.md:487
 msgid "Drop Skipped"
 msgstr ""
 
-#: src/SUMMARY.md:494
+#: src/SUMMARY.md:488
 msgid "Mutex"
 msgstr ""
 
-#: src/SUMMARY.md:495
+#: src/SUMMARY.md:489
 msgid "Drop Guards"
 msgstr ""
 
-#: src/SUMMARY.md:496
+#: src/SUMMARY.md:490
 msgid "Drop Bomb"
 msgstr ""
 
-#: src/SUMMARY.md:497
+#: src/SUMMARY.md:491
 msgid "Drop Bomb Forget"
 msgstr ""
 
-#: src/SUMMARY.md:498
+#: src/SUMMARY.md:492
 msgid "forget and drop functions"
 msgstr ""
 
-#: src/SUMMARY.md:499
+#: src/SUMMARY.md:493
 msgid "Scope Guard"
 msgstr ""
 
-#: src/SUMMARY.md:500
+#: src/SUMMARY.md:494
 msgid "Drop Option"
 msgstr ""
 
-#: src/SUMMARY.md:501
+#: src/SUMMARY.md:495
 msgid "Extension Traits"
 msgstr ""
 
-#: src/SUMMARY.md:502
+#: src/SUMMARY.md:496
 msgid "Extending Foreign Types"
 msgstr ""
 
-#: src/SUMMARY.md:503
+#: src/SUMMARY.md:497
 msgid "Method Resolution Conflicts"
 msgstr ""
 
-#: src/SUMMARY.md:504
+#: src/SUMMARY.md:498
 msgid "Trait Method Conflicts"
 msgstr ""
 
-#: src/SUMMARY.md:505
+#: src/SUMMARY.md:499
 msgid "Extending Other Traits"
 msgstr ""
 
-#: src/SUMMARY.md:506
+#: src/SUMMARY.md:500
 msgid "Should I Define An Extension Trait?"
 msgstr ""
 
-#: src/SUMMARY.md:507
+#: src/SUMMARY.md:501
 msgid "Typestate Pattern"
 msgstr ""
 
-#: src/SUMMARY.md:508
+#: src/SUMMARY.md:502
 msgid "Typestate Pattern Example"
 msgstr ""
 
-#: src/SUMMARY.md:509
+#: src/SUMMARY.md:503
 msgid "Beyond Simple Typestate"
 msgstr ""
 
-#: src/SUMMARY.md:510
+#: src/SUMMARY.md:504
 msgid "Typestate Pattern with Generics"
 msgstr ""
 
-#: src/SUMMARY.md:511
+#: src/SUMMARY.md:505
 msgid "Serializer: implement Root"
 msgstr ""
 
-#: src/SUMMARY.md:512
+#: src/SUMMARY.md:506
 msgid "Serializer: implement Struct"
 msgstr ""
 
-#: src/SUMMARY.md:513
+#: src/SUMMARY.md:507
 msgid "Serializer: implement Property"
 msgstr ""
 
-#: src/SUMMARY.md:514
+#: src/SUMMARY.md:508
 msgid "Serializer: Complete implementation"
 msgstr ""
 
-#: src/SUMMARY.md:515
+#: src/SUMMARY.md:509
 msgid "Borrow checking invariants"
 msgstr ""
 
-#: src/SUMMARY.md:516
+#: src/SUMMARY.md:510
 msgid "Lifetimes and Borrows: the Abstract Rules"
 msgstr ""
 
-#: src/SUMMARY.md:517
+#: src/SUMMARY.md:511
 msgid "Single-use values"
 msgstr ""
 
-#: src/SUMMARY.md:518
+#: src/SUMMARY.md:512
 msgid "Mutually Exclusive References / \"Aliasing XOR Mutability\""
 msgstr ""
 
-#: src/SUMMARY.md:519
+#: src/SUMMARY.md:513
 msgid "PhantomData and Types"
 msgstr ""
 
-#: src/SUMMARY.md:520
+#: src/SUMMARY.md:514
 msgid "PhantomData and Types (implementation)"
 msgstr ""
 
-#: src/SUMMARY.md:521
+#: src/SUMMARY.md:515
 msgid "PhantomData: Lifetimes for External Resources"
 msgstr ""
 
-#: src/SUMMARY.md:522
+#: src/SUMMARY.md:516
 msgid "PhantomData: OwnedFd & BorrowedFd"
 msgstr ""
 
-#: src/SUMMARY.md:523
+#: src/SUMMARY.md:517
 msgid "Token Types"
 msgstr ""
 
-#: src/SUMMARY.md:524
+#: src/SUMMARY.md:518
 msgid "Permission Tokens"
 msgstr ""
 
-#: src/SUMMARY.md:525
+#: src/SUMMARY.md:519
 msgid "Token Types with Data: Mutex Guards"
 msgstr ""
 
-#: src/SUMMARY.md:526
+#: src/SUMMARY.md:520
 msgid "Branded pt 1: Variable-specific tokens"
 msgstr ""
 
-#: src/SUMMARY.md:527
+#: src/SUMMARY.md:521
 msgid "Branded pt 2: `PhantomData` and Lifetime Subtyping"
 msgstr ""
 
-#: src/SUMMARY.md:528
+#: src/SUMMARY.md:522
 msgid "Branded pt 3: Implementation"
 msgstr ""
 
-#: src/SUMMARY.md:529
+#: src/SUMMARY.md:523
 msgid "Branded pt 4: Branded types in action."
 msgstr ""
 
-#: src/SUMMARY.md:530
+#: src/SUMMARY.md:524
 msgid "Polymorphism"
 msgstr ""
 
-#: src/SUMMARY.md:531
+#: src/SUMMARY.md:525
 msgid "Refresher"
 msgstr ""
 
-#: src/SUMMARY.md:534
+#: src/SUMMARY.md:528
 msgid "Deriving Traits"
 msgstr ""
 
-#: src/SUMMARY.md:535
+#: src/SUMMARY.md:529
 msgid "Default Implementations"
 msgstr ""
 
-#: src/SUMMARY.md:537
+#: src/SUMMARY.md:531
 msgid "Blanket Implementations"
 msgstr ""
 
-#: src/SUMMARY.md:538
+#: src/SUMMARY.md:532
 msgid "Conditional Methods"
 msgstr ""
 
-#: src/SUMMARY.md:539
+#: src/SUMMARY.md:533
 msgid "Orphan Rule"
 msgstr ""
 
-#: src/SUMMARY.md:540
+#: src/SUMMARY.md:534
 msgid "Statically Sized and Dynamically Sized types"
 msgstr ""
 
-#: src/SUMMARY.md:541
+#: src/SUMMARY.md:535
 msgid "Monomorphization and Binary Size"
 msgstr ""
 
-#: src/SUMMARY.md:542
+#: src/SUMMARY.md:536
 msgid "From OOP to Rust"
 msgstr ""
 
-#: src/SUMMARY.md:543
+#: src/SUMMARY.md:537
 msgid "Inheritance"
 msgstr ""
 
-#: src/SUMMARY.md:544
+#: src/SUMMARY.md:538
 msgid "Why no Inheritance in Rust?"
 msgstr ""
 
-#: src/SUMMARY.md:545
+#: src/SUMMARY.md:539
 msgid "Inheritance from Rust's Perspective"
 msgstr ""
 
-#: src/SUMMARY.md:546
+#: src/SUMMARY.md:540
 msgid "\"Inheritance\" in Rust and Supertraits"
 msgstr ""
 
-#: src/SUMMARY.md:547
+#: src/SUMMARY.md:541
 msgid "Composition over Inheritance"
 msgstr ""
 
-#: src/SUMMARY.md:548
+#: src/SUMMARY.md:542
 msgid "Trait Objects and Dynamic Dispatch"
 msgstr ""
 
-#: src/SUMMARY.md:549
+#: src/SUMMARY.md:543
 msgid "Dyn Compatibility"
 msgstr ""
 
-#: src/SUMMARY.md:550
+#: src/SUMMARY.md:544
 msgid "Generics vs Trait Objects"
 msgstr ""
 
-#: src/SUMMARY.md:551
+#: src/SUMMARY.md:545
 msgid "Limits of Trait Objects"
 msgstr ""
 
-#: src/SUMMARY.md:552
+#: src/SUMMARY.md:546
 msgid "Heterogeneous Collections"
 msgstr ""
 
-#: src/SUMMARY.md:553
+#: src/SUMMARY.md:547
 msgid "The `Any` Trait"
 msgstr ""
 
-#: src/SUMMARY.md:554
+#: src/SUMMARY.md:548
 msgid "Pitfall: Reaching too quickly for `dyn Trait`"
 msgstr ""
 
-#: src/SUMMARY.md:555
+#: src/SUMMARY.md:549
 msgid "Sealed Traits"
 msgstr ""
 
-#: src/SUMMARY.md:556
+#: src/SUMMARY.md:550
 msgid "Sealing with Enums"
 msgstr ""
 
-#: src/SUMMARY.md:557
+#: src/SUMMARY.md:551
 msgid "Traits for Polymorphism users can extend"
 msgstr ""
 
-#: src/SUMMARY.md:558
+#: src/SUMMARY.md:552
 msgid "Problem solving: Break Down the Problem"
 msgstr ""
 
-#: src/SUMMARY.md:566
+#: src/SUMMARY.md:560
 msgid "Introduction"
 msgstr ""
 
-#: src/SUMMARY.md:567
+#: src/SUMMARY.md:561
 msgid "Defining Unsafe Rust"
 msgstr ""
 
-#: src/SUMMARY.md:568
+#: src/SUMMARY.md:562
 msgid "Purpose of the unsafe keyword"
 msgstr ""
 
-#: src/SUMMARY.md:569
+#: src/SUMMARY.md:563
 msgid "Two roles of the unsafe keyword"
 msgstr ""
 
-#: src/SUMMARY.md:570
+#: src/SUMMARY.md:564
 msgid "Warm Up Examples"
 msgstr ""
 
-#: src/SUMMARY.md:571
+#: src/SUMMARY.md:565
 msgid "Using an unsafe block"
 msgstr ""
 
-#: src/SUMMARY.md:572
+#: src/SUMMARY.md:566
 msgid "Defining an unsafe function"
 msgstr ""
 
-#: src/SUMMARY.md:573
+#: src/SUMMARY.md:567
 msgid "Implementing an unsafe trait"
 msgstr ""
 
-#: src/SUMMARY.md:574
+#: src/SUMMARY.md:568
 msgid "Defining an unsafe trait"
 msgstr ""
 
-#: src/SUMMARY.md:575
+#: src/SUMMARY.md:569
 msgid "Characteristics of Unsafe Rust"
 msgstr ""
 
-#: src/SUMMARY.md:576
+#: src/SUMMARY.md:570
 msgid "Dangerous"
 msgstr ""
 
-#: src/SUMMARY.md:577
+#: src/SUMMARY.md:571
 msgid "Sometimes necessary"
 msgstr ""
 
-#: src/SUMMARY.md:578
+#: src/SUMMARY.md:572
 msgid "Sometimes useful"
 msgstr ""
 
-#: src/SUMMARY.md:579
+#: src/SUMMARY.md:573
 msgid "Responsibility shift"
 msgstr ""
 
-#: src/SUMMARY.md:580
+#: src/SUMMARY.md:574
 msgid "Stronger development workflow required"
 msgstr ""
 
-#: src/SUMMARY.md:581
+#: src/SUMMARY.md:575
 msgid "Example: may_overflow"
 msgstr ""
 
-#: src/SUMMARY.md:582
+#: src/SUMMARY.md:576
 msgid "Safety Preconditions"
 msgstr ""
 
-#: src/SUMMARY.md:583
+#: src/SUMMARY.md:577
 msgid "Common Preconditions"
 msgstr ""
 
-#: src/SUMMARY.md:584
+#: src/SUMMARY.md:578
 msgid "Getter example"
 msgstr ""
 
-#: src/SUMMARY.md:585
+#: src/SUMMARY.md:579
 msgid "Semantic preconditions"
 msgstr ""
 
-#: src/SUMMARY.md:586
+#: src/SUMMARY.md:580
 msgid "Example: u8 to bool"
 msgstr ""
 
-#: src/SUMMARY.md:587
+#: src/SUMMARY.md:581
 msgid "Determining preconditions"
 msgstr ""
 
-#: src/SUMMARY.md:588
+#: src/SUMMARY.md:582
 msgid "Example: references"
 msgstr ""
 
-#: src/SUMMARY.md:589
+#: src/SUMMARY.md:583
 msgid "Defining your own preconditions"
 msgstr ""
 
-#: src/SUMMARY.md:590
+#: src/SUMMARY.md:584
 msgid "Example: ASCII Type"
 msgstr ""
 
-#: src/SUMMARY.md:591
+#: src/SUMMARY.md:585
 msgid "Rules of the game"
 msgstr ""
 
-#: src/SUMMARY.md:592
+#: src/SUMMARY.md:586
 msgid "Rust is sound"
 msgstr ""
 
-#: src/SUMMARY.md:593
+#: src/SUMMARY.md:587
 msgid "Copying memory"
 msgstr ""
 
-#: src/SUMMARY.md:594
+#: src/SUMMARY.md:588
 msgid "Safe Rust"
 msgstr ""
 
-#: src/SUMMARY.md:595
+#: src/SUMMARY.md:589
 msgid "Encapsulated Unsafe Rust"
 msgstr ""
 
-#: src/SUMMARY.md:596
+#: src/SUMMARY.md:590
 msgid "Exposed Unsafe Rust"
 msgstr ""
 
-#: src/SUMMARY.md:597
+#: src/SUMMARY.md:591
 msgid "Documented safety preconditions"
 msgstr ""
 
-#: src/SUMMARY.md:598
+#: src/SUMMARY.md:592
 msgid "Crying Wolf"
 msgstr ""
 
-#: src/SUMMARY.md:599
+#: src/SUMMARY.md:593
 msgid "3 shapes of sound Rust"
 msgstr ""
 
-#: src/SUMMARY.md:600
+#: src/SUMMARY.md:594
 msgid "Soundness Proof"
 msgstr ""
 
-#: src/SUMMARY.md:601
+#: src/SUMMARY.md:595
 msgid "Soundness"
 msgstr ""
 
-#: src/SUMMARY.md:602
+#: src/SUMMARY.md:596
 msgid "Corollary"
 msgstr ""
 
-#: src/SUMMARY.md:603
+#: src/SUMMARY.md:597
 msgid "Unsoundness"
 msgstr ""
 
-#: src/SUMMARY.md:604
+#: src/SUMMARY.md:598
 msgid "Memory Lifecycle"
 msgstr ""
 
-#: src/SUMMARY.md:605
+#: src/SUMMARY.md:599
 msgid "Initialization"
 msgstr ""
 
-#: src/SUMMARY.md:606
+#: src/SUMMARY.md:600
 msgid "MaybeUninit<T>"
 msgstr ""
 
-#: src/SUMMARY.md:607
+#: src/SUMMARY.md:601
 msgid "Arrays of uninit"
 msgstr ""
 
-#: src/SUMMARY.md:608
+#: src/SUMMARY.md:602
 msgid "MaybeUninit::zeroed()"
 msgstr ""
 
-#: src/SUMMARY.md:609
+#: src/SUMMARY.md:603
 msgid "ptr::write vs assignment"
 msgstr ""
 
-#: src/SUMMARY.md:610
+#: src/SUMMARY.md:604
 msgid "How to initialize memory"
 msgstr ""
 
-#: src/SUMMARY.md:611
+#: src/SUMMARY.md:605
 msgid "Partial initialization"
 msgstr ""
 
-#: src/SUMMARY.md:612
+#: src/SUMMARY.md:606
 msgid "Pinning"
 msgstr ""
 
-#: src/SUMMARY.md:613
+#: src/SUMMARY.md:607
 msgid "What pinning is"
 msgstr ""
 
-#: src/SUMMARY.md:614
+#: src/SUMMARY.md:608
 msgid "What a move is"
 msgstr ""
 
-#: src/SUMMARY.md:615
+#: src/SUMMARY.md:609
 msgid "Definition of Pin<Ptr>"
 msgstr ""
 
-#: src/SUMMARY.md:616
+#: src/SUMMARY.md:610
 msgid "Why it's difficult"
 msgstr ""
 
-#: src/SUMMARY.md:617
+#: src/SUMMARY.md:611
 msgid "`Unpin` trait"
 msgstr ""
 
-#: src/SUMMARY.md:618
+#: src/SUMMARY.md:612
 msgid "`PhantomPinned`"
 msgstr ""
 
-#: src/SUMMARY.md:619
+#: src/SUMMARY.md:613
 msgid "Self-Referential Buffer Example"
 msgstr ""
 
-#: src/SUMMARY.md:620
+#: src/SUMMARY.md:614
 msgid "C++ implementation"
 msgstr ""
 
-#: src/SUMMARY.md:621
+#: src/SUMMARY.md:615
 msgid "Modeled in Rust"
 msgstr ""
 
-#: src/SUMMARY.md:622
+#: src/SUMMARY.md:616
 msgid "With a raw pointer"
 msgstr ""
 
-#: src/SUMMARY.md:623
+#: src/SUMMARY.md:617
 msgid "With an integer offset"
 msgstr ""
 
-#: src/SUMMARY.md:624
+#: src/SUMMARY.md:618
 msgid "With `Pin<Ptr>`"
 msgstr ""
 
-#: src/SUMMARY.md:625
+#: src/SUMMARY.md:619
 msgid "`Pin<Ptr>` and `Drop`"
 msgstr ""
 
-#: src/SUMMARY.md:626
+#: src/SUMMARY.md:620
 msgid "Worked Example"
 msgstr ""
 
-#: src/SUMMARY.md:627
+#: src/SUMMARY.md:621
 msgid "FFI"
 msgstr ""
 
-#: src/SUMMARY.md:628
+#: src/SUMMARY.md:622
 msgid "Language Interop"
 msgstr ""
 
-#: src/SUMMARY.md:629
+#: src/SUMMARY.md:623
 msgid "Strategies"
 msgstr ""
 
-#: src/SUMMARY.md:630
+#: src/SUMMARY.md:624
 msgid "Consideration: Type Safety"
 msgstr ""
 
-#: src/SUMMARY.md:631
+#: src/SUMMARY.md:625
 msgid "Language differences"
 msgstr ""
 
-#: src/SUMMARY.md:632
+#: src/SUMMARY.md:626
 msgid "Different representations"
 msgstr ""
 
-#: src/SUMMARY.md:633
+#: src/SUMMARY.md:627
 msgid "Different semantics"
 msgstr ""
 
-#: src/SUMMARY.md:634
+#: src/SUMMARY.md:628
 msgid "Rust ↔ C"
 msgstr ""
 
-#: src/SUMMARY.md:635
+#: src/SUMMARY.md:629
 msgid "C++ ↔ C"
 msgstr ""
 
-#: src/SUMMARY.md:636
+#: src/SUMMARY.md:630
 msgid "Rust ↔ C++"
 msgstr ""
 
-#: src/SUMMARY.md:637
+#: src/SUMMARY.md:631
 msgid "`abs(3)`"
 msgstr ""
 
-#: src/SUMMARY.md:638
+#: src/SUMMARY.md:632
 msgid "`rand(3)`"
 msgstr ""
 
-#: src/SUMMARY.md:639
+#: src/SUMMARY.md:633
 msgid "Exercise:C library"
 msgstr ""
 
-#: src/SUMMARY.md:640
+#: src/SUMMARY.md:634
 msgid "Exercise: C++ library"
 msgstr ""
 
-#: src/SUMMARY.md:644
+#: src/SUMMARY.md:638
 msgid "Final Words"
 msgstr ""
 
-#: src/SUMMARY.md:646
+#: src/SUMMARY.md:640
 msgid "Thanks!"
 msgstr ""
 
-#: src/SUMMARY.md:647
+#: src/SUMMARY.md:641
 msgid "Glossary"
 msgstr ""
 
-#: src/SUMMARY.md:648
+#: src/SUMMARY.md:642
 msgid "Other Resources"
 msgstr ""
 
-#: src/SUMMARY.md:649
+#: src/SUMMARY.md:643
 msgid "Credits"
 msgstr ""
