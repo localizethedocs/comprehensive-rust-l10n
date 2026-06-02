@@ -325,6 +325,3 @@ msgid ""
 "Distinguish fatal errors from recoverable errors using `Result<Result<T, "
 "RecoverableError>, FatalError>`."
 msgstr ""
-
-#~ msgid "3 hours and 30 minutes"
-#~ msgstr "3 小時又 30 分鐘"

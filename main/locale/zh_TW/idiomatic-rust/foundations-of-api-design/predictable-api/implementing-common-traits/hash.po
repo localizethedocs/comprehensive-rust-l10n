@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:25
 msgid "\"Alice\""
-msgstr ""
+msgstr "\"Alice\""
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:27
 msgid "\"value\""
