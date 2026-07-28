@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-07-28T07:53:37Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,10 +17,6 @@ msgstr ""
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/cpp.md:9
 msgid "<cstddef>"
-msgstr ""
-
-#: src/unsafe-deep-dive/pinning/self-referential-buffer/cpp.md:10
-msgid "<cstring>"
 msgstr ""
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/cpp.md:25

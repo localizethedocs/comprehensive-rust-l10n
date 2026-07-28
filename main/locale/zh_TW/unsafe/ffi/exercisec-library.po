@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-07-28T07:53:37Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -14,14 +14,6 @@ msgstr ""
 #: src/unsafe-deep-dive/ffi/c-library-example.md:6
 msgid "C Library Example"
 msgstr ""
-
-#: src/unsafe-deep-dive/ffi/c-library-example.md:12
-msgid "<stddef.h>"
-msgstr "<stddef.h>"
-
-#: src/unsafe-deep-dive/ffi/c-library-example.md:13
-msgid "<stdbool.h>"
-msgstr "<stdbool.h>"
 
 #: src/unsafe-deep-dive/ffi/c-library-example.md:29
 msgid "/* Return `false` to indicate that no token was found. */"
@@ -97,3 +89,9 @@ msgstr ""
 #: src/unsafe-deep-dive/ffi/c-library-example.md:124
 msgid "\"C\""
 msgstr ""
+
+#~ msgid "<stddef.h>"
+#~ msgstr "<stddef.h>"
+
+#~ msgid "<stdbool.h>"
+#~ msgstr "<stdbool.h>"

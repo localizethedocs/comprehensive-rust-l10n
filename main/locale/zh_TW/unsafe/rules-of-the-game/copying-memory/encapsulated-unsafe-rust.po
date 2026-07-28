@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-07-28T07:53:37Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -31,34 +31,34 @@ msgstr ""
 msgid "// SAFETY: `i` must be in-bounds as it was produced by dest.len()\n"
 msgstr ""
 
-#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md:35
-#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md:37
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md:31
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md:33
 msgid "\"{}\""
 msgstr ""
 
-#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md:43
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md:39
 msgid ""
 "“Here we have a safe function that encapsulates unsafe blocks that are used "
 "internally."
 msgstr ""
 
-#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md:46
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md:42
 msgid ""
 "“This implementation avoids iterators. Instead, the implementor is accessing "
 "memory manually.”"
 msgstr ""
 
-#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md:49
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md:45
 msgid "“Is this correct?” “Are there any problems?”"
 msgstr ""
 
-#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md:51
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md:47
 msgid ""
 "“Who has responsibility for ensuring that correctness? The author of the "
 "function."
 msgstr ""
 
-#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md:54
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/encapsulated-unsafe.md:50
 msgid ""
 "“A Safe Rust function that contains unsafe blocks remains sound if it’s "
 "impossible for an input to cause memory safety issues."

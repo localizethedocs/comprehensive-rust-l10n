@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-07-28T07:53:37Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -19,14 +19,6 @@ msgstr ""
 msgid "C++ Header: interner.hpp"
 msgstr ""
 
-#: src/unsafe-deep-dive/ffi/cpp-library-example.md:14
-msgid "<string>"
-msgstr ""
-
-#: src/unsafe-deep-dive/ffi/cpp-library-example.md:15
-msgid "<unordered_set>"
-msgstr ""
-
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md:21
 msgid ""
 "// Returns a pointer to the interned string (valid for lifetime of "
@@ -40,10 +32,6 @@ msgstr ""
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md:38
 msgid "// interner.h (C API for FFI)\n"
 msgstr ""
-
-#: src/unsafe-deep-dive/ffi/cpp-library-example.md:42
-msgid "<stddef.h>"
-msgstr "<stddef.h>"
 
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md:45
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md:66
@@ -85,3 +73,6 @@ msgstr ""
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md:124
 msgid "Once the raw wrapper is written, ask learners to create a safe wrapper."
 msgstr ""
+
+#~ msgid "<stddef.h>"
+#~ msgstr "<stddef.h>"
