@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-07-28T07:53:36Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -44,9 +44,9 @@ msgstr ""
 
 #: src/std-traits/operators.md:41
 msgid ""
-"Answer: `Add:add` consumes `self`. If type `T` for which you are overloading "
-"the operator is not `Copy`, you should consider overloading the operator for "
-"`&T` as well. This avoids unnecessary cloning on the call site."
+"Answer: `Add::add` consumes `self`. If type `T` for which you are "
+"overloading the operator is not `Copy`, you should consider overloading the "
+"operator for `&T` as well. This avoids unnecessary cloning on the call site."
 msgstr ""
 
 #: src/std-traits/operators.md:44
