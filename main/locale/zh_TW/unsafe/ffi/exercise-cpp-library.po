@@ -73,6 +73,3 @@ msgstr ""
 #: src/unsafe-deep-dive/ffi/cpp-library-example.md:124
 msgid "Once the raw wrapper is written, ask learners to create a safe wrapper."
 msgstr ""
-
-#~ msgid "<stddef.h>"
-#~ msgstr "<stddef.h>"

@@ -89,9 +89,3 @@ msgstr ""
 #: src/unsafe-deep-dive/ffi/c-library-example.md:124
 msgid "\"C\""
 msgstr ""
-
-#~ msgid "<stddef.h>"
-#~ msgstr "<stddef.h>"
-
-#~ msgid "<stdbool.h>"
-#~ msgstr "<stdbool.h>"
