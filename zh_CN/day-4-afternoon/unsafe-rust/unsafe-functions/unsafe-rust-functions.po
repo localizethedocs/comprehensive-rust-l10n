@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-rust/unsafe-functions/rust.md:6
+msgid "Unsafe Rust Functions"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/rust.md:8
+msgid ""
+"You can mark your own functions as `unsafe` if they require particular "
+"preconditions to avoid undefined behaviour."
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/rust.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/rust.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/rust.md:14
+msgid ""
+"/// Swaps the values pointed to by the given pointers.\n"
+"///\n"
+"/// # Safety\n"
+"///\n"
+"/// The pointers must be valid, properly aligned, and not otherwise accessed "
+"for\n"
+"/// the duration of the function call.\n"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/rust.md:22
+msgid ""
+"// SAFETY: Our caller promised that the pointers are valid, properly "
+"aligned\n"
+"    // and have no other access.\n"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/rust.md:35
+msgid ""
+"// SAFETY: The pointers must be valid, aligned and unique because they came\n"
+"    // from references.\n"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/rust.md:41
+msgid "\"a = {}, b = {}\""
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/rust.md:47
+msgid ""
+"We wouldn't actually use pointers for a `swap` function --- it can be done "
+"safely with references."
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/rust.md:50
+msgid ""
+"Note that Rust 2021 and earlier allow unsafe code within an unsafe function "
+"without an `unsafe` block. This changed in the 2024 edition. We can prohibit "
+"it in older editions with `#[deny(unsafe_op_in_unsafe_fn)]`. Try adding it "
+"and see what happens."
+msgstr ""

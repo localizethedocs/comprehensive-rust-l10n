@@ -1,0 +1,57 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/serde.md:6
+msgid "Serialize/Deserialize style traits"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/serde.md:8
+msgid "Crates like `serde` can implement serialization automatically."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/serde.md:10
+msgid "Derivable: ✅"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/serde.md:13
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/serde.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/serde.md:32
+msgid ""
+"Provides serialization and deserialization functionality for a type, "
+"allowing for Rust data types to be converted to/from data formats like JSON."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/serde.md:35
+msgid ""
+"The standard library doesn't have serialization functionality built-in, but "
+"the serde crate is the community standard interface for doing serialization."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/serde.md:38
+msgid ""
+"When not to implement: If a type contains sensitive data that should not be "
+"erroneously saved to disk or sent over a network, consider not implementing "
+"Serialize/Deserialize for that type."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/serde.md:42
+msgid ""
+"Shares security concerns with `Debug`, but given serialization is often used "
+"in networking there can be higher stakes."
+msgstr ""

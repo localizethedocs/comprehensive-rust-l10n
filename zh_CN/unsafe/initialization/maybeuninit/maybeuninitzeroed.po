@@ -1,0 +1,51 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md:6
+msgid "MaybeUninit::zeroed()"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md:9
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md:19
+msgid "// SAFETY: All values of `x` have been written to\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md:21
+msgid "\"{x:?}\""
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md:27
+msgid ""
+"“MaybeUninit<T>::zeroed() is an alternative constructor to MaybeUninit<T>::"
+"uninit(). It instructs the compiler to fill the bits of T with zeros.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md:31
+msgid ""
+"Q: “Although the memory has been written to, the type remains "
+"`MaybeUninit<T>`. Can anyone think of why?”"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md:34
+msgid ""
+"A: Some types require their values to be non-zero or non-null. The classic "
+"case is references, but this applies to many other types as well. Consider "
+"the `NonZeroUsize` integer type and others in its family."
+msgstr ""

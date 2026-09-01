@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/alloc.md:6
+msgid "`alloc`"
+msgstr ""
+
+#: src/bare-metal/alloc.md:8
+msgid ""
+"To use `alloc` you must implement a [global (heap) allocator](https://doc."
+"rust-lang.org/stable/std/alloc/trait.GlobalAlloc.html)."
+msgstr ""
+
+#: src/bare-metal/alloc.md:12
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/bare-metal/alloc.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/bare-metal/alloc.md:32
+msgid "// SAFETY: `HEAP` is only used here and `entry` is only called once.\n"
+msgstr ""
+
+#: src/bare-metal/alloc.md:34
+msgid "// Give the allocator some memory to allocate.\n"
+msgstr ""
+
+#: src/bare-metal/alloc.md:38
+msgid "// Now we can do things that require heap allocation.\n"
+msgstr ""
+
+#: src/bare-metal/alloc.md:40
+msgid "\"A string\""
+msgstr ""
+
+#: src/bare-metal/alloc.md:46
+msgid ""
+"`buddy_system_allocator` is a crate implementing a basic buddy system "
+"allocator. Other crates are available, or you can write your own or hook "
+"into your existing allocator."
+msgstr ""
+
+#: src/bare-metal/alloc.md:49
+msgid ""
+"The const parameter of `LockedHeap` is the max order of the allocator; i.e. "
+"in this case it can allocate regions of up to 2\\*\\*32 bytes."
+msgstr ""
+
+#: src/bare-metal/alloc.md:51
+msgid ""
+"If any crate in your dependency tree depends on `alloc` then you must have "
+"exactly one global allocator defined in your binary. Usually this is done in "
+"the top-level binary crate."
+msgstr ""
+
+#: src/bare-metal/alloc.md:54
+msgid ""
+"`extern crate panic_halt as _` is necessary to ensure that the `panic_halt` "
+"crate is linked in so we get its panic handler."
+msgstr ""
+
+#: src/bare-metal/alloc.md:56
+msgid "This example will build but not run, as it doesn't have an entry point."
+msgstr ""

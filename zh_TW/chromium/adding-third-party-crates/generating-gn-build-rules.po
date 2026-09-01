@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/adding-third-party-crates/generating-gn-build-rules.md:6
+msgid "Generating `gn` Build Rules"
+msgstr "生成 `gn` 建置規則"
+
+#: src/chromium/adding-third-party-crates/generating-gn-build-rules.md:8
+msgid ""
+"Once you've downloaded the crate, generate the `BUILD.gn` files like this:"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/generating-gn-build-rules.md:14
+msgid "Now run `git status`. You should find:"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/generating-gn-build-rules.md:16
+msgid ""
+"At least one new crate source code in `third_party/rust/chromium_crates_io/"
+"vendor`"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/generating-gn-build-rules.md:18
+msgid ""
+"At least one new `BUILD.gn` in `third_party/rust/<crate name>/v<major semver "
+"version>`"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/generating-gn-build-rules.md:20
+msgid "An appropriate `README.chromium`"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/generating-gn-build-rules.md:22
+msgid ""
+"The \"major semver version\" is a [Rust \"semver\" version number](https://"
+"doc.rust-lang.org/cargo/reference/semver.html)."
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/generating-gn-build-rules.md:24
+msgid ""
+"Take a close look, especially at the things generated in `third_party/rust`."
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/generating-gn-build-rules.md:28
+msgid ""
+"Talk a little about semver --- and specifically the way that in Chromium "
+"it's to allow multiple incompatible versions of a crate, which is "
+"discouraged but sometimes necessary in the Cargo ecosystem."
+msgstr ""

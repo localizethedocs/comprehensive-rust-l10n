@@ -1,0 +1,48 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/channels.md:6
+msgid "Channels"
+msgstr ""
+
+#: src/concurrency/channels.md:8
+msgid "This segment should take about 20 minutes. It contains:"
+msgstr "本節大約需要 20 分鐘，內容包含："
+
+#: src/concurrency/channels.md:10
+msgid "Slide"
+msgstr ""
+
+#: src/concurrency/channels.md:10
+msgid "Duration"
+msgstr ""
+
+#: src/concurrency/channels.md:12
+msgid "Senders and Receivers"
+msgstr ""
+
+#: src/concurrency/channels.md:12 src/concurrency/channels.md:14
+msgid "10 minutes"
+msgstr "10 分鐘"
+
+#: src/concurrency/channels.md:13
+msgid "Unbounded Channels"
+msgstr ""
+
+#: src/concurrency/channels.md:13
+msgid "2 minutes"
+msgstr "2 分鐘"
+
+#: src/concurrency/channels.md:14
+msgid "Bounded Channels"
+msgstr ""

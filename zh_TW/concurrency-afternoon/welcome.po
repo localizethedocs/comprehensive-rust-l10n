@@ -1,0 +1,107 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/welcome-async.md:6
+msgid "Welcome"
+msgstr ""
+
+#: src/concurrency/welcome-async.md:8
+msgid ""
+"\"Async\" is a concurrency model where multiple tasks are executed "
+"concurrently by executing each task until it would block, then switching to "
+"another task that is ready to make progress. The model allows running a "
+"larger number of tasks on a limited number of threads. This is because the "
+"per-task overhead is typically very low and operating systems provide "
+"primitives for efficiently identifying I/O that is able to proceed."
+msgstr ""
+
+#: src/concurrency/welcome-async.md:15
+msgid ""
+"Rust's asynchronous operation is based on \"futures\", which represent work "
+"that may be completed in the future. Futures are \"polled\" until they "
+"signal that they are complete."
+msgstr ""
+
+#: src/concurrency/welcome-async.md:19
+msgid ""
+"Futures are polled by an async runtime, and several different runtimes are "
+"available."
+msgstr ""
+
+#: src/concurrency/welcome-async.md:22
+msgid "Comparisons"
+msgstr ""
+
+#: src/concurrency/welcome-async.md:24
+msgid ""
+"Python has a similar model in its `asyncio`. However, its `Future` type is "
+"callback-based, and not polled. Async Python programs require a \"loop\", "
+"similar to a runtime in Rust."
+msgstr ""
+
+#: src/concurrency/welcome-async.md:28
+msgid ""
+"JavaScript's `Promise` is similar, but again callback-based. The language "
+"runtime implements the event loop, so the majority of the details of Promise "
+"resolution are hidden."
+msgstr ""
+
+#: src/concurrency/welcome-async.md:32
+msgid "Schedule"
+msgstr ""
+
+#: src/concurrency/welcome-async.md:34
+msgid ""
+"Including 10 minute breaks, this session should take about 3 hours and 30 "
+"minutes. It contains:"
+msgstr ""
+
+#: src/concurrency/welcome-async.md:36
+msgid "Segment"
+msgstr ""
+
+#: src/concurrency/welcome-async.md:36
+msgid "Duration"
+msgstr ""
+
+#: src/concurrency/welcome-async.md:38
+msgid "Async Basics"
+msgstr ""
+
+#: src/concurrency/welcome-async.md:38
+msgid "40 minutes"
+msgstr "40 分鐘"
+
+#: src/concurrency/welcome-async.md:39
+msgid "Channels and Control Flow"
+msgstr ""
+
+#: src/concurrency/welcome-async.md:39
+msgid "20 minutes"
+msgstr "20 分鐘"
+
+#: src/concurrency/welcome-async.md:40
+msgid "Pitfalls"
+msgstr ""
+
+#: src/concurrency/welcome-async.md:40
+msgid "55 minutes"
+msgstr "55 分鐘"
+
+#: src/concurrency/welcome-async.md:41
+msgid "Exercises"
+msgstr ""
+
+#: src/concurrency/welcome-async.md:41
+msgid "1 hour and 10 minutes"
+msgstr "1 小時又 10 分鐘"

@@ -1,0 +1,43 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/references/exclusive.md:6
+msgid "Exclusive References"
+msgstr ""
+
+#: src/references/exclusive.md:8
+msgid ""
+"Exclusive references, also known as mutable references, allow changing the "
+"value they refer to. They have type `&mut T`."
+msgstr ""
+
+#: src/references/exclusive.md:28
+msgid "Key points:"
+msgstr ""
+
+#: src/references/exclusive.md:30
+msgid ""
+"\"Exclusive\" means that only this reference can be used to access the "
+"value. No other references (shared or exclusive) can exist at the same time, "
+"and the referenced value cannot be accessed while the exclusive reference "
+"exists. Try making an `&point.0` or changing `point.0` while `x_coord` is "
+"alive."
+msgstr ""
+
+#: src/references/exclusive.md:35
+msgid ""
+"Be sure to note the difference between `let mut x_coord: &i32` and `let "
+"x_coord: &mut i32`. The first one is a shared reference that can be bound to "
+"different values, while the second is an exclusive reference to a mutable "
+"value."
+msgstr ""

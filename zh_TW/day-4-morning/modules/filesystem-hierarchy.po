@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/modules/filesystem.md:6
+msgid "Filesystem Hierarchy"
+msgstr ""
+
+#: src/modules/filesystem.md:8
+msgid ""
+"Omitting the module content will tell Rust to look for it in another file:"
+msgstr ""
+
+#: src/modules/filesystem.md:11 src/modules/filesystem.md:30
+#: src/modules/filesystem.md:73
+msgid "// Copyright 2022 Google LLC\n"
+msgstr ""
+
+#: src/modules/filesystem.md:12 src/modules/filesystem.md:31
+#: src/modules/filesystem.md:74
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/modules/filesystem.md:17
+msgid ""
+"This tells Rust that the `garden` module content is found at `src/garden."
+"rs`. Similarly, a `garden::vegetables` module can be found at `src/garden/"
+"vegetables.rs`."
+msgstr ""
+
+#: src/modules/filesystem.md:21
+msgid "The `crate` root is in:"
+msgstr ""
+
+#: src/modules/filesystem.md:23
+msgid "`src/lib.rs` (for a library crate)"
+msgstr ""
+
+#: src/modules/filesystem.md:24
+msgid "`src/main.rs` (for a binary crate)"
+msgstr ""
+
+#: src/modules/filesystem.md:26
+msgid ""
+"Modules defined in files can be documented, too, using \"inner doc "
+"comments\". These document the item that contains them -- in this case, a "
+"module."
+msgstr ""
+
+#: src/modules/filesystem.md:32
+msgid ""
+"//! This module implements the garden, including a highly performant "
+"germination\n"
+"//! implementation.\n"
+msgstr ""
+
+#: src/modules/filesystem.md:35
+msgid "// Re-export types from this module.\n"
+msgstr ""
+
+#: src/modules/filesystem.md:39
+msgid "/// Sow the given seed packets.\n"
+msgstr ""
+
+#: src/modules/filesystem.md:44
+msgid "/// Harvest the produce in the garden that is ready.\n"
+msgstr ""
+
+#: src/modules/filesystem.md:54
+msgid ""
+"Before Rust 2018, modules needed to be located at `module/mod.rs` instead of "
+"`module.rs`, and this is still a working alternative for editions after 2018."
+msgstr ""
+
+#: src/modules/filesystem.md:57
+msgid ""
+"The main reason to introduce `filename.rs` as alternative to `filename/mod."
+"rs` was because many files named `mod.rs` can be hard to distinguish in IDEs."
+msgstr ""
+
+#: src/modules/filesystem.md:60
+msgid "Deeper nesting can use folders, even if the main module is a file:"
+msgstr ""
+
+#: src/modules/filesystem.md:70
+msgid ""
+"The place Rust will look for modules can be changed with a compiler "
+"directive:"
+msgstr ""
+
+#: src/modules/filesystem.md:76
+msgid "\"some/path.rs\""
+msgstr ""
+
+#: src/modules/filesystem.md:80
+msgid ""
+"This is useful, for example, if you would like to place tests for a module "
+"in a file named `some_module_test.rs`, similar to the convention in Go."
+msgstr ""

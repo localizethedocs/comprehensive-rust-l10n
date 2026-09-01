@@ -1,0 +1,152 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/user-defined-types/solution.md:6
+msgid "Solution"
+msgstr ""
+
+#: src/user-defined-types/solution.md:9
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:14
+msgid ""
+"/// An event in the elevator system that the controller must react to.\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:17
+msgid "/// A button was pressed.\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:20
+msgid "/// The car has arrived at the given floor.\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:23
+msgid "/// The car's doors have opened.\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:26
+msgid "/// The car's doors have closed.\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:29
+msgid "/// A floor is represented as an integer.\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:32
+msgid "/// A direction of travel.\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:39
+msgid "/// A user-accessible button.\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:43
+msgid "/// A button in the elevator lobby on the given floor.\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:46
+msgid "/// A floor button within the car.\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:49
+msgid "/// The car has arrived on the given floor.\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:54
+msgid "/// The car doors have opened.\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:59
+msgid "/// The car doors have closed.\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:64
+msgid ""
+"/// A directional button was pressed in an elevator lobby on the given "
+"floor.\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:69
+msgid "/// A floor button was pressed in the elevator car.\n"
+msgstr ""
+
+#: src/user-defined-types/solution.md:77
+msgid "\"A ground floor passenger has pressed the up button: {:?}\""
+msgstr ""
+
+#: src/user-defined-types/solution.md:80
+msgid "\"The car has arrived on the ground floor: {:?}\""
+msgstr ""
+
+#: src/user-defined-types/solution.md:81
+msgid "\"The car door opened: {:?}\""
+msgstr ""
+
+#: src/user-defined-types/solution.md:83
+msgid "\"A passenger has pressed the 3rd floor button: {:?}\""
+msgstr ""
+
+#: src/user-defined-types/solution.md:86
+msgid "\"The car door closed: {:?}\""
+msgstr ""
+
+#: src/user-defined-types/solution.md:87
+msgid "\"The car has arrived on the 3rd floor: {:?}\""
+msgstr ""
+
+#: src/user-defined-types/solution.md:91
+msgid ""
+"**Enums with Data:** Rust `enum` variants can carry data. "
+"`CarArrived(Floor)` carries an integer, and `ButtonPressed(Button)` carries "
+"a nested `Button` enum. This allows `Event` to represent a rich set of "
+"states in a type-safe way."
+msgstr ""
+
+#: src/user-defined-types/solution.md:95
+msgid ""
+"**Type Aliases:** `type Floor = i32` gives a semantic name to `i32`. This "
+"improves readability, but `Floor` is still just an `i32` to the compiler."
+msgstr ""
+
+#: src/user-defined-types/solution.md:97
+msgid ""
+"**`#[derive(Debug)]`:** We use this attribute to automatically generate code "
+"to format the enums for printing with `{:?}`. Without this, we would have to "
+"manually implement the `fmt::Debug` trait."
+msgstr ""
+
+#: src/user-defined-types/solution.md:100
+msgid ""
+"**Nested Enums:** The `Button` enum is nested inside `Event::ButtonPressed`. "
+"This hierarchical structure is common in Rust for modeling complex domains."
+msgstr ""
+
+#: src/user-defined-types/solution.md:105
+msgid ""
+"Note that `Event::CarDoorOpened` is a \"unit variant\" (it carries no data), "
+"while `Event::CarArrived` is a \"tuple variant\"."
+msgstr ""
+
+#: src/user-defined-types/solution.md:107
+msgid ""
+"You might discuss why `Button` is a separate enum rather than just having "
+"`LobbyCallButtonPressed` and `CarFloorButtonPressed` variants on `Event`. "
+"Both are valid, but grouping related concepts (like buttons) can make the "
+"code cleaner."
+msgstr ""

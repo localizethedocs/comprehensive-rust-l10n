@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/sealed-traits.md:6
+msgid "Sealed traits for Polymorphism users cannot extend"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/sealed-traits.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/sealed-traits.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/sealed-traits.md:11
+msgid ""
+"// crate can access the \"sealed\" module and its trait, but projects that\n"
+"// depend on it cannot.\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/sealed-traits.md:18
+msgid "//...\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/sealed-traits.md:22
+msgid "/* methods */"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/sealed-traits.md:30
+msgid ""
+"Motivation: We want trait-driven code in a crate, but we don't want projects "
+"that depend on this crate to be able to implement a trait."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/sealed-traits.md:33
+msgid "Why?"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/sealed-traits.md:35
+msgid ""
+"The trait could be considered unstable for downstream-implementations at "
+"this point in time."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/sealed-traits.md:38
+msgid ""
+"Alternatively: Domain is high-risk for naive implementations of a trait "
+"(such as cryptography)."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/sealed-traits.md:41
+msgid ""
+"The mechanism we use to do this is restricting access to a supertrait, "
+"preventing downstream users from being able to implement that trait for "
+"their types."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/sealed-traits.md:45
+msgid "Why not just use enums?"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/sealed-traits.md:47
+msgid "Enums expose implementation details – \"this works for these types\"."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/sealed-traits.md:49
+msgid "Users need to use variant constructors of an enum to use the API."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/sealed-traits.md:51
+msgid ""
+"Users can use the enum as a type in their own code, and when the enum "
+"changes users need to update their code to match those changes."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/sealed-traits.md:54
+msgid ""
+"Enums require branching on variants, whereas sealed traits lets the compile "
+"specify monomorphized functions for each type."
+msgstr ""

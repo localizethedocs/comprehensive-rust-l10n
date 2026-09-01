@@ -1,0 +1,94 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:6
+msgid "Drop: Option"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:20
+msgid ""
+"// We have to go through the `Option` to get the `Handle`\n"
+"        // before we can use it.\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:23
+msgid "\"write '{data}' to file '{}'\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:41
+msgid "\"Closing {}\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:46
+msgid "\"foo.txt\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:47
+msgid "\"hello\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:54
+msgid ""
+"In this example we want to call `close` on the inner `Handle` in our `Drop` "
+"impl, but `close` requires ownership of the `Handle`. We can't do this "
+"normally, because we don't get ownership of the `File` object in `drop`, and "
+"therefore can't move out of the field."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:59
+msgid ""
+"Wrapping the handle in an `Option` gives us a way to move out of the field "
+"through a mutable reference."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:62
+msgid ""
+"The main downside is ergonomics. `Option` forces us to handle both the "
+"`Some` and `None` case even in places where, logically, `None` cannot occur. "
+"Rust’s type system cannot express that relationship between `File` and its "
+"`Handle`, so we handle both cases manually."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:67
+msgid "More to explore"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:69
+msgid ""
+"Instead of `Option` we could use [`ManuallyDrop`](https://doc.rust-lang.org/"
+"std/mem/struct.ManuallyDrop.html), which suppresses automatic destruction by "
+"preventing Rust from calling `Drop` for the value; you must handle teardown "
+"yourself."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:74
+msgid ""
+"The [_scopeguard_ example](./scope_guard.md) on the previous slide shows how "
+"`ManuallyDrop` can replace `Option` to avoid handling `None` in places where "
+"the value should always exist."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_option.md:78
+msgid ""
+"In such designs we typically track the drop state with a separate flag next "
+"to the `ManuallyDrop<Handle>`, which lets us track whether the handle has "
+"already been manually consumed."
+msgstr ""

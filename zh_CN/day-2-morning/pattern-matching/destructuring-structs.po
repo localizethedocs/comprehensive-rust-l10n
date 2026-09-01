@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/pattern-matching/destructuring-structs.md:6
+msgid "Structs"
+msgstr ""
+
+#: src/pattern-matching/destructuring-structs.md:8
+msgid "Like tuples, structs can also be destructured by matching:"
+msgstr ""
+
+#: src/pattern-matching/destructuring-structs.md:11
+msgid "// Copyright 2022 Google LLC\n"
+msgstr ""
+
+#: src/pattern-matching/destructuring-structs.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/pattern-matching/destructuring-structs.md:24
+msgid "\"Standing still\""
+msgstr ""
+
+#: src/pattern-matching/destructuring-structs.md:25
+msgid "\"{repeat} step x: {x}\""
+msgstr ""
+
+#: src/pattern-matching/destructuring-structs.md:26
+msgid "\"Single step y: {y}\""
+msgstr ""
+
+#: src/pattern-matching/destructuring-structs.md:27
+msgid "\"Other move\""
+msgstr ""
+
+#: src/pattern-matching/destructuring-structs.md:35
+msgid "Change the literal values in `m` to match with the other patterns."
+msgstr ""
+
+#: src/pattern-matching/destructuring-structs.md:36
+msgid ""
+"Add a new field to `Movement` and make changes to the pattern as needed."
+msgstr ""
+
+#: src/pattern-matching/destructuring-structs.md:37
+msgid "Note how `delta: (x, 0)` is a nested pattern."
+msgstr ""
+
+#: src/pattern-matching/destructuring-structs.md:39
+msgid "More to Explore"
+msgstr ""
+
+#: src/pattern-matching/destructuring-structs.md:41
+msgid ""
+"Try `match &m` and check the type of captures. The pattern syntax remains "
+"the same, but the captures become shared references. This is [match "
+"ergonomics](https://rust-lang.github.io/rfcs/2005-match-ergonomics.html) and "
+"is often useful with `match self` when implementing methods on an enum."
+msgstr ""
+
+#: src/pattern-matching/destructuring-structs.md:45
+msgid ""
+"The same effect occurs with `match &mut m`: the captures become exclusive "
+"references."
+msgstr ""
+
+#: src/pattern-matching/destructuring-structs.md:47
+msgid ""
+"The distinction between a capture and a constant expression can be hard to "
+"spot. Try changing the `10` in the first arm to a variable, and see that it "
+"subtly doesn't work. Change it to a `const` and see it working again."
+msgstr ""

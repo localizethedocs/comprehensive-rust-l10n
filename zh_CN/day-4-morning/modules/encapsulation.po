@@ -1,0 +1,100 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/modules/encapsulation.md:6
+msgid "Visibility and Encapsulation"
+msgstr ""
+
+#: src/modules/encapsulation.md:8
+msgid ""
+"Like with items in a module, struct fields are also private by default. "
+"Private fields are likewise visible within the rest of the module (including "
+"child modules). This allows us to encapsulate implementation details of "
+"struct, controlling what data and functionality is visible externally."
+msgstr ""
+
+#: src/modules/encapsulation.md:14
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/modules/encapsulation.md:15
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/modules/encapsulation.md:35
+msgid "\"Is {} big? {}\""
+msgstr ""
+
+#: src/modules/encapsulation.md:42
+msgid "\"foo.val = {}\""
+msgstr ""
+
+#: src/modules/encapsulation.md:43
+msgid "// let foo = Foo { val: 42, is_big: true };\n"
+msgstr ""
+
+#: src/modules/encapsulation.md:46
+msgid "// println!(\"Is {} big? {}\", foo.val, foo.is_big);\n"
+msgstr ""
+
+#: src/modules/encapsulation.md:53
+msgid ""
+"This slide demonstrates how privacy in structs is module-based. Students "
+"coming from object-oriented languages may be used to types being the "
+"encapsulation boundary, so this demonstrates how Rust behaves differently "
+"while showing how we can still achieve encapsulation."
+msgstr ""
+
+#: src/modules/encapsulation.md:58
+msgid ""
+"Note how the `is_big` field is fully controlled by `Foo`, allowing `Foo` to "
+"control how it's initialized and enforce any invariants it needs to (e.g. "
+"that `is_big` is only `true` if `val > 100`)."
+msgstr ""
+
+#: src/modules/encapsulation.md:62
+msgid ""
+"Point out how helper functions can be defined in the same module (including "
+"child modules) in order to get access to the type's private fields/methods."
+msgstr ""
+
+#: src/modules/encapsulation.md:65
+msgid ""
+"The first commented out line demonstrates that you cannot initialize a "
+"struct with private fields. The second one demonstrates that you also can't "
+"directly access private fields."
+msgstr ""
+
+#: src/modules/encapsulation.md:69
+msgid ""
+"Enums do not support privacy: Variants and data within those variants is "
+"always public."
+msgstr ""
+
+#: src/modules/encapsulation.md:72
+msgid "More to Explore"
+msgstr ""
+
+#: src/modules/encapsulation.md:74
+msgid ""
+"If students want more information about privacy (or lack thereof) in enums, "
+"you can bring up `#[doc_hidden]` and `#[non_exhaustive]` and show how "
+"they're used to limit what can be done with an enum."
+msgstr ""
+
+#: src/modules/encapsulation.md:78
+msgid ""
+"Module privacy still applies when there are `impl` blocks in other modules "
+"[(example in the playground)](https://play.rust-lang.org/?"
+"version=stable&mode=debug&edition=2024&gist=3e61f43c88de12bcdf69c1d6df9ab3da)."
+msgstr ""

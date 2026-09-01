@@ -1,0 +1,105 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:6
+msgid "Defining an unsafe function"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:9
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:11
+msgid ""
+"/// Convert a nullable pointer to a reference.\n"
+"///\n"
+"/// Returns `None` when `p` is null, otherwise wraps `val` in `Some`.\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:19
+msgid "// SAFETY: `ptr` is non-null\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:27
+msgid ""
+"“This looks as though it’s safe code, however it actually requires an unsafe "
+"block.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:30
+msgid "Highlight the dereference operation, i.e. `*p` within the unsafe block."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:32
+msgid ""
+"“Callers must ensure that the `ptr` is null, or that it may be converted to "
+"a reference."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:35
+msgid ""
+"“It may be counter-intuitive, but many pointers cannot be converted to "
+"references."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:38
+msgid ""
+"“Among other issues, a pointer could be created that points to some "
+"arbitrary bits rather than a valid value. That’s not something that Rust "
+"allows and something that this function needs to protect itself against."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:42
+msgid ""
+"“So we, as API designers, have two paths. We can either try to assume "
+"responsibility for guarding against invalid inputs, or we can shift that "
+"responsibility to the caller with the unsafe keyword.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:46
+msgid ""
+"“The first path is a difficult one. We’re accepting a generic type T, which "
+"is all possible types that implement Sized. That’s a lot of types!"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:49
+msgid "“Therefore, the second path makes more sense."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:51
+msgid "_Extra content (time permitting)_"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:53
+msgid ""
+"“By the way, if you’re interested in the details of pointers and what the "
+"rules of converting them to references are, the standard library has a lot "
+"of useful documentation. You should also look into the source code of many "
+"of the methods on std::pointer."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:58
+msgid ""
+"“For example, the `ptr_to_ref` function on this slide actually exists in the "
+"standard library as the `as_mut` method on pointers.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-fn.md:61
+msgid ""
+"Open the documentation for [std::pointer.as_mut](https://doc.rust-lang.org/"
+"std/primitive.pointer.html#method.as_mut) and highlight the Safety section."
+msgstr ""

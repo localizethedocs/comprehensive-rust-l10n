@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/heterogeneous.md:6
+msgid "Heterogeneous data with `dyn trait`"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/heterogeneous.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/heterogeneous.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/heterogeneous.md:18
+msgid "\"λ\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/heterogeneous.md:25
+msgid "\"Woah\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/heterogeneous.md:29
+msgid "// We know \"item\" implements Display, but we know nothing else!\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/heterogeneous.md:30
+msgid "\"Display output: {}\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/heterogeneous.md:37
+msgid ""
+"`dyn Trait`, being a dynamic dispatch tool, lets us store heterogeneous data "
+"in collections."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/heterogeneous.md:40
+msgid ""
+"In this example, we're storing types that all implement `std::fmt::Display` "
+"and printing all items in that collection to screen."
+msgstr ""

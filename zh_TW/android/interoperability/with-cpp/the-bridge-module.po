@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/interoperability/cpp/bridge.md:6
+msgid "The Bridge Module"
+msgstr ""
+
+#: src/android/interoperability/cpp/bridge.md:8
+msgid ""
+"CXX relies on a description of the function signatures that will be exposed "
+"from each language to the other. You provide this description using extern "
+"blocks in a Rust module annotated with the `#[cxx::bridge]` attribute macro."
+msgstr ""
+
+#: src/android/interoperability/cpp/bridge.md:13
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/bridge.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/bridge.md:17
+msgid "\"org::blobstore\""
+msgstr ""
+
+#: src/android/interoperability/cpp/bridge.md:19
+msgid "// Shared structs with fields visible to both languages.\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/bridge.md:25
+msgid "// Rust types and signatures exposed to C++.\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/bridge.md:26
+msgid "\"Rust\""
+msgstr ""
+
+#: src/android/interoperability/cpp/bridge.md:32
+msgid "// C++ types and signatures exposed to Rust.\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/bridge.md:33
+msgid "\"C++\""
+msgstr ""
+
+#: src/android/interoperability/cpp/bridge.md:34
+msgid "\"include/blobstore.h\""
+msgstr ""
+
+#: src/android/interoperability/cpp/bridge.md:48
+msgid "The bridge is generally declared in an `ffi` module within your crate."
+msgstr ""
+
+#: src/android/interoperability/cpp/bridge.md:49
+msgid ""
+"From the declarations made in the bridge module, CXX will generate matching "
+"Rust and C++ type/function definitions in order to expose those items to "
+"both languages."
+msgstr ""
+
+#: src/android/interoperability/cpp/bridge.md:52
+msgid ""
+"To view the generated Rust code, use [cargo-expand](https://github.com/"
+"dtolnay/cargo-expand) to view the expanded proc macro. For most of the "
+"examples you would use `cargo expand ::ffi` to expand just the `ffi` module "
+"(though this doesn't apply for Android projects)."
+msgstr ""
+
+#: src/android/interoperability/cpp/bridge.md:55
+msgid "To view the generated C++ code, look in `target/cxxbridge`."
+msgstr ""

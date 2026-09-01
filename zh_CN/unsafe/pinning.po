@@ -1,0 +1,118 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/pinning.md:6
+msgid "Pinning"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:8
+msgid "This segment of the course covers:"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:10
+msgid "What \"pinning\" is"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:11
+msgid "Why it is necessary"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:12
+msgid "How Rust implements it"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:13
+msgid "How it interacts with unsafe and FFI"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:15
+msgid "Outline"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:17
+msgid "This segment should take about 1 hour and 20 minutes. It contains:"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:19
+msgid "Slide"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:19
+msgid "Duration"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:21
+msgid "What pinning is"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:21 src/unsafe-deep-dive/pinning.md:22
+#: src/unsafe-deep-dive/pinning.md:23
+msgid "5 minutes"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:22
+msgid "Definition of Pin"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:23
+msgid "PhantomPinned"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:24
+msgid "Self-Referential Buffer Example"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:24
+msgid "50 minutes"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:25
+msgid "Pin<Ptr> and Drop"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:25
+msgid "15 minutes"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:30
+msgid ""
+"\"Pinning, or holding a value's memory address in a fixed location,is one of "
+"the more challenging concepts in Rust.\""
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:33
+msgid ""
+"\"Normally only seen within async code, i.e. [`poll(self: Pin<&mut Self>)`]"
+"(https://doc.rust-lang.org/std/future/trait.Future.html#tymethod.poll), "
+"pinning has wider applicability.\""
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:36
+msgid ""
+"Some data structures that are difficult or impossible to write without the "
+"unsafe keyword, including self-referential structs and intrusive data "
+"structures."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:40
+msgid ""
+"FFI with C++ is a prominent use case that's related to this. Rust must "
+"assume that any C++ with a reference might be a self-referential data "
+"structure."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning.md:43
+msgid ""
+"\"To understand this conflict in more detail, we'll first need to make sure "
+"that we have a strong understanding of Rust's move semantics.\""
+msgstr ""

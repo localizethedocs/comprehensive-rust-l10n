@@ -1,0 +1,166 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:6
+msgid "Extending Other Traits"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:8
+msgid ""
+"As with types, it may be desirable to **extend foreign traits**. In "
+"particular, to attach new methods to _all_ implementors of a given trait."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:24
+msgid "\"'{}'\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:31
+msgid "\"dad\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:31
+msgid "\"'dad'\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:32
+msgid "\"'4'\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:33
+msgid "\"'true'\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:38
+msgid ""
+"Highlight how we added new behavior to _multiple_ types at once. `.quoted()` "
+"can be called on string slices, numbers, and booleans since they all "
+"implement the `Display` trait."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:42
+msgid ""
+"This flavor of the extension trait pattern uses [_blanket implementations_]"
+"(https://doc.rust-lang.org/stable/reference/glossary.html#blanket-"
+"implementation)."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:45
+msgid ""
+"A blanket implementation implements a trait for all types `T` that satisfy "
+"the trait bounds specified in the `impl` block. In this case, the only "
+"requirement is that `T` implements the `Display` trait."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:49
+msgid ""
+"Draw the students' attention to the implementation of `DisplayExt::quoted`: "
+"we can't make any assumptions about `T` other than that it implements "
+"`Display`. All our logic must either use methods from `Display` or functions/"
+"macros that don't require other traits."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:54
+msgid ""
+"For example, we can call `format!` with `T`, but can't call `."
+"to_uppercase()` because it is not necessarily a `String`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:57
+msgid ""
+"We could introduce additional trait bounds on `T`, but it would restrict the "
+"set of types that can leverage the extension trait."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:60
+msgid ""
+"Conventionally, the extension trait is named after the trait it extends, "
+"followed by the `Ext` suffix. In the example above, `DisplayExt`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:63
+msgid ""
+"There are entire crates that extend standard library traits with new "
+"functionality."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:66
+msgid ""
+"`itertools` crate provides the `Itertools` trait that extends `Iterator`. It "
+"adds many iterator adapters, such as `interleave` and `unique`. It provides "
+"new algorithmic building blocks for iterator pipelines built with method "
+"chaining."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:71
+msgid ""
+"`futures` crate provides the `FutureExt` trait, which extends the `Future` "
+"trait with new combinators and helper methods."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:74
+msgid "More To Explore"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:76
+msgid ""
+"Extension traits can be used by libraries to distinguish between stable and "
+"experimental methods."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:79
+msgid "Stable methods are part of the trait definition."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:81
+msgid ""
+"Experimental methods are provided via an extension trait defined in a "
+"different library, with a less restrictive stability policy. Some utility "
+"methods are then \"promoted\" to the core trait definition once they have "
+"been proven useful and their design has been refined."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:86
+msgid ""
+"Extension traits can be used to split a [dyn-incompatible trait](https://doc."
+"rust-lang.org/reference/items/traits.html#r-items.traits.dyn-compatible) in "
+"two:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:88
+msgid ""
+"A **dyn-compatible core**, restricted to the methods that satisfy dyn-"
+"compatibility requirements."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:90
+msgid ""
+"An **extension trait**, containing the remaining methods that are not dyn-"
+"compatible (e.g., methods with a generic parameter)."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:93
+msgid ""
+"Concrete types that implement the core trait will be able to invoke all "
+"methods, thanks to the blanket impl for the extension trait. Trait objects "
+"(`dyn CoreTrait`) will be able to invoke all methods on the core trait as "
+"well as those on the extension trait that don't require `Self: Sized`."
+msgstr ""
