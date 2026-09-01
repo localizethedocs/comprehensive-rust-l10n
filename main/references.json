@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-07-20 12:06:06 +0200",
-      "hash" : "cbb740718a72b2181e5fe6885110cbbffa53b616",
-      "title" : "build(deps-dev): bump morgan from 1.10.1 to 1.11.0 in /tests in the npm_and_yarn group across 1 directory (#3240)"
+      "date" : "2026-09-01 13:53:11 +0100",
+      "hash" : "d6ea7ddfc6207359bf65bf9e1429e9f41f7a5f25",
+      "title" : "cargo: bump the patch group in /src/exercises/bare-metal/rtc with 4 updates (#3268)"
     }
   },
   "type" : "branch",
