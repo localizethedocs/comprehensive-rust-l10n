@@ -1,0 +1,87 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:6
+msgid "Names and Signatures are not full documentation"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:11
+msgid ""
+"// bad\n"
+"/// Returns a future that resolves when operation completes.  \n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:15
+msgid ""
+"// good\n"
+"/// Sends local edits to the server, overwriting concurrent edits  \n"
+"/// if any happened.  \n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:20
+msgid ""
+"// bad\n"
+"/// Returns an error if sending the email fails.  \n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:24
+msgid ""
+"// good\n"
+"/// Queues the email for background delivery and returns immediately.  \n"
+"///\n"
+"/// Returns an error immediately if the email is malformed.  \n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:34
+msgid ""
+"Motivation: API designers can over-commit to the idea that a function name "
+"and signature is enough documentation."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:37
+msgid ""
+"Again, names and types are _part_ of the documentation. They are not always "
+"the full story!"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:40
+msgid ""
+"Consider the behavior of functions that are not covered by the name, "
+"parameter names, or signature of that function."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:43
+msgid ""
+"It is not obvious that `sync_to_server()` could overwrite something (leading "
+"to a data loss), so document that."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:46
+msgid ""
+"In the email example, it is not obvious that the function can return success "
+"and still fail to deliver the email."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md:49
+msgid ""
+"Use comments to disambiguate. Nuanced behaviors, behaviors that users of an "
+"API could trip up on, should be documented."
+msgstr ""

@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/interoperability-with-cpp/using-cxx-in-chromium.md:6
+msgid "Using cxx in Chromium"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/using-cxx-in-chromium.md:8
+msgid ""
+"In Chromium, we define an independent `#[cxx::bridge] mod` for each leaf-"
+"node where we want to use Rust. You'd typically have one for each "
+"`rust_static_library`. Just add"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/using-cxx-in-chromium.md:12
+msgid ""
+"```gn\n"
+"cxx_bindings = [ \"my_rust_file.rs\" ]\n"
+"   # list of files containing #[cxx::bridge], not all source files\n"
+"allow_unsafe = true\n"
+"```"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/using-cxx-in-chromium.md:18
+msgid ""
+"to your existing `rust_static_library` target alongside `crate_root` and "
+"`sources`."
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/using-cxx-in-chromium.md:21
+msgid "C++ headers will be generated at a sensible location, so you can just"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/using-cxx-in-chromium.md:24
+msgid "\"ui/base/my_rust_file.rs.h\""
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/using-cxx-in-chromium.md:27
+msgid ""
+"You will find some utility functions in `//base` to convert to/from Chromium "
+"C++ types to CXX Rust types --- for example [`SpanToRustSlice`](https://"
+"source.chromium.org/chromium/chromium/src/+/main:base/containers/span_rust.h;"
+"l=21)."
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/using-cxx-in-chromium.md:32
+msgid "Students may ask --- why do we still need `allow_unsafe = true`?"
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/using-cxx-in-chromium.md:34
+msgid ""
+"The broad answer is that no C/C++ code is \"safe\" by the normal Rust "
+"standards. Calling back and forth to C/C++ from Rust may do arbitrary things "
+"to memory, and compromise the safety of Rust's own data layouts. Presence of "
+"_too many_ `unsafe` keywords in C/C++ interop can harm the signal-to-noise "
+"ratio of such a keyword, and is [controversial](https://steveklabnik.com/"
+"writing/the-cxx-debate), but strictly, bringing any foreign code into a Rust "
+"binary can cause unexpected behavior from Rust's perspective."
+msgstr ""
+
+#: src/chromium/interoperability-with-cpp/using-cxx-in-chromium.md:41
+msgid ""
+"The narrow answer lies in the diagram at the top of [this page](../"
+"interoperability-with-cpp.md) --- behind the scenes, CXX generates Rust "
+"`unsafe` and `extern \"C\"` functions just like we did manually in the "
+"previous section."
+msgstr ""

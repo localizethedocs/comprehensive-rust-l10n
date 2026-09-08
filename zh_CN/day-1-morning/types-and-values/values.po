@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/types-and-values/values.md:6
+msgid "Values"
+msgstr ""
+
+#: src/types-and-values/values.md:8
+msgid ""
+"Here are some basic built-in types, and the syntax for literal values of "
+"each type."
+msgstr ""
+
+#: src/types-and-values/values.md:11
+msgid "Types"
+msgstr ""
+
+#: src/types-and-values/values.md:11
+msgid "Literals"
+msgstr ""
+
+#: src/types-and-values/values.md:13
+msgid "Signed integers"
+msgstr ""
+
+#: src/types-and-values/values.md:13
+msgid "`i8`, `i16`, `i32`, `i64`, `i128`, `isize`"
+msgstr ""
+
+#: src/types-and-values/values.md:13
+msgid "`-10`, `0`, `1_000`, `123_i64`"
+msgstr ""
+
+#: src/types-and-values/values.md:14
+msgid "Unsigned integers"
+msgstr ""
+
+#: src/types-and-values/values.md:14
+msgid "`u8`, `u16`, `u32`, `u64`, `u128`, `usize`"
+msgstr ""
+
+#: src/types-and-values/values.md:14
+msgid "`0`, `123`, `10_u16`"
+msgstr ""
+
+#: src/types-and-values/values.md:15
+msgid "Floating point numbers"
+msgstr ""
+
+#: src/types-and-values/values.md:15
+msgid "`f32`, `f64`"
+msgstr ""
+
+#: src/types-and-values/values.md:15
+msgid "`3.14`, `-10.0e20`, `2_f32`"
+msgstr ""
+
+#: src/types-and-values/values.md:16
+msgid "Unicode scalar values"
+msgstr ""
+
+#: src/types-and-values/values.md:16
+msgid "`char`"
+msgstr ""
+
+#: src/types-and-values/values.md:16
+msgid "`'a'`, `'α'`, `'∞'`"
+msgstr ""
+
+#: src/types-and-values/values.md:17
+msgid "Booleans"
+msgstr ""
+
+#: src/types-and-values/values.md:17
+msgid "`bool`"
+msgstr ""
+
+#: src/types-and-values/values.md:17
+msgid "`true`, `false`"
+msgstr ""
+
+#: src/types-and-values/values.md:19
+msgid "The types have widths as follows:"
+msgstr ""
+
+#: src/types-and-values/values.md:21
+msgid "`iN`, `uN`, and `fN` are _N_ bits wide,"
+msgstr ""
+
+#: src/types-and-values/values.md:22
+msgid "`isize` and `usize` are the width of a pointer,"
+msgstr ""
+
+#: src/types-and-values/values.md:23
+msgid "`char` is 32 bits wide,"
+msgstr ""
+
+#: src/types-and-values/values.md:24
+msgid "`bool` is 8 bits wide."
+msgstr ""
+
+#: src/types-and-values/values.md:29
+msgid "There are a few syntaxes that are not shown above:"
+msgstr ""
+
+#: src/types-and-values/values.md:31
+msgid ""
+"All underscores in numbers can be left out, they are for legibility only. So "
+"`1_000` can be written as `1000` (or `10_00`), and `123_i64` can be written "
+"as `123i64`."
+msgstr ""

@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/shared-state/arc.md:6
+msgid "`Arc`"
+msgstr ""
+
+#: src/concurrency/shared-state/arc.md:8
+msgid ""
+"[`Arc<T>`](https://doc.rust-lang.org/std/sync/struct.Arc.html) allows "
+"shared, read-only ownership via `Arc::clone`:"
+msgstr ""
+
+#: src/concurrency/shared-state/arc.md:11
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/concurrency/shared-state/arc.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/concurrency/shared-state/arc.md:16
+msgid "/// A struct that prints which thread drops it.\n"
+msgstr ""
+
+#: src/concurrency/shared-state/arc.md:23
+msgid "\"Dropped by {:?}\""
+msgstr ""
+
+#: src/concurrency/shared-state/arc.md:33
+msgid "// Sleep for 0-500ms.\n"
+msgstr ""
+
+#: src/concurrency/shared-state/arc.md:36
+msgid "\"{thread_id:?}: {v:?}\""
+msgstr ""
+
+#: src/concurrency/shared-state/arc.md:40
+msgid "// Now only the spawned threads will hold clones of `v`.\n"
+msgstr ""
+
+#: src/concurrency/shared-state/arc.md:43
+msgid ""
+"// When the last spawned thread finishes, it will drop `v`'s contents.\n"
+msgstr ""
+
+#: src/concurrency/shared-state/arc.md:53
+msgid ""
+"`Arc` stands for \"Atomic Reference Counted\", a thread safe version of `Rc` "
+"that uses atomic operations."
+msgstr ""
+
+#: src/concurrency/shared-state/arc.md:55
+msgid ""
+"`Arc<T>` implements `Clone` whether or not `T` does. It implements `Send` "
+"and `Sync` if and only if `T` implements them both."
+msgstr ""
+
+#: src/concurrency/shared-state/arc.md:57
+msgid ""
+"`Arc::clone()` has the cost of atomic operations that get executed, but "
+"after that the use of the `T` is free."
+msgstr ""
+
+#: src/concurrency/shared-state/arc.md:59
+msgid ""
+"Beware of reference cycles, `Arc` does not use a garbage collector to detect "
+"them."
+msgstr ""
+
+#: src/concurrency/shared-state/arc.md:61
+msgid "`std::sync::Weak` can help."
+msgstr ""

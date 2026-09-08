@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/references/solution.md:6
+msgid "Solution"
+msgstr ""
+
+#: src/references/solution.md:9
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/references/solution.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/references/solution.md:11
+msgid "/// Calculate the magnitude of the given vector.\n"
+msgstr ""
+
+#: src/references/solution.md:20
+msgid ""
+"/// Change the magnitude of the vector to 1.0 without changing its "
+"direction.\n"
+msgstr ""
+
+#: src/references/solution.md:30
+msgid "\"Magnitude of a unit vector: {}\""
+msgstr ""
+
+#: src/references/solution.md:33
+msgid "\"Magnitude of {v:?}: {}\""
+msgstr ""
+
+#: src/references/solution.md:35
+msgid "\"Magnitude of {v:?} after normalization: {}\""
+msgstr ""
+
+#: src/references/solution.md:41
+msgid ""
+"Note that in `normalize` we were able to do `*item /= mag` to modify each "
+"element. This is because we're iterating using a mutable reference to an "
+"array, which causes the `for` loop to give mutable references to each "
+"element."
+msgstr ""
+
+#: src/references/solution.md:45
+msgid ""
+"It is also possible to take slice references here, e.g., `fn "
+"magnitude(vector: &[f64]) -> f64`. This makes the function more general, at "
+"the cost of a runtime length check."
+msgstr ""

@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/adding-third-party-crates/configuring-cargo-toml.md:6
+msgid "Configuring the `Cargo.toml` file to add crates"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/configuring-cargo-toml.md:8
+msgid ""
+"Chromium has a single set of centrally-managed direct crate dependencies. "
+"These are managed through a single [`Cargo.toml`](https://source.chromium."
+"org/chromium/chromium/src/+/main:third_party/rust/chromium_crates_io/Cargo."
+"toml):"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/configuring-cargo-toml.md:11
+msgid ""
+"```toml\n"
+"[dependencies]\n"
+"bitflags = \"1\"\n"
+"cfg-if = \"1\"\n"
+"cxx = \"1\"\n"
+"# lots more...\n"
+"```"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/configuring-cargo-toml.md:19
+msgid ""
+"As with any other `Cargo.toml`, you can specify [more details about the "
+"dependencies](https://doc.rust-lang.org/cargo/reference/specifying-"
+"dependencies.html) --- typically, you'll want to specify the `features` that "
+"you wish to enable in the crate."
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/configuring-cargo-toml.md:23
+msgid ""
+"When adding a crate to Chromium, you'll frequently need to provide "
+"additional information in an additional file, `gnrt_config.toml`, which "
+"we'll meet next."
+msgstr ""

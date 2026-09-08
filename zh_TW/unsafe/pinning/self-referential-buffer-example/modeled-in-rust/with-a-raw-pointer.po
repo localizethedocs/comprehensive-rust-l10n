@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md:6
+msgid "With a raw pointer"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md:9
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md:27
+msgid "// Danger: must be called after every move\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md:38
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md:51
+msgid "\"cursor is out of bounds\""
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md:64
+msgid "Avoid spending too much time here."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md:66
+msgid "Talking points:"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md:68
+msgid ""
+"Emphasize that `unsafe` appears frequently. This is a hint that another "
+"design may be more appropriate."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md:70
+msgid "`unsafe` blocks lack safety comments. Therefore, this code is unsound."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md:71
+msgid ""
+"`unsafe` blocks are too broad. Good practice uses smaller `unsafe` blocks "
+"with specific behavior, specific preconditions and specific safety comments."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md:74
+msgid "Questions:"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-raw-pointers.md:76
+msgid ""
+"Q: Should the `read()` and `write()` methods be marked as unsafe?  \n"
+"A: Yes, because `self.cursor` will be a null pointer unless written to."
+msgstr ""

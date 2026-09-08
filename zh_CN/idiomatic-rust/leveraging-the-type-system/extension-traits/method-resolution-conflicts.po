@@ -1,0 +1,145 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:6
+msgid "Method Resolution Conflicts"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:8
+msgid ""
+"What happens when you have a name conflict between an inherent method and an "
+"extension method?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:12
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:68
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:13
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:69
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:29
+msgid ""
+"// Which `count_ones` method is invoked?\n"
+"    // The one from `CountOnesExt`? Or the inherent one from `i32`?\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:37
+msgid ""
+"A foreign type may, in a newer version, add a new inherent method with the "
+"same name as our extension method."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:40
+msgid ""
+"Ask: What will happen in the example above? Will there be a compiler error? "
+"Will one of the two methods be given higher priority? Which one?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:43
+msgid ""
+"Add a `panic!(\"Extension trait\");` in the body of `CountOnesExt::"
+"count_ones` to clarify which method is being invoked."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:46
+msgid ""
+"To prevent users of the Rust language from having to manually specify which "
+"method to use in all cases, there is a priority ordering system for how "
+"methods get \"picked\" first:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:49
+msgid "Immutable (`&self`) first"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:50
+msgid ""
+"Inherent (method defined in the type's `impl` block) before Trait (method "
+"added by a trait impl)."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:52
+msgid "Mutable (`&mut self`) Second"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:53
+msgid "Inherent before Trait."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:55
+msgid ""
+"If every method with the same name has different mutability and was either "
+"defined in as an inherent method or trait method, with no overlap, this "
+"makes the job easy for the compiler."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:59
+msgid ""
+"This does introduce some ambiguity for the user, who may be confused as to "
+"why a method they're relying on is not producing expected behavior. Avoid "
+"name conflicts instead of relying on this mechanism if you can."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:63
+msgid ""
+"Demonstrate: Change the signature and implementation of `CountOnesExt::"
+"count_ones` to `fn count_ones(&mut self) -> u32` and modify the invocation "
+"accordingly:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:74
+msgid ""
+"`CountOnesExt::count_ones` is invoked, rather than the inherent method, "
+"since `&mut self` has a higher priority than `&self`, the one used by the "
+"inherent method."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:78
+msgid ""
+"If an immutable inherent method and a mutable trait method exist for the "
+"same type, we can specify which one to use at the call site by using "
+"`(&<value>).count_ones()` to get the immutable (higher priority) method or "
+"`(&mut <value>).count_ones()`"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:83
+msgid ""
+"Point the students to the Rust reference for more information on [method "
+"resolution](https://doc.rust-lang.org/stable/reference/expressions/method-"
+"call-expr.html)."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:86
+msgid ""
+"Avoid naming conflicts between extension trait methods and inherent methods. "
+"Rust's method resolution algorithm is complex and may surprise users of your "
+"code."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:90
+msgid "More to explore"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:92
+msgid ""
+"The interaction between the priority search used by Rust's method resolution "
+"algorithm and automatic `Deref`ing can be used to emulate [specialization]"
+"(https://github.com/rust-lang/rust/issues/31844) on the stable toolchain, "
+"primarily in the context of macro-generated code. Check out [\"Autoref "
+"Specialization\"](https://github.com/dtolnay/case-studies/blob/master/"
+"autoref-specialization/README.md) for the specific details."
+msgstr ""

@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/adding-third-party-crates/checking-in.md:6
+msgid "Checking Crates into Chromium Source Code"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/checking-in.md:8
+msgid "`git status` should reveal:"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/checking-in.md:10
+msgid "Crate code in `//third_party/rust/chromium_crates_io`"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/checking-in.md:11
+msgid ""
+"Metadata (`BUILD.gn` and `README.chromium`) in `//third_party/rust/<crate>/"
+"<version>`"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/checking-in.md:14
+msgid "Please also add an `OWNERS` file in the latter location."
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/checking-in.md:16
+msgid ""
+"You should land all this, along with your `Cargo.toml` and `gnrt_config."
+"toml` changes, into the Chromium repo."
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/checking-in.md:19
+msgid ""
+"**Important:** you need to use `git add -f` because otherwise `.gitignore` "
+"files may result in some files being skipped."
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/checking-in.md:22
+msgid ""
+"As you do so, you might find presubmit checks fail because of non-inclusive "
+"language. This is because Rust crate data tends to include names of git "
+"branches, and many projects still use non-inclusive terminology there. So "
+"you may need to run:"
+msgstr ""

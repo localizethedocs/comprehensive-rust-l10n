@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/generics/generic-traits.md:6
+msgid "Generic Traits"
+msgstr ""
+
+#: src/generics/generic-traits.md:8
+msgid ""
+"Traits can also be generic, just like types and functions. A trait's "
+"parameters get concrete types when it is used. For example the [`From<T>`]"
+"(https://doc.rust-lang.org/std/convert/trait.From.html) trait is used to "
+"define type conversions:"
+msgstr ""
+
+#: src/generics/generic-traits.md:13 src/generics/generic-traits.md:22
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/generics/generic-traits.md:14 src/generics/generic-traits.md:23
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/generics/generic-traits.md:30
+msgid "\"Converted from integer: {from}\""
+msgstr ""
+
+#: src/generics/generic-traits.md:36
+msgid "\"Converted from bool: {from}\""
+msgstr ""
+
+#: src/generics/generic-traits.md:51
+msgid ""
+"The `From` trait will be covered later in the course, but its [definition in "
+"the `std` docs](https://doc.rust-lang.org/std/convert/trait.From.html) is "
+"simple, and copied here for reference."
+msgstr ""
+
+#: src/generics/generic-traits.md:54
+msgid ""
+"Implementations of the trait do not need to cover all possible type "
+"parameters. Here, `Foo::from(\"hello\")` would not compile because there is "
+"no `From<&str>` implementation for `Foo`."
+msgstr ""
+
+#: src/generics/generic-traits.md:58
+msgid ""
+"Generic traits take types as \"input\", while associated types are a kind of "
+"\"output\" type. A trait can have multiple implementations for different "
+"input types."
+msgstr ""
+
+#: src/generics/generic-traits.md:62
+msgid ""
+"In fact, Rust requires that at most one implementation of a trait match for "
+"any type T. Unlike some other languages, Rust has no heuristic for choosing "
+"the \"most specific\" match. There is work on adding this support, called "
+"[specialization](https://rust-lang.github.io/rfcs/1210-impl-specialization."
+"html)."
+msgstr ""

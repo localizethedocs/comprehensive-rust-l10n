@@ -1,0 +1,93 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/types-and-values/solution.md:6
+msgid "Solution"
+msgstr ""
+
+#: src/types-and-values/solution.md:9
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/types-and-values/solution.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/types-and-values/solution.md:22
+msgid "\"fib({n}) = {}\""
+msgstr ""
+
+#: src/types-and-values/solution.md:26
+msgid ""
+"We use the `return` syntax here to return values from the function. Later in "
+"the course, we will see that the last expression in a block is automatically "
+"returned, allowing us to omit the `return` keyword for a more concise style."
+msgstr ""
+
+#: src/types-and-values/solution.md:30
+msgid ""
+"The `if` condition `n < 2` does not need parentheses, which is standard Rust "
+"style."
+msgstr ""
+
+#: src/types-and-values/solution.md:33
+msgid "Panic"
+msgstr ""
+
+#: src/types-and-values/solution.md:35
+msgid ""
+"The exercise asks when this function will panic. The Fibonacci sequence "
+"grows very rapidly. With `u32`, the calculated values will overflow the 32-"
+"bit integer limit (4,294,967,295) when `n` reaches 48."
+msgstr ""
+
+#: src/types-and-values/solution.md:39
+msgid ""
+"In Rust, integer arithmetic checks for overflow in _debug mode_ (which is "
+"the default when using `cargo run`). If an overflow occurs, the program will "
+"panic (crash with an error message). In _release mode_ (`cargo run --"
+"release`), overflow checks are disabled by default, and the number will wrap "
+"around (modular arithmetic), producing incorrect results."
+msgstr ""
+
+#: src/types-and-values/solution.md:47
+msgid "Walk through the solution step-by-step."
+msgstr ""
+
+#: src/types-and-values/solution.md:48
+msgid "Explain the recursive calls and how they lead to the final result."
+msgstr ""
+
+#: src/types-and-values/solution.md:49
+msgid ""
+"Discuss the integer overflow issue. With `u32`, the function will panic for "
+"`n` around 47. You can demonstrate this by changing the input to `main`."
+msgstr ""
+
+#: src/types-and-values/solution.md:51
+msgid ""
+"Show an iterative solution as an alternative and compare its performance and "
+"memory usage with the recursive one. An iterative solution will be much more "
+"efficient."
+msgstr ""
+
+#: src/types-and-values/solution.md:55
+msgid "More to Explore"
+msgstr ""
+
+#: src/types-and-values/solution.md:57
+msgid ""
+"For a more advanced discussion, you can introduce memoization or dynamic "
+"programming to optimize the recursive Fibonacci calculation, although this "
+"is beyond the scope of the current topic."
+msgstr ""

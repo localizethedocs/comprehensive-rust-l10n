@@ -1,0 +1,168 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/running-the-course/translations.md:6
+msgid "Translations"
+msgstr ""
+
+#: src/running-the-course/translations.md:8
+msgid ""
+"The course has been translated into other languages by a set of wonderful "
+"volunteers:"
+msgstr ""
+
+#: src/running-the-course/translations.md:11
+msgid ""
+"[Brazilian Portuguese](https://google.github.io/comprehensive-rust/pt-BR/) "
+"by [@rastringer](https://github.com/rastringer), [@hugojacob](https://github."
+"com/hugojacob), [@joaovicmendes](https://github.com/joaovicmendes), and "
+"[@henrif75](https://github.com/henrif75)."
+msgstr ""
+
+#: src/running-the-course/translations.md:13
+msgid ""
+"[Chinese (Simplified)](https://google.github.io/comprehensive-rust/zh-CN/) "
+"by [@suetfei](https://github.com/suetfei), [@wnghl](https://github.com/"
+"wnghl), [@anlunx](https://github.com/anlunx), [@kongy](https://github.com/"
+"kongy), [@noahdragon](https://github.com/noahdragon), [@superwhd](https://"
+"github.com/superwhd), @SketchK, and [@nodmp](https://github.com/nodmp)."
+msgstr ""
+
+#: src/running-the-course/translations.md:15
+msgid ""
+"[Chinese (Traditional)](https://google.github.io/comprehensive-rust/zh-TW/) "
+"by [@hueich](https://github.com/hueich), [@victorhsieh](https://github.com/"
+"victorhsieh), [@mingyc](https://github.com/mingyc), [@kuanhungchen](https://"
+"github.com/kuanhungchen), and [@johnathan79717](https://github.com/"
+"johnathan79717)."
+msgstr ""
+
+#: src/running-the-course/translations.md:17
+msgid ""
+"[Farsi](https://google.github.io/comprehensive-rust/fa/) by [@DannyRavi]"
+"(https://github.com/DannyRavi), [@javad-jafari](https://github.com/javad-"
+"jafari), [@Alix1383](https://github.com/alix1383), [@moaminsharifi](https://"
+"github.com/moaminsharifi) , [@hamidrezakp](https://github.com/hamidrezakp) "
+"and [@mehrad77](https://github.com/mehrad77)."
+msgstr ""
+
+#: src/running-the-course/translations.md:19
+msgid ""
+"[Japanese](https://google.github.io/comprehensive-rust/ja/) by [@CoinEZ-JPN]"
+"(https://github.com/CoinEZ), [@momotaro1105](https://github.com/"
+"momotaro1105), [@HidenoriKobayashi](https://github.com/HidenoriKobayashi) "
+"and [@kantasv](https://github.com/kantasv)."
+msgstr ""
+
+#: src/running-the-course/translations.md:21
+msgid ""
+"[Korean](https://google.github.io/comprehensive-rust/ko/) by [@keispace]"
+"(https://github.com/keispace), [@jiyongp](https://github.com/jiyongp), "
+"[@jooyunghan](https://github.com/jooyunghan), and [@namhyung](https://github."
+"com/namhyung)."
+msgstr ""
+
+#: src/running-the-course/translations.md:22
+msgid ""
+"[Spanish](https://google.github.io/comprehensive-rust/es/) by [@deavid]"
+"(https://github.com/deavid)."
+msgstr ""
+
+#: src/running-the-course/translations.md:23
+msgid ""
+"[Ukrainian](https://google.github.io/comprehensive-rust/uk/) by [@git-user-"
+"cpp](https://github.com/git-user-cpp), [@yaremam](https://github.com/"
+"yaremam) and [@reta](https://github.com/reta)."
+msgstr ""
+
+#: src/running-the-course/translations.md:25
+msgid ""
+"Use the language picker in the top-right corner to switch between languages."
+msgstr ""
+
+#: src/running-the-course/translations.md:27
+msgid "Incomplete Translations"
+msgstr ""
+
+#: src/running-the-course/translations.md:29
+msgid ""
+"There is a large number of in-progress translations. We link to the most "
+"recently updated translations:"
+msgstr ""
+
+#: src/running-the-course/translations.md:32
+msgid ""
+"[Arabic](https://google.github.io/comprehensive-rust/ar/) by [@younies]"
+"(https://github.com/younies)"
+msgstr ""
+
+#: src/running-the-course/translations.md:33
+msgid ""
+"[Bengali](https://google.github.io/comprehensive-rust/bn/) by [@raselmandol]"
+"(https://github.com/raselmandol)."
+msgstr ""
+
+#: src/running-the-course/translations.md:34
+msgid ""
+"[French](https://google.github.io/comprehensive-rust/fr/) by [@KookaS]"
+"(https://github.com/KookaS), [@vcaen](https://github.com/vcaen) and "
+"[@AdrienBaudemont](https://github.com/AdrienBaudemont)."
+msgstr ""
+
+#: src/running-the-course/translations.md:35
+msgid ""
+"[German](https://google.github.io/comprehensive-rust/de/) by [@Throvn]"
+"(https://github.com/Throvn) and [@ronaldfw](https://github.com/ronaldfw)."
+msgstr ""
+
+#: src/running-the-course/translations.md:36
+msgid ""
+"[Italian](https://google.github.io/comprehensive-rust/it/) by "
+"[@henrythebuilder](https://github.com/henrythebuilder) and [@detro](https://"
+"github.com/detro)."
+msgstr ""
+
+#: src/running-the-course/translations.md:38
+msgid ""
+"The full list of translations with their current status is also available "
+"either [as of their last update](https://google.github.io/comprehensive-rust/"
+"translation-report.html) or [synced to the latest version of the course]"
+"(https://google.github.io/comprehensive-rust/synced-translation-report.html)."
+msgstr ""
+
+#: src/running-the-course/translations.md:42
+msgid ""
+"If you want to help with this effort, please see [our instructions](https://"
+"github.com/google/comprehensive-rust/blob/main/TRANSLATIONS.md) for how to "
+"get going. Translations are coordinated on the [issue tracker](https://"
+"github.com/google/comprehensive-rust/issues/282)."
+msgstr ""
+
+#: src/running-the-course/translations.md:108
+msgid ""
+"This is a good opportunity to thank the volunteers who have contributed to "
+"the translations."
+msgstr ""
+
+#: src/running-the-course/translations.md:110
+msgid ""
+"If there are students in the class who speak any of the listed languages, "
+"you can encourage them to check out the translated versions and even "
+"contribute if they find any issues."
+msgstr ""
+
+#: src/running-the-course/translations.md:113
+msgid ""
+"Highlight that the project is open source and contributions are welcome, not "
+"just for translations but for the course content itself."
+msgstr ""

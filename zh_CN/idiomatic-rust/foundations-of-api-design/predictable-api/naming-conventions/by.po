@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:6
+msgid "`by`: custom comparator or projection"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:8
+msgid ""
+"Component for methods that take a custom projection or comparison function."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:11
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:28
+msgid ""
+"`sort_by` takes a custom comparator function that replaces the normal `Ord` "
+"comparison logic."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:31
+msgid ""
+"`sort_by_key` takes a projection function that takes the original element "
+"and returns an alternate value to use for sorting. This allow us to do "
+"things like sort by a particular field of a struct."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:35
+msgid "Sometimes the \"by\" preposition is simply a preposition:"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:37
+msgid ""
+"[`Read::by_ref()`](https://doc.rust-lang.org/std/io/trait.Read.html#method."
+"by_ref)"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:39
+msgid ""
+"[`Iterator::advance_by()`](https://doc.rust-lang.org/std/iter/trait.Iterator."
+"html#method.advance_by) iterator method (nightly feature)"
+msgstr ""

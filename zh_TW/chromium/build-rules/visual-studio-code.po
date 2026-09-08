@@ -1,0 +1,92 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/build-rules/vscode.md:6
+msgid "Visual Studio Code"
+msgstr ""
+
+#: src/chromium/build-rules/vscode.md:8
+msgid ""
+"Types are elided in Rust code, which makes a good IDE even more useful than "
+"for C++. Visual Studio code works well for Rust in Chromium. To use it,"
+msgstr ""
+
+#: src/chromium/build-rules/vscode.md:11
+msgid ""
+"Ensure your VSCode has the `rust-analyzer` extension, not earlier forms of "
+"Rust support"
+msgstr ""
+
+#: src/chromium/build-rules/vscode.md:13
+msgid ""
+"`gn gen out/Debug --export-rust-project` (or equivalent for your output "
+"directory)"
+msgstr ""
+
+#: src/chromium/build-rules/vscode.md:15
+msgid "`ln -s out/Debug/rust-project.json rust-project.json`"
+msgstr ""
+
+#: src/chromium/build-rules/vscode.md:21
+msgid ""
+"A demo of some of the code annotation and exploration features of rust-"
+"analyzer might be beneficial if the audience are naturally skeptical of IDEs."
+msgstr ""
+
+#: src/chromium/build-rules/vscode.md:24
+msgid ""
+"The following steps may help with the demo (but feel free to instead use a "
+"piece of Chromium-related Rust that you are most familiar with):"
+msgstr ""
+
+#: src/chromium/build-rules/vscode.md:27
+msgid "Open `components/qr_code_generator/qr_code_generator_ffi_glue.rs`"
+msgstr ""
+
+#: src/chromium/build-rules/vscode.md:28
+msgid ""
+"Place the cursor over the `QrCode::new` call (around line 26) in "
+"\\`qr_code_generator_ffi_glue.rs"
+msgstr ""
+
+#: src/chromium/build-rules/vscode.md:30
+msgid ""
+"Demo **show documentation** (typical bindings: vscode = ctrl k i; vim/CoC = "
+"K)."
+msgstr ""
+
+#: src/chromium/build-rules/vscode.md:32
+msgid ""
+"Demo **go to definition** (typical bindings: vscode = F12; vim/CoC = g d). "
+"(This will take you to `//third_party/rust/.../qr_code-.../src/lib.rs`.)"
+msgstr ""
+
+#: src/chromium/build-rules/vscode.md:34
+msgid ""
+"Demo **outline** and navigate to the `QrCode::with_bits` method (around line "
+"164; the outline is in the file explorer pane in vscode; typical vim/CoC "
+"bindings = space o)"
+msgstr ""
+
+#: src/chromium/build-rules/vscode.md:37
+msgid ""
+"Demo **type annotations** (there are quite a few nice examples in the "
+"`QrCode::with_bits` method)"
+msgstr ""
+
+#: src/chromium/build-rules/vscode.md:40
+msgid ""
+"It may be worth pointing out that `gn gen ... --export-rust-project` will "
+"need to be rerun after editing `BUILD.gn` files (which we will do a few "
+"times throughout the exercises in this session)."
+msgstr ""

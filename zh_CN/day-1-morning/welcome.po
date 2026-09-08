@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/welcome-day-1.md:6
+msgid "Welcome to Day 1"
+msgstr ""
+
+#: src/welcome-day-1.md:8
+msgid ""
+"This is the first day of Rust Fundamentals. We will cover a broad range of "
+"topics today:"
+msgstr ""
+
+#: src/welcome-day-1.md:11
+msgid ""
+"Basic Rust syntax: variables, scalar and compound types, enums, structs, "
+"references, functions, and methods."
+msgstr ""
+
+#: src/welcome-day-1.md:13
+msgid "Types and type inference."
+msgstr ""
+
+#: src/welcome-day-1.md:14
+msgid "Control flow constructs: loops, conditionals, and so on."
+msgstr ""
+
+#: src/welcome-day-1.md:15
+msgid "User-defined types: structs and enums."
+msgstr ""
+
+#: src/welcome-day-1.md:17
+msgid "Schedule"
+msgstr ""
+
+#: src/welcome-day-1.md:19
+msgid ""
+"Including 10 minute breaks, this session should take about 2 hours and 10 "
+"minutes. It contains:"
+msgstr ""
+
+#: src/welcome-day-1.md:21
+msgid "Segment"
+msgstr ""
+
+#: src/welcome-day-1.md:21
+msgid "Duration"
+msgstr ""
+
+#: src/welcome-day-1.md:23
+msgid "Welcome"
+msgstr ""
+
+#: src/welcome-day-1.md:23
+msgid "5 minutes"
+msgstr ""
+
+#: src/welcome-day-1.md:24
+msgid "Hello, World"
+msgstr ""
+
+#: src/welcome-day-1.md:24
+msgid "15 minutes"
+msgstr ""
+
+#: src/welcome-day-1.md:25
+msgid "Types and Values"
+msgstr ""
+
+#: src/welcome-day-1.md:25
+msgid "40 minutes"
+msgstr ""
+
+#: src/welcome-day-1.md:26
+msgid "Control Flow Basics"
+msgstr ""
+
+#: src/welcome-day-1.md:26
+msgid "45 minutes"
+msgstr ""
+
+#: src/welcome-day-1.md:32
+msgid "Please remind the students that:"
+msgstr ""
+
+#: src/welcome-day-1.md:34
+msgid ""
+"They should ask questions when they get them, don't save them to the end."
+msgstr ""
+
+#: src/welcome-day-1.md:35
+msgid ""
+"The class is meant to be interactive and discussions are very much "
+"encouraged!"
+msgstr ""
+
+#: src/welcome-day-1.md:36
+msgid ""
+"As an instructor, you should try to keep the discussions relevant, i.e., "
+"keep the discussions related to how Rust does things vs. some other "
+"language. It can be hard to find the right balance, but err on the side of "
+"allowing discussions since they engage people much more than one-way "
+"communication."
+msgstr ""
+
+#: src/welcome-day-1.md:41
+msgid ""
+"The questions will likely mean that we talk about things ahead of the slides."
+msgstr ""
+
+#: src/welcome-day-1.md:42
+msgid ""
+"This is perfectly okay! Repetition is an important part of learning. "
+"Remember that the slides are just a support and you are free to skip them as "
+"you like."
+msgstr ""
+
+#: src/welcome-day-1.md:46
+msgid ""
+"The idea for the first day is to show the \"basic\" things in Rust that "
+"should have immediate parallels in other languages. The more advanced parts "
+"of Rust come on the subsequent days."
+msgstr ""
+
+#: src/welcome-day-1.md:50
+msgid ""
+"If you're teaching this in a classroom, this is a good place to go over the "
+"schedule. Note that there is an exercise at the end of each segment, "
+"followed by a break. Plan to cover the exercise solution after the break. "
+"The times listed here are a suggestion in order to keep the course on "
+"schedule. Feel free to be flexible and adjust as necessary!"
+msgstr ""

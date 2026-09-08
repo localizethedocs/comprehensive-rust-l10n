@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/iterators/intoiterator.md:6
+msgid "`IntoIterator`"
+msgstr ""
+
+#: src/iterators/intoiterator.md:8
+msgid ""
+"The `Iterator` trait tells you how to _iterate_ once you have created an "
+"iterator. The related trait [`IntoIterator`](https://doc.rust-lang.org/std/"
+"iter/trait.IntoIterator.html) defines how to create an iterator for a type. "
+"It is used automatically by the `for` loop."
+msgstr ""
+
+#: src/iterators/intoiterator.md:15
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/iterators/intoiterator.md:16
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/iterators/intoiterator.md:57
+msgid "\"point = {x}, {y}\""
+msgstr ""
+
+#: src/iterators/intoiterator.md:65
+msgid ""
+"`IntoIterator` is the trait that makes for loops work. It is implemented by "
+"collection types such as `Vec<T>` and references to them such as `&Vec<T>` "
+"and `&[T]`. Ranges also implement it. This is why you can iterate over a "
+"vector with `for i in some_vec { .. }` but `some_vec.next()` doesn't exist."
+msgstr ""
+
+#: src/iterators/intoiterator.md:70
+msgid ""
+"Click through to the docs for `IntoIterator`. Every implementation of "
+"`IntoIterator` must declare two types:"
+msgstr ""
+
+#: src/iterators/intoiterator.md:73
+msgid "`Item`: the type to iterate over, such as `i8`,"
+msgstr ""
+
+#: src/iterators/intoiterator.md:74
+msgid "`IntoIter`: the `Iterator` type returned by the `into_iter` method."
+msgstr ""
+
+#: src/iterators/intoiterator.md:76
+msgid ""
+"Note that `IntoIter` and `Item` are linked: the iterator must have the same "
+"`Item` type, which means that it returns `Option<Item>`"
+msgstr ""
+
+#: src/iterators/intoiterator.md:79
+msgid "The example iterates over all combinations of x and y coordinates."
+msgstr ""
+
+#: src/iterators/intoiterator.md:81
+msgid ""
+"Try iterating over the grid twice in `main`. Why does this fail? Note that "
+"`IntoIterator::into_iter` takes ownership of `self`."
+msgstr ""
+
+#: src/iterators/intoiterator.md:84
+msgid ""
+"Fix this issue by implementing `IntoIterator` for `&Grid` and creating a "
+"`GridRefIter` that iterates by reference. A version with both `GridIter` and "
+"`GridRefIter` is available [in this playground](https://play.rust-lang.org/?"
+"version=stable&mode=debug&edition=2024&gist=947e371c7295af758504f01f149023a1)."
+msgstr ""
+
+#: src/iterators/intoiterator.md:88
+msgid ""
+"The same problem can occur for standard library types: `for e in "
+"some_vector` will take ownership of `some_vector` and iterate over owned "
+"elements from that vector. Use `for e in &some_vector` instead, to iterate "
+"over references to elements of `some_vector`."
+msgstr ""

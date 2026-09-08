@@ -1,0 +1,88 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/iterators/motivation.md:6
+msgid "Motivating Iterators"
+msgstr ""
+
+#: src/iterators/motivation.md:8
+msgid ""
+"If you want to iterate over the contents of an array, you'll need to define:"
+msgstr ""
+
+#: src/iterators/motivation.md:10
+msgid ""
+"Some state to keep track of where you are in the iteration process, e.g. an "
+"index."
+msgstr ""
+
+#: src/iterators/motivation.md:12
+msgid "A condition to determine when iteration is done."
+msgstr ""
+
+#: src/iterators/motivation.md:13
+msgid "Logic for updating the state of iteration each loop."
+msgstr ""
+
+#: src/iterators/motivation.md:14
+msgid "Logic for fetching each element using that iteration state."
+msgstr ""
+
+#: src/iterators/motivation.md:16
+msgid "In a C-style for loop you declare these things directly:"
+msgstr ""
+
+#: src/iterators/motivation.md:24
+msgid ""
+"In Rust we bundle this state and logic together into an object known as an "
+"\"iterator\"."
+msgstr ""
+
+#: src/iterators/motivation.md:30
+msgid ""
+"This slide provides context for what Rust iterators do under the hood. We "
+"use the (hopefully) familiar construct of a C-style `for` loop to show how "
+"iteration requires some state and some logic, that way on the next slide we "
+"can show how an iterator bundles these together."
+msgstr ""
+
+#: src/iterators/motivation.md:35
+msgid ""
+"Rust doesn't have a C-style `for` loop, but we can express the same thing "
+"with `while`:"
+msgstr ""
+
+#: src/iterators/motivation.md:38
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/iterators/motivation.md:39
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/iterators/motivation.md:49
+msgid "More to Explore"
+msgstr ""
+
+#: src/iterators/motivation.md:51
+msgid ""
+"There's another way to express array iteration using `for` in C and C++: You "
+"can use a pointer to the front and a pointer to the end of the array and "
+"then compare those pointers to determine when the loop should end."
+msgstr ""
+
+#: src/iterators/motivation.md:61
+msgid ""
+"If students ask, you can point out that this is how Rust's slice and array "
+"iterators work under the hood (though implemented as a Rust iterator)."
+msgstr ""

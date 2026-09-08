@@ -1,0 +1,151 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/index.md:6
+msgid "Welcome to Comprehensive Rust 🦀"
+msgstr "歡迎來到 Comprehensive Rust 🦀"
+
+#: src/index.md:8
+msgid ""
+"[![Build workflow](https://img.shields.io/github/actions/workflow/status/"
+"google/comprehensive-rust/build.yml?style=flat-square)](https://github.com/"
+"google/comprehensive-rust/actions/workflows/build.yml?query=branch%3Amain) [!"
+"[GitHub contributors](https://img.shields.io/github/contributors/google/"
+"comprehensive-rust?style=flat-square)](https://github.com/google/"
+"comprehensive-rust/graphs/contributors) [![GitHub stars](https://img.shields."
+"io/github/stars/google/comprehensive-rust?style=flat-square)](https://github."
+"com/google/comprehensive-rust/stargazers)"
+msgstr ""
+
+#: src/index.md:12
+msgid ""
+"This is a free Rust course developed by the Android team at Google. The "
+"course covers the full spectrum of Rust, from basic syntax to advanced "
+"topics like generics and error handling."
+msgstr ""
+"這是由 Google Android 團隊開發的免費 Rust 課程。本課程涵蓋了 Rust 的完整範"
+"疇，從基礎語法到泛型和錯誤處理等進階話題。"
+
+#: src/index.md:16
+msgid ""
+"The latest version of the course can be found at <https://google.github.io/"
+"comprehensive-rust/>. If you are reading somewhere else, please check there "
+"for updates."
+msgstr ""
+
+#: src/index.md:20
+msgid ""
+"The course is available in other languages. Select your preferred language "
+"in the top right corner of the page or check the [Translations](running-the-"
+"course/translations.md) page for a list of all available translations."
+msgstr ""
+
+#: src/index.md:25
+msgid "The course is also available [as a PDF](comprehensive-rust.pdf)."
+msgstr ""
+
+#: src/index.md:27
+msgid ""
+"The goal of the course is to teach you Rust. We assume you don't know "
+"anything about Rust and hope to:"
+msgstr ""
+
+#: src/index.md:30
+msgid "Give you a comprehensive understanding of the Rust syntax and language."
+msgstr ""
+
+#: src/index.md:31
+msgid "Enable you to modify existing programs and write new programs in Rust."
+msgstr ""
+
+#: src/index.md:32
+msgid "Show you common Rust idioms."
+msgstr ""
+
+#: src/index.md:34
+msgid "We call the first four course days Rust Fundamentals."
+msgstr "我們將前四天的課程稱為 Rust 基礎（Rust Fundamentals）。"
+
+#: src/index.md:36
+msgid ""
+"Building on this, you're invited to dive into one or more specialized topics:"
+msgstr "在此基礎上，我們將誠摯邀請您深入探討一個或多個話題："
+
+#: src/index.md:38
+msgid ""
+"[Android](android.md): a half-day course on using Rust for Android platform "
+"development (AOSP). This includes interoperability with C, C++, and Java."
+msgstr ""
+
+#: src/index.md:40
+msgid ""
+"[Chromium](chromium.md): a half-day course on using Rust in Chromium-based "
+"browsers. This includes interoperability with C++ and how to include third-"
+"party crates in Chromium."
+msgstr ""
+
+#: src/index.md:43
+msgid ""
+"[Bare-metal](bare-metal.md): a whole-day class on using Rust for bare-metal "
+"(embedded) development. Both microcontrollers and application processors are "
+"covered."
+msgstr ""
+
+#: src/index.md:46
+msgid ""
+"[Concurrency](concurrency/welcome.md): a whole-day class on concurrency in "
+"Rust. We cover both classical concurrency (preemptively scheduling using "
+"threads and mutexes) and async/await concurrency (cooperative multitasking "
+"using futures)."
+msgstr ""
+
+#: src/index.md:51
+msgid "Non-Goals"
+msgstr ""
+
+#: src/index.md:53
+msgid ""
+"Rust is a large language and we won't be able to cover all of it in a few "
+"days. Some non-goals of this course are:"
+msgstr ""
+
+#: src/index.md:56
+msgid ""
+"Learning how to develop macros: please see [the Rust Book](https://doc.rust-"
+"lang.org/book/) and [Rust by Example](https://doc.rust-lang.org/rust-by-"
+"example/macros.html) instead."
+msgstr ""
+
+#: src/index.md:61
+msgid "Assumptions"
+msgstr ""
+
+#: src/index.md:63
+msgid ""
+"The course assumes that you already know how to program. Rust is a "
+"statically-typed language and we will sometimes make comparisons with C and "
+"C++ to better explain or contrast the Rust approach."
+msgstr ""
+
+#: src/index.md:67
+msgid ""
+"If you know how to program in a dynamically-typed language such as Python or "
+"JavaScript, then you will be able to follow along just fine too."
+msgstr ""
+
+#: src/index.md:72
+msgid ""
+"This is an example of a _speaker note_. We will use these to add additional "
+"information to the slides. This could be key points which the instructor "
+"should cover as well as answers to typical questions which come up in class."
+msgstr ""
