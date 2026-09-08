@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-07-20 12:06:06 +0200",
-      "hash" : "cbb740718a72b2181e5fe6885110cbbffa53b616",
-      "title" : "build(deps-dev): bump morgan from 1.10.1 to 1.11.0 in /tests in the npm_and_yarn group across 1 directory (#3240)"
+      "date" : "2026-09-01 14:16:49 +0000",
+      "hash" : "c1852c35cb913b506f22d09f15bb2080a39ceebf",
+      "title" : "cargo: bump arm-gic from 0.8.1 to 0.9.0 in /src/exercises/bare-metal/rtc (#3270)"
     }
   },
   "type" : "branch",
