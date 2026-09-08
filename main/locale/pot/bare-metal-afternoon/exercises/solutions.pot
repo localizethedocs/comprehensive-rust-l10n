@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-09-08T12:31:55Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -28,12 +28,12 @@ msgid "_main.rs_:"
 msgstr ""
 
 #: src/exercises/bare-metal/solutions-afternoon.md:15
-#: src/exercises/bare-metal/solutions-afternoon.md:169
+#: src/exercises/bare-metal/solutions-afternoon.md:165
 msgid "// Copyright 2023 Google LLC\n"
 msgstr ""
 
 #: src/exercises/bare-metal/solutions-afternoon.md:16
-#: src/exercises/bare-metal/solutions-afternoon.md:170
+#: src/exercises/bare-metal/solutions-afternoon.md:166
 msgid "// SPDX-License-Identifier: Apache-2.0\n"
 msgstr ""
 
@@ -90,113 +90,113 @@ msgid ""
 "    // nothing else accesses those address ranges.\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:101
+#: src/exercises/bare-metal/solutions-afternoon.md:97
 msgid ""
 "// SAFETY: `PL031_BASE_ADDRESS` is the base address of a PL031 device, and\n"
 "    // nothing else accesses that address range.\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:106
+#: src/exercises/bare-metal/solutions-afternoon.md:102
 msgid "\"RTC: {time}\""
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:114
+#: src/exercises/bare-metal/solutions-afternoon.md:110
 msgid "// Wait for 3 seconds, without interrupts.\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:117
-#: src/exercises/bare-metal/solutions-afternoon.md:135
+#: src/exercises/bare-metal/solutions-afternoon.md:113
+#: src/exercises/bare-metal/solutions-afternoon.md:131
 msgid "\"Waiting for {}\""
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:119
-#: src/exercises/bare-metal/solutions-afternoon.md:127
-#: src/exercises/bare-metal/solutions-afternoon.md:140
-#: src/exercises/bare-metal/solutions-afternoon.md:148
+#: src/exercises/bare-metal/solutions-afternoon.md:115
+#: src/exercises/bare-metal/solutions-afternoon.md:123
+#: src/exercises/bare-metal/solutions-afternoon.md:136
+#: src/exercises/bare-metal/solutions-afternoon.md:144
 msgid "\"matched={}, interrupt_pending={}\""
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:131
-#: src/exercises/bare-metal/solutions-afternoon.md:152
+#: src/exercises/bare-metal/solutions-afternoon.md:127
+#: src/exercises/bare-metal/solutions-afternoon.md:148
 msgid "\"Finished waiting\""
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:133
+#: src/exercises/bare-metal/solutions-afternoon.md:129
 msgid "// Wait another 3 seconds for an interrupt.\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:155
+#: src/exercises/bare-metal/solutions-afternoon.md:151
 msgid "\"system_off returned\""
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:160
+#: src/exercises/bare-metal/solutions-afternoon.md:156
 msgid "\"{info}\""
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:166
+#: src/exercises/bare-metal/solutions-afternoon.md:162
 msgid "_pl031.rs_:"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:174
+#: src/exercises/bare-metal/solutions-afternoon.md:170
 msgid "/// Data register\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:176
+#: src/exercises/bare-metal/solutions-afternoon.md:172
 msgid "/// Match register\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:178
+#: src/exercises/bare-metal/solutions-afternoon.md:174
 msgid "/// Load register\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:180
+#: src/exercises/bare-metal/solutions-afternoon.md:176
 msgid "/// Control register\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:183
+#: src/exercises/bare-metal/solutions-afternoon.md:179
 msgid "/// Interrupt Mask Set or Clear register\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:186
+#: src/exercises/bare-metal/solutions-afternoon.md:182
 msgid "/// Raw Interrupt Status\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:189
+#: src/exercises/bare-metal/solutions-afternoon.md:185
 msgid "/// Masked Interrupt Status\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:192
+#: src/exercises/bare-metal/solutions-afternoon.md:188
 msgid "/// Interrupt Clear Register\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:196
+#: src/exercises/bare-metal/solutions-afternoon.md:192
 msgid "/// Driver for a PL031 real-time clock.\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:204
+#: src/exercises/bare-metal/solutions-afternoon.md:200
 msgid ""
 "/// Constructs a new instance of the RTC driver for a PL031 device with the\n"
 "    /// given set of registers.\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:210
+#: src/exercises/bare-metal/solutions-afternoon.md:206
 msgid "/// Reads the current RTC value.\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:215
+#: src/exercises/bare-metal/solutions-afternoon.md:211
 msgid ""
 "/// Writes a match value. When the RTC value matches this then an interrupt\n"
 "    /// will be generated (if it is enabled).\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:221
+#: src/exercises/bare-metal/solutions-afternoon.md:217
 msgid ""
 "/// Returns whether the match register matches the RTC value, whether or "
 "not\n"
 "    /// the interrupt is enabled.\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:228
+#: src/exercises/bare-metal/solutions-afternoon.md:224
 msgid ""
 "/// Returns whether there is currently an interrupt pending.\n"
 "    ///\n"
@@ -204,7 +204,7 @@ msgid ""
 "    /// interrupt is masked.\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:237
+#: src/exercises/bare-metal/solutions-afternoon.md:233
 msgid ""
 "/// Sets or clears the interrupt mask.\n"
 "    ///\n"
@@ -213,6 +213,6 @@ msgid ""
 "    /// interrupt is disabled.\n"
 msgstr ""
 
-#: src/exercises/bare-metal/solutions-afternoon.md:246
+#: src/exercises/bare-metal/solutions-afternoon.md:242
 msgid "/// Clears a pending interrupt, if any.\n"
 msgstr ""
