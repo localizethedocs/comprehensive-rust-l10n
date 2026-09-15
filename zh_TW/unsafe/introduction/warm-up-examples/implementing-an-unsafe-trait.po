@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md:6
+msgid "Implementing an unsafe trait"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md:9
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md:15
+msgid "// ...\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md:24
+msgid ""
+"“Before we take a look at the code, we should double check that everyone "
+"knows what a trait is. Is anyone able to explain traits for the rest of the "
+"class?"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md:27
+msgid ""
+"“Traits are often described as a way to create shared behavior. Thinking "
+"about traits as shared behavior focuses on the syntax of methods and their "
+"signatures."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md:30
+msgid ""
+"“There’s also a deeper way to think of traits: as sets of requirements. This "
+"emphasizes the shared semantics of the implementing types."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md:33
+msgid "“Can anyone explain what the `Send` and `Sync` traits are?"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md:35
+msgid "If no"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md:36
+msgid ""
+"“Send and Sync relate to concurrency. There are many details, but broadly "
+"speaking, Send types can be shared between threads by value. Sync types must "
+"be shared by reference."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md:39
+msgid ""
+"There are many rules to follow to ensure that it’s safe to share data across "
+"thread boundaries. Those rules cannot be checked by the compiler, and "
+"therefore the code author must take responsibility for upholding them."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md:42
+msgid ""
+"Arc implements Send and Sync, therefore it’s safe for our clock to as well."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-impl.md:43
+msgid ""
+"It may be useful to point out that the word _atomic_ has the meaning of "
+"“indivisible” or “whole” from Ancient Greek, rather than the contemporary "
+"English sense of “tiny particle”."
+msgstr ""

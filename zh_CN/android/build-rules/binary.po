@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/build-rules/binary.md:6
+msgid "Rust Binaries"
+msgstr ""
+
+#: src/android/build-rules/binary.md:8
+msgid ""
+"Let's start with a simple application. At the root of an AOSP checkout, "
+"create the following files:"
+msgstr ""
+
+#: src/android/build-rules/binary.md:11
+msgid "_hello_rust/Android.bp_:"
+msgstr ""
+
+#: src/android/build-rules/binary.md:15 src/android/build-rules/binary.md:16
+msgid "\"hello_rust\""
+msgstr ""
+
+#: src/android/build-rules/binary.md:17
+msgid "\"src/main.rs\""
+msgstr ""
+
+#: src/android/build-rules/binary.md:21
+msgid "_hello_rust/src/main.rs_:"
+msgstr ""
+
+#: src/android/build-rules/binary.md:24
+msgid "// Copyright 2022 Google LLC\n"
+msgstr ""
+
+#: src/android/build-rules/binary.md:25
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/build-rules/binary.md:26
+msgid "//! Rust demo.\n"
+msgstr ""
+
+#: src/android/build-rules/binary.md:28
+msgid "/// Prints a greeting to standard output.\n"
+msgstr ""
+
+#: src/android/build-rules/binary.md:31
+msgid "\"Hello from Rust!\""
+msgstr ""
+
+#: src/android/build-rules/binary.md:35
+msgid "You can now build, push, and run the binary:"
+msgstr ""
+
+#: src/android/build-rules/binary.md:37
+msgid ""
+"```shell\n"
+"m hello_rust\n"
+"adb push \"$ANDROID_PRODUCT_OUT/system/bin/hello_rust\" /data/local/tmp\n"
+"adb shell /data/local/tmp/hello_rust\n"
+"```"
+msgstr ""
+
+#: src/android/build-rules/binary.md:49
+msgid ""
+"Go through the build steps and demonstrate them running in your emulator."
+msgstr ""
+
+#: src/android/build-rules/binary.md:51
+msgid ""
+"Notice the extensive documentation comments? The Android build rules enforce "
+"that all modules have documentation. Try removing it and see what error you "
+"get."
+msgstr ""
+
+#: src/android/build-rules/binary.md:55
+msgid ""
+"Stress that the Rust build rules look like the other Soong rules. This is by "
+"design, to make using Rust as easy as C++ or Java."
+msgstr ""

@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/lifetimes/borrow-both.md:6
+msgid "Borrow Both"
+msgstr ""
+
+#: src/lifetimes/borrow-both.md:8
+msgid ""
+"In this case, we have a function where either `a` or `b` may be returned. In "
+"this case we use the lifetime annotations to tell the compiler that both "
+"borrows may flow into the return value."
+msgstr ""
+
+#: src/lifetimes/borrow-both.md:13
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/lifetimes/borrow-both.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/lifetimes/borrow-both.md:26
+msgid ""
+"// Which one is still borrowed?\n"
+"    // Should either mutation be allowed?\n"
+"    // a += 7;\n"
+"    // b += 7;\n"
+msgstr ""
+
+#: src/lifetimes/borrow-both.md:38
+msgid ""
+"The `pick` function will return either `a` or `b` depending on the value of "
+"`c`, which means we can't know at compile time which one will be returned."
+msgstr ""
+
+#: src/lifetimes/borrow-both.md:41
+msgid ""
+"To express this to the compiler, we use the same lifetime for both `a` and "
+"`b`, along with the return type. This means that the returned reference will "
+"borrow BOTH `a` and `b`!"
+msgstr ""
+
+#: src/lifetimes/borrow-both.md:45
+msgid ""
+"Uncomment both of the commented lines and show that `r` is borrowing both "
+"`a` and `b`, even though at runtime it will only point to one of them."
+msgstr ""
+
+#: src/lifetimes/borrow-both.md:48
+msgid ""
+"Change the first argument to `pick` to show that the result is the same "
+"regardless of if `a` or `b` is returned."
+msgstr ""

@@ -1,0 +1,96 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:6
+msgid "Debug"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:8
+msgid "\"Write to string\" trait, for debug purposes."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:10
+msgid "Derivable: ✅"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:13
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:36
+msgid "\"PlainTextPassword\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:37
+msgid "\"hint\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:38
+msgid "\"password\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:38
+msgid "\"[omitted]\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:45
+msgid "\"Alice\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:49
+msgid "\"{user:?}\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:51
+msgid "\"{:?}\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:53
+msgid "\"Password123\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:54
+msgid "\"Used it for years\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:62
+msgid "Provides trivial \"write to string\" functionality."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:64
+msgid ""
+"Formatting for _debug information_ for programmers during development, not "
+"appearance or serialization."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:67
+msgid ""
+"Allows for use of `{:?}` and `{#?}` interpolation in string formatting "
+"macros."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:69
+msgid ""
+"When to not derive/implement: If a struct holds sensitive data, investigate "
+"if you should implement `Debug` for it."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/debug.md:72
+msgid ""
+"If `Debug` is needed, consider manually implementing `Debug` rather than "
+"deriving it. Omit the sensitive data from the implementation."
+msgstr ""

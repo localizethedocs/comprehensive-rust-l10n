@@ -1,0 +1,29 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust.md:6
+msgid "Characteristics of unsafe"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust.md:8
+msgid "[Dangerous](characteristics-of-unsafe-rust/dangerous.md)"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust.md:9
+msgid ""
+"[Sometimes necessary](characteristics-of-unsafe-rust/sometimes-necessary.md)"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust.md:10
+msgid "[Sometimes useful](characteristics-of-unsafe-rust/sometimes-useful.md)"
+msgstr ""

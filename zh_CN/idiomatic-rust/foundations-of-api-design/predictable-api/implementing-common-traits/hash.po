@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:6
+msgid "Hash"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:8
+msgid "Performing a hash on a type."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:10
+msgid "Derivable: ✅"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:13
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:25
+msgid "\"Alice\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:27
+msgid "\"value\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:33
+msgid ""
+"Allows a type to be used in hash algorithms, most commonly used with data "
+"structures like `HashMap`."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:36
+msgid ""
+"Makes it very easy for us to use custom types as the keys in a `HashMap`!"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/hash.md:38
+msgid ""
+"`Hash` doesn't define any of the hashing logic itself, instead it just feeds "
+"the type's data into a `Hasher`. This allows us to use different hash "
+"algorithms without changing a type's `Hash` impl."
+msgstr ""

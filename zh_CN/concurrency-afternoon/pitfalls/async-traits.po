@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/async-pitfalls/async-traits.md:6
+msgid "Async Traits"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/async-traits.md:8
+msgid ""
+"Async methods in traits were stabilized in the 1.75 release. This required "
+"support for using return-position `impl Trait` in traits, as the desugaring "
+"for `async fn` includes `-> impl Future<Output = ...>`."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/async-traits.md:12
+msgid ""
+"However, even with the native support, there are specific pitfalls around "
+"`async fn`:"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/async-traits.md:15
+msgid ""
+"Return-position `impl Trait` captures all in-scope lifetimes (so certain "
+"patterns of borrowing cannot be expressed)."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/async-traits.md:18
+msgid ""
+"Async traits cannot be used with [trait objects](../../smart-pointers/trait-"
+"objects.md) (`dyn Trait` support)."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/async-traits.md:20
+msgid ""
+"The [async_trait](https://docs.rs/async-trait/) crate provides a workaround "
+"for `dyn` support through a macro, with specific caveats:"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/async-traits.md:24
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/async-traits.md:25
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/async-traits.md:52
+msgid "\"Running all sleepers...\""
+msgstr ""
+
+#: src/concurrency/async-pitfalls/async-traits.md:56
+msgid "\"Slept for {} ms\""
+msgstr ""
+
+#: src/concurrency/async-pitfalls/async-traits.md:74
+msgid ""
+"`async_trait` is easy to use, but note that it's using heap allocations to "
+"achieve this. This heap allocation has performance overhead."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/async-traits.md:77
+msgid ""
+"The challenges in language support for `async trait` are too deep to "
+"describe in-depth in this class. See [this blog post](https://"
+"smallcultfollowing.com/babysteps/blog/2019/10/26/async-fn-in-traits-are-"
+"hard/) by Niko Matsakis if you are interested in digging deeper. See also "
+"these keywords:"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/async-traits.md:81
+msgid ""
+"[RPIT](https://doc.rust-lang.org/reference/types/impl-trait.html#abstract-"
+"return-types): short for [return-position `impl Trait`](../../generics/impl-"
+"trait.md)."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/async-traits.md:83
+msgid ""
+"[RPITIT](https://blog.rust-lang.org/2023/12/21/async-fn-rpit-in-traits."
+"html): short for return-position `impl Trait` in trait (RPIT in trait)."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/async-traits.md:85
+msgid ""
+"Try creating a new sleeper struct that will sleep for a random amount of "
+"time and adding it to the `Vec`."
+msgstr ""

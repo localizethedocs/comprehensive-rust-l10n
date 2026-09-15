@@ -1,0 +1,157 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/async-pitfalls/pin.md:6
+msgid "`Pin`"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:8
+msgid ""
+"Recall an async function or block creates a type implementing `Future` and "
+"containing all of the local variables. Some of those variables can hold "
+"references (pointers) to other local variables. To ensure those remain "
+"valid, the future can never be moved to a different memory location."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:13
+msgid ""
+"To prevent moving the future type in memory, it can only be polled through a "
+"pinned pointer. `Pin` is a wrapper around a reference that disallows all "
+"operations that would move the instance it points to into a different memory "
+"location."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:19
+#: src/concurrency/async-pitfalls/pin.md:87
+#: src/concurrency/async-pitfalls/pin.md:103
+#: src/concurrency/async-pitfalls/pin.md:119
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:20
+#: src/concurrency/async-pitfalls/pin.md:88
+#: src/concurrency/async-pitfalls/pin.md:104
+#: src/concurrency/async-pitfalls/pin.md:120
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:25
+msgid ""
+"// A work item. In this case, just sleep for the given time and respond\n"
+"// with a message on the `respond_on` channel.\n"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:33
+msgid "// A worker which listens for work on a queue and performs it.\n"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:40
+msgid "// Pretend to work.\n"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:43
+msgid "\"failed to send response\""
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:46
+msgid "// TODO: report number of iterations every 100ms\n"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:50
+msgid "// A requester which requests work and waits for it to complete.\n"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:57
+msgid "\"failed to send on work queue\""
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:58
+msgid "\"failed waiting for response\""
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:67
+msgid "\"work result for iteration {i}: {resp}\""
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:75
+msgid ""
+"You may recognize this as an example of the actor pattern. Actors typically "
+"call `select!` in a loop."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:78
+msgid ""
+"This serves as a summation of a few of the previous lessons, so take your "
+"time with it."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:81
+msgid ""
+"Naively add a `_ = sleep(Duration::from_millis(100)) => { println!(..) }` to "
+"the `select!`. This will never execute. Why?"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:84
+msgid ""
+"Instead, add a `timeout_fut` containing that future outside of the `loop`:"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:98
+msgid ""
+"This still doesn't work. Follow the compiler errors, adding `&mut` to the "
+"`timeout_fut` in the `select!` to work around the move, then using `Box::"
+"pin`:"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:115
+msgid ""
+"This compiles, but once the timeout expires it is `Poll::Ready` on every "
+"iteration (a fused future would help with this). Update to reset "
+"`timeout_fut` every time it expires:"
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:133
+msgid ""
+"Box allocates on the heap. In some cases, `std::pin::pin!` (only recently "
+"stabilized, with older code often using `tokio::pin!`) is also an option, "
+"but that is difficult to use for a future that is reassigned."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:137
+msgid ""
+"Another alternative is to not use `pin` at all but spawn another task that "
+"will send to a `oneshot` channel every 100ms."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:140
+msgid ""
+"Data that contains pointers to itself is called self-referential. Normally, "
+"the Rust borrow checker would prevent self-referential data from being "
+"moved, as the references cannot outlive the data they point to. However, the "
+"code transformation for async blocks and functions is not verified by the "
+"borrow checker."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:146
+msgid ""
+"`Pin` is a wrapper around a reference. An object cannot be moved from its "
+"place using a pinned pointer. However, it can still be moved through an "
+"unpinned pointer."
+msgstr ""
+
+#: src/concurrency/async-pitfalls/pin.md:150
+msgid ""
+"The `poll` method of the `Future` trait uses `Pin<&mut Self>` instead of "
+"`&mut Self` to refer to the instance. That's why it can only be called on a "
+"pinned pointer."
+msgstr ""

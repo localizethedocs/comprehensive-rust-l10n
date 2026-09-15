@@ -1,0 +1,74 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/generics/trait-bounds.md:6
+msgid "Trait Bounds"
+msgstr ""
+
+#: src/generics/trait-bounds.md:8
+msgid ""
+"When working with generics, you often want to require the types to implement "
+"some trait, so that you can call this trait's methods."
+msgstr ""
+
+#: src/generics/trait-bounds.md:11
+msgid "You can do this with `T: Trait`:"
+msgstr ""
+
+#: src/generics/trait-bounds.md:14 src/generics/trait-bounds.md:40
+msgid "// Copyright 2022 Google LLC\n"
+msgstr ""
+
+#: src/generics/trait-bounds.md:15 src/generics/trait-bounds.md:41
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/generics/trait-bounds.md:24
+msgid "\"foo\""
+msgstr ""
+
+#: src/generics/trait-bounds.md:26
+msgid "\"{pair:?}\""
+msgstr ""
+
+#: src/generics/trait-bounds.md:33
+msgid "Try making a `NotCloneable` and passing it to `duplicate`."
+msgstr ""
+
+#: src/generics/trait-bounds.md:35
+msgid "When multiple traits are necessary, use `+` to join them."
+msgstr ""
+
+#: src/generics/trait-bounds.md:37
+msgid "Show a `where` clause, students will encounter it when reading code."
+msgstr ""
+
+#: src/generics/trait-bounds.md:51
+msgid "It declutters the function signature if you have many parameters."
+msgstr ""
+
+#: src/generics/trait-bounds.md:52
+msgid "It has additional features making it more powerful."
+msgstr ""
+
+#: src/generics/trait-bounds.md:53
+msgid ""
+"If someone asks, the extra feature is that the type on the left of \":\" can "
+"be arbitrary, like `Option<T>`."
+msgstr ""
+
+#: src/generics/trait-bounds.md:56
+msgid ""
+"Note that Rust does not (yet) support specialization. For example, given the "
+"original `duplicate`, it is invalid to add a specialized `duplicate(a: u32)`."
+msgstr ""

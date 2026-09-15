@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/async-control-flow/join.md:6
+msgid "Join"
+msgstr ""
+
+#: src/concurrency/async-control-flow/join.md:8
+msgid ""
+"A join operation waits until all of a set of futures are ready, and returns "
+"a collection of their results. This is similar to `Promise.all` in "
+"JavaScript or `asyncio.gather` in Python."
+msgstr ""
+
+#: src/concurrency/async-control-flow/join.md:13
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/concurrency/async-control-flow/join.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/concurrency/async-control-flow/join.md:29
+msgid "\"https://google.com\""
+msgstr ""
+
+#: src/concurrency/async-control-flow/join.md:30
+msgid "\"https://httpbin.org/ip\""
+msgstr ""
+
+#: src/concurrency/async-control-flow/join.md:31
+msgid "\"https://play.rust-lang.org/\""
+msgstr ""
+
+#: src/concurrency/async-control-flow/join.md:32
+msgid "\"BAD_URL\""
+msgstr ""
+
+#: src/concurrency/async-control-flow/join.md:38
+msgid "\"{page_sizes_dict:?}\""
+msgstr ""
+
+#: src/concurrency/async-control-flow/join.md:45
+msgid ""
+"Copy this example into your prepared `src/main.rs` and run it from there."
+msgstr ""
+
+#: src/concurrency/async-control-flow/join.md:47
+msgid ""
+"For multiple futures of disjoint types, you can use `std::future::join!` but "
+"you must know how many futures you will have at compile time. This is "
+"currently in the `futures` crate, soon to be stabilised in `std::future`."
+msgstr ""
+
+#: src/concurrency/async-control-flow/join.md:51
+msgid ""
+"The risk of `join` is that one of the futures may never resolve, this would "
+"cause your program to stall."
+msgstr ""
+
+#: src/concurrency/async-control-flow/join.md:54
+msgid ""
+"You can also combine `join_all` with `join!` for instance to join all "
+"requests to an http service as well as a database query. Try adding a "
+"`tokio::time::sleep` to the future, using `futures::join!`. This is not a "
+"timeout (that requires `select!`, explained in the next chapter), but "
+"demonstrates `join!`."
+msgstr ""

@@ -1,0 +1,127 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:6
+msgid "Scope Guards"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:8
+msgid ""
+"A scope guard uses the `Drop` trait to run cleanup code automatically when a "
+"scope exits, even during unwinding."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:20
+msgid "// [...]\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:25
+msgid "\"download.tmp\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:26
+msgid "\"cannot create temporary file\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:28
+msgid "// Set up cleanup immediately after file creation\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:30
+msgid "\"download failed, deleting: {:?}\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:34
+msgid "\"partial data...\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:37
+msgid "// Download succeeded, keep the file\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:39
+msgid "\"Download '{path}' complete!\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:41
+msgid "// Otherwise, the guard runs and deletes the file\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:47
+msgid ""
+"This example models a download workflow. We create a temporary file first, "
+"then use a scope guard to ensure that the file is deleted if the download "
+"fails."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:51
+msgid ""
+"The `scopeguard` crate allows you to conveniently define a single-use "
+"`Drop`\\-based cleanup without defining a custom type with a custom `Drop` "
+"implementation."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:55
+msgid ""
+"The guard is created directly after creating the file, so even if `writeln!"
+"()` fails, the file will still be cleaned up. This ordering is essential for "
+"correctness."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:59
+msgid ""
+"The `guard()` creates a `ScopeGuard` instance. It takes a user-defined value "
+"(in this case, `path`) and the cleanup closure that later receives this "
+"value."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:62
+msgid ""
+"The guard's closure runs on scope exit unless it is _defused_ with "
+"`ScopeGuard::into_inner` (removing the value so the guard does nothing on "
+"drop). In the success path, we call `into_inner` so the guard will not "
+"delete the file."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:67
+msgid "A scope guard is similar to the `defer` feature in Go."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:69
+msgid ""
+"This pattern is ideal for \"cleanup on failure\" scenarios, where a cleanup "
+"should run by default unless a success path is explicitly taken."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:72
+msgid ""
+"This pattern is also useful when you don't control the cleanup strategy of "
+"the resource object. In this example, `File::drop()` closes the file but "
+"does not delete it."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/scope_guard.md:76
+msgid ""
+"The `scopeguard` crate also supports cleanup strategies via the [`Strategy`]"
+"(https://docs.rs/scopeguard/latest/scopeguard/trait.Strategy.html) trait. "
+"You can choose to run the guard on unwind only, or on success only, not just "
+"always."
+msgstr ""

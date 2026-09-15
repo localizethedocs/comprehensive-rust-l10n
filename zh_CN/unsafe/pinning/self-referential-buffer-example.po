@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:6
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:37
+msgid "Self-Referential Buffer Example"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:8
+msgid ""
+"A \"self-referential buffer\" is a type that has a reference to one of its "
+"own fields:"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:12
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:21
+msgid ""
+"This kind of structure is not typical in Rust, because there's no way to "
+"update the cursor's address when instances of `SelfReferentialBuffer` move."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:24
+msgid ""
+"However, this kind of setup is more natural in other languages that provide "
+"garbage collection, and also C++ that allows users to define their own "
+"behavior during moves and copies."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:28
+msgid "Outline"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:30
+msgid "This segment should take about 1 hour and 20 minutes. It contains:"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:32
+msgid "Slide"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:32
+msgid "Duration"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:34
+msgid "What pinning is"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:34
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:35
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:36
+msgid "5 minutes"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:35
+msgid "Definition of Pin"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:36
+msgid "PhantomPinned"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:37
+msgid "50 minutes"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:38
+msgid "Pin<Ptr> and Drop"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/self-referential-buffer.md:38
+msgid "15 minutes"
+msgstr ""

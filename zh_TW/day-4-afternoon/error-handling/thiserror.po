@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/error-handling/thiserror.md:6
+msgid "`thiserror`"
+msgstr ""
+
+#: src/error-handling/thiserror.md:8
+msgid ""
+"The [`thiserror`](https://docs.rs/thiserror/) crate provides macros to help "
+"avoid boilerplate when defining error types. It provides derive macros that "
+"assist in implementing `From<T>`, `Display`, and the `Error` trait."
+msgstr ""
+
+#: src/error-handling/thiserror.md:13
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/error-handling/thiserror.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/error-handling/thiserror.md:22
+msgid "\"I/O error: {0}\""
+msgstr ""
+
+#: src/error-handling/thiserror.md:24
+msgid "\"Found no username in {0}\""
+msgstr ""
+
+#: src/error-handling/thiserror.md:38
+msgid "//fs::write(\"config.dat\", \"\").unwrap();\n"
+msgstr ""
+
+#: src/error-handling/thiserror.md:39
+msgid "\"config.dat\""
+msgstr ""
+
+#: src/error-handling/thiserror.md:40
+msgid "\"Username: {username}\""
+msgstr ""
+
+#: src/error-handling/thiserror.md:41
+msgid "\"Error: {err}\""
+msgstr ""
+
+#: src/error-handling/thiserror.md:49
+msgid ""
+"The `Error` derive macro is provided by `thiserror`, and has lots of useful "
+"attributes to help define error types in a compact way."
+msgstr ""
+
+#: src/error-handling/thiserror.md:51
+msgid "The message from `#[error]` is used to derive the `Display` trait."
+msgstr ""
+
+#: src/error-handling/thiserror.md:52
+msgid ""
+"Note that the (`thiserror::`)`Error` derive macro, while it has the effect "
+"of implementing the (`std::error::`)`Error` trait, is not the same this; "
+"traits and macros do not share a namespace."
+msgstr ""

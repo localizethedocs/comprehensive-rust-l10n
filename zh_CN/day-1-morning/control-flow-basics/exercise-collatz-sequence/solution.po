@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/control-flow-basics/solution.md:6
+msgid "Solution"
+msgstr ""
+
+#: src/control-flow-basics/solution.md:9
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/control-flow-basics/solution.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/control-flow-basics/solution.md:11
+msgid "/// Determine the length of the collatz sequence beginning at `n`.\n"
+msgstr ""
+
+#: src/control-flow-basics/solution.md:23
+msgid "\"Length: {}\""
+msgstr ""
+
+#: src/control-flow-basics/solution.md:23
+msgid "// should be 15\n"
+msgstr ""
+
+#: src/control-flow-basics/solution.md:27
+msgid "This solution demonstrates a few key Rust features:"
+msgstr ""
+
+#: src/control-flow-basics/solution.md:29
+msgid ""
+"**`mut` arguments:** The `n` argument is declared as `mut n`. This makes the "
+"local variable `n` mutable within the function scope. It does _not_ affect "
+"the caller's value, as integers are `Copy` types passed by value."
+msgstr ""
+
+#: src/control-flow-basics/solution.md:32
+msgid ""
+"**`if` expressions:** Rust's `if` is an expression, meaning it produces a "
+"value. We assign the result of the `if`/`else` block directly to `n`. This "
+"is more concise than writing `n = ...` inside each branch."
+msgstr ""
+
+#: src/control-flow-basics/solution.md:35
+msgid ""
+"**Implicit return:** The function ends with `len` (without a semicolon), "
+"which is automatically returned."
+msgstr ""
+
+#: src/control-flow-basics/solution.md:40
+msgid ""
+"Note that `n` must be strictly greater than 0 for the Collatz sequence to be "
+"valid. The function signature takes `i32`, but the problem description "
+"implies positive integers. A more robust implementation might use `u32` or "
+"return an `Option` or `Result` to handle invalid inputs (0 or negative "
+"numbers), but panic or infinite loops are potential outcomes here if `n <= "
+"0`."
+msgstr ""
+
+#: src/control-flow-basics/solution.md:45
+msgid ""
+"The overflow is a potential issue if `n` grows too large, similar to the "
+"Fibonacci exercise."
+msgstr ""

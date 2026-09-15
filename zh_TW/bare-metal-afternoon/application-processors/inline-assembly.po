@@ -1,0 +1,132 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/aps/inline-assembly.md:6
+msgid "Inline assembly"
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:8
+msgid ""
+"Sometimes we need to use assembly to do things that aren't possible with "
+"Rust code. For example, to make an HVC (hypervisor call) to tell the "
+"firmware to power off the system:"
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:13
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:26
+msgid "// SAFETY: There is no other global function of this name.\n"
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:29
+msgid "\"C\""
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:30
+msgid ""
+"// SAFETY: this only uses the declared registers and doesn't do anything\n"
+"    // with memory.\n"
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:33
+msgid "\"hvc #0\""
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:34
+msgid "\"w0\""
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:35
+msgid "\"w1\""
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:36
+msgid "\"w2\""
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:37
+msgid "\"w3\""
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:38
+msgid "\"w4\""
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:39
+msgid "\"w5\""
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:40
+msgid "\"w6\""
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:41
+msgid "\"w7\""
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:50
+msgid ""
+"(If you actually want to do this, use the [`smccc`](https://crates.io/crates/"
+"smccc) crate which has wrappers for all these functions.)"
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:55
+msgid ""
+"PSCI is the Arm Power State Coordination Interface, a standard set of "
+"functions to manage system and CPU power states, among other things. It is "
+"implemented by EL3 firmware and hypervisors on many systems."
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:58
+msgid ""
+"The `0 => _` syntax means initialize the register to 0 before running the "
+"inline assembly code, and ignore its contents afterwards. We need to use "
+"`inout` rather than `in` because the call could potentially clobber the "
+"contents of the registers."
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:62
+msgid ""
+"This `main` function needs to be `#[unsafe(no_mangle)]` and `extern \"C\"` "
+"because it is called from our entry point in `entry.S`."
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:64
+msgid ""
+"Just `#[no_mangle]` would be sufficient but [RFC3325](https://rust-lang."
+"github.io/rfcs/3325-unsafe-attributes.html) uses this notation to draw "
+"reviewer attention to attributes that might cause undefined behavior if used "
+"incorrectly."
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:68
+msgid ""
+"`_x0`–`_x3` are the values of registers `x0`–`x3`, which are conventionally "
+"used by the bootloader to pass things like a pointer to the device tree. "
+"According to the standard aarch64 calling convention (which is what `extern "
+"\"C\"` specifies to use), registers `x0`–`x7` are used for the first 8 "
+"arguments passed to a function, so `entry.S` doesn't need to do anything "
+"special except make sure it doesn't change these registers."
+msgstr ""
+
+#: src/bare-metal/aps/inline-assembly.md:74
+msgid ""
+"Run the example in QEMU with `make qemu_psci` under `src/bare-metal/aps/"
+"examples`."
+msgstr ""

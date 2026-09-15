@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/interoperability/cpp/type-mapping.md:6
+msgid "Additional Types"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:8
+msgid "Rust Type"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:8
+msgid "C++ Type"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:10
+msgid "`String`"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:10
+msgid "`rust::String`"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:11
+msgid "`&str`"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:11
+msgid "`rust::Str`"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:12
+msgid "`CxxString`"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:12
+msgid "`std::string`"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:13
+msgid "`&[T]`/`&mut [T]`"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:13
+msgid "`rust::Slice`"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:14
+msgid "`Box<T>`"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:14
+msgid "`rust::Box<T>`"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:15
+msgid "`UniquePtr<T>`"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:15
+msgid "`std::unique_ptr<T>`"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:16
+msgid "`Vec<T>`"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:16
+msgid "`rust::Vec<T>`"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:17
+msgid "`CxxVector<T>`"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:17
+msgid "`std::vector<T>`"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:21
+msgid ""
+"These types can be used in the fields of shared structs and the arguments "
+"and returns of extern functions."
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:23
+msgid ""
+"Note that Rust's `String` does not map directly to `std::string`. There are "
+"a few reasons for this:"
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:25
+msgid ""
+"`std::string` does not uphold the UTF-8 invariant that `String` requires."
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:26
+msgid ""
+"The two types have different layouts in memory and so can't be passed "
+"directly between languages."
+msgstr ""
+
+#: src/android/interoperability/cpp/type-mapping.md:28
+msgid ""
+"`std::string` requires move constructors that don't match Rust's move "
+"semantics, so a `std::string` can't be passed by value to Rust."
+msgstr ""

@@ -1,0 +1,159 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/smart-pointers/trait-objects.md:6
+msgid "Owned Trait Objects"
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:8
+msgid ""
+"We previously saw how trait objects can be used with references, e.g `&dyn "
+"Pet`. However, we can also use trait objects with smart pointers like `Box` "
+"to create an owned trait object: `Box<dyn Pet>`."
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:13
+#: src/smart-pointers/trait-objects.md:101
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:14
+#: src/smart-pointers/trait-objects.md:102
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:30
+msgid "\"Woof, my name is {}!\""
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:36
+msgid "\"Miau!\""
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:43
+msgid "\"Fido\""
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:46
+msgid "\"Hello, who are you? {}\""
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:51
+msgid "Memory layout after allocating `pets`:"
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:53
+msgid ""
+"```bob\n"
+" Stack                             Heap\n"
+".- - - - - - - - - - - - - - - -.     .- - - - - - - - - - - - - - - - - - - "
+"- - - -.\n"
+":                               :     :                                             :\n"
+":    \"pets: Vec<Box<dyn Pet>>\"  :     :   \"data: Cat\"         +----+----"
+"+----+----+ :\n"
+":   +-----------+-------+       :     :  +-------+-------+    | F  | i  | d  "
+"| o  | :\n"
+":   | ptr       |   o---+-------+--.  :  | lives |     9 |    +----+----+----"
+"+----+ :\n"
+":   | len       |     2 |       :  |  :  +-------+-------+      "
+"^                   :\n"
+":   | capacity  |     2 |       :  |  :       ^                 "
+"|                   :\n"
+":   +-----------+-------+       :  |  :       |                 "
+"'-------.           :\n"
+":                               :  |  :       |               data:"
+"\"Dog\"|           :\n"
+":                               :  |  :       |              +-------"
+"+--|-------+   :\n"
+"`- - - - - - - - - - - - - - - -'  |  :   +---|-+-----+      | name  |  o, "
+"4, 4 |   :\n"
+"                                   `--+-->| o o | o o-|----->| age   "
+"|        5 |   :\n"
+"                                      :   +-|---+-|---+      +-------"
+"+----------+   :\n"
+"                                      :     |     "
+"|                                 :\n"
+"                                      `- - -| - - |- - - - - - - - - - - - - "
+"- - - -'\n"
+"                                            |     |\n"
+"                                            |     |                      "
+"\"Program text\"\n"
+"                                      .- - -| - - |- - - - - - - - - - - - - "
+"- - - -.\n"
+"                                      :     |     |       "
+"vtable                    :\n"
+"                                      :     |     |      "
+"+----------------------+   :\n"
+"                                      :     |     `----->| \"<Dog as Pet>::"
+"talk\" |   :\n"
+"                                      :     |            "
+"+----------------------+   :\n"
+"                                      :     |             "
+"vtable                    :\n"
+"                                      :     |            "
+"+----------------------+   :\n"
+"                                      :     '----------->| \"<Cat as Pet>::"
+"talk\" |   :\n"
+"                                      :                  "
+"+----------------------+   :\n"
+"                                      :                                             :\n"
+"                                      '- - - - - - - - - - - - - - - - - - - "
+"- - - -'\n"
+"```"
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:88
+msgid ""
+"Types that implement a given trait may be of different sizes. This makes it "
+"impossible to have things like `Vec<dyn Pet>` in the example above."
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:90
+msgid ""
+"`dyn Pet` is a way to tell the compiler about a dynamically sized type that "
+"implements `Pet`."
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:92
+msgid ""
+"In the example, `pets` is allocated on the stack and the vector data is on "
+"the heap. The two vector elements are _fat pointers_:"
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:94
+msgid ""
+"A fat pointer is a double-width pointer. It has two components: a pointer to "
+"the actual object and a pointer to the [virtual method table](https://en."
+"wikipedia.org/wiki/Virtual_method_table) (vtable) for the `Pet` "
+"implementation of that particular object."
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:97
+msgid ""
+"The data for the `Dog` named Fido is the `name` and `age` fields. The `Cat` "
+"has a `lives` field."
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:99
+msgid "Compare these outputs in the above example:"
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:104
+#: src/smart-pointers/trait-objects.md:105
+msgid "\"{} {}\""
+msgstr ""
+
+#: src/smart-pointers/trait-objects.md:106
+#: src/smart-pointers/trait-objects.md:107
+msgid "\"{}\""
+msgstr ""

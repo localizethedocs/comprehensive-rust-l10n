@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/pattern-matching/infallible.md:6
+msgid "Irrefutable Patterns"
+msgstr ""
+
+#: src/pattern-matching/infallible.md:8
+msgid ""
+"In day 1 we briefly saw how patterns can be used to _destructure_ compound "
+"values. Let's review that and talk about a few other things patterns can "
+"express:"
+msgstr ""
+
+#: src/pattern-matching/infallible.md:13 src/pattern-matching/infallible.md:58
+#: src/pattern-matching/infallible.md:69
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/pattern-matching/infallible.md:14 src/pattern-matching/infallible.md:59
+#: src/pattern-matching/infallible.md:70
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/pattern-matching/infallible.md:21
+msgid "// This does the same thing as above.\n"
+msgstr ""
+
+#: src/pattern-matching/infallible.md:24
+msgid "// Ignore the first element, only bind the second and third.\n"
+msgstr ""
+
+#: src/pattern-matching/infallible.md:27
+msgid "// Ignore everything but the last element.\n"
+msgstr ""
+
+#: src/pattern-matching/infallible.md:32
+msgid "'a'"
+msgstr ""
+
+#: src/pattern-matching/infallible.md:39
+msgid ""
+"All of the demonstrated patterns are _irrefutable_, meaning that they will "
+"always match the value on the right hand side."
+msgstr ""
+
+#: src/pattern-matching/infallible.md:42
+msgid ""
+"Patterns are type-specific, including irrefutable patterns. Try adding or "
+"removing an element to the tuple and look at the resulting compiler errors."
+msgstr ""
+
+#: src/pattern-matching/infallible.md:45
+msgid ""
+"Variable names are patterns that always match and bind the matched value "
+"into a new variable with that name."
+msgstr ""
+
+#: src/pattern-matching/infallible.md:48
+msgid ""
+"`_` is a pattern that always matches any value, discarding the matched value."
+msgstr ""
+
+#: src/pattern-matching/infallible.md:50
+msgid "`..` allows you to ignore multiple values at once."
+msgstr ""
+
+#: src/pattern-matching/infallible.md:52
+msgid "More to Explore"
+msgstr ""
+
+#: src/pattern-matching/infallible.md:54
+msgid ""
+"You can also demonstrate more advanced usages of `..`, such as ignoring the "
+"middle elements of a tuple."
+msgstr ""
+
+#: src/pattern-matching/infallible.md:66
+msgid "All of these patterns work with arrays as well:"
+msgstr ""

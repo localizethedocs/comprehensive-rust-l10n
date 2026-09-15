@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:6
+msgid "`into`"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:8
+msgid ""
+"Prefix for methods that convert `self` into another type. Consumes `self`, "
+"returns an owned value."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:26
+msgid ""
+"Prefix for a function that consumes an owned value and transforms it into a "
+"value of another type."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:29
+msgid ""
+"Not reinterpret cast! The data can be rearranged, reallocated, changed in "
+"any way, including losing information."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/into.md:32
+msgid ""
+"`into_iter` consumes a collection (like a vec, or a btreeset, or a hashmap) "
+"and produces an iterator over owned values, unlike `iter` and `iter_mut` "
+"which produce iterators over reference values."
+msgstr ""

@@ -1,0 +1,93 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md:6
+msgid "Drop Guards"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md:8
+msgid ""
+"A **drop guard** in Rust is a temporary object that performs some kind of "
+"cleanup when it goes out of scope. In the case of `Mutex`, the `lock` method "
+"returns a `MutexGuard` that automatically unlocks the mutex on `drop`:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md:13
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md:44
+msgid "The example above shows a simplified `Mutex` and its associated guard."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md:46
+msgid ""
+"Even though it is not a production-ready implementation, it illustrates the "
+"core idea:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md:49
+msgid "the guard represents exclusive access,"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md:50
+msgid ""
+"and its `Drop` implementation releases the lock when it goes out of scope."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md:52
+msgid "More to Explore"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md:54
+msgid ""
+"This example shows a C++ style mutex that does not contain the data it "
+"protects. While this is non-idiomatic in Rust, the goal here is only to "
+"illustrate the core idea of a drop guard, not to demonstrate a proper Rust "
+"mutex design."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md:58
+msgid "For brevity, several features are omitted:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md:60
+msgid ""
+"A real `Mutex<T>` stores the protected value inside the mutex.  \n"
+"This toy example omits the value entirely to focus only on the drop guard "
+"mechanism."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md:63
+msgid ""
+"Ergonomic access via `Deref` and `DerefMut` on `MutexGuard` (letting the "
+"guard behave like a `&T` or `&mut T`)."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md:65
+msgid ""
+"A fully blocking `.lock()` method and a non-blocking `try_lock` variant."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md:67
+msgid ""
+"You can explore the [`Mutex` implementation in Rust’s std library](https://"
+"doc.rust-lang.org/std/sync/struct.Mutex.html) as an example of a production-"
+"ready mutex. The [`Mutex` from the `parking_lot` crate](https://docs.rs/"
+"parking_lot/latest/parking_lot/type.Mutex.html) is another worthwhile "
+"reference."
+msgstr ""

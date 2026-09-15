@@ -1,0 +1,100 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/welcome.md:6
+msgid "Welcome to Concurrency in Rust"
+msgstr ""
+
+#: src/concurrency/welcome.md:8
+msgid ""
+"Rust has full support for concurrency using OS threads with mutexes and "
+"channels."
+msgstr ""
+
+#: src/concurrency/welcome.md:11
+msgid ""
+"The Rust type system plays an important role in making many concurrency bugs "
+"compile time errors. This idea is known as _fearless concurrency_ since you "
+"can rely on the compiler to ensure correctness at runtime."
+msgstr ""
+
+#: src/concurrency/welcome.md:15
+msgid "Schedule"
+msgstr ""
+
+#: src/concurrency/welcome.md:17
+msgid ""
+"Including 10 minute breaks, this session should take about 3 hours and 20 "
+"minutes. It contains:"
+msgstr ""
+
+#: src/concurrency/welcome.md:19
+msgid "Segment"
+msgstr ""
+
+#: src/concurrency/welcome.md:19
+msgid "Duration"
+msgstr ""
+
+#: src/concurrency/welcome.md:21
+msgid "Threads"
+msgstr ""
+
+#: src/concurrency/welcome.md:21 src/concurrency/welcome.md:24
+msgid "30 minutes"
+msgstr "30 分鐘"
+
+#: src/concurrency/welcome.md:22
+msgid "Channels"
+msgstr ""
+
+#: src/concurrency/welcome.md:22
+msgid "20 minutes"
+msgstr "20 分鐘"
+
+#: src/concurrency/welcome.md:23
+msgid "Send and Sync"
+msgstr ""
+
+#: src/concurrency/welcome.md:23
+msgid "15 minutes"
+msgstr "15 分鐘"
+
+#: src/concurrency/welcome.md:24
+msgid "Shared State"
+msgstr ""
+
+#: src/concurrency/welcome.md:25
+msgid "Exercises"
+msgstr ""
+
+#: src/concurrency/welcome.md:25
+msgid "1 hour and 10 minutes"
+msgstr "1 小時又 10 分鐘"
+
+#: src/concurrency/welcome.md:30
+msgid ""
+"Rust lets us access OS concurrency toolkit: threads, sync. primitives, etc."
+msgstr ""
+
+#: src/concurrency/welcome.md:31
+msgid ""
+"The type system gives us safety for concurrency without any special features."
+msgstr ""
+
+#: src/concurrency/welcome.md:32
+msgid ""
+"The same tools that help with \"concurrent\" access in a single thread (e."
+"g., a called function that might mutate an argument or save references to it "
+"to read later) save us from multi-threading issues."
+msgstr ""
