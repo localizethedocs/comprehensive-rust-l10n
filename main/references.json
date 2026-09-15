@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-07-20 12:06:06 +0200",
-      "hash" : "cbb740718a72b2181e5fe6885110cbbffa53b616",
-      "title" : "build(deps-dev): bump morgan from 1.10.1 to 1.11.0 in /tests in the npm_and_yarn group across 1 directory (#3240)"
+      "date" : "2026-09-14 12:04:22 +0100",
+      "hash" : "1f73f51f4e23d7af08007412e061e907c53f9133",
+      "title" : "Fix login function argument passing in example. (#3278)"
     }
   },
   "type" : "branch",
