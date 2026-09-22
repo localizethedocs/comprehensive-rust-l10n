@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-09-22T13:03:19Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -31,13 +31,23 @@ msgstr ""
 
 #: src/control-flow-basics/loops/for.md:28
 msgid ""
-"Under the hood `for` loops use a concept called \"iterators\" to handle "
-"iterating over different kinds of ranges/collections. Iterators will be "
-"discussed in more detail later."
+"`for` loops can be given any sequence of values and will iterate through "
+"that sequence."
 msgstr ""
 
 #: src/control-flow-basics/loops/for.md:31
 msgid ""
 "Note that the first `for` loop only iterates to `4`. Show the `1..=5` syntax "
 "for an inclusive range."
+msgstr ""
+
+#: src/control-flow-basics/loops/for.md:34
+msgid "More to Explore"
+msgstr ""
+
+#: src/control-flow-basics/loops/for.md:36
+msgid ""
+"Under the hood `for` loops use a concept called \"iterators\" to handle "
+"iterating over different kinds of ranges/collections. Iterators will be "
+"discussed in more detail later."
 msgstr ""
