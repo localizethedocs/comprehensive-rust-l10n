@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-09-22T13:03:19Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/iterators/for.md:1
+msgid "`for` Review"
+msgstr ""
+
+#: src/iterators/for.md:3
+msgid ""
+"Previously when we looked at `for` loops, we saw that they can accept "
+"anything that represents a sequence of values. Under the hood Rust uses a "
+"concept called **iterators** to provide a unified way to walk through a "
+"sequence like this."
+msgstr ""
+
+#: src/iterators/for.md:8
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/iterators/for.md:9
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/iterators/for.md:12
+msgid "// Accepts a range.\n"
+msgstr ""
+
+#: src/iterators/for.md:17
+msgid "// Also accepts an array.\n"
+msgstr ""
