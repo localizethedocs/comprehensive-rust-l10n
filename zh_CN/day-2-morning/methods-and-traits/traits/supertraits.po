@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/methods-and-traits/traits/supertraits.md:6
+msgid "Supertraits"
+msgstr ""
+
+#: src/methods-and-traits/traits/supertraits.md:8
+msgid ""
+"A trait can require that types implementing it also implement other traits, "
+"called _supertraits_. Here, any type implementing `Pet` must implement "
+"`Animal`."
+msgstr ""
+
+#: src/methods-and-traits/traits/supertraits.md:12
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/methods-and-traits/traits/supertraits.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/methods-and-traits/traits/supertraits.md:38
+msgid "\"Rex\""
+msgstr ""
+
+#: src/methods-and-traits/traits/supertraits.md:39
+msgid "\"{} has {} legs\""
+msgstr ""
+
+#: src/methods-and-traits/traits/supertraits.md:45
+msgid ""
+"This is sometimes called \"trait inheritance\" but students should not "
+"expect this to behave like OO inheritance. It just specifies an additional "
+"requirement on implementations of a trait."
+msgstr ""

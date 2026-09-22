@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/std-traits/from-and-into.md:6
+msgid "`From` and `Into`"
+msgstr ""
+
+#: src/std-traits/from-and-into.md:8
+msgid ""
+"Types implement [`From`](https://doc.rust-lang.org/std/convert/trait.From."
+"html) and [`Into`](https://doc.rust-lang.org/std/convert/trait.Into.html) to "
+"facilitate type conversions. Unlike `as`, these traits correspond to "
+"lossless, infallible conversions."
+msgstr ""
+
+#: src/std-traits/from-and-into.md:12 src/std-traits/from-and-into.md:27
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/std-traits/from-and-into.md:13 src/std-traits/from-and-into.md:28
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/std-traits/from-and-into.md:16 src/std-traits/from-and-into.md:31
+msgid "\"hello\""
+msgstr ""
+
+#: src/std-traits/from-and-into.md:20 src/std-traits/from-and-into.md:35
+msgid "\"{s}, {addr}, {one}, {bigger}\""
+msgstr ""
+
+#: src/std-traits/from-and-into.md:24
+msgid ""
+"[`Into`](https://doc.rust-lang.org/std/convert/trait.Into.html) is "
+"automatically implemented when [`From`](https://doc.rust-lang.org/std/"
+"convert/trait.From.html) is implemented:"
+msgstr ""
+
+#: src/std-traits/from-and-into.md:42
+msgid ""
+"That's why it is common to only implement `From`, as your type will get "
+"`Into` implementation too."
+msgstr ""
+
+#: src/std-traits/from-and-into.md:44
+msgid ""
+"When declaring a function argument input type like \"anything that can be "
+"converted into a `String`\", the rule is opposite, you should use `Into`. "
+"Your function will accept types that implement `From` and those that _only_ "
+"implement `Into`."
+msgstr ""

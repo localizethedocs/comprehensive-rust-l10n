@@ -1,0 +1,106 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/memory-management/approaches.md:6
+msgid "Approaches to Memory Management"
+msgstr ""
+
+#: src/memory-management/approaches.md:8
+msgid "Traditionally, languages have fallen into two broad categories:"
+msgstr ""
+
+#: src/memory-management/approaches.md:10
+msgid "Full control via manual memory management: C, C++, Pascal, ..."
+msgstr ""
+
+#: src/memory-management/approaches.md:11
+msgid "Programmer decides when to allocate or free heap memory."
+msgstr ""
+
+#: src/memory-management/approaches.md:12
+msgid ""
+"Programmer must determine whether a pointer still points to valid memory."
+msgstr ""
+
+#: src/memory-management/approaches.md:13
+msgid "Studies show, programmers make mistakes."
+msgstr ""
+
+#: src/memory-management/approaches.md:14
+msgid ""
+"Full safety via automatic memory management at runtime: Java, Python, Go, "
+"Haskell, ..."
+msgstr ""
+
+#: src/memory-management/approaches.md:16
+msgid ""
+"A runtime system ensures that memory is not freed until it can no longer be "
+"referenced."
+msgstr ""
+
+#: src/memory-management/approaches.md:18
+msgid "Typically implemented with reference counting or garbage collection."
+msgstr ""
+
+#: src/memory-management/approaches.md:20
+msgid "Rust offers a new mix:"
+msgstr ""
+
+#: src/memory-management/approaches.md:22
+msgid ""
+"Full control _and_ safety via compile time enforcement of correct memory "
+"management."
+msgstr ""
+
+#: src/memory-management/approaches.md:25
+msgid "It does this with an explicit ownership concept."
+msgstr ""
+
+#: src/memory-management/approaches.md:30
+msgid ""
+"This slide is intended to help students coming from other languages to put "
+"Rust in context."
+msgstr ""
+
+#: src/memory-management/approaches.md:33
+msgid ""
+"C must manage heap manually with `malloc` and `free`. Common errors include "
+"forgetting to call `free`, calling it multiple times for the same pointer, "
+"or dereferencing a pointer after the memory it points to has been freed."
+msgstr ""
+
+#: src/memory-management/approaches.md:37
+msgid ""
+"C++ has tools like smart pointers (`unique_ptr`, `shared_ptr`) that take "
+"advantage of language guarantees about calling destructors to ensure memory "
+"is freed when a function returns. It is still quite easy to misuse these "
+"tools and create similar bugs to C."
+msgstr ""
+
+#: src/memory-management/approaches.md:42
+msgid ""
+"Java, Go, and Python rely on the garbage collector to identify memory that "
+"is no longer reachable and discard it. This guarantees that any pointer can "
+"be dereferenced, eliminating use-after-free and other classes of bugs. But, "
+"GC has a runtime cost and is difficult to tune properly."
+msgstr ""
+
+#: src/memory-management/approaches.md:47
+msgid ""
+"Rust's ownership and borrowing model can, in many cases, get the performance "
+"of C, with alloc and free operations precisely where they are required -- "
+"zero-cost. It also provides tools similar to C++'s smart pointers. When "
+"required, other options such as reference counting are available, and there "
+"are even crates available to support runtime garbage collection (not covered "
+"in this class)."
+msgstr ""

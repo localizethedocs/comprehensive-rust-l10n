@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/std-types/solution.md:6
+msgid "Solution"
+msgstr ""
+
+#: src/std-types/solution.md:9
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/std-types/solution.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/std-types/solution.md:14
+msgid ""
+"/// Counter counts the number of times each value of type T has been seen.\n"
+msgstr ""
+
+#: src/std-types/solution.md:21
+msgid "/// Create a new Counter.\n"
+msgstr ""
+
+#: src/std-types/solution.md:26
+msgid "/// Count an occurrence of the given value.\n"
+msgstr ""
+
+#: src/std-types/solution.md:31
+msgid "/// Return the number of times the given value has been seen.\n"
+msgstr ""
+
+#: src/std-types/solution.md:47
+msgid "\"saw {} values equal to {}\""
+msgstr ""
+
+#: src/std-types/solution.md:51 src/std-types/solution.md:53
+#: src/std-types/solution.md:54
+msgid "\"apple\""
+msgstr ""
+
+#: src/std-types/solution.md:52
+msgid "\"orange\""
+msgstr ""
+
+#: src/std-types/solution.md:54
+msgid "\"got {} apples\""
+msgstr ""

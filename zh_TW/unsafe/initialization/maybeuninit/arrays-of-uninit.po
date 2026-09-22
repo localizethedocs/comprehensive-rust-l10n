@@ -1,0 +1,105 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:6
+msgid "MaybeUninit and arrays"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:9
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:16
+msgid "b\"RUST\""
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:20
+msgid "// Initialize elements by writing values to the memory\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:28
+msgid ""
+"// When a portion of an array is initialized, one can\n"
+"    // use unsafe to isolate it\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:34
+msgid "\"{text}\""
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:36
+msgid "// We must manually drop the initialized elements\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:47
+msgid ""
+"To create an array of uninitialized memory, the `::uninit()` constructor can "
+"be used within a `const` context."
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:50
+msgid "Use `ptr::write` to initialize values as per normal."
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:52
+msgid ""
+"`.assume_init()` does not work as easily for arrays. It requires every value "
+"to be initialized, which may not occur when reusing a buffer. This example "
+"uses a pointer to isolate the initialized bytes to create a string slice."
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:56
+msgid ""
+"When creating a sub-slice of a partially-initialized array, be careful with "
+"ownership and correctly implementing drop. Reminder: `MaybeUninit<T>` will "
+"not call drop on its `T`."
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:60
+msgid ""
+"`MaybeUninit<[u8;2048]>` is distinct from `[MaybeUninit::<u8>; 2048]`. This "
+"is the difference between an array of uninitialized memory and an array that "
+"contains uninitialized elements."
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:64
+msgid ""
+"`MaybeUninit<[u8;2048]>` is \"all or nothing\". You either fully initialize "
+"the whole array and then call `assume_init`, or you must keep it as "
+"`MaybeUninit<[u8; 2048]>` and avoid touching it as `[u8; 2048]`."
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:67
+msgid ""
+"`[MaybeUninit<u8>; 2048]` lets you initialize elements one at a time, then "
+"take a sub-slice of just the initialized prefix and treat it as `[u8]` via "
+"`std::slice::from_raw_parts`."
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:70
+msgid ""
+"`slice_assume_init_ref` is safe only when every element in the slice is "
+"initialized. For this example, we only pass `&buf[..input.len()]` after "
+"writing exactly those bytes."
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/maybeuninit/arrays.md:73
+msgid ""
+"When `T` needs drop, you must manually call `assume_init_drop()` for the "
+"initialized elements. Skipping this leaks memory. However, calling it on an "
+"uninitialized element is undefined behavior."
+msgstr ""

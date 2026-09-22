@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/interoperability/cpp/cpp-exception.md:6
+msgid "C++ Error Handling"
+msgstr "C++ 錯誤處理"
+
+#: src/android/interoperability/cpp/cpp-exception.md:9
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-exception.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-exception.md:14
+msgid "\"C++\""
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-exception.md:15
+msgid "\"example/include/example.h\""
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-exception.md:22
+msgid "\"Error: {}\""
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-exception.md:30
+msgid ""
+"C++ functions declared to return a `Result` will catch any thrown exception "
+"on the C++ side and return it as an `Err` value to the calling Rust function."
+msgstr ""
+
+#: src/android/interoperability/cpp/cpp-exception.md:32
+msgid ""
+"If an exception is thrown from an extern \"C++\" function that is not "
+"declared by the CXX bridge to return `Result`, the program calls C++'s `std::"
+"terminate`. The behavior is equivalent to the same exception being thrown "
+"through a `noexcept` C++ function."
+msgstr ""

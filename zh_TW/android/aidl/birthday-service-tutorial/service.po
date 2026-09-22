@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/aidl/example-service/service.md:6
+msgid "Service Implementation"
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:8
+msgid "We can now implement the AIDL service:"
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:10
+msgid "_birthday_service/src/lib.rs_:"
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:13
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:15
+msgid "//! Implementation of the `IBirthdayService` AIDL interface.\n"
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:19
+msgid "/// The `IBirthdayService` implementation.\n"
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:27
+msgid "\"Happy Birthday {name}, congratulations with the {years} years!\""
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:32
+msgid "_birthday_service/Android.bp_:"
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:36
+msgid "\"libbirthdayservice\""
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:37
+msgid "\"birthdayservice\""
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:38
+msgid "\"src/lib.rs\""
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:40
+msgid "\"com.example.birthdayservice-rust\""
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:47
+msgid ""
+"Point out the path to the generated `IBirthdayService` trait, and explain "
+"why each of the segments is necessary."
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:49
+msgid ""
+"Note that `wishHappyBirthday` and other AIDL IPC methods take `&self` "
+"(instead of `&mut self`)."
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:51
+msgid ""
+"This is necessary because Binder responds to incoming requests on a thread "
+"pool, allowing for multiple requests to be processed in parallel. This "
+"requires that the service methods only get a shared reference to `self`."
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:54
+msgid ""
+"Any state that needs to be modified by the service will have to be put in "
+"something like a `Mutex` to allow for safe mutation."
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:56
+msgid ""
+"The correct approach for managing service state depends heavily on the "
+"details of your service."
+msgstr ""
+
+#: src/android/aidl/example-service/service.md:58
+msgid ""
+"TODO: What does the `binder::Interface` trait do? Are there methods to "
+"override? Where is the source?"
+msgstr ""

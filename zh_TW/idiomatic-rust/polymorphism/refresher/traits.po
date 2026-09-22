@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/refresher/traits.md:6
+msgid "Traits, Protocols, Interfaces"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/traits.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/traits.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/traits.md:20
+msgid "\"Email to {}: {}\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/traits.md:30
+msgid "\"Chat message sent to {:?}: {}\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/traits.md:37
+msgid ""
+"Rust's concept of polymorphism and generics is heavily built around traits."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/traits.md:39
+msgid "Traits are requirements on a type in a generic context."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/traits.md:41
+msgid "Requirements function much like a compile-time checked duck typing."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/traits.md:43
+msgid ""
+"Duck typing is a concept from the practice of dynamic, untyped languages "
+"like Python, \"if it walks like a duck and quacks like a duck, it's a duck.\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/traits.md:46
+msgid ""
+"That is, types with the methods and fields expected by a function are all "
+"valid inputs for that function. If a type implements methods, it is that "
+"type in a duck-typing context."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/traits.md:50
+msgid ""
+"Traits behave like a static duck typing mechanism, in that we specify "
+"behavior rather than type. But we get the compile-time checks on if that "
+"behavior does really exist."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/traits.md:54
+msgid ""
+"Alternatively: Traits are like collections of propositions, and implementing "
+"a trait for a type is a proof that the type can be used wherever the trait "
+"is asked for."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/traits.md:58
+msgid ""
+"Traits have required methods, implementing those methods is the proof that a "
+"type has the required behavior."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/traits.md:61
+msgid "reference:"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/traits.md:63
+msgid "https://doc.rust-lang.org/reference/items/traits.html"
+msgstr ""

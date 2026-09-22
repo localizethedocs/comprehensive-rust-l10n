@@ -1,0 +1,95 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:6
+msgid "What a move is in Rust"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:8
+msgid "Always a bitwise copy, even for types that do not implement `Copy`:"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:11
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:20
+msgid "\"{x:?}\""
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:25
+msgid "b'R'"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:26
+msgid "b'U'"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:27
+msgid "b'S'"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:28
+msgid "b'T'"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:33
+msgid ""
+"Generated [LLVM IR](https://play.rust-lang.org/?"
+"version=stable&mode=debug&edition=2024&gist=6f587283e8e0ec02f1ea8e871fc9ac72) "
+"for calling `move_and_expect()`:"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:40
+msgid "`memcpy` from variable `%b` to `%_12`"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:41
+msgid "Call to `move_and_inspect` with `%_12` (the copy)"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:45
+msgid "Note that `DynamicBuffer` does not implement `Copy`."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:47
+msgid "Implication: a value's memory address is not stable."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:49
+msgid ""
+"To show movement as a bitwise copy, either [open the code in the playground]"
+"(https://play.rust-lang.org/?"
+"version=stable&mode=debug&edition=2024&gist=6f587283e8e0ec02f1ea8e871fc9ac72) "
+"and look at the or [the Compiler Explorer](https://rust.godbolt.org/"
+"z/6o6nP7do4)."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:53
+msgid "Optional for those who prefer assembly output:"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:55
+msgid ""
+"The Compiler Explorer is useful for discussing the generated assembly and "
+"focus the cursor assembly output in the `main` function on lines 128-136 "
+"(should be highlighted in pink)."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/what-a-move-is.md:59
+msgid "Relevant code generated output `move_and_inspect`:"
+msgstr ""

@@ -1,0 +1,106 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/user-defined-types/tuple-structs.md:6
+msgid "Tuple Structs"
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:8
+msgid "If the field names are unimportant, you can use a tuple struct:"
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:11
+#: src/user-defined-types/tuple-structs.md:25
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:12
+#: src/user-defined-types/tuple-structs.md:26
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:18
+msgid "\"({}, {})\""
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:22
+msgid "This is often used for single-field wrappers (called newtypes):"
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:32
+msgid "\"Ask a rocket scientist at NASA\""
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:36
+msgid "// ...\n"
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:48
+msgid ""
+"Newtypes are a great way to encode additional information about the value in "
+"a primitive type, for example:"
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:50
+msgid "The number is measured in some units: `Newtons` in the example above."
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:51
+msgid ""
+"The value passed some validation when it was created, so you no longer have "
+"to validate it again at every use: `PhoneNumber(String)` or `OddNumber(u32)`."
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:54
+msgid ""
+"The newtype pattern is covered extensively in the [\"Idiomatic Rust\" module]"
+"(../idiomatic/leveraging-the-type-system/newtype-pattern.md)."
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:56
+msgid ""
+"Demonstrate how to add a `f64` value to a `Newtons` type by accessing the "
+"single field in the newtype."
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:58
+msgid ""
+"Rust generally avoids implicit conversions, like automatic unwrapping or "
+"using booleans as integers."
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:60
+msgid ""
+"Operator overloading is discussed on Day 2 ([Standard Library Traits](../std-"
+"traits.md))."
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:62
+msgid ""
+"When a tuple struct has zero fields, the `()` can be omitted. The result is "
+"a zero-sized type (ZST), of which there is only one value (the name of the "
+"type)."
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:65
+msgid ""
+"This is common for types that implement some behavior but have no data "
+"(imagine a `NullReader` that implements some reader behavior by always "
+"returning EOF)."
+msgstr ""
+
+#: src/user-defined-types/tuple-structs.md:68
+msgid ""
+"The example is a subtle reference to the [Mars Climate Orbiter](https://en."
+"wikipedia.org/wiki/Mars_Climate_Orbiter) failure."
+msgstr ""

@@ -1,0 +1,237 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-rust/exercise.md:6
+msgid "Safe FFI Wrapper"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:8
+msgid ""
+"Rust has great support for calling functions through a _foreign function "
+"interface_ (FFI). We will use this to build a safe wrapper for the `libc` "
+"functions you would use from C to read the names of files in a directory."
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:12
+msgid "You will want to consult the manual pages:"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:14
+msgid "[`opendir(3)`](https://man7.org/linux/man-pages/man3/opendir.3.html)"
+msgstr "[`opendir(3)`](https://man7.org/linux/man-pages/man3/opendir.3.html)"
+
+#: src/unsafe-rust/exercise.md:15
+msgid "[`readdir(3)`](https://man7.org/linux/man-pages/man3/readdir.3.html)"
+msgstr "[`readdir(3)`](https://man7.org/linux/man-pages/man3/readdir.3.html)"
+
+#: src/unsafe-rust/exercise.md:16
+msgid "[`closedir(3)`](https://man7.org/linux/man-pages/man3/closedir.3.html)"
+msgstr "[`closedir(3)`](https://man7.org/linux/man-pages/man3/closedir.3.html)"
+
+#: src/unsafe-rust/exercise.md:18
+msgid ""
+"You will also want to browse the [`std::ffi`](https://doc.rust-lang.org/std/"
+"ffi/) module. There you find a number of string types which you need for the "
+"exercise:"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:21
+msgid "Types"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:21
+msgid "Encoding"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:21
+msgid "Use"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:23
+msgid ""
+"[`str`](https://doc.rust-lang.org/std/primitive.str.html) and [`String`]"
+"(https://doc.rust-lang.org/std/string/struct.String.html)"
+msgstr ""
+"[`str`](https://doc.rust-lang.org/std/primitive.str.html) 與 [`String`]"
+"(https://doc.rust-lang.org/std/string/struct.String.html)"
+
+#: src/unsafe-rust/exercise.md:23
+msgid "UTF-8"
+msgstr "UTF-8"
+
+#: src/unsafe-rust/exercise.md:23
+msgid "Text processing in Rust"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:24
+msgid ""
+"[`CStr`](https://doc.rust-lang.org/std/ffi/struct.CStr.html) and [`CString`]"
+"(https://doc.rust-lang.org/std/ffi/struct.CString.html)"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:24
+msgid "NUL-terminated"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:24
+msgid "Communicating with C functions"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:25
+msgid ""
+"[`OsStr`](https://doc.rust-lang.org/std/ffi/struct.OsStr.html) and "
+"[`OsString`](https://doc.rust-lang.org/std/ffi/struct.OsString.html)"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:25
+msgid "OS-specific"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:25
+msgid "Communicating with the OS"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:27
+msgid "You will convert between all these types:"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:29
+msgid ""
+"`&str` to `CString`: you need to allocate space for a trailing `\\0` "
+"character,"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:30
+msgid "`CString` to `*const c_char`: you need a pointer to call C functions,"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:31
+msgid ""
+"`*const c_char` to `&CStr`: you need something which can find the trailing "
+"`\\0` character,"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:33
+msgid ""
+"`&CStr` to `&[u8]`: a slice of bytes is the universal interface for \"some "
+"unknown data\","
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:35
+msgid ""
+"`&[u8]` to `&OsStr`: `&OsStr` is a step towards `OsString`, use [`OsStrExt`]"
+"(https://doc.rust-lang.org/std/os/unix/ffi/trait.OsStrExt.html) to create it,"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:38
+msgid ""
+"`&OsStr` to `OsString`: you need to clone the data in `&OsStr` to be able to "
+"return it and call `readdir` again."
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:41
+msgid ""
+"The [Nomicon](https://doc.rust-lang.org/nomicon/ffi.html) also has a very "
+"useful chapter about FFI."
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:52
+msgid ""
+"Copy the code below to <https://play.rust-lang.org/> and fill in the missing "
+"functions and methods:"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:56
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:57
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:58
+msgid "// TODO: remove this when you're done with your implementation.\n"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:64 src/unsafe-rust/exercise.md:77
+#: src/unsafe-rust/exercise.md:88 src/unsafe-rust/exercise.md:102
+#: src/unsafe-rust/exercise.md:110
+msgid "\"macos\""
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:67
+msgid "// Opaque type. See https://doc.rust-lang.org/nomicon/ffi.html.\n"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:74
+msgid ""
+"// Layout according to the Linux man page for readdir(3), where ino_t and\n"
+"    // off_t are resolved according to the definitions in\n"
+"    // /usr/include/x86_64-linux-gnu/{sys/types.h, bits/typesizes.h}.\n"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:87
+msgid "// Layout according to the macOS man page for dir(5).\n"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:99
+msgid "\"C\""
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:102 src/unsafe-rust/exercise.md:110
+msgid "\"x86_64\""
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:105
+msgid ""
+"// See https://github.com/rust-lang/libc/issues/414 and the section on\n"
+"        // _DARWIN_FEATURE_64_BIT_INODE in the macOS man page for stat(2).\n"
+"        //\n"
+"        // \"Platforms that existed before these updates were available\" "
+"refers\n"
+"        // to macOS (as opposed to iOS / wearOS / etc.) on Intel and "
+"PowerPC.\n"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:111
+msgid "\"readdir$INODE64\""
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:129
+msgid ""
+"// Call opendir and return a Ok value if that worked,\n"
+"        // otherwise return Err with a message.\n"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:138
+msgid "// Keep calling readdir until we get a NULL pointer back.\n"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:145
+msgid "// Call closedir as needed.\n"
+msgstr ""
+
+#: src/unsafe-rust/exercise.md:151
+msgid "\".\""
+msgstr "\".\""
+
+#: src/unsafe-rust/exercise.md:152
+msgid "\"files: {:#?}\""
+msgstr "\"files: {:#?}\""
+
+#: src/unsafe-rust/exercise.md:160
+msgid ""
+"FFI binding code is typically generated by tools like [bindgen](https://"
+"github.com/rust-lang/rust-bindgen), rather than being written manually as we "
+"are doing here. However, bindgen can't run in an online playground."
+msgstr ""
