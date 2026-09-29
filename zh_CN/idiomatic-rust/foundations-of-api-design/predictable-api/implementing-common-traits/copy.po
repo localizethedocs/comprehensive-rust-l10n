@@ -1,0 +1,102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:6
+msgid "Copy"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:8
+msgid "Like `Clone`, but indicates the type is can be bitwise copied."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:10
+msgid "Derivable: ✅"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:13
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:21
+msgid "// Implicit copy operation\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:29
+msgid ""
+"`Clone` represents an explicit, user-defined copy operation. `Copy` "
+"represents an implicit, bitwise copy."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:32
+msgid ""
+"Should generally only be implemented on \"plain data\" types that should act "
+"like primitive values. For example, primitive numeric types for a linear "
+"algebra library."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:36
+msgid ""
+"Has the same caveat as `Clone`: If duplicating the values would break an "
+"invariant, the type shouldn't implement `Copy`."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:39
+msgid ""
+"Always derive `Clone` and `Copy` together! Do _not_ manually implement "
+"`Clone` when implementing `Copy`."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:42
+msgid ""
+"Copy operations do not invoke the `clone` method, so a custom `Clone` impl "
+"can have different behavior than an implicit copy operation. Deriving both "
+"`Clone` and `Copy` together ensures that calling `clone` will give the same "
+"result as invoking a copy."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:47
+msgid "Cannot be implemented on types with `Drop` or non-`Copy` fields."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:49
+msgid ""
+"Ask the class: Why can't a type with heap data (`Vec`, `BTreeMap`, `Rc`, "
+"etc.) be `Copy`?"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:52
+msgid ""
+"Bitwise copying on these types would mean types with heap data would no "
+"longer have exclusive ownership of a pointer, breaking the invariants "
+"usually upheld by Rust and its ecosystem."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:56
+msgid ""
+"Multiple `Vec`s would point to the same data in memory. Adding and removing "
+"data would only update individual `Vec`s length and capacity values. The "
+"same for `BTreeMap`."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/copy.md:60
+msgid ""
+"Bitwise copying of `Rc`s would not update the reference counting value "
+"within the pointers, meaning there could be two instances of a `Rc` value "
+"that believe themselves to be the only `Rc` for that pointer. Once one of "
+"them is destroyed, the reference count will become 0 on one of them and the "
+"inner value dropped despite there being another `Rc` still alive."
+msgstr ""

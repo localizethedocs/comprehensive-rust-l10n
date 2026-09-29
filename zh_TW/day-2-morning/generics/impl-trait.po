@@ -1,0 +1,71 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/generics/impl-trait.md:6
+msgid "`impl Trait`"
+msgstr ""
+
+#: src/generics/impl-trait.md:8
+msgid ""
+"Similar to trait bounds, an `impl Trait` syntax can be used in function "
+"arguments and return values:"
+msgstr ""
+
+#: src/generics/impl-trait.md:12
+msgid "// Copyright 2022 Google LLC\n"
+msgstr ""
+
+#: src/generics/impl-trait.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/generics/impl-trait.md:14
+msgid ""
+"// Syntactic sugar for:\n"
+"//   fn add_42_millions<T: Into<i32>>(x: T) -> i32 {\n"
+msgstr ""
+
+#: src/generics/impl-trait.md:38
+msgid ""
+"`impl Trait` allows you to work with types that you cannot name. The meaning "
+"of `impl Trait` is a bit different in the different positions."
+msgstr ""
+
+#: src/generics/impl-trait.md:41
+msgid ""
+"For a parameter, `impl Trait` is like an anonymous generic parameter with a "
+"trait bound."
+msgstr ""
+
+#: src/generics/impl-trait.md:44
+msgid ""
+"For a return type, it means that the return type is some concrete type that "
+"implements the trait, without naming the type. This can be useful when you "
+"don't want to expose the concrete type in a public API."
+msgstr ""
+
+#: src/generics/impl-trait.md:48
+msgid ""
+"Inference is hard in return position. A function returning `impl Foo` picks "
+"the concrete type it returns, without writing it out in the source. A "
+"function returning a generic type like `collect<B>() -> B` can return any "
+"type satisfying `B`, and the caller may need to choose one, such as with "
+"`let x: Vec<_> = foo.collect()` or with the turbofish, `foo.collect::"
+"<Vec<_>>()`."
+msgstr ""
+
+#: src/generics/impl-trait.md:55
+msgid ""
+"What is the type of `debuggable`? Try `let debuggable: () = ..` to see what "
+"the error message shows."
+msgstr ""

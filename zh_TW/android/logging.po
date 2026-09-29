@@ -1,0 +1,102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/logging.md:6
+msgid "Logging"
+msgstr ""
+
+#: src/android/logging.md:8
+msgid ""
+"You should use the `log` crate to automatically log to `logcat` (on-device) "
+"or `stdout` (on-host):"
+msgstr ""
+
+#: src/android/logging.md:11
+msgid "_hello_rust_logs/Android.bp_:"
+msgstr ""
+
+#: src/android/logging.md:15 src/android/logging.md:16
+msgid "\"hello_rust_logs\""
+msgstr "\"hello_rust_logs\""
+
+#: src/android/logging.md:17
+msgid "\"src/main.rs\""
+msgstr "\"src/main.rs\""
+
+#: src/android/logging.md:19
+msgid "\"liblog_rust\""
+msgstr "\"liblog_rust\""
+
+#: src/android/logging.md:20
+msgid "\"liblogger\""
+msgstr "\"liblogger\""
+
+#: src/android/logging.md:26
+msgid "_hello_rust_logs/src/main.rs_:"
+msgstr ""
+
+#: src/android/logging.md:29
+msgid "// Copyright 2022 Google LLC\n"
+msgstr ""
+
+#: src/android/logging.md:30
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/logging.md:31
+msgid "//! Rust logging demo.\n"
+msgstr ""
+
+#: src/android/logging.md:35
+msgid "/// Logs a greeting.\n"
+msgstr ""
+
+#: src/android/logging.md:40
+msgid "\"rust\""
+msgstr ""
+
+#: src/android/logging.md:43
+msgid "\"Starting program.\""
+msgstr ""
+
+#: src/android/logging.md:44
+msgid "\"Things are going fine.\""
+msgstr ""
+
+#: src/android/logging.md:45
+msgid "\"Something went wrong!\""
+msgstr ""
+
+#: src/android/logging.md:49
+msgid "Build, push, and run the binary on your device:"
+msgstr ""
+
+#: src/android/logging.md:51
+msgid ""
+"```shell\n"
+"m hello_rust_logs\n"
+"adb push \"$ANDROID_PRODUCT_OUT/system/bin/hello_rust_logs\" /data/local/"
+"tmp\n"
+"adb shell /data/local/tmp/hello_rust_logs\n"
+"```"
+msgstr ""
+
+#: src/android/logging.md:57
+msgid "The logs show up in `adb logcat`:"
+msgstr ""
+
+#: src/android/logging.md:71
+msgid ""
+"The logger implementation in `liblogger` is only needed in the final binary, "
+"if you're logging from a library you only need the `log` facade crate."
+msgstr ""

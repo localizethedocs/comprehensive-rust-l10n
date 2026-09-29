@@ -1,0 +1,109 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/control-flow-basics/match.md:6
+msgid "`match` Expressions"
+msgstr "`match` 表達式"
+
+#: src/control-flow-basics/match.md:8
+msgid "`match` can be used to check a value against one or more options:"
+msgstr ""
+
+#: src/control-flow-basics/match.md:11 src/control-flow-basics/match.md:30
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/control-flow-basics/match.md:12 src/control-flow-basics/match.md:31
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/control-flow-basics/match.md:17
+msgid "\"one\""
+msgstr ""
+
+#: src/control-flow-basics/match.md:18
+msgid "\"ten\""
+msgstr ""
+
+#: src/control-flow-basics/match.md:19
+msgid "\"one hundred\""
+msgstr ""
+
+#: src/control-flow-basics/match.md:21
+msgid "\"something else\""
+msgstr ""
+
+#: src/control-flow-basics/match.md:27
+msgid "Like `if` expressions, `match` can also return a value;"
+msgstr ""
+
+#: src/control-flow-basics/match.md:39
+msgid "\"The value of {flag} is {val}\""
+msgstr ""
+
+#: src/control-flow-basics/match.md:46
+msgid ""
+"`match` arms are evaluated from top to bottom, and the first one that "
+"matches has its corresponding body executed."
+msgstr ""
+
+#: src/control-flow-basics/match.md:49
+msgid ""
+"There is no fall-through between cases the way that `switch` works in other "
+"languages."
+msgstr ""
+
+#: src/control-flow-basics/match.md:52
+msgid ""
+"The body of a `match` arm can be a single expression or a block. Technically "
+"this is the same thing, since blocks are also expressions, but students may "
+"not fully understand that symmetry at this point."
+msgstr ""
+
+#: src/control-flow-basics/match.md:56
+msgid ""
+"`match` expressions need to be exhaustive, meaning they either need to cover "
+"all possible values or they need to have a default case such as `_`. "
+"Exhaustiveness is easiest to demonstrate with enums, but enums haven't been "
+"introduced yet. Instead we demonstrate matching on a `bool`, which is the "
+"simplest primitive type."
+msgstr ""
+
+#: src/control-flow-basics/match.md:62
+msgid ""
+"This slide introduces `match` without talking about pattern matching, giving "
+"students a chance to get familiar with the syntax without front-loading too "
+"much information. We'll be talking about pattern matching in more detail "
+"tomorrow, so try not to go into too much detail here."
+msgstr ""
+
+#: src/control-flow-basics/match.md:67
+msgid "More to Explore"
+msgstr ""
+
+#: src/control-flow-basics/match.md:69
+msgid ""
+"To further motivate the usage of `match`, you can compare the examples to "
+"their equivalents written with `if`. In the second case, matching on a "
+"`bool`, an `if {} else {}` block is pretty similar. But in the first example "
+"that checks multiple cases, a `match` expression can be more concise than "
+"`if {} else if {} else if {} else`."
+msgstr ""
+
+#: src/control-flow-basics/match.md:75
+msgid ""
+"`match` also supports match guards, which allow you to add an arbitrary "
+"logical condition that will get evaluated to determine if the match arm "
+"should be taken. However talking about match guards requires explaining "
+"about pattern matching, which we're trying to avoid on this slide."
+msgstr ""

@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/ffi/rand.md:6
+msgid "Wrapping `srand(3)` and `rand(3)`"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/rand.md:11
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/rand.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/rand.md:15
+msgid ""
+"// unsafe extern \"C\" {\n"
+"//     /// Seed the rng\n"
+"//     fn srand(seed: std::ffi::c_uint);\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/rand.md:19
+msgid ""
+"//     fn rand() -> std::ffi::c_int;\n"
+"// }\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/rand.md:27
+msgid "\"{a:?}\""
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/rand.md:34
+msgid ""
+"This slide attempts to demonstrate that it is very easy for wrappers to "
+"trigger undefined behavior if they are written incorrectly. We’ll see how "
+"easy it is to trigger type safety problems."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/rand.md:38
+msgid ""
+"Explain that `rand` and `srand` functions are provided by the C standard "
+"library (libc)."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/rand.md:41
+msgid ""
+"Explain that the functions are exported by the libc crate, but we can also "
+"write an FFI wrapper for them manually."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/rand.md:44
+msgid "Show calling the functions from the exported."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/rand.md:46
+msgid "Code compiles because libc is linked to Rust programs by default."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/rand.md:48
+msgid "Explain that Rust will trust you if you use the wrong type(s)."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/rand.md:50
+msgid "Modify `fn rand() -> std::ffi::c_int;` to return `char`."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/rand.md:52
+msgid ""
+"Avoiding type safety issues is a reason for using tools for generating "
+"wrappers, rather than doing it by hand."
+msgstr ""

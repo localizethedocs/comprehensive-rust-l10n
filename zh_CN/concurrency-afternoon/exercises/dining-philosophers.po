@@ -1,0 +1,114 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/async-exercises/dining-philosophers.md:6
+msgid "Dining Philosophers --- Async"
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:8
+msgid ""
+"See [dining philosophers](../sync-exercises/dining-philosophers.md) for a "
+"description of the problem."
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:11
+msgid ""
+"As before, you will need a local [Cargo installation](../../cargo/running-"
+"locally.md) for this exercise. Copy the code below to a file called `src/"
+"main.rs`, fill out the blanks, and test that `cargo run` does not deadlock:"
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:19
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:20
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:30
+msgid ""
+"// left_chopstick: ...\n"
+"    // right_chopstick: ...\n"
+"    // thoughts: ...\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:38
+msgid "\"Eureka! {} has a new idea!\""
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:44
+msgid "// Keep trying until we have both chopsticks\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:45
+msgid "\"{} is eating...\""
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:49
+msgid "// tokio scheduler doesn't deadlock with 5 philosophers, so have 2.\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:51
+msgid "\"Socrates\""
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:51
+msgid "\"Hypatia\""
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:55
+msgid "// Create chopsticks\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:57
+msgid "// Create philosophers\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:59
+msgid "// Make them think and eat\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:61
+msgid "// Output their thoughts\n"
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:65
+msgid ""
+"Since this time you are using Async Rust, you'll need a `tokio` dependency. "
+"You can use the following `Cargo.toml`:"
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:70
+msgid ""
+"```toml\n"
+"[package]\n"
+"name = \"dining-philosophers-async-dine\"\n"
+"version = \"0.1.0\"\n"
+"edition = \"2024\"\n"
+"\n"
+"[dependencies]\n"
+"tokio = { version = \"1.26.0\", features = [\"sync\", \"time\", \"macros\", "
+"\"rt-multi-thread\"] }\n"
+"```"
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:80
+msgid ""
+"Also note that this time you have to use the `Mutex` and the `mpsc` module "
+"from the `tokio` crate."
+msgstr ""
+
+#: src/concurrency/async-exercises/dining-philosophers.md:86
+msgid "Can you make your implementation single-threaded?"
+msgstr ""

@@ -1,0 +1,36 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/control-flow-basics/loops/loop.md:6
+msgid "`loop`"
+msgstr ""
+
+#: src/control-flow-basics/loops/loop.md:8
+msgid ""
+"The [`loop` statement](https://doc.rust-lang.org/std/keyword.loop.html) just "
+"loops forever, until a `break`."
+msgstr ""
+
+#: src/control-flow-basics/loops/loop.md:12
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/control-flow-basics/loops/loop.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/control-flow-basics/loops/loop.md:29
+msgid ""
+"The `loop` statement works like a `while true` loop. Use it for things like "
+"servers that will serve connections forever."
+msgstr ""

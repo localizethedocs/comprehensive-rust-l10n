@@ -1,0 +1,146 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/sync-exercises/link-checker.md:6
+msgid "Multi-threaded Link Checker"
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:8
+msgid ""
+"Let us use our new knowledge to create a multi-threaded link checker. It "
+"should start at a webpage and check that links on the page are valid. It "
+"should recursively check other pages on the same domain and keep doing this "
+"until all pages have been validated."
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:13
+msgid ""
+"For this, you will need an HTTP client such as [`reqwest`](https://docs.rs/"
+"reqwest/). You will also need a way to find links, we can use [`scraper`]"
+"(https://docs.rs/scraper/). Finally, we'll need some way of handling errors, "
+"we will use [`thiserror`](https://docs.rs/thiserror/)."
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:17
+msgid "Create a new Cargo project and `reqwest` it as a dependency with:"
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:27
+msgid ""
+"If `cargo add` fails with `error: no such subcommand`, then please edit the "
+"`Cargo.toml` file by hand. Add the dependencies listed below."
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:30
+msgid ""
+"The `cargo add` calls will update the `Cargo.toml` file to look like this:"
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:34
+msgid ""
+"```toml\n"
+"[package]\n"
+"name = \"link-checker\"\n"
+"version = \"0.1.0\"\n"
+"edition = \"2024\"\n"
+"publish = false\n"
+"\n"
+"[dependencies]\n"
+"reqwest = { version = \"0.13.1\", features = [\"blocking\"] }\n"
+"scraper = \"0.25.0\"\n"
+"thiserror = \"2.0.18\"\n"
+"```"
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:47
+msgid ""
+"You can now download the start page. Try with a small site such as `https://"
+"www.google.org/`."
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:50
+msgid "Your `src/main.rs` file should look something like this:"
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:55
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:56
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:65
+msgid "\"request error: {0}\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:67
+msgid "\"bad http response: {0}\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:78
+msgid "\"Checking {:#}\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:93
+msgid "\"a\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:96
+msgid "\"href\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:103
+msgid "\"On {base_url:#}: ignored unparsable {href:?}: {err}\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:112
+msgid "\"https://www.google.org\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:115
+msgid "\"Links: {links:#?}\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:116
+msgid "\"Could not extract links: {err:#}\""
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:121
+msgid "Run the code in `src/main.rs` with"
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:127
+msgid "Tasks"
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:129
+msgid ""
+"Use threads to check the links in parallel: send the URLs to be checked to a "
+"channel and let a few threads check the URLs in parallel."
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:131
+msgid ""
+"Extend this to recursively extract links from all pages on the `www.google."
+"org` domain. Put an upper limit of 100 pages or so so that you don't end up "
+"being blocked by the site."
+msgstr ""
+
+#: src/concurrency/sync-exercises/link-checker.md:138
+msgid ""
+"This is a complex exercise and intended to give students an opportunity to "
+"work on a larger project than others. A success condition for this exercise "
+"is to get stuck on some \"real\" issue and work through it with the support "
+"of other students or the instructor."
+msgstr ""

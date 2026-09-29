@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/control-flow-basics/loops.md:6
+msgid "Loops"
+msgstr "迴圈"
+
+#: src/control-flow-basics/loops.md:8
+msgid "There are three looping keywords in Rust: `while`, `loop`, and `for`:"
+msgstr ""
+
+#: src/control-flow-basics/loops.md:10
+msgid "`while`"
+msgstr ""
+
+#: src/control-flow-basics/loops.md:12
+msgid ""
+"The [`while` keyword](https://doc.rust-lang.org/reference/expressions/loop-"
+"expr.html#predicate-loops) works much like in other languages, executing the "
+"loop body as long as the condition is true."
+msgstr ""
+
+#: src/control-flow-basics/loops.md:18
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/control-flow-basics/loops.md:19
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""

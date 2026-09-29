@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/aidl/example-service/changing-definition.md:6
+msgid "Changing API"
+msgstr ""
+
+#: src/android/aidl/example-service/changing-definition.md:8
+msgid ""
+"Let's extend the API: we'll let clients specify a list of lines for the "
+"birthday card:"
+msgstr ""
+
+#: src/android/aidl/example-service/changing-definition.md:13
+msgid "/** Birthday service interface. */"
+msgstr ""
+
+#: src/android/aidl/example-service/changing-definition.md:16
+msgid "/** Generate a Happy Birthday message. */"
+msgstr ""
+
+#: src/android/aidl/example-service/changing-definition.md:21
+msgid "This results in an updated trait definition for `IBirthdayService`:"
+msgstr ""
+
+#: src/android/aidl/example-service/changing-definition.md:24
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/android/aidl/example-service/changing-definition.md:25
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/aidl/example-service/changing-definition.md:39
+msgid ""
+"Note how the `String[]` in the AIDL definition is translated as a "
+"`&[String]` in Rust, i.e. that idiomatic Rust types are used in the "
+"generated bindings wherever possible:"
+msgstr ""
+
+#: src/android/aidl/example-service/changing-definition.md:42
+msgid "`in` array arguments are translated to slices."
+msgstr ""
+
+#: src/android/aidl/example-service/changing-definition.md:43
+msgid "`out` and `inout` args are translated to `&mut Vec<T>`."
+msgstr ""
+
+#: src/android/aidl/example-service/changing-definition.md:44
+msgid "Return values are translated to returning a `Vec<T>`."
+msgstr ""
