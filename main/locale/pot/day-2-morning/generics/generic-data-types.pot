@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-09-29T14:38:34Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -34,49 +34,53 @@ msgid "/// Log a message at the given verbosity level.\n"
 msgstr ""
 
 #: src/generics/generic-data.md:24
-msgid "\"verbosity={verbosity}: {message}\""
+msgid "\"[stderr] verbosity={verbosity}: {message}\""
 msgstr ""
 
-#: src/generics/generic-data.md:27
+#: src/generics/generic-data.md:32
+msgid "\"[stdout] verbosity={verbosity}: {message}\""
+msgstr ""
+
+#: src/generics/generic-data.md:35
 msgid "/// Only log messages up to the given verbosity level.\n"
 msgstr ""
 
-#: src/generics/generic-data.md:44
+#: src/generics/generic-data.md:52 src/generics/generic-data.md:56
 msgid "\"FYI\""
 msgstr ""
 
-#: src/generics/generic-data.md:45
+#: src/generics/generic-data.md:53 src/generics/generic-data.md:57
 msgid "\"Uhoh\""
 msgstr ""
 
-#: src/generics/generic-data.md:52
+#: src/generics/generic-data.md:64
 msgid ""
 "_Q:_ Why is `L` specified twice in `impl<L: Logger> .. VerbosityFilter<L>`? "
 "Isn't that redundant?"
 msgstr ""
 
-#: src/generics/generic-data.md:54
+#: src/generics/generic-data.md:66
 msgid ""
 "This is because it is a generic implementation section for generic type. "
 "They are independently generic."
 msgstr ""
 
-#: src/generics/generic-data.md:56
+#: src/generics/generic-data.md:68
 msgid "It means these methods are defined for any `L`."
 msgstr ""
 
-#: src/generics/generic-data.md:57
+#: src/generics/generic-data.md:69
 msgid "It is possible to write `impl VerbosityFilter<StderrLogger> { .. }`."
 msgstr ""
 
-#: src/generics/generic-data.md:58
+#: src/generics/generic-data.md:70
 msgid ""
 "`VerbosityFilter` is still generic and you can use `VerbosityFilter<f64>`, "
 "but methods in this block will only be available for "
 "`VerbosityFilter<StderrLogger>`."
 msgstr ""
 
-#: src/generics/generic-data.md:61
+#: src/generics/generic-data.md:73
 msgid ""
 "Note that we don't put a trait bound on the `VerbosityFilter` type itself. "
 "You can put bounds there as well, but generally in Rust we only put the "
