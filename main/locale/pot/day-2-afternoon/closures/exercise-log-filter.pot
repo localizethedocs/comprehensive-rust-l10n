@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-10-06T14:46:04Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -35,25 +35,38 @@ msgid "/// Log a message at the given verbosity level.\n"
 msgstr ""
 
 #: src/closures/exercise.md:25
-msgid "\"verbosity={verbosity}: {message}\""
-msgstr ""
-
-#: src/closures/exercise.md:28
-msgid "// TODO: Define and implement `Filter`.\n"
-msgstr ""
-
-#: src/closures/exercise.md:32
-msgid "\"yikes\""
+msgid "\"[stderr] verbosity={verbosity}: {message}\""
 msgstr ""
 
 #: src/closures/exercise.md:33
+msgid "\"[stdout] verbosity={verbosity}: {message}\""
+msgstr ""
+
+#: src/closures/exercise.md:36
+msgid "// TODO: Define and implement `Filter`.\n"
+msgstr ""
+
+#: src/closures/exercise.md:40
+msgid "\"yikes\""
+msgstr ""
+
+#: src/closures/exercise.md:43
+msgid ""
+"// Logger that writes to stderr and filters based on message contents.\n"
+msgstr ""
+
+#: src/closures/exercise.md:45 src/closures/exercise.md:52
 msgid "\"FYI\""
 msgstr ""
 
-#: src/closures/exercise.md:34
+#: src/closures/exercise.md:46 src/closures/exercise.md:53
 msgid "\"yikes, something went wrong\""
 msgstr ""
 
-#: src/closures/exercise.md:35
+#: src/closures/exercise.md:47 src/closures/exercise.md:54
 msgid "\"uhoh\""
+msgstr ""
+
+#: src/closures/exercise.md:49
+msgid "// Logger that writes to stdout and filters based on verbosity.\n"
 msgstr ""

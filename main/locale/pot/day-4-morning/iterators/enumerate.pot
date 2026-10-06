@@ -1,0 +1,93 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-10-06T14:46:04Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/iterators/enumerate.md:1
+msgid "`enumerate`"
+msgstr ""
+
+#: src/iterators/enumerate.md:3
+msgid ""
+"The [`enumerate`](https://doc.rust-lang.org/stable/std/iter/trait.Iterator."
+"html#method.enumerate) helper gives us a way to get the index of each "
+"element for any iterator."
+msgstr ""
+
+#: src/iterators/enumerate.md:7
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/iterators/enumerate.md:8
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/iterators/enumerate.md:11
+msgid "'a'"
+msgstr ""
+
+#: src/iterators/enumerate.md:11
+msgid "'b'"
+msgstr ""
+
+#: src/iterators/enumerate.md:11
+msgid "'c'"
+msgstr ""
+
+#: src/iterators/enumerate.md:11
+msgid "'d'"
+msgstr ""
+
+#: src/iterators/enumerate.md:11
+msgid "'e'"
+msgstr ""
+
+#: src/iterators/enumerate.md:13
+msgid "// By default iterating over an array just gives its elements.\n"
+msgstr ""
+
+#: src/iterators/enumerate.md:15
+msgid "\"The element is {letter:?}, but what's its index?\""
+msgstr ""
+
+#: src/iterators/enumerate.md:18
+msgid "// `enumerate` gives both the element and its index.\n"
+msgstr ""
+
+#: src/iterators/enumerate.md:20
+msgid "\"{letter:?} has index {i}\""
+msgstr ""
+
+#: src/iterators/enumerate.md:27
+msgid ""
+"A nuance of Rust's iterators and `for` loops is that an iterator by default "
+"does not give you the index of each element. This is fine when all you need "
+"are e.g. the values in an array, but it's common to also want the index of "
+"each element as you iterate."
+msgstr ""
+
+#: src/iterators/enumerate.md:32
+msgid ""
+"`enumerate` creates an iterator that produces a tuple where the first "
+"element is the index and the second element is the original iterator's item."
+msgstr ""
+
+#: src/iterators/enumerate.md:35
+msgid ""
+"Point out that we can use a pattern for the loop variable in a `for` loop. "
+"This allows us to destructure the tuple produced by `enumerate`."
+msgstr ""
+
+#: src/iterators/enumerate.md:38
+msgid ""
+"Note that we had to do `.iter()` first; `enumerate` is an iterator method, "
+"not a method on the array type itself."
+msgstr ""

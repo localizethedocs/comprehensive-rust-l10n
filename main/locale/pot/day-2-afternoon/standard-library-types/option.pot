@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-10-06T14:46:04Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -69,6 +69,13 @@ msgid ""
 msgstr ""
 
 #: src/std-types/option.md:39
+msgid ""
+"Many of methods on `Option` such as `insert` and `take` can be viewed as "
+"treating it like a container with room for at most one element. Methods with "
+"similar names and behaviors exist on other container types."
+msgstr ""
+
+#: src/std-types/option.md:43
 msgid ""
 "The \"niche optimization\" means that `Option<T>` typically has the same "
 "size in memory as `T`, if there is some representation that is not a valid "

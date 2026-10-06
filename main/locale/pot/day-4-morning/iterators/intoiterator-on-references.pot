@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-10-06T14:46:04Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/iterators/intoiterator-refs.md:1
+msgid "`IntoIterator` On References"
+msgstr ""
+
+#: src/iterators/intoiterator-refs.md:3
+msgid ""
+"Implementing `IntoIterator` directly on a type means that creating the "
+"iterator takes ownership of the object, so a common pattern is to implement "
+"it on a reference to allow for the creation of borrowing iterators."
+msgstr ""
+
+#: src/iterators/intoiterator-refs.md:8
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/iterators/intoiterator-refs.md:9
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/iterators/intoiterator-refs.md:50
+msgid "// The loop can borrow the grid without taking ownership.\n"
+msgstr ""
+
+#: src/iterators/intoiterator-refs.md:52
+msgid "\"point = {x}, {y}\""
+msgstr ""
+
+#: src/iterators/intoiterator-refs.md:55
+msgid "// The grid remains accessible after the loop.\n"
+msgstr ""
+
+#: src/iterators/intoiterator-refs.md:62
+msgid ""
+"By implementing `IntoIterator` on `&Grid`, we can pass a reference into a "
+"`for` loop and get a borrowing iterator. This allows us to borrow the grid "
+"object in the loop without taking ownership of it."
+msgstr ""
+
+#: src/iterators/intoiterator-refs.md:66
+msgid ""
+"[This playground](https://play.rust-lang.org/?"
+"version=stable&mode=debug&edition=2024&gist=c3c29974bac8cc2065ca1b6608d5c8b9) "
+"shows that we can have both `GridIter` and `GridRefIter` at the same time."
+msgstr ""
+
+#: src/iterators/intoiterator-refs.md:69
+msgid ""
+"This pattern is used heavily in the standard library for its collection "
+"types, allowing for owning and borrowing iterators to be created implicitly "
+"based on whether you pass the object in by value, by reference, or by "
+"mutable reference."
+msgstr ""
+
+#: src/iterators/intoiterator-refs.md:74
+msgid ""
+"Pull up the [`IntoIterator`](https://doc.rust-lang.org/std/iter/trait."
+"IntoIterator.html) docs and show the implementations for `[T; N]`, `&[T; "
+"N]`, and `&mut [T; N]`. Show that they produce different iterators with "
+"different item types:"
+msgstr ""
+
+#: src/iterators/intoiterator-refs.md:78
+msgid "The iterator for `[T; N]` produces `T` by value."
+msgstr ""
+
+#: src/iterators/intoiterator-refs.md:79
+msgid "The iterator for `&[T; N]` produces `&T`."
+msgstr ""
+
+#: src/iterators/intoiterator-refs.md:80
+msgid "The iterator for `&mut [T; N]` produces `&mut T`."
+msgstr ""
