@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-10-06T14:46:04Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,10 +17,10 @@ msgstr ""
 
 #: src/lifetimes/lifetime-elision.md:8
 msgid ""
-"Lifetimes for function arguments and return values must be fully specified, "
-"but Rust allows lifetimes to be elided in most cases with [a few simple "
-"rules](https://doc.rust-lang.org/nomicon/lifetime-elision.html). This is not "
-"inference -- it is just a syntactic shorthand."
+"Lifetimes for function argument and return types must be fully specified, "
+"but Rust allows explicit lifetimes to be elided in most cases with [a few "
+"simple rules](https://doc.rust-lang.org/nomicon/lifetime-elision.html). This "
+"is not inference -- it is just a syntactic shorthand."
 msgstr ""
 
 #: src/lifetimes/lifetime-elision.md:13
@@ -30,13 +30,13 @@ msgstr ""
 #: src/lifetimes/lifetime-elision.md:14
 msgid ""
 "If there is only one argument lifetime, it is given to all un-annotated "
-"return values."
+"borrows in the return type."
 msgstr ""
 
 #: src/lifetimes/lifetime-elision.md:16
 msgid ""
 "If there are multiple argument lifetimes, but the first one is for `self`, "
-"that lifetime is given to all un-annotated return values."
+"that lifetime is given to all un-annotated borrows in the return type."
 msgstr ""
 
 #: src/lifetimes/lifetime-elision.md:20

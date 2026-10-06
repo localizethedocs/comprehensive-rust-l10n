@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-10-06T14:46:04Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -54,10 +54,10 @@ msgstr ""
 msgid "\"Absolute value of -3 according to C: {}\""
 msgstr ""
 
-#: src/unsafe-rust/unsafe-functions/extern-c.md:34
+#: src/unsafe-rust/unsafe-functions/extern-c.md:33
 msgid ""
-"// SAFETY: We pass a pointer to a C string literal which is valid for\n"
-"        // the duration of the program.\n"
+"// SAFETY: We pass a pointer to a C string literal which is valid for the\n"
+"    // duration of the program.\n"
 msgstr ""
 
 #: src/unsafe-rust/unsafe-functions/extern-c.md:36
