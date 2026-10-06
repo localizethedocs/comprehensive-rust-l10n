@@ -1,0 +1,100 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/exercises/bare-metal/compass.md:6
+msgid "Compass"
+msgstr ""
+
+#: src/exercises/bare-metal/compass.md:8
+msgid ""
+"We will read the direction from an I2C compass, and log the readings to a "
+"serial port. If you have time, try displaying it on the LEDs somehow too, or "
+"use the buttons somehow."
+msgstr ""
+
+#: src/exercises/bare-metal/compass.md:12
+msgid "Hints:"
+msgstr ""
+
+#: src/exercises/bare-metal/compass.md:14
+msgid ""
+"Check the documentation for the [`lsm303agr`](https://docs.rs/lsm303agr/"
+"latest/lsm303agr/) and [`microbit-v2`](https://docs.rs/microbit-v2/latest/"
+"microbit/) crates, as well as the [micro:bit hardware](https://tech.microbit."
+"org/hardware/)."
+msgstr ""
+
+#: src/exercises/bare-metal/compass.md:18
+msgid ""
+"The LSM303AGR Inertial Measurement Unit is connected to the internal I2C bus."
+msgstr ""
+
+#: src/exercises/bare-metal/compass.md:19
+msgid ""
+"TWI is another name for I2C, so the I2C master peripheral is called TWIM."
+msgstr ""
+
+#: src/exercises/bare-metal/compass.md:20
+msgid ""
+"The LSM303AGR driver needs something implementing the `embedded_hal::i2c::"
+"I2c` trait. The [`microbit::hal::Twim`](https://docs.rs/microbit-v2/latest/"
+"microbit/hal/struct.Twim.html) struct implements this."
+msgstr ""
+
+#: src/exercises/bare-metal/compass.md:24
+msgid ""
+"You have a [`microbit::Board`](https://docs.rs/microbit-v2/latest/microbit/"
+"struct.Board.html) struct with fields for the various pins and peripherals."
+msgstr ""
+
+#: src/exercises/bare-metal/compass.md:27
+msgid ""
+"You can also look at the [nRF52833 datasheet](https://infocenter.nordicsemi."
+"com/pdf/nRF52833_PS_v1.5.pdf) if you want, but it shouldn't be necessary for "
+"this exercise."
+msgstr ""
+
+#: src/exercises/bare-metal/compass.md:31
+msgid ""
+"Download the [exercise template](../../comprehensive-rust-exercises.zip) and "
+"look in the `compass` directory for the following files."
+msgstr ""
+
+#: src/exercises/bare-metal/compass.md:34
+msgid "_src/main.rs_:"
+msgstr ""
+
+#: src/exercises/bare-metal/compass.md:79
+msgid "_Cargo.toml_ (you shouldn't need to change this):"
+msgstr ""
+
+#: src/exercises/bare-metal/compass.md:101
+msgid "_Embed.toml_ (you shouldn't need to change this):"
+msgstr ""
+
+#: src/exercises/bare-metal/compass.md:117
+msgid "_.cargo/config.toml_ (you shouldn't need to change this):"
+msgstr ""
+
+#: src/exercises/bare-metal/compass.md:130
+msgid "See the serial output on Linux with:"
+msgstr ""
+
+#: src/exercises/bare-metal/compass.md:138
+msgid ""
+"Or on Mac OS something like (the device name may be slightly different):"
+msgstr ""
+
+#: src/exercises/bare-metal/compass.md:146
+msgid "Use Ctrl+A Ctrl+Q to quit picocom."
+msgstr ""

@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/adding-third-party-crates/configuring-gnrt-config-toml.md:6
+msgid "Configuring `gnrt_config.toml`"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/configuring-gnrt-config-toml.md:8
+msgid ""
+"Alongside `Cargo.toml` is [`gnrt_config.toml`](https://source.chromium.org/"
+"chromium/chromium/src/+/main:third_party/rust/chromium_crates_io/gnrt_config."
+"toml). This contains Chromium-specific extensions to crate handling."
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/configuring-gnrt-config-toml.md:11
+msgid ""
+"If you add a new crate, you should specify at least the `group`. This is one "
+"of:"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/configuring-gnrt-config-toml.md:20
+msgid "For instance,"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/configuring-gnrt-config-toml.md:27
+msgid ""
+"Depending on the crate source code layout, you may also need to use this "
+"file to specify where its `LICENSE` file(s) can be found."
+msgstr ""
+
+#: src/chromium/adding-third-party-crates/configuring-gnrt-config-toml.md:30
+msgid ""
+"Later, we'll see some other things you will need to configure in this file "
+"to resolve problems."
+msgstr ""

@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/send-sync/marker-traits.md:6
+msgid "Marker Traits"
+msgstr ""
+
+#: src/concurrency/send-sync/marker-traits.md:8
+msgid ""
+"How does Rust know to forbid shared access across threads? The answer is in "
+"two traits:"
+msgstr ""
+
+#: src/concurrency/send-sync/marker-traits.md:11
+msgid ""
+"[`Send`](https://doc.rust-lang.org/std/marker/trait.Send.html): a type `T` "
+"is `Send` if it is safe to move a `T` across a thread boundary."
+msgstr ""
+
+#: src/concurrency/send-sync/marker-traits.md:13
+msgid ""
+"[`Sync`](https://doc.rust-lang.org/std/marker/trait.Sync.html): a type `T` "
+"is `Sync` if it is safe to move a `&T` across a thread boundary."
+msgstr ""
+
+#: src/concurrency/send-sync/marker-traits.md:16
+msgid ""
+"`Send` and `Sync` are [unsafe traits](../../unsafe-rust/unsafe-traits.md). "
+"The compiler will automatically derive them for your types as long as they "
+"only contain `Send` and `Sync` types. You can also implement them manually "
+"when you know it is valid."
+msgstr ""
+
+#: src/concurrency/send-sync/marker-traits.md:27
+msgid ""
+"One can think of these traits as markers that the type has certain thread-"
+"safety properties."
+msgstr ""
+
+#: src/concurrency/send-sync/marker-traits.md:29
+msgid "They can be used in the generic constraints as normal traits."
+msgstr ""

@@ -1,0 +1,81 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-rust/mutable-static.md:6
+msgid "Mutable Static Variables"
+msgstr ""
+
+#: src/unsafe-rust/mutable-static.md:8
+msgid "It is safe to read an immutable static variable:"
+msgstr ""
+
+#: src/unsafe-rust/mutable-static.md:11 src/unsafe-rust/mutable-static.md:29
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-rust/mutable-static.md:12 src/unsafe-rust/mutable-static.md:30
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-rust/mutable-static.md:14
+msgid "\"Hello, world!\""
+msgstr ""
+
+#: src/unsafe-rust/mutable-static.md:17
+msgid "\"HELLO_WORLD: {HELLO_WORLD}\""
+msgstr ""
+
+#: src/unsafe-rust/mutable-static.md:21
+msgid ""
+"However, mutable static variables are unsafe to read and write because "
+"multiple threads could do so concurrently without synchronization, "
+"constituting a data race."
+msgstr ""
+
+#: src/unsafe-rust/mutable-static.md:25
+msgid ""
+"Using mutable statics soundly requires reasoning about concurrency without "
+"the compiler's help:"
+msgstr ""
+
+#: src/unsafe-rust/mutable-static.md:35 src/unsafe-rust/mutable-static.md:44
+msgid ""
+"// SAFETY: There are no other threads which could be accessing `COUNTER`.\n"
+msgstr ""
+
+#: src/unsafe-rust/mutable-static.md:54
+msgid ""
+"The program here is sound because it is single-threaded. However, the Rust "
+"compiler reasons about functions individually so can't assume that. Try "
+"removing the `unsafe` and see how the compiler explains that it is undefined "
+"behavior to access a mutable static from multiple threads."
+msgstr ""
+
+#: src/unsafe-rust/mutable-static.md:58
+msgid ""
+"The 2024 Rust edition goes further and makes accessing a mutable static by "
+"reference an error by default."
+msgstr ""
+
+#: src/unsafe-rust/mutable-static.md:60
+msgid ""
+"Using a mutable static is rarely a good idea, you should use interior "
+"mutability instead."
+msgstr ""
+
+#: src/unsafe-rust/mutable-static.md:62
+msgid ""
+"There are some cases where it might be necessary in low-level `no_std` code, "
+"such as implementing a heap allocator or working with some C APIs. In this "
+"case you should use pointers rather than references."
+msgstr ""

@@ -1,0 +1,143 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/build-rules/library.md:6
+msgid "Rust Libraries"
+msgstr ""
+
+#: src/android/build-rules/library.md:8
+msgid "You use `rust_library` to create a new Rust library for Android."
+msgstr ""
+
+#: src/android/build-rules/library.md:10
+msgid "Here we declare a dependency on two libraries:"
+msgstr ""
+
+#: src/android/build-rules/library.md:12
+msgid "`libgreeting`, which we define below,"
+msgstr ""
+
+#: src/android/build-rules/library.md:13
+msgid ""
+"`libtextwrap`, which is a crate already vendored in [`external/rust/android-"
+"crates-io/crates/`](https://cs.android.com/android/platform/superproject/"
+"main/+/main:external/rust/android-crates-io/crates/)."
+msgstr ""
+
+#: src/android/build-rules/library.md:18
+msgid "_hello_rust/Android.bp_:"
+msgstr ""
+
+#: src/android/build-rules/library.md:22 src/android/build-rules/library.md:23
+msgid "\"hello_rust_with_dep\""
+msgstr ""
+
+#: src/android/build-rules/library.md:24
+msgid "\"src/main.rs\""
+msgstr "\"src/main.rs\""
+
+#: src/android/build-rules/library.md:26 src/android/build-rules/library.md:33
+msgid "\"libgreetings\""
+msgstr ""
+
+#: src/android/build-rules/library.md:27
+msgid "\"libtextwrap\""
+msgstr ""
+
+#: src/android/build-rules/library.md:29
+msgid "// Need this to avoid dynamic link error.\n"
+msgstr ""
+
+#: src/android/build-rules/library.md:34
+msgid "\"greetings\""
+msgstr ""
+
+#: src/android/build-rules/library.md:35
+msgid "\"src/lib.rs\""
+msgstr ""
+
+#: src/android/build-rules/library.md:39
+msgid "_hello_rust/src/main.rs_:"
+msgstr ""
+
+#: src/android/build-rules/library.md:42 src/android/build-rules/library.md:59
+msgid "// Copyright 2022 Google LLC\n"
+msgstr ""
+
+#: src/android/build-rules/library.md:43 src/android/build-rules/library.md:60
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/build-rules/library.md:44
+msgid "//! Rust demo.\n"
+msgstr ""
+
+#: src/android/build-rules/library.md:49
+msgid "/// Prints a greeting to standard output.\n"
+msgstr ""
+
+#: src/android/build-rules/library.md:52
+msgid "\"{}\""
+msgstr ""
+
+#: src/android/build-rules/library.md:52
+msgid "\"Bob\""
+msgstr ""
+
+#: src/android/build-rules/library.md:56
+msgid "_hello_rust/src/lib.rs_:"
+msgstr ""
+
+#: src/android/build-rules/library.md:61
+msgid "//! Greeting library.\n"
+msgstr ""
+
+#: src/android/build-rules/library.md:63
+msgid "/// Greet `name`.\n"
+msgstr ""
+
+#: src/android/build-rules/library.md:66
+msgid "\"Hello {name}, it is very nice to meet you!\""
+msgstr ""
+
+#: src/android/build-rules/library.md:70
+msgid "You build, push, and run the binary like before:"
+msgstr ""
+
+#: src/android/build-rules/library.md:72
+msgid ""
+"```shell\n"
+"m hello_rust_with_dep\n"
+"adb push \"$ANDROID_PRODUCT_OUT/system/bin/hello_rust_with_dep\" /data/local/"
+"tmp\n"
+"adb shell /data/local/tmp/hello_rust_with_dep\n"
+"```"
+msgstr ""
+
+#: src/android/build-rules/library.md:85
+msgid ""
+"Go through the build steps and demonstrate them running in your emulator."
+msgstr ""
+
+#: src/android/build-rules/library.md:87
+msgid ""
+"A Rust crate named `greetings` must be built by a rule called "
+"`libgreetings`. Note how the Rust code uses the crate name, as is normal in "
+"Rust."
+msgstr ""
+
+#: src/android/build-rules/library.md:90
+msgid ""
+"Again, the build rules enforce that we add documentation comments to all "
+"public items."
+msgstr ""

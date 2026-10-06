@@ -1,0 +1,79 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:6
+msgid "PhantomData 1/4: De-duplicating Same Data & Semantics"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:8
+msgid ""
+"The newtype pattern can sometimes come up against the DRY principle, how do "
+"we solve this?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:13
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:17
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:20
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:23
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:24
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:27
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:28
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:29
+msgid "/* ... */"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:30
+msgid "// And so on ...\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:38
+msgid ""
+"Problem: We want to use the newtype pattern to differentiate permissions, "
+"but we're having to implement the same traits over and over again for the "
+"same data."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:42
+msgid ""
+"Ask: Assume the details of each implementation here are the same between "
+"types, what are ways we can avoid repeating ourselves?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:45
+msgid "Expect:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:46
+msgid "Make this an enum, not distinct data types."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:47
+msgid ""
+"Bundle the user ID with permission tokens like `struct Admin(u64, "
+"UserPermission, ModeratorPermission, AdminPermission);`"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:49
+msgid "Adding a type parameter which encodes permissions."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/phantomdata-01-types.md:50
+msgid "Mentioning `PhantomData` ahead of schedule (it's in the title)."
+msgstr ""

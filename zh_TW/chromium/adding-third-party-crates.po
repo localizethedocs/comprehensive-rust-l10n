@@ -1,0 +1,100 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/adding-third-party-crates.md:6
+msgid "Adding Third Party Crates"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:8
+msgid ""
+"Rust libraries are called \"crates\" and are found at [crates.io](https://"
+"crates.io). It's _very easy_ for Rust crates to depend upon one another. So "
+"they do!"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:11
+msgid "Property"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:11
+msgid "C++ library"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:11
+msgid "Rust crate"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:13
+msgid "Build system"
+msgstr "建置系統"
+
+#: src/chromium/adding-third-party-crates.md:13
+#: src/chromium/adding-third-party-crates.md:15
+msgid "Lots"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:13
+msgid "Consistent: `Cargo.toml`"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:14
+msgid "Typical library size"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:14
+msgid "Large-ish"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:14
+msgid "Small"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:15
+msgid "Transitive dependencies"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:15
+msgid "Few"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:17
+msgid "For a Chromium engineer, this has pros and cons:"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:19
+msgid ""
+"All crates use a common build system so we can automate their inclusion into "
+"Chromium..."
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:21
+msgid ""
+"... but, crates typically have transitive dependencies, so you will likely "
+"have to bring in multiple libraries."
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:24
+msgid "We'll discuss:"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:26
+msgid "How to put a crate in the Chromium source code tree"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:27
+msgid "How to make `gn` build rules for it"
+msgstr ""
+
+#: src/chromium/adding-third-party-crates.md:28
+msgid "How to audit its source code for sufficient safety."
+msgstr ""

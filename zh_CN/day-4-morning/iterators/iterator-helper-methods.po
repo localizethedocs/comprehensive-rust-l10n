@@ -1,0 +1,88 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/iterators/helpers.md:6
+msgid "`Iterator` Helper Methods"
+msgstr ""
+
+#: src/iterators/helpers.md:8
+msgid ""
+"In addition to the `next` method that defines how an iterator behaves, the "
+"`Iterator` trait provides 70+ helper methods that can be used to build "
+"customized iterators."
+msgstr ""
+
+#: src/iterators/helpers.md:13
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/iterators/helpers.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/iterators/helpers.md:17
+msgid "// Create a range from 1 to 10\n"
+msgstr ""
+
+#: src/iterators/helpers.md:18
+msgid "// Keep only even numbers\n"
+msgstr ""
+
+#: src/iterators/helpers.md:19
+msgid "// Square each number\n"
+msgstr ""
+
+#: src/iterators/helpers.md:20
+msgid "// Sum up all the squared numbers\n"
+msgstr ""
+
+#: src/iterators/helpers.md:22
+msgid "\"The sum of squares of even numbers from 1 to 10 is: {}\""
+msgstr ""
+
+#: src/iterators/helpers.md:29
+msgid ""
+"The `Iterator` trait implements many common functional programming "
+"operations over collections (e.g. `map`, `filter`, `reduce`, etc). This is "
+"the trait where you can find all the documentation about them."
+msgstr ""
+
+#: src/iterators/helpers.md:33
+msgid ""
+"Many of these helper methods take the original iterator and produce a new "
+"iterator with different behavior. These are know as \"iterator adapter "
+"methods\"."
+msgstr ""
+
+#: src/iterators/helpers.md:37
+msgid ""
+"Some methods, like `sum` and `count`, consume the iterator and pull all of "
+"the elements out of it."
+msgstr ""
+
+#: src/iterators/helpers.md:40
+msgid ""
+"These methods are designed to be chained together so that it's easy to build "
+"a custom iterator that does exactly what you need."
+msgstr ""
+
+#: src/iterators/helpers.md:43
+msgid "More to Explore"
+msgstr ""
+
+#: src/iterators/helpers.md:45
+msgid ""
+"Rust's iterators are extremely efficient and highly optimizable. Even "
+"complex iterators made by combining many adapter methods will still result "
+"in code as efficient as equivalent imperative implementations."
+msgstr ""

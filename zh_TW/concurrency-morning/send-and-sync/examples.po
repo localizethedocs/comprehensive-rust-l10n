@@ -1,0 +1,118 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/concurrency/send-sync/examples.md:6
+msgid "Examples"
+msgstr "範例"
+
+#: src/concurrency/send-sync/examples.md:8
+msgid "`Send + Sync`"
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:10
+msgid "Most types you come across are `Send + Sync`:"
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:12
+msgid "`i8`, `f32`, `bool`, `char`, `&str`, ..."
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:13
+msgid "`(T1, T2)`, `[T; N]`, `&[T]`, `struct { x: T }`, ..."
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:14
+msgid "`String`, `Option<T>`, `Vec<T>`, `Box<T>`, ..."
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:15
+msgid "`Arc<T>`: Explicitly thread-safe via atomic reference count."
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:16
+msgid "`Mutex<T>`: Explicitly thread-safe via internal locking."
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:17
+msgid "`mpsc::Sender<T>`: As of 1.72.0."
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:18
+msgid "`AtomicBool`, `AtomicU8`, ...: Uses special atomic instructions."
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:20
+msgid ""
+"The generic types are typically `Send + Sync` when the type parameters are "
+"`Send + Sync`."
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:23
+msgid "`Send + !Sync`"
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:25
+msgid ""
+"These types can be moved to other threads, but they're not thread-safe. "
+"Typically because of interior mutability:"
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:28
+msgid "`mpsc::Receiver<T>`"
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:29
+msgid "`Cell<T>`"
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:30
+msgid "`RefCell<T>`"
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:32
+msgid "`!Send + Sync`"
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:34
+msgid ""
+"These types are safe to access (via shared references) from multiple "
+"threads, but they cannot be moved to another thread:"
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:37
+msgid ""
+"`MutexGuard<T>`: Uses OS level primitives which must be deallocated on the "
+"thread which created them. However, an already-locked mutex can have its "
+"guarded variable read by any thread with which the guard is shared (unless "
+"`T` itself is `!Sync`)."
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:42
+msgid "`!Send + !Sync`"
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:44
+msgid "These types are not thread-safe and cannot be moved to other threads:"
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:46
+msgid ""
+"`Rc<T>`: each `Rc<T>` has a reference to an `RcBox<T>`, which contains a non-"
+"atomic reference count."
+msgstr ""
+
+#: src/concurrency/send-sync/examples.md:48
+msgid ""
+"`*const T`, `*mut T`: Rust assumes raw pointers may have special concurrency "
+"considerations."
+msgstr ""

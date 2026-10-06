@@ -1,0 +1,84 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/testing/mocking.md:6
+msgid "Mocking"
+msgstr ""
+
+#: src/android/testing/mocking.md:8
+msgid ""
+"For mocking, [Mockall](https://docs.rs/mockall/) is a widely used library. "
+"You need to refactor your code to use traits, which you can then quickly "
+"mock:"
+msgstr ""
+
+#: src/android/testing/mocking.md:12 src/android/testing/mocking.md:64
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/android/testing/mocking.md:13 src/android/testing/mocking.md:65
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/testing/mocking.md:35
+msgid ""
+"Mockall is the recommended mocking library in Android (AOSP). There are "
+"other [mocking libraries available on crates.io](https://crates.io/keywords/"
+"mock), in particular in the area of mocking HTTP services. The other mocking "
+"libraries work in a similar fashion as Mockall, meaning that they make it "
+"easy to get a mock implementation of a given trait."
+msgstr ""
+
+#: src/android/testing/mocking.md:41
+msgid ""
+"Note that mocking is somewhat _controversial_: mocks allow you to completely "
+"isolate a test from its dependencies. The immediate result is faster and "
+"more stable test execution. On the other hand, the mocks can be configured "
+"wrongly and return output different from what the real dependencies would do."
+msgstr ""
+
+#: src/android/testing/mocking.md:46
+msgid ""
+"If at all possible, it is recommended that you use the real dependencies. As "
+"an example, many databases allow you to configure an in-memory backend. This "
+"means that you get the correct behavior in your tests, plus they are fast "
+"and will automatically clean up after themselves."
+msgstr ""
+
+#: src/android/testing/mocking.md:51
+msgid ""
+"Similarly, many web frameworks allow you to start an in-process server which "
+"binds to a random port on `localhost`. Always prefer this over mocking away "
+"the framework since it helps you test your code in the real environment."
+msgstr ""
+
+#: src/android/testing/mocking.md:55
+msgid ""
+"Mockall is not part of the Rust Playground, so you need to run this example "
+"in a local environment. Use `cargo add mockall` to quickly add Mockall to an "
+"existing Cargo project."
+msgstr ""
+
+#: src/android/testing/mocking.md:59
+msgid ""
+"Mockall has extensive functionality. In particular, you can set up "
+"expectations which depend on the arguments passed. Here we use this to mock "
+"a cat which becomes hungry 3 hours after the last time it was fed:"
+msgstr ""
+
+#: src/android/testing/mocking.md:80
+msgid ""
+"You can use `.times(n)` to limit the number of times a mock method can be "
+"called to `n` --- the mock will automatically panic when dropped if this "
+"isn't satisfied."
+msgstr ""

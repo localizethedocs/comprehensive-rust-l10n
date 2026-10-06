@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/exercises/chromium/solutions.md:6
+msgid "Exercise Solutions"
+msgstr ""
+
+#: src/exercises/chromium/solutions.md:8
+msgid ""
+"Solutions to the Chromium exercises can be found in [this series of CLs]"
+"(https://chromium-review.googlesource.com/c/chromium/src/+/5096560)."
+msgstr ""
+
+#: src/exercises/chromium/solutions.md:10
+msgid ""
+"Or, if you'd prefer \"standalone\" solutions that don't require applying "
+"patchsets or integration with core Chromium code, you can find them in the "
+"[`//chromium/src/codelabs/rust` subdirectory in Chromium](https://source."
+"chromium.org/chromium/chromium/src/+/main:codelabs/rust/)."
+msgstr ""

@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/testing/other.md:6
+msgid "Other Types of Tests"
+msgstr ""
+
+#: src/testing/other.md:8
+msgid "Integration Tests"
+msgstr ""
+
+#: src/testing/other.md:10
+msgid "If you want to test your library as a client, use an integration test."
+msgstr ""
+
+#: src/testing/other.md:12
+msgid "Create a `.rs` file under `tests/`:"
+msgstr ""
+
+#: src/testing/other.md:15 src/testing/other.md:34
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/testing/other.md:16 src/testing/other.md:35
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/testing/other.md:17
+msgid "// tests/my_library.rs\n"
+msgstr ""
+
+#: src/testing/other.md:27
+msgid "These tests only have access to the public API of your crate."
+msgstr ""
+
+#: src/testing/other.md:29
+msgid "Documentation Tests"
+msgstr ""
+
+#: src/testing/other.md:31
+msgid "Rust has built-in support for documentation tests:"
+msgstr ""
+
+#: src/testing/other.md:36
+msgid ""
+"/// Shortens a string to the given length.\n"
+"///\n"
+"/// ```\n"
+"/// # use playground::shorten_string;\n"
+"/// assert_eq!(shorten_string(\"Hello World\", 5), \"Hello\");\n"
+"/// assert_eq!(shorten_string(\"Hello World\", 20), \"Hello World\");\n"
+"/// ```\n"
+msgstr ""
+
+#: src/testing/other.md:49
+msgid "Code blocks in `///` comments are automatically seen as Rust code."
+msgstr ""
+
+#: src/testing/other.md:50
+msgid "The code will be compiled and executed as part of `cargo test`."
+msgstr ""
+
+#: src/testing/other.md:51
+msgid ""
+"Adding `#` in the code will hide it from the docs, but will still compile/"
+"run it."
+msgstr ""
+
+#: src/testing/other.md:53
+msgid ""
+"Test the above code on the [Rust Playground](https://play.rust-lang.org/?"
+"version=stable&mode=debug&edition=2024&gist=3ce2ad13ea1302f6572cb15cd96becf0)."
+msgstr ""

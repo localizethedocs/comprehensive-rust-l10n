@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/microcontrollers/type-state.md:6
+msgid "The type state pattern"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/type-state.md:9
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/type-state.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/type-state.md:19
+msgid "// let gpio0_01_again = gpio0.p0_01; // Error, moved.\n"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/type-state.md:22
+msgid "// ...\n"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/type-state.md:27
+msgid "// pin_input.is_high(); // Error, moved.\n"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/type-state.md:41
+msgid ""
+"Pins don't implement `Copy` or `Clone`, so only one instance of each can "
+"exist. Once a pin is moved out of the port struct, nobody else can take it."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/type-state.md:43
+msgid ""
+"Changing the configuration of a pin consumes the old pin instance, so you "
+"can't use the old instance afterwards."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/type-state.md:45
+msgid ""
+"The type of a value indicates the state it is in: e.g., in this case, the "
+"configuration state of a GPIO pin. This encodes the state machine into the "
+"type system and ensures that you don't try to use a pin in a certain way "
+"without properly configuring it first. Illegal state transitions are caught "
+"at compile time."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/type-state.md:50
+msgid ""
+"You can call `is_high` on an input pin and `set_high` on an output pin, but "
+"not vice-versa."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/type-state.md:52
+msgid "Many HAL crates follow this pattern."
+msgstr ""

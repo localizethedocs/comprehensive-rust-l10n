@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/types-and-values/variables.md:6
+msgid "Variables"
+msgstr ""
+
+#: src/types-and-values/variables.md:8
+msgid ""
+"Rust provides type safety via static typing. Variable bindings are made with "
+"`let`:"
+msgstr ""
+
+#: src/types-and-values/variables.md:12
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/types-and-values/variables.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/types-and-values/variables.md:17
+msgid "\"x: {x}\""
+msgstr ""
+
+#: src/types-and-values/variables.md:18
+msgid ""
+"// x = 20;\n"
+"    // println!(\"x: {x}\");\n"
+msgstr ""
+
+#: src/types-and-values/variables.md:26
+msgid ""
+"Uncomment the `x = 20` to demonstrate that variables are immutable by "
+"default. Add the `mut` keyword to allow changes."
+msgstr ""
+
+#: src/types-and-values/variables.md:29
+msgid ""
+"Warnings are enabled for this slide, such as for unused variables or "
+"unnecessary `mut`. These are omitted in most slides to avoid distracting "
+"warnings. Try removing the mutation but leaving the `mut` keyword in place."
+msgstr ""
+
+#: src/types-and-values/variables.md:33
+msgid ""
+"The `i32` here is the type of the variable. This must be known at compile "
+"time, but type inference (covered later) allows the programmer to omit it in "
+"many cases."
+msgstr ""

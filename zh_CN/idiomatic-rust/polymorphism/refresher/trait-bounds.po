@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/refresher/trait-bounds.md:6
+msgid "Trait Bounds on Generics"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/trait-bounds.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/trait-bounds.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/trait-bounds.md:15
+msgid "\"Item: {}\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/trait-bounds.md:16
+msgid "\"Length: {}\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/trait-bounds.md:21
+msgid "\"Hello, Rust!\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/trait-bounds.md:23
+msgid "// Works with integers\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/trait-bounds.md:24
+msgid "// Works with strings\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/trait-bounds.md:30
+msgid ""
+"Traits are most commonly used as bounds on generic type parameters for a "
+"function or method."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/trait-bounds.md:33
+msgid ""
+"Without a trait bound on a generic type parameter, we don't have access to "
+"any behavior to write functions and methods with."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/trait-bounds.md:36
+msgid ""
+"Trait bounds allow us to specify the minimum viable behavior of a type for "
+"it to work in generic code."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/trait-bounds.md:39
+msgid "ref:"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/trait-bounds.md:41
+msgid "https://doc.rust-lang.org/reference/trait-bounds.html"
+msgstr ""
