@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-10-13T15:49:18Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -48,27 +48,19 @@ msgstr ""
 msgid "Example"
 msgstr ""
 
-#: src/error-handling/try-conversions.md:55
-msgid "\"I/O error: {e}\""
-msgstr ""
-
-#: src/error-handling/try-conversions.md:56
-msgid "\"Found no username in {path}\""
-msgstr ""
-
-#: src/error-handling/try-conversions.md:77
+#: src/error-handling/try-conversions.md:66
 msgid "//std::fs::write(\"config.dat\", \"\").unwrap();\n"
 msgstr ""
 
-#: src/error-handling/try-conversions.md:78
+#: src/error-handling/try-conversions.md:67
 msgid "\"config.dat\""
 msgstr ""
 
-#: src/error-handling/try-conversions.md:79
+#: src/error-handling/try-conversions.md:68
 msgid "\"username or error: {username:?}\""
 msgstr ""
 
-#: src/error-handling/try-conversions.md:86
+#: src/error-handling/try-conversions.md:75
 msgid ""
 "The `?` operator must return a value compatible with the return type of the "
 "function. For `Result`, it means that the error types have to be compatible. "
@@ -77,20 +69,20 @@ msgid ""
 "same type or if `ErrorOuter` implements `From<ErrorInner>`."
 msgstr ""
 
-#: src/error-handling/try-conversions.md:92
+#: src/error-handling/try-conversions.md:81
 msgid ""
 "A common alternative to a `From` implementation is `Result::map_err`, "
 "especially when the conversion only happens in one place."
 msgstr ""
 
-#: src/error-handling/try-conversions.md:95
+#: src/error-handling/try-conversions.md:84
 msgid ""
 "There is no compatibility requirement for `Option`. A function returning "
 "`Option<T>` can use the `?` operator on `Option<U>` for arbitrary `T` and "
 "`U` types."
 msgstr ""
 
-#: src/error-handling/try-conversions.md:99
+#: src/error-handling/try-conversions.md:88
 msgid ""
 "A function that returns `Result` cannot use `?` on `Option` and vice versa. "
 "However, `Option::ok_or` converts `Option` to `Result` whereas `Result::ok` "

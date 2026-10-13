@@ -1,0 +1,100 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-10-13T15:49:18Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/error-handling/compatibility.md:1
+msgid "Error Type Compatibility"
+msgstr ""
+
+#: src/error-handling/compatibility.md:3
+msgid ""
+"When defining a custom error type, there are some common conventions to "
+"follow in order to be compatible with the broader ecosystem:"
+msgstr ""
+
+#: src/error-handling/compatibility.md:6
+msgid ""
+"Implement the standard library's [`Error`](https://doc.rust-lang.org/stable/"
+"std/error/trait.Error.html) trait."
+msgstr ""
+
+#: src/error-handling/compatibility.md:7
+msgid "Derive `Debug` and implement `Display` (required by `Error`)."
+msgstr ""
+
+#: src/error-handling/compatibility.md:8
+msgid ""
+"Implement `From` conversions for underlying error types to support automatic "
+"error type conversion with `?`."
+msgstr ""
+
+#: src/error-handling/compatibility.md:12
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/error-handling/compatibility.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/error-handling/compatibility.md:30
+msgid "\"I/O error: {e}\""
+msgstr ""
+
+#: src/error-handling/compatibility.md:31
+msgid "\"Username file was empty\""
+msgstr ""
+
+#: src/error-handling/compatibility.md:45
+msgid ""
+"Any type can be used as the error type for `Result`: There are no trait "
+"requirements, structs and enums are both valid, and we can even use empty/"
+"zero-sized types like `()` when the error doesn't need to cary any data."
+msgstr ""
+
+#: src/error-handling/compatibility.md:49
+msgid ""
+"While there aren't any strict requirements for error types, there are a "
+"couple of conventions to follow for ecosystem compatibility."
+msgstr ""
+
+#: src/error-handling/compatibility.md:52
+msgid ""
+"We've already seen how the `From` trait can be used to support automatic "
+"error type conversion with the `?` operator."
+msgstr ""
+
+#: src/error-handling/compatibility.md:55
+msgid ""
+"The standard library provides the `Error` marker trait for indicating that a "
+"type represents an error."
+msgstr ""
+
+#: src/error-handling/compatibility.md:58
+msgid ""
+"`Error` depends on `Debug` (which can be derived) and `Display` (which must "
+"be implemented manually). These ensure that an error can always be turned "
+"into a string for the purpose of logging or displaying the error to a user."
+msgstr ""
+
+#: src/error-handling/compatibility.md:62
+msgid ""
+"The `Error` trait doesn't provide any functionality of its own, but in a "
+"couple of slides we will look at how `Error` can be used to create dynamic "
+"error types."
+msgstr ""
+
+#: src/error-handling/compatibility.md:66
+msgid ""
+"These trait implementations represent a bit of boilerplate that needs to be "
+"written for each custom error type. On the next slide we'll look at a crate "
+"in the ecosystem that can be used to cut down on this boilerplate."
+msgstr ""
