@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md:6
+msgid "Using an unsafe block"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md:9
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md:31
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md:49
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md:58
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md:10
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md:32
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md:50
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md:59
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md:23
+msgid ""
+"Walk through the code. Confirm that the audience is familiar with the "
+"dereference operator."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md:26
+msgid "Attempt to compile the code, trigger the compiler error."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md:28
+msgid "Add the unsafe block:"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md:43
+msgid ""
+"Prompt audience for a code review. Guide learners towards adding a safety "
+"comment."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md:46
+msgid "Add the safety comment:"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md:51
+msgid "// SAFETY: `i` must be within 0..numbers.len()\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/warm-up/unsafe-block.md:55
+msgid "_Suggested Solution_"
+msgstr ""

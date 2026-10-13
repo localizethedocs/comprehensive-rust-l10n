@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/lifetimes/borrow-one.md:6
+msgid "Borrow One"
+msgstr ""
+
+#: src/lifetimes/borrow-one.md:8
+msgid ""
+"In this example `find_nearest` takes in multiple borrows but returns only "
+"one of them. The lifetime annotations explicitly tie the returned borrow to "
+"the corresponding argument borrow."
+msgstr ""
+
+#: src/lifetimes/borrow-one.md:13
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/lifetimes/borrow-one.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/lifetimes/borrow-one.md:18
+msgid ""
+"/// Searches `points` for the point closest to `query`.\n"
+"/// Assumes there's at least one point in `points`.\n"
+msgstr ""
+
+#: src/lifetimes/borrow-one.md:39
+msgid "// query // What happens if we do this instead?\n"
+msgstr ""
+
+#: src/lifetimes/borrow-one.md:47
+msgid "// `query` isn't borrowed at this point.\n"
+msgstr ""
+
+#: src/lifetimes/borrow-one.md:57
+msgid ""
+"It may be helpful to collapse the definition of `find_nearest` to put more "
+"focus on the signature of the function. The actual logic in the function is "
+"somewhat complex and isn't important for the purpose of borrow analysis."
+msgstr ""
+
+#: src/lifetimes/borrow-one.md:61
+msgid ""
+"When we call `find_nearest` the returned reference doesn't borrow `query`, "
+"and so we are free to drop it while `nearest` is still active."
+msgstr ""
+
+#: src/lifetimes/borrow-one.md:64
+msgid ""
+"But what happens if we return the wrong borrow? Change the last line of "
+"`find_nearest` to return `query` instead. Show the compiler error to the "
+"students."
+msgstr ""
+
+#: src/lifetimes/borrow-one.md:68
+msgid ""
+"The first thing we have to do is add a lifetime annotation to `query`. Show "
+"students that we can add a second lifetime `'b` to `find_nearest`."
+msgstr ""
+
+#: src/lifetimes/borrow-one.md:71
+msgid ""
+"Show the new error to the students. The borrow checker verifies that the "
+"logic in the function body actually returns a reference with the correct "
+"lifetime, enforcing that the function adheres to the contract set by the "
+"function's signature."
+msgstr ""
+
+#: src/lifetimes/borrow-one.md:76
+msgid "More to Explore"
+msgstr ""
+
+#: src/lifetimes/borrow-one.md:78
+msgid ""
+"The \"help\" message in the error notes that we can add a lifetime bound "
+"`'b: 'a` to say that `'b` will live at least as long as `'a`, which would "
+"then allow us to return `query`. This is an example of lifetime subtyping, "
+"which allows us to return a longer lifetime where a shorter one is expected."
+msgstr ""
+
+#: src/lifetimes/borrow-one.md:83
+msgid ""
+"We can do something similar by returning a `'static` lifetime, e.g., a "
+"reference to a `static` variable. The `'static` lifetime is guaranteed to be "
+"longer than any other lifetime, so it's always safe to return in place of a "
+"shorter lifetime."
+msgstr ""

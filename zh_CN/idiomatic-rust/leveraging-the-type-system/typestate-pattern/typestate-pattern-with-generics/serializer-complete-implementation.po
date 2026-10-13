@@ -1,0 +1,127 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md:6
+msgid "Serializer: complete implementation"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md:8
+msgid "Looking back at our original desired flow:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md:24
+msgid "We can now see this reflected directly in the types of our serializer:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md:26
+msgid ""
+"```bob\n"
+"                                                     +------+\n"
+"                                             finish  |      |\n"
+"                          serialize          struct  V      |\n"
+"                          struct\n"
+"+--------------------+ --------------> +-------------------------+ "
+"<---------------+\n"
+"| \"Serializer<Root>\" |                 | \"Serializer<Struct<S>>\" "
+"|                 |\n"
+"+--------------------+ <-------------- +-------------------------+ "
+"<-----------+   |\n"
+"                         finish "
+"struct                                         |   |\n"
+"         |                                  |  serialize   "
+"|                   |   |\n"
+"         |                       +----------+  property    V        "
+"serialize  |   |\n"
+"         |                       |                                  string "
+"or  |   |\n"
+"finish   |                       |   +---------------------------+  "
+"struct     |   |\n"
+"         V                       |   | \"Serializer<Property<S>>\" | "
+"------------+   |\n"
+"                         finish  |   +---------------------------"
+"+                 |\n"
+"     +--------+          struct  "
+"|                                                 |\n"
+"     | String |                  |             serialize   "
+"|                       |\n"
+"     +--------+                  |             list        "
+"V                       |\n"
+"                                 |                                    "
+"finish       |\n"
+"                                 |       +-----------------------+    "
+"list         |\n"
+"                                 +-----> | \"Serializer<List<S>>\" | "
+"----------------+\n"
+"                                         +-----------------------+\n"
+"                                              serialize\n"
+"                                            | list or string  ^\n"
+"                                            | or finish list  |\n"
+"                                            +-----------------+\n"
+"```"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md:54
+msgid ""
+"The code for the full implementation of the `Serializer` and all its states "
+"can be found in [this Rust playground](https://play.rust-lang.org/?"
+"version=stable&mode=debug&edition=2024&gist=c9cbb831cd05fe9db4ce42713c83ca16)."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md:60
+msgid "This pattern isn't a silver bullet. It still allows issues like:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md:61
+msgid ""
+"Empty or invalid property names (which can be fixed using [the newtype "
+"pattern](../../newtype-pattern.md))"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md:63
+msgid ""
+"Duplicate property names (which could be tracked in `Struct<S>` and handled "
+"via `Result`)"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md:66
+msgid ""
+"If validation failures occur, we can also change method signatures to return "
+"a `Result`, allowing recovery:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md:70
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md:71
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md:83
+msgid "/* ... */"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md:88
+msgid ""
+"While this API is powerful, it’s not always ergonomic. Production "
+"serializers typically favor simpler APIs and reserve the typestate pattern "
+"for enforcing critical invariants."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics/complete.md:92
+msgid ""
+"One excellent real-world example is [`rustls::ClientConfig`](https://docs.rs/"
+"rustls/latest/rustls/client/struct.ClientConfig.html#method.builder), which "
+"uses typestate with generics to guide the user through safe and correct "
+"configuration steps."
+msgstr ""

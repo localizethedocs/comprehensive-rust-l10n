@@ -1,0 +1,81 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md:6
+msgid "How to Initialize Memory"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md:8
+msgid "Steps:"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md:10
+msgid "Create `MaybeUninit<T>`"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md:11
+msgid "Write a value to it"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md:12
+msgid "Notify Rust that the memory is initialized"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md:15
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md:16
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md:21
+msgid "// Step 1: Create MaybeUninit\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md:24
+msgid "// Step 2: Write a valid value to the memory\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md:27
+msgid "// Step 3: Inform the type system that the memory location is valid\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md:30
+msgid "\"{init}\""
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md:37
+msgid ""
+"To work with uninitialized memory, follow this general workflow: create, "
+"write, confirm."
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md:40
+msgid ""
+"Create `MaybeUninit<T>`. The `::uninit()` constructor is the most general-"
+"purpose one, but there are others which perform a write as well."
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md:43
+msgid ""
+"Write a value of T. Notice that this is available from safe Rust. Staying in "
+"safe Rust is useful because you must ensure that the value you write is "
+"valid."
+msgstr ""
+
+#: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md:47
+msgid ""
+"Confirm to the type system that the memory is now initialized with the `."
+"assume_init()` method."
+msgstr ""

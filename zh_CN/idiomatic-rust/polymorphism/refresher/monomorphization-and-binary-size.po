@@ -1,0 +1,69 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/refresher/monomorphization.md:6
+msgid "Monomorphization and Binary Size"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/monomorphization.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/monomorphization.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/monomorphization.md:14
+msgid "\"{:?}\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/monomorphization.md:22
+msgid "// instance one, &Vec<u32> -> ()\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/monomorphization.md:24
+msgid "// instance two, &Vec<f32> -> ()\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/monomorphization.md:31
+msgid ""
+"Each instance of a function or type with generics gets transformed into a "
+"unique, concrete version of that function at compile time. Generics do not "
+"exist at runtime, only specific types."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/monomorphization.md:35
+msgid ""
+"This comes with a strong baseline performance and capacity for optimization, "
+"but at a cost of binary size and compile time."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/monomorphization.md:38
+msgid ""
+"There are plenty of ways to trim binary size and compilation times, but "
+"we're not covering them here."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/monomorphization.md:41
+msgid ""
+"Pay for what you use: Binary size increase of monomorphization is only "
+"incurred for instances of a type or functions on a type used in the final "
+"program or dynamic library."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/monomorphization.md:45
+msgid ""
+"When to care: Monomorphization impacts compile times and binary size. In "
+"circumstances like WebAssembly in-browser or embedded systems development, "
+"you may want to be mindful about designing with generics in mind."
+msgstr ""

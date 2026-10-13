@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/microcontrollers/probe-rs.md:6
+msgid "`probe-rs` and `cargo-embed`"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/probe-rs.md:8
+msgid ""
+"[probe-rs](https://probe.rs/) is a handy toolset for embedded debugging, "
+"like OpenOCD but better integrated."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/probe-rs.md:11
+msgid ""
+"SWD (Serial Wire Debug) and JTAG via CMSIS-DAP, ST-Link and J-Link probes"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/probe-rs.md:12
+msgid "GDB stub and Microsoft DAP (Debug Adapter Protocol) server"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/probe-rs.md:13
+msgid "Cargo integration"
+msgstr ""
+
+#: src/bare-metal/microcontrollers/probe-rs.md:15
+msgid ""
+"`cargo-embed` is a cargo subcommand to build and flash binaries, log RTT "
+"(Real Time Transfers) output and connect GDB. It's configured by an `Embed."
+"toml` file in your project directory."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/probe-rs.md:21
+msgid ""
+"[CMSIS-DAP](https://arm-software.github.io/CMSIS_5/DAP/html/index.html) is "
+"an Arm standard protocol over USB for an in-circuit debugger to access the "
+"CoreSight Debug Access Port of various Arm Cortex processors. It's what the "
+"on-board debugger on the BBC micro:bit uses."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/probe-rs.md:25
+msgid ""
+"ST-Link is a range of in-circuit debuggers from ST Microelectronics, J-Link "
+"is a range from SEGGER."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/probe-rs.md:27
+msgid ""
+"The Debug Access Port is usually either a 5-pin JTAG interface or 2-pin "
+"Serial Wire Debug."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/probe-rs.md:29
+msgid ""
+"probe-rs is a library that you can integrate into your own tools if you want "
+"to."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/probe-rs.md:31
+msgid ""
+"The [Microsoft Debug Adapter Protocol](https://microsoft.github.io/debug-"
+"adapter-protocol/) lets VSCode and other IDEs debug code running on any "
+"supported microcontroller."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/probe-rs.md:35
+msgid "cargo-embed is a binary built using the probe-rs library."
+msgstr ""
+
+#: src/bare-metal/microcontrollers/probe-rs.md:36
+msgid ""
+"RTT (Real Time Transfers) is a mechanism to transfer data between the debug "
+"host and the target through a number of ring buffers."
+msgstr ""

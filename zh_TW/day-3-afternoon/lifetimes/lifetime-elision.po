@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/lifetimes/lifetime-elision.md:6
+msgid "Lifetime Elision"
+msgstr ""
+
+#: src/lifetimes/lifetime-elision.md:8
+msgid ""
+"Lifetimes for function arguments and return values must be fully specified, "
+"but Rust allows lifetimes to be elided in most cases with [a few simple "
+"rules](https://doc.rust-lang.org/nomicon/lifetime-elision.html). This is not "
+"inference -- it is just a syntactic shorthand."
+msgstr ""
+
+#: src/lifetimes/lifetime-elision.md:13
+msgid "Each argument which does not have a lifetime annotation is given one."
+msgstr ""
+
+#: src/lifetimes/lifetime-elision.md:14
+msgid ""
+"If there is only one argument lifetime, it is given to all un-annotated "
+"return values."
+msgstr ""
+
+#: src/lifetimes/lifetime-elision.md:16
+msgid ""
+"If there are multiple argument lifetimes, but the first one is for `self`, "
+"that lifetime is given to all un-annotated return values."
+msgstr ""
+
+#: src/lifetimes/lifetime-elision.md:20
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/lifetimes/lifetime-elision.md:21
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/lifetimes/lifetime-elision.md:42
+msgid ""
+"Walk through applying the lifetime elision rules to each of the example "
+"functions. `only_args` is completed by the first rule, `identity` is "
+"completed by the second, and `Foo::get` is completed by the third."
+msgstr ""
+
+#: src/lifetimes/lifetime-elision.md:46
+msgid ""
+"If all lifetimes have not been filled in by applying the three elision rules "
+"then you will get a compiler error telling you to add annotations manually."
+msgstr ""

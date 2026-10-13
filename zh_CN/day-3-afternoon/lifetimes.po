@@ -1,0 +1,73 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/lifetimes.md:6
+msgid "Lifetimes"
+msgstr ""
+
+#: src/lifetimes.md:8
+msgid "This segment should take about 1 hour and 5 minutes. It contains:"
+msgstr ""
+
+#: src/lifetimes.md:10
+msgid "Slide"
+msgstr ""
+
+#: src/lifetimes.md:10
+msgid "Duration"
+msgstr ""
+
+#: src/lifetimes.md:12
+msgid "Borrowing and Functions"
+msgstr ""
+
+#: src/lifetimes.md:12
+msgid "3 minutes"
+msgstr ""
+
+#: src/lifetimes.md:13
+msgid "Returning Borrows"
+msgstr ""
+
+#: src/lifetimes.md:13 src/lifetimes.md:14 src/lifetimes.md:15
+#: src/lifetimes.md:16 src/lifetimes.md:17 src/lifetimes.md:18
+msgid "5 minutes"
+msgstr ""
+
+#: src/lifetimes.md:14
+msgid "Multiple Borrows"
+msgstr ""
+
+#: src/lifetimes.md:15
+msgid "Borrow Both"
+msgstr ""
+
+#: src/lifetimes.md:16
+msgid "Borrow One"
+msgstr ""
+
+#: src/lifetimes.md:17
+msgid "Lifetime Elision"
+msgstr ""
+
+#: src/lifetimes.md:18
+msgid "Lifetimes in Data Structures"
+msgstr ""
+
+#: src/lifetimes.md:19
+msgid "Exercise: Protobuf Parsing"
+msgstr ""
+
+#: src/lifetimes.md:19
+msgid "30 minutes"
+msgstr ""
