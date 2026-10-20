@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-10-20T13:17:50Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -34,39 +34,45 @@ msgstr ""
 msgid "\"I/O error: {0}\""
 msgstr ""
 
-#: src/error-handling/thiserror.md:24
+#: src/error-handling/thiserror.md:25
 msgid "\"Found no username in {0}\""
 msgstr ""
 
-#: src/error-handling/thiserror.md:38
+#: src/error-handling/thiserror.md:39
 msgid "//fs::write(\"config.dat\", \"\").unwrap();\n"
 msgstr ""
 
-#: src/error-handling/thiserror.md:39
+#: src/error-handling/thiserror.md:40
 msgid "\"config.dat\""
 msgstr ""
 
-#: src/error-handling/thiserror.md:40
+#: src/error-handling/thiserror.md:41
 msgid "\"Username: {username}\""
 msgstr ""
 
-#: src/error-handling/thiserror.md:41
+#: src/error-handling/thiserror.md:42
 msgid "\"Error: {err}\""
 msgstr ""
 
-#: src/error-handling/thiserror.md:49
+#: src/error-handling/thiserror.md:50
 msgid ""
 "The `Error` derive macro is provided by `thiserror`, and has lots of useful "
 "attributes to help define error types in a compact way."
 msgstr ""
 
-#: src/error-handling/thiserror.md:51
+#: src/error-handling/thiserror.md:52
 msgid "The message from `#[error]` is used to derive the `Display` trait."
 msgstr ""
 
-#: src/error-handling/thiserror.md:52
+#: src/error-handling/thiserror.md:53
 msgid ""
 "Note that the (`thiserror::`)`Error` derive macro, while it has the effect "
 "of implementing the (`std::error::`)`Error` trait, is not the same this; "
 "traits and macros do not share a namespace."
+msgstr ""
+
+#: src/error-handling/thiserror.md:56
+msgid ""
+"`thiserror` also supports deriving `Error` on structs for error types that "
+"only need to represent a single error case."
 msgstr ""
