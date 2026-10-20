@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-07-20 12:06:06 +0200",
-      "hash" : "cbb740718a72b2181e5fe6885110cbbffa53b616",
-      "title" : "build(deps-dev): bump morgan from 1.10.1 to 1.11.0 in /tests in the npm_and_yarn group across 1 directory (#3240)"
+      "date" : "2026-10-06 23:32:21 +0000",
+      "hash" : "1b82ec405d6346932e10363248b23cd6e38df050",
+      "title" : "Add slide on Error trait and reorder error handling slides (#3283)"
     }
   },
   "type" : "branch",
