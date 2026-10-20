@@ -1,0 +1,114 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:6
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:56
+msgid "Who are you writing for?"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:8
+msgid "Colleagues, collaborators, largely-silent API users, or just yourself?"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:11
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:13
+msgid ""
+"// expert writes for experts\n"
+"/// Canonicalizes the MIR for the borrow checker.  \n"
+"///  \n"
+"/// This pass ensures that all borrows conform to the NLL-Polonius "
+"constraints  \n"
+"/// before we proceed to MIR-to-LLVM-IR translation.  \n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:20
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:33
+msgid "// ...\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:22
+msgid ""
+"// expert writes for newcomers\n"
+"/// Prepares the Mid-level IR (MIR) for borrow checking.  \n"
+"///  \n"
+"/// The borrow checker operates on a simplified, \"canonical\" form of the "
+"MIR.  \n"
+"/// This function performs that transformation. It is a prerequisite for "
+"the  \n"
+"/// final stages of code generation.  \n"
+"///  \n"
+"/// For more about Rust's intermediate representations, see the  \n"
+"/// [rustc-dev-guide](https://rustc-dev-guide.rust-lang.org/mir/index."
+"html).  \n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:39
+msgid ""
+"Background: The [curse of knowledge](https://en.wikipedia.org/wiki/"
+"Curse_of_knowledge) is a cognitive bias where experts assume that others "
+"have the same level of expertise and perspective."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:44
+msgid ""
+"Motivation: Your reader does not have the same level of expertise and the "
+"same perspective as you. Don't write for people like yourself, write for "
+"others."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:47
+msgid ""
+"Unintentionally writing for yourself can lead to people not understanding a "
+"point you're trying to make or the concept you're trying to articulate."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:50
+msgid ""
+"Imagine a version of you, or others you've known, struggling to find "
+"practical information while going through documentation."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:53
+msgid ""
+"Keep this idea of a person in mind when thinking about what areas of a "
+"codebase need attention for doc comments."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:58
+msgid ""
+"Also imagine a version of you, or others you've known, who is struggling to "
+"find the important details in winding, extensive doc comments. Don't give "
+"too much information."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:62
+msgid ""
+"Always ask: Is this documentation making it difficult for the API user? Are "
+"they able to quickly grasp what they need or find out where they could need "
+"it?"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:66
+msgid ""
+"Always consider: Experts also read API level documentation. Doc comments "
+"might not be the right place to educate your audience about the basics of "
+"your domain. In that case, signpost and name-drop. Divert people to long-"
+"form documentation."
+msgstr ""

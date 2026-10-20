@@ -1,0 +1,105 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/error-handling/anyhow.md:6
+msgid "`anyhow`"
+msgstr ""
+
+#: src/error-handling/anyhow.md:8
+msgid ""
+"The [`anyhow`](https://docs.rs/anyhow/) crate provides a rich error type "
+"with support for carrying additional contextual information, which can be "
+"used to provide a semantic trace of what the program was doing leading up to "
+"the error."
+msgstr ""
+
+#: src/error-handling/anyhow.md:12
+msgid ""
+"This can be combined with the convenience macros from [`thiserror`](https://"
+"docs.rs/thiserror/) to avoid writing out trait impls explicitly for custom "
+"error types."
+msgstr ""
+
+#: src/error-handling/anyhow.md:19
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/error-handling/anyhow.md:20
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/error-handling/anyhow.md:28
+msgid "\"Found no username in {0}\""
+msgstr ""
+
+#: src/error-handling/anyhow.md:34
+msgid "\"Failed to open {path}\""
+msgstr ""
+
+#: src/error-handling/anyhow.md:36
+msgid "\"Failed to read\""
+msgstr ""
+
+#: src/error-handling/anyhow.md:44
+msgid "//fs::write(\"config.dat\", \"\").unwrap();\n"
+msgstr ""
+
+#: src/error-handling/anyhow.md:45
+msgid "\"config.dat\""
+msgstr ""
+
+#: src/error-handling/anyhow.md:46
+msgid "\"Username: {username}\""
+msgstr ""
+
+#: src/error-handling/anyhow.md:47
+msgid "\"Error: {err:?}\""
+msgstr ""
+
+#: src/error-handling/anyhow.md:55
+msgid ""
+"`anyhow::Error` is essentially a wrapper around `Box<dyn Error>`. As such "
+"it's again generally not a good choice for the public API of a library, but "
+"is widely used in applications."
+msgstr ""
+
+#: src/error-handling/anyhow.md:58
+msgid "`anyhow::Result<V>` is a type alias for `Result<V, anyhow::Error>`."
+msgstr ""
+
+#: src/error-handling/anyhow.md:59
+msgid ""
+"Functionality provided by `anyhow::Error` may be familiar to Go developers, "
+"as it provides similar behavior to the Go `error` type and `Result<T, "
+"anyhow::Error>` is much like a Go `(T, error)` (with the convention that "
+"only one element of the pair is meaningful)."
+msgstr ""
+
+#: src/error-handling/anyhow.md:63
+msgid ""
+"`anyhow::Context` is a trait implemented for the standard `Result` and "
+"`Option` types. `use anyhow::Context` is necessary to enable `.context()` "
+"and `.with_context()` on those types."
+msgstr ""
+
+#: src/error-handling/anyhow.md:67
+msgid "More to Explore"
+msgstr ""
+
+#: src/error-handling/anyhow.md:69
+msgid ""
+"`anyhow::Error` has support for downcasting, much like `std::any::Any`; the "
+"specific error type stored inside can be extracted for examination if "
+"desired with [`Error::downcast`](https://docs.rs/anyhow/latest/anyhow/struct."
+"Error.html#method.downcast)."
+msgstr ""

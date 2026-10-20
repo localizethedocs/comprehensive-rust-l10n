@@ -1,0 +1,146 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:6
+msgid "RAII: `Drop` trait"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:8
+msgid ""
+"RAII (**R**esource **A**cquisition **I**s **I**nitialization) ties the "
+"lifetime of a resource to the lifetime of a value."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:11
+msgid ""
+"[Rust uses RAII to manage memory](https://doc.rust-lang.org/rust-by-example/"
+"scope/raii.html), and the `Drop` trait allows you to extend this to other "
+"resources, such as file descriptors or locks."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:16
+#: src/idiomatic/leveraging-the-type-system/raii.md:58
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:17
+#: src/idiomatic/leveraging-the-type-system/raii.md:59
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:23
+#: src/idiomatic/leveraging-the-type-system/raii.md:28
+#: src/idiomatic/leveraging-the-type-system/raii.md:33
+msgid "// [...]\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:29
+msgid "b\"example\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:39
+msgid "\"example.txt\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:40
+msgid "\"content: {:?}\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:48
+msgid ""
+"Easy to miss: `file.close()` is never called. Ask the class if they noticed."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:50
+msgid ""
+"To release the file descriptor correctly, `file.close()` must be called "
+"after the last use — and also in early-return paths in case of errors."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:53
+msgid ""
+"Instead of relying on the user to call `close()`, we can implement the "
+"`Drop` trait to release the resource automatically. This ties cleanup to the "
+"lifetime of the `File` value."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:63
+msgid "// libc::close(...);\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:64
+msgid "\"file descriptor was closed\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:69
+msgid ""
+"Note that `Drop::drop()` cannot return a `Result`. Any failures must be "
+"handled internally or ignored. In the standard library, errors during FD "
+"closure inside `Drop` are silently discarded. See the implementation: "
+"<https://doc.rust-lang.org/src/std/os/fd/owned.rs.html#169-196>"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:74
+msgid "When is `Drop::drop` called?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:76
+msgid ""
+"Normally, when the `file` variable in `main()` goes out of scope (either on "
+"return or due to a panic), `drop()` is called automatically."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:79
+msgid ""
+"If the file is moved into another function (as is this case with `File::"
+"close()`), the value is dropped when that function returns — not in `main`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:83
+msgid ""
+"In contrast, C++ runs destructors in the original scope even for moved-from "
+"values."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:86
+msgid ""
+"Demo: insert `panic!(\"oops\")` at the start of `read_to_end()` and run it. "
+"`drop()` still runs during unwinding."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:89
+msgid "More to Explore"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:91
+msgid "The `Drop` trait has another important limitation: it is not `async`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:93
+msgid ""
+"This means you cannot `await` inside a destructor, which is often needed "
+"when cleaning up asynchronous resources like sockets, database connections, "
+"or tasks that must signal completion to another system."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:97
+msgid ""
+"Learn more: <https://rust-lang.github.io/async-fundamentals-initiative/"
+"roadmap/async_drop.html>"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii.md:99
+msgid ""
+"There is an experimental `AsyncDrop` trait available on nightly: <https://"
+"doc.rust-lang.org/nightly/std/future/trait.AsyncDrop.html>"
+msgstr ""

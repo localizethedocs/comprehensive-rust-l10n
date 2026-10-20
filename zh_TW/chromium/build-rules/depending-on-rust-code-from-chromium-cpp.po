@@ -1,0 +1,37 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/build-rules/depending.md:6
+msgid "Depending on Rust Code from Chromium C++"
+msgstr ""
+
+#: src/chromium/build-rules/depending.md:8
+msgid "Simply add the above target to the `deps` of some Chromium C++ target."
+msgstr ""
+
+#: src/chromium/build-rules/depending.md:10
+msgid ""
+"```gn\n"
+"import(\"//build/rust/rust_static_library.gni\")\n"
+"\n"
+"rust_static_library(\"my_rust_lib\") {\n"
+"  crate_root = \"lib.rs\"\n"
+"  sources = [ \"lib.rs\" ]\n"
+"}\n"
+"\n"
+"# or source_set, static_library etc.\n"
+"component(\"preexisting_cpp\") {\n"
+"  deps = [ \":my_rust_lib\" ]\n"
+"}\n"
+"```"
+msgstr ""

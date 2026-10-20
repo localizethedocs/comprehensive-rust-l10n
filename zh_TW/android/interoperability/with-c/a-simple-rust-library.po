@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/interoperability/with-c/rust-library.md:6
+msgid "A Simple Rust Library"
+msgstr ""
+
+#: src/android/interoperability/with-c/rust-library.md:8
+msgid ""
+"Exporting Rust functions and types to C is easy. Here's a simple Rust "
+"library:"
+msgstr ""
+
+#: src/android/interoperability/with-c/rust-library.md:10
+msgid "_interoperability/rust/libanalyze/analyze.rs_"
+msgstr ""
+
+#: src/android/interoperability/with-c/rust-library.md:13
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/android/interoperability/with-c/rust-library.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/interoperability/with-c/rust-library.md:15
+msgid "//! Rust FFI demo.\n"
+msgstr ""
+
+#: src/android/interoperability/with-c/rust-library.md:20
+msgid ""
+"/// Analyze the numbers.\n"
+"// SAFETY: There is no other global function of this name.\n"
+msgstr ""
+
+#: src/android/interoperability/with-c/rust-library.md:24
+msgid "\"C\""
+msgstr ""
+
+#: src/android/interoperability/with-c/rust-library.md:26
+msgid "\"x ({x}) is smallest!\""
+msgstr ""
+
+#: src/android/interoperability/with-c/rust-library.md:28
+msgid "\"y ({y}) is probably larger than x ({x})\""
+msgstr ""
+
+#: src/android/interoperability/with-c/rust-library.md:33
+msgid "_interoperability/rust/libanalyze/Android.bp_"
+msgstr ""
+
+#: src/android/interoperability/with-c/rust-library.md:37
+msgid "\"libanalyze_ffi\""
+msgstr "\"libanalyze_ffi\""
+
+#: src/android/interoperability/with-c/rust-library.md:38
+msgid "\"analyze_ffi\""
+msgstr ""
+
+#: src/android/interoperability/with-c/rust-library.md:39
+msgid "\"analyze.rs\""
+msgstr ""
+
+#: src/android/interoperability/with-c/rust-library.md:40
+msgid "\".\""
+msgstr "\".\""
+
+#: src/android/interoperability/with-c/rust-library.md:46
+msgid ""
+"`#[unsafe(no_mangle)]` disables Rust's usual name mangling, so the exported "
+"symbol will just be the name of the function. You can also use "
+"`#[unsafe(export_name = \"some_name\")]` to specify whatever name you want."
+msgstr ""

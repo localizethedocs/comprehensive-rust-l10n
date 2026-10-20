@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:6
+msgid "Documented safety preconditions"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:9
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:11
+msgid ""
+"/// ...\n"
+"///\n"
+"/// # Safety\n"
+"///\n"
+"/// This function can easily trigger undefined behavior. Ensure that:\n"
+"///\n"
+"///  - `source` pointer is non-null and non-dangling\n"
+"///  - `source` data ends with a null byte within its memory allocation\n"
+"///  - `source` data is not freed (its lifetime invariants are preserved)\n"
+"///  - `source` data contains fewer than `isize::MAX` bytes\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:27
+msgid "// SAFETY: Caller has provided a non-null pointer\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:30
+msgid "// SAFETY: Caller has provided a data with length < isize:MAX\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:34
+msgid "// SAFETY: Caller maintains lifetime and aliasing requirements\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:47
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:51
+msgid "\"{}\""
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:57
+msgid "Changes to previous iterations:"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:59
+msgid "`copy` marked as unsafe"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:60
+msgid "Safety preconditions are documented"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:61
+msgid "inline safety comments"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:63
+msgid ""
+"An unsafe function is sound when both its safety preconditions and its "
+"internal unsafe blocks are documented."
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:66
+msgid "Fixes needed in `main`."
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:68
+msgid ""
+"`a` does not satisfy one of the preconditions of `copy` (source\\` data ends "
+"with a null byte within its memory allocation)"
+msgstr ""
+
+#: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md:70
+msgid "SAFETY comment needed"
+msgstr ""

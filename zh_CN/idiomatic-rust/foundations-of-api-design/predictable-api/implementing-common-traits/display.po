@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:6
+msgid "Display"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:8
+msgid "\"Write to string\" trait, prioritizing readability for an end user."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:10
+msgid "Derivable: ❌, without crates like `derive_more`."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:13
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:25
+msgid "\"HTTP Error code {code}\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:27
+msgid "\"Whale attack detected – call Ishmael\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:37
+msgid "\"http debug: {:?}\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:38
+msgid "\"http display: {}\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:39
+msgid "\"whale debug: {:?}\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:40
+msgid "\"whale display: {}\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:46
+msgid "A trait similar to `Debug`, but with a focus on end-user readability."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:48
+msgid ""
+"Prerequisite for the `Error` trait. If implementing for an error type, focus "
+"on providing a descriptive error for users and programmers other than you."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:51
+msgid ""
+"Same security considerations as Debug, consider the ways that sensitive data "
+"could be exposed in UI or logs."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:54
+msgid ""
+"Types that implement `Display` automatically have `ToString` implemented for "
+"them."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/display.md:57
+msgid ""
+"Compare the behavior of `Debug` and `Display` for our example error type. "
+"Show that the `Debug` impl more directly represents the data as it appears "
+"in code, whereas `Display` provides a more friendly message to non-"
+"programmers."
+msgstr ""

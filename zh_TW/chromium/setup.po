@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/setup.md:6
+msgid "Setup"
+msgstr ""
+
+#: src/chromium/setup.md:8
+msgid ""
+"Make sure you can build and run Chromium. Any platform and set of build "
+"flags is OK, so long as your code is relatively recent (commit position "
+"1223636 onwards, corresponding to November 2023):"
+msgstr ""
+
+#: src/chromium/setup.md:18
+msgid ""
+"(A component, debug build is recommended for quickest iteration time. This "
+"is the default!)"
+msgstr ""
+
+#: src/chromium/setup.md:21
+msgid ""
+"See [How to build Chromium](https://www.chromium.org/developers/how-tos/get-"
+"the-code/) if you aren't already at that point. Be warned: setting up to "
+"build Chromium takes time."
+msgstr ""
+
+#: src/chromium/setup.md:26
+msgid "It's also recommended that you have Visual Studio code installed."
+msgstr ""
+
+#: src/chromium/setup.md:28
+msgid "About the exercises"
+msgstr ""
+
+#: src/chromium/setup.md:30
+msgid ""
+"This part of the course has a series of exercises that build on each other. "
+"We'll be doing them spread throughout the course instead of just at the end. "
+"If you don't have time to complete a certain part, don't worry: you can "
+"catch up in the next slot."
+msgstr ""

@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/refresher/supertraits.md:6
+msgid "Supertraits / Trait Dependencies"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/supertraits.md:8
+msgid "Traits can be extended by new traits."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/supertraits.md:11
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/supertraits.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/supertraits.md:15
+msgid "/* methods common to all animals */"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/supertraits.md:19
+msgid "/* methods only for mammals */"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/supertraits.md:21
+msgid "// From stdlib\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/supertraits.md:25
+msgid "/* methods for Ord */"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/supertraits.md:31
+msgid ""
+"When authoring a trait, you can specify traits that a type must also. These "
+"are called _supertraits_."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/supertraits.md:34
+msgid ""
+"For the example above, any type that implements `Mammal` must also implement "
+"`Animal`."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/supertraits.md:37
+msgid ""
+"These hierarchies of traits let us design systems around the behavior of "
+"complex real-world taxonomies (like fauna, machine hardware, operating "
+"system specifics, etc)."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/supertraits.md:41
+msgid "This is distinct from object inheritance! But it looks similar."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/supertraits.md:43
+msgid ""
+"Object inheritance allows for overrides and brings in the behavior of the "
+"inherited types by default."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/supertraits.md:46
+msgid ""
+"A trait having a supertrait doesn't mean that trait can override method "
+"implementations as default implementations."
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/supertraits.md:49
+msgid "ref:"
+msgstr ""
+
+#: src/idiomatic/polymorphism/refresher/supertraits.md:51
+msgid ""
+"https://doc.rust-lang.org/reference/items/traits.html?highlight=supertrait#r-"
+"items.traits.supertraits"
+msgstr ""
