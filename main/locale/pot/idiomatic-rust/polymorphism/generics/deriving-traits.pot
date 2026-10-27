@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-10-27T13:50:48Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/generics/deriving-traits.md:6
+msgid "Deriving Traits"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/deriving-traits.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/deriving-traits.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/deriving-traits.md:17
+msgid ""
+"// Many traits have simple implementations that can be generated "
+"automatically.\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/deriving-traits.md:31
+msgid ""
+"Many traits have trivial implementations that would be easy to mechanically "
+"write. For these traits, it's possible to have the compiler generate the "
+"implementation for us using a derive macro."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/deriving-traits.md:35
+msgid ""
+"For example, the `Clone` trait is commonly implemented by simply cloning all "
+"fields of the struct. If this is the behavior we want for our type, we don't "
+"need to write out the boilerplate ourselves. Replace the manual "
+"implementation with the corresponding derive."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/deriving-traits.md:40
+msgid ""
+"Derived trait implementations automatically stay in sync with your type "
+"definition. Demonstrate adding a field to `DrawingBuffer` and show that the "
+"derived `Clone` impl is automatically updated, whereas the manual impl has "
+"to be updated by hand."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/deriving-traits.md:45
+msgid ""
+"Many standard library traits support being derived, and it's common for "
+"traits defined in the ecosystem to also support this."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/deriving-traits.md:48
+msgid ""
+"Traits do not support being derived by default, but you can implement derive "
+"support for your own traits with a macro. Doing so is covered in the Macros "
+"course."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/deriving-traits.md:52
+msgid "references:"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/deriving-traits.md:54
+msgid ""
+"https://doc.rust-lang.org/reference/attributes/derive.html#r-"
+"attributes.derive"
+msgstr ""

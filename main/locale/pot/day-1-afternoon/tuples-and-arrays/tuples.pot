@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-10-27T13:50:47Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -32,7 +32,7 @@ msgstr ""
 #: src/tuples-and-arrays/tuples.md:31
 msgid ""
 "The empty tuple `()` is referred to as the \"unit type\" and signifies "
-"absence of a return value, akin to `void` in other languages."
+"absence of a meaningful value, akin to `void` in other languages."
 msgstr ""
 
 #: src/tuples-and-arrays/tuples.md:34

@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-10-27T13:50:48Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/generics.md:1
+msgid "Generics"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics.md:3
+msgid ""
+"Generics are used when we want to abstract over types, but we expect the "
+"users of our code to know the concrete types."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics.md:17
+msgid "\"hello\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics.md:18
+msgid "\"goodbye\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics.md:25
+msgid ""
+"Generics are our mechanism for **static polymorphism**, which is "
+"polymorphism where the types are fully known at compile time."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics.md:28
+msgid ""
+"One example of this is `Vec`, which is generic over the type of element it "
+"stores. `Vec` itself is polymorphic: It's written in such a way that it "
+"doesn't know what type of element will be stored in it. But in order to use "
+"a `Vec`, you must specify a concrete type to use for the element."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics.md:33
+msgid ""
+"Generics are a mechanism for **code reuse**: You have some common logic that "
+"is fundamentally the same regardless of what specific type it handles, and "
+"generics give you a way to abstract over those different types **without "
+"duplicating logic**."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics.md:38
+msgid ""
+"Note that there's no dynamism: The types must be fully known at compile "
+"time, there's no way to select a type for `Vec`'s element at runtime. This "
+"means that generics are not an option when we need **runtime polymorphism**. "
+"Later we will look at two mechanisms for doing dynamic polymorphism: Enums "
+"and `dyn`."
+msgstr ""

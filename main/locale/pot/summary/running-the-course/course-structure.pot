@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-10-27T13:50:47Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -158,6 +158,7 @@ msgstr ""
 
 #: src/running-the-course/course-structure.md:40
 #: src/running-the-course/course-structure.md:42
+#: src/running-the-course/course-structure.md:192
 msgid "50 minutes"
 msgstr ""
 
@@ -412,7 +413,7 @@ msgid ""
 msgstr ""
 
 #: src/running-the-course/course-structure.md:185
-msgid "Morning (14 hours and 10 minutes, including breaks)"
+msgid "Morning (13 hours and 55 minutes, including breaks)"
 msgstr ""
 
 #: src/running-the-course/course-structure.md:189
@@ -428,7 +429,7 @@ msgid "Leveraging the Type System"
 msgstr ""
 
 #: src/running-the-course/course-structure.md:190
-msgid "7 hours and 30 minutes"
+msgid "7 hours and 40 minutes"
 msgstr ""
 
 #: src/running-the-course/course-structure.md:191
@@ -436,14 +437,18 @@ msgid "Polymorphism"
 msgstr ""
 
 #: src/running-the-course/course-structure.md:191
-msgid "3 hours and 5 minutes"
+msgid "1 hour and 45 minutes"
 msgstr ""
 
-#: src/running-the-course/course-structure.md:196
+#: src/running-the-course/course-structure.md:192
+msgid "From OOP to Rust"
+msgstr ""
+
+#: src/running-the-course/course-structure.md:197
 msgid "Unsafe (Work in Progress)"
 msgstr ""
 
-#: src/running-the-course/course-structure.md:198
+#: src/running-the-course/course-structure.md:199
 msgid ""
 "The [Unsafe](../unsafe-deep-dive/welcome.md) deep dive is a two-day class on "
 "the _unsafe_ Rust language. It covers the fundamentals of Rust's safety "
@@ -452,15 +457,15 @@ msgid ""
 "normally reject."
 msgstr ""
 
-#: src/running-the-course/course-structure.md:203
+#: src/running-the-course/course-structure.md:204
 msgid "not found - {{%course outline Unsafe}}"
 msgstr ""
 
-#: src/running-the-course/course-structure.md:205
+#: src/running-the-course/course-structure.md:206
 msgid "Format"
 msgstr ""
 
-#: src/running-the-course/course-structure.md:207
+#: src/running-the-course/course-structure.md:208
 msgid ""
 "The course is meant to be very interactive and we recommend letting the "
 "questions drive the exploration of Rust!"

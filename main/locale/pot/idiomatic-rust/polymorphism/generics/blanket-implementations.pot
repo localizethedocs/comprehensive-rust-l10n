@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-10-27T13:50:48Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/generics/blanket-impls.md:6
+msgid "Blanket Trait Implementations"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/blanket-impls.md:8
+msgid ""
+"We can use a generic `impl` block to implement a trait for multiple types at "
+"once, generally based on the behavior provided by another trait. These are "
+"referred to as **blanket implementations**."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/blanket-impls.md:13
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/blanket-impls.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/blanket-impls.md:19
+msgid ""
+"// A blanket implementation! If something implements Display, it implements\n"
+"// PrettyPrint.\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/blanket-impls.md:27
+msgid "\"{self}\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/blanket-impls.md:34
+msgid ""
+"`impl` blocks can be generic, which allow us to apply an implementation to "
+"multiple types at once. This is commonly used when applying an `impl` block "
+"to a generic type, but can also be used to implement a trait for multiple "
+"types at once."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/blanket-impls.md:39
+msgid ""
+"When an `impl` block applies to multiple types, we refer this as a \"blanket "
+"impl\"."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/blanket-impls.md:42
+msgid ""
+"In the example above we have a blanket implementation for all types that "
+"implement `Display`."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/blanket-impls.md:45
+msgid ""
+"Blanket impls can restrict how traits are implemented. Rust prevents a type "
+"from implementing the same trait twice, so a blanket impl prevents the trait "
+"from being implemented directly on a covered type."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/blanket-impls.md:49
+msgid ""
+"Demonstrate this by adding an implementation for `String` and show the "
+"resulting error."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/blanket-impls.md:52
+msgid ""
+"Avoid a blanket impl if users are likely to want to customize the behavior "
+"of the implementation beyond what the blanket impl provides."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/blanket-impls.md:55
+msgid "ref:"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/blanket-impls.md:57
+msgid ""
+"https://doc.rust-lang.org/reference/glossary.html#blanket-implementation"
+msgstr ""

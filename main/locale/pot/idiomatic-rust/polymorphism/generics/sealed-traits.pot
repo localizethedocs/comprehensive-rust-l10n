@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-10-27T13:50:48Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/generics/sealed-traits.md:6
+msgid "Sealed Traits"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/sealed-traits.md:8
+msgid ""
+"Traits are normally extensible, meaning that downstream users can implement "
+"our traits for their own types, and then our generic code can handle those "
+"downstream types. Usually this is what we want, but sometimes we want to "
+"define a trait where we control all of the implementations. To do this, we "
+"can create a **sealed trait**."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/sealed-traits.md:15
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/sealed-traits.md:16
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/sealed-traits.md:17
+msgid ""
+"// Private module, preventing users from accessing the `Sealed` trait.\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/sealed-traits.md:20
+msgid ""
+"// The trait itself must be public, or we can't use it as\n"
+"    // part of our public API.\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/sealed-traits.md:24
+msgid ""
+"// Implement `Sealed` for types that should implement our\n"
+"    // public public.\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/sealed-traits.md:29
+msgid "// Use `Sealed` as the supertrait for our public trait.\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/sealed-traits.md:32
+msgid "/* methods */"
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/sealed-traits.md:41
+msgid ""
+"Motivation: We want trait-driven code in a crate, but we don't want projects "
+"that depend on this crate to be able to implement a trait."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/sealed-traits.md:46
+msgid ""
+"The mechanism we use to do this is restricting access to a supertrait, "
+"preventing downstream users from being able to implement that trait for "
+"their types."
+msgstr ""
+
+#: src/idiomatic/polymorphism/generics/sealed-traits.md:50
+msgid ""
+"This is similar to enums, which inherently wrap a limited set of types, but "
+"applies to traits, which by default are extensible."
+msgstr ""
