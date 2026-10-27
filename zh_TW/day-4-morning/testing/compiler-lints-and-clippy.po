@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/testing/lints.md:6
+msgid "Compiler Lints and Clippy"
+msgstr ""
+
+#: src/testing/lints.md:8
+msgid ""
+"The Rust compiler produces fantastic error messages, as well as helpful "
+"built-in lints. [Clippy](https://doc.rust-lang.org/clippy/) provides even "
+"more lints, organized into groups that can be enabled per-project."
+msgstr ""
+
+#: src/testing/lints.md:13
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/testing/lints.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/testing/lints.md:22
+msgid "\"X probably fits in a u16, right? {}\""
+msgstr ""
+
+#: src/testing/lints.md:29
+msgid ""
+"There are compiler lints visible here, but not clippy lints. Run `clippy` on "
+"the playground site to show clippy warnings. Clippy has extensive "
+"documentation of its lints, and adds new lints (including default-deny "
+"lints) all the time."
+msgstr ""
+
+#: src/testing/lints.md:33
+msgid ""
+"Note that errors or warnings with `help: ...` can be fixed with `cargo fix` "
+"or via your editor."
+msgstr ""

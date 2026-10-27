@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/pinning/definition-of-pin.md:6
+msgid "Definition of Pin"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/definition-of-pin.md:9
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/definition-of-pin.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/definition-of-pin.md:29
+msgid ""
+"`Pin` is a minimal wrapper around a _pointer type_, which is defined as a "
+"type that implements `Deref`."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/definition-of-pin.md:32
+msgid ""
+"However, `Pin::new()` only accepts types that dereference into a target that "
+"implements `Unpin` (`Deref<Target: Unpin>`). This allows `Pin` to rely on "
+"the type system to enforce its guarantees."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/definition-of-pin.md:36
+msgid ""
+"Types that do not implement `Unpin`, i.e., types that require pinning, must "
+"create a `Pin` via the unsafe `Pin::new_unchecked()`."
+msgstr ""
+
+#: src/unsafe-deep-dive/pinning/definition-of-pin.md:39
+msgid ""
+"Aside: Unlike other `new()`/`new_unchecked()` method pairs, `new` does not "
+"do any runtime checking. The check is a zero-cost compile-time check."
+msgstr ""

@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/pattern-matching/destructuring-enums.md:6
+msgid "Enums"
+msgstr ""
+
+#: src/pattern-matching/destructuring-enums.md:8
+msgid "Like tuples, enums can also be destructured by matching:"
+msgstr ""
+
+#: src/pattern-matching/destructuring-enums.md:10
+msgid ""
+"Patterns can also be used to bind variables to parts of your values. This is "
+"how you inspect the structure of your types. Let us start with a simple "
+"`enum` type:"
+msgstr ""
+
+#: src/pattern-matching/destructuring-enums.md:14
+msgid "// Copyright 2022 Google LLC\n"
+msgstr ""
+
+#: src/pattern-matching/destructuring-enums.md:15
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/pattern-matching/destructuring-enums.md:26
+msgid "\"cannot divide {n} into two equal parts\""
+msgstr ""
+
+#: src/pattern-matching/destructuring-enums.md:33
+msgid "\"{n} divided in two is {half}\""
+msgstr ""
+
+#: src/pattern-matching/destructuring-enums.md:34
+msgid "\"sorry, an error happened: {msg}\""
+msgstr ""
+
+#: src/pattern-matching/destructuring-enums.md:39
+msgid ""
+"Here we have used the arms to _destructure_ the `Result` value. In the first "
+"arm, `half` is bound to the value inside the `Ok` variant. In the second "
+"arm, `msg` is bound to the error message."
+msgstr ""
+
+#: src/pattern-matching/destructuring-enums.md:46
+msgid ""
+"The `if`/`else` expression is returning an enum that is later unpacked with "
+"a `match`."
+msgstr ""
+
+#: src/pattern-matching/destructuring-enums.md:48
+msgid ""
+"You can try adding a third variant to the enum definition and displaying the "
+"errors when running the code. Point out the places where your code is now "
+"inexhaustive and how the compiler tries to give you hints."
+msgstr ""
+
+#: src/pattern-matching/destructuring-enums.md:51
+msgid ""
+"The values in the enum variants can only be accessed after being pattern "
+"matched."
+msgstr ""
+
+#: src/pattern-matching/destructuring-enums.md:53
+msgid ""
+"Demonstrate what happens when the search is inexhaustive. Note the advantage "
+"the Rust compiler provides by confirming when all cases are handled."
+msgstr ""
+
+#: src/pattern-matching/destructuring-enums.md:55
+msgid ""
+"Demonstrate the syntax for a struct-style variant by adding one to the enum "
+"definition and the `match`. Point out how this is syntactically similar to "
+"matching on a struct."
+msgstr ""

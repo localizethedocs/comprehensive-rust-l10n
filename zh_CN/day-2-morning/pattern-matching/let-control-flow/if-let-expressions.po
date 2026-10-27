@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/pattern-matching/let-control-flow/if-let.md:6
+msgid "`if let` Expressions"
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/if-let.md:8
+msgid ""
+"The [`if let` expression](https://doc.rust-lang.org/reference/expressions/if-"
+"expr.html#if-let-expressions) lets you execute different code depending on "
+"whether a value matches a pattern:"
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/if-let.md:13
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/if-let.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/if-let.md:23
+msgid "\"slept for {duration:?}\""
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/if-let.md:35
+msgid ""
+"Unlike `match`, `if let` does not have to cover all branches. This can make "
+"it more concise than `match`."
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/if-let.md:37
+msgid "A common usage is handling `Some` values when working with `Option`."
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/if-let.md:38
+msgid ""
+"Unlike `match`, `if let` does not support guard clauses for pattern matching."
+msgstr ""
+
+#: src/pattern-matching/let-control-flow/if-let.md:39
+msgid "With an `else` clause, this can be used as an expression."
+msgstr ""

@@ -1,0 +1,84 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/borrowing/interior-mutability/refcell.md:6
+msgid "`RefCell`"
+msgstr ""
+
+#: src/borrowing/interior-mutability/refcell.md:8
+msgid ""
+"`RefCell` allows accessing and mutating a wrapped value by providing "
+"alternative types `Ref` and `RefMut` that emulate `&T`/`&mut T` without "
+"actually being Rust references."
+msgstr ""
+
+#: src/borrowing/interior-mutability/refcell.md:12
+msgid ""
+"These types perform dynamic checks using a counter in the `RefCell` to "
+"prevent existence of a `RefMut` alongside another `Ref`/`RefMut`."
+msgstr ""
+
+#: src/borrowing/interior-mutability/refcell.md:15
+msgid ""
+"By implementing `Deref` (and `DerefMut` for `RefMut`), these types allow "
+"calling methods on the inner value without allowing references to escape."
+msgstr ""
+
+#: src/borrowing/interior-mutability/refcell.md:19
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/borrowing/interior-mutability/refcell.md:20
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/borrowing/interior-mutability/refcell.md:25
+msgid "// Note that `cell` is NOT declared as mutable.\n"
+msgstr ""
+
+#: src/borrowing/interior-mutability/refcell.md:32
+msgid ""
+"// This triggers an error at runtime.\n"
+"        // let other = cell.borrow();\n"
+"        // println!(\"{}\", other);\n"
+msgstr ""
+
+#: src/borrowing/interior-mutability/refcell.md:37
+msgid "\"{cell:?}\""
+msgstr ""
+
+#: src/borrowing/interior-mutability/refcell.md:43
+msgid ""
+"`RefCell` enforces Rust's usual borrowing rules (either multiple shared "
+"references or a single exclusive reference) with a runtime check. In this "
+"case, all borrows are very short and never overlap, so the checks always "
+"succeed."
+msgstr ""
+
+#: src/borrowing/interior-mutability/refcell.md:48
+msgid ""
+"The extra block in the example is to end the borrow created by the call to "
+"`borrow_mut` before we print the cell. Trying to print a borrowed `RefCell` "
+"just shows the message `\"{borrowed}\"`."
+msgstr ""
+
+#: src/borrowing/interior-mutability/refcell.md:52
+msgid "More to Explore"
+msgstr ""
+
+#: src/borrowing/interior-mutability/refcell.md:54
+msgid ""
+"There are also `OnceCell` and `OnceLock`, which allow initialization on "
+"first use. Making these useful requires some more knowledge than students "
+"have at this time."
+msgstr ""

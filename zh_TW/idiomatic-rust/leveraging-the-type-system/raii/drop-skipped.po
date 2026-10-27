@@ -1,0 +1,172 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:6
+msgid "Drop can be skipped"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:8
+msgid "There are cases where destructors will not run."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:11
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:19
+msgid "\"OwnedFd::drop() called with raw fd: {:?}\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:25
+msgid "\"TmpFile::drop() called with owned fd: {:?}\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:26
+msgid ""
+"// libc::unlink(\"/tmp/file\")\n"
+"        // panic!(\"TmpFile::drop() panics\");\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:40
+msgid "\"TmpFile::close(): not implemented yet\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:51
+msgid "// std::mem::forget(file);\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:53
+msgid "// file.close();\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:61
+msgid ""
+"Drop is not guaranteed to always run. There is a number of cases when drop "
+"is skipped: the program can crash or exit, the value with the drop "
+"implementation can be leaked etc."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:65
+msgid ""
+"In the version that calls [`std::process::exit`](https://doc.rust-lang.org/"
+"std/process/fn.exit.html), `TmpFile::drop()` is never run because `exit()` "
+"terminates the process immediately without any opportunity for a `drop()` "
+"method to be called."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:70
+msgid ""
+"You can prevent accidental use of `exit` by denying the [`clippy::exit`]"
+"(https://rust-lang.github.io/rust-clippy/stable/index.html#exit) lint."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:74
+msgid ""
+"If you remove the `std::process::exit(0)` line, each `drop()` method in this "
+"simple case will run in turn."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:77
+msgid ""
+"Try uncommenting the [`std::mem::forget`](https://doc.rust-lang.org/std/mem/"
+"fn.forget.html) call. What do you think will happen?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:81
+msgid ""
+"`mem::forget()` takes ownership and \"forgets\" about the value `file` "
+"without running its **destructor** `Drop::drop()`. The destructor of "
+"`owned_fd` is still run."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:85
+msgid ""
+"Remove the `mem::forget()` call, then uncomment the `file.close()` call "
+"below it. What do you expect now?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:88
+msgid ""
+"With the default `panic = \"unwind\"` setting, the stack still unwinds and "
+"destructors run, even when the panic starts in `main`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:91
+msgid ""
+"With [`panic = \"abort\"`](https://doc.rust-lang.org/cargo/reference/"
+"profiles.html#panic) no destructors are run."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:95
+msgid ""
+"As a last step, uncomment the `panic!` inside `TmpFile::drop()` and run it. "
+"Ask the class: which destructors run before the abort?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:98
+msgid ""
+"After a double panic, Rust no longer guarantees that remaining destructors "
+"will run:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:101
+msgid ""
+"Some cleanup that was already in progress may still complete (for example, "
+"field destructors of the value currently being dropped),"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:103
+msgid ""
+"but anything scheduled later in the unwind path might be skipped entirely."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:104
+msgid ""
+"This is why we say you cannot rely solely on `drop()` for critical external "
+"cleanup, nor assume that a double panic aborts without running any further "
+"destructors."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:108
+msgid ""
+"Some languages forbid or restrict exceptions in destructors. Rust allows "
+"panicking in `Drop::drop`, but it is almost never a good idea, since it can "
+"disrupt unwinding and lead to unpredictable cleanup. It is best avoided "
+"unless there is a very specific need, such as in the case of a **drop bomb**."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:113
+msgid ""
+"Drop is suitable for cleaning up resources within the scope of a process, "
+"but it is not the right tool for providing hard guarantees that something "
+"happens outside of the process (e.g., on local disk, or in another service "
+"in a distributed system)."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:118
+msgid ""
+"For example, deleting a temporary file in `drop()` is fine in a toy example, "
+"but in a real program you would still need an external cleanup mechanism "
+"such as a temp file reaper."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/drop_skipped.md:122
+msgid ""
+"In contrast, we can rely on `drop()` to unlock a mutex, since it is a "
+"process-local resource. If `drop()` is skipped and the mutex is left locked, "
+"it has no lasting effects outside the process."
+msgstr ""
