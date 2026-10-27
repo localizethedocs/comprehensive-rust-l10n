@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-10-27T13:50:48Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -50,9 +50,9 @@ msgid ""
 "For example, Rust's enums are known as \"algebraic data types\" in languages "
 "like Haskell and OCaml. You can take inspiration from learning material "
 "geared towards functional languages when looking for guidance on how to "
-"design with types. [\"Domain Modeling Made Functional\"](https://pragprog."
-"com/titles/swdddf/domain-modeling-made-functional/) is a great resource on "
-"the topic, with examples written in F#."
+"design with types. [\"Domain Modeling Made Functional\"](https://"
+"pragprog.com/titles/swdddf/domain-modeling-made-functional/) is a great "
+"resource on the topic, with examples written in F#."
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:32
@@ -90,7 +90,7 @@ msgid ""
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:53
-msgid "This segment should take about 7 hours and 30 minutes. It contains:"
+msgid "This segment should take about 7 hours and 40 minutes. It contains:"
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:55
@@ -126,12 +126,15 @@ msgid "Extension Traits"
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:60
-#: src/idiomatic/leveraging-the-type-system.md:61
-msgid "1 hour and 5 minutes"
+msgid "1 hour and 15 minutes"
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:61
 msgid "Typestate Pattern"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system.md:61
+msgid "1 hour and 5 minutes"
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:62

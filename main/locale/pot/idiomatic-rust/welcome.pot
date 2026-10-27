@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-10-27T13:50:48Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -48,7 +48,7 @@ msgstr ""
 
 #: src/idiomatic/welcome.md:25
 msgid ""
-"Including 10 minute breaks, this session should take about 14 hours and 10 "
+"Including 10 minute breaks, this session should take about 13 hours and 55 "
 "minutes. It contains:"
 msgstr ""
 
@@ -73,7 +73,7 @@ msgid "Leveraging the Type System"
 msgstr ""
 
 #: src/idiomatic/welcome.md:30
-msgid "7 hours and 30 minutes"
+msgid "7 hours and 40 minutes"
 msgstr ""
 
 #: src/idiomatic/welcome.md:31
@@ -81,20 +81,28 @@ msgid "Polymorphism"
 msgstr ""
 
 #: src/idiomatic/welcome.md:31
-msgid "3 hours and 5 minutes"
+msgid "1 hour and 45 minutes"
 msgstr ""
 
-#: src/idiomatic/welcome.md:38
+#: src/idiomatic/welcome.md:32
+msgid "From OOP to Rust"
+msgstr ""
+
+#: src/idiomatic/welcome.md:32
+msgid "50 minutes"
+msgstr ""
+
+#: src/idiomatic/welcome.md:39
 msgid ""
 "The course will cover the topics listed below. Each topic may be covered in "
 "one or more slides, depending on its complexity and relevance."
 msgstr ""
 
-#: src/idiomatic/welcome.md:41
+#: src/idiomatic/welcome.md:42
 msgid "Target Audience"
 msgstr ""
 
-#: src/idiomatic/welcome.md:43
+#: src/idiomatic/welcome.md:44
 msgid ""
 "Engineers with at least 2-3 years of coding experience in C, C++11 or newer, "
 "Java 7 or newer, Python 2 or 3, Go or any other similar imperative "
@@ -102,225 +110,225 @@ msgid ""
 "or feature-rich languages like Swift, Kotlin, C#, or TypeScript."
 msgstr ""
 
-#: src/idiomatic/welcome.md:48
+#: src/idiomatic/welcome.md:49
 msgid "Foundations of API design"
 msgstr ""
 
-#: src/idiomatic/welcome.md:50
+#: src/idiomatic/welcome.md:51
 msgid ""
 "Golden rule: prioritize clarity and readability at the callsite. People will "
 "spend much more time reading the call sites than declarations of the "
 "functions being called."
 msgstr ""
 
-#: src/idiomatic/welcome.md:53
+#: src/idiomatic/welcome.md:54
 msgid "Make your API predictable"
 msgstr ""
 
-#: src/idiomatic/welcome.md:54
+#: src/idiomatic/welcome.md:55
 msgid ""
 "Follow naming conventions (case conventions, prefer vocabulary precedented "
 "in the standard library - e.g., methods should be called \"push\" not "
 "\"push_back\", \"is_empty\" not \"empty\" etc.)"
 msgstr ""
 
-#: src/idiomatic/welcome.md:57
+#: src/idiomatic/welcome.md:58
 msgid ""
 "Know the vocabulary types and traits in the standard library, and use them "
 "in your APIs. If something feels like a basic type/algorithm, check in the "
 "standard library first."
 msgstr ""
 
-#: src/idiomatic/welcome.md:60
+#: src/idiomatic/welcome.md:61
 msgid ""
 "Use well-established API design patterns that we will discuss later in this "
 "class (e.g., newtype, owned/view type pairs, error handling)"
 msgstr ""
 
-#: src/idiomatic/welcome.md:62
+#: src/idiomatic/welcome.md:63
 msgid ""
 "Write meaningful and effective doc comments (e.g., don't merely repeat the "
 "method name with spaces instead of underscores, don't repeat the same "
 "information just to fill out every markdown tag, provide usage examples)"
 msgstr ""
 
-#: src/idiomatic/welcome.md:66
+#: src/idiomatic/welcome.md:67
 msgid "Leveraging the type system"
 msgstr ""
 
-#: src/idiomatic/welcome.md:68
+#: src/idiomatic/welcome.md:69
 msgid "Short recap on enums, structs and type aliases"
 msgstr ""
 
-#: src/idiomatic/welcome.md:69
+#: src/idiomatic/welcome.md:70
 msgid "Newtype pattern and encapsulation: parse, don't validate"
 msgstr ""
 
-#: src/idiomatic/welcome.md:70
+#: src/idiomatic/welcome.md:71
 msgid ""
 "Extension traits: avoid the newtype pattern when you want to provide "
 "additional behaviour"
 msgstr ""
 
-#: src/idiomatic/welcome.md:72
+#: src/idiomatic/welcome.md:73
 msgid ""
 "RAII, scope guards and drop bombs: using `Drop` to clean up resources, "
 "trigger actions or enforce invariants"
 msgstr ""
 
-#: src/idiomatic/welcome.md:74
+#: src/idiomatic/welcome.md:75
 msgid ""
 "\"Token\" types: force users to prove they've performed a specific action"
 msgstr ""
 
-#: src/idiomatic/welcome.md:75
+#: src/idiomatic/welcome.md:76
 msgid ""
 "The typestate pattern: enforce correct state transitions at compile-time"
 msgstr ""
 
-#: src/idiomatic/welcome.md:76
+#: src/idiomatic/welcome.md:77
 msgid ""
 "Using the borrow checker to enforce invariants that have nothing to do with "
 "memory ownership"
 msgstr ""
 
-#: src/idiomatic/welcome.md:78
+#: src/idiomatic/welcome.md:79
 msgid "OwnedFd/BorrowedFd in the standard library"
 msgstr ""
 
-#: src/idiomatic/welcome.md:79
+#: src/idiomatic/welcome.md:80
 msgid "[Branded types](https://plv.mpi-sws.org/rustbelt/ghostcell/paper.pdf)"
 msgstr ""
 
-#: src/idiomatic/welcome.md:81
+#: src/idiomatic/welcome.md:82
 msgid "Don't fight the borrow checker"
 msgstr ""
 
-#: src/idiomatic/welcome.md:83
+#: src/idiomatic/welcome.md:84
 msgid ""
 "\"Owned\" types and \"view\" types: `&str` and `String`, `Path` and "
 "`PathBuf`, etc."
 msgstr ""
 
-#: src/idiomatic/welcome.md:85
+#: src/idiomatic/welcome.md:86
 msgid ""
 "Don't hide ownership requirements: avoid hidden `.clone()`, learn to love "
 "`Cow`"
 msgstr ""
 
-#: src/idiomatic/welcome.md:87
+#: src/idiomatic/welcome.md:88
 msgid "Split types along ownership boundaries"
 msgstr ""
 
-#: src/idiomatic/welcome.md:88
+#: src/idiomatic/welcome.md:89
 msgid "Structure your ownership hierarchy like a tree"
 msgstr ""
 
-#: src/idiomatic/welcome.md:89
+#: src/idiomatic/welcome.md:90
 msgid ""
 "Strategies to manage circular dependencies: reference counting, using "
 "indexes instead of references"
 msgstr ""
 
-#: src/idiomatic/welcome.md:91
+#: src/idiomatic/welcome.md:92
 msgid "Interior mutability (Cell, RefCell)"
 msgstr ""
 
-#: src/idiomatic/welcome.md:92
+#: src/idiomatic/welcome.md:93
 msgid "Working with lifetime parameters on user-defined data types"
 msgstr ""
 
-#: src/idiomatic/welcome.md:94
+#: src/idiomatic/welcome.md:95
 msgid "Polymorphism in Rust"
 msgstr ""
 
-#: src/idiomatic/welcome.md:96
+#: src/idiomatic/welcome.md:97
 msgid "A quick refresher on traits and generic functions"
 msgstr ""
 
-#: src/idiomatic/welcome.md:97
+#: src/idiomatic/welcome.md:98
 msgid "Rust has no inheritance: what are the implications?"
 msgstr ""
 
-#: src/idiomatic/welcome.md:98
+#: src/idiomatic/welcome.md:99
 msgid "Using enums for polymorphism"
 msgstr ""
 
-#: src/idiomatic/welcome.md:99
+#: src/idiomatic/welcome.md:100
 msgid "Using traits for polymorphism"
 msgstr ""
 
-#: src/idiomatic/welcome.md:100
+#: src/idiomatic/welcome.md:101
 msgid "Using composition"
 msgstr ""
 
-#: src/idiomatic/welcome.md:101
+#: src/idiomatic/welcome.md:102
 msgid "How do I pick the most appropriate pattern?"
 msgstr ""
 
-#: src/idiomatic/welcome.md:102
+#: src/idiomatic/welcome.md:103
 msgid "Working with generics"
 msgstr ""
 
-#: src/idiomatic/welcome.md:103
+#: src/idiomatic/welcome.md:104
 msgid "Generic type parameter in a function or trait object as an argument?"
 msgstr ""
 
-#: src/idiomatic/welcome.md:104
+#: src/idiomatic/welcome.md:105
 msgid "Trait bounds don't have to refer to the generic parameter"
 msgstr ""
 
-#: src/idiomatic/welcome.md:105
+#: src/idiomatic/welcome.md:106
 msgid ""
 "Type parameters in traits: should it be a generic parameter or an associated "
 "type?"
 msgstr ""
 
-#: src/idiomatic/welcome.md:107
+#: src/idiomatic/welcome.md:108
 msgid ""
 "Macros: a valuable tool to DRY up code when traits are not enough (or too "
 "complex)"
 msgstr ""
 
-#: src/idiomatic/welcome.md:110
+#: src/idiomatic/welcome.md:111
 msgid "Error Handling"
 msgstr ""
 
-#: src/idiomatic/welcome.md:112
+#: src/idiomatic/welcome.md:113
 msgid "What is the purpose of errors? Recovery vs. reporting."
 msgstr ""
 
-#: src/idiomatic/welcome.md:113
+#: src/idiomatic/welcome.md:114
 msgid "Result vs. Option"
 msgstr ""
 
-#: src/idiomatic/welcome.md:114
+#: src/idiomatic/welcome.md:115
 msgid "Designing good errors:"
 msgstr ""
 
-#: src/idiomatic/welcome.md:115
+#: src/idiomatic/welcome.md:116
 msgid "Determine the error scope."
 msgstr ""
 
-#: src/idiomatic/welcome.md:116
+#: src/idiomatic/welcome.md:117
 msgid ""
 "Capture additional context as the error flows upwards, crossing scope "
 "boundaries."
 msgstr ""
 
-#: src/idiomatic/welcome.md:118
+#: src/idiomatic/welcome.md:119
 msgid "Leverage the `Error` trait to keep track of the full error chain."
 msgstr ""
 
-#: src/idiomatic/welcome.md:119
+#: src/idiomatic/welcome.md:120
 msgid "Leverage `thiserror` to reduce boilerplate when defining error types."
 msgstr ""
 
-#: src/idiomatic/welcome.md:120
+#: src/idiomatic/welcome.md:121
 msgid "`anyhow`"
 msgstr ""
 
-#: src/idiomatic/welcome.md:121
+#: src/idiomatic/welcome.md:122
 msgid ""
 "Distinguish fatal errors from recoverable errors using `Result<Result<T, "
 "RecoverableError>, FatalError>`."

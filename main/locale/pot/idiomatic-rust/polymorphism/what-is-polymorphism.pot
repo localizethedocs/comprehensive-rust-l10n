@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-10-27T13:50:48Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/python.md:1
+msgid "What is Polymorphism?"
+msgstr ""
+
+#: src/idiomatic/polymorphism/python.md:3
+msgid ""
+"In a dynamic language like Python, we don't have to do anything special to "
+"allow a function to accept arguments of different types:"
+msgstr ""
+
+#: src/idiomatic/polymorphism/python.md:11
+msgid "\"hello\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/python.md:15
+msgid ""
+"But Rust's static type system requires us to specify the types of our "
+"functions' arguments:"
+msgstr ""
+
+#: src/idiomatic/polymorphism/python.md:20
+#: src/idiomatic/polymorphism/python.md:52
+msgid "\"{}\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/python.md:25
+msgid "// print_value(\"hello\"); // ❌ Mismatched types!\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/python.md:31
+msgid ""
+"If you are coming from a dynamic language like Python, the concept of "
+"polymorphism may be new to you because in dynamic languages all functions "
+"are implicitly polymorphic. But in Rust, functions only accept arguments of "
+"the exact types they expect, and we must use a mechanism like generics to "
+"support polymorphism."
+msgstr ""
+
+#: src/idiomatic/polymorphism/python.md:37
+msgid ""
+"Static typing is a powerful tool that allows the compiler to enforce correct "
+"usage of our APIs: If your function needs to be given an `i32` in order to "
+"function correctly, the compiler won't allow a user of that function to pass "
+"in a string."
+msgstr ""
+
+#: src/idiomatic/polymorphism/python.md:42
+msgid ""
+"But static typing is restrictive in cases where we want to write code that "
+"is flexible in its handling of types. In the example on this slide, we might "
+"want our `print_value` function to be able to print both numbers and "
+"strings, but as written it can only accept `i32` values."
+msgstr ""
+
+#: src/idiomatic/polymorphism/python.md:47
+msgid ""
+"Edit `print_value` to make it generic using `Display` to print different "
+"kinds of values:"
+msgstr ""

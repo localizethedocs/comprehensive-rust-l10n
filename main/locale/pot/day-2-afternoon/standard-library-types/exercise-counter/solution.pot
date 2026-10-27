@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-10-27T13:50:48Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -40,19 +40,35 @@ msgstr ""
 msgid "/// Return the number of times the given value has been seen.\n"
 msgstr ""
 
-#: src/std-types/solution.md:47
+#: src/std-types/solution.md:39
+msgid "' '"
+msgstr ""
+
+#: src/std-types/solution.md:40 src/std-types/solution.md:42
+msgid "'a'"
+msgstr ""
+
+#: src/std-types/solution.md:41
+msgid "'¥'"
+msgstr ""
+
+#: src/std-types/solution.md:44
+msgid "\"most common character: {:?}\""
+msgstr ""
+
+#: src/std-types/solution.md:57
 msgid "\"saw {} values equal to {}\""
 msgstr ""
 
-#: src/std-types/solution.md:51 src/std-types/solution.md:53
-#: src/std-types/solution.md:54
+#: src/std-types/solution.md:61 src/std-types/solution.md:63
+#: src/std-types/solution.md:64
 msgid "\"apple\""
 msgstr ""
 
-#: src/std-types/solution.md:52
+#: src/std-types/solution.md:62
 msgid "\"orange\""
 msgstr ""
 
-#: src/std-types/solution.md:54
+#: src/std-types/solution.md:64
 msgid "\"got {} apples\""
 msgstr ""

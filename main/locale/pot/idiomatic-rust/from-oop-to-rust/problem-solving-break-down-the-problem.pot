@@ -1,0 +1,106 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-10-27T13:50:48Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:6
+msgid "Problem solving: Break Down the Problem"
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:11
+msgid "// Problem: implementing a GUI API\n"
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:13
+msgid "// Question: What's the minimum useful behavior for a drawing API?\n"
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:24
+msgid "\"arc of radius \""
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:27
+msgid "/* ... */"
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:30
+msgid "// Question: What's a good API for users?\n"
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:55
+msgid ""
+"You're already adept at breaking down problems, but you're likely used to "
+"reaching for OOP-style methods."
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:58
+msgid ""
+"This isn't a drastic change, it just requires re-ordering the way you "
+"approach things."
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:61
+msgid "Try to solve the problem with either Generics & Traits or Enums first."
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:63
+msgid ""
+"Does the problem require a specific set of types? An enum may be the "
+"cleanest way of solving this problem."
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:66
+msgid ""
+"Does the problem really care about the specifics of the types involved, or "
+"can behavior be focused on?"
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:69
+msgid ""
+"Organize your problem solving around finding a minimum viable amount of "
+"knowledge to implement something."
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:72
+msgid "Does a trait already exist for this use case? If so, use it!"
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:74
+msgid ""
+"If you really do need heterogeneous collections, use them! They exist in "
+"Rust as a tool for a reason."
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:77
+msgid ""
+"Be aware of the XY problem: a problem may seem most easily addressable by "
+"one solution, but it might not tackle the root cause and could lead to new "
+"difficult problems popping up in the future."
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:81
+msgid ""
+"That is, be certain that dynamic dispatch with trait objects is what you "
+"need before you commit to using them."
+msgstr ""
+
+#: src/idiomatic/from-oop-to-rust/problem-solving.md:84
+msgid ""
+"Be certain that traits are what you need before you commit to using them."
+msgstr ""

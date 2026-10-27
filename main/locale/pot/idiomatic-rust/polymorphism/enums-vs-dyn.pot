@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-10-27T13:50:48Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/enum-vs-dyn.md:1
+msgid "Enums vs `dyn`"
+msgstr ""
+
+#: src/idiomatic/polymorphism/enum-vs-dyn.md:3
+msgid ""
+"Enums and `dyn` provide two different approaches to dynamic polymorphism, "
+"and in many cases both approaches can be used to solve the same problem. The "
+"main trade-offs between the two are:"
+msgstr ""
+
+#: src/idiomatic/polymorphism/enum-vs-dyn.md:7
+msgid ""
+"Enums make \"downcasting\" to a subtype easy via pattern matching. "
+"Downcasting is possible with `dyn` but is more cumbersome."
+msgstr ""
+
+#: src/idiomatic/polymorphism/enum-vs-dyn.md:9
+msgid ""
+"`dyn` allows for downstream code to introduce new types, whereas enums do "
+"not."
+msgstr ""
+
+#: src/idiomatic/polymorphism/enum-vs-dyn.md:13
+msgid ""
+"When deciding whether to use an enum or `dyn`, there are two questions to "
+"ask:"
+msgstr ""
+
+#: src/idiomatic/polymorphism/enum-vs-dyn.md:15
+msgid ""
+"Do I need to be able to downcast to the concrete subtype? Or do I primarily "
+"expect to go through a trait interface without needing to know the concrete "
+"type?"
+msgstr ""
+
+#: src/idiomatic/polymorphism/enum-vs-dyn.md:19
+msgid ""
+"Do I know the full set of types up front, or do I need to allow downstream "
+"code to extend the set of types I will be handling?"
+msgstr ""

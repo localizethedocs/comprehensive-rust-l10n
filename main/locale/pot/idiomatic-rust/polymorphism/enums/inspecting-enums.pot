@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-10-27T13:50:48Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/enums/inspecting.md:1
+msgid "Inspecting Enums"
+msgstr ""
+
+#: src/idiomatic/polymorphism/enums/inspecting.md:3
+msgid ""
+"We can easily inspect the contents of an enum using **pattern matching**:"
+msgstr ""
+
+#: src/idiomatic/polymorphism/enums/inspecting.md:8
+msgid "\"We got an object: {obj:?}\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/enums/inspecting.md:9
+msgid "\"We got an array: {array:?}\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/enums/inspecting.md:10
+msgid "\"We got a string: {string:?}\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/enums/inspecting.md:11
+msgid "\"We got a number: {num}\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/enums/inspecting.md:12
+msgid "\"We got a bool: {b}\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/enums/inspecting.md:13
+msgid "\"We got a null\""
+msgstr ""
+
+#: src/idiomatic/polymorphism/enums/inspecting.md:20
+msgid ""
+"Continuing with our JSON parsing example, we can easily determine which kind "
+"of value we got by pattern matching on the resulting enum."
+msgstr ""
+
+#: src/idiomatic/polymorphism/enums/inspecting.md:23
+msgid ""
+"This makes enums a good fit for scenarios where we want to handle different "
+"types at runtime, but want to retain type information and the ability to "
+"directly inspect the concrete value."
+msgstr ""
+
+#: src/idiomatic/polymorphism/enums/inspecting.md:27
+msgid ""
+"This is a big advantage enums have over `dyn`: With `dyn` we can't easily "
+"downcast to the specific concrete type, and are generally restricted to "
+"going through the trait interface. Later we'll see that we can support "
+"downcasting with `dyn`, but doing so requires extra setup that isn't "
+"necessary with enums."
+msgstr ""
