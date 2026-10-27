@@ -29,8 +29,8 @@ msgstr ""
 
 #: src/bare-metal/microcontrollers.md:37
 msgid ""
-"The `cortex_m_rt::entry` macro requires that the function have type `fn() -"
-"> !`, because returning to the reset handler doesn't make sense."
+"The `cortex_m_rt::entry` macro requires that the function have type `fn() "
+"-> !`, because returning to the reset handler doesn't make sense."
 msgstr ""
 
 #: src/bare-metal/microcontrollers.md:39

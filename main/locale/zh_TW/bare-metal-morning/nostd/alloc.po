@@ -17,8 +17,8 @@ msgstr ""
 
 #: src/bare-metal/alloc.md:8
 msgid ""
-"To use `alloc` you must implement a [global (heap) allocator](https://doc."
-"rust-lang.org/stable/std/alloc/trait.GlobalAlloc.html)."
+"To use `alloc` you must implement a [global (heap) allocator](https://"
+"doc.rust-lang.org/stable/std/alloc/trait.GlobalAlloc.html)."
 msgstr ""
 
 #: src/bare-metal/alloc.md:12

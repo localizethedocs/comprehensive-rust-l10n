@@ -18,8 +18,9 @@ msgstr ""
 #: src/chromium/adding-third-party-crates/configuring-gnrt-config-toml.md:8
 msgid ""
 "Alongside `Cargo.toml` is [`gnrt_config.toml`](https://source.chromium.org/"
-"chromium/chromium/src/+/main:third_party/rust/chromium_crates_io/gnrt_config."
-"toml). This contains Chromium-specific extensions to crate handling."
+"chromium/chromium/src/+/main:third_party/rust/chromium_crates_io/"
+"gnrt_config.toml). This contains Chromium-specific extensions to crate "
+"handling."
 msgstr ""
 
 #: src/chromium/adding-third-party-crates/configuring-gnrt-config-toml.md:11

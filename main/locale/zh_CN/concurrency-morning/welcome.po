@@ -94,7 +94,7 @@ msgstr ""
 
 #: src/concurrency/welcome.md:32
 msgid ""
-"The same tools that help with \"concurrent\" access in a single thread (e."
-"g., a called function that might mutate an argument or save references to it "
-"to read later) save us from multi-threading issues."
+"The same tools that help with \"concurrent\" access in a single thread "
+"(e.g., a called function that might mutate an argument or save references to "
+"it to read later) save us from multi-threading issues."
 msgstr ""

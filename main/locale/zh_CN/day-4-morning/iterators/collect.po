@@ -17,9 +17,9 @@ msgstr ""
 
 #: src/iterators/collect.md:8
 msgid ""
-"The [`collect`](https://doc.rust-lang.org/std/iter/trait.Iterator."
-"html#method.collect) method lets you build a collection from an [`Iterator`]"
-"(https://doc.rust-lang.org/std/iter/trait.Iterator.html)."
+"The [`collect`](https://doc.rust-lang.org/std/iter/"
+"trait.Iterator.html#method.collect) method lets you build a collection from "
+"an [`Iterator`](https://doc.rust-lang.org/std/iter/trait.Iterator.html)."
 msgstr ""
 
 #: src/iterators/collect.md:11

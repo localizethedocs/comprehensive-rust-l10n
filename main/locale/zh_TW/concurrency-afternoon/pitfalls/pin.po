@@ -109,8 +109,8 @@ msgstr ""
 #: src/concurrency/async-pitfalls/pin.md:98
 msgid ""
 "This still doesn't work. Follow the compiler errors, adding `&mut` to the "
-"`timeout_fut` in the `select!` to work around the move, then using `Box::"
-"pin`:"
+"`timeout_fut` in the `select!` to work around the move, then using "
+"`Box::pin`:"
 msgstr ""
 
 #: src/concurrency/async-pitfalls/pin.md:115

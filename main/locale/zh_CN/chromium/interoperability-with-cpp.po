@@ -65,10 +65,10 @@ msgstr ""
 #: src/chromium/interoperability-with-cpp.md:37
 msgid ""
 "`&[T]` can be passed across the FFI boundary, even though it doesn't "
-"guarantee any particular ABI or memory layout. With manual bindings `std::"
-"span<T>` / `&[T]` have to be manually destructured and rebuilt out of a "
-"pointer and length - this is error-prone given that each language represents "
-"empty slices slightly differently)"
+"guarantee any particular ABI or memory layout. With manual bindings "
+"`std::span<T>` / `&[T]` have to be manually destructured and rebuilt out of "
+"a pointer and length - this is error-prone given that each language "
+"represents empty slices slightly differently)"
 msgstr ""
 
 #: src/chromium/interoperability-with-cpp.md:42

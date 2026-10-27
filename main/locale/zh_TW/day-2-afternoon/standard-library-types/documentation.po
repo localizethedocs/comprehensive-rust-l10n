@@ -27,8 +27,8 @@ msgstr ""
 
 #: src/std-types/docs.md:12
 msgid ""
-"Primitive types like [`u8`](https://doc.rust-lang.org/stable/std/primitive."
-"u8.html)."
+"Primitive types like [`u8`](https://doc.rust-lang.org/stable/std/"
+"primitive.u8.html)."
 msgstr ""
 
 #: src/std-types/docs.md:14

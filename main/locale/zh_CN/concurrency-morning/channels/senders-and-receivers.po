@@ -18,9 +18,9 @@ msgstr ""
 #: src/concurrency/channels/senders-receivers.md:8
 msgid ""
 "Rust channels have two parts: a [`Sender<T>`](https://doc.rust-lang.org/std/"
-"sync/mpsc/struct.Sender.html) and a [`Receiver<T>`](https://doc.rust-lang."
-"org/std/sync/mpsc/struct.Receiver.html). The two parts are connected via the "
-"channel, but you only see the end-points."
+"sync/mpsc/struct.Sender.html) and a [`Receiver<T>`](https://doc.rust-"
+"lang.org/std/sync/mpsc/struct.Receiver.html). The two parts are connected "
+"via the channel, but you only see the end-points."
 msgstr ""
 
 #: src/concurrency/channels/senders-receivers.md:12
@@ -46,8 +46,9 @@ msgstr ""
 
 #: src/concurrency/channels/senders-receivers.md:38
 msgid ""
-"[`send()`](https://doc.rust-lang.org/std/sync/mpsc/struct.Sender.html#method."
-"send) and [`recv()`](https://doc.rust-lang.org/std/sync/mpsc/struct.Receiver."
-"html#method.recv) return `Result`. If they return `Err`, it means the "
-"counterpart `Sender` or `Receiver` is dropped and the channel is closed."
+"[`send()`](https://doc.rust-lang.org/std/sync/mpsc/"
+"struct.Sender.html#method.send) and [`recv()`](https://doc.rust-lang.org/std/"
+"sync/mpsc/struct.Receiver.html#method.recv) return `Result`. If they return "
+"`Err`, it means the counterpart `Sender` or `Receiver` is dropped and the "
+"channel is closed."
 msgstr ""

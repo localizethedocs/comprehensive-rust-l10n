@@ -28,8 +28,8 @@ msgstr ""
 
 #: src/chromium/cargo.md:13
 msgid ""
-"Use `gn` and `ninja` with the help of the templates from `//build/rust/*."
-"gni` (e.g. `rust_static_library` that we'll meet later). This uses "
+"Use `gn` and `ninja` with the help of the templates from `//build/rust/"
+"*.gni` (e.g. `rust_static_library` that we'll meet later). This uses "
 "Chromium's audited toolchain and crates."
 msgstr ""
 
@@ -97,8 +97,8 @@ msgstr ""
 
 #: src/chromium/cargo.md:49
 msgid ""
-"`cargo` makes it easy to try a library (just add a single line to `Cargo."
-"toml` and start writing code)"
+"`cargo` makes it easy to try a library (just add a single line to "
+"`Cargo.toml` and start writing code)"
 msgstr ""
 
 #: src/chromium/cargo.md:51

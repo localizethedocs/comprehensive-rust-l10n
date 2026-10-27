@@ -49,8 +49,8 @@ msgstr ""
 msgid ""
 "You will find some utility functions in `//base` to convert to/from Chromium "
 "C++ types to CXX Rust types --- for example [`SpanToRustSlice`](https://"
-"source.chromium.org/chromium/chromium/src/+/main:base/containers/span_rust.h;"
-"l=21)."
+"source.chromium.org/chromium/chromium/src/+/main:base/containers/"
+"span_rust.h;l=21)."
 msgstr ""
 
 #: src/chromium/interoperability-with-cpp/using-cxx-in-chromium.md:32

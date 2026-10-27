@@ -88,8 +88,9 @@ msgstr ""
 
 #: src/control-flow-basics/macros.md:59
 msgid ""
-"[`unreachable!`](https://doc.rust-lang.org/stable/std/macro.unreachable."
-"html) is used to mark a branch of control flow that should never be hit."
+"[`unreachable!`](https://doc.rust-lang.org/stable/std/"
+"macro.unreachable.html) is used to mark a branch of control flow that should "
+"never be hit."
 msgstr ""
 
 #: src/control-flow-basics/macros.md:61

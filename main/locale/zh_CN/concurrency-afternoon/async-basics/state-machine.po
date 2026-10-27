@@ -95,8 +95,8 @@ msgstr ""
 msgid ""
 "An `.await` in the async function is translated into an a new state "
 "containing all live variables and the awaited future. The `loop` then "
-"handles that updated state, polling the future until it returns `Poll::"
-"Ready`."
+"handles that updated state, polling the future until it returns "
+"`Poll::Ready`."
 msgstr ""
 
 #: src/concurrency/async/state-machine.md:95

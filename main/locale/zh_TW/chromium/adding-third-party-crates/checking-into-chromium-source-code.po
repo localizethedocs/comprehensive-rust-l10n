@@ -35,8 +35,8 @@ msgstr ""
 
 #: src/chromium/adding-third-party-crates/checking-in.md:16
 msgid ""
-"You should land all this, along with your `Cargo.toml` and `gnrt_config."
-"toml` changes, into the Chromium repo."
+"You should land all this, along with your `Cargo.toml` and "
+"`gnrt_config.toml` changes, into the Chromium repo."
 msgstr ""
 
 #: src/chromium/adding-third-party-crates/checking-in.md:19

@@ -64,6 +64,6 @@ msgstr ""
 
 #: src/idiomatic/polymorphism/refresher/default-impls.md:46
 msgid ""
-"https://doc.rust-lang.org/reference/items/traits.html#r-items.traits."
-"associated-item-decls"
+"https://doc.rust-lang.org/reference/items/traits.html#r-"
+"items.traits.associated-item-decls"
 msgstr ""

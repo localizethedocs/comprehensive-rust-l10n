@@ -80,8 +80,8 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:54
 msgid ""
-"For example, we can call `format!` with `T`, but can't call `."
-"to_uppercase()` because it is not necessarily a `String`."
+"For example, we can call `format!` with `T`, but can't call "
+"`.to_uppercase()` because it is not necessarily a `String`."
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:57
@@ -140,9 +140,9 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:86
 msgid ""
-"Extension traits can be used to split a [dyn-incompatible trait](https://doc."
-"rust-lang.org/reference/items/traits.html#r-items.traits.dyn-compatible) in "
-"two:"
+"Extension traits can be used to split a [dyn-incompatible trait](https://"
+"doc.rust-lang.org/reference/items/traits.html#r-items.traits.dyn-compatible) "
+"in two:"
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/extending-other-traits.md:88

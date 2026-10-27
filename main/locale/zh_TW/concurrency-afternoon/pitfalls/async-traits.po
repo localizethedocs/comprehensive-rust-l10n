@@ -86,8 +86,9 @@ msgstr ""
 
 #: src/concurrency/async-pitfalls/async-traits.md:83
 msgid ""
-"[RPITIT](https://blog.rust-lang.org/2023/12/21/async-fn-rpit-in-traits."
-"html): short for return-position `impl Trait` in trait (RPIT in trait)."
+"[RPITIT](https://blog.rust-lang.org/2023/12/21/async-fn-rpit-in-"
+"traits.html): short for return-position `impl Trait` in trait (RPIT in "
+"trait)."
 msgstr ""
 
 #: src/concurrency/async-pitfalls/async-traits.md:85

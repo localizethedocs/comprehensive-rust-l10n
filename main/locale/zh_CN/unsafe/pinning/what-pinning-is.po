@@ -79,6 +79,6 @@ msgstr ""
 
 #: src/unsafe-deep-dive/pinning/what-pinning-is.md:42
 msgid ""
-"Rust style note: This trait bound is enforced through trait bounds on the `::"
-"new()` constructor, rather than on the type itself."
+"Rust style note: This trait bound is enforced through trait bounds on the "
+"`::new()` constructor, rather than on the type itself."
 msgstr ""

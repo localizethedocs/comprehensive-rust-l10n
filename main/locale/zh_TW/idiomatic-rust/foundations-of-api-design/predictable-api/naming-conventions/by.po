@@ -47,12 +47,12 @@ msgstr ""
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:37
 msgid ""
-"[`Read::by_ref()`](https://doc.rust-lang.org/std/io/trait.Read.html#method."
-"by_ref)"
+"[`Read::by_ref()`](https://doc.rust-lang.org/std/io/"
+"trait.Read.html#method.by_ref)"
 msgstr ""
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/by.md:39
 msgid ""
-"[`Iterator::advance_by()`](https://doc.rust-lang.org/std/iter/trait.Iterator."
-"html#method.advance_by) iterator method (nightly feature)"
+"[`Iterator::advance_by()`](https://doc.rust-lang.org/std/iter/"
+"trait.Iterator.html#method.advance_by) iterator method (nightly feature)"
 msgstr ""

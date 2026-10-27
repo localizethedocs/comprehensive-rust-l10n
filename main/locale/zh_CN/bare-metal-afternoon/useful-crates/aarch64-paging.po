@@ -44,8 +44,8 @@ msgstr ""
 
 #: src/bare-metal/useful-crates/aarch64-paging.md:36
 msgid ""
-"This is used in Android for the [Protected VM Firmware](https://cs.android."
-"com/android/platform/superproject/main/+/main:packages/modules/"
+"This is used in Android for the [Protected VM Firmware](https://"
+"cs.android.com/android/platform/superproject/main/+/main:packages/modules/"
 "Virtualization/guest/pvmfw/)."
 msgstr ""
 

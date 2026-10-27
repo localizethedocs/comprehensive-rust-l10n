@@ -51,8 +51,8 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:43
 msgid ""
-"Add a `panic!(\"Extension trait\");` in the body of `CountOnesExt::"
-"count_ones` to clarify which method is being invoked."
+"Add a `panic!(\"Extension trait\");` in the body of "
+"`CountOnesExt::count_ones` to clarify which method is being invoked."
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:46
@@ -96,9 +96,9 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:63
 msgid ""
-"Demonstrate: Change the signature and implementation of `CountOnesExt::"
-"count_ones` to `fn count_ones(&mut self) -> u32` and modify the invocation "
-"accordingly:"
+"Demonstrate: Change the signature and implementation of "
+"`CountOnesExt::count_ones` to `fn count_ones(&mut self) -> u32` and modify "
+"the invocation accordingly:"
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/method-resolution-conflicts.md:74

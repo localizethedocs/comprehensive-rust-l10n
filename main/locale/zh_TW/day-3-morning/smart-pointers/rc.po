@@ -38,15 +38,16 @@ msgstr ""
 
 #: src/smart-pointers/rc.md:42
 msgid ""
-"See [`Arc`](../concurrency/shared-state/arc.md) and [`Mutex`](https://doc."
-"rust-lang.org/std/sync/struct.Mutex.html) if you are in a multi-threaded "
+"See [`Arc`](../concurrency/shared-state/arc.md) and [`Mutex`](https://"
+"doc.rust-lang.org/std/sync/struct.Mutex.html) if you are in a multi-threaded "
 "context."
 msgstr ""
 
 #: src/smart-pointers/rc.md:43
 msgid ""
-"You can _downgrade_ a shared pointer into a [`Weak`](https://doc.rust-lang."
-"org/std/rc/struct.Weak.html) pointer to create cycles that will get dropped."
+"You can _downgrade_ a shared pointer into a [`Weak`](https://doc.rust-"
+"lang.org/std/rc/struct.Weak.html) pointer to create cycles that will get "
+"dropped."
 msgstr ""
 
 #: src/smart-pointers/rc.md:54

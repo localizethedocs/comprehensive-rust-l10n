@@ -132,9 +132,9 @@ msgstr ""
 
 #: src/concurrency/sync-exercises/link-checker.md:131
 msgid ""
-"Extend this to recursively extract links from all pages on the `www.google."
-"org` domain. Put an upper limit of 100 pages or so so that you don't end up "
-"being blocked by the site."
+"Extend this to recursively extract links from all pages on the "
+"`www.google.org` domain. Put an upper limit of 100 pages or so so that you "
+"don't end up being blocked by the site."
 msgstr ""
 
 #: src/concurrency/sync-exercises/link-checker.md:138

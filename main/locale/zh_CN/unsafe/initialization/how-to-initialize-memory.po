@@ -76,6 +76,6 @@ msgstr ""
 
 #: src/unsafe-deep-dive/initialization/how-to-initialize-memory.md:47
 msgid ""
-"Confirm to the type system that the memory is now initialized with the `."
-"assume_init()` method."
+"Confirm to the type system that the memory is now initialized with the "
+"`.assume_init()` method."
 msgstr ""

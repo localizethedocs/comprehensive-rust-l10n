@@ -43,11 +43,11 @@ msgstr ""
 #: src/bare-metal/aps/exceptions.md:88
 msgid ""
 "We can think of exception handlers and our main execution context more or "
-"less like different threads. [`Send` and `Sync`](../../concurrency/send-sync."
-"md) will control what we can share between them, just like with threads. For "
-"example, if we want to share some value between exception handlers and the "
-"rest of the program, and it's `Send` but not `Sync`, then we'll need to wrap "
-"it in something like a `Mutex` and put it in a static."
+"less like different threads. [`Send` and `Sync`](../../concurrency/send-"
+"sync.md) will control what we can share between them, just like with "
+"threads. For example, if we want to share some value between exception "
+"handlers and the rest of the program, and it's `Send` but not `Sync`, then "
+"we'll need to wrap it in something like a `Mutex` and put it in a static."
 msgstr ""
 
 #: src/bare-metal/aps/exceptions.md:95

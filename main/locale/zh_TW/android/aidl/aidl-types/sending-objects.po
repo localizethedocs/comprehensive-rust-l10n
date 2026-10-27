@@ -23,8 +23,8 @@ msgstr ""
 
 #: src/android/aidl/types/objects.md:11
 msgid ""
-"_birthday_service/aidl/com/example/birthdayservice/IBirthdayInfoProvider."
-"aidl_:"
+"_birthday_service/aidl/com/example/birthdayservice/"
+"IBirthdayInfoProvider.aidl_:"
 msgstr ""
 
 #: src/android/aidl/types/objects.md:22

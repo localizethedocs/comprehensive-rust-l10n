@@ -75,8 +75,8 @@ msgid ""
 "To show movement as a bitwise copy, either [open the code in the playground]"
 "(https://play.rust-lang.org/?"
 "version=stable&mode=debug&edition=2024&gist=6f587283e8e0ec02f1ea8e871fc9ac72) "
-"and look at the or [the Compiler Explorer](https://rust.godbolt.org/"
-"z/6o6nP7do4)."
+"and look at the or [the Compiler Explorer](https://rust.godbolt.org/z/"
+"6o6nP7do4)."
 msgstr ""
 
 #: src/unsafe-deep-dive/pinning/what-a-move-is.md:53

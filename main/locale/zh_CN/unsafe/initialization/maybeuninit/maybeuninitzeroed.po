@@ -33,8 +33,9 @@ msgstr ""
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md:27
 msgid ""
-"“MaybeUninit<T>::zeroed() is an alternative constructor to MaybeUninit<T>::"
-"uninit(). It instructs the compiler to fill the bits of T with zeros.”"
+"“MaybeUninit<T>::zeroed() is an alternative constructor to "
+"MaybeUninit<T>::uninit(). It instructs the compiler to fill the bits of T "
+"with zeros.”"
 msgstr ""
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md:31

@@ -65,8 +65,8 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md:63
 msgid ""
-"Demonstrate: call `Ext1::is_palindrome(\"dad\")` or `Ext2::"
-"is_palindrome(\"dad\")` instead of `\"dad\".is_palindrome()`."
+"Demonstrate: call `Ext1::is_palindrome(\"dad\")` or "
+"`Ext2::is_palindrome(\"dad\")` instead of `\"dad\".is_palindrome()`."
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md:66
@@ -78,6 +78,6 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/extension-traits/trait-method-conflicts.md:69
 msgid ""
-"Demonstrate: replace `\"dad\".is_palindrome()` with `<str as Ext1>::"
-"is_palindrome(\"dad\")` or `<str as Ext2>::is_palindrome(\"dad\")`."
+"Demonstrate: replace `\"dad\".is_palindrome()` with `<str as "
+"Ext1>::is_palindrome(\"dad\")` or `<str as Ext2>::is_palindrome(\"dad\")`."
 msgstr ""

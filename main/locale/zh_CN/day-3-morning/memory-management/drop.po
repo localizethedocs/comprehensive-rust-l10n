@@ -17,8 +17,8 @@ msgstr ""
 
 #: src/memory-management/drop.md:8
 msgid ""
-"Values which implement [`Drop`](https://doc.rust-lang.org/std/ops/trait.Drop."
-"html) can specify code to run when they go out of scope:"
+"Values which implement [`Drop`](https://doc.rust-lang.org/std/ops/"
+"trait.Drop.html) can specify code to run when they go out of scope:"
 msgstr ""
 
 #: src/memory-management/drop.md:12
@@ -71,8 +71,8 @@ msgstr ""
 
 #: src/memory-management/drop.md:46
 msgid ""
-"When a value is dropped, if it implements `std::ops::Drop` then its `Drop::"
-"drop` implementation will be called."
+"When a value is dropped, if it implements `std::ops::Drop` then its "
+"`Drop::drop` implementation will be called."
 msgstr ""
 
 #: src/memory-management/drop.md:48

@@ -40,10 +40,10 @@ msgstr ""
 
 #: src/pattern-matching/let-control-flow/while-let.md:25
 msgid ""
-"Here [`String::pop`](https://doc.rust-lang.org/stable/std/string/struct."
-"String.html#method.pop) returns `Some(c)` until the string is empty, after "
-"which it will return `None`. The `while let` lets us keep iterating through "
-"all items."
+"Here [`String::pop`](https://doc.rust-lang.org/stable/std/string/"
+"struct.String.html#method.pop) returns `Some(c)` until the string is empty, "
+"after which it will return `None`. The `while let` lets us keep iterating "
+"through all items."
 msgstr ""
 
 #: src/pattern-matching/let-control-flow/while-let.md:32

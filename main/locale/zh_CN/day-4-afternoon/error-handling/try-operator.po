@@ -73,8 +73,8 @@ msgstr ""
 
 #: src/error-handling/try.md:72
 msgid ""
-"Note that `main` can return a `Result<(), E>` as long as it implements `std::"
-"process::Termination`. In practice, this means that `E` implements `Debug`. "
-"The executable will print the `Err` variant and return a nonzero exit status "
-"on error."
+"Note that `main` can return a `Result<(), E>` as long as it implements "
+"`std::process::Termination`. In practice, this means that `E` implements "
+"`Debug`. The executable will print the `Err` variant and return a nonzero "
+"exit status on error."
 msgstr ""

@@ -143,8 +143,8 @@ msgstr ""
 
 #: src/memory-management/move.md:106
 msgid ""
-"Alternatively, `main` can pass a clone of `name` in the first call (`name."
-"clone()`)."
+"Alternatively, `main` can pass a clone of `name` in the first call "
+"(`name.clone()`)."
 msgstr ""
 
 #: src/memory-management/move.md:108

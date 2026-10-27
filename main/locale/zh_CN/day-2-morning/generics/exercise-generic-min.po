@@ -68,7 +68,7 @@ msgstr ""
 
 #: src/generics/exercise.md:41
 msgid ""
-"Show students the [`Ord`](https://doc.rust-lang.org/stable/std/cmp/trait.Ord."
-"html) trait and [`Ordering`](https://doc.rust-lang.org/stable/std/cmp/enum."
-"Ordering.html) enum."
+"Show students the [`Ord`](https://doc.rust-lang.org/stable/std/cmp/"
+"trait.Ord.html) trait and [`Ordering`](https://doc.rust-lang.org/stable/std/"
+"cmp/enum.Ordering.html) enum."
 msgstr ""

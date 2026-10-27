@@ -133,8 +133,8 @@ msgstr ""
 
 #: src/std-types/string.md:62
 msgid ""
-"Many types can be converted to a string with the [`to_string`](https://doc."
-"rust-lang.org/std/string/trait.ToString.html#tymethod.to_string) method. "
+"Many types can be converted to a string with the [`to_string`](https://"
+"doc.rust-lang.org/std/string/trait.ToString.html#tymethod.to_string) method. "
 "This trait is automatically implemented for all types that implement "
 "`Display`, so anything that can be formatted can also be converted to a "
 "string."

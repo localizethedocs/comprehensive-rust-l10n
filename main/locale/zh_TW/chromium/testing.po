@@ -18,8 +18,8 @@ msgstr ""
 #: src/chromium/testing.md:8
 msgid ""
 "Rust community typically authors unit tests in a module placed in the same "
-"source file as the code being tested. This was covered [earlier](../testing."
-"md) in the course and looks like this:"
+"source file as the code being tested. This was covered [earlier](../"
+"testing.md) in the course and looks like this:"
 msgstr ""
 
 #: src/chromium/testing.md:13

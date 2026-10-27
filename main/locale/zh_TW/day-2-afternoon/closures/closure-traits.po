@@ -18,9 +18,10 @@ msgstr ""
 #: src/closures/traits.md:8
 msgid ""
 "Closures or lambda expressions have types that cannot be named. However, "
-"they implement special [`Fn`](https://doc.rust-lang.org/std/ops/trait.Fn."
-"html), [`FnMut`](https://doc.rust-lang.org/std/ops/trait.FnMut.html), and "
-"[`FnOnce`](https://doc.rust-lang.org/std/ops/trait.FnOnce.html) traits:"
+"they implement special [`Fn`](https://doc.rust-lang.org/std/ops/"
+"trait.Fn.html), [`FnMut`](https://doc.rust-lang.org/std/ops/"
+"trait.FnMut.html), and [`FnOnce`](https://doc.rust-lang.org/std/ops/"
+"trait.FnOnce.html) traits:"
 msgstr ""
 
 #: src/closures/traits.md:13

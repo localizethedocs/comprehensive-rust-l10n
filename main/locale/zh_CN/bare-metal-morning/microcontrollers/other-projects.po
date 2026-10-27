@@ -62,8 +62,8 @@ msgstr ""
 
 #: src/bare-metal/microcontrollers/other-projects.md:21
 msgid ""
-"Some platforms have `std` implementations, e.g. [esp-idf](https://esp-rs."
-"github.io/book/overview/using-the-standard-library.html)."
+"Some platforms have `std` implementations, e.g. [esp-idf](https://esp-"
+"rs.github.io/book/overview/using-the-standard-library.html)."
 msgstr ""
 
 #: src/bare-metal/microcontrollers/other-projects.md:26

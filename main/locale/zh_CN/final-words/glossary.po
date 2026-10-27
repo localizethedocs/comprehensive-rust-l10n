@@ -338,8 +338,8 @@ msgstr ""
 msgid ""
 "struct:  \n"
 "A composite data type in Rust that groups together variables of different "
-"types under a single name. See [Structs](user-defined-types/named-structs."
-"md)."
+"types under a single name. See [Structs](user-defined-types/named-"
+"structs.md)."
 msgstr ""
 
 #: src/glossary.md:173

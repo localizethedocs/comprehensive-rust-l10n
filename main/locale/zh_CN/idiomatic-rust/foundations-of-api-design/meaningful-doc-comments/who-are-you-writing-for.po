@@ -55,8 +55,8 @@ msgid ""
 "/// final stages of code generation.  \n"
 "///  \n"
 "/// For more about Rust's intermediate representations, see the  \n"
-"/// [rustc-dev-guide](https://rustc-dev-guide.rust-lang.org/mir/index."
-"html).  \n"
+"/// [rustc-dev-guide](https://rustc-dev-guide.rust-lang.org/mir/"
+"index.html).  \n"
 msgstr ""
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/who-are-you-writing-for.md:39

@@ -33,8 +33,8 @@ msgstr ""
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md:23
 msgid ""
-"Attempt to compile the program to trigger the compiler error "
-"(\"error\\[E0133\\]: call to unsafe function ...\")."
+"Attempt to compile the program to trigger the compiler error (\"error\\"
+"[E0133\\]: call to unsafe function ...\")."
 msgstr ""
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md:26
@@ -66,8 +66,8 @@ msgstr ""
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md:37
 msgid ""
-"Consult [the documentation](https://doc.rust-lang.org/std/primitive.pointer."
-"html#method.as_mut) for the `as_mut` method."
+"Consult [the documentation](https://doc.rust-lang.org/std/"
+"primitive.pointer.html#method.as_mut) for the `as_mut` method."
 msgstr ""
 
 #: src/unsafe-deep-dive/safety-preconditions/determining.md:39

@@ -48,8 +48,9 @@ msgstr ""
 
 #: src/exercises/bare-metal/rtc.md:20
 msgid ""
-"Once the interrupt is enabled, you can put the core to sleep via `arm_gic::"
-"wfi()`, which will cause the core to sleep until it receives an interrupt."
+"Once the interrupt is enabled, you can put the core to sleep via "
+"`arm_gic::wfi()`, which will cause the core to sleep until it receives an "
+"interrupt."
 msgstr ""
 
 #: src/exercises/bare-metal/rtc.md:24

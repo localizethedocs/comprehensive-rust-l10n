@@ -17,8 +17,8 @@ msgstr ""
 
 #: src/std-traits/operators.md:8
 msgid ""
-"Operator overloading is implemented via traits in [`std::ops`](https://doc."
-"rust-lang.org/std/ops/index.html):"
+"Operator overloading is implemented via traits in [`std::ops`](https://"
+"doc.rust-lang.org/std/ops/index.html):"
 msgstr ""
 
 #: src/std-traits/operators.md:11

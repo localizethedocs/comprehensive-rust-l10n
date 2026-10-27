@@ -18,10 +18,10 @@ msgstr ""
 #: src/chromium/interoperability-with-cpp/error-handling-qr.md:8
 msgid ""
 "The QR code generator is [an example](https://source.chromium.org/chromium/"
-"chromium/src/+/main:components/qr_code_generator/qr_code_generator_ffi_glue."
-"rs;l=13-18;drc=7bf1b75b910ca430501b9c6a74c1d18a0223ecca) where a boolean is "
-"used to communicate success vs failure, and where the successful result can "
-"be passed across the FFI boundary:"
+"chromium/src/+/main:components/qr_code_generator/"
+"qr_code_generator_ffi_glue.rs;l=13-18;drc=7bf1b75b910ca430501b9c6a74c1d18a0223ecca) "
+"where a boolean is used to communicate success vs failure, and where the "
+"successful result can be passed across the FFI boundary:"
 msgstr ""
 
 #: src/chromium/interoperability-with-cpp/error-handling-qr.md:13

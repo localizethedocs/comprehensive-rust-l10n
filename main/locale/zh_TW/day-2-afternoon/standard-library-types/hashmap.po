@@ -106,8 +106,8 @@ msgstr ""
 
 #: src/std-types/hashmap.md:82
 msgid ""
-"This type has several \"method-specific\" return types, such as `std::"
-"collections::hash_map::Keys`. These types often appear in searches of the "
-"Rust docs. Show students the docs for this type, and the helpful link back "
-"to the `keys` method."
+"This type has several \"method-specific\" return types, such as "
+"`std::collections::hash_map::Keys`. These types often appear in searches of "
+"the Rust docs. Show students the docs for this type, and the helpful link "
+"back to the `keys` method."
 msgstr ""

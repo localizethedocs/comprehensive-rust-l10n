@@ -91,6 +91,6 @@ msgstr ""
 
 #: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/dyn-compatible.md:56
 msgid ""
-"https://doc.rust-lang.org/1.91.1/reference/items/traits.html#r-items.traits."
-"dyn-compatible"
+"https://doc.rust-lang.org/1.91.1/reference/items/traits.html#r-"
+"items.traits.dyn-compatible"
 msgstr ""

@@ -18,9 +18,9 @@ msgstr ""
 #: src/error-handling/error.md:8
 msgid ""
 "Sometimes we want to allow any type of error to be returned without writing "
-"our own enum covering all the different possibilities. The `std::error::"
-"Error` trait makes it easy to create a trait object that can contain any "
-"error."
+"our own enum covering all the different possibilities. The "
+"`std::error::Error` trait makes it easy to create a trait object that can "
+"contain any error."
 msgstr ""
 
 #: src/error-handling/error.md:13

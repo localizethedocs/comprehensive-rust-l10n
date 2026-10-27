@@ -59,10 +59,10 @@ msgstr ""
 
 #: src/android/interoperability/with-c.md:38
 msgid ""
-"The [`\"C\"` part](https://doc.rust-lang.org/reference/items/external-blocks."
-"html#abi) of the `extern` block tells Rust that `abs` can be called using "
-"the C [ABI](https://en.wikipedia.org/wiki/Application_binary_interface) "
-"(application binary interface)."
+"The [`\"C\"` part](https://doc.rust-lang.org/reference/items/external-"
+"blocks.html#abi) of the `extern` block tells Rust that `abs` can be called "
+"using the C [ABI](https://en.wikipedia.org/wiki/"
+"Application_binary_interface) (application binary interface)."
 msgstr ""
 
 #: src/android/interoperability/with-c.md:41

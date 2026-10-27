@@ -79,8 +79,8 @@ msgstr ""
 
 #: src/exercises/chromium/interoperability-with-cpp.md:32
 msgid ""
-"You may also need to `#include \"third_party/rust/cxx/v1/crate/include/cxx."
-"h\"`"
+"You may also need to `#include \"third_party/rust/cxx/v1/crate/include/"
+"cxx.h\"`"
 msgstr ""
 
 #: src/exercises/chromium/interoperability-with-cpp.md:34
@@ -93,14 +93,14 @@ msgstr ""
 
 #: src/exercises/chromium/interoperability-with-cpp.md:36
 msgid ""
-"Intentionally get the Rust function signatures mismatched from the `#[cxx::"
-"bridge]`, and get used to the errors you see."
+"Intentionally get the Rust function signatures mismatched from the "
+"`#[cxx::bridge]`, and get used to the errors you see."
 msgstr ""
 
 #: src/exercises/chromium/interoperability-with-cpp.md:38
 msgid ""
-"Intentionally get the C++ function signatures mismatched from the `#[cxx::"
-"bridge]`, and get used to the errors you see."
+"Intentionally get the C++ function signatures mismatched from the "
+"`#[cxx::bridge]`, and get used to the errors you see."
 msgstr ""
 
 #: src/exercises/chromium/interoperability-with-cpp.md:40

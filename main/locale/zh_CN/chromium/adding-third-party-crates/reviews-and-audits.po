@@ -18,9 +18,9 @@ msgstr ""
 #: src/chromium/adding-third-party-crates/reviews-and-audits.md:8
 msgid ""
 "Adding new libraries is subject to Chromium's standard [policies](https://"
-"chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/rust."
-"md#Third_party-review), but of course also subject to security review. As "
-"you may be bringing in not just a single crate but also transitive "
+"chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/"
+"rust.md#Third_party-review), but of course also subject to security review. "
+"As you may be bringing in not just a single crate but also transitive "
 "dependencies, there may be a substantial amount of code to review. On the "
 "other hand, safe Rust code can have limited negative side effects. How "
 "should you review it?"
@@ -60,8 +60,8 @@ msgstr ""
 #: src/chromium/adding-third-party-crates/reviews-and-audits.md:26
 msgid ""
 "Ensure any `unsafe` code is good enough for the [Rule of Two](https://"
-"chromium.googlesource.com/chromium/src/+/main/docs/security/rule-of-2."
-"md#unsafe-code-in-safe-languages)"
+"chromium.googlesource.com/chromium/src/+/main/docs/security/rule-"
+"of-2.md#unsafe-code-in-safe-languages)"
 msgstr ""
 
 #: src/chromium/adding-third-party-crates/reviews-and-audits.md:27
@@ -77,6 +77,7 @@ msgstr ""
 
 #: src/chromium/adding-third-party-crates/reviews-and-audits.md:32
 msgid ""
-"These are just guidelines --- work with reviewers from `security@chromium."
-"org` to work out the right way to become confident of the crate."
+"These are just guidelines --- work with reviewers from "
+"`security@chromium.org` to work out the right way to become confident of the "
+"crate."
 msgstr ""

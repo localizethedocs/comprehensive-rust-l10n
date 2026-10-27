@@ -102,8 +102,9 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/raii.md:79
 msgid ""
-"If the file is moved into another function (as is this case with `File::"
-"close()`), the value is dropped when that function returns — not in `main`."
+"If the file is moved into another function (as is this case with "
+"`File::close()`), the value is dropped when that function returns — not in "
+"`main`."
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/raii.md:83

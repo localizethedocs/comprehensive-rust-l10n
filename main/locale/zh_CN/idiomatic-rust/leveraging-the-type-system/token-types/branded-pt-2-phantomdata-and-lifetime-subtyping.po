@@ -197,9 +197,9 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md:125
 msgid ""
-"The reason this compiles is that the [**Variance**](https://doc.rust-lang."
-"org/stable/reference/subtyping.html#r-subtyping.variance) of the lifetime "
-"inside of `InvariantLifetime` is too lenient."
+"The reason this compiles is that the [**Variance**](https://doc.rust-"
+"lang.org/stable/reference/subtyping.html#r-subtyping.variance) of the "
+"lifetime inside of `InvariantLifetime` is too lenient."
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/token-types/branded-02-phantomdata.md:129

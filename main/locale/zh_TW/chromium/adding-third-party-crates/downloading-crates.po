@@ -17,8 +17,8 @@ msgstr "下載軟體箱"
 
 #: src/chromium/adding-third-party-crates/downloading-crates.md:8
 msgid ""
-"A tool called `gnrt` knows how to download crates and how to generate `BUILD."
-"gn` rules."
+"A tool called `gnrt` knows how to download crates and how to generate "
+"`BUILD.gn` rules."
 msgstr ""
 
 #: src/chromium/adding-third-party-crates/downloading-crates.md:11

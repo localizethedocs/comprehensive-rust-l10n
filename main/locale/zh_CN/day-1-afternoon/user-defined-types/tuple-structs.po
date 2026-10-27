@@ -101,6 +101,6 @@ msgstr ""
 
 #: src/user-defined-types/tuple-structs.md:68
 msgid ""
-"The example is a subtle reference to the [Mars Climate Orbiter](https://en."
-"wikipedia.org/wiki/Mars_Climate_Orbiter) failure."
+"The example is a subtle reference to the [Mars Climate Orbiter](https://"
+"en.wikipedia.org/wiki/Mars_Climate_Orbiter) failure."
 msgstr ""

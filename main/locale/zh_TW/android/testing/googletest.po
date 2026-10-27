@@ -65,8 +65,8 @@ msgstr ""
 #: src/android/testing/googletest.md:49
 msgid ""
 "The `use googletest::prelude::*;` line imports a number of [commonly used "
-"macros and types](https://docs.rs/googletest/latest/googletest/prelude/index."
-"html)."
+"macros and types](https://docs.rs/googletest/latest/googletest/prelude/"
+"index.html)."
 msgstr ""
 
 #: src/android/testing/googletest.md:52

@@ -18,8 +18,8 @@ msgstr ""
 #: src/idiomatic/leveraging-the-type-system/raii/forget_and_drop.md:8
 msgid ""
 "Below are the signatures for the [`drop()`](https://doc.rust-lang.org/std/"
-"mem/fn.drop.html) and [`forget()`](https://doc.rust-lang.org/std/mem/fn."
-"forget.html) functions:"
+"mem/fn.drop.html) and [`forget()`](https://doc.rust-lang.org/std/mem/"
+"fn.forget.html) functions:"
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/raii/forget_and_drop.md:13
@@ -48,9 +48,9 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/raii/forget_and_drop.md:31
 msgid ""
-"`forget()` uses [`ManuallyDrop`](https://doc.rust-lang.org/std/mem/struct."
-"ManuallyDrop.html) to prevent the destructor `Drop::drop()` from being "
-"invoked."
+"`forget()` uses [`ManuallyDrop`](https://doc.rust-lang.org/std/mem/"
+"struct.ManuallyDrop.html) to prevent the destructor `Drop::drop()` from "
+"being invoked."
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/raii/forget_and_drop.md:35

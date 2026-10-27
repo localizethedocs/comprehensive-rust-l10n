@@ -50,9 +50,9 @@ msgid ""
 "For example, Rust's enums are known as \"algebraic data types\" in languages "
 "like Haskell and OCaml. You can take inspiration from learning material "
 "geared towards functional languages when looking for guidance on how to "
-"design with types. [\"Domain Modeling Made Functional\"](https://pragprog."
-"com/titles/swdddf/domain-modeling-made-functional/) is a great resource on "
-"the topic, with examples written in F#."
+"design with types. [\"Domain Modeling Made Functional\"](https://"
+"pragprog.com/titles/swdddf/domain-modeling-made-functional/) is a great "
+"resource on the topic, with examples written in F#."
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:32

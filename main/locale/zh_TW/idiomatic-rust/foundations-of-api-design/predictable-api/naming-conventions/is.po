@@ -34,6 +34,6 @@ msgstr ""
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/is.md:31
 msgid ""
 "`is` prefix is preferred over methods with `not` in the name. There are no "
-"instances of `is_not_` in standard library methods, just use `!value."
-"is_[condition]`."
+"instances of `is_not_` in standard library methods, just use `!"
+"value.is_[condition]`."
 msgstr ""

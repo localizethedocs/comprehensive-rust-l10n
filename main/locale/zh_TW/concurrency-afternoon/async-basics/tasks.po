@@ -68,9 +68,9 @@ msgstr ""
 
 #: src/concurrency/async/tasks.md:50
 msgid ""
-"Try connecting to it with a TCP connection tool like [nc](https://www.unix."
-"com/man-page/linux/1/nc/) or [telnet](https://www.unix.com/man-page/linux/1/"
-"telnet/)."
+"Try connecting to it with a TCP connection tool like [nc](https://"
+"www.unix.com/man-page/linux/1/nc/) or [telnet](https://www.unix.com/man-page/"
+"linux/1/telnet/)."
 msgstr ""
 
 #: src/concurrency/async/tasks.md:54

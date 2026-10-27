@@ -39,14 +39,14 @@ msgstr ""
 
 #: src/bare-metal/aps/safemmio/registers.md:13
 msgid ""
-"[`ReadPure`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/struct."
-"ReadPure.html)"
+"[`ReadPure`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/"
+"struct.ReadPure.html)"
 msgstr ""
 
 #: src/bare-metal/aps/safemmio/registers.md:13
 msgid ""
-"[`ReadOnly`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/struct."
-"ReadOnly.html)"
+"[`ReadOnly`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/"
+"struct.ReadOnly.html)"
 msgstr ""
 
 #: src/bare-metal/aps/safemmio/registers.md:14
@@ -55,20 +55,20 @@ msgstr ""
 
 #: src/bare-metal/aps/safemmio/registers.md:14
 msgid ""
-"[`WriteOnly`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/struct."
-"WriteOnly.html)"
+"[`WriteOnly`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/"
+"struct.WriteOnly.html)"
 msgstr ""
 
 #: src/bare-metal/aps/safemmio/registers.md:14
 msgid ""
-"[`ReadPureWrite`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/struct."
-"ReadPureWrite.html)"
+"[`ReadPureWrite`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/"
+"struct.ReadPureWrite.html)"
 msgstr ""
 
 #: src/bare-metal/aps/safemmio/registers.md:14
 msgid ""
-"[`ReadWrite`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/struct."
-"ReadWrite.html)"
+"[`ReadWrite`](https://docs.rs/safe-mmio/latest/safe_mmio/fields/"
+"struct.ReadWrite.html)"
 msgstr ""
 
 #: src/bare-metal/aps/safemmio/registers.md:57

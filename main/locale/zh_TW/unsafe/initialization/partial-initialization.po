@@ -60,8 +60,8 @@ msgstr ""
 
 #: src/unsafe-deep-dive/initialization/partial-initialization.md:48
 msgid ""
-"Q: Which part of the code snippet is performing a similar role to `."
-"assume_init()`? A: The pointer cast and the implicit read."
+"Q: Which part of the code snippet is performing a similar role to "
+"`.assume_init()`? A: The pointer cast and the implicit read."
 msgstr ""
 
 #: src/unsafe-deep-dive/initialization/partial-initialization.md:51

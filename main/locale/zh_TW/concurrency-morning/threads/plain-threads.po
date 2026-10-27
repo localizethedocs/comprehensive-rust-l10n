@@ -87,8 +87,8 @@ msgstr ""
 
 #: src/concurrency/threads/plain.md:51
 msgid ""
-"`JoinHandle` has a [`.join()`](https://doc.rust-lang.org/std/thread/struct."
-"JoinHandle.html#method.join) method that blocks."
+"`JoinHandle` has a [`.join()`](https://doc.rust-lang.org/std/thread/"
+"struct.JoinHandle.html#method.join) method that blocks."
 msgstr ""
 
 #: src/concurrency/threads/plain.md:53
@@ -113,8 +113,8 @@ msgstr ""
 
 #: src/concurrency/threads/plain.md:59
 msgid ""
-"`JoinHandle` [`.join()`](https://doc.rust-lang.org/std/thread/struct."
-"JoinHandle.html#method.join) returns `thread::Result<T>`"
+"`JoinHandle` [`.join()`](https://doc.rust-lang.org/std/thread/"
+"struct.JoinHandle.html#method.join) returns `thread::Result<T>`"
 msgstr ""
 
 #: src/concurrency/threads/plain.md:61

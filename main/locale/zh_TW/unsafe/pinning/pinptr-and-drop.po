@@ -52,10 +52,10 @@ msgstr ""
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md:41
 msgid ""
-"Pinned types make guarantees about memory stability. Operations like `ptr::"
-"read` and `mem::replace` can silently break these guarantees by moving or "
-"duplicating data, invalidating internal pointers without the type system's "
-"knowledge."
+"Pinned types make guarantees about memory stability. Operations like "
+"`ptr::read` and `mem::replace` can silently break these guarantees by moving "
+"or duplicating data, invalidating internal pointers without the type "
+"system's knowledge."
 msgstr ""
 
 #: src/unsafe-deep-dive/pinning/pin-and-drop.md:45

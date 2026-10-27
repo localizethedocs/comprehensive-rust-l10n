@@ -19,8 +19,8 @@ msgstr ""
 msgid ""
 "Use [`pointer::read_volatile`](https://doc.rust-lang.org/stable/core/"
 "primitive.pointer.html#method.read_volatile) and [`pointer::write_volatile`]"
-"(https://doc.rust-lang.org/stable/core/primitive.pointer.html#method."
-"write_volatile)."
+"(https://doc.rust-lang.org/stable/core/"
+"primitive.pointer.html#method.write_volatile)."
 msgstr ""
 
 #: src/bare-metal/aps/mmio.md:9

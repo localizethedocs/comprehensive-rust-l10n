@@ -43,7 +43,7 @@ msgstr ""
 
 #: src/android/interoperability.md:22
 msgid ""
-"Technically, we say that Rust can be compiled to the same [ABI](https://en."
-"wikipedia.org/wiki/Application_binary_interface) (application binary "
+"Technically, we say that Rust can be compiled to the same [ABI](https://"
+"en.wikipedia.org/wiki/Application_binary_interface) (application binary "
 "interface) as C code."
 msgstr ""

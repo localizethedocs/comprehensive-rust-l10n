@@ -17,10 +17,10 @@ msgstr ""
 
 #: src/std-traits/from-and-into.md:8
 msgid ""
-"Types implement [`From`](https://doc.rust-lang.org/std/convert/trait.From."
-"html) and [`Into`](https://doc.rust-lang.org/std/convert/trait.Into.html) to "
-"facilitate type conversions. Unlike `as`, these traits correspond to "
-"lossless, infallible conversions."
+"Types implement [`From`](https://doc.rust-lang.org/std/convert/"
+"trait.From.html) and [`Into`](https://doc.rust-lang.org/std/convert/"
+"trait.Into.html) to facilitate type conversions. Unlike `as`, these traits "
+"correspond to lossless, infallible conversions."
 msgstr ""
 
 #: src/std-traits/from-and-into.md:12 src/std-traits/from-and-into.md:27

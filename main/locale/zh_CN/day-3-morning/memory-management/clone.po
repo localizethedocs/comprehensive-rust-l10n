@@ -51,8 +51,8 @@ msgstr ""
 
 #: src/memory-management/clone.md:35
 msgid ""
-"`clone` generally performs a deep copy of the value, meaning that if you e."
-"g. clone an array, all of the elements of the array are cloned as well."
+"`clone` generally performs a deep copy of the value, meaning that if you "
+"e.g. clone an array, all of the elements of the array are cloned as well."
 msgstr ""
 
 #: src/memory-management/clone.md:38

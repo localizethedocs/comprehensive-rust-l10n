@@ -49,9 +49,9 @@ msgstr ""
 msgid ""
 "This example removes the flag from the previous slide and makes the drop "
 "method panic unconditionally. To avoid that panic on a successful commit, "
-"the commit method now takes ownership of the transaction and calls [`std::"
-"mem::forget`](https://doc.rust-lang.org/std/mem/fn.forget.html), which "
-"prevents the `Drop::drop()` method from running."
+"the commit method now takes ownership of the transaction and calls "
+"[`std::mem::forget`](https://doc.rust-lang.org/std/mem/fn.forget.html), "
+"which prevents the `Drop::drop()` method from running."
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb_forget.md:55

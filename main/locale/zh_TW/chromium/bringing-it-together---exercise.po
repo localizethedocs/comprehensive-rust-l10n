@@ -84,10 +84,10 @@ msgstr ""
 #: src/exercises/chromium/bringing-it-together.md:44
 msgid ""
 "If students decide to do the conversion on the Rust side, they'll need to "
-"consider [`String::from_utf16`](https://doc.rust-lang.org/std/string/struct."
-"String.html#method.from_utf16), consider error handling, and consider which "
-"[CXX supported types can transfer many u16s](https://cxx.rs/binding/slice."
-"html)."
+"consider [`String::from_utf16`](https://doc.rust-lang.org/std/string/"
+"struct.String.html#method.from_utf16), consider error handling, and consider "
+"which [CXX supported types can transfer many u16s](https://cxx.rs/binding/"
+"slice.html)."
 msgstr ""
 
 #: src/exercises/chromium/bringing-it-together.md:47

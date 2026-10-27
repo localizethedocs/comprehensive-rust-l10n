@@ -24,9 +24,9 @@ msgstr ""
 #: src/running-the-course/translations.md:11
 msgid ""
 "[Brazilian Portuguese](https://google.github.io/comprehensive-rust/pt-BR/) "
-"by [@rastringer](https://github.com/rastringer), [@hugojacob](https://github."
-"com/hugojacob), [@joaovicmendes](https://github.com/joaovicmendes), and "
-"[@henrif75](https://github.com/henrif75)."
+"by [@rastringer](https://github.com/rastringer), [@hugojacob](https://"
+"github.com/hugojacob), [@joaovicmendes](https://github.com/joaovicmendes), "
+"and [@henrif75](https://github.com/henrif75)."
 msgstr ""
 
 #: src/running-the-course/translations.md:13
@@ -68,8 +68,8 @@ msgstr ""
 msgid ""
 "[Korean](https://google.github.io/comprehensive-rust/ko/) by [@keispace]"
 "(https://github.com/keispace), [@jiyongp](https://github.com/jiyongp), "
-"[@jooyunghan](https://github.com/jooyunghan), and [@namhyung](https://github."
-"com/namhyung)."
+"[@jooyunghan](https://github.com/jooyunghan), and [@namhyung](https://"
+"github.com/namhyung)."
 msgstr ""
 
 #: src/running-the-course/translations.md:22

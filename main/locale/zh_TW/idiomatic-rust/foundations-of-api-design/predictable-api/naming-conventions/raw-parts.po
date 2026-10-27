@@ -47,8 +47,8 @@ msgstr ""
 
 #: src/idiomatic/foundations-api-design/predictable-api/naming-conventions/raw_parts.md:31
 msgid ""
-"Such a case might be passing a pointer of `sizeof T * 10` to `Vec::"
-"from_raw_parts` but also passing `20` as the capacity argument, which would "
-"lead to writing or accessing values 10 through 19 in the vector being "
+"Such a case might be passing a pointer of `sizeof T * 10` to "
+"`Vec::from_raw_parts` but also passing `20` as the capacity argument, which "
+"would lead to writing or accessing values 10 through 19 in the vector being "
 "undefined behavior."
 msgstr ""

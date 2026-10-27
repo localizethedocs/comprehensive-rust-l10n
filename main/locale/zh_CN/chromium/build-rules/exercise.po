@@ -90,8 +90,8 @@ msgstr ""
 
 #: src/exercises/chromium/build-rules.md:45
 msgid ""
-"Information about [`extern \"C\"`](https://doc.rust-lang.org/std/keyword."
-"extern.html)"
+"Information about [`extern \"C\"`](https://doc.rust-lang.org/std/"
+"keyword.extern.html)"
 msgstr ""
 
 #: src/exercises/chromium/build-rules.md:46

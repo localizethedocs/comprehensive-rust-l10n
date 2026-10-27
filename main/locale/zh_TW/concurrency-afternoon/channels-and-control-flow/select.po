@@ -18,9 +18,9 @@ msgstr ""
 #: src/concurrency/async-control-flow/select.md:8
 msgid ""
 "A select operation waits until any of a set of futures is ready, and "
-"responds to that future's result. In JavaScript, this is similar to `Promise."
-"race`. In Python, it compares to `asyncio.wait(task_set, return_when=asyncio."
-"FIRST_COMPLETED)`."
+"responds to that future's result. In JavaScript, this is similar to "
+"`Promise.race`. In Python, it compares to `asyncio.wait(task_set, "
+"return_when=asyncio.FIRST_COMPLETED)`."
 msgstr ""
 
 #: src/concurrency/async-control-flow/select.md:13

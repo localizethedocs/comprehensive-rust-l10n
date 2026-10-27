@@ -67,8 +67,8 @@ msgstr ""
 
 #: src/cargo/rust-ecosystem.md:37
 msgid ""
-"Dependencies can also be resolved from alternative [registries](https://doc."
-"rust-lang.org/cargo/reference/registries.html), git, folders, and more."
+"Dependencies can also be resolved from alternative [registries](https://"
+"doc.rust-lang.org/cargo/reference/registries.html), git, folders, and more."
 msgstr ""
 
 #: src/cargo/rust-ecosystem.md:40
@@ -123,14 +123,14 @@ msgstr ""
 
 #: src/cargo/rust-ecosystem.md:61
 msgid ""
-"[build scripting](https://doc.rust-lang.org/cargo/reference/build-scripts."
-"html)"
+"[build scripting](https://doc.rust-lang.org/cargo/reference/build-"
+"scripts.html)"
 msgstr ""
 
 #: src/cargo/rust-ecosystem.md:62
 msgid ""
-"[global installation](https://doc.rust-lang.org/cargo/commands/cargo-install."
-"html)"
+"[global installation](https://doc.rust-lang.org/cargo/commands/cargo-"
+"install.html)"
 msgstr ""
 
 #: src/cargo/rust-ecosystem.md:63

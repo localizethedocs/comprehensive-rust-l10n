@@ -30,8 +30,8 @@ msgstr ""
 msgid ""
 "Check the documentation for the [`lsm303agr`](https://docs.rs/lsm303agr/"
 "latest/lsm303agr/) and [`microbit-v2`](https://docs.rs/microbit-v2/latest/"
-"microbit/) crates, as well as the [micro:bit hardware](https://tech.microbit."
-"org/hardware/)."
+"microbit/) crates, as well as the [micro:bit hardware](https://"
+"tech.microbit.org/hardware/)."
 msgstr ""
 
 #: src/exercises/bare-metal/compass.md:18
@@ -46,9 +46,9 @@ msgstr ""
 
 #: src/exercises/bare-metal/compass.md:20
 msgid ""
-"The LSM303AGR driver needs something implementing the `embedded_hal::i2c::"
-"I2c` trait. The [`microbit::hal::Twim`](https://docs.rs/microbit-v2/latest/"
-"microbit/hal/struct.Twim.html) struct implements this."
+"The LSM303AGR driver needs something implementing the "
+"`embedded_hal::i2c::I2c` trait. The [`microbit::hal::Twim`](https://docs.rs/"
+"microbit-v2/latest/microbit/hal/struct.Twim.html) struct implements this."
 msgstr ""
 
 #: src/exercises/bare-metal/compass.md:24
@@ -59,9 +59,9 @@ msgstr ""
 
 #: src/exercises/bare-metal/compass.md:27
 msgid ""
-"You can also look at the [nRF52833 datasheet](https://infocenter.nordicsemi."
-"com/pdf/nRF52833_PS_v1.5.pdf) if you want, but it shouldn't be necessary for "
-"this exercise."
+"You can also look at the [nRF52833 datasheet](https://"
+"infocenter.nordicsemi.com/pdf/nRF52833_PS_v1.5.pdf) if you want, but it "
+"shouldn't be necessary for this exercise."
 msgstr ""
 
 #: src/exercises/bare-metal/compass.md:31

@@ -109,8 +109,8 @@ msgstr ""
 
 #: src/bare-metal/aps/inline-assembly.md:64
 msgid ""
-"Just `#[no_mangle]` would be sufficient but [RFC3325](https://rust-lang."
-"github.io/rfcs/3325-unsafe-attributes.html) uses this notation to draw "
+"Just `#[no_mangle]` would be sufficient but [RFC3325](https://rust-"
+"lang.github.io/rfcs/3325-unsafe-attributes.html) uses this notation to draw "
 "reviewer attention to attributes that might cause undefined behavior if used "
 "incorrectly."
 msgstr ""

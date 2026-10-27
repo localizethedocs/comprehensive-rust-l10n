@@ -54,8 +54,8 @@ msgstr ""
 
 #: src/std-traits/default.md:50
 msgid ""
-"Standard Rust types commonly implement `Default` with reasonable values (e."
-"g. `0`, `\"\"`, etc)."
+"Standard Rust types commonly implement `Default` with reasonable values "
+"(e.g. `0`, `\"\"`, etc)."
 msgstr ""
 
 #: src/std-traits/default.md:52

@@ -37,8 +37,8 @@ msgstr ""
 #: src/bare-metal/microcontrollers/probe-rs.md:15
 msgid ""
 "`cargo-embed` is a cargo subcommand to build and flash binaries, log RTT "
-"(Real Time Transfers) output and connect GDB. It's configured by an `Embed."
-"toml` file in your project directory."
+"(Real Time Transfers) output and connect GDB. It's configured by an "
+"`Embed.toml` file in your project directory."
 msgstr ""
 
 #: src/bare-metal/microcontrollers/probe-rs.md:21

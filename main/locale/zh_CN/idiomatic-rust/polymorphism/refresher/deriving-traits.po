@@ -77,6 +77,6 @@ msgstr ""
 
 #: src/idiomatic/polymorphism/refresher/deriving-traits.md:51
 msgid ""
-"https://doc.rust-lang.org/reference/attributes/derive.html#r-attributes."
-"derive"
+"https://doc.rust-lang.org/reference/attributes/derive.html#r-"
+"attributes.derive"
 msgstr ""

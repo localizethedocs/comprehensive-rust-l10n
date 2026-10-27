@@ -32,9 +32,9 @@ msgstr ""
 
 #: src/modules/filesystem.md:17
 msgid ""
-"This tells Rust that the `garden` module content is found at `src/garden."
-"rs`. Similarly, a `garden::vegetables` module can be found at `src/garden/"
-"vegetables.rs`."
+"This tells Rust that the `garden` module content is found at `src/"
+"garden.rs`. Similarly, a `garden::vegetables` module can be found at `src/"
+"garden/vegetables.rs`."
 msgstr ""
 
 #: src/modules/filesystem.md:21
@@ -83,8 +83,9 @@ msgstr ""
 
 #: src/modules/filesystem.md:57
 msgid ""
-"The main reason to introduce `filename.rs` as alternative to `filename/mod."
-"rs` was because many files named `mod.rs` can be hard to distinguish in IDEs."
+"The main reason to introduce `filename.rs` as alternative to `filename/"
+"mod.rs` was because many files named `mod.rs` can be hard to distinguish in "
+"IDEs."
 msgstr ""
 
 #: src/modules/filesystem.md:60

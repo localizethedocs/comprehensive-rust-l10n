@@ -45,10 +45,10 @@ msgstr ""
 
 #: src/chromium/testing/chromium-import-macro.md:37
 msgid ""
-"More information can be found in [the doc comment](https://source.chromium."
-"org/chromium/chromium/src/+/main:build/rust/chromium_prelude/"
-"chromium_prelude.rs?q=f:chromium_prelude.rs%20pub.use.*%5Cbimport%5Cb;%20-f:"
-"third_party&ss=chromium%2Fchromium%2Fsrc) of the `chromium::import` macro."
+"More information can be found in [the doc comment](https://"
+"source.chromium.org/chromium/chromium/src/+/main:build/rust/chromium_prelude/"
+"chromium_prelude.rs?q=f:chromium_prelude.rs%20pub.use.*%5Cbimport%5Cb;%20-"
+"f:third_party&ss=chromium%2Fchromium%2Fsrc) of the `chromium::import` macro."
 msgstr ""
 
 #: src/chromium/testing/chromium-import-macro.md:42
