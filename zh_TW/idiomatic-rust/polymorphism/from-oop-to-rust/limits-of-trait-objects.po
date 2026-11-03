@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/limits.md:6
+msgid "Limits of Trait Objects"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/limits.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/limits.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/limits.md:19
+msgid "// 4 bytes, owned value\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/limits.md:20
+msgid "// 8 bytes, reference\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/limits.md:21
+msgid "// 16 bytes, wide pointer\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/limits.md:27
+msgid "Trait objects are a limited way of solving problems."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/limits.md:29
+msgid ""
+"If you want to downcast to a concrete type from a trait object, you will "
+"need to specify that the trait in question has Any as a supertrait or that "
+"the trait object is over the main trait and `Any`."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/limits.md:33
+msgid "Even then, you will still need to cast a `dyn MyTrait` to `dyn Any`"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/limits.md:35
+msgid ""
+"Trait objects have overhead in memory, they are \"wide pointers\" that need "
+"to hold not just the pointer to the data itself but another pointer for the "
+"vtable."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/limits.md:39
+msgid ""
+"Trait objects, being dynamically sized types, can only be used practically "
+"via reference or pointer types."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/limits.md:42
+msgid ""
+"There is a baseline overhead of dereferencing the value and relevant trait "
+"methods when using trait objects."
+msgstr ""

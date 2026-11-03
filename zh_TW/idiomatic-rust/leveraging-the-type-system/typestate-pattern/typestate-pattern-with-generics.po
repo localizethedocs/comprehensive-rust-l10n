@@ -1,0 +1,68 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:6
+msgid "Typestate Pattern with Generics"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:8
+msgid ""
+"By combining typestate modeling with generics, we can express a wider range "
+"of valid states and transitions without duplicating logic. This approach is "
+"especially useful when the number of states grows or when multiple states "
+"share behavior but differ in structure."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:14
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:15
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:18
+msgid "// [...]\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:30
+msgid ""
+"We now have all the tools needed to implement the methods for the "
+"`Serializer` and its state type definitions. This ensures that our API only "
+"permits valid transitions, as illustrated in the following diagram:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:36
+msgid ""
+"By leveraging generics to track the parent context, we can construct "
+"arbitrarily nested serializers that enforce valid transitions between "
+"struct, list, and property states."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:40
+msgid ""
+"This enables us to build a recursive structure while maintaining strict "
+"control over which methods are accessible in each state."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:43
+msgid ""
+"Methods common to all states can be defined for any `S` in `Serializer<S>`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern/typestate-generics.md:45
+msgid ""
+"Marker types (e.g., `List<S>`) introduce no memory or runtime overhead, as "
+"they contain no data other than a possible Zero-Sized Type. Their only role "
+"is to enforce correct API usage through the type system."
+msgstr ""

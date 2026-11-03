@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md:6
+msgid "Is It Truly Encapsulated?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md:8
+msgid ""
+"You must evaluate _the entire API surface_ exposed by a newtype to determine "
+"if invariants are indeed bullet-proof. It is crucial to consider all "
+"possible interactions, including trait implementations, that may allow users "
+"to bypass validation checks."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md:14
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md:15
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md:21
+msgid "// Validation checks...\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md:26
+msgid "// ‼️\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md:43
+msgid ""
+"`DerefMut` allows users to get a mutable reference to the wrapped value."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md:45
+msgid ""
+"The mutable reference can be used to modify the underlying data in ways that "
+"may violate the invariants enforced by `Username::new`!"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md:48
+msgid ""
+"When auditing the API surface of a newtype, you can narrow down the review "
+"scope to methods and traits that provide mutable access to the underlying "
+"data."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md:52
+msgid "Remind students of privacy boundaries."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/newtype-pattern/is-it-encapsulated.md:54
+msgid ""
+"In particular, functions and methods defined in the same module of the "
+"newtype can access its underlying data directly. If possible, move the "
+"newtype definition to its own separate module to reduce the scope of the "
+"audit."
+msgstr ""

@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/interoperability/cpp/shared-types.md:6
+msgid "Shared Types"
+msgstr ""
+
+#: src/android/interoperability/cpp/shared-types.md:9
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/shared-types.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/shared-types.md:17
+msgid "// A=1, J=11, Q=12, K=13\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/shared-types.md:31
+msgid "Only C-like (unit) enums are supported."
+msgstr ""
+
+#: src/android/interoperability/cpp/shared-types.md:32
+msgid ""
+"A limited number of traits are supported for `#[derive()]` on shared types. "
+"Corresponding functionality is also generated for the C++ code, e.g. if you "
+"derive `Hash` also generates an implementation of `std::hash` for the "
+"corresponding C++ type."
+msgstr ""

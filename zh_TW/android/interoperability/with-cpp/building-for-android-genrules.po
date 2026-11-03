@@ -1,0 +1,79 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/interoperability/cpp/android-cpp-genrules.md:6
+msgid "Building in Android"
+msgstr ""
+
+#: src/android/interoperability/cpp/android-cpp-genrules.md:8
+msgid ""
+"Create two genrules: One to generate the CXX header, and one to generate the "
+"CXX source file. These are then used as inputs to the `cc_library_static`."
+msgstr ""
+
+#: src/android/interoperability/cpp/android-cpp-genrules.md:12
+msgid ""
+"// Generate a C++ header containing the C++ bindings\n"
+"// to the Rust exported functions in lib.rs.\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/android-cpp-genrules.md:15
+msgid "\"libcxx_test_bridge_header\""
+msgstr ""
+
+#: src/android/interoperability/cpp/android-cpp-genrules.md:16
+#: src/android/interoperability/cpp/android-cpp-genrules.md:25
+msgid "\"cxxbridge\""
+msgstr ""
+
+#: src/android/interoperability/cpp/android-cpp-genrules.md:17
+msgid "\"$(location cxxbridge) $(in) --header > $(out)\""
+msgstr ""
+
+#: src/android/interoperability/cpp/android-cpp-genrules.md:18
+#: src/android/interoperability/cpp/android-cpp-genrules.md:27
+msgid "\"lib.rs\""
+msgstr ""
+
+#: src/android/interoperability/cpp/android-cpp-genrules.md:19
+msgid "\"lib.rs.h\""
+msgstr ""
+
+#: src/android/interoperability/cpp/android-cpp-genrules.md:21
+msgid "// Generate the C++ code that Rust calls into.\n"
+msgstr ""
+
+#: src/android/interoperability/cpp/android-cpp-genrules.md:24
+msgid "\"libcxx_test_bridge_code\""
+msgstr ""
+
+#: src/android/interoperability/cpp/android-cpp-genrules.md:26
+msgid "\"$(location cxxbridge) $(in) > $(out)\""
+msgstr ""
+
+#: src/android/interoperability/cpp/android-cpp-genrules.md:28
+msgid "\"lib.rs.cc\""
+msgstr ""
+
+#: src/android/interoperability/cpp/android-cpp-genrules.md:34
+msgid ""
+"The `cxxbridge` tool is a standalone tool that generates the C++ side of the "
+"bridge module. It is included in Android and available as a Soong tool."
+msgstr ""
+
+#: src/android/interoperability/cpp/android-cpp-genrules.md:36
+msgid ""
+"By convention, if your Rust source file is `lib.rs` your header file will be "
+"named `lib.rs.h` and your source file will be named `lib.rs.cc`. This naming "
+"convention isn't enforced, though."
+msgstr ""

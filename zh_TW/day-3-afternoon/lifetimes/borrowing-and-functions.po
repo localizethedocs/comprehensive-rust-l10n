@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/lifetimes/simple-borrows.md:6
+msgid "Borrowing with Functions"
+msgstr ""
+
+#: src/lifetimes/simple-borrows.md:8
+msgid ""
+"As part of borrow checking, the compiler needs to reason about how borrows "
+"flow into and out of functions. In the simplest case borrows last for the "
+"duration of the function call:"
+msgstr ""
+
+#: src/lifetimes/simple-borrows.md:13
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/lifetimes/simple-borrows.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/lifetimes/simple-borrows.md:23
+msgid "// Borrow `val` for the function call.\n"
+msgstr ""
+
+#: src/lifetimes/simple-borrows.md:26
+msgid "// Borrow has ended and we're free to mutate.\n"
+msgstr ""
+
+#: src/lifetimes/simple-borrows.md:34
+msgid ""
+"In this example we borrow `val` for the call to `borrows`. This would limit "
+"our ability to mutate `val`, but once the function call returns the borrow "
+"has ended and we're free to mutate again."
+msgstr ""

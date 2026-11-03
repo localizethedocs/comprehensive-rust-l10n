@@ -1,0 +1,81 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-rust/unsafe-functions/calling.md:6
+msgid "Calling Unsafe Functions"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/calling.md:8
+msgid "Failing to uphold the safety requirements breaks memory safety!"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/calling.md:11
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/calling.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/calling.md:17
+#: src/unsafe-rust/unsafe-functions/calling.md:18
+msgid "// 8 bytes\n"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/calling.md:25
+msgid "\"{pk:?}\""
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/calling.md:34
+msgid ""
+"Always include a safety comment for each `unsafe` block. It must explain why "
+"the code is actually safe. This example is missing a safety comment and is "
+"unsound."
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/calling.md:39
+msgid "Key points:"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/calling.md:41
+msgid ""
+"The second argument to `slice::from_raw_parts` is the number of _elements_, "
+"not bytes! This example demonstrates unexpected behavior by reading past the "
+"end of one array and into another."
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/calling.md:44
+msgid ""
+"This is undefined behavior because we're reading past the end of the array "
+"that the pointer was derived from."
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/calling.md:46
+msgid ""
+"`log_public_key` should be unsafe, because `pk_ptr` must meet certain "
+"prerequisites to avoid undefined behaviour. A safe function which can cause "
+"undefined behaviour is said to be `unsound`. What should its safety "
+"documentation say?"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/calling.md:50
+msgid ""
+"The standard library contains a number of low-level unsafe functions. Prefer "
+"the safe alternatives when possible!"
+msgstr ""
+
+#: src/unsafe-rust/unsafe-functions/calling.md:52
+msgid ""
+"If you use an unsafe function as an optimization, make sure to add a "
+"benchmark to demonstrate the gain."
+msgstr ""
