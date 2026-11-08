@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comprehensive Rust 🦀\n"
-"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"POT-Creation-Date: 2026-11-03T15:42:24Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -90,8 +90,8 @@ msgid ""
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:53
-msgid "This segment should take about 7 hours and 30 minutes. It contains:"
-msgstr "本節大約需要 7 小時又 30 分鐘，內容包含："
+msgid "This segment should take about 7 hours and 40 minutes. It contains:"
+msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:55
 msgid "Slide"
@@ -126,13 +126,16 @@ msgid "Extension Traits"
 msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:60
-#: src/idiomatic/leveraging-the-type-system.md:61
-msgid "1 hour and 5 minutes"
-msgstr "1 小時又 5 分鐘"
+msgid "1 hour and 15 minutes"
+msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:61
 msgid "Typestate Pattern"
 msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system.md:61
+msgid "1 hour and 5 minutes"
+msgstr "1 小時又 5 分鐘"
 
 #: src/idiomatic/leveraging-the-type-system.md:62
 msgid "Borrow checking invariants"
@@ -149,3 +152,6 @@ msgstr ""
 #: src/idiomatic/leveraging-the-type-system.md:63
 msgid "1 hour and 35 minutes"
 msgstr "1 小時又 35 分鐘"
+
+#~ msgid "This segment should take about 7 hours and 30 minutes. It contains:"
+#~ msgstr "本節大約需要 7 小時又 30 分鐘，內容包含："
