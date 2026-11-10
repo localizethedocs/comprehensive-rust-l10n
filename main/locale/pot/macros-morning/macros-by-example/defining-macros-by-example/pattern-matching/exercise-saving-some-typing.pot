@@ -1,0 +1,131 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:6
+msgid "Exercise: Saving Some Typing"
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:8
+msgid ""
+"In standard Rust, there is some unavoidable syntactic boilerplate when "
+"defining functions (the `fn` keyword, specification of arguments and return "
+"types, and the body). Using macros, we can reduce this boilerplate for "
+"repetitive function definitions to just the tokens that might vary between "
+"the repetitive definitions; the resulting boilerplate is only the handful of "
+"tokens required to invoke a macro."
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:15
+msgid ""
+"For example, if we define functions for various math operations (such as "
+"`add`, `sub`, and `mul`), their types and general structure will be "
+"identical, with only the name and operation varying."
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:19
+msgid ""
+"In some contexts, we might avoid syntactic repetition by passing in "
+"closures, e.g. `|a, b| a + b`, but this has the possibility of runtime "
+"overhead if the closure is not inlined. Macros can similarly avoid "
+"repetition without the possibility of runtime overhead."
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:24
+msgid ""
+"In this exercise, you will implement a macro called `define_op!` to generate "
+"arithmetic function definitions using pattern matching on identifiers and "
+"operator tokens."
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:28
+msgid ""
+"Recall that matching on arbitrary tokens in the input is achieved with meta-"
+"variables, introduced via `$`, a variable name, and a fragment specifier, "
+"e.g. `$var: ident` or `$e: expr`. We will cover the various fragment "
+"specifiers in detail in the coming sections."
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:33
+msgid "The syntax for `define_op!` should support accept input like this:"
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:39
+msgid "This invocation should expand to:"
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:47
+msgid "Instructions:"
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:49
+msgid "Implement the `define_op!` macro."
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:50
+msgid ""
+"Capture the function name as an `ident` and the arithmetic operator as a "
+"`tt` (Token Tree)."
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:54
+msgid "// TODO: Implement the `define_op!` macro.\n"
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:55
+msgid "// Use the macro to define add, sub, and mul functions:\n"
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:62
+#: src/macros/macro_rules/pattern-matching/solution.md:28
+msgid "\"10 + 2 = {}\""
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:63
+#: src/macros/macro_rules/pattern-matching/solution.md:29
+msgid "\"10 - 2 = {}\""
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:64
+#: src/macros/macro_rules/pattern-matching/solution.md:30
+msgid "\"10 * 2 = {}\""
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:74
+msgid ""
+"Explain that the `tt` specifier is useful for matching parts of syntax that "
+"are not free-standing expressions as token trees."
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/exercise.md:76
+msgid ""
+"This demonstrates code generation with less syntactic overhead than "
+"abstracting with functions or traits."
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/solution.md:6
+msgid "Solution"
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/solution.md:8
+msgid ""
+"Here is the implementation of the `define_op!` macro that dynamically "
+"defines mathematical functions:"
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/solution.md:12
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching/solution.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""

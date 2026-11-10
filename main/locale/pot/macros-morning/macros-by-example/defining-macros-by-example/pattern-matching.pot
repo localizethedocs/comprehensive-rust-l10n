@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/macro_rules/pattern-matching.md:6
+msgid "Pattern Matching"
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching.md:8
+msgid ""
+"You can match on exact, literal tokens inside macro patterns. This is "
+"extremely useful for building custom DSLs or structured syntax matching:"
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching.md:12
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching.md:16
+msgid "\"Starting...\""
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching.md:17
+msgid "\"Stopping...\""
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching.md:29
+msgid ""
+"In this example, the tokens `start`, `stop`, and `restart` are matched "
+"exactly as literal identifiers. Literal identifiers and custom symbols (such "
+"as `=>`, `,`, `:`, etc.) can be sequenced to design readable and mnemonic "
+"input syntax for your macros."
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching.md:36
+msgid ""
+"Note that the macro in the example invokes itself recursively in its "
+"transcriber body."
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching.md:38
+msgid ""
+"Point out that because macros parse token streams, standard Rust rules (like "
+"variables needing to be declared or modules needing to exist) do not apply "
+"to the literal tokens being matched. They are treated purely as structural "
+"matches."
+msgstr ""
+
+#: src/macros/macro_rules/pattern-matching.md:42
+msgid ""
+"Macros can invoke themselves and other macros, which can be useful for some "
+"more advanced macro design patterns which will be discussed later."
+msgstr ""

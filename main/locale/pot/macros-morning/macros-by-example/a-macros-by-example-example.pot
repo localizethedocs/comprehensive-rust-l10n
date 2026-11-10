@@ -1,0 +1,71 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/macro_rules/example.md:6
+msgid "A Macros-By-Example Example"
+msgstr ""
+
+#: src/macros/macro_rules/example.md:8
+msgid ""
+"Let's look at a simple declarative macro that mimics the behavior of `vec!"
+"[]` for empty vector creation:"
+msgstr ""
+
+#: src/macros/macro_rules/example.md:12
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/macros/macro_rules/example.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/macros/macro_rules/example.md:23
+msgid "\"Vector: {:?}\""
+msgstr ""
+
+#: src/macros/macro_rules/example.md:27
+msgid ""
+"The macro is introduced with the `macro_rules!` construct, declaring a macro "
+"named `my_vec`."
+msgstr ""
+
+#: src/macros/macro_rules/example.md:30
+msgid ""
+"**Match Arm:** The left-hand side `()` is the matcher. The pattern here "
+"matches only empty inputs."
+msgstr ""
+
+#: src/macros/macro_rules/example.md:32
+msgid ""
+"**Transcriber:** The right-hand side `{ Vec::new() }` is the transcriber. It "
+"specifies what the macro invocation will expand to for this pattern."
+msgstr ""
+
+#: src/macros/macro_rules/example.md:38
+msgid ""
+"Explain that `macro_rules!` is itself a macro, which uses a special, unique "
+"language syntax for defining declarative macros."
+msgstr ""
+
+#: src/macros/macro_rules/example.md:40
+msgid ""
+"Recall that although `my_vec![]` is invoked with square brackets "
+"(conventional for array-like objects), any brackets (`my_vec!()` or `my_vec!"
+"{}`) would also work."
+msgstr ""
+
+#: src/macros/macro_rules/example.md:43
+msgid ""
+"In this case, `my_vec![]` matches empty tokens and transcribes directly to "
+"`Vec::new()`."
+msgstr ""

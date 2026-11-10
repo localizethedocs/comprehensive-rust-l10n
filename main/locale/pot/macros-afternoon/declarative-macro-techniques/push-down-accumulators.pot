@@ -1,0 +1,81 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/macro_rules/techniques/accumulators.md:6
+msgid "Push-Down Accumulators"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators.md:8
+msgid ""
+"Because all function-like macro calls must evaluate to valid Rust syntax "
+"(most frequently, expressions), we cannot directly generate and return loose "
+"token lists like `a, b, c` from helper macros to be embedded inside "
+"templates."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators.md:12
+msgid ""
+"A **Push-Down Accumulator** is a pattern designed to bypass this expression "
+"constraint by recursively accumulating tokens inside a dedicated buffer "
+"structure (such as a bracketed list) and feeding that buffer into subsequent "
+"macro calls:"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators.md:18
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators.md:19
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators.md:35
+msgid "\"hi!\""
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators.md:36
+msgid "\"Array: {:?}\""
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators.md:40
+msgid ""
+"**Token Accumulation:** The right-hand side `[]` buffer accumulates "
+"expression clones sequentially."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators.md:42
+msgid ""
+"**AST Soundness:** Every intermediate macro recursion is structured as a "
+"valid macro call expression, which keeps the AST parser happy."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators.md:48
+msgid ""
+"Explain why helper macros like `params!() => { \"foo\", \"bar\" }` fail: the "
+"compiler expects the macro to expand into a single valid expression, but a "
+"list of comma-separated expressions is not a single expression."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators.md:51
+msgid ""
+"Show how the push-down accumulator avoids this: `init_array!` delegates to "
+"`accum!`, which keeps passing a structured macro call containing a growing "
+"list inside `[]` until it reaches the base case `[0, ...]`, which finally "
+"returns the completed array `[...]`."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators.md:55
+msgid ""
+"Mention that this pattern is exceptionally powerful for complex template "
+"formatting, but has a high cognitive overhead to write and maintain."
+msgstr ""

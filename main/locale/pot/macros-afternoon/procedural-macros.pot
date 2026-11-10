@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/proc-macros/welcome.md:6
+msgid "Procedural Macros"
+msgstr ""
+
+#: src/macros/proc-macros/welcome.md:8
+msgid ""
+"**Procedural macros** are far more powerful than declarative macros. Instead "
+"of matching syntax templates, they are literal compiler plugins:"
+msgstr ""
+
+#: src/macros/proc-macros/welcome.md:11
+msgid ""
+"They are implemented as functions that receive one or two **token streams** "
+"and return a **token stream**."
+msgstr ""
+
+#: src/macros/proc-macros/welcome.md:13
+msgid "They are written in standard, fully featured Rust."
+msgstr ""
+
+#: src/macros/proc-macros/welcome.md:14
+msgid ""
+"They have complete programmatic access to the incoming token stream, "
+"allowing you to parse, modify, or generate complex code structures."
+msgstr ""
+
+#: src/macros/proc-macros/welcome.md:16
+msgid ""
+"They require a dedicated library crate configured with `proc-macro = true` "
+"in its `Cargo.toml`."
+msgstr ""
+
+#: src/macros/proc-macros/welcome.md:19
+msgid ""
+"We will explore how procedural macros are defined, how they compile, and how "
+"to write them."
+msgstr ""
+
+#: src/macros/proc-macros/welcome.md:25
+msgid ""
+"Explain that procedural macros are called \"procedural\" because they "
+"execute standard Rust procedures (functions) to transform code at compile "
+"time."
+msgstr ""
+
+#: src/macros/proc-macros/welcome.md:27
+msgid ""
+"Emphasize that because they are compiled as libraries and loaded by the "
+"compiler during build time, they have a heavier impact on compilation speed "
+"compared to declarative macros."
+msgstr ""
+
+#: src/macros/proc-macros/welcome.md:30
+msgid ""
+"This slide serves as a transition into the detailed mechanics of procedural "
+"macros."
+msgstr ""

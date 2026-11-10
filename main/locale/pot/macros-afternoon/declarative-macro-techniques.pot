@@ -1,0 +1,84 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/macro_rules/techniques.md:6
+msgid "Declarative Macro Techniques"
+msgstr ""
+
+#: src/macros/macro_rules/techniques.md:8
+msgid ""
+"As your declarative macros become more sophisticated, simple patterns may "
+"not be enough to express your intended logic."
+msgstr ""
+
+#: src/macros/macro_rules/techniques.md:11
+msgid ""
+"Rust programmers have established several design patterns for structuring "
+"more complex macros:"
+msgstr ""
+
+#: src/macros/macro_rules/techniques.md:14
+msgid ""
+"**Optional Parameters:** Using multiple match arms or optional matchers to "
+"handle default values."
+msgstr ""
+
+#: src/macros/macro_rules/techniques.md:16
+msgid ""
+"**Named Parameters:** Explicitly labeling parameters at the callsite (e.g., "
+"`key=value`) to improve readability."
+msgstr ""
+
+#: src/macros/macro_rules/techniques.md:18
+msgid ""
+"**Internal Rules:** Prefixing helper match arms with a unique symbol (like "
+"`@`) to modularize code."
+msgstr ""
+
+#: src/macros/macro_rules/techniques.md:20
+msgid ""
+"**Incremental Token Munchers:** Eating tokens off the front of a stream "
+"recursively."
+msgstr ""
+
+#: src/macros/macro_rules/techniques.md:22
+msgid ""
+"**Push-Down Accumulators:** Collecting tokens recursively into a buffer to "
+"build a structured output."
+msgstr ""
+
+#: src/macros/macro_rules/techniques.md:24
+msgid ""
+"**TT Bundling:** Grouping multiple arguments inside a single Token Tree to "
+"simplify passing them down."
+msgstr ""
+
+#: src/macros/macro_rules/techniques.md:27
+msgid "We will consider each of these advanced techniques in turn."
+msgstr ""
+
+#: src/macros/macro_rules/techniques.md:32
+msgid ""
+"Reassure students that these patterns are standard idioms in advanced Rust "
+"code bases, but not necessary for simple macros. A programmer must use their "
+"discretion to choose between a complex declarative macro and implementing "
+"logic in a procedural macro, which may be more straightforward at the cost "
+"of additional ceremony."
+msgstr ""
+
+#: src/macros/macro_rules/techniques.md:37
+msgid ""
+"Explain that because declarative macros don't have standard local variables "
+"or mutable state during expansion, recursion and token-level manipulation "
+"are the primary ways to achieve complex code generation."
+msgstr ""

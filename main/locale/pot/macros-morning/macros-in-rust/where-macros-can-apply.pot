@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/kinds.md:6
+msgid "Where Macros Can Apply"
+msgstr ""
+
+#: src/macros/kinds.md:8
+msgid ""
+"Macros can be attached to or invoked at different positions in your code. "
+"There are three major cases to consider:"
+msgstr ""
+
+#: src/macros/kinds.md:11
+msgid ""
+"**Function-Like Macros:** Invoked as expressions, statements, types, "
+"patterns, or items, expanding to any syntax that could occupy the invocation "
+"position."
+msgstr ""
+
+#: src/macros/kinds.md:13
+msgid ""
+"**Derive Macros:** Attached specifically to `struct`, `enum`, or `union` "
+"items, to generate trait impls based on the type definition."
+msgstr ""
+
+#: src/macros/kinds.md:15
+msgid ""
+"**Attribute Macros:** Attached to any standard Rust `item` (including "
+"functions, modules, structs, etc.), allowing complete replacement of the "
+"attached item."
+msgstr ""
+
+#: src/macros/kinds.md:19
+msgid "We will now see how each of these looks and behaves."
+msgstr ""
+
+#: src/macros/kinds.md:24
+msgid ""
+"Mention that \"items\" in Rust are top-level declarations (which can nest!) "
+"such as structs, modules, traits, and functions."
+msgstr ""
+
+#: src/macros/kinds.md:26
+msgid ""
+"Clarify that some macro positions are more restricted than others: e.g., "
+"derive macros cannot modify the structs they are attached to, but only "
+"append new implementations alongside; meanwhile, attribute macros can "
+"rewrite their targets entirely."
+msgstr ""

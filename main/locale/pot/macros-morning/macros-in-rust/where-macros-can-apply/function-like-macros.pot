@@ -1,0 +1,81 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/kinds/function-like.md:6
+msgid "Function-Like Macros"
+msgstr ""
+
+#: src/macros/kinds/function-like.md:8
+msgid ""
+"**Function-like macros** are invoked with an exclamation mark (`!`) "
+"following their identifier. They look like function calls, but they can "
+"accept arbitrary tokens inside their brackets."
+msgstr ""
+
+#: src/macros/kinds/function-like.md:13
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/macros/kinds/function-like.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/macros/kinds/function-like.md:17
+msgid "// Invoked as an expression:\n"
+msgstr ""
+
+#: src/macros/kinds/function-like.md:20
+msgid "// Invoked as a statement:\n"
+msgstr ""
+
+#: src/macros/kinds/function-like.md:21
+msgid "\"Hello, World! {:?}\""
+msgstr ""
+
+#: src/macros/kinds/function-like.md:25
+msgid ""
+"**Flexible brackets:** Can be invoked with parentheses `()`, square brackets "
+"`[]`, or curly braces `{}`."
+msgstr ""
+
+#: src/macros/kinds/function-like.md:27
+msgid ""
+"**Input:** Can contain any sequence of Rust tokens, but unmatched opening/"
+"closing brackets are forbidden (so the compiler can tell where the macro "
+"invocation ends, regardless of how the macro processes those tokens)."
+msgstr ""
+
+#: src/macros/kinds/function-like.md:30
+msgid ""
+"**Placement:** Can appear as expressions, statements, types, patterns, or "
+"items."
+msgstr ""
+
+#: src/macros/kinds/function-like.md:32
+msgid ""
+"**Implementation:** These are the only kind of macro that can be implemented "
+"as either a **declarative** macro (`macro_rules!`) or a **procedural** macro."
+msgstr ""
+
+#: src/macros/kinds/function-like.md:37
+msgid ""
+"Mention that while they look like function calls, they are expanded during "
+"compilation. They do not exist at runtime."
+msgstr ""
+
+#: src/macros/kinds/function-like.md:39
+msgid ""
+"The choice of brackets is a matter of stylistic convention: `vec!` uses `[]` "
+"because it behaves like an array, `println!` uses `()` because it behaves "
+"like a function call, and custom macros defining items often use `{}`."
+msgstr ""

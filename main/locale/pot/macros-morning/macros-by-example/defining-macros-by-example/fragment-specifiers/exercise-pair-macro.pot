@@ -1,0 +1,116 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/macro_rules/fragment-specifiers/exercise.md:6
+msgid "Exercise: Pair Macro"
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/exercise.md:8
+msgid ""
+"In this exercise, you will implement a macro named `pair!` that takes a "
+"single syntactic element and doubles it into a tuple pair containing two of "
+"that element: `(x, x)`."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/exercise.md:12
+msgid ""
+"Your `pair!` macro should work across three different syntactic contexts:"
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/exercise.md:14
+msgid "**Types:** `pair!(i32)` expands to `(i32, i32)`."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/exercise.md:15
+msgid ""
+"**Patterns:** `pair!(7)` and `pair!(_)` expand to `(7, 7)` and `(_, _)`, "
+"respectively."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/exercise.md:17
+msgid "**Expressions:** `pair!(1 + 2)` expands to `(1 + 2, 1 + 2)`."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/exercise.md:19
+msgid "Instructions:"
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/exercise.md:21
+msgid ""
+"Define the `pair!` macro with rules for types (`ty`), patterns (`pat`), and "
+"expressions (`expr`)."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/exercise.md:23
+msgid ""
+"Order the rules appropriately so that type names, patterns, and expressions "
+"are correctly captured."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/exercise.md:27
+msgid "// TODO: Implement the `pair!` macro.\n"
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/exercise.md:31
+#: src/macros/macro_rules/fragment-specifiers/solution.md:29
+msgid "\"Doubled type: {p:?}\""
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/exercise.md:34
+#: src/macros/macro_rules/fragment-specifiers/solution.md:32
+msgid "\"Doubled expr: {doubled:?}\""
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/exercise.md:39
+#: src/macros/macro_rules/fragment-specifiers/solution.md:37
+msgid "\"Pattern position: matched {e:?}\""
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/exercise.md:40
+#: src/macros/macro_rules/fragment-specifiers/solution.md:38
+msgid "\"Did not match\""
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/solution.md:6
+msgid "Solution"
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/solution.md:8
+msgid ""
+"Here is the implementation of the `pair!` macro using the `ty`, `pat`, and "
+"`expr` fragment specifiers:"
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/solution.md:12
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/solution.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/solution.md:45
+msgid ""
+"**Context Flexibility:** Because declarative macros can expand in type, "
+"pattern, and expression positions, a single macro like `pair!` can be used "
+"in different locations in a codebase with the specific meaning varying based "
+"on its argument."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers/solution.md:49
+msgid ""
+"There is something subtle happening here: the expansion depends on the "
+"input, not the context: `pair!(7)` always expands into a pattern, because "
+"`pat` is the first pattern that can match the token `7`. The expression "
+"invocation passes an `as` cast, which cannot appear in patterns."
+msgstr ""

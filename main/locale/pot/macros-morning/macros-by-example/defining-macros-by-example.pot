@@ -1,0 +1,74 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/macro_rules/defining.md:6
+msgid "Defining Macros By Example"
+msgstr ""
+
+#: src/macros/macro_rules/defining.md:8
+msgid ""
+"A declarative macro consists of one or more **macro rules**, similar to how "
+"a Rust `match` expression consists of a sequence of match arms:"
+msgstr ""
+
+#: src/macros/macro_rules/defining.md:14
+msgid "// Left-side: Matcher        Right-side: Transcriber\n"
+msgstr ""
+
+#: src/macros/macro_rules/defining.md:16
+msgid "\"{}\""
+msgstr ""
+
+#: src/macros/macro_rules/defining.md:20
+msgid ""
+"**Macro Rule:** An arm of the macro containing a Matcher and a Transcriber "
+"separated by `=>`."
+msgstr ""
+
+#: src/macros/macro_rules/defining.md:22
+msgid "**Matcher:** A pattern that matches an input token stream."
+msgstr ""
+
+#: src/macros/macro_rules/defining.md:23
+msgid "**Transcriber:** The code segment template that expands when matched."
+msgstr ""
+
+#: src/macros/macro_rules/defining.md:24
+msgid ""
+"**Meta-variables:** Variables defined on the left and expanded on the right, "
+"prefixed with `$` (e.g., `$bar`)."
+msgstr ""
+
+#: src/macros/macro_rules/defining.md:26
+msgid ""
+"**Fragment Specifiers:** Indicate to which syntactic category the meta-"
+"variable is restricted (e.g., `ident` or `expr`)."
+msgstr ""
+
+#: src/macros/macro_rules/defining.md:32
+msgid ""
+"Like `match` in normal Rust, the compiler attempts to match each rule "
+"sequentially, from top to bottom."
+msgstr ""
+
+#: src/macros/macro_rules/defining.md:34
+msgid ""
+"If a rule matches the input token stream completely, it selects that arm and "
+"transcribes the output."
+msgstr ""
+
+#: src/macros/macro_rules/defining.md:36
+msgid ""
+"If no arms match, or if any pattern is ambiguous when matching tokens (there "
+"is no backtrack or lookahead), the compiler emits an error."
+msgstr ""

@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/proc-macros/derive.md:6
+msgid "Derive Macros"
+msgstr ""
+
+#: src/macros/proc-macros/derive.md:8
+msgid ""
+"**Derive procedural macros** are decorated with the "
+"`#[proc_macro_derive(TraitName)]` attribute. They take in the token stream "
+"of a type definition and return a token stream containing additional "
+"implementations:"
+msgstr ""
+
+#: src/macros/proc-macros/derive.md:17
+msgid "// Parse the struct/enum item, generate `MyDebug` implementation...\n"
+msgstr ""
+
+#: src/macros/proc-macros/derive.md:22
+msgid ""
+"**Additive Output:** The returned token stream is compiled alongside the "
+"type definition in the same scope. It does not replace the type definition "
+"itself."
+msgstr ""
+
+#: src/macros/proc-macros/derive.md:24
+msgid ""
+"**Helper Attributes:** Derive macros can declare optional helper attributes "
+"that can be used on struct fields or enum variants, configured in the derive "
+"declaration: `#[proc_macro_derive(MyTrait, attributes(my_helper))]`"
+msgstr ""
+
+#: src/macros/proc-macros/derive.md:31
+msgid ""
+"The `item` TokenStream represents the entire struct, enum, or union "
+"definition, including its attributes, generic parameters, braces, and fields."
+msgstr ""
+
+#: src/macros/proc-macros/derive.md:33
+msgid ""
+"Discuss helper attributes: helper attributes are matched by the derive macro "
+"to let users customize the code generation (e.g., `#[my_helper(rename = "
+"\"field\")]`)."
+msgstr ""
+
+#: src/macros/proc-macros/derive.md:36
+msgid ""
+"Note that the argument to `proc_macro_derive` dictates how this derive macro "
+"is imported and triggered, but does not actually constrain which items it "
+"generates `impl` blocks for. Some derive macros may impl multiple traits (as "
+"does `thiserror::Error`, for example); derive macros must be well behaved "
+"and document their effects."
+msgstr ""

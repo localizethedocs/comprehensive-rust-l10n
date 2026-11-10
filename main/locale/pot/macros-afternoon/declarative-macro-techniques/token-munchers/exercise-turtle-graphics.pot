@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/macro_rules/techniques/token-munchers/exercise.md:6
+msgid "Exercise: Turtle Graphics"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/exercise.md:8
+msgid ""
+"In this exercise, you will create an incremental TT muncher macro called "
+"`turtle_directions!`."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/exercise.md:11
+msgid ""
+"Your macro will parse a domain-specific language (DSL) for turtle graphics "
+"instructions which maintains its old-school style by omitting any "
+"punctuation between instructions. This DSL will be used to construct a "
+"`cons`\\-list-style `TurtleProgram` value."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/exercise.md:16
+msgid "Turtle Operation DSL"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/exercise.md:18
+msgid ""
+"The `turtle_directions!` macro should parse the following unpunctuated "
+"commands:"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/exercise.md:20
+msgid "`FWD n`: moves forward by `n` steps (`TurtleProgram::Forward(n, rest)`)"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/exercise.md:21
+msgid ""
+"`REV n`: moves backward by `n` steps (`TurtleProgram::Reverse(n, rest)`)"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/exercise.md:22
+msgid "`LEFT n`: turns left by `n` degrees (`TurtleProgram::Left(n, rest)`)"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/exercise.md:23
+msgid "`RIGHT n`: turns right by `n` degrees (`TurtleProgram::Right(n, rest)`)"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/exercise.md:24
+msgid "`PEN UP`: lifts the pen (`TurtleProgram::PenUp(rest)`)"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/exercise.md:25
+msgid "`PEN DOWN`: lowers the pen (`TurtleProgram::PenDown(rest)`)"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/exercise.md:26
+msgid ""
+"`RED` and `BLACK`: set the pen color (`TurtleProgram::SetColor(color, rest)`)"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/exercise.md:28
+msgid ""
+"Where `rest` is a `Box<TurtleProgram>` representing the remaining steps of "
+"the program."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/exercise.md:31
+msgid "Implement the `turtle_directions!` macro in the following program:"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/exercise.md:51
+msgid "// TODO: Implement the `turtle_directions!` macro.\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/exercise.md:93
+msgid ""
+"Highlight how matching on specific keyword token sequences (e.g. `PEN UP`, "
+"`RED`, or `FWD n`) at the head of the token stream allows parsing each "
+"command according to the number and kind of expected tokens to follow."
+msgstr ""

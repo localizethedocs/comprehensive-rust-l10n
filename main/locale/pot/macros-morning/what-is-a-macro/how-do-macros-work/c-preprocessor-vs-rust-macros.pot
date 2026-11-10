@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/intro/cpp-vs-rust-macros.md:6
+msgid "C Preprocessor vs. Rust Macros"
+msgstr ""
+
+#: src/macros/intro/cpp-vs-rust-macros.md:8
+msgid ""
+"The fundamental difference between C-style preprocessor macros and Rust "
+"macros lies in **where they hook into compilation**:"
+msgstr ""
+
+#: src/macros/intro/cpp-vs-rust-macros.md:11
+msgid "C Preprocessor Macros"
+msgstr ""
+
+#: src/macros/intro/cpp-vs-rust-macros.md:13
+msgid "Hook into the **Tokenizing** step."
+msgstr ""
+
+#: src/macros/intro/cpp-vs-rust-macros.md:14
+msgid ""
+"Cannot inspect tokens in detail, but can rearrange and duplicate them (and "
+"sometimes append them)."
+msgstr ""
+
+#: src/macros/intro/cpp-vs-rust-macros.md:16
+msgid "Can create syntactically invalid output."
+msgstr ""
+
+#: src/macros/intro/cpp-vs-rust-macros.md:17
+msgid ""
+"Lack scoping and hygiene, so constructing robust abstractions is difficult."
+msgstr ""
+
+#: src/macros/intro/cpp-vs-rust-macros.md:19
+msgid "Rust Macros"
+msgstr ""
+
+#: src/macros/intro/cpp-vs-rust-macros.md:21
+msgid "Hook into the **Abstract Syntax Tree (AST)** generation step."
+msgstr ""
+
+#: src/macros/intro/cpp-vs-rust-macros.md:22
+msgid "Operate on structured **Token Trees** rather than raw text."
+msgstr ""
+
+#: src/macros/intro/cpp-vs-rust-macros.md:23
+msgid "Must emit valid Rust syntax."
+msgstr ""
+
+#: src/macros/intro/cpp-vs-rust-macros.md:24
+msgid "Maintain **partial hygiene** to prevent accidental name collisions."
+msgstr ""
+
+#: src/macros/intro/cpp-vs-rust-macros.md:28
+msgid ""
+"Explain that C macros must guess unused identifiers for internal use, and "
+"can access variables not mentioned in their arguments."
+msgstr ""
+
+#: src/macros/intro/cpp-vs-rust-macros.md:30
+msgid ""
+"Emphasize that C preprocessor macros don't have access to information from "
+"later in compilation, i.e. C syntax or types; they are basically dumb copy-"
+"paste."
+msgstr ""
+
+#: src/macros/intro/cpp-vs-rust-macros.md:33
+msgid ""
+"To provide better error reporting, the C Preprocessor is actually integrated "
+"into the Clang and GCC compilers, but its semantics also constrain it to be "
+"usable as a separate pass, so this integration can't be used to improve the "
+"behavior of C macros."
+msgstr ""
+
+#: src/macros/intro/cpp-vs-rust-macros.md:37
+msgid ""
+"Contrast this with Rust, where macro expansion is inherently part of the "
+"compilation process. This lets Rust macros work structurally."
+msgstr ""
+
+#: src/macros/intro/cpp-vs-rust-macros.md:39
+msgid ""
+"Introduce the concept of \"partial hygiene,\" explaining that local variable "
+"bindings inside Rust macros do not bleed out into the surrounding code (and "
+"vice versa) by default."
+msgstr ""

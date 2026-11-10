@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/proc-macros/writing/deps.md:6
+msgid "Dependencies"
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps.md:8
+msgid ""
+"Here is how the standard dependency tree of a modern procedural macro crate "
+"is structured:"
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps.md:27
+msgid "Each library builds on top of the layer below."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps.md:28
+msgid ""
+"Using `syn` and `quote` increases macro build times slightly, but greatly "
+"simplifies implementation, making macro code safer and much easier to "
+"maintain."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps.md:34
+msgid ""
+"Explain that `proc_macro` is provided by the standard distribution, but is "
+"restricted to compiler execution."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps.md:36
+msgid ""
+"`proc_macro2` is a standard third-party crate that replicates all "
+"`proc_macro` types, but does not depend on the compiler's private internals. "
+"This is why testing libraries or other tools can work with token streams."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps.md:39
+msgid ""
+"`syn` and `quote` operate fully on `proc_macro2` types, allowing seamless "
+"integration."
+msgstr ""
