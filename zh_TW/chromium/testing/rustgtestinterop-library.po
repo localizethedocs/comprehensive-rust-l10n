@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/chromium/testing/rust-gtest-interop.md:6
+msgid "`rust_gtest_interop` Library"
+msgstr ""
+
+#: src/chromium/testing/rust-gtest-interop.md:8
+msgid ""
+"The [`rust_gtest_interop`](https://chromium.googlesource.com/chromium/src/+/"
+"main/testing/rust_gtest_interop/README.md) library provides a way to:"
+msgstr ""
+
+#: src/chromium/testing/rust-gtest-interop.md:10
+msgid ""
+"Use a Rust function as a `gtest` testcase (using the `#[gtest(...)]` "
+"attribute)"
+msgstr ""
+
+#: src/chromium/testing/rust-gtest-interop.md:12
+msgid ""
+"Use `expect_eq!` and similar macros (similar to `assert_eq!` but not "
+"panicking and not terminating the test when the assertion fails)."
+msgstr ""
+
+#: src/chromium/testing/rust-gtest-interop.md:15
+msgid "Example:"
+msgstr ""
+
+#: src/chromium/testing/rust-gtest-interop.md:18
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/chromium/testing/rust-gtest-interop.md:19
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""

@@ -1,0 +1,68 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/std-types/result.md:6
+msgid "Result"
+msgstr ""
+
+#: src/std-types/result.md:8
+msgid ""
+"`Result` is similar to `Option`, but indicates the success or failure of an "
+"operation, each with a different enum variant. It is generic: `Result<T, E>` "
+"where `T` is used in the `Ok` variant and `E` appears in the `Err` variant."
+msgstr ""
+
+#: src/std-types/result.md:13
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/std-types/result.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/std-types/result.md:20
+msgid "\"diary.txt\""
+msgstr ""
+
+#: src/std-types/result.md:25
+msgid "\"Dear diary: {contents} ({bytes} bytes)\""
+msgstr ""
+
+#: src/std-types/result.md:27
+msgid "\"Could not read file content\""
+msgstr ""
+
+#: src/std-types/result.md:31
+msgid "\"The diary could not be opened: {err}\""
+msgstr ""
+
+#: src/std-types/result.md:40
+msgid ""
+"As with `Option`, the successful value sits inside of `Result`, forcing the "
+"developer to explicitly extract it. This encourages error checking. In the "
+"case where an error should never happen, `unwrap()` or `expect()` can be "
+"called, and this is a signal of the developer intent too."
+msgstr ""
+
+#: src/std-types/result.md:44
+msgid ""
+"`Result` documentation is a recommended read. Not during the course, but it "
+"is worth mentioning. It contains many convenience methods and functions that "
+"help functional-style programming."
+msgstr ""
+
+#: src/std-types/result.md:47
+msgid ""
+"`Result` is the standard type to implement error handling as we will see on "
+"Day 4."
+msgstr ""

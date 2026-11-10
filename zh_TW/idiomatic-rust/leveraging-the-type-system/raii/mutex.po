@@ -1,0 +1,68 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/raii/mutex.md:6
+msgid "Mutex and MutexGuard"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/mutex.md:8
+msgid ""
+"In earlier examples, RAII was used to manage concrete resources like file "
+"descriptors. With a `Mutex`, the \"resource\" is mutable access to a value. "
+"You access the value by calling `lock`, which then returns a `MutexGuard` "
+"which will unlock the `Mutex` automatically when dropped."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/mutex.md:14
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/mutex.md:15
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/mutex.md:25
+msgid "\"{guard:?}\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/mutex.md:31
+msgid ""
+"A `Mutex` controls exclusive access to a value. Unlike earlier RAII "
+"examples, the resource here is logical: temporary exclusive access to the "
+"data inside."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/mutex.md:34
+msgid ""
+"This right is represented by a `MutexGuard`. Only one guard for this mutex "
+"can exist at a time. While it lives, it provides `&mut T` access."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/mutex.md:37
+msgid ""
+"Although `lock()` takes `&self`, it returns a `MutexGuard` with mutable "
+"access. This works through _interior mutability_, where a type manages its "
+"own borrowing rules internally to allow mutation through `&self`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/mutex.md:41
+msgid ""
+"`MutexGuard` implements `Deref` and `DerefMut`, making access ergonomic. You "
+"lock the mutex and use the guard like a `&mut T`."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/raii/mutex.md:44
+msgid ""
+"The mutex is released by `MutexGuard::drop()`. You never call an explicit "
+"unlock function."
+msgstr ""

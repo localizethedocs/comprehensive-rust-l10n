@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:6
+msgid "Different representations"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:9
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:27
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:10
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:28
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:13
+msgid "b\"Hello, C\\0\""
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:14
+msgid "b\"Hello, C++\\0\""
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:15
+msgid "b\"Hello, Rust\""
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:21
+msgid ""
+"Each language has its own opinion about how to implement things, which can "
+"lead to confusion and bugs. Consider three ways to represent text."
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:24
+msgid "Show how to convert the raw representations to a Rust string slice:"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:29
+msgid "// C representation to Rust\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:34
+msgid "\"{c}\""
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:36
+msgid "// C++ representation to Rust \n"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:42
+msgid "\"{cc}\""
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:44
+msgid "// Rust representation (bytes) to string slice\n"
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:50
+msgid "\"{rust}\""
+msgstr ""
+
+#: src/unsafe-deep-dive/ffi/language-differences/representations.md:54
+msgid ""
+"Aside: Rust has a c-prefixed string literal. It appends a null byte at the "
+"end, e.g. `c\"Rust\" == b\"Rust\\0\"`."
+msgstr ""

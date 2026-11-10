@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/no_std.md:6
+msgid "`no_std`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:12
+msgid "`core`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:17
+msgid "`alloc`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:22
+msgid "`std`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:29
+msgid "Slices, `&str`, `CStr`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:30
+msgid "`NonZeroU8`..."
+msgstr ""
+
+#: src/bare-metal/no_std.md:31
+msgid "`Option`, `Result`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:32
+msgid "`Display`, `Debug`, `write!`..."
+msgstr ""
+
+#: src/bare-metal/no_std.md:33
+msgid "`Iterator`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:34
+msgid "`Error`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:35
+msgid "`panic!`, `assert_eq!`..."
+msgstr ""
+
+#: src/bare-metal/no_std.md:36
+msgid "`NonNull` and all the usual pointer-related functions"
+msgstr ""
+
+#: src/bare-metal/no_std.md:37
+msgid "`Future` and `async`/`await`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:38
+msgid "`fence`, `AtomicBool`, `AtomicPtr`, `AtomicU32`..."
+msgstr ""
+
+#: src/bare-metal/no_std.md:39
+msgid "`Duration`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:44
+msgid "`Box`, `Cow`, `Arc`, `Rc`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:45
+msgid "`Vec`, `BinaryHeap`, `BtreeMap`, `LinkedList`, `VecDeque`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:46
+msgid "`String`, `CString`, `format!`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:51
+msgid "`HashMap`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:52
+msgid "`Mutex`, `Condvar`, `Barrier`, `Once`, `RwLock`, `mpsc`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:53
+msgid "`File` and the rest of `fs`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:54
+msgid "`println!`, `Read`, `Write`, `Stdin`, `Stdout` and the rest of `io`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:55
+msgid "`Path`, `OsString`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:56
+msgid "`net`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:57
+msgid "`Command`, `Child`, `ExitCode`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:58
+msgid "`spawn`, `sleep` and the rest of `thread`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:59
+msgid "`SystemTime`, `Instant`"
+msgstr ""
+
+#: src/bare-metal/no_std.md:67
+msgid "`HashMap` depends on RNG."
+msgstr ""
+
+#: src/bare-metal/no_std.md:68
+msgid "`std` re-exports the contents of both `core` and `alloc`."
+msgstr ""

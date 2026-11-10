@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/dangerous.md:6
+msgid "Unsafe is dangerous"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/dangerous.md:8
+msgid ""
+"“Use-after-free (UAF), integer overflows, and out of bounds (OOB) reads/"
+"writes comprise 90% of vulnerabilities with OOB being the most common.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/dangerous.md:11
+msgid ""
+"\\--- **Jeff Vander Stoep and Chong Zang**, Google. \"[Queue the Hardening "
+"Enhancements](https://security.googleblog.com/2019/05/queue-hardening-"
+"enhancements.html)\""
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/dangerous.md:18
+msgid ""
+"“The software industry has gathered lots of evidence that unsafe code is "
+"difficult to write correctly and creates very serious problems.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/dangerous.md:21
+msgid ""
+"“The issues in this list are eliminated by Rust. The unsafe keyword lets "
+"them back into your source code.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/characteristics-of-unsafe-rust/dangerous.md:24
+msgid "“Be careful.”"
+msgstr ""
