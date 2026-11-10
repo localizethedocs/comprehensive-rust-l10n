@@ -1,0 +1,73 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/intro/cpp-example.md:6
+msgid "A C Preprocessor Macro Example"
+msgstr ""
+
+#: src/macros/intro/cpp-example.md:8
+msgid "C and C++ macros perform literal, raw text replacement."
+msgstr ""
+
+#: src/macros/intro/cpp-example.md:10
+msgid ""
+"This allows developers substantial freedom to write C or C++ programs as "
+"sequences of tokens that look little like normal code before preprocessing:"
+msgstr ""
+
+#: src/macros/intro/cpp-example.md:14
+msgid "<iostream>"
+msgstr ""
+
+#: src/macros/intro/cpp-example.md:30
+msgid "\"Uh-Oh!\""
+msgstr ""
+
+#: src/macros/intro/cpp-example.md:35
+msgid "Key takeaways from this example:"
+msgstr ""
+
+#: src/macros/intro/cpp-example.md:37
+msgid ""
+"**Custom Syntax:** Using `BEGIN` and `END` in place of braces is not "
+"permitted by C itself, and would surprise most readers, but as the "
+"preprocessing runs before compilation, the compiler just sees the braces to "
+"which these macros expand."
+msgstr ""
+
+#: src/macros/intro/cpp-example.md:41
+msgid ""
+"**Unhygienic State Access:** The `EXPECT` macro implicitly accesses `idx`, "
+"which is defined in `main` and not passed into the macro. This makes the "
+"macro's effect depend on the context in which it is invoked (e.g., suppose "
+"`idx` was a pointer to a `struct BTreeIndex`)."
+msgstr ""
+
+#: src/macros/intro/cpp-example.md:48
+msgid ""
+"Explain the C preprocessor operates as a pure copy-paste system. It replaces "
+"tokens line by line without any syntactic structure check."
+msgstr ""
+
+#: src/macros/intro/cpp-example.md:50
+msgid ""
+"Notice how `EXPECT(< 10)` expands to `if (idx < 10) {}`. The macro assumes "
+"`idx` exists and is accessible."
+msgstr ""
+
+#: src/macros/intro/cpp-example.md:52
+msgid ""
+"If someone uses `EXPECT` inside a function without `idx`, they get a "
+"compiler error at the _expansion site_, not the macro definition site, which "
+"can lead to confusing and hard-to-debug compiler errors."
+msgstr ""

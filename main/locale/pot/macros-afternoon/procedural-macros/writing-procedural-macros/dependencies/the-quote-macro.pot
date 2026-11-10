@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/proc-macros/writing/deps/quote-macro.md:6
+msgid "The `quote!` macro"
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/quote-macro.md:8
+msgid ""
+"The **`quote`** crate provides the `quote!` macro, which is a powerful "
+"templating engine for generating Rust code. It lets you write standard Rust "
+"syntax and interpolate existing code from variables in scope:"
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/quote-macro.md:15
+msgid "// e.g. \"Student\"\n"
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/quote-macro.md:16
+msgid "// Generate a TokenStream using standard Rust syntax as a template:\n"
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/quote-macro.md:21
+msgid "\"My name is {}\""
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/quote-macro.md:25
+msgid "// Convert to proc_macro::TokenStream:\n"
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/quote-macro.md:30
+msgid ""
+"**Interpolation:** Use `#var_name` to insert a variable (like an identifier, "
+"type, or other token stream) directly into the template."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/quote-macro.md:32
+msgid ""
+"**Repetitions:** Use `#(#var_list),*` to expand a list of variables "
+"separated by commas, similar to how repetitions work in declarative macros."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/quote-macro.md:37
+msgid ""
+"Note that `quote!` returns a `proc_macro2::TokenStream`. We call `.into()` "
+"at the end of our procedural macro function to convert it to a standard "
+"`proc_macro::TokenStream` for the compiler."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/quote-macro.md:40
+msgid ""
+"Highlight how clean this makes code generation. Instead of manually pushing "
+"string slices or tokens, you write literal Rust code blocks with templates."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/quote-macro.md:42
+msgid ""
+"Mention that repetition is often useful when iterating over all fields of a "
+"struct."
+msgstr ""

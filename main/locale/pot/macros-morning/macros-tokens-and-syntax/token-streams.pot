@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/streams.md:6
+msgid "Token Streams"
+msgstr ""
+
+#: src/macros/streams.md:8
+msgid ""
+"A **token stream** is a sequence of token trees. It is the fundamental input "
+"and output format for both declarative and procedural macros in Rust:"
+msgstr ""
+
+#: src/macros/streams.md:11
+msgid ""
+"**Macro Input:** The tokens passed inside the brackets of the macro "
+"invocation."
+msgstr ""
+
+#: src/macros/streams.md:13
+msgid ""
+"**Macro Output:** The new tokens returned by the macro that replace the "
+"macro invocation."
+msgstr ""
+
+#: src/macros/streams.md:16
+msgid ""
+"For declarative macros, the output is structured not just as a token stream, "
+"but also must be syntactically valid Rust. The generated syntax is inserted "
+"into the AST of the program where the macro is invoked."
+msgstr ""
+
+#: src/macros/streams.md:21
+msgid ""
+"// The input token stream does not need to be valid Rust syntax, as long as "
+"it\n"
+"// tokenizes (which requires any brackets to be balanced).\n"
+msgstr ""
+
+#: src/macros/streams.md:30
+msgid ""
+"// The macro returns tokens: 1 + 2\n"
+"    // Since expansion inserts a structured AST fragment, precedence is "
+"preserved!\n"
+msgstr ""
+
+#: src/macros/streams.md:32
+msgid "\"3 * 10 = {}\""
+msgstr ""
+
+#: src/macros/streams.md:32
+msgid "// Outputs \"30\"\n"
+msgstr ""
+
+#: src/macros/streams.md:36
+msgid ""
+"Because macro output is inserted as an AST subtree, we don't need to wrap "
+"expansions in safety parentheses (unlike C macros, where literal replacement "
+"would cause `1 + 2 * 10` to equal `21`)."
+msgstr ""
+
+#: src/macros/streams.md:43
+msgid ""
+"This slide shows `macro_rules!` defining a declarative macro. We do not need "
+"to visit this in detail yet, as we will do so on the next slide."
+msgstr ""
+
+#: src/macros/streams.md:45
+msgid ""
+"Explain that a Token Stream can contain arbitrary sequences of tokens. The "
+"tokens do not need to form valid Rust code on their own (for example, "
+"`special_print!(#foo(bar:123))` uses `#` and `:` in custom ways)."
+msgstr ""
+
+#: src/macros/streams.md:48
+msgid ""
+"When a macro expands, the _emitted_ token stream must make syntactic sense "
+"at the position where the macro is invoked."
+msgstr ""

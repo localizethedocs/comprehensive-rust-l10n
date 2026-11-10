@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/macro_rules/techniques/internal-rules.md:6
+msgid "Internal Rules"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/internal-rules.md:8
+msgid ""
+"A common pattern for implementing complex macros is to define helper arms "
+"(often called **internal rules**) prefixed with a unique, non-standard "
+"token, such as `@`."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/internal-rules.md:12
+msgid ""
+"These internal arms are not meant to be called by users, but are used "
+"internally by the macro's public entry points to delegate and reuse logic:"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/internal-rules.md:16
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/internal-rules.md:17
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/internal-rules.md:20
+msgid "// Internal helper rules:\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/internal-rules.md:22
+msgid "\"all-lit: {}\""
+msgstr ""
+
+#: src/macros/macro_rules/techniques/internal-rules.md:25
+msgid "\"some-lit: {}\""
+msgstr ""
+
+#: src/macros/macro_rules/techniques/internal-rules.md:28
+msgid "// Public entrypoints:\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/internal-rules.md:38
+#: src/macros/macro_rules/techniques/internal-rules.md:39
+msgid "\"format: {} {}\""
+msgstr ""
+
+#: src/macros/macro_rules/techniques/internal-rules.md:38
+msgid "\"wow\""
+msgstr ""
+
+#: src/macros/macro_rules/techniques/internal-rules.md:39
+msgid "\"non-literal\""
+msgstr ""
+
+#: src/macros/macro_rules/techniques/internal-rules.md:46
+msgid ""
+"Note that `@` is purely a convention, which works well because `@` cannot "
+"begin a standard Rust item or expression, ensuring public users don't "
+"accidentally invoke these helper arms."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/internal-rules.md:49
+msgid ""
+"Trace the public matcher arms' flow through the recursive call to "
+"(`print_literals!`) while selecting the next branch to take using the `@`\\-"
+"prefixed tokens."
+msgstr ""

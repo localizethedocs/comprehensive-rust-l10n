@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:6
+msgid "Exercise: Turtle Graphics Vector"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:8
+msgid ""
+"In the previous exercise, you built a recursively nested `TurtleProgram` "
+"using a TT muncher."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:11
+msgid ""
+"In this exercise, you will adapt the `turtle_directions!` macro to use a "
+"**Push-Down Accumulator**. Instead of nesting enum variants, your macro will "
+"accumulate parsed `TurtleOp` variants in a bracketed buffer `[ $"
+"($acc:expr),* ]` as it munches the input stream, ultimately constructing a "
+"`Vec<TurtleOp>`."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:16
+msgid "Instruction DSL"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:18
+msgid ""
+"The `turtle_directions!` macro parses the following unpunctuated commands "
+"into a `Vec<TurtleOp>`:"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:21
+msgid "`FWD n` -> `TurtleOp::Forward(n)`"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:22
+msgid "`REV n` -> `TurtleOp::Reverse(n)`"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:23
+msgid "`LEFT n` -> `TurtleOp::Left(n)`"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:24
+msgid "`RIGHT n` -> `TurtleOp::Right(n)`"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:25
+msgid "`PEN UP` -> `TurtleOp::PenUp`"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:26
+msgid "`PEN DOWN` -> `TurtleOp::PenDown`"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:27
+msgid "`RED` -> `TurtleOp::SetColor(Color::Red)`"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:28
+msgid "`BLACK` -> `TurtleOp::SetColor(Color::Black)`"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:30
+msgid "Instructions:"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:32
+msgid ""
+"Implement `turtle_directions!` using internal rule push-down accumulation."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:33
+msgid "Evaluate to `vec![ ... ]` when all tokens have been consumed."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:52
+msgid ""
+"// TODO: Implement the `turtle_directions!` macro using a push-down "
+"accumulator.\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/exercise.md:85
+msgid ""
+"Explain why push-down accumulation is necessary when building flat "
+"collections like a `Vec<T>` or array: individual macro recursive calls "
+"cannot emit loose comma-separated list fragments into surrounding "
+"expressions without storing them inside a container/buffer parameter like `[$"
+"($acc:expr),*]`."
+msgstr ""

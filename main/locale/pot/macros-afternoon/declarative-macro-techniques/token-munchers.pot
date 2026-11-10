@@ -1,0 +1,102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/macro_rules/techniques/token-munchers.md:6
+msgid "Token Munchers"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers.md:8
+msgid ""
+"An **Incremental TT Muncher** is a recursive macro pattern that processes "
+"input token streams by \"eating\" (matching) one or more tokens off the "
+"front of the stream, and recursively passing the remainder back to itself."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers.md:13
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers.md:17
+msgid "// Base case: Only one method call remains\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers.md:28
+msgid "\"Hello, World\""
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers.md:29
+msgid "// Expands recursively to: s.len().trailing_zeros()\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers.md:31
+msgid "\"Trailing zeros in length: {}\""
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers.md:35
+msgid ""
+"TT munchers can parse complex custom grammars, but on the other hand, they "
+"can be difficult to read and debug. For small embedded DSLs, they are "
+"probably the right choice, but for more complex parsers other techniques may "
+"be more appropriate."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers.md:40
+msgid "Limitations"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers.md:42
+msgid ""
+"Because the recursive call passes down the entire rest of the input, while "
+"each step only removes a fixed-size portion of it, TT munchers are quadratic "
+"in the size of their input. For large inputs, compile times can bloat, and "
+"you might exceed the compiler's default macro recursion limit."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers.md:47
+msgid ""
+"There are also some limits around the compiler's built-in follow-set "
+"restrictions (on which fragment specifiers are allowed immediately preceding "
+"a trailing `tt`), needed to prevent parser ambiguity. If we follow the "
+"pattern of sticking to `tt` matchers on the left, we mostly avoid this "
+"limitation."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers.md:55
+msgid ""
+"Explain that the `tt` specifier is key here because it matches any single "
+"token tree (including identifiers, literals, or bracketed groups), allowing "
+"the recursive call to accept \"anything else\" in `$tail`."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers.md:58
+msgid ""
+"Note how `chain!(s, len, trailing_zeros)` matches the recursive case, "
+"expanding to `chain!(s.len(), trailing_zeros)`, which then matches the base "
+"case, expanding to `s.len().trailing_zeros()`."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers.md:61
+msgid ""
+"Warn about rule ordering: a repeated `tt` matcher will also match a single "
+"`tt`, so rules expecting the latter should come first."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers.md:63
+msgid ""
+"Discuss tradeoffs: if a macro is complex enough to require a TT muncher, "
+"there is a chance it may be better expressed as a procedural macro."
+msgstr ""

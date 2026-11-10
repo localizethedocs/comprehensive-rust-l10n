@@ -1,0 +1,71 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/macro_rules/techniques/optional-params.md:6
+msgid "Optional Parameters"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/optional-params.md:8
+msgid ""
+"The `?` repetition operator can be used for optional parameters, but in "
+"older Rust editions (2018 and 2015) it must be emulated; this can be done by "
+"defining multiple matcher arms that cascade. Their right-hand sides may "
+"reuse each other via recursion, which is a common pattern in declarative "
+"macros regardless of edition."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/optional-params.md:15
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/optional-params.md:16
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/optional-params.md:19
+msgid "// Single parameter:\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/optional-params.md:21
+msgid ""
+"// Recurse instead of `println!(\"{}:{}: {}\", file!(), line!(), $msg)`:\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/optional-params.md:24
+msgid "// With optional formatting parameters:\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/optional-params.md:26
+msgid "\"{}:{}: \""
+msgstr ""
+
+#: src/macros/macro_rules/techniques/optional-params.md:31
+msgid "\"my message\""
+msgstr ""
+
+#: src/macros/macro_rules/techniques/optional-params.md:32
+msgid "\"my message with param {}!\""
+msgstr ""
+
+#: src/macros/macro_rules/techniques/optional-params.md:39
+msgid ""
+"Highlight how `concat!` is used at compile time to combine the file/line "
+"prefix with the user's log message literal."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/optional-params.md:41
+msgid ""
+"Recall that the order of arms is significant, just like in a `match`. The "
+"compiler matches sequentially, and if a broader arm is placed above a "
+"narrower one, the narrower arm may never be reached."
+msgstr ""

@@ -1,0 +1,68 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/brackets.md:6
+msgid "Brackets and Token Trees"
+msgstr ""
+
+#: src/macros/brackets.md:8
+msgid ""
+"A **token tree** can represent either a single token, or a **group** of "
+"tokens enclosed by matching delimiters (brackets):"
+msgstr ""
+
+#: src/macros/brackets.md:11
+msgid "**Single tokens (leaf nodes):** `foo`, `+`, `,`, `123`."
+msgstr ""
+
+#: src/macros/brackets.md:12
+msgid ""
+"**Grouped tokens (internal nodes):** Enclosed by parentheses `()`, braces `{}"
+"`, or square brackets `[]`."
+msgstr ""
+
+#: src/macros/brackets.md:15
+msgid "For example, the token stream: `foo + (bar * baz)`"
+msgstr ""
+
+#: src/macros/brackets.md:17
+msgid "Is parsed into **3 separate token trees**:"
+msgstr ""
+
+#: src/macros/brackets.md:19
+msgid "`foo` (a single token)"
+msgstr ""
+
+#: src/macros/brackets.md:20
+msgid "`+` (a single token)"
+msgstr ""
+
+#: src/macros/brackets.md:21
+msgid ""
+"`(bar * baz)` (a token group containing three child token trees: `bar`, `*`, "
+"and `baz`)"
+msgstr ""
+
+#: src/macros/brackets.md:24
+msgid ""
+"Because grouping happens _during_ lexical analysis, **unbalanced groups are "
+"strictly disallowed**. You cannot pass unbalanced parentheses or braces into "
+"or out of a macro!"
+msgstr ""
+
+#: src/macros/brackets.md:31
+msgid ""
+"Note that this means you cannot use a macro to generate half a block, like "
+"`let x = {` and close it with another macro or tokens outside the macro. The "
+"entire block must be passed or returned as a single, well-formed token group."
+msgstr ""

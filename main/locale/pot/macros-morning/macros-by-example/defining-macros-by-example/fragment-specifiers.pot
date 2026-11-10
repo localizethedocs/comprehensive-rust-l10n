@@ -1,0 +1,125 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/macro_rules/fragment-specifiers.md:6
+msgid "Fragment Specifiers"
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:8
+msgid ""
+"**Fragment specifiers** tell the macro compiler what category of syntax to "
+"expect and capture as a meta-variable. Here are the most commonly used "
+"specifiers:"
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:12
+msgid ""
+"`ident`: An identifier (i.e., variable or item names such as `foo` or `_x`)."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:13
+msgid ""
+"`expr`: A single expression (e.g., `2 + 2`, `a.method()`, `match x { ... }`)."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:14
+msgid ""
+"`literal`: A literal value (e.g., `\"hello\"`, `42`, `true`, or `-4.0_f32`)."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:15
+msgid "`stmt`: A single statement without a semicolon (e.g., `let x = 5`)."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:16
+msgid "`pat`: A pattern (e.g., `[_, 0, ..]`)."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:17
+msgid "`ty`: A type (e.g., `i32`, `Vec<String>`, `&str`)."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:18
+msgid ""
+"`path`: A path of segments separated by `::` (e.g., "
+"`std::collections::HashMap`)."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:20
+msgid ""
+"`item`: A complete item definition (e.g., `fn foo() {}`, `struct Bar;`)."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:21
+msgid ""
+"`tt`: A single token tree (recall that this is either a single token or a "
+"bracketed token group)."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:24
+msgid "Less common specifiers include:"
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:26
+msgid "`lifetime`: A lifetime like `'a`."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:27
+msgid ""
+"`block`: A block of statements enclosed in braces (e.g., `{ let x = 5; x }`)."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:28
+msgid ""
+"`vis`: An optional visibility specifier in an item, e.g. `pub` or "
+"`pub(crate)`, or nothing."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:30
+msgid ""
+"`meta`: The possible _contents_ of a `#[...]` attribute (not the full "
+"attribute with hash and brackets)."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:35
+msgid ""
+"Explain that fragment specifiers act like type annotations for macro "
+"parameters. They restrict what tokens can match."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:37
+msgid ""
+"For example, if you use `$x:expr`, the input must be parsable as a valid "
+"Rust expression."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:39
+msgid ""
+"When the macro is expanded, the compiler inserts the matched AST fragment "
+"directly, which guarantees semantic structure and operator precedence."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:41
+msgid ""
+"There is overlap between a number of these specifiers, e.g. we could write "
+"our own pattern for blocks using `stmt` instead of using `block` directly. "
+"In general, try to reach for the most semantically appropriate fragment "
+"specifier where possible, which will catch more syntactic edge cases and "
+"integrate more seamlessly into the language."
+msgstr ""
+
+#: src/macros/macro_rules/fragment-specifiers.md:46
+msgid ""
+"There are some additional, obscure fragment specifiers such as `expr_2021` "
+"and `pat_param`."
+msgstr ""

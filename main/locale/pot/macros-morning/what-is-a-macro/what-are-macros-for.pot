@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/intro/why.md:6
+msgid "What Are Macros For"
+msgstr ""
+
+#: src/macros/intro/why.md:8
+msgid ""
+"Macros are a powerful tool, but carry their own complexity and should be "
+"used only when worthwhile. They are used to solve problems that cannot be "
+"easily solved with standard Rust language features:"
+msgstr ""
+
+#: src/macros/intro/why.md:12
+msgid ""
+"**Reducing Boilerplate:** Implementing traits via `#[derive(...)]` or "
+"reducing syntactic repetition."
+msgstr ""
+
+#: src/macros/intro/why.md:14
+msgid ""
+"**Variadic Interfaces:** Functions that take a variable number of arguments "
+"of different types (like `println!` and `vec!`)."
+msgstr ""
+
+#: src/macros/intro/why.md:16
+msgid ""
+"**Domain-Specific Languages (DSLs):** Creating custom syntax inside Rust "
+"(e.g., `println!`'s format strings, or macros that statically expand HTML "
+"templates or parse SQL queries)."
+msgstr ""
+
+#: src/macros/intro/why.md:19
+msgid ""
+"**Compile-Time Computation:** Inspecting configuration files, environment "
+"variables, or data at build time (e.g., `include_str!`, `env!`)."
+msgstr ""
+
+#: src/macros/intro/why.md:22
+msgid ""
+"Because each macro can define its own input syntax and can perform "
+"operations not available to normal Rust code, macros can make code harder to "
+"read than it would be otherwise. Try to avoid using macros when the same "
+"abstraction can be achieved in another way, and when defining macros, try to "
+"align with syntactic and naming patterns followed in non-macro Rust code."
+msgstr ""
+
+#: src/macros/intro/why.md:31
+msgid ""
+"Contrast with limitations of normal Rust code: functions have a fixed "
+"signature (fixed number of arguments of specific types) and cannot generate "
+"new types or modules."
+msgstr ""

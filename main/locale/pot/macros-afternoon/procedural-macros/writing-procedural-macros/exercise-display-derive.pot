@@ -1,0 +1,174 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/proc-macros/exercise.md:6
+msgid "Exercise: `Display` Derive"
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:8
+msgid ""
+"In this exercise, you will walk through the conceptual implementation of a "
+"custom **`Display` derive macro** using the `syn` and `quote` crates."
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:11
+msgid ""
+"Since we are running this in a single-file environment without a separate "
+"`proc-macro = true` crate setup, we will write a normal Rust function that "
+"takes simulated token streams (using `proc_macro2` and `quote!`), parses "
+"them with `syn`, generates the output with `quote!`, and asserts that the "
+"generated code is correct."
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:17
+msgid "Your task:"
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:19
+msgid "Implement the `derive_display_impl` function to:"
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:21
+msgid ""
+"Parse the incoming token stream `input` into a `syn::DeriveInput` struct."
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:22
+msgid "Extract the name (identifier) of the struct."
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:23
+msgid ""
+"Generate and return a token stream implementing `std::fmt::Display` for that "
+"struct name, which formats the struct using its name, names of its fields, "
+"and their values. (e.g., printing `MyAwesomeType { a: 50, }`)."
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:27
+msgid ""
+"The names of the struct's fields can be obtained with the provided "
+"`struct_fields` function."
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:30
+msgid "This will rely on a `Cargo.toml` resembling:"
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:32
+msgid ""
+"```toml\n"
+"[package]\n"
+"name = \"proc-macro-exercise\"\n"
+"version = \"0.1.0\"\n"
+"edition = \"2024\"\n"
+"publish = false\n"
+"\n"
+"[[bin]]\n"
+"name = \"proc-macro-exercise\"\n"
+"path = \"exercise.rs\"\n"
+"\n"
+"[dependencies]\n"
+"proc-macro2 = \"1.0\"\n"
+"quote = \"1.0\"\n"
+"syn = \"2.0\"\n"
+"```"
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:61
+msgid "\"named field name\""
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:75
+msgid ""
+"// TODO: Parse the input TokenStream into DeriveInput.\n"
+"    // TODO: Extract the identifier of the struct.\n"
+"    // TODO: Generate the impl std::fmt::Display using quote!.\n"
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:91
+msgid "\"Generated code:\\n{}\""
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:93
+msgid ""
+"// Check for patterns that should definitely be present in generated code.\n"
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:94
+msgid "\"impl std :: fmt :: Display for MyAwesomeType\""
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:95
+msgid "\"\\\"MyAwesomeType\\\"\""
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:96
+msgid "\"self . field\""
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:98
+msgid ""
+"// Compile program using the impl to ensure generated code impls `Display`.\n"
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:102
+msgid "\"{a}\""
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:107
+msgid "\"rustc on generated code produced errors or warnings\""
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:114
+msgid "// Invoke the rustc binary to compile generated code\n"
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:115
+msgid "\"rustc\""
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:116
+msgid "\"--verbose\""
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:116
+msgid "\"-\""
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:120
+msgid "\"Failed to spawn child process\""
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:122
+msgid "\"Failed to open stdin\""
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:126
+msgid "// Print the stderr retrieved from rustc\n"
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:129
+msgid "// Return error on non-empty stderr\n"
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:136
+msgid ""
+"`parse2(input)` is the `proc_macro2` version of `parse_macro_input!`, which "
+"we can use for unit testing or within normal Rust functions."
+msgstr ""
+
+#: src/macros/proc-macros/exercise.md:138
+msgid ""
+"The return value of `derive_display_impl` is a `proc_macro2::TokenStream`, "
+"which can be converted to a string using `to_string()` for easy debugging."
+msgstr ""

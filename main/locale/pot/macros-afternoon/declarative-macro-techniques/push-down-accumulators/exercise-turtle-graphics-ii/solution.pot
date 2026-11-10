@@ -1,0 +1,95 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:6
+msgid "Solution"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:8
+msgid ""
+"Here is the implementation of the `turtle_directions!` macro using a push-"
+"down accumulator:"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:12
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:33
+msgid ""
+"// Base case: no more tokens, expand accumulated operations into a Vec\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:43
+msgid "// Munch REV n\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:48
+msgid "// Munch LEFT n\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:53
+msgid "// Munch RIGHT n\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:58
+msgid "// Munch PEN UP\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:63
+msgid "// Munch PEN DOWN\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:68
+msgid "// Munch RED\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:73
+msgid "// Munch BLACK\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:78
+msgid "// Entry point: initialize push-down accumulator\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:114
+msgid "The push-down accumulator works as follows:"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:116
+msgid ""
+"The public entry point rule matching `$($tokens:tt)*` initializes the push-"
+"down buffer by delegating to `@accum [] $($tokens)*`."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:118
+msgid ""
+"Each internal rule matches a command at the head of the token stream and "
+"appends the corresponding `TurtleOp` variant to the buffer."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:120
+msgid ""
+"The remaining tokens `$($rest:tt)*` are recursively passed back into "
+"`turtle_directions!(@accum ...)`."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/accumulators/solution.md:122
+msgid ""
+"When all tokens are munched, the base case `@accum [ $($acc:expr),* ]` "
+"expands the accumulated buffer into a `vec![ $($acc),* ]`."
+msgstr ""

@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/kinds/attr.md:6
+msgid "Attribute Macros"
+msgstr ""
+
+#: src/macros/kinds/attr.md:8
+msgid ""
+"**Attribute macros** are attached as custom attributes to any standard Rust "
+"`item` (including functions, modules, structs, etc.). They have full power "
+"to inspect, rewrite, or completely replace the item they are attached to."
+msgstr ""
+
+#: src/macros/kinds/attr.md:13
+msgid "// A popular example from the Tokio library:\n"
+msgstr ""
+
+#: src/macros/kinds/attr.md:16
+msgid "\"Hello from an async main!\""
+msgstr ""
+
+#: src/macros/kinds/attr.md:20
+msgid "**Universal:** Can be applied to any declaration/item."
+msgstr ""
+
+#: src/macros/kinds/attr.md:21
+msgid ""
+"**Transformational:** Unlike derive macros, they can entirely replace their "
+"target with different code."
+msgstr ""
+
+#: src/macros/kinds/attr.md:23
+msgid ""
+"**Parameters:** Can optionally accept custom metadata parameters, e.g., "
+"`#[route(GET, \"/\")]`."
+msgstr ""
+
+#: src/macros/kinds/attr.md:25
+msgid "**Implementation:** Always implemented as procedural macros."
+msgstr ""
+
+#: src/macros/kinds/attr.md:29
+msgid ""
+"Discuss how `#[tokio::main]` converts an `async fn main()` into a "
+"synchronous `fn main()` that instantiates and runs the Tokio runtime, blocks "
+"on the future, and executes the async block. This completely rewrites the "
+"function signature!"
+msgstr ""
+
+#: src/macros/kinds/attr.md:33
+msgid ""
+"Emphasize that because attribute macros can entirely rewrite items, they are "
+"extremely powerful but require careful error handling to avoid completely "
+"obscuring compile errors for the user."
+msgstr ""

@@ -1,0 +1,69 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/intro/rust-example.md:6
+msgid "A Rust Macro Example"
+msgstr ""
+
+#: src/macros/intro/rust-example.md:8
+msgid ""
+"Here is a comparable implementation of the previous custom syntax example "
+"written in Rust:"
+msgstr ""
+
+#: src/macros/intro/rust-example.md:12
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/macros/intro/rust-example.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/macros/intro/rust-example.md:24
+msgid "\"{}\""
+msgstr ""
+
+#: src/macros/intro/rust-example.md:32
+msgid "\"Uh-Oh!\""
+msgstr ""
+
+#: src/macros/intro/rust-example.md:38
+msgid "Compared to C:"
+msgstr ""
+
+#: src/macros/intro/rust-example.md:40
+msgid ""
+"**Syntactic Safety:** The input is structurally validated. `$code` must be a "
+"valid Rust statement and `$name` must be a valid Rust identifier."
+msgstr ""
+
+#: src/macros/intro/rust-example.md:42
+msgid ""
+"**Hygiene:** In `expect!`, the test `idx < 10` is explicitly passed as an "
+"expression `$test`, rather than having the macro rely on a hidden, "
+"implicitly named local variable."
+msgstr ""
+
+#: src/macros/intro/rust-example.md:48
+msgid ""
+"Walk through how `procedure!` defines a pattern that matches an identifier "
+"`$name`, followed by the literal token `BEGIN`, followed by a statement "
+"`$code`, a semicolon (which is required to separate a statement from the "
+"next syntactic construct) and then our `END` token."
+msgstr ""
+
+#: src/macros/intro/rust-example.md:52
+msgid ""
+"Note that even though the syntax is custom, the Rust compiler ensures that "
+"the inputs to macros are well-formed before passing them to the macro."
+msgstr ""

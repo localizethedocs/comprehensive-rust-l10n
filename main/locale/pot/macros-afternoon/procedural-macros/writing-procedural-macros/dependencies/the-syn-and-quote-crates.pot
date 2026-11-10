@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/proc-macros/writing/deps/syn-quote.md:6
+msgid "The `syn` and `quote` Crates"
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-quote.md:8
+msgid ""
+"Working directly with `TokenStream`s is low-level and tedious. To write "
+"procedural macros effectively, authors often rely on **`syn`** (a parser for "
+"Rust syntax) and **`quote`** (which constructs `syn` values from literal "
+"code fragments) to do the heavy lifting of parsing and code generation."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-quote.md:13
+msgid "The workflow of a typical procedural macro is:"
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-quote.md:15
+msgid "**Input:** Accept a raw `proc_macro::TokenStream` from the compiler."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-quote.md:16
+msgid ""
+"**Parsing (`syn`):** Convert the token stream into a structured, type-safe "
+"Abstract Syntax Tree (AST) representing Rust language items (e.g., structs, "
+"fields, functions)."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-quote.md:19
+msgid ""
+"**Processing:** Inspect the AST struct and perform your custom logic to "
+"decide what code needs to be generated."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-quote.md:21
+msgid ""
+"**Generation (`quote`):** Use a templated macro to generate a new "
+"`proc_macro2::TokenStream`."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-quote.md:23
+msgid ""
+"**Output:** Convert it back to `proc_macro::TokenStream` and return it to "
+"the compiler."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-quote.md:26
+msgid "We will look at how `syn` parses code and how `quote` generates code."
+msgstr ""

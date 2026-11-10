@@ -1,0 +1,69 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/proc-macros/writing/deps/syn-ast.md:6
+msgid "The `syn` AST"
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-ast.md:8
+msgid ""
+"The **`syn`** crate provides a complete, robust parser that parses a raw "
+"`TokenStream` into structured, AST types that can represent any element of "
+"Rust code. `syn` has a wide API surface, but it should feel relatively "
+"straightforward as it mirrors the structure of Rust syntax itself. Here we "
+"illustrate the use of `syn` for a Derive macro:"
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-ast.md:20
+msgid "// Parse raw tokens into a structured `DeriveInput` AST:\n"
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-ast.md:23
+msgid "// Inspect struct metadata:\n"
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-ast.md:27
+msgid "// ...\n"
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-ast.md:31
+msgid ""
+"**`DeriveInput`:** The standard AST structure for a struct, enum, or union."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-ast.md:32
+msgid ""
+"**`parse_macro_input!`:** A specialized macro helper provided by `syn` to "
+"easily parse the input token stream. It automatically handles compile-time "
+"syntax errors if the input is malformed. This macro accepts the name of the "
+"type into which to parse the token stream after an `as` separator, notation "
+"that resembles a Rust cast."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-ast.md:40
+msgid "Explore `DeriveInput`, which three main components:"
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-ast.md:42
+msgid "`ident`: The name of the struct/enum."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-ast.md:43
+msgid "`generics`: Generic parameters, lifetemes, and constraints."
+msgstr ""
+
+#: src/macros/proc-macros/writing/deps/syn-ast.md:44
+msgid ""
+"`data`: An enum containing `syn::DataStruct`, `syn::DataEnum`, or "
+"`syn::DataUnion`, which lets you iterate over variants and fields."
+msgstr ""

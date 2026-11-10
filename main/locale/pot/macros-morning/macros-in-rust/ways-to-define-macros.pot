@@ -1,0 +1,113 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/defining.md:6
+msgid "Ways To Define Macros"
+msgstr ""
+
+#: src/macros/defining.md:8
+msgid ""
+"There are two separate ways of implementing macros in Rust. Each has "
+"distinct advantages and trade-offs:"
+msgstr ""
+
+#: src/macros/defining.md:11
+msgid "Feature"
+msgstr ""
+
+#: src/macros/defining.md:11
+msgid "Declarative Macros"
+msgstr ""
+
+#: src/macros/defining.md:11
+msgid "Procedural Macros"
+msgstr ""
+
+#: src/macros/defining.md:13
+msgid "**Usage**"
+msgstr ""
+
+#: src/macros/defining.md:13
+msgid "Function-like macros only"
+msgstr ""
+
+#: src/macros/defining.md:13
+msgid "All three kinds (Derive, Attr, Function-like)"
+msgstr ""
+
+#: src/macros/defining.md:14
+msgid "**Location**"
+msgstr ""
+
+#: src/macros/defining.md:14
+msgid "Implemented within your normal crate"
+msgstr ""
+
+#: src/macros/defining.md:14
+msgid "Must be defined in a separate `proc-macro` crate"
+msgstr ""
+
+#: src/macros/defining.md:15
+msgid "**Pros**"
+msgstr ""
+
+#: src/macros/defining.md:15
+msgid ""
+"\\- Low boilerplate<br>\\- No extra compilation step<br>\\- Easy to write "
+"and reuse"
+msgstr ""
+
+#: src/macros/defining.md:15
+msgid ""
+"\\- Extremely powerful and expressive<br>\\- Written in standard Rust<br>\\- "
+"Full programmatic control"
+msgstr ""
+
+#: src/macros/defining.md:16
+msgid "**Cons**"
+msgstr ""
+
+#: src/macros/defining.md:16
+msgid ""
+"\\- Bespoke pattern-matching syntax<br>\\- Cannot inspect arbitrary token "
+"structures"
+msgstr ""
+
+#: src/macros/defining.md:16
+msgid "\\- Can slow down build time<br>\\- Substantial boilerplate required"
+msgstr ""
+
+#: src/macros/defining.md:17
+msgid "**Hygiene**"
+msgstr ""
+
+#: src/macros/defining.md:17
+msgid "Partially/mixed hygienic by default"
+msgstr ""
+
+#: src/macros/defining.md:17
+msgid "Configurable / custom hygiene"
+msgstr ""
+
+#: src/macros/defining.md:22
+msgid ""
+"Explain that procedural macros are literally compiled as libraries and "
+"executed _inside_ the compiler while compiling the consuming code. This is "
+"why they require a separate crate."
+msgstr ""
+
+#: src/macros/defining.md:25
+msgid ""
+"Emphasize that you should always prefer declarative macros for simple code "
+"generation due to their much smaller impact on build times."
+msgstr ""

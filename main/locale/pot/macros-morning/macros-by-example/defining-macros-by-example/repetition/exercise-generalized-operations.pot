@@ -1,0 +1,102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/macro_rules/repetition/exercise.md:6
+msgid "Exercise: Generalized Operations"
+msgstr ""
+
+#: src/macros/macro_rules/repetition/exercise.md:8
+msgid ""
+"In the earlier pattern matching exercise, you created a `define_op!` macro "
+"that defined a single binary operation for `i32` at a time."
+msgstr ""
+
+#: src/macros/macro_rules/repetition/exercise.md:11
+msgid ""
+"In this exercise, you will generalize that concept into a `define_ops!` "
+"macro using the repetition constructs of macro matchers. The new macro "
+"should allow implementing an arbitrary number of `std::ops` traits for a "
+"generic wrapper type across multiple underlying numeric types in a single "
+"macro invocation."
+msgstr ""
+
+#: src/macros/macro_rules/repetition/exercise.md:16
+msgid "The desired macro syntax is:"
+msgstr ""
+
+#: src/macros/macro_rules/repetition/exercise.md:27
+msgid ""
+"This invocation should implement `std::ops::Add`, `std::ops::Sub`, and "
+"`std::ops::Mul` for `Scalar<i32>`, `Scalar<f32>`, and `Scalar<f64>`."
+msgstr ""
+
+#: src/macros/macro_rules/repetition/exercise.md:30
+msgid "Instructions:"
+msgstr ""
+
+#: src/macros/macro_rules/repetition/exercise.md:32
+msgid ""
+"Given a wrapper struct `#[derive(Debug, PartialEq)] struct Scalar<T>(pub "
+"T);`, implement the `define_ops!` macro."
+msgstr ""
+
+#: src/macros/macro_rules/repetition/exercise.md:34
+msgid ""
+"Parse a comma-separated list of types (`$( $t:ty ),+`) followed by a colon "
+"(`:`)."
+msgstr ""
+
+#: src/macros/macro_rules/repetition/exercise.md:36
+msgid ""
+"Parse a comma-separated list of trait mappings (`$( $trait_name:ident :: "
+"$fn_name:ident => $op:tt ),*`)."
+msgstr ""
+
+#: src/macros/macro_rules/repetition/exercise.md:38
+msgid ""
+"In the macro expansion, use nested repetition `$($( ... )*)*` to generate "
+"`impl std::ops::$trait_name for Scalar<$t>` blocks."
+msgstr ""
+
+#: src/macros/macro_rules/repetition/exercise.md:46
+msgid "// TODO: Implement the `define_ops!` macro.\n"
+msgstr ""
+
+#: src/macros/macro_rules/repetition/solution.md:6
+msgid "Solution"
+msgstr ""
+
+#: src/macros/macro_rules/repetition/solution.md:8
+msgid ""
+"Here is the implementation of the generalized `define_ops!` macro using "
+"`std::ops` traits and nested macro repetition:"
+msgstr ""
+
+#: src/macros/macro_rules/repetition/solution.md:12
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/macros/macro_rules/repetition/solution.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/macros/macro_rules/repetition/solution.md:21
+msgid "// Base case: no types left to handle\n"
+msgstr ""
+
+#: src/macros/macro_rules/repetition/solution.md:69
+msgid ""
+"The macro transcriber uses nested repetition `$($( ... )*)*` to expand an "
+"`impl std::ops::$trait_name for Scalar<$t>` block for every combination of "
+"type `$t` and operator `$op`."
+msgstr ""

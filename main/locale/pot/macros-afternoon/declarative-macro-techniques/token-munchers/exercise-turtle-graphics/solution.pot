@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-11-10T16:03:14Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/macros/macro_rules/techniques/token-munchers/solution.md:6
+msgid "Solution"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/solution.md:8
+msgid ""
+"Here is the implementation of the `turtle_directions!` TT muncher macro:"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/solution.md:11
+msgid "// Copyright 2026 Google LLC\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/solution.md:12
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/solution.md:103
+msgid "The macro processes the input sequence incrementally:"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/solution.md:105
+msgid ""
+"Each rule matches a specific command pattern at the head of the token stream "
+"(such as `FWD $n:tt`, `PEN UP`, or `PEN DOWN`)."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/solution.md:107
+msgid ""
+"The matched command is wrapped into its corresponding `TurtleProgram` "
+"variant, passing `Box::new(turtle_directions!($($rest)*))` as the rest of "
+"the program."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/solution.md:110
+msgid ""
+"Recursion continues on the remaining tokens `$($rest:tt)*` until no tokens "
+"remain, matching the empty `()` base case and giving `TurtleProgram::Done`."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/solution.md:113
+msgid ""
+"Note that `$n:tt` is used for numeric arguments because the built-in follow-"
+"set rules prohibit `$($rest:tt)*` from directly following `$n:expr` without "
+"punctuation."
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/solution.md:117
+msgid "Extra Credit"
+msgstr ""
+
+#: src/macros/macro_rules/techniques/token-munchers/solution.md:119
+msgid ""
+"Consider how the definition of this macro could be further factored to avoid "
+"the repetition of `TurtleProgram::$OPERATION($ARG, "
+"Box::new(turtle_directions!(` in most of its arms."
+msgstr ""
