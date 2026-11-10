@@ -127,7 +127,7 @@ msgstr ""
 
 #: src/idiomatic/leveraging-the-type-system.md:60
 msgid "1 hour and 15 minutes"
-msgstr ""
+msgstr "1 小時又 15 分鐘"
 
 #: src/idiomatic/leveraging-the-type-system.md:61
 msgid "Typestate Pattern"
@@ -152,6 +152,3 @@ msgstr ""
 #: src/idiomatic/leveraging-the-type-system.md:63
 msgid "1 hour and 35 minutes"
 msgstr "1 小時又 35 分鐘"
-
-#~ msgid "This segment should take about 7 hours and 30 minutes. It contains:"
-#~ msgstr "本節大約需要 7 小時又 30 分鐘，內容包含："

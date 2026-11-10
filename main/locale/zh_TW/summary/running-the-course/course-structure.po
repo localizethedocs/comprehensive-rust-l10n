@@ -470,9 +470,3 @@ msgid ""
 "The course is meant to be very interactive and we recommend letting the "
 "questions drive the exploration of Rust!"
 msgstr ""
-
-#~ msgid "7 hours and 30 minutes"
-#~ msgstr "7 小時又 30 分鐘"
-
-#~ msgid "3 hours and 5 minutes"
-#~ msgstr "3 小時又 5 分鐘"

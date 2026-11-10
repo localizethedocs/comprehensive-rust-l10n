@@ -90,7 +90,7 @@ msgstr ""
 
 #: src/idiomatic/welcome.md:32
 msgid "50 minutes"
-msgstr ""
+msgstr "50 分鐘"
 
 #: src/idiomatic/welcome.md:39
 msgid ""
@@ -333,9 +333,3 @@ msgid ""
 "Distinguish fatal errors from recoverable errors using `Result<Result<T, "
 "RecoverableError>, FatalError>`."
 msgstr ""
-
-#~ msgid "7 hours and 30 minutes"
-#~ msgstr "7 小時又 30 分鐘"
-
-#~ msgid "3 hours and 5 minutes"
-#~ msgstr "3 小時又 5 分鐘"
