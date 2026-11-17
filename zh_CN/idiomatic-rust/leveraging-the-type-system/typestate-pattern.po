@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:6
+msgid "Typestate Pattern: Problem"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:8
+msgid ""
+"How can we ensure that only valid operations are allowed on a value based on "
+"its current state?"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:12
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:24
+msgid "\"{name} {{\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:28
+msgid "\"  {key}={value};\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:32
+msgid "\"}\\n\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:42
+msgid "\"User\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:43
+msgid "\"id\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:43
+msgid "\"42\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:44
+msgid "\"name\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:44
+msgid "\"Alice\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:46
+msgid "// serializer.serialize_struct_end(); // ← Oops! Forgotten\n"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:48
+msgid "\"{}\""
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:55
+msgid "This `Serializer` is meant to write a structured value."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:57
+msgid ""
+"However, in this example we forgot to call `serialize_struct_end()` before "
+"`finish()`. As a result, the serialized output is incomplete or "
+"syntactically incorrect."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:61
+msgid ""
+"One approach to fix this would be to track internal state manually, and "
+"return a `Result` from methods like `serialize_struct_field()` or `finish()` "
+"if the current state is invalid."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:65
+msgid "But this has downsides:"
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:67
+msgid ""
+"It is easy to get wrong as an implementer. Rust’s type system cannot help "
+"enforce the correctness of our state transitions."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:70
+msgid ""
+"It also adds unnecessary burden on the user, who must handle `Result` values "
+"for operations that are misused in source code rather than at runtime."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:73
+msgid ""
+"A better solution is to model the valid state transitions directly in the "
+"type system."
+msgstr ""
+
+#: src/idiomatic/leveraging-the-type-system/typestate-pattern.md:76
+msgid ""
+"In the next slide, we will apply the **typestate pattern** to enforce "
+"correct usage at compile time and make it impossible to call incompatible "
+"methods or forget to do a required action."
+msgstr ""

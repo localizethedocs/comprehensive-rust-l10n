@@ -1,0 +1,186 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/aps/better-uart.md:6
+msgid "A better UART driver"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:8
+msgid ""
+"The PL011 actually has [more registers](https://developer.arm.com/"
+"documentation/ddi0183/g/programmers-model/summary-of-registers), and adding "
+"offsets to construct pointers to access them is error-prone and hard to "
+"read. Additionally, some of them are bit fields, which would be nice to "
+"access in a structured way."
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:12
+msgid "Offset"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:12
+msgid "Register name"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:12
+msgid "Width"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:14
+msgid "0x00"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:14
+msgid "DR"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:14
+msgid "12"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:15
+msgid "0x04"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:15
+msgid "RSR"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:15
+msgid "4"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:16
+msgid "0x18"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:16
+msgid "FR"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:16
+msgid "9"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:17
+msgid "0x20"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:17
+msgid "ILPR"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:17 src/bare-metal/aps/better-uart.md:20
+msgid "8"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:18
+msgid "0x24"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:18
+msgid "IBRD"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:18 src/bare-metal/aps/better-uart.md:21
+msgid "16"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:19
+msgid "0x28"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:19
+msgid "FBRD"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:19 src/bare-metal/aps/better-uart.md:22
+msgid "6"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:20
+msgid "0x2c"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:20
+msgid "LCR_H"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:21
+msgid "0x30"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:21
+msgid "CR"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:22
+msgid "0x34"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:22
+msgid "IFLS"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:23
+msgid "0x38"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:23
+msgid "IMSC"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:23 src/bare-metal/aps/better-uart.md:24
+#: src/bare-metal/aps/better-uart.md:25 src/bare-metal/aps/better-uart.md:26
+msgid "11"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:24
+msgid "0x3c"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:24
+msgid "RIS"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:25
+msgid "0x40"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:25
+msgid "MIS"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:26
+msgid "0x44"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:26
+msgid "ICR"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:27
+msgid "0x48"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:27
+msgid "DMACR"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:27
+msgid "3"
+msgstr ""
+
+#: src/bare-metal/aps/better-uart.md:31
+msgid "There are also some ID registers that have been omitted for brevity."
+msgstr ""

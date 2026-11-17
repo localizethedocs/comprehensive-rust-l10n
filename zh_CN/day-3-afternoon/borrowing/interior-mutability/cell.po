@@ -1,0 +1,43 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/borrowing/interior-mutability/cell.md:6
+msgid "`Cell`"
+msgstr ""
+
+#: src/borrowing/interior-mutability/cell.md:8
+msgid ""
+"`Cell` wraps a value and allows getting or setting the value using only a "
+"shared reference to the `Cell`. However, it does not allow any references to "
+"the inner value. Since there are no references, borrowing rules cannot be "
+"broken."
+msgstr ""
+
+#: src/borrowing/interior-mutability/cell.md:13
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/borrowing/interior-mutability/cell.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/borrowing/interior-mutability/cell.md:19
+msgid "// Note that `cell` is NOT declared as mutable.\n"
+msgstr ""
+
+#: src/borrowing/interior-mutability/cell.md:29
+msgid ""
+"`Cell` is a simple means to ensure safety: it has a `set` method that takes "
+"`&self`. This needs no runtime check, but requires moving values, which can "
+"have its own cost."
+msgstr ""

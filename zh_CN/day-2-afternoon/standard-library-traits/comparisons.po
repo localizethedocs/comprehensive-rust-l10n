@@ -1,0 +1,87 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/std-traits/comparisons.md:6
+msgid "Comparisons"
+msgstr ""
+
+#: src/std-traits/comparisons.md:8
+msgid ""
+"These traits support comparisons between values. All traits can be derived "
+"for types containing fields that implement these traits."
+msgstr ""
+
+#: src/std-traits/comparisons.md:11
+msgid "`PartialEq` and `Eq`"
+msgstr ""
+
+#: src/std-traits/comparisons.md:13
+msgid ""
+"`PartialEq` is a partial equivalence relation, with required method `eq` and "
+"provided method `ne`. The `==` and `!=` operators will call these methods."
+msgstr ""
+
+#: src/std-traits/comparisons.md:17 src/std-traits/comparisons.md:41
+#: src/std-traits/comparisons.md:69 src/std-traits/comparisons.md:92
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/std-traits/comparisons.md:18 src/std-traits/comparisons.md:42
+#: src/std-traits/comparisons.md:70 src/std-traits/comparisons.md:93
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/std-traits/comparisons.md:31
+msgid ""
+"`Eq` is a full equivalence relation (reflexive, symmetric, and transitive) "
+"and implies `PartialEq`. Functions that require full equivalence will use "
+"`Eq` as a trait bound."
+msgstr ""
+
+#: src/std-traits/comparisons.md:35
+msgid "`PartialOrd` and `Ord`"
+msgstr ""
+
+#: src/std-traits/comparisons.md:37
+msgid ""
+"`PartialOrd` defines a partial ordering, with a `partial_cmp` method. It is "
+"used to implement the `<`, `<=`, `>=`, and `>` operators."
+msgstr ""
+
+#: src/std-traits/comparisons.md:60
+msgid "`Ord` is a total ordering, with `cmp` returning `Ordering`."
+msgstr ""
+
+#: src/std-traits/comparisons.md:65
+msgid ""
+"`PartialEq` can be implemented between different types, but `Eq` cannot, "
+"because it is reflexive:"
+msgstr ""
+
+#: src/std-traits/comparisons.md:83
+msgid ""
+"In practice, it's common to derive these traits, but uncommon to implement "
+"them."
+msgstr ""
+
+#: src/std-traits/comparisons.md:86
+msgid ""
+"When comparing references in Rust, it will compare the value of the things "
+"pointed to, it will NOT compare the references themselves. That means that "
+"references to two different things can compare as equal if the values "
+"pointed to are the same:"
+msgstr ""
+
+#: src/std-traits/comparisons.md:96 src/std-traits/comparisons.md:97
+msgid "\"Hello\""
+msgstr ""

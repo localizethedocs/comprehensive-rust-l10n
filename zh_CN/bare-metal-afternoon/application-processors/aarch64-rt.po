@@ -1,0 +1,87 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/bare-metal/aps/aarch64-rt.md:6
+msgid "aarch64-rt"
+msgstr ""
+
+#: src/bare-metal/aps/aarch64-rt.md:8
+msgid ""
+"The `aarch64-rt` crate provides the assembly entry point and exception "
+"vector that we implemented before. We just need to mark our main function "
+"with the `entry!` macro."
+msgstr ""
+
+#: src/bare-metal/aps/aarch64-rt.md:12
+msgid ""
+"It also provides the `initial_pagetable!` macro to let us define an initial "
+"static pagetable in Rust, rather than in assembly code like we did before."
+msgstr ""
+
+#: src/bare-metal/aps/aarch64-rt.md:15
+msgid ""
+"We can also use the UART driver from the `arm-pl011-uart` crate rather than "
+"writing our own."
+msgstr ""
+
+#: src/bare-metal/aps/aarch64-rt.md:19
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/bare-metal/aps/aarch64-rt.md:20
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/bare-metal/aps/aarch64-rt.md:35
+msgid "/// Base address of the primary PL011 UART.\n"
+msgstr ""
+
+#: src/bare-metal/aps/aarch64-rt.md:39
+msgid "/// Attributes to use for device memory in the initial identity map.\n"
+msgstr ""
+
+#: src/bare-metal/aps/aarch64-rt.md:45
+msgid "/// Attributes to use for normal memory in the initial identity map.\n"
+msgstr ""
+
+#: src/bare-metal/aps/aarch64-rt.md:55
+msgid "// 1 GiB of device memory.\n"
+msgstr ""
+
+#: src/bare-metal/aps/aarch64-rt.md:57
+msgid "// 1 GiB of normal memory.\n"
+msgstr ""
+
+#: src/bare-metal/aps/aarch64-rt.md:59
+msgid "// Another 1 GiB of device memory starting at 256 GiB.\n"
+msgstr ""
+
+#: src/bare-metal/aps/aarch64-rt.md:66
+msgid ""
+"// SAFETY: `PL011_BASE_ADDRESS` is the base address of a PL011 device, and\n"
+"    // nothing else accesses that address range.\n"
+msgstr ""
+
+#: src/bare-metal/aps/aarch64-rt.md:70
+msgid "\"main({x0:#x}, {x1:#x}, {x2:#x}, {x3:#x})\""
+msgstr ""
+
+#: src/bare-metal/aps/aarch64-rt.md:73
+msgid "\"system_off returned\""
+msgstr ""
+
+#: src/bare-metal/aps/aarch64-rt.md:85
+msgid ""
+"Run the example in QEMU with `make qemu_rt` under `src/bare-metal/aps/"
+"examples`."
+msgstr ""

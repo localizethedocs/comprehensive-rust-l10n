@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/hello-world/playground.md:6
+msgid "Playground"
+msgstr ""
+
+#: src/hello-world/playground.md:8
+msgid ""
+"The [Rust Playground](https://play.rust-lang.org/) provides an easy way to "
+"run short Rust programs, and is the basis for the examples and exercises in "
+"this course. Try running the \"hello-world\" program it starts with. It "
+"comes with a few handy features:"
+msgstr ""
+
+#: src/hello-world/playground.md:13
+msgid ""
+"Under \"Tools\", use the `rustfmt` option to format your code in the "
+"\"standard\" way."
+msgstr ""
+
+#: src/hello-world/playground.md:16
+msgid ""
+"Rust has two main \"profiles\" for generating code: Debug (extra runtime "
+"checks, less optimization) and Release (fewer runtime checks, lots of "
+"optimization). These are accessible under \"Debug\" at the top."
+msgstr ""
+
+#: src/hello-world/playground.md:20
+msgid ""
+"If you're interested, use \"ASM\" under \"...\" to see the generated "
+"assembly code."
+msgstr ""
+
+#: src/hello-world/playground.md:26
+msgid ""
+"As students head into the break, encourage them to open up the playground "
+"and experiment a little. Encourage them to keep the tab open and try things "
+"out during the rest of the course. This is particularly helpful for advanced "
+"students who want to know more about Rust's optimizations or generated "
+"assembly."
+msgstr ""
