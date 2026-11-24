@@ -1,0 +1,81 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md:6
+msgid "PartialEq and Eq"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md:8
+msgid "Partial equality & Total equality."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md:10
+msgid "Derivable: ✅"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md:13
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md:14
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md:20
+msgid "\"alice\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md:21
+msgid "\"bob\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md:30
+msgid ""
+"Equality-related methods. If a type implements `PartialEq` then you can use "
+"the `==`/`!=` operator with that type."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md:33
+msgid "A type can't implement `Eq` without implementing `PartialEq`."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md:35
+msgid ""
+"Reminder: Partial means \"there are invalid members of this set for this "
+"function.\""
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md:38
+msgid ""
+"This doesn't mean that equality will panic, or that it returns a result, "
+"just that there may be values that may not behave as you expect equality to "
+"behave."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md:41
+msgid ""
+"For example, with floating point values `NaN` is an outlier: `NaN == NaN` is "
+"false, despite bitwise equality."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md:44
+msgid ""
+"`PartialEq` exists to separate types like `f32`/`f64` from types with Total "
+"Equality."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md:47
+msgid ""
+"You can implement `PartialEq` between different types, but this is mostly "
+"useful for reference/smart pointer types."
+msgstr ""

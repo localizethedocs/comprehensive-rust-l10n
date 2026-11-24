@@ -1,0 +1,65 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/any-trait.md:6
+msgid "Any Trait and Downcasting"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/any-trait.md:9
+msgid "// Copyright 2025 Google LLC\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/any-trait.md:10
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/any-trait.md:33
+msgid ""
+"The `Any` trait allows us to downcast values back from dyn values into "
+"concrete values."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/any-trait.md:36
+msgid ""
+"This is an auto trait: like Send/Sync/Sized, it is automatically implemented "
+"for any type that meets specific criteria."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/any-trait.md:39
+msgid ""
+"The criteria for Any is that a type is `'static`. That is, the type does not "
+"contain any non-`'static` lifetimes within it."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/any-trait.md:42
+msgid ""
+"Any offers two related behaviors: downcasting, and runtime checking of types "
+"being the same."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/any-trait.md:45
+msgid ""
+"In the example above, we see the ability to downcast from `Any` into "
+"`ThisImplementsAny` automatically."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/any-trait.md:48
+msgid ""
+"We also see `Any::is` being used to check to see what type the value is."
+msgstr ""
+
+#: src/idiomatic/polymorphism/from-oop-to-rust/dynamic-dispatch/any-trait.md:50
+msgid ""
+"`Any` does not implement reflection for a type, this is all you can do with "
+"`Any`."
+msgstr ""

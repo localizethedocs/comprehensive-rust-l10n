@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:6
+msgid "The unsafe keyword has two roles"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:8
+msgid "_Creating_ APIs with safety considerations"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:10
+msgid "unsafe functions: `unsafe fn get_unchecked(&self) { ... }`"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:11
+msgid "unsafe traits: `unsafe trait Send {}`"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:13
+msgid "_Using_ APIs with safety considerations"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:15
+msgid "invoking built-in unsafe operators: `unsafe { *ptr }`"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:16
+msgid "calling unsafe functions: `unsafe { x.get_unchecked() }`"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:17
+msgid "implementing unsafe traits: `unsafe impl Send for Counter {}`"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:22
+msgid "Two roles:"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:24
+msgid ""
+"**Creating** APIs with safety considerations and defining what needs to be "
+"considered"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:26
+msgid ""
+"**Using** APIs with safety considerations and confirming that the "
+"consideration has been made"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:29
+msgid "Creating APIs with safety considerations"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:31
+msgid ""
+"“First, the unsafe keyword enables you to create APIs that can break Rust’s "
+"safety guarantees. Specifically, you need to use the unsafe keyword when "
+"defining unsafe functions and unsafe traits."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:35
+msgid ""
+"“When used in this role, you’re informing users of your API that they need "
+"to be careful.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:38
+msgid ""
+"“The creator of the API should communicate what care needs to be taken. "
+"Unsafe APIs are not complete without documentation about safety "
+"requirements. Callers need to know that they have satisfied any "
+"requirements, and that’s impossible if they’re not written down.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:43
+msgid "Using APIs with safety considerations"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:45
+msgid ""
+"“The unsafe keyword adopts its other role, using APIs, when it is used "
+"nearby to a curly brace."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:48
+msgid ""
+"“When used in this role, the unsafe keyword means that the author has been "
+"careful. They have verified that the code is safe and is providing an "
+"assurance to others.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:52
+msgid ""
+"“Unsafe blocks are most common. They allow you to invoke unsafe functions "
+"that have been defined using the first role."
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:55
+msgid ""
+"“Unsafe blocks also allow you to perform operations which the compiler knows "
+"are unsafe, such as dereferencing a raw pointer.”"
+msgstr ""
+
+#: src/unsafe-deep-dive/introduction/two-roles.md:58
+msgid ""
+"“You might also see the unsafe keyword being used to implement unsafe traits."
+msgstr ""

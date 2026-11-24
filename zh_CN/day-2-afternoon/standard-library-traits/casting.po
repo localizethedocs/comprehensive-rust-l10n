@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/std-traits/casting.md:6
+msgid "Casting"
+msgstr ""
+
+#: src/std-traits/casting.md:8
+msgid ""
+"Rust has no _implicit_ type conversions, but does support explicit casts "
+"with `as`. These generally follow C semantics where those are defined."
+msgstr ""
+
+#: src/std-traits/casting.md:12
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/std-traits/casting.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/std-traits/casting.md:17
+msgid "\"as u16: {}\""
+msgstr ""
+
+#: src/std-traits/casting.md:18
+msgid "\"as i16: {}\""
+msgstr ""
+
+#: src/std-traits/casting.md:19
+msgid "\"as u8: {}\""
+msgstr ""
+
+#: src/std-traits/casting.md:23
+msgid ""
+"The results of `as` are _always_ defined in Rust and consistent across "
+"platforms. This might not match your intuition for changing sign or casting "
+"to a smaller type -- check the docs, and comment for clarity."
+msgstr ""
+
+#: src/std-traits/casting.md:27
+msgid ""
+"Casting with `as` is a relatively sharp tool that is easy to use "
+"incorrectly, and can be a source of subtle bugs as future maintenance work "
+"changes the types that are used or the ranges of values in types. Casts are "
+"best used only when the intent is to indicate unconditional truncation (e.g. "
+"selecting the bottom 32 bits of a `u64` with `as u32`, regardless of what "
+"was in the high bits)."
+msgstr ""
+
+#: src/std-traits/casting.md:33
+msgid ""
+"For infallible casts (e.g. `u32` to `u64`), prefer using `From` or `Into` "
+"over `as` to confirm that the cast is in fact infallible. For fallible "
+"casts, `TryFrom` and `TryInto` are available when you want to handle casts "
+"that fit differently from those that don't."
+msgstr ""
+
+#: src/std-traits/casting.md:41
+msgid "Consider taking a break after this slide."
+msgstr ""
+
+#: src/std-traits/casting.md:43
+msgid ""
+"`as` is similar to a C++ static cast. Use of `as` in cases where data might "
+"be lost is generally discouraged, or at least deserves an explanatory "
+"comment."
+msgstr ""
+
+#: src/std-traits/casting.md:46
+msgid "This is common in casting integers to `usize` for use as an index."
+msgstr ""

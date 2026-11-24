@@ -1,0 +1,71 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/methods-and-traits/exercise.md:6
+msgid "Exercise: Logger Trait"
+msgstr ""
+
+#: src/methods-and-traits/exercise.md:8
+msgid ""
+"Let's design a simple logging utility, using a trait `Logger` with a `log` "
+"method. Code that might log its progress can then take an `&impl Logger`. In "
+"testing, this might put messages in the test logfile, while in a production "
+"build it would send messages to a log server."
+msgstr ""
+
+#: src/methods-and-traits/exercise.md:13
+msgid ""
+"However, the `StderrLogger` given below logs all messages, regardless of "
+"verbosity. Your task is to write a `VerbosityFilter` type that will ignore "
+"messages above a maximum verbosity."
+msgstr ""
+
+#: src/methods-and-traits/exercise.md:17
+msgid ""
+"This is a common pattern: a struct wrapping a trait implementation and "
+"implementing that same trait, adding behavior in the process. In the "
+"\"Generics\" segment, we will see how to make the wrapper generic over the "
+"wrapped type."
+msgstr ""
+
+#: src/methods-and-traits/exercise.md:22
+msgid "// Copyright 2023 Google LLC\n"
+msgstr ""
+
+#: src/methods-and-traits/exercise.md:23
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/methods-and-traits/exercise.md:26
+msgid "/// Log a message at the given verbosity level.\n"
+msgstr ""
+
+#: src/methods-and-traits/exercise.md:34
+msgid "\"verbosity={verbosity}: {message}\""
+msgstr ""
+
+#: src/methods-and-traits/exercise.md:37
+msgid "/// Only log messages up to the given verbosity level.\n"
+msgstr ""
+
+#: src/methods-and-traits/exercise.md:43
+msgid "// TODO: Implement the `Logger` trait for `VerbosityFilter`.\n"
+msgstr ""
+
+#: src/methods-and-traits/exercise.md:48
+msgid "\"FYI\""
+msgstr ""
+
+#: src/methods-and-traits/exercise.md:49
+msgid "\"Uhoh\""
+msgstr ""

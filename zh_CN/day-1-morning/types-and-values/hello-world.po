@@ -1,0 +1,104 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/types-and-values/hello-world.md:6
+msgid "Hello, World"
+msgstr ""
+
+#: src/types-and-values/hello-world.md:8
+msgid ""
+"Let us jump into the simplest possible Rust program, a classic Hello World "
+"program:"
+msgstr ""
+
+#: src/types-and-values/hello-world.md:12
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/types-and-values/hello-world.md:13
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/types-and-values/hello-world.md:16
+msgid "\"Hello 🌍!\""
+msgstr ""
+
+#: src/types-and-values/hello-world.md:20
+msgid "What you see:"
+msgstr ""
+
+#: src/types-and-values/hello-world.md:22
+msgid "Functions are introduced with `fn`."
+msgstr ""
+
+#: src/types-and-values/hello-world.md:23
+msgid "The `main` function is the entry point of the program."
+msgstr ""
+
+#: src/types-and-values/hello-world.md:24
+msgid "Blocks are delimited by curly braces like in C and C++."
+msgstr ""
+
+#: src/types-and-values/hello-world.md:25
+msgid "Statements end with `;`."
+msgstr ""
+
+#: src/types-and-values/hello-world.md:26
+msgid "`println` is a macro, indicated by the `!` in the invocation."
+msgstr ""
+
+#: src/types-and-values/hello-world.md:27
+msgid "Rust strings are UTF-8 encoded and can contain any Unicode character."
+msgstr ""
+
+#: src/types-and-values/hello-world.md:32
+msgid ""
+"This slide tries to make the students comfortable with Rust code. They will "
+"see a ton of it over the next four days so we start small with something "
+"familiar."
+msgstr ""
+
+#: src/types-and-values/hello-world.md:35
+msgid "Key points:"
+msgstr ""
+
+#: src/types-and-values/hello-world.md:37
+msgid ""
+"Rust is very much like other languages in the C/C++/Java tradition. It is "
+"imperative and it doesn't try to reinvent things unless absolutely necessary."
+msgstr ""
+
+#: src/types-and-values/hello-world.md:40
+msgid "Rust is modern with full support for Unicode."
+msgstr ""
+
+#: src/types-and-values/hello-world.md:42
+msgid ""
+"Rust uses macros for situations where you want to have a variable number of "
+"arguments (no function [overloading](../control-flow-basics/functions.md))."
+msgstr ""
+
+#: src/types-and-values/hello-world.md:45
+msgid ""
+"`println!` is a macro because it needs to handle an arbitrary number of "
+"arguments based on the format string, which can't be done with a regular "
+"function. Otherwise it can be treated like a regular function."
+msgstr ""
+
+#: src/types-and-values/hello-world.md:49
+msgid ""
+"Rust is multi-paradigm. For example, it has powerful [object-oriented "
+"programming features](https://doc.rust-lang.org/book/ch17-00-oop.html), and, "
+"while it is not a functional language, it includes a range of [functional "
+"concepts](https://doc.rust-lang.org/book/ch13-00-functional-features.html)."
+msgstr ""

@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions.md:6
+msgid "Naming Conventions"
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions.md:11
+msgid ""
+"A formal and consistently-applied naming convention lets developers treat "
+"names like a domain-specific language and quickly understand the "
+"functionality and use cases of a method."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions.md:15
+msgid ""
+"Rust's community developed naming conventions early, making them mostly "
+"consistent in places like the standard library."
+msgstr ""
+
+#: src/idiomatic/foundations-api-design/predictable-api/naming-conventions.md:18
+msgid ""
+"Here we'll learn common components of Rust method names, giving examples "
+"from the standard library and some context to go with them."
+msgstr ""

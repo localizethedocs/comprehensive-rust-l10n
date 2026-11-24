@@ -1,0 +1,84 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/references/slices.md:6
+msgid "Slices"
+msgstr ""
+
+#: src/references/slices.md:8
+msgid "A slice gives you a view into a larger collection:"
+msgstr ""
+
+#: src/references/slices.md:25
+msgid "Slices borrow data from the sliced type."
+msgstr ""
+
+#: src/references/slices.md:30
+msgid ""
+"We create a slice by borrowing `a` and specifying the starting and ending "
+"indexes in brackets."
+msgstr ""
+
+#: src/references/slices.md:33
+msgid ""
+"If the slice starts at index 0, Rust’s range syntax allows us to drop the "
+"starting index, meaning that `&a[0..a.len()]` and `&a[..a.len()]` are "
+"identical."
+msgstr ""
+
+#: src/references/slices.md:37
+msgid ""
+"The same is true for the last index, so `&a[2..a.len()]` and `&a[2..]` are "
+"identical."
+msgstr ""
+
+#: src/references/slices.md:40
+msgid ""
+"To easily create a slice of the full array, we can therefore use `&a[..]`."
+msgstr ""
+
+#: src/references/slices.md:42
+msgid ""
+"`s` is a reference to a slice of `i32`s. Notice that the type of `s` "
+"(`&[i32]`) no longer mentions the array length. This allows us to perform "
+"computation on slices of different sizes."
+msgstr ""
+
+#: src/references/slices.md:46
+msgid ""
+"Slices always borrow from another object. In this example, `a` has to remain "
+"'alive' (in scope) for at least as long as our slice."
+msgstr ""
+
+#: src/references/slices.md:49
+msgid "You can't \"grow\" a slice once it's created:"
+msgstr ""
+
+#: src/references/slices.md:50
+msgid ""
+"You can't append elements of the slice, since it doesn't own the backing "
+"buffer."
+msgstr ""
+
+#: src/references/slices.md:52
+msgid ""
+"You can't grow a slice to point to a larger section of the backing buffer. A "
+"slice does not have information about the length of the underlying buffer "
+"and so you can't know how large the slice can be grown."
+msgstr ""
+
+#: src/references/slices.md:55
+msgid ""
+"To get a larger slice you have to go back to the original buffer and create "
+"a larger slice from there."
+msgstr ""

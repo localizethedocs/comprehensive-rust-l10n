@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Comprehensive Rust 🦀\n"
+"POT-Creation-Date: 2026-05-19T11:02:32Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/android/aidl/example-service/changing-implementation.md:6
+msgid "Updating Client and Service"
+msgstr ""
+
+#: src/android/aidl/example-service/changing-implementation.md:8
+msgid "Update the client and server code to account for the new API."
+msgstr ""
+
+#: src/android/aidl/example-service/changing-implementation.md:10
+msgid "_birthday_service/src/lib.rs_:"
+msgstr ""
+
+#: src/android/aidl/example-service/changing-implementation.md:13
+#: src/android/aidl/example-service/changing-implementation.md:40
+msgid "// Copyright 2024 Google LLC\n"
+msgstr ""
+
+#: src/android/aidl/example-service/changing-implementation.md:14
+#: src/android/aidl/example-service/changing-implementation.md:41
+msgid "// SPDX-License-Identifier: Apache-2.0\n"
+msgstr ""
+
+#: src/android/aidl/example-service/changing-implementation.md:24
+msgid "\"Happy Birthday {name}, congratulations with the {years} years!\""
+msgstr ""
+
+#: src/android/aidl/example-service/changing-implementation.md:28
+msgid "'\\n'"
+msgstr ""
+
+#: src/android/aidl/example-service/changing-implementation.md:37
+msgid "_birthday_service/src/client.rs_:"
+msgstr ""
+
+#: src/android/aidl/example-service/changing-implementation.md:47
+msgid "\"Habby birfday to yuuuuu\""
+msgstr ""
+
+#: src/android/aidl/example-service/changing-implementation.md:48
+msgid "\"And also: many more\""
+msgstr ""
+
+#: src/android/aidl/example-service/changing-implementation.md:55
+msgid ""
+"TODO: Move code snippets into project files where they'll actually be built?"
+msgstr ""
